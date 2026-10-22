@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import sys
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -42,6 +43,7 @@ def envelope(source: str, rows: list, **extra) -> dict:
 
 def run(out: Path, day: date, skip_odds: bool = False) -> int:
     failures = 0
+    status: dict[str, str] = {}
     jobs = [
         ("games_today", lambda: espn.parse_scoreboard(espn.fetch_scoreboard(day)),
          {"game_date": day.isoformat()}),
@@ -56,15 +58,19 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
             rows = job()
             write(out, day, name, envelope("espn", rows, **extra))
             log.info("%-18s %d rows", name, len(rows))
+            status[name] = "ok"
         except Exception as e:  # keep going so one bad endpoint doesn't sink the run
             failures += 1
+            status[name] = "failed"
             log.error("%s failed: %s", name, e)
 
     key = odds.api_key()
     if skip_odds:
         log.info("odds              skipped (--skip-odds)")
+        status["odds"] = "skipped"
     elif not key:
         log.info("odds              skipped (ODDS_API_KEY not set)")
+        status["odds"] = "no_key"
     else:
         try:
             raw, quota = odds.fetch_odds(key)
@@ -72,9 +78,19 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
             write(out, day, "odds", envelope("the-odds-api", rows, quota=quota))
             log.info("odds              %d rows (quota remaining: %s)",
                      len(rows), quota.get("requests_remaining"))
+            status["odds"] = "ok"
         except Exception as e:
             failures += 1
+            status["odds"] = "failed"
             log.error("odds failed: %s", e)
+    # Run summary, read by the website's status line.
+    (out / "latest").mkdir(parents=True, exist_ok=True)
+    (out / "latest" / "run.json").write_text(json.dumps({
+        "finished_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "game_date": day.isoformat(),
+        "repo": os.environ.get("GITHUB_REPOSITORY", "mvpeterson0-netizen/nba-odds-tracker"),
+        "sources": status,
+    }, indent=2) + "\n", encoding="utf-8")
     return failures
 
 

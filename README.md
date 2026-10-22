@@ -1,5 +1,8 @@
 # nba-odds-tracker
 
+**Site:** https://mvpeterson0-netizen.github.io/nba-odds-tracker/ — Games, Odds, Standings,
+Injuries, and Log & sources tabs, in the same style as the Stix NFL tracker. Works on phones.
+
 Collects NBA games, results, standings and injuries on a schedule, with sportsbook
 odds layered on once an API key is added. Runs in GitHub Actions and commits JSON
 snapshots to `data/`.
@@ -29,8 +32,10 @@ once the key exists). Each is `{fetched_at, source, count, ..., rows: [...]}`.
 
 ## Schedule
 
-`.github/workflows/update-data.yml` runs tests, then collects at 14:40 and 22:40 UTC
-daily, on manual **Run workflow**, and on pushes that change code.
+`.github/workflows/update-data.yml` runs tests, collects data, commits it, and redeploys the
+site to GitHub Pages — at 14:40 and 22:40 UTC daily, on manual **Run workflow**, and on pushes
+that change code or the site. If a source fails, the rest still publish and the run is marked
+failed; the site shows a warning banner.
 
 ## Adding the odds key
 

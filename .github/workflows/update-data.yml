@@ -8,18 +8,24 @@ on:
   workflow_dispatch: {}
   push:
     branches: [main]
-    paths: ["nba_tracker/**", "tests/**", "requirements*.txt"]
+    paths: ["nba_tracker/**", "tests/**", "site/**", "requirements*.txt", ".github/workflows/**"]
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+  actions: write
 
 concurrency:
   group: update-data
   cancel-in-progress: false
 
 jobs:
-  test:
+  update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      collect: ${{ steps.collect.outcome }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,34 +33,62 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt -r requirements-dev.txt
-      - run: pytest -q
-
-  collect:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: pip
-      - run: pip install -r requirements.txt
+      - name: Tests
+        run: pytest -q
 
       - name: Pull stats (and odds if the secret exists)
+        id: collect
+        # A failed source shouldn't block publishing the rest; the run is marked failed at the end.
+        continue-on-error: true
         env:
           # Empty until you add the ODDS_API_KEY repository secret; odds are skipped until then.
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python -m nba_tracker
 
       - name: Commit data
-        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
           if git diff --cached --quiet; then
-            echo "No data changes."
-          else
-            git commit -m "data: update $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            echo "No data changes."; exit 0
           fi
+          git commit -q -m "data: update $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
+            sleep 5
+          done
+          echo "push failed"; exit 1
+
+      - name: Keep schedule enabled
+        # GitHub disables scheduled workflows in public repos after 60 days without activity.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/update-data.yml/enable" || true
+
+      - name: Assemble site
+        # The site reads the latest JSON files; only the uploaded copy gets them, nothing is committed.
+        run: |
+          mkdir -p site/data
+          cp data/latest/*.json site/data/
+          V=$(cat site/*.html site/*.js site/*.css | sha256sum | cut -c1-10)
+          sed -i -E "s/(src|href)=\"([a-z]+\.(js|css))\"/\1=\"\2?v=$V\"/g" site/index.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Report collection failure
+        if: needs.update.outputs.collect == 'failure'
+        run: |
+          echo "::error::One or more data sources failed this run; see the 'Pull stats' step log."
+          exit 1

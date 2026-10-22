@@ -1,0 +1,29 @@
+/* Phone layout, loaded only on screens <= 760px wide (same approach as the NFL tracker). */
+body { font-size: 15px; -webkit-text-size-adjust: 100%; }
+.top { flex-wrap: wrap; gap: 6px 12px; padding: 8px 12px; padding-top: max(8px, env(safe-area-inset-top)); }
+.brand { font-size: 17px; }
+.brand .muted { display: none; }
+.status { order: 2; margin-left: auto; font-size: 11px; max-width: 55%; text-align: right; }
+#tabs { order: 3; width: 100%; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+#tabs::-webkit-scrollbar { display: none; }
+#tabs a { white-space: nowrap; padding: 6px 10px; }
+.stale { padding: 8px 12px; font-size: 13px; }
+main { padding: 10px 12px 32px; }
+.foot { padding: 0 12px 24px; }
+.grid2 { grid-template-columns: 1fr; }
+.cards { grid-template-columns: 1fr; }
+.gamebar { margin: 0 -12px 6px; padding: 2px 12px 10px; }
+.filters { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.filters label { min-width: 0; }
+.filters select, .filters input[type=search] { min-width: 0; width: 100%; font-size: 16px; padding: 8px; }
+/* Tables marked .stable become stacked cards on phones */
+.stable thead { display: none; }
+.stable, .stable tbody, .stable tr, .stable td { display: block; width: 100%; }
+.stable tr { border: 1px solid var(--line); border-radius: 10px; margin: 0 0 10px; padding: 6px 4px; background: var(--panel); }
+.stable td { border: 0; padding: 3px 8px; white-space: normal; }
+.stable td[data-label]::before { content: attr(data-label) ": "; color: var(--muted); font-size: 12px; }
+.stable td.note { min-width: 0; max-width: none; }
+.panel.stablep { background: transparent; border: 0; }
+/* Standings: keep a compact table with fewer columns */
+.stand .wide { display: none; }
+.stand th, .stand td { padding: 6px 5px; }
