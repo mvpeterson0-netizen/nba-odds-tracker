@@ -27,3 +27,9 @@ main { padding: 10px 12px 32px; }
 /* Standings: keep a compact table with fewer columns */
 .stand .wide { display: none; }
 .stand th, .stand td { padding: 6px 5px; }
+.mgame-h { position: sticky; top: 0; z-index: 4; background: var(--bg); }
+.mtiles { grid-template-columns: repeat(5, 1fr); gap: 5px; }
+.mtiles b, .mtiles .hit { font-size: 16px; }
+.mtabs { flex-wrap: nowrap; overflow-x: auto; }
+.mtabs button { white-space: nowrap; padding: 8px 12px; font-size: 14px; }
+.ltable th, .ltable td { padding: 5px 5px; }

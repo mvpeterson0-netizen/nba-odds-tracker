@@ -14,13 +14,16 @@
 </head>
 <body>
 <header class="top">
-  <div class="brand"><img src="icons/icon-64.png" alt="" width="28" height="28"> Stix <span class="muted">NBA odds · 2026–27</span></div>
+  <div class="brand"><img src="icons/icon-64.png" alt="" width="28" height="28"> Stix <span class="muted">NBA props · 2026–27</span></div>
   <nav id="tabs">
+    <a href="#/board" data-tab="board">Board</a>
+    <a href="#/results" data-tab="results">Results</a>
     <a href="#/games" data-tab="games">Games</a>
     <a href="#/odds" data-tab="odds">Odds</a>
     <a href="#/standings" data-tab="standings">Standings</a>
     <a href="#/injuries" data-tab="injuries">Injuries</a>
     <a href="#/log" data-tab="log">Log &amp; sources</a>
+    <a href="#/guide" data-tab="guide">Guide</a>
   </nav>
   <div id="status" class="status">Loading…</div>
 </header>
@@ -28,9 +31,10 @@
 <main id="app"><p class="muted pad">Loading data…</p></main>
 <footer class="foot muted">
   Games, results, standings and injuries: ESPN public data feeds (unofficial; can change without notice).
-  Sportsbook odds: <a href="https://the-odds-api.com">The Odds API</a> — shown once the API key is added.
+  Lines: <a href="https://the-odds-api.com">The Odds API</a> (props: DraftKings, FanDuel), captured about 3 hours before tip — not closing lines.
   Research tool only; not betting advice.
 </footer>
+<script src="props.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

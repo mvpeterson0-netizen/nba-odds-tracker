@@ -1,7 +1,7 @@
 "use strict";
 // Stix NBA front end. Reads the JSON the GitHub Action writes to data/. No external libraries.
 
-const FILES = ["run", "games_today", "results_yesterday", "standings", "injuries", "odds"];
+const FILES = ["run", "games_today", "results_yesterday", "standings", "injuries", "odds", "props"];
 const D = {};               // file name -> parsed JSON (or null if missing)
 const S = { day: "today", game: "", conf: "", team: "", status: "", q: "", book: "" };
 let LIVE = null;            // recent workflow runs from the GitHub API (or null)
@@ -284,10 +284,13 @@ function viewLog() {
     for (const [k, v] of Object.entries(run.sources || {})) {
       const [cls, txt] = label[v] || ["other", v];
       const f = D[k];
-      h += `<div>${esc(k.replace(/_/g, " "))}</div><div><span class="st ${cls}">${esc(txt)}</span>${f ? ` <span class="muted small">${f.count} rows</span>` : ""}</div>`;
+      h += `<div>${esc(k.replace(/_/g, " "))}</div><div><span class="st ${cls}">${esc(txt)}</span>${f && f.count != null ? ` <span class="muted small">${f.count} rows</span>` : ""}</div>`;
     }
     h += `</div>`;
   } else h += NA("Run summary not found.");
+  if (run && run.props && run.props.credits) {
+    h += `<div class="kv" style="margin-top:8px">` + Object.entries(run.props.credits).map(([k, v]) => `<div>Credits left (${esc(k)})</div><div>${v ?? "?"}</div>`).join("") + `</div>`;
+  }
   h += `</div></div><div class="panel"><h3>Recent workflow runs</h3><div class="body">`;
   if (LIVE && LIVE.length) {
     h += `<table><thead><tr><th>Started</th><th>Trigger</th><th>Result</th></tr></thead><tbody>` +
@@ -295,6 +298,7 @@ function viewLog() {
         <td><span class="st ${r.conclusion === "success" ? "ok" : r.conclusion ? "out" : "other"}">${esc(r.conclusion || r.status)}</span></td></tr>`).join("") + `</tbody></table>`;
   } else h += `<p class="muted">Couldn't reach the GitHub API (it limits anonymous requests). <a href="https://github.com/${esc(repo())}/actions">Open the runs on GitHub</a>.</p>`;
   h += `</div></div></div>
+  ${propsLog()}
   <div class="panel"><h3>Sources</h3><div class="body">
     <table class="stable"><thead><tr><th>Data</th><th>Source</th><th>Notes</th></tr></thead><tbody>
       <tr><td data-label="Data">Schedule, scores, leaders</td><td data-label="Source">ESPN scoreboard feed</td><td class="note">Unofficial, undocumented endpoint; may change without notice.</td></tr>
@@ -307,15 +311,40 @@ function viewLog() {
   return h;
 }
 
+function propsLog() {
+  const px = D.props;
+  if (!px) return "";
+  let h = `<div class="panel"><h3>Recent prop pulls</h3><div class="scroll"><table class="stable"><thead><tr><th>When</th><th>Game</th><th class="num">Min before tip</th><th>Status</th><th class="num">Prices</th><th class="num">Credits used / left</th></tr></thead><tbody>`;
+  const pulls = [...(px.pulls || [])].reverse().slice(0, 25);
+  if (!pulls.length) h += `<tr><td colspan="6" class="muted">No prop pulls yet.</td></tr>`;
+  for (const p of pulls) {
+    const cls = p.status === "ok" ? "ok" : p.status === "empty" ? "other" : "out";
+    h += `<tr><td data-label="When">${fmtTime(p.at)}</td><td data-label="Game">${esc(p.matchup)}</td><td class="num" data-label="Min before tip">${esc(p.minutes_before)}</td>
+      <td data-label="Status"><span class="st ${cls}" title="${esc(p.note || "")}">${esc(p.status)}</span></td><td class="num" data-label="Prices">${esc(p.rows)}</td><td class="num" data-label="Credits">${esc(p.credits_last || "—")} / ${esc(p.credits_remaining || "—")}</td></tr>`;
+  }
+  h += `</tbody></table></div>`;
+  const um = px.unmatched || {};
+  if ((um.players || []).length || (um.games || []).length) {
+    h += `<div class="body small muted">Names from the sportsbooks with no ESPN box score yet: ${esc((um.players || []).join(", ")) || "none"}.${(um.games || []).length ? ` Games not matched to ESPN: ${esc(um.games.join(", "))}.` : ""}</div>`;
+  }
+  return h + `</div>`;
+}
+
 // ---------- router ----------
 function render() {
-  const hash = location.hash || "#/games";
-  const [, tab] = hash.split("/");
-  document.querySelectorAll("#tabs a").forEach((a) => a.classList.toggle("on", a.dataset.tab === (tab || "games")));
-  const views = { odds: viewOdds, standings: viewStandings, injuries: viewInjuries, log: viewLog };
-  try { app.innerHTML = (views[tab] || viewGames)(); }
-  catch (e) { console.error(e); app.innerHTML = `<p class="pad">This view hit an error: ${esc(e.message)}. The data may have changed shape — check the <a href="#/log">Log</a>.</p>`; }
+  const hash = location.hash || "#/board";
+  const [, tab, arg] = hash.split("/");
+  const active = tab === "player" ? "board" : tab || "board";
+  document.querySelectorAll("#tabs a").forEach((a) => a.classList.toggle("on", a.dataset.tab === active));
+  const views = { games: viewGames, odds: viewOdds, standings: viewStandings, injuries: viewInjuries, log: viewLog };
+  let propsView = false;
+  try {
+    let html = views[tab] ? views[tab]() : null;
+    if (html == null && window.STIX_PROPS) { html = window.STIX_PROPS.render(tab, arg); propsView = html != null; }
+    app.innerHTML = html ?? viewGames();
+  } catch (e) { console.error(e); app.innerHTML = `<p class="pad">This view hit an error: ${esc(e.message)}. The data may have changed shape — check the <a href="#/log">Log</a>.</p>`; }
   bind();
+  if (propsView) { try { window.STIX_PROPS.bind(tab, arg); } catch (e) { console.error(e); } }
 }
 function bind() {
   const on = (id, ev, fn) => { const el = document.getElementById(id); if (el) el.addEventListener(ev, fn); };
@@ -349,7 +378,7 @@ async function status() {
   const t = D.run && D.run.finished_at;
   if (t) {
     st.textContent = `Updated ${ago(t)} (${fmtTime(t)})`;
-    if (Date.now() - new Date(t).getTime() > 14 * 3600000) warn.push(`Data may be stale: the last pull was ${ago(t)}.`);
+    if (Date.now() - new Date(t).getTime() > 75 * 60000) warn.push(`Data may be stale: the last pull was ${ago(t)}.`);
     const failed = Object.entries(D.run.sources || {}).filter(([, v]) => v === "failed").map(([k]) => k.replace(/_/g, " "));
     if (failed.length) warn.push(`Last pull failed for: ${failed.join(", ")}. Showing the previous data for those.`);
   } else st.textContent = "No run summary";
