@@ -277,7 +277,7 @@ function viewInjuries() {
 // ---------- Log & sources ----------
 function viewLog() {
   const run = D.run;
-  const label = { ok: ["ok", "OK"], failed: ["out", "Failed"], no_key: ["dtd", "Waiting for API key"], skipped: ["other", "Skipped"] };
+  const label = { ok: ["ok", "OK"], failed: ["out", "Failed"], no_key: ["dtd", "Waiting for API key"], skipped: ["other", "Skipped"], not_due: ["other", "Not due this run"] };
   let h = `<div class="grid2"><div class="panel"><h3>Last data pull</h3><div class="body">`;
   if (run) {
     h += `<div class="kv"><div>Finished</div><div>${fmtTime(run.finished_at)} (${ago(run.finished_at)})</div><div>Game date</div><div>${fmtDate(run.game_date)}</div>`;

@@ -16,7 +16,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import espn, odds
+from . import espn, odds, props
 
 log = logging.getLogger("nba_tracker")
 
@@ -41,9 +41,33 @@ def envelope(source: str, rows: list, **extra) -> dict:
     }
 
 
+# Game-line pulls happen once per slot (UTC hours), within 3 h after the slot opens.
+LINE_SLOTS_UTC = (14, 22, 0)
+SLOT_GRACE = timedelta(hours=3)
+
+
+def lines_due(now: datetime, last: datetime | None) -> bool:
+    for h in LINE_SLOTS_UTC:
+        start = now.replace(hour=h, minute=0, second=0, microsecond=0)
+        if start > now:
+            start -= timedelta(days=1)
+        if now - start <= SLOT_GRACE and (last is None or last < start):
+            return True
+    return False
+
+
+def _last_lines_pull(out: Path) -> datetime | None:
+    try:
+        f = json.loads((out / "latest" / "odds.json").read_text(encoding="utf-8"))["fetched_at"]
+        return datetime.fromisoformat(f)
+    except Exception:
+        return None
+
+
 def run(out: Path, day: date, skip_odds: bool = False) -> int:
     failures = 0
     status: dict[str, str] = {}
+    extra_info: dict = {}
     jobs = [
         ("games_today", lambda: espn.parse_scoreboard(espn.fetch_scoreboard(day)),
          {"game_date": day.isoformat()}),
@@ -64,28 +88,53 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
             status[name] = "failed"
             log.error("%s failed: %s", name, e)
 
-    key = odds.api_key()
+    keys = props.load_keys(dict(os.environ))
+    now = datetime.now(timezone.utc)
     if skip_odds:
-        log.info("odds              skipped (--skip-odds)")
-        status["odds"] = "skipped"
-    elif not key:
-        log.info("odds              skipped (ODDS_API_KEY not set)")
-        status["odds"] = "no_key"
+        status["odds"] = status["props"] = "skipped"
+    elif not keys:
+        log.info("odds/props        skipped (no ODDS_API_KEY set)")
+        status["odds"] = status["props"] = "no_key"
     else:
+        # Player props: checked every run, pulled once per game ~3 h before tip.
         try:
-            raw, quota = odds.fetch_odds(key)
-            fetched = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-            rows = odds.parse_odds(raw, fetched)
-            write(out, day, "odds", envelope("the-odds-api", rows, quota=quota))
-            # Every pull is also appended to a permanent log (one CSV per month).
-            odds.append_log(out / "odds_log" / f"{fetched[:7]}.csv", rows, fetched)
-            log.info("odds              %d rows (quota remaining: %s)",
-                     len(rows), quota.get("requests_remaining"))
-            status["odds"] = "ok"
+            psum = props.run(out, keys, now)
+            status["props"] = psum["status"]
+            extra_info["props"] = psum
+            if psum["status"] == "failed":
+                failures += 1
         except Exception as e:
             failures += 1
-            status["odds"] = "failed"
-            log.error("odds failed: %s", e)
+            status["props"] = "failed"
+            log.error("props failed: %s", e)
+        # Game lines (moneyline/spread/total): only in the scheduled slots, to save credits.
+        last = _last_lines_pull(out)
+        if not lines_due(now, last):
+            status["odds"] = "not_due"
+            log.info("odds              not due (last pull %s)", last)
+        else:
+            try:
+                raw = quota = None
+                for label, key in keys:
+                    try:
+                        raw, quota = odds.fetch_odds(key)
+                        quota["key"] = label
+                        break
+                    except Exception as e:  # bad/empty key: try the next one
+                        log.warning("odds with %s failed: %s", label, e)
+                if raw is None:
+                    raise RuntimeError("every key failed")
+                fetched = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+                rows = odds.parse_odds(raw, fetched)
+                write(out, day, "odds", envelope("the-odds-api", rows, quota=quota))
+                # Every pull is also appended to a permanent log (one CSV per month).
+                odds.append_log(out / "odds_log" / f"{fetched[:7]}.csv", rows, fetched)
+                log.info("odds              %d rows (quota remaining: %s)", len(rows), quota.get("requests_remaining"))
+                status["odds"] = "ok"
+            except Exception as e:
+                failures += 1
+                status["odds"] = "failed"
+                log.error("odds failed: %s", e)
     # Run summary, read by the website's status line.
     (out / "latest").mkdir(parents=True, exist_ok=True)
     (out / "latest" / "run.json").write_text(json.dumps({
@@ -93,6 +142,7 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
         "game_date": day.isoformat(),
         "repo": os.environ.get("GITHUB_REPOSITORY", "mvpeterson0-netizen/nba-odds-tracker"),
         "sources": status,
+        **extra_info,
     }, indent=2) + "\n", encoding="utf-8")
     return failures
 

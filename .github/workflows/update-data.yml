@@ -2,11 +2,10 @@ name: Update NBA data
 
 on:
   schedule:
-    # Times are UTC: ~9:40 AM, 5:40 PM and 7:40 PM Central (shifts an hour with DST).
-    # The two evening runs capture pre-game lines for early and late tip-offs.
-    - cron: "40 14 * * *"
-    - cron: "40 22 * * *"
-    - cron: "40 0 * * *"
+    # Every 15 minutes at off-peak minutes (GitHub delays runs at the top of the hour).
+    # Each run: ESPN data; player props for any game within 3.5 h of tip that has none yet;
+    # game lines only in the 14:00 / 22:00 / 00:00 UTC slots (see LINE_SLOTS_UTC).
+    - cron: "8,23,38,53 * * * *"
   workflow_dispatch: {}
   push:
     branches: [main]
