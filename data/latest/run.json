@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-22T22:54:23+00:00",
+  "finished_at": "2026-10-22T22:55:38+00:00",
   "game_date": "2026-10-22",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -7,9 +7,16 @@
     "results_yesterday": "ok",
     "standings": "ok",
     "injuries": "ok",
-    "boxscores": "failed",
+    "boxscores": "ok",
     "props": "ok",
     "odds": "not_due"
+  },
+  "boxscores": {
+    "new_games": 14,
+    "player_rows": 385,
+    "unparsed": [],
+    "queued": 14,
+    "errors": []
   },
   "props": {
     "keys": 1,
