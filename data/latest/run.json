@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-22T22:45:47+00:00",
+  "finished_at": "2026-10-22T22:50:40+00:00",
   "game_date": "2026-10-22",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -7,6 +7,28 @@
     "results_yesterday": "ok",
     "standings": "ok",
     "injuries": "ok",
-    "odds": "ok"
+    "props": "ok",
+    "odds": "not_due"
+  },
+  "props": {
+    "keys": 1,
+    "credits": {
+      "ODDS_API_KEY": 486
+    },
+    "pulled": [
+      {
+        "matchup": "Cleveland Cavaliers @ Philadelphia 76ers",
+        "status": "ok",
+        "rows": 184
+      },
+      {
+        "matchup": "Denver Nuggets @ Oklahoma City Thunder",
+        "status": "ok",
+        "rows": 200
+      }
+    ],
+    "errors": [],
+    "due": 2,
+    "status": "ok"
   }
 }
