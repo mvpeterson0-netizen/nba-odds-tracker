@@ -94,7 +94,8 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
     except Exception as e:
         failures += 1
         status["boxscores"] = "failed"
-        log.error("boxscores failed: %s", e)
+        extra_info["boxscores"] = {"error": f"{type(e).__name__}: {e}"[:500]}
+        log.exception("boxscores failed")
 
     keys = props.load_keys(dict(os.environ))
     now = datetime.now(timezone.utc)

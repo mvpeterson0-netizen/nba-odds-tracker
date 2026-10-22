@@ -89,8 +89,16 @@ def parse_summary(summary: dict, game: dict) -> list[dict]:
 
 def finished_games(today: date) -> list[dict]:
     """All finished games from SEASON_START through yesterday (and today's finals)."""
-    data, _ = get_json(f"{SITE}/scoreboard", {"dates": f"{SEASON_START:%Y%m%d}-{today:%Y%m%d}", "limit": 1000})
-    games = parse_scoreboard(data)
+    try:
+        data, _ = get_json(f"{SITE}/scoreboard", {"dates": f"{SEASON_START:%Y%m%d}-{today:%Y%m%d}", "limit": 1000})
+        games = parse_scoreboard(data)
+    except Exception as e:  # fall back to one request per date
+        log.warning("scoreboard date range failed (%s); fetching day by day", e)
+        games, d = [], SEASON_START
+        while d <= today:
+            data, _ = get_json(f"{SITE}/scoreboard", {"dates": f"{d:%Y%m%d}"})
+            games.extend(parse_scoreboard(data))
+            d += timedelta(days=1)
     out = []
     for g in games:
         if g.get("completed"):
@@ -114,9 +122,14 @@ def run(data_dir: Path, today: date) -> dict:
     games = [g for g in finished_games(today) if g["game_id"] not in done]
     games.sort(key=lambda g: str(g.get("start_utc")))
     new_rows, processed, problems = [], [], []
+    errors = []
     for g in games[:MAX_PER_RUN]:
-        summary, _ = get_json(f"{SITE}/summary", {"event": g["game_id"]})
-        rows = parse_summary(summary, g)
+        try:
+            summary, _ = get_json(f"{SITE}/summary", {"event": g["game_id"]})
+            rows = parse_summary(summary, g)
+        except Exception as e:
+            errors.append(f"{g['game_id']}: {type(e).__name__}: {e}"[:300])
+            continue
         if not rows:
             problems.append(g["game_id"])
             sample = data_dir / "samples" / "summary_sample.json"
@@ -139,4 +152,5 @@ def run(data_dir: Path, today: date) -> dict:
         state_path.write_text(json.dumps({"done": sorted(done | set(processed))}, indent=0))
     log.info("boxscores         %d new games (%d player rows), %d unparsed, %d still queued",
              len(processed), len(new_rows), len(problems), max(0, len(games) - MAX_PER_RUN))
-    return {"new_games": len(processed), "player_rows": len(new_rows), "unparsed": problems}
+    return {"new_games": len(processed), "player_rows": len(new_rows), "unparsed": problems,
+            "queued": len(games), "errors": errors[:5]}
