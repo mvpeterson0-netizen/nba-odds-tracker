@@ -43,8 +43,10 @@ const normTeam = (n) => String(n || "").toLowerCase().replace(/^la /, "los angel
 // ---------- odds summary ----------
 // For one game: best moneyline per side (and its book), consensus spread/total with best price at that number,
 // and a no-vig win probability averaged across books.
+// Live (in-progress) prices are stored but not shown as pre-game lines.
+const pregame = () => rows("odds").filter((x) => !x.in_play);
 function oddsFor(home, away) {
-  const all = rows("odds");
+  const all = pregame();
   if (!all.length) return null;
   const h = normTeam(home), a = normTeam(away);
   const r = all.filter((x) => normTeam(x.home_team) === h && normTeam(x.away_team) === a && (!S.book || x.book === S.book));
@@ -175,11 +177,12 @@ function viewOdds() {
       <p class="muted">Add it under GitHub → repo <b>Settings → Secrets and variables → Actions → New repository secret</b>.
       The next scheduled run starts pulling moneyline, spread and total from US books. Until then, game cards show ESPN's line when ESPN publishes one.</p></div></div>`;
   }
-  const all = f.rows;
+  const all = f.rows.filter((x) => !x.in_play);
+  const live = f.rows.length - all.length;
   const books = [...new Set(all.map((x) => x.book))].sort();
   const events = [...new Map(all.map((x) => [x.event_id, x])).values()].sort((a, b) => a.commence_utc.localeCompare(b.commence_utc));
   let h = `<div class="filters"><label>Book <select id="o-book"><option value="">All books</option>${books.map((b) => `<option ${b === S.book ? "selected" : ""}>${esc(b)}</option>`).join("")}</select></label></div>
-    <p class="callout">${events.length} games · ${books.length} books · pulled ${ago(f.fetched_at)}${f.quota && f.quota.requests_remaining != null ? ` · API credits left: ${esc(f.quota.requests_remaining)}` : ""}. <span class="best">Green</span> = best price for that side.</p>`;
+    <p class="callout">${events.length} games · ${books.length} books · pulled ${ago(f.fetched_at)}${f.quota && f.quota.requests_remaining != null ? ` · API credits left: ${esc(f.quota.requests_remaining)}` : ""}. <span class="best">Green</span> = best price for that side.${live ? ` Games already under way are hidden (their prices were live, not pre-game).` : ""}</p>`;
   for (const ev of events) {
     const r = all.filter((x) => x.event_id === ev.event_id && (!S.book || x.book === S.book));
     const bks = [...new Set(r.map((x) => x.book))].sort();

@@ -74,8 +74,11 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
     else:
         try:
             raw, quota = odds.fetch_odds(key)
-            rows = odds.parse_odds(raw)
+            fetched = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+            rows = odds.parse_odds(raw, fetched)
             write(out, day, "odds", envelope("the-odds-api", rows, quota=quota))
+            # Every pull is also appended to a permanent log (one CSV per month).
+            odds.append_log(out / "odds_log" / f"{fetched[:7]}.csv", rows, fetched)
             log.info("odds              %d rows (quota remaining: %s)",
                      len(rows), quota.get("requests_remaining"))
             status["odds"] = "ok"

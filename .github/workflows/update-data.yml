@@ -2,9 +2,11 @@ name: Update NBA data
 
 on:
   schedule:
-    # Times are UTC. ~9:40 AM and ~5:40 PM Central (shifts an hour with DST).
+    # Times are UTC: ~9:40 AM, 5:40 PM and 7:40 PM Central (shifts an hour with DST).
+    # The two evening runs capture pre-game lines for early and late tip-offs.
     - cron: "40 14 * * *"
     - cron: "40 22 * * *"
+    - cron: "40 0 * * *"
   workflow_dispatch: {}
   push:
     branches: [main]
@@ -43,6 +45,11 @@ jobs:
         env:
           # Empty until you add the ODDS_API_KEY repository secret; odds are skipped until then.
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          ODDS_API_KEY_2: ${{ secrets.ODDS_API_KEY_2 }}
+          ODDS_API_KEY_3: ${{ secrets.ODDS_API_KEY_3 }}
+          ODDS_API_KEY_4: ${{ secrets.ODDS_API_KEY_4 }}
+          ODDS_API_KEY_5: ${{ secrets.ODDS_API_KEY_5 }}
+          ODDS_API_KEY_6: ${{ secrets.ODDS_API_KEY_6 }}
         run: python -m nba_tracker
 
       - name: Commit data

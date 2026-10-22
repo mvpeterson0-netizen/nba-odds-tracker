@@ -105,7 +105,7 @@ def test_odds():
         "event_id": "abc", "commence_utc": "2026-10-23T00:00:00Z",
         "home_team": "New York Knicks", "away_team": "Boston Celtics",
         "book": "draftkings", "market": "spreads", "market_updated": "2026-10-22T18:00:00Z",
-        "outcome": "New York Knicks", "price": -110, "point": -2.5,
+        "outcome": "New York Knicks", "price": -110, "point": -2.5, "in_play": False,
     }
     assert rows[2]["point"] is None
 
@@ -130,3 +130,22 @@ def test_errors_redact_api_key():
         get_json("https://example.test/odds", {"apiKey": "SECRET123"},
                  retries=2, backoff=0, session=Boom())
     assert "SECRET123" not in str(exc.value) and "***" in str(exc.value)
+
+
+def test_in_play_flag_and_log(tmp_path):
+    import csv
+    rows = odds.parse_odds(ODDS, "2026-10-22T23:00:00Z")
+    assert all(r["in_play"] is False for r in rows)
+    assert all(r["in_play"] is True for r in odds.parse_odds(ODDS, "2026-10-23T01:00:00Z"))
+    p = tmp_path / "log.csv"
+    odds.append_log(p, rows, "2026-10-22T23:00:00Z")
+    odds.append_log(p, rows, "2026-10-22T23:30:00Z")
+    got = list(csv.DictReader(p.open()))
+    assert len(got) == 6 and got[0]["fetched_at"] == "2026-10-22T23:00:00Z" and got[0]["point"] == "-2.5"
+
+
+def test_backup_key_names(monkeypatch):
+    for v in odds.KEY_VARS:
+        monkeypatch.delenv(v, raising=False)
+    monkeypatch.setenv("ODDS_API_KEY_3", "k3")
+    assert odds.api_key() == "k3"
