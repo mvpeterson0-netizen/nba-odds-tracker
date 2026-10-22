@@ -15,6 +15,7 @@ Nothing is pulled at or after tip-off.
 from __future__ import annotations
 
 import csv
+import json
 import logging
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -141,6 +142,40 @@ def parse_event_props(body: dict, captured_at: str, minutes_before: int) -> list
     return rows
 
 
+PROBE_EVERY = timedelta(days=7)
+
+
+def probe_markets(data_dir: Path, events: list[dict], keys: list[tuple[str, str]],
+                  remaining: dict, now: datetime) -> str:
+    """Weekly (1 credit): which markets DK/FD actually post for the next game within 3 h of tip.
+    Saved to data/markets_probe.json so new markets can be evaluated before paying to pull them."""
+    path = data_dir / "markets_probe.json"
+    try:
+        last = parse_iso(json.loads(path.read_text())["probed_at"])
+        if now - last < PROBE_EVERY:
+            return "not_due"
+    except Exception:
+        pass
+    soon = [e for e in events if now < parse_iso(e["commence_time"]) <= now + timedelta(hours=3)]
+    if not soon:
+        return "no_game_near_tip"
+    ev = min(soon, key=lambda e: e["commence_time"])
+    lab = max(remaining, key=lambda k: remaining[k] or 0)
+    if (remaining.get(lab) or 0) < 1:
+        return "no_credits"
+    code, body, h = _get(f"{BASE}/events/{ev['id']}/markets",
+                         {"apiKey": dict(keys)[lab], "bookmakers": ",".join(BOOKS), "dateFormat": "iso"})
+    _, rem = _credits(h)
+    if rem is not None:
+        remaining[lab] = rem
+    if code != 200:
+        return f"HTTP {code}"
+    books = {b.get("key"): sorted(m.get("key") for m in b.get("markets") or []) for b in (body or {}).get("bookmakers") or []}
+    path.write_text(json.dumps({"probed_at": iso(now), "event": f"{ev.get('away_team')} @ {ev.get('home_team')}",
+                                "commence_utc": ev.get("commence_time"), "books": books}, indent=1))
+    return "ok"
+
+
 def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None) -> dict:
     """One capture pass. Returns a summary for run.json."""
     now = now or utcnow()
@@ -164,6 +199,11 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
     if events is None:
         summary["status"] = "failed"
         return summary
+
+    try:
+        summary["markets_probe"] = probe_markets(data_dir, events, keys, remaining, now)
+    except Exception as e:
+        summary["errors"].append(f"markets probe: {type(e).__name__}")
 
     done = captured_events(data_dir)
     games = due_games(events, done, now)
