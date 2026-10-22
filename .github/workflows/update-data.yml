@@ -1,0 +1,60 @@
+name: Update NBA data
+
+on:
+  schedule:
+    # Times are UTC. ~9:40 AM and ~5:40 PM Central (shifts an hour with DST).
+    - cron: "40 14 * * *"
+    - cron: "40 22 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["nba_tracker/**", "tests/**", "requirements*.txt"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt -r requirements-dev.txt
+      - run: pytest -q
+
+  collect:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Pull stats (and odds if the secret exists)
+        env:
+          # Empty until you add the ODDS_API_KEY repository secret; odds are skipped until then.
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python -m nba_tracker
+
+      - name: Commit data
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "data: update $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
