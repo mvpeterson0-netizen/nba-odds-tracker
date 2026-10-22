@@ -29,9 +29,14 @@ log = logging.getLogger(__name__)
 
 BASE = "https://api.the-odds-api.com/v4/sports/basketball_nba"
 CORE = ["player_points", "player_rebounds", "player_assists", "player_threes"]
+# Added only when credits allow (see extras_affordable).
+EXTRA = ["player_points_rebounds_assists", "player_points_rebounds", "player_points_assists",
+         "player_rebounds_assists", "player_steals", "player_blocks"]
+GAMES_PER_DAY_EST = 7.5   # rough NBA average (1,230 games over ~165 days); used only for the guard
 BOOKS = ["draftkings", "fanduel"]
 PULL_WINDOW = timedelta(hours=3, minutes=30)   # pull once a game is this close to tip
 RESERVE = 0                                    # credits to leave untouched on each key
+GUARD_RESERVE = 20                             # extra cushion kept for core markets
 
 CAPTURE_FIELDS = ["captured_at", "event_id", "commence_utc", "minutes_before", "home_team", "away_team",
                   "book", "market", "player", "side", "point", "price", "market_updated"]
@@ -176,6 +181,17 @@ def probe_markets(data_dir: Path, events: list[dict], keys: list[tuple[str, str]
     return "ok"
 
 
+def extras_affordable(total_remaining: int | None, now: datetime) -> bool:
+    """True when the credits left (all keys) cover the core markets for the rest of the month
+    plus one game's extras. Free-plan credits reset monthly."""
+    if total_remaining is None:
+        return True
+    first_next = (now.replace(day=1) + timedelta(days=32)).replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+    days_left = max(1.0, (first_next - now).total_seconds() / 86400)
+    need_core = len(CORE) * GAMES_PER_DAY_EST * days_left + GUARD_RESERVE
+    return total_remaining - len(EXTRA) >= need_core
+
+
 def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None) -> dict:
     """One capture pass. Returns a summary for run.json."""
     now = now or utcnow()
@@ -215,12 +231,17 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
         start = parse_iso(ev["commence_time"])
         mins = int((start - now).total_seconds() // 60)
         matchup = f"{ev.get('away_team')} @ {ev.get('home_team')}"
-        cost = len(CORE)
+        total = None if any(v is None for v in remaining.values()) else sum(v for v in remaining.values())
+        markets = CORE + EXTRA if extras_affordable(total, now) else list(CORE)
+        cost = len(markets)
         tried: set[str] = set()
         status, note, rows, last, rem_after, used = "failed", "", [], None, None, ""
         while True:
             cands = [(rem, lab) for lab, rem in remaining.items()
                      if lab not in tried and (rem is None or rem - RESERVE >= cost)]
+            if not cands and len(markets) > len(CORE):
+                markets, cost = list(CORE), len(CORE)      # no key can afford extras: core only
+                continue
             if not cands:
                 note = note or "no key with enough credits left"
                 status = "no_credits" if status == "failed" and not note.startswith("HTTP") else status
@@ -230,7 +251,7 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
             key = dict(keys)[lab]
             captured = iso(utcnow())
             code, body, h = _get(f"{BASE}/events/{ev['id']}/odds", {
-                "apiKey": key, "bookmakers": ",".join(BOOKS), "markets": ",".join(CORE),
+                "apiKey": key, "bookmakers": ",".join(BOOKS), "markets": ",".join(markets),
                 "oddsFormat": "american", "dateFormat": "iso"})
             last, rem_after = _credits(h)
             if rem_after is not None:
@@ -252,7 +273,7 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
                          "markets": ",".join(mk), "rows": len(rows), "credits_last": last,
                          "credits_remaining": rem_after, "key": used, "note": note})
         cap_rows.extend(rows)
-        summary["pulled"].append({"matchup": matchup, "status": status, "rows": len(rows)})
+        summary["pulled"].append({"matchup": matchup, "status": status, "rows": len(rows), "markets": len(mk)})
         log.info("props %-45s %s (%d rows, %s min before tip)", matchup, status, len(rows), mins)
 
     _append_csv(data_dir / "prop_captures.csv", CAPTURE_FIELDS, cap_rows)

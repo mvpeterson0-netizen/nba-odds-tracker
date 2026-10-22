@@ -57,3 +57,9 @@ def test_norm_name():
     assert build.norm_name("Nikola Jokić") == build.norm_name("Nikola Jokic")
     assert build.norm_name("Marvin Bagley III") == "marvin bagley"
     assert build.norm_name("Shai Gilgeous-Alexander") == "shai gilgeous alexander"
+
+
+def test_combo_market_graded_from_sum(tmp_path):
+    setup(tmp_path, [cap("draftkings", "Over", 50.5, -110, market="player_points_rebounds_assists")], [box("31")])
+    ln = build.build(tmp_path)["lines"]["3112335"]["g1"]["player_points_rebounds_assists"]
+    assert ln["act"] == 31 + 12 + 9 and ln["res"] == "over"

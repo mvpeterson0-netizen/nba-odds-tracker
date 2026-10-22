@@ -23,7 +23,7 @@ SEASON_START = date(2026, 10, 20)   # first regular-season date to backfill from
 MAX_PER_RUN = 40                    # summaries fetched per run (first run backfills, later runs top up)
 
 FIELDS = ["game_id", "game_date", "start_utc", "team_id", "team", "opp", "home_away", "athlete_id", "player",
-          "position", "starter", "played", "dnp_reason", "min", "pts", "reb", "ast", "fg3m", "fg3a"]
+          "position", "starter", "played", "dnp_reason", "min", "pts", "reb", "ast", "fg3m", "fg3a", "stl", "blk", "tov"]
 
 
 def _num(v: Any) -> float | None:
@@ -66,6 +66,7 @@ def parse_summary(summary: dict, game: dict) -> list[dict]:
                 return None
             i_min, i_pts, i_reb, i_ast = col("MIN", "minutes"), col("PTS", "points"), col("REB", "rebounds"), col("AST", "assists")
             i_3 = col("3PT", "threePointFieldGoalsMade-threePointFieldGoalsAttempted")
+            i_stl, i_blk, i_to = col("STL", "steals"), col("BLK", "blocks"), col("TO", "turnovers")
             for a in st.get("athletes") or []:
                 ath = a.get("athlete") or {}
                 stats = a.get("stats") or []
@@ -84,6 +85,7 @@ def parse_summary(summary: dict, game: dict) -> list[dict]:
                     "dnp_reason": (a.get("reason") or "DNP") if dnp else "",
                     "min": mins, "pts": _num(get(i_pts)), "reb": _num(get(i_reb)), "ast": _num(get(i_ast)),
                     "fg3m": m3, "fg3a": a3,
+                    "stl": _num(get(i_stl)), "blk": _num(get(i_blk)), "tov": _num(get(i_to)),
                 })
     return rows
 
@@ -162,6 +164,15 @@ def update_rosters(data_dir: Path, today_games: list[dict], today: date) -> int:
 
 def run(data_dir: Path, today: date) -> dict:
     state_path = data_dir / "boxscore_state.json"
+    # Schema change (new columns): rebuild the file from ESPN once. Box scores are free to re-fetch.
+    csv_path = data_dir / "player_games.csv"
+    if csv_path.exists():
+        with csv_path.open(newline="", encoding="utf-8") as f:
+            header = next(csv.reader(f), [])
+        if header != FIELDS:
+            log.info("player_games.csv columns changed; rebuilding from ESPN")
+            csv_path.unlink()
+            state_path.unlink(missing_ok=True)
     try:
         done = set(json.loads(state_path.read_text())["done"])
     except Exception:

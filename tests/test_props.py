@@ -62,3 +62,24 @@ def test_falls_back_to_next_key_on_429(tmp_path, monkeypatch):
     # k2 failed with 429; k1 can't afford 4 credits -> logged, retried next run
     assert s["pulled"][0]["status"] in ("failed", "no_credits")
     assert "soon" not in props.captured_events(tmp_path)
+
+
+def test_extras_guard():
+    from datetime import datetime, timezone
+    now = datetime(2026, 10, 22, 23, 0, tzinfo=timezone.utc)   # ~9 days left in the month
+    assert props.extras_affordable(485, now)
+    assert not props.extras_affordable(200, now)
+    assert props.extras_affordable(None, now)
+
+
+def test_requests_extras_when_affordable(tmp_path, monkeypatch):
+    seen = []
+    base = fake_get_factory([], [200])
+
+    def spy(url, params, timeout=25.0):
+        if url.endswith("/odds"):
+            seen.append(params["markets"].split(","))
+        return base(url, params, timeout)
+    monkeypatch.setattr(props, "_get", spy)
+    props.run(tmp_path, [("ODDS_API_KEY_2", "k2")], NOW)
+    assert seen and len(seen[0]) == 10

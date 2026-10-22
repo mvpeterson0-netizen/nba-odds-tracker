@@ -26,6 +26,12 @@ MARKETS = [
     {"id": "player_rebounds", "short": "REB", "label": "Rebounds", "stat": "reb"},
     {"id": "player_assists", "short": "AST", "label": "Assists", "stat": "ast"},
     {"id": "player_threes", "short": "3PM", "label": "Threes made", "stat": "fg3m"},
+    {"id": "player_points_rebounds_assists", "short": "PRA", "label": "Pts+Reb+Ast", "stat": "pra"},
+    {"id": "player_points_rebounds", "short": "P+R", "label": "Pts+Reb", "stat": "pr"},
+    {"id": "player_points_assists", "short": "P+A", "label": "Pts+Ast", "stat": "pa"},
+    {"id": "player_rebounds_assists", "short": "R+A", "label": "Reb+Ast", "stat": "ra"},
+    {"id": "player_steals", "short": "STL", "label": "Steals", "stat": "stl"},
+    {"id": "player_blocks", "short": "BLK", "label": "Blocks", "stat": "blk"},
 ]
 STAT = {m["id"]: m["stat"] for m in MARKETS}
 BOOK_ORDER = ["draftkings", "fanduel"]
@@ -105,7 +111,11 @@ def build(data_dir: Path) -> dict:
                           "st": r.get("starter") == "True", "p": played,
                           "why": r.get("dnp_reason") if not played else "",
                           "min": _f(r.get("min")), "pts": _f(r.get("pts")), "reb": _f(r.get("reb")),
-                          "ast": _f(r.get("ast")), "fg3m": _f(r.get("fg3m"))})
+                          "ast": _f(r.get("ast")), "fg3m": _f(r.get("fg3m")),
+                          "stl": _f(r.get("stl")), "blk": _f(r.get("blk"))})
+        e = logs[aid][-1]
+        add = lambda *k: None if any(e[x] is None for x in k) else sum(e[x] for x in k)
+        e["pra"], e["pr"], e["pa"], e["ra"] = add("pts", "reb", "ast"), add("pts", "reb"), add("pts", "ast"), add("reb", "ast")
         nn = norm_name(r["player"])
         by_game_name[(r["game_id"], nn)] = aid
         name_idx[nn].add(aid)

@@ -77,7 +77,9 @@ function defaultDate() {
   const ds = lineDates(), t = todayET();
   return ds.includes(t) ? t : ds.filter((d) => d <= t).pop() || ds[ds.length - 1] || t;
 }
-const MK_ORDER = ["player_points", "player_rebounds", "player_assists", "player_threes"];
+const MK_ORDER = ["player_points", "player_rebounds", "player_assists", "player_threes", "player_points_rebounds_assists",
+  "player_points_rebounds", "player_points_assists", "player_rebounds_assists", "player_steals", "player_blocks"];
+const BASE_COLS = [["pts", "PTS"], ["reb", "REB"], ["ast", "AST"], ["fg3m", "3PM"], ["stl", "STL"], ["blk", "BLK"]];
 
 function gameHeader(gid) {
   const g = gameOf(gid);
@@ -98,7 +100,9 @@ function viewBoard() {
   if (P.game && !gids.includes(P.game)) P.game = "";
   const q = P.q.trim().toLowerCase();
   const pl = (aid) => PX().players[aid] || { name: aid };
-  let rows = all.filter((r) => (!P.game || r.gid === P.game) && (!P.mk || r.mk === P.mk) &&
+  const GROUPS = { core: MK_ORDER.slice(0, 4), combo: MK_ORDER.slice(4, 8), def: MK_ORDER.slice(8) };
+  const mkOk = (mk) => !P.mk || (GROUPS[P.mk] ? GROUPS[P.mk].includes(mk) : mk === P.mk);
+  let rows = all.filter((r) => (!P.game || r.gid === P.game) && mkOk(r.mk) &&
     (!P.team || pl(r.aid).team === P.team) && (!q || pl(r.aid).name.toLowerCase().includes(q)));
   const teams = [...new Set(all.map((r) => pl(r.aid).team).filter(Boolean))].sort();
 
@@ -107,7 +111,8 @@ function viewBoard() {
     gids.map((g) => chip(g, `<b>${esc(gLabel(g))}</b>`, gameOf(g).final ? "Final" : esc(fmtClock(gameOf(g).start)))).join("") + `</div>`;
   h += `<div class="filters">
     <label>Date <select id="p-date">${dates.slice().reverse().map((d) => `<option value="${d}" ${d === P.date ? "selected" : ""}>${fmtDate(d)}</option>`).join("")}</select></label>
-    <label>Market <select id="p-mk"><option value="">All</option>${PX().markets.map((m) => `<option value="${m.id}" ${m.id === P.mk ? "selected" : ""}>${esc(m.label)}</option>`).join("")}</select></label>
+    <label>Market <select id="p-mk">${[["", "All markets"], ["core", "Core (PTS/REB/AST/3PM)"], ["combo", "Combos (PRA, P+R, P+A, R+A)"], ["def", "Steals & blocks"]].map(([v, t]) => `<option value="${v}" ${v === P.mk ? "selected" : ""}>${t}</option>`).join("")}
+      <optgroup label="Single market">${PX().markets.map((m) => `<option value="${m.id}" ${m.id === P.mk ? "selected" : ""}>${esc(m.label)}</option>`).join("")}</optgroup></select></label>
     <label>Team <select id="p-team"><option value="">All</option>${teams.map((t) => `<option ${t === P.team ? "selected" : ""}>${esc(t)}</option>`).join("")}</select></label>
     <label>Player <input type="search" id="p-q" placeholder="Search name" value="${esc(P.q)}"></label></div>`;
   const nPl = new Set(rows.map((r) => r.aid)).size;
@@ -206,13 +211,15 @@ function viewPlayer(aid) {
       <div class="legend"><span><i style="border-color:var(--ink);border-top-width:3px"></i>Pre-game line</span><span><i style="border-color:var(--over)"></i>Over</span><span><i style="border-color:var(--under)"></i>Under</span><span><i style="border-color:var(--accent)"></i>No line</span></div></div>`;
   // game log
   const logs = [...(PX().logs[aid] || [])].reverse();
+  // Base box-score columns, plus the selected market's column when it's a combo (PRA, P+R, ...).
+  const cols = BASE_COLS.some(([k]) => k === m.stat) ? BASE_COLS : [...BASE_COLS, [m.stat, m.short]];
   h += `<div class="panel"><h3>Game log</h3><div class="scroll"><table class="ltable"><thead><tr><th>Date</th><th>Opp</th><th class="num">MIN</th>
-    ${PX().markets.map((x) => `<th class="num ${x.id === mk ? "sel" : ""}">${esc(x.short)}</th>`).join("")}<th class="num">Line</th><th>Result</th></tr></thead><tbody>`;
-  if (!logs.length) h += `<tr><td colspan="9" class="muted">No games played yet this season.</td></tr>`;
+    ${cols.map(([k, lab]) => `<th class="num ${k === m.stat ? "sel" : ""}">${esc(lab)}</th>`).join("")}<th class="num">Line</th><th>Result</th></tr></thead><tbody>`;
+  if (!logs.length) h += `<tr><td colspan="${cols.length + 5}" class="muted">No games played yet this season.</td></tr>`;
   for (const r of logs) {
     const l = (myLines[r.g] || {})[mk];
     h += `<tr><td>${fmtDate(r.d)}</td><td>${r.ha === "home" ? "vs" : "@"} ${esc(r.opp || "")}${r.st ? "" : ` <span class="muted small">bench</span>`}</td>
-      ${r.p ? `<td class="num">${n1(r.min)}</td>${PX().markets.map((x) => `<td class="num ${x.id === mk ? "sel" : ""}">${n1(r[x.stat])}</td>`).join("")}` : `<td colspan="5" class="na">DNP${r.why ? " — " + esc(r.why) : ""}</td>`}
+      ${r.p ? `<td class="num">${n1(r.min)}</td>${cols.map(([k]) => `<td class="num ${k === m.stat ? "sel" : ""}">${n1(r[k])}</td>`).join("")}` : `<td colspan="${cols.length + 1}" class="na">DNP${r.why ? " — " + esc(r.why) : ""}</td>`}
       <td class="num">${l ? `<span title="${esc(lineTip(l))}">${n1(l.line)}</span>` : ""}</td><td>${l ? resHtml(l) : ""}</td></tr>`;
   }
   h += `</tbody></table></div></div>`;
@@ -258,7 +265,7 @@ function viewResults() {
 // ---------- Guide ----------
 function viewGuide() {
   return `<div class="panel"><h3>How the player board works</h3><div class="body guide">
-    <p><b>Lines.</b> For every game, DraftKings and FanDuel player props (points, rebounds, assists, threes made) are pulled once from The Odds API, about 2½–3½ hours before tip-off. A run every 15 minutes checks for games entering that window. Nothing is pulled after tip. DraftKings is the line shown and graded; FanDuel is used when DraftKings has no line for that player and stat. Hover or tap a line to see both books.</p>
+    <p><b>Lines.</b> For every game, DraftKings and FanDuel player props are pulled once from The Odds API, about 2½–3½ hours before tip-off. A run every 15 minutes checks for games entering that window. Nothing is pulled after tip. Core markets (points, rebounds, assists, threes) are always pulled. PRA, the two-stat combos, steals and blocks are added when API credits allow: the extras are skipped once the credits left are only enough for the core markets through the end of the month. DraftKings is the line shown and graded; FanDuel is used when DraftKings has no line for that player and stat. Hover or tap a line to see both books.</p>
     <p><b>Grading.</b> Once the game is final, the actual stat from ESPN's box score is compared with the line: over, under or push. A player who had a line but didn't play is <i>void</i>, with ESPN's reason when it gives one.</p>
     <p><b>AVG / L5.</b> Season average and last-5 average over games the player actually played, counting only games before the date being viewed.</p>
     <p><b>HIT.</b> How many of his last ${HIT_N} games played went over <i>this</i> line (not the lines he had in those games).</p>
