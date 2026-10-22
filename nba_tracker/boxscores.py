@@ -80,7 +80,8 @@ def parse_summary(summary: dict, game: dict) -> list[dict]:
                     "position": (ath.get("position") or {}).get("abbreviation"),
                     "starter": bool(a.get("starter")),
                     "played": (not dnp) and (mins is None or mins > 0),
-                    "dnp_reason": a.get("reason") or ("DNP" if dnp else ""),
+                    # ESPN can attach a reason to players who did play; keep it only for DNPs.
+                    "dnp_reason": (a.get("reason") or "DNP") if dnp else "",
                     "min": mins, "pts": _num(get(i_pts)), "reb": _num(get(i_reb)), "ast": _num(get(i_ast)),
                     "fg3m": m3, "fg3a": a3,
                 })
@@ -113,13 +114,67 @@ def finished_games(today: date) -> list[dict]:
     return out
 
 
+def _update_games_index(data_dir: Path, games: list[dict]) -> None:
+    """data/games.json: finished games with team names, used to match odds events to box scores."""
+    path = data_dir / "games.json"
+    try:
+        idx = json.loads(path.read_text())
+    except Exception:
+        idx = {}
+    for g in games:
+        idx[g["game_id"]] = {
+            "date": g.get("game_date"), "start": g.get("start_utc"),
+            "home": g["home"].get("abbr"), "away": g["away"].get("abbr"),
+            "home_name": g["home"].get("name"), "away_name": g["away"].get("name"),
+            "home_id": g["home"].get("team_id"), "away_id": g["away"].get("team_id"),
+            "hs": g["home"].get("score"), "as": g["away"].get("score"), "final": True,
+        }
+    path.write_text(json.dumps(dict(sorted(idx.items())), indent=0))
+
+
+def update_rosters(data_dir: Path, today_games: list[dict], today: date) -> int:
+    """data/rosters.json: rosters for teams playing today, refreshed once a day per team.
+    Lets players with no box score yet (first game of the season, new signings) be matched."""
+    path = data_dir / "rosters.json"
+    try:
+        rosters = json.loads(path.read_text())
+    except Exception:
+        rosters = {}
+    fetched = 0
+    for g in today_games:
+        for side in ("home", "away"):
+            t = g.get(side) or {}
+            tid, abbr = t.get("team_id"), t.get("abbr")
+            if not tid or rosters.get(abbr, {}).get("date") == today.isoformat():
+                continue
+            data, _ = get_json(f"{SITE}/teams/{tid}/roster")
+            items = (data or {}).get("athletes") or []
+            if items and isinstance(items[0], dict) and "items" in items[0]:   # grouped by position
+                items = [a for grp in items for a in grp.get("items") or []]
+            rosters[abbr] = {"date": today.isoformat(), "team_id": tid, "players": [
+                {"id": a.get("id"), "name": a.get("displayName") or a.get("fullName"),
+                 "pos": (a.get("position") or {}).get("abbreviation")} for a in items if a.get("id")]}
+            fetched += 1
+    if fetched:
+        path.write_text(json.dumps(rosters, indent=0))
+    return fetched
+
+
 def run(data_dir: Path, today: date) -> dict:
     state_path = data_dir / "boxscore_state.json"
     try:
         done = set(json.loads(state_path.read_text())["done"])
     except Exception:
         done = set()
-    games = [g for g in finished_games(today) if g["game_id"] not in done]
+    try:
+        today_games = json.loads((data_dir / "latest" / "games_today.json").read_text())["rows"]
+        rosters_fetched = update_rosters(data_dir, today_games, today)
+    except Exception as e:
+        log.warning("rosters failed: %s", e)
+        rosters_fetched = -1
+    finals = finished_games(today)
+    _update_games_index(data_dir, finals)
+    games = [g for g in finals if g["game_id"] not in done]
     games.sort(key=lambda g: str(g.get("start_utc")))
     new_rows, processed, problems = [], [], []
     errors = []
@@ -153,4 +208,4 @@ def run(data_dir: Path, today: date) -> dict:
     log.info("boxscores         %d new games (%d player rows), %d unparsed, %d still queued",
              len(processed), len(new_rows), len(problems), max(0, len(games) - MAX_PER_RUN))
     return {"new_games": len(processed), "player_rows": len(new_rows), "unparsed": problems,
-            "queued": len(games), "errors": errors[:5]}
+            "queued": len(games), "errors": errors[:5], "rosters_fetched": rosters_fetched}
