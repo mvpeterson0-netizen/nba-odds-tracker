@@ -16,7 +16,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import espn, odds, props
+from . import boxscores, espn, odds, props
 
 log = logging.getLogger("nba_tracker")
 
@@ -87,6 +87,14 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
             failures += 1
             status[name] = "failed"
             log.error("%s failed: %s", name, e)
+
+    try:
+        extra_info["boxscores"] = boxscores.run(out, day)
+        status["boxscores"] = "ok"
+    except Exception as e:
+        failures += 1
+        status["boxscores"] = "failed"
+        log.error("boxscores failed: %s", e)
 
     keys = props.load_keys(dict(os.environ))
     now = datetime.now(timezone.utc)
