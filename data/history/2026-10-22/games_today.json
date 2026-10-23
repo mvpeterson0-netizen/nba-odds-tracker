@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-22T23:08:21+00:00",
+  "fetched_at": "2026-10-23T01:04:28+00:00",
   "source": "espn",
   "count": 2,
   "game_date": "2026-10-22",
@@ -8,11 +8,11 @@
       "game_id": "401909093",
       "start_utc": "2026-10-22T23:00Z",
       "short_name": "CLE @ PHI",
-      "state": "pre",
-      "status": "10/22 - 7:00 PM EDT",
+      "state": "in",
+      "status": "3:22 - 3rd",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "3:22",
       "venue": "Xfinity Mobile Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -22,27 +22,27 @@
         "team_id": "20",
         "abbr": "PHI",
         "name": "Philadelphia 76ers",
-        "score": 0,
+        "score": 78,
         "winner": null,
         "record": "1-0",
         "home_record": "0-0",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Tyrese Maxey",
-            "value": "28.0"
+            "value": "22"
           },
-          "reboundsPerGame": {
-            "player": "Joel Embiid",
-            "value": "11.0"
+          "rebounds": {
+            "player": "Jaylen Brown",
+            "value": "7"
           },
-          "assistsPerGame": {
-            "player": "LeBron James",
-            "value": "7.0"
+          "assists": {
+            "player": "Tyrese Maxey",
+            "value": "5"
           },
           "rating": {
             "player": "Tyrese Maxey",
-            "value": "28.0 PPG, 4.0 RPG, 5.0 APG, 3.0 SPG, 3.0 BPG"
+            "value": "22 PTS"
           }
         }
       },
@@ -50,19 +50,31 @@
         "team_id": "5",
         "abbr": "CLE",
         "name": "Cleveland Cavaliers",
-        "score": 0,
+        "score": 84,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
         "away_record": "0-0",
-        "leaders": null
+        "leaders": {
+          "points": {
+            "player": "Donovan Mitchell",
+            "value": "28"
+          },
+          "rebounds": {
+            "player": "Evan Mobley",
+            "value": "7"
+          },
+          "assists": {
+            "player": "James Harden",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Donovan Mitchell",
+            "value": "28 PTS"
+          }
+        }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "PHI -2.5",
-        "spread": -2.5,
-        "over_under": 236.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909094",
