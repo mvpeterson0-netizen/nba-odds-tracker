@@ -1,4 +1,4 @@
-/* Same design tokens and building blocks as the Stix NFL tracker. */
+/* Dime. Same design tokens and building blocks as the Stix NFL tracker. */
 :root {
   --bg: #f7f7f5; --panel: #ffffff; --ink: #1c1d1f; --muted: #6b6f76; --line: #e3e3df;
   --accent: #1f5fbf; --over: #1e7a46; --under: #b3261e; --push: #7a6a12; --void: #6b6f76;
@@ -136,3 +136,8 @@ tr:hover td.pcell { background: var(--panel); }
 details.resday summary { padding: 10px 14px; cursor: pointer; }
 details.resday[open] summary { border-bottom: 1px solid var(--line); }
 .guide p { margin: 0 0 10px; max-width: 760px; }
+
+/* Installed app (home screen): keep the header clear of the notch / status bar */
+@media (display-mode: standalone) {
+  .top { padding-top: max(10px, env(safe-area-inset-top)); }
+}

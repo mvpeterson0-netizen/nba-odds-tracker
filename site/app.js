@@ -1,5 +1,5 @@
 "use strict";
-// Stix NBA front end. Reads the JSON the GitHub Action writes to data/. No external libraries.
+// Dime front end (NBA props). Reads the JSON the GitHub Action writes to data/. No external libraries.
 
 const FILES = ["run", "games_today", "results_yesterday", "standings", "injuries", "odds", "props"];
 const D = {};               // file name -> parsed JSON (or null if missing)
@@ -413,3 +413,8 @@ async function status() {
   setInterval(refresh, 5 * 60 * 1000);
   document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") refresh(); });
 })();
+
+// Installable app: register the service worker (network-first; offline fallback only).
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => { navigator.serviceWorker.register("sw.js").catch(() => {}); });
+}

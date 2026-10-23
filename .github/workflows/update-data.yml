@@ -80,6 +80,7 @@ jobs:
           python -m nba_tracker.build data site/data
           V=$(cat site/*.html site/*.js site/*.css | sha256sum | cut -c1-10)
           sed -i -E "s/(src|href)=\"([a-z]+\.(js|css))\"/\1=\"\2?v=$V\"/g" site/index.html
+          sed -i "s/dime-v1/dime-$V/" site/sw.js
 
       - uses: actions/upload-pages-artifact@v3
         with:

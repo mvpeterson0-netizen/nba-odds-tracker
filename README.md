@@ -1,7 +1,12 @@
-# nba-odds-tracker
+# Dime (nba-odds-tracker)
 
-**Site:** https://mvpeterson0-netizen.github.io/nba-odds-tracker/ — Games, Odds, Standings,
-Injuries, and Log & sources tabs, in the same style as the Stix NFL tracker. Works on phones.
+**App:** https://mvpeterson0-netizen.github.io/nba-odds-tracker/ — NBA player props board, player
+pages, results, games, odds, standings and injuries. Same layout as the Stix NFL tracker.
+
+**Install on a phone:** iPhone — open the link in Safari → Share → **Add to Home Screen**.
+Android — open in Chrome → ⋮ menu → **Install app** (or **Add to Home screen**). It opens full
+screen with the Dime icon. Icons live in `site/icons/dime-*.png`; the original artwork is
+`site/icons/dime-logo.png`.
 
 Collects NBA games, results, standings and injuries on a schedule, with sportsbook
 odds layered on once an API key is added. Runs in GitHub Actions and commits JSON
