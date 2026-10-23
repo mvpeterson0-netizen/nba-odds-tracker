@@ -63,3 +63,13 @@ def test_combo_market_graded_from_sum(tmp_path):
     setup(tmp_path, [cap("draftkings", "Over", 50.5, -110, market="player_points_rebounds_assists")], [box("31")])
     ln = build.build(tmp_path)["lines"]["3112335"]["g1"]["player_points_rebounds_assists"]
     assert ln["act"] == 31 + 12 + 9 and ln["res"] == "over"
+
+
+def test_pregame_line_graded_and_morning_kept(tmp_path):
+    am = cap("draftkings", "Over", 26.5, -110, mb=600)
+    am.update(captured_at="2026-10-22T15:40:00Z", pull_type="morning")
+    pre = cap("draftkings", "Over", 28.5, -115, mb=60)
+    pre.update(captured_at="2026-10-23T00:40:00Z", pull_type="pregame")
+    setup(tmp_path, [am, pre], [box("28")])
+    ln = build.build(tmp_path)["lines"]["3112335"]["g1"]["player_points"]
+    assert ln["line"] == 28.5 and ln["pt"] == "pregame" and ln["am"]["line"] == 26.5 and ln["res"] == "under"

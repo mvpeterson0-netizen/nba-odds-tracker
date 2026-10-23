@@ -61,25 +61,67 @@ def test_falls_back_to_next_key_on_429(tmp_path, monkeypatch):
     s = props.run(tmp_path, [("ODDS_API_KEY", "k1"), ("ODDS_API_KEY_2", "k2")], NOW)
     # k2 failed with 429; k1 can't afford 4 credits -> logged, retried next run
     assert s["pulled"][0]["status"] in ("failed", "no_credits")
-    assert "soon" not in props.captured_events(tmp_path)
+    assert ("soon", "pregame") not in props.done_pulls(tmp_path)[0]
 
 
-def test_extras_guard():
+def test_budget_priorities():
     from datetime import datetime, timezone
     now = datetime(2026, 10, 22, 23, 0, tzinfo=timezone.utc)   # ~9 days left in the month
-    assert props.extras_affordable(485, now)
-    assert not props.extras_affordable(200, now)
-    assert props.extras_affordable(None, now)
+    full = props.CORE + props.EXTRA
+    assert props.budget(5000, now, "pregame") == full and props.budget(5000, now, "morning") == full
+    # One key at 485: pre-game and morning core only.
+    assert props.budget(485, now, "pregame") == props.CORE
+    assert props.budget(485, now, "morning") == props.CORE
+    # Very low: morning skipped to protect pre-game pulls; pre-game still core.
+    assert props.budget(150, now, "morning") is None
+    assert props.budget(150, now, "pregame") == props.CORE
+    assert props.budget(None, now, "morning") == full
 
 
-def test_requests_extras_when_affordable(tmp_path, monkeypatch):
-    seen = []
-    base = fake_get_factory([], [200])
+def test_plan_morning_and_pregame():
+    from datetime import datetime, timezone
+    ev = lambda i, t: {"id": i, "commence_time": t, "home_team": "H", "away_team": "A"}
+    events = [ev("tonight", "2026-10-23T23:00:00Z"), ev("late", "2026-10-24T02:00:00Z"),
+              ev("tomorrow", "2026-10-24T23:00:00Z")]
+    early = datetime(2026, 10, 23, 12, 30, tzinfo=timezone.utc)     # 7:30 AM CDT
+    assert props.plan(events, set(), early) == []
+    eight = datetime(2026, 10, 23, 13, 0, tzinfo=timezone.utc)      # 8:00 AM CDT
+    got = [(e["id"], t) for e, t in props.plan(events, set(), eight)]
+    assert got == [("tonight", "morning"), ("late", "morning")]      # 9 PM CDT tip is still today
+    assert props.plan(events, {("tonight", "morning"), ("late", "morning")}, eight) == []
+    hour_before = datetime(2026, 10, 23, 22, 0, tzinfo=timezone.utc)
+    got = [(e["id"], t) for e, t in props.plan(events, {("tonight", "morning"), ("late", "morning")}, hour_before)]
+    assert got == [("tonight", "pregame")]
+    # Morning never pulled (e.g. props posted late): still no morning pull inside the pre-game window.
+    got = [(e["id"], t) for e, t in props.plan(events, set(), hour_before)]
+    assert got == [("tonight", "pregame"), ("late", "morning")]
 
-    def spy(url, params, timeout=25.0):
-        if url.endswith("/odds"):
-            seen.append(params["markets"].split(","))
-        return base(url, params, timeout)
-    monkeypatch.setattr(props, "_get", spy)
-    props.run(tmp_path, [("ODDS_API_KEY_2", "k2")], NOW)
-    assert seen and len(seen[0]) == 10
+
+def test_lines_due():
+    from datetime import datetime, timezone
+    from nba_tracker.__main__ import lines_due
+    t = lambda s: datetime.fromisoformat(s).replace(tzinfo=timezone.utc)
+    assert not lines_due(t("2026-10-23T12:30"), t("2026-10-22T23:00"))           # 7:30 AM CDT
+    assert lines_due(t("2026-10-23T13:05"), t("2026-10-22T23:00"))               # 8:05 AM CDT
+    assert not lines_due(t("2026-10-23T15:00"), t("2026-10-23T13:05"))
+    assert lines_due(t("2026-10-23T22:00"), t("2026-10-23T13:05"), pregame_pulled=True)
+
+
+def test_empty_logged_once(tmp_path, monkeypatch):
+    def empty_get(url, params, timeout=25.0):
+        if url.endswith("/events"):
+            return 200, EVENTS, {"x-requests-remaining": "400"}
+        return 200, {**EVENT_ODDS, "bookmakers": []}, {"x-requests-remaining": "400", "x-requests-last": "0"}
+    monkeypatch.setattr(props, "_get", empty_get)
+    props.run(tmp_path, [("ODDS_API_KEY", "k")], NOW)
+    props.run(tmp_path, [("ODDS_API_KEY", "k")], NOW)
+    lines = (tmp_path / "pull_log.csv").read_text().splitlines()
+    assert len(lines) == 2 and ",empty," in lines[1] and lines[1].endswith(",morning")
+
+
+def test_migrates_old_files(tmp_path):
+    old = "at,event_id,matchup,commence_utc,minutes_before,status,markets,rows,credits_last,credits_remaining,key,note\n" \
+          "2026-10-22T22:50:40Z,e1,A @ B,2026-10-22T23:10:00Z,19,ok,player_points,10,4,490,ODDS_API_KEY,\n"
+    (tmp_path / "pull_log.csv").write_text(old)
+    props.migrate_columns(tmp_path / "pull_log.csv", props.PULL_FIELDS)
+    assert props.done_pulls(tmp_path)[0] == {("e1", "pregame")}

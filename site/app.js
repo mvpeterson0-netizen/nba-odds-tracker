@@ -306,7 +306,7 @@ function viewLog() {
       <tr><td data-label="Data">Injuries</td><td data-label="Source">ESPN league injury feed</td><td class="note">Return dates are ESPN estimates, not official.</td></tr>
       <tr><td data-label="Data">Sportsbook odds</td><td data-label="Source"><a href="https://the-odds-api.com/liveapi/guides/v4/">The Odds API v4</a></td><td class="note">US books; moneyline, spread, total in American odds. Each pull costs API credits. No-vig % = each book's two moneyline prices normalized to 100%, averaged across books.</td></tr>
     </tbody></table>
-    <p class="muted small">Pulls run at about 9:40 AM and 5:40 PM Central (14:40 and 22:40 UTC). Code and raw data: <a href="https://github.com/${esc(repo())}">github.com/${esc(repo())}</a></p>
+    <p class="muted small">Lines are pulled at 8:00 AM Central and about 1 hour before each tip; ESPN data refreshes on every run. Code and raw data: <a href="https://github.com/${esc(repo())}">github.com/${esc(repo())}</a></p>
   </div></div>`;
   return h;
 }
@@ -314,12 +314,12 @@ function viewLog() {
 function propsLog() {
   const px = D.props;
   if (!px) return "";
-  let h = `<div class="panel"><h3>Recent prop pulls</h3><div class="scroll"><table class="stable"><thead><tr><th>When</th><th>Game</th><th class="num">Min before tip</th><th>Status</th><th class="num">Prices</th><th class="num">Credits used / left</th></tr></thead><tbody>`;
+  let h = `<div class="panel"><h3>Recent prop pulls</h3><div class="scroll"><table class="stable"><thead><tr><th>When</th><th>Game</th><th>Pull</th><th class="num">Min before tip</th><th>Status</th><th class="num">Prices</th><th class="num">Credits used / left</th></tr></thead><tbody>`;
   const pulls = [...(px.pulls || [])].reverse().slice(0, 25);
-  if (!pulls.length) h += `<tr><td colspan="6" class="muted">No prop pulls yet.</td></tr>`;
+  if (!pulls.length) h += `<tr><td colspan="7" class="muted">No prop pulls yet.</td></tr>`;
   for (const p of pulls) {
     const cls = p.status === "ok" ? "ok" : p.status === "empty" ? "other" : "out";
-    h += `<tr><td data-label="When">${fmtTime(p.at)}</td><td data-label="Game">${esc(p.matchup)}</td><td class="num" data-label="Min before tip">${esc(p.minutes_before)}</td>
+    h += `<tr><td data-label="When">${fmtTime(p.at)}</td><td data-label="Game">${esc(p.matchup)}</td><td data-label="Pull">${p.pull_type === "morning" ? "8 AM" : "1 h pre-game"}</td><td class="num" data-label="Min before tip">${esc(p.minutes_before)}</td>
       <td data-label="Status"><span class="st ${cls}" title="${esc(p.note || "")}">${esc(p.status)}</span></td><td class="num" data-label="Prices">${esc(p.rows)}</td><td class="num" data-label="Credits">${esc(p.credits_last || "—")} / ${esc(p.credits_remaining || "—")}</td></tr>`;
   }
   h += `</tbody></table></div>`;

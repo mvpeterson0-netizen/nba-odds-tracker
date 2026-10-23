@@ -53,7 +53,20 @@ const lineOdds = (l) => `${l.op != null ? am(l.op) : "—"}/${l.up != null ? am(
 const bookShort = (b) => ({ draftkings: "DK", fanduel: "FD" }[b] || b);
 function lineTip(l) {
   const alt = Object.entries(l.alt || {}).map(([b, x]) => `${bookShort(b)} ${n1(x.line)} (${lineOdds(x)})`).join(", ");
-  return `${bookShort(l.book)} ${n1(l.line)} ${lineOdds(l)}, captured ${fmtTime(l.cap)} (${l.mb} min before tip)` + (alt ? `. Also: ${alt}` : "");
+  const kind = l.pt === "morning" ? "8 AM line" : "Pre-game line";
+  return `${kind}: ${bookShort(l.book)} ${n1(l.line)} ${lineOdds(l)}, captured ${fmtTime(l.cap)} (${l.mb} min before tip)` +
+    (l.am ? `. 8 AM: ${n1(l.am.line)} (${lineOdds(l.am)})` : "") +
+    (l.pt === "morning" ? ". Updates about 1 hour before tip." : "") + (alt ? `. Also: ${alt}` : "");
+}
+// Line with its context: "8 AM" chip until the pre-game pull lands; movement since 8 AM after.
+function lineCell(l) {
+  let h = `<b>${n1(l.line)}</b>`;
+  if (l.pt === "morning") h += ` <span class="chip amchip">8 AM</span>`;
+  else if (l.am && l.am.line != null && l.am.line !== l.line) {
+    const d = l.line - l.am.line;
+    h += ` <span class="mv ${d > 0 ? "up" : "down"}" title="Moved from ${n1(l.am.line)} at 8 AM">${d > 0 ? "▲" : "▼"}${n1(Math.abs(d))}</span>`;
+  }
+  return h;
 }
 
 // Rows for a date: [{aid, gid, mk, l}]
@@ -79,10 +92,8 @@ const gamesOn = (date) => Object.entries(PX().games).filter(([, g]) => g.date ==
 function linesDueText(gid) {
   const g = gameOf(gid);
   if (g.final || g.state === "in") return "No lines were captured for this game.";
-  const due = new Date(new Date(g.start).getTime() - 3.5 * 3600000);
-  return due > new Date()
-    ? `Lines are captured starting around ${fmtClock(due.toISOString())} (about 3 hours before tip).`
-    : "Lines are due now — they appear after the next update (checked every 30 minutes).";
+  const pre = new Date(new Date(g.start).getTime() - 3600000);
+  return `Lines are pulled at 8:00 AM Central (once the books post them) and again about 1 hour before tip (~${fmtClock(pre.toISOString())}).`;
 }
 function todayET() { return new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" }); }
 function defaultDate() {
@@ -128,7 +139,7 @@ function viewBoard() {
     <label>Team <select id="p-team"><option value="">All</option>${teams.map((t) => `<option ${t === P.team ? "selected" : ""}>${esc(t)}</option>`).join("")}</select></label>
     <label>Player <input type="search" id="p-q" placeholder="Search name" value="${esc(P.q)}"></label></div>`;
   const nPl = new Set(rows.map((r) => r.aid)).size;
-  h += `<p class="callout">${nPl} players · lines captured about 3 h before tip (DraftKings; FanDuel if DK has none) · AVG/L5/HIT use games before this date · HIT = games over this line, last ${HIT_N} played · <a href="#/guide">how it works</a></p>`;
+  h += `<p class="callout">${nPl} players · lines pulled at 8 AM CT and ~1 h before tip; the 1-hour line is graded (DraftKings; FanDuel if DK has none) · AVG/L5/HIT use games before this date · HIT = games over this line, last ${HIT_N} played · <a href="#/guide">how it works</a></p>`;
   const filtered = P.mk || P.team || q;
   const waiting = gids.filter((g) => !all.some((r) => r.gid === g) && (!P.game || P.game === g));
   if (!rows.length && (filtered || !waiting.length)) return h + `<p class="muted">${dates.length ? "No lines match these filters." : "No prop lines captured yet. Lines are pulled about 3 hours before each tip-off."}</p>`;
@@ -160,7 +171,7 @@ function viewBoard() {
           <div class="mrow mhead"><span></span><span>LINE</span><span>AVG</span><span>L5</span><span>HIT</span><span>TREND</span></div>`;
         for (const r of rs.sort((a, b) => MK_ORDER.indexOf(a.mk) - MK_ORDER.indexOf(b.mk))) {
           const f = form(aid, r.mk, P.date, r.l.line);
-          h += `<div class="mrow"><span class="mlab">${esc(mkById(r.mk).short)}</span><span><b>${n1(r.l.line)}</b> ${resHtml(r.l)}</span><span>${n1(f.avg)}</span><span>${n1(f.l5)}</span><span>${hitHtml(f)}</span><span>${trendHtml(f)}</span></div>`;
+          h += `<div class="mrow"><span class="mlab">${esc(mkById(r.mk).short)}</span><span>${lineCell(r.l)} ${resHtml(r.l)}</span><span>${n1(f.avg)}</span><span>${n1(f.l5)}</span><span>${hitHtml(f)}</span><span>${trendHtml(f)}</span></div>`;
         }
         h += `</a>`;
       }
@@ -172,7 +183,7 @@ function viewBoard() {
         rs.sort((a, b) => MK_ORDER.indexOf(a.mk) - MK_ORDER.indexOf(b.mk)).forEach((r, i) => {
           const f = form(aid, r.mk, P.date, r.l.line);
           h += `<tr class="${i === 0 ? "plr" : ""}">${i === 0 ? `<td rowspan="${rs.length}" class="pcell"><a href="#/player/${encodeURIComponent(aid)}"><b>${esc(p.name)}</b></a><div class="muted small">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}${p.nolog ? " · no games yet" : ""}</div></td>` : ""}
-            <td>${esc(mkById(r.mk).short)}</td><td class="num" title="${esc(lineTip(r.l))}"><b>${n1(r.l.line)}</b></td><td class="num">${lineOdds(r.l)}</td><td class="muted">${bookShort(r.l.book)}</td>
+            <td>${esc(mkById(r.mk).short)}</td><td class="num" title="${esc(lineTip(r.l))}">${lineCell(r.l)}</td><td class="num">${lineOdds(r.l)}</td><td class="muted">${bookShort(r.l.book)}</td>
             <td class="num">${n1(f.avg)}</td><td class="num">${n1(f.l5)}</td><td class="num">${hitHtml(f)}</td><td>${trendHtml(f)}</td>
             <td class="num">${r.l.act != null ? `<b>${n1(r.l.act)}</b>` : ""}</td><td>${resHtml(r.l)}</td></tr>`;
         });
@@ -283,7 +294,7 @@ function viewResults() {
 // ---------- Guide ----------
 function viewGuide() {
   return `<div class="panel"><h3>How the player board works</h3><div class="body guide">
-    <p><b>Lines.</b> For every game, DraftKings and FanDuel player props are pulled once from The Odds API, about 2½–3½ hours before tip-off. A run every 15 minutes checks for games entering that window. Nothing is pulled after tip. Core markets (points, rebounds, assists, threes) are always pulled. PRA, the two-stat combos, steals and blocks are added when API credits allow: the extras are skipped once the credits left are only enough for the core markets through the end of the month. DraftKings is the line shown and graded; FanDuel is used when DraftKings has no line for that player and stat. Hover or tap a line to see both books.</p>
+    <p><b>Lines.</b> DraftKings and FanDuel player props are pulled from The Odds API twice per game: at <b>8:00 AM Central</b> on game day (retried until the books post them) and again about <b>1 hour before tip</b>. Until the 1-hour pull lands, the board shows the 8 AM line with an <span class="chip amchip">8 AM</span> chip; after it, ▲/▼ shows how far the line moved since 8 AM. The 1-hour line is the one graded. Nothing is pulled after tip. Core markets (points, rebounds, assists, threes) are always pulled. PRA, the two-stat combos, steals and blocks are added when API credits allow: the extras are skipped once the credits left are only enough for the core markets through the end of the month. DraftKings is the line shown and graded; FanDuel is used when DraftKings has no line for that player and stat. Hover or tap a line to see both books.</p>
     <p><b>Grading.</b> Once the game is final, the actual stat from ESPN's box score is compared with the line: over, under or push. A player who had a line but didn't play is <i>void</i>, with ESPN's reason when it gives one.</p>
     <p><b>AVG / L5.</b> Season average and last-5 average over games the player actually played, counting only games before the date being viewed.</p>
     <p><b>HIT.</b> How many of his last ${HIT_N} games played went over <i>this</i> line (not the lines he had in those games).</p>

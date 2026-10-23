@@ -2,10 +2,13 @@ name: Update NBA data
 
 on:
   schedule:
-    # Every 15 minutes at off-peak minutes (GitHub delays runs at the top of the hour).
-    # Each run: ESPN data; player props for any game within 3.5 h of tip that has none yet;
-    # game lines only in the 14:00 / 22:00 / 00:00 UTC slots (see LINE_SLOTS_UTC).
+    # GitHub runs these on a best-effort basis (often hours late); an external trigger
+    # calling "Run workflow" every 30 minutes keeps the timing reliable.
+    # Each run: ESPN data; props at 8:00 AM Central (morning) and ~1 h before each tip (pre-game);
+    # game lines with the morning pull and with each pre-game pull. The code decides what's due.
     - cron: "8,23,38,53 * * * *"
+    - cron: "1 13 * * *"   # 8:01 AM CDT
+    - cron: "1 14 * * *"   # 8:01 AM CST (after Nov 1)
   workflow_dispatch: {}
   push:
     branches: [main]

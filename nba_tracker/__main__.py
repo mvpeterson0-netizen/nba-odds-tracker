@@ -41,19 +41,18 @@ def envelope(source: str, rows: list, **extra) -> dict:
     }
 
 
-# Game-line pulls happen once per slot (UTC hours), within 3 h after the slot opens.
-LINE_SLOTS_UTC = (14, 22, 0)
-SLOT_GRACE = timedelta(hours=3)
+# Game lines (moneyline/spread/total for every game, one 3-credit call) are pulled
+# at the 8:00 AM Central morning pull and again whenever a pre-game prop pull happens,
+# so each game also gets its line about an hour before tip.
+CENTRAL = ZoneInfo("America/Chicago")
 
 
-def lines_due(now: datetime, last: datetime | None) -> bool:
-    for h in LINE_SLOTS_UTC:
-        start = now.replace(hour=h, minute=0, second=0, microsecond=0)
-        if start > now:
-            start -= timedelta(days=1)
-        if now - start <= SLOT_GRACE and (last is None or last < start):
-            return True
-    return False
+def lines_due(now: datetime, last: datetime | None, pregame_pulled: bool = False) -> bool:
+    if pregame_pulled:
+        return True
+    local = now.astimezone(CENTRAL)
+    eight = local.replace(hour=8, minute=0, second=0, microsecond=0)
+    return local >= eight and (last is None or last < eight)
 
 
 def _last_lines_pull(out: Path) -> datetime | None:
@@ -118,7 +117,7 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
             log.error("props failed: %s", e)
         # Game lines (moneyline/spread/total): only in the scheduled slots, to save credits.
         last = _last_lines_pull(out)
-        if not lines_due(now, last):
+        if not lines_due(now, last, bool(extra_info.get("props", {}).get("pregame_pulled"))):
             status["odds"] = "not_due"
             log.info("odds              not due (last pull %s)", last)
         else:

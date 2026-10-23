@@ -1,13 +1,18 @@
-"""Pre-game NBA player prop capture from The Odds API (v4), spread across several keys.
+"""NBA player prop capture from The Odds API (v4), spread across several keys.
+
+Two captures per game:
+  morning  — the first run at or after 8:00 AM Central on game day (retried each run
+             until the books have posted props, as long as tip is more than ~70 min away)
+  pregame  — the first run within PREGAME_WINDOW (~1 hour) of tip; if no run lands in
+             the window, the next run before tip takes it. This is the graded line.
 
 Each run:
-  1. Calls the free /events endpoint with every key — this lists upcoming games and
-     reports each key's remaining credits without spending any.
-  2. For each game tipping off within PULL_WINDOW that has no successful pre-game
-     capture yet, pulls DraftKings + FanDuel props for CORE markets in one call
-     (cost = markets returned x 1 region, so at most 4 credits per game).
-  3. Appends every price to data/prop_captures.csv and every attempt to
-     data/pull_log.csv. Both files are append-only: captured lines are irreplaceable.
+  1. Calls the free /events endpoint with every key — lists upcoming games and reports
+     each key's remaining credits without spending any.
+  2. Pulls DraftKings + FanDuel props for every game that is due (one call per game;
+     cost = markets returned, so 4 credits core, 10 with extras; an empty answer is free).
+  3. Appends every price to data/prop_captures.csv and every attempt to data/pull_log.csv.
+     Both files are append-only: captured lines are irreplaceable.
 
 Nothing is pulled at or after tip-off.
 """
@@ -17,9 +22,10 @@ from __future__ import annotations
 import csv
 import json
 import logging
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, time, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -34,14 +40,17 @@ EXTRA = ["player_points_rebounds_assists", "player_points_rebounds", "player_poi
          "player_rebounds_assists", "player_steals", "player_blocks"]
 GAMES_PER_DAY_EST = 7.5   # rough NBA average (1,230 games over ~165 days); used only for the guard
 BOOKS = ["draftkings", "fanduel"]
-PULL_WINDOW = timedelta(hours=3, minutes=30)   # pull once a game is this close to tip
+CENTRAL = ZoneInfo("America/Chicago")
+MORNING_AT = time(8, 0)                         # morning pull: 8:00 AM Central on game day
+PREGAME_WINDOW = timedelta(minutes=70)          # pregame pull: first run within ~1 h of tip
+PULLS_PER_GAME = 2
 RESERVE = 0                                    # credits to leave untouched on each key
 GUARD_RESERVE = 20                             # extra cushion kept for core markets
 
 CAPTURE_FIELDS = ["captured_at", "event_id", "commence_utc", "minutes_before", "home_team", "away_team",
-                  "book", "market", "player", "side", "point", "price", "market_updated"]
+                  "book", "market", "player", "side", "point", "price", "market_updated", "pull_type"]
 PULL_FIELDS = ["at", "event_id", "matchup", "commence_utc", "minutes_before", "status", "markets",
-               "rows", "credits_last", "credits_remaining", "key", "note"]
+               "rows", "credits_last", "credits_remaining", "key", "note", "pull_type"]
 
 
 def utcnow() -> datetime:
@@ -104,27 +113,59 @@ def _append_csv(path: Path, fields: list[str], rows: list[dict]) -> None:
         w.writerows(rows)
 
 
-def captured_events(data_dir: Path) -> set[str]:
-    """Events with a successful pre-game pull already logged."""
-    return {r["event_id"] for r in _read_csv(data_dir / "pull_log.csv")
-            if r.get("status") == "ok" and r.get("event_id")}
+def migrate_columns(path: Path, fields: list[str], default_type: str = "pregame") -> None:
+    """Add the pull_type column to an older file in place (rows before it existed were pre-game pulls)."""
+    if not path.exists():
+        return
+    with path.open(newline="", encoding="utf-8") as f:
+        header = next(csv.reader(f), [])
+    if header == fields:
+        return
+    rows = _read_csv(path)
+    tmp = path.with_suffix(".tmp")
+    with tmp.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
+        w.writeheader()
+        for r in rows:
+            w.writerow({**r, "pull_type": r.get("pull_type") or default_type})
+    tmp.replace(path)
 
 
-def due_games(events: list[dict], done: set[str], now: datetime) -> list[dict]:
+def done_pulls(data_dir: Path) -> tuple[set, set]:
+    """(event, pull_type) pairs already captured, and pairs already logged as 'empty'."""
+    done, empty = set(), set()
+    for r in _read_csv(data_dir / "pull_log.csv"):
+        k = (r.get("event_id"), r.get("pull_type") or "pregame")
+        if r.get("status") == "ok":
+            done.add(k)
+        elif r.get("status") == "empty":
+            empty.add(k)
+    return done, empty
+
+
+def plan(events: list[dict], done: set, now: datetime) -> list[tuple[dict, str]]:
+    """Games due this run, as (event, pull_type)."""
+    local = now.astimezone(CENTRAL)
+    morning_open = local.time() >= MORNING_AT
     out = []
     for ev in events:
         try:
             start = parse_iso(ev["commence_time"])
         except (KeyError, ValueError):
             continue
-        if ev.get("id") in done:
+        if start <= now:
             continue
-        if now < start <= now + PULL_WINDOW:
-            out.append(ev)
-    return sorted(out, key=lambda e: e["commence_time"])
+        eid = ev.get("id")
+        if start - now <= PREGAME_WINDOW:
+            if (eid, "pregame") not in done:
+                out.append((ev, "pregame"))
+        elif morning_open and start.astimezone(CENTRAL).date() == local.date() and (eid, "morning") not in done:
+            out.append((ev, "morning"))
+    # Pre-game pulls first: they're the graded lines.
+    return sorted(out, key=lambda x: (x[1] != "pregame", x[0]["commence_time"]))
 
 
-def parse_event_props(body: dict, captured_at: str, minutes_before: int) -> list[dict]:
+def parse_event_props(body: dict, captured_at: str, minutes_before: int, pull_type: str = "pregame") -> list[dict]:
     rows = []
     for bk in (body or {}).get("bookmakers") or []:
         for m in bk.get("markets") or []:
@@ -143,6 +184,7 @@ def parse_event_props(body: dict, captured_at: str, minutes_before: int) -> list
                     "point": o.get("point"),
                     "price": o.get("price"),
                     "market_updated": m.get("last_update"),
+                    "pull_type": pull_type,
                 })
     return rows
 
@@ -181,15 +223,36 @@ def probe_markets(data_dir: Path, events: list[dict], keys: list[tuple[str, str]
     return "ok"
 
 
-def extras_affordable(total_remaining: int | None, now: datetime) -> bool:
-    """True when the credits left (all keys) cover the core markets for the rest of the month
-    plus one game's extras. Free-plan credits reset monthly."""
-    if total_remaining is None:
-        return True
+def _days_left(now: datetime) -> float:
     first_next = (now.replace(day=1) + timedelta(days=32)).replace(day=1, hour=0, minute=0, second=0, microsecond=0)
-    days_left = max(1.0, (first_next - now).total_seconds() / 86400)
-    need_core = len(CORE) * GAMES_PER_DAY_EST * days_left + GUARD_RESERVE
-    return total_remaining - len(EXTRA) >= need_core
+    return max(1.0, (first_next - now).total_seconds() / 86400)
+
+
+def budget(total_remaining: int | None, now: datetime, pull_type: str) -> list[str] | None:
+    """Markets to request, or None to skip. Priority when credits are short:
+    pre-game core > morning core > pre-game extras > morning extras.
+    Each tier is spent only if the credits left afterwards still cover every higher tier
+    through the end of the month (assumes credits reset monthly)."""
+    if total_remaining is None:
+        return CORE + EXTRA
+    g = GAMES_PER_DAY_EST * _days_left(now)
+    pre_core = len(CORE) * g
+    morn_core = pre_core + len(CORE) * g
+    pre_extra = morn_core + len(EXTRA) * g
+    t = total_remaining - GUARD_RESERVE
+    if pull_type == "pregame":
+        if t - len(CORE) - len(EXTRA) >= morn_core:
+            return CORE + EXTRA
+        return list(CORE)
+    if t - len(CORE) - len(EXTRA) >= pre_extra:
+        return CORE + EXTRA
+    if t - len(CORE) >= pre_core:
+        return list(CORE)
+    return None
+
+
+def extras_affordable(total_remaining: int | None, now: datetime) -> bool:   # kept for older callers/tests
+    return budget(total_remaining, now, "pregame") == CORE + EXTRA
 
 
 def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None) -> dict:
@@ -221,18 +284,29 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
     except Exception as e:
         summary["errors"].append(f"markets probe: {type(e).__name__}")
 
-    done = captured_events(data_dir)
-    games = due_games(events, done, now)
+    migrate_columns(data_dir / "prop_captures.csv", CAPTURE_FIELDS)
+    migrate_columns(data_dir / "pull_log.csv", PULL_FIELDS)
+    done, empty_logged = done_pulls(data_dir)
+    games = plan(events, done, now)
     summary["due"] = len(games)
+    summary["pregame_pulled"] = False
     log_rows, cap_rows = [], []
 
     # 2) Pull each due game with the key that has the most credits left.
-    for ev in games:
+    for ev, ptype in games:
         start = parse_iso(ev["commence_time"])
         mins = int((start - now).total_seconds() // 60)
         matchup = f"{ev.get('away_team')} @ {ev.get('home_team')}"
         total = None if any(v is None for v in remaining.values()) else sum(v for v in remaining.values())
-        markets = CORE + EXTRA if extras_affordable(total, now) else list(CORE)
+        markets = budget(total, now, ptype)
+        if markets is None:
+            if (ev["id"], ptype) not in empty_logged:
+                log_rows.append({"at": iso(utcnow()), "event_id": ev["id"], "matchup": matchup, "commence_utc": ev["commence_time"],
+                                 "minutes_before": mins, "status": "skipped", "rows": 0, "pull_type": ptype,
+                                 "note": "credits reserved for pre-game pulls"})
+                empty_logged.add((ev["id"], ptype))
+            summary["pulled"].append({"matchup": matchup, "type": ptype, "status": "skipped", "rows": 0})
+            continue
         cost = len(markets)
         tried: set[str] = set()
         status, note, rows, last, rem_after, used = "failed", "", [], None, None, ""
@@ -258,7 +332,7 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
                 remaining[lab] = rem_after
             used = lab
             if code == 200:
-                rows = parse_event_props(body, captured, mins)
+                rows = parse_event_props(body, captured, mins, ptype)
                 status = "ok" if rows else "empty"
                 note = "" if rows else "no props posted yet"
                 break
@@ -268,13 +342,19 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
                 continue
             break                            # other errors: retry on the next scheduled run
         mk = sorted({r["market"] for r in rows})
-        log_rows.append({"at": iso(utcnow()), "event_id": ev["id"], "matchup": matchup,
-                         "commence_utc": ev["commence_time"], "minutes_before": mins, "status": status,
-                         "markets": ",".join(mk), "rows": len(rows), "credits_last": last,
-                         "credits_remaining": rem_after, "key": used, "note": note})
+        # An empty answer (props not posted yet) is free and retried next run; log it once.
+        if status != "empty" or (ev["id"], ptype) not in empty_logged:
+            log_rows.append({"at": iso(utcnow()), "event_id": ev["id"], "matchup": matchup,
+                             "commence_utc": ev["commence_time"], "minutes_before": mins, "status": status,
+                             "markets": ",".join(mk), "rows": len(rows), "credits_last": last,
+                             "credits_remaining": rem_after, "key": used, "note": note, "pull_type": ptype})
+            if status == "empty":
+                empty_logged.add((ev["id"], ptype))
         cap_rows.extend(rows)
-        summary["pulled"].append({"matchup": matchup, "status": status, "rows": len(rows), "markets": len(mk)})
-        log.info("props %-45s %s (%d rows, %s min before tip)", matchup, status, len(rows), mins)
+        if ptype == "pregame" and status == "ok":
+            summary["pregame_pulled"] = True
+        summary["pulled"].append({"matchup": matchup, "type": ptype, "status": status, "rows": len(rows), "markets": len(mk)})
+        log.info("props %-8s %-45s %s (%d rows, %s min before tip)", ptype, matchup, status, len(rows), mins)
 
     _append_csv(data_dir / "prop_captures.csv", CAPTURE_FIELDS, cap_rows)
     _append_csv(data_dir / "pull_log.csv", PULL_FIELDS, log_rows)

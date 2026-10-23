@@ -148,23 +148,26 @@ def build(data_dir: Path) -> dict:
                     return gid
         return None
 
-    # ---- pre-game lines: latest capture before tip per (event, book, market, player, side)
-    latest: dict[tuple, dict] = {}
+    # ---- lines: for each (event, book, market, player) keep every pre-tip capture, by time.
+    # The latest capture is the current line (the ~1 h pre-game pull once it exists, which is
+    # what gets graded); the morning (8 AM) capture is kept to show how the line moved.
+    snaps: dict[tuple, dict] = defaultdict(lambda: defaultdict(dict))
     for c in caps:
         if (_f(c.get("minutes_before")) or 0) <= 0:
             continue
-        k = (c["event_id"], c["book"], c["market"], c["player"], c["side"])
-        if k not in latest or c["captured_at"] > latest[k]["captured_at"]:
-            latest[k] = c
-    grouped: dict[tuple, dict] = defaultdict(dict)    # (event, market, player) -> {book: {Over:row, Under:row}}
-    for (ev, book, mk, pl, side), c in latest.items():
-        grouped[(ev, mk, pl)].setdefault(book, {})[side] = c
+        snaps[(c["event_id"], c["book"], c["market"], c["player"])][c["captured_at"]][c["side"]] = c
+    grouped: dict[tuple, dict] = defaultdict(dict)    # (event, market, player) -> {book: (current sides, morning sides)}
+    for (ev, book, mk, pl), by_time in snaps.items():
+        times = sorted(by_time)
+        cur = by_time[times[-1]]
+        am = next((by_time[t] for t in times if (next(iter(by_time[t].values())).get("pull_type") == "morning")), None)
+        grouped[(ev, mk, pl)][book] = (cur, am)
 
     lines: dict[str, dict] = defaultdict(dict)        # aid -> game_id -> market -> line obj
     unmatched_games, unmatched_players = set(), set()
     ev_game: dict[str, str | None] = {}
     for (ev, mk, pl), books in grouped.items():
-        any_row = next(iter(next(iter(books.values())).values()))
+        any_row = next(iter(next(iter(books.values()))[0].values()))
         if ev not in ev_game:
             ev_game[ev] = game_for(any_row["home_team"], any_row["away_team"], any_row["commence_utc"])
         gid = ev_game[ev]
@@ -184,12 +187,17 @@ def build(data_dir: Path) -> dict:
             players.setdefault(aid, {"name": pl, "team": "", "pos": "", "nolog": True})
             unmatched_players.add(pl)
         per_book = {}
-        for book, sides in books.items():
+        for book, (sides, am) in books.items():
             o, u = sides.get("Over"), sides.get("Under")
             base = o or u
             per_book[book] = {"line": _f(base["point"]), "op": _f(o["price"]) if o else None,
                               "up": _f(u["price"]) if u else None, "cap": base["captured_at"],
-                              "mb": int(_f(base["minutes_before"]) or 0)}
+                              "mb": int(_f(base["minutes_before"]) or 0), "pt": base.get("pull_type") or "pregame"}
+            if am and am is not sides:
+                ao, au = am.get("Over"), am.get("Under")
+                ab = ao or au
+                per_book[book]["am"] = {"line": _f(ab["point"]), "op": _f(ao["price"]) if ao else None,
+                                        "up": _f(au["price"]) if au else None, "cap": ab["captured_at"]}
         prim = next((b for b in BOOK_ORDER if b in per_book and per_book[b]["line"] is not None), None)
         if prim is None:
             continue

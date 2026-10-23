@@ -38,8 +38,10 @@ once the key exists). Each is `{fetched_at, source, count, ..., rows: [...]}`.
 ## Schedule
 
 `.github/workflows/update-data.yml` runs tests, collects data, commits it, and redeploys the
-site to GitHub Pages — at 14:40 and 22:40 UTC daily, on manual **Run workflow**, and on pushes
-that change code or the site. If a source fails, the rest still publish and the run is marked
+site to GitHub Pages. Player props and game lines are pulled at **8:00 AM Central** on game day
+and again **about 1 hour before each tip** (the graded line). GitHub's own schedule is
+best-effort, so an external trigger should call the workflow's "Run workflow" (dispatch) API
+every 30 minutes. If a source fails, the rest still publish and the run is marked
 failed; the site shows a warning banner.
 
 ## Adding the odds key
