@@ -137,7 +137,8 @@ function viewBoard() {
     <label>Market <select id="p-mk">${[["", "All markets"], ["core", "Core (PTS/REB/AST/3PM)"], ["combo", "Combos (PRA, P+R, P+A, R+A)"], ["def", "Steals & blocks"]].map(([v, t]) => `<option value="${v}" ${v === P.mk ? "selected" : ""}>${t}</option>`).join("")}
       <optgroup label="Single market">${PX().markets.map((m) => `<option value="${m.id}" ${m.id === P.mk ? "selected" : ""}>${esc(m.label)}</option>`).join("")}</optgroup></select></label>
     <label>Team <select id="p-team"><option value="">All</option>${teams.map((t) => `<option ${t === P.team ? "selected" : ""}>${esc(t)}</option>`).join("")}</select></label>
-    <label>Player <input type="search" id="p-q" placeholder="Search name" value="${esc(P.q)}"></label></div>`;
+    <label>Player <input type="search" id="p-q" placeholder="Search name" value="${esc(P.q)}"></label>
+    <button type="button" id="p-clear" class="fclear" ${P.game || P.mk || P.team || P.q || P.date !== defaultDate() ? "" : "disabled"}>Clear filters</button></div>`;
   const nPl = new Set(rows.map((r) => r.aid)).size;
   h += `<p class="callout">${nPl} players · lines pulled at 8 AM CT and ~1 h before tip; the 1-hour line is graded (DraftKings; FanDuel if DK has none) · AVG/L5/HIT use games before this date · HIT = games over this line, last ${HIT_N} played · <a href="#/guide">how it works</a></p>`;
   const filtered = P.mk || P.team || q;
@@ -316,6 +317,7 @@ window.STIX_PROPS = {
     const on = (id, ev, fn) => { const el = document.getElementById(id); if (el) el.addEventListener(ev, fn); };
     document.querySelectorAll("[data-pgid]").forEach((b) => b.addEventListener("click", () => { P.game = b.dataset.pgid; render(); }));
     on("p-date", "change", (e) => { P.date = e.target.value; P.game = ""; render(); });
+    on("p-clear", "click", () => { Object.assign(P, { date: defaultDate(), game: "", mk: "", team: "", q: "" }); render(); });
     on("p-mk", "change", (e) => { P.mk = e.target.value; render(); });
     on("p-team", "change", (e) => { P.team = e.target.value; render(); });
     on("p-q", "input", (e) => { P.q = e.target.value; clearTimeout(P_TYPING); P_TYPING = setTimeout(() => { render(); const el = document.getElementById("p-q"); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }, 200); });

@@ -143,3 +143,6 @@ details.resday[open] summary { border-bottom: 1px solid var(--line); }
 }
 .amchip { background: var(--warn-bg); color: var(--warn-ink); font-size: 10px; padding: 0 5px; }
 .mv { font-size: 11px; font-weight: 650; } .mv.up { color: var(--over); } .mv.down { color: var(--under); }
+button.fclear { align-self: end; padding: 6px 14px; }
+button.fclear:not([disabled]) { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+button.fclear[disabled] { opacity: .5; cursor: default; }
