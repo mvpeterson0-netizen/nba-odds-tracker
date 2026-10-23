@@ -70,7 +70,19 @@ function propRows(date) {
 function lineDates() {
   const s = new Set();
   for (const gs of Object.values(PX().lines)) for (const gid of Object.keys(gs)) if (gameOf(gid).date) s.add(gameOf(gid).date);
+  // Today's slate shows up even before any lines are captured.
+  const t = todayET();
+  if (Object.values(PX().games).some((g) => g.date === t)) s.add(t);
   return [...s].sort();
+}
+const gamesOn = (date) => Object.entries(PX().games).filter(([, g]) => g.date === date).map(([gid]) => gid);
+function linesDueText(gid) {
+  const g = gameOf(gid);
+  if (g.final || g.state === "in") return "No lines were captured for this game.";
+  const due = new Date(new Date(g.start).getTime() - 3.5 * 3600000);
+  return due > new Date()
+    ? `Lines are captured starting around ${fmtClock(due.toISOString())} (about 3 hours before tip).`
+    : "Lines are due now — they appear after the next update (checked every 30 minutes).";
 }
 function todayET() { return new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" }); }
 function defaultDate() {
@@ -96,7 +108,7 @@ function viewBoard() {
   const dates = lineDates();
   if (!P.date || !dates.includes(P.date)) P.date = defaultDate();
   const all = propRows(P.date);
-  const gids = [...new Set(all.map((r) => r.gid))].sort((a, b) => String(gameOf(a).start).localeCompare(String(gameOf(b).start)));
+  const gids = [...new Set([...all.map((r) => r.gid), ...gamesOn(P.date)])].sort((a, b) => String(gameOf(a).start).localeCompare(String(gameOf(b).start)));
   if (P.game && !gids.includes(P.game)) P.game = "";
   const q = P.q.trim().toLowerCase();
   const pl = (aid) => PX().players[aid] || { name: aid };
@@ -117,7 +129,9 @@ function viewBoard() {
     <label>Player <input type="search" id="p-q" placeholder="Search name" value="${esc(P.q)}"></label></div>`;
   const nPl = new Set(rows.map((r) => r.aid)).size;
   h += `<p class="callout">${nPl} players · lines captured about 3 h before tip (DraftKings; FanDuel if DK has none) · AVG/L5/HIT use games before this date · HIT = games over this line, last ${HIT_N} played · <a href="#/guide">how it works</a></p>`;
-  if (!rows.length) return h + `<p class="muted">${dates.length ? "No lines match these filters." : "No prop lines captured yet. Lines are pulled about 3 hours before each tip-off."}</p>`;
+  const filtered = P.mk || P.team || q;
+  const waiting = gids.filter((g) => !all.some((r) => r.gid === g) && (!P.game || P.game === g));
+  if (!rows.length && (filtered || !waiting.length)) return h + `<p class="muted">${dates.length ? "No lines match these filters." : "No prop lines captured yet. Lines are pulled about 3 hours before each tip-off."}</p>`;
 
   // group: game -> player -> markets
   const byGame = new Map();
@@ -128,7 +142,11 @@ function viewBoard() {
     m.get(r.aid).push(r);
   }
   const phone = !!(window.matchMedia && window.matchMedia("(max-width: 760px)").matches);
-  for (const gid of gids.filter((g) => byGame.has(g))) {
+  for (const gid of gids.filter((g) => byGame.has(g) || (!filtered && waiting.includes(g)))) {
+    if (!byGame.has(gid)) {
+      h += `<section class="mgame"><div class="mgame-h">${gameHeader(gid)}</div><p class="muted small">${linesDueText(gid)}</p></section>`;
+      continue;
+    }
     const plist = [...byGame.get(gid).entries()].sort((a, b) => {
       const pa = a[1].find((x) => x.mk === "player_points"), pb = b[1].find((x) => x.mk === "player_points");
       return (pb ? pb.l.line : 0) - (pa ? pa.l.line : 0);
