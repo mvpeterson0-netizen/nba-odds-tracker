@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-23T18:05:20+00:00",
+  "finished_at": "2026-10-23T19:55:46+00:00",
   "game_date": "2026-10-23",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -9,7 +9,7 @@
     "injuries": "ok",
     "boxscores": "ok",
     "props": "ok",
-    "odds": "not_due"
+    "odds": "ok"
   },
   "boxscores": {
     "new_games": 0,
@@ -22,14 +22,22 @@
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 447,
+      "ODDS_API_KEY": 437,
       "ODDS_API_KEY_2": 447
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Chicago Bulls @ Milwaukee Bucks",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 326,
+        "markets": 10
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
