@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-23T19:55:46+00:00",
+  "finished_at": "2026-10-23T23:05:00+00:00",
   "game_date": "2026-10-23",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,31 +12,66 @@
     "odds": "ok"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
+    "new_games": 1,
+    "player_rows": 31,
     "unparsed": [],
-    "queued": 0,
+    "queued": 1,
     "errors": [],
     "rosters_fetched": 0
   },
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 437,
-      "ODDS_API_KEY_2": 447
+      "ODDS_API_KEY": 414,
+      "ODDS_API_KEY_2": 408
     },
     "pulled": [
       {
-        "matchup": "Chicago Bulls @ Milwaukee Bucks",
+        "matchup": "Atlanta Hawks @ Charlotte Hornets",
         "type": "pregame",
         "status": "ok",
-        "rows": 326,
+        "rows": 312,
+        "markets": 9
+      },
+      {
+        "matchup": "Dallas Mavericks @ Indiana Pacers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 410,
+        "markets": 10
+      },
+      {
+        "matchup": "Minnesota Timberwolves @ Orlando Magic",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 352,
+        "markets": 10
+      },
+      {
+        "matchup": "Toronto Raptors @ Washington Wizards",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 370,
+        "markets": 10
+      },
+      {
+        "matchup": "New York Knicks @ Boston Celtics",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 408,
+        "markets": 10
+      },
+      {
+        "matchup": "Detroit Pistons @ Miami Heat",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 376,
         "markets": 10
       }
     ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
+    "due": 6,
     "pregame_pulled": true,
     "status": "ok"
   }
