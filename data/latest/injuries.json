@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-10-24T19:52:17+00:00",
+  "fetched_at": "2026-10-24T22:08:50+00:00",
   "source": "espn",
-  "count": 82,
+  "count": 85,
   "rows": [
     {
       "team_id": "1",
@@ -73,19 +73,6 @@
       "team": "Charlotte Hornets",
       "team_abbr": "CHA",
       "player_id": null,
-      "player": "Christian Anderson",
-      "position": "G",
-      "status": "Day-To-Day",
-      "injury": "Ankle",
-      "return_date": "2026-10-24",
-      "comment": "Anderson (ankle) is probable for Saturday's game against the Heat.",
-      "updated": "2026-10-24T17:24Z"
-    },
-    {
-      "team_id": "30",
-      "team": "Charlotte Hornets",
-      "team_abbr": "CHA",
-      "player_id": null,
       "player": "Coby White",
       "position": "G",
       "status": "Out",
@@ -130,8 +117,21 @@
       "status": "Day-To-Day",
       "injury": "Head",
       "return_date": "2026-10-24",
-      "comment": "Essengue (head) is probable for Saturday's game against the Wizards, Joel Lorenzi of The Athletic reports.",
-      "updated": "2026-10-24T16:58Z"
+      "comment": "Essengue (head) has been downgraded to questionable for Saturday's game against the Wizards.",
+      "updated": "2026-10-24T21:19Z"
+    },
+    {
+      "team_id": "4",
+      "team": "Chicago Bulls",
+      "team_abbr": "CHI",
+      "player_id": null,
+      "player": "Patrick Williams",
+      "position": "F",
+      "status": "Day-To-Day",
+      "injury": "Groin",
+      "return_date": "2026-10-24",
+      "comment": "Williams (groin) is listed as questionable for Saturday's game against the Wizards.",
+      "updated": "2026-10-24T21:17Z"
     },
     {
       "team_id": "4",
@@ -151,26 +151,39 @@
       "team": "Dallas Mavericks",
       "team_abbr": "DAL",
       "player_id": null,
-      "player": "Zaccharie Risacher",
+      "player": "Morez Johnson Jr.",
       "position": "F",
       "status": "Day-To-Day",
-      "injury": "Hip",
+      "injury": "Lower Leg",
       "return_date": "2026-10-24",
-      "comment": "Risacher is questionable for Saturday's game against the Spurs due to right hip soreness.",
-      "updated": "2026-10-24T18:31Z"
+      "comment": "Johnson (shin) is listed as probable for Saturday's game against the Spurs.",
+      "updated": "2026-10-24T21:50Z"
     },
     {
       "team_id": "6",
       "team": "Dallas Mavericks",
       "team_abbr": "DAL",
       "player_id": null,
-      "player": "Morez Johnson Jr.",
+      "player": "Zaccharie Risacher",
       "position": "F",
       "status": "Day-To-Day",
-      "injury": "Lower Leg",
+      "injury": "Hip",
       "return_date": "2026-10-24",
-      "comment": "Johnson (shin) is listed as questionable for Saturday's game against the Spurs.",
-      "updated": "2026-10-24T18:29Z"
+      "comment": "Risacher (hip) has been upgraded from questionable to probable ahead of Saturday's game against San Antonio.",
+      "updated": "2026-10-24T21:49Z"
+    },
+    {
+      "team_id": "6",
+      "team": "Dallas Mavericks",
+      "team_abbr": "DAL",
+      "player_id": null,
+      "player": "Kyrie Irving",
+      "position": "G",
+      "status": "Day-To-Day",
+      "injury": "Knee",
+      "return_date": "2026-10-24",
+      "comment": "Irving (knee) has been downgraded from questionable to doubtful ahead of Saturday's game against the Spurs.",
+      "updated": "2026-10-24T21:48Z"
     },
     {
       "team_id": "6",
@@ -197,19 +210,6 @@
       "return_date": "2026-10-24",
       "comment": "Howard (calf) is listed as doubtful against the Spurs on Saturday.",
       "updated": "2026-10-24T18:27Z"
-    },
-    {
-      "team_id": "6",
-      "team": "Dallas Mavericks",
-      "team_abbr": "DAL",
-      "player_id": null,
-      "player": "Kyrie Irving",
-      "position": "G",
-      "status": "Day-To-Day",
-      "injury": "Knee",
-      "return_date": "2026-10-24",
-      "comment": "Irving (knee) is listed as questionable for Saturday's game against San Antonio.",
-      "updated": "2026-10-24T18:26Z"
     },
     {
       "team_id": "6",
@@ -336,10 +336,10 @@
       "player": "Ausar Thompson",
       "position": "G",
       "status": "Day-To-Day",
-      "injury": "Undisclosed",
+      "injury": "Ankle",
       "return_date": "2026-10-25",
-      "comment": "Thompson exited Friday's game with an undisclosed injury and did not return, finishing with four points (2-5 FG, 0-1 3Pt), three rebounds, four assists, one steal, one block and three turnovers across 19 minutes in a 128-111 win over the Heat.",
-      "updated": "2026-10-24T03:06Z"
+      "comment": "Thompson (ankle) is listed as questionable for Sunday's game against Philadelphia.",
+      "updated": "2026-10-24T20:14Z"
     },
     {
       "team_id": "8",
@@ -348,11 +348,63 @@
       "player_id": null,
       "player": "Jalen Duren",
       "position": "C",
+      "status": "Out",
+      "injury": "Hamstring",
+      "return_date": "2026-10-27",
+      "comment": "Duren has been ruled out for Sunday's game against the 76ers due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports.",
+      "updated": "2026-10-24T20:08Z"
+    },
+    {
+      "team_id": "9",
+      "team": "Golden State Warriors",
+      "team_abbr": "GS",
+      "player_id": null,
+      "player": "Charles Bassey",
+      "position": "C",
       "status": "Day-To-Day",
-      "injury": "Thigh",
-      "return_date": "2026-10-25",
-      "comment": "Duren (thigh) exited Friday's 128-111 win over the Heat in the second quarter and did not return, finishing with four points (2-4 FG), six rebounds, three assists, one steal and one block across 10 minutes.",
-      "updated": "2026-10-24T02:40Z"
+      "injury": "Knee",
+      "return_date": "2026-10-24",
+      "comment": "Bassey (knee) is listed as questionable for Saturday's game against the Suns.",
+      "updated": "2026-10-24T20:22Z"
+    },
+    {
+      "team_id": "9",
+      "team": "Golden State Warriors",
+      "team_abbr": "GS",
+      "player_id": null,
+      "player": "Al Horford",
+      "position": "C",
+      "status": "Out",
+      "injury": "Back",
+      "return_date": "2026-10-26",
+      "comment": "Horford (back) has been ruled out for Saturday's game against the Suns.",
+      "updated": "2026-10-24T20:20Z"
+    },
+    {
+      "team_id": "9",
+      "team": "Golden State Warriors",
+      "team_abbr": "GS",
+      "player_id": null,
+      "player": "Draymond Green",
+      "position": "F",
+      "status": "Day-To-Day",
+      "injury": "Back",
+      "return_date": "2026-10-24",
+      "comment": "Green is doubtful to play Saturday against the Suns due to bilateral low back soreness.",
+      "updated": "2026-10-24T20:17Z"
+    },
+    {
+      "team_id": "9",
+      "team": "Golden State Warriors",
+      "team_abbr": "GS",
+      "player_id": null,
+      "player": "Stephen Curry",
+      "position": "G",
+      "status": "Out",
+      "injury": "Rest",
+      "return_date": "2026-10-26",
+      "comment": "Curry (rest) won't play Saturday against the Suns.",
+      "updated": "2026-10-24T20:08Z"
     },
     {
       "team_id": "9",
@@ -366,32 +418,6 @@
       "return_date": "2026-10-26",
       "comment": "Podziemski (back) told reporters Friday that he will not play in the second leg of the Warriors' back-to-back set Saturday against the Suns, Nick Friedell of The Athletic reports.",
       "updated": "2026-10-24T14:11Z"
-    },
-    {
-      "team_id": "9",
-      "team": "Golden State Warriors",
-      "team_abbr": "GS",
-      "player_id": null,
-      "player": "Stephen Curry",
-      "position": "G",
-      "status": "Day-To-Day",
-      "injury": "Rest",
-      "return_date": "2026-10-24",
-      "comment": "Curry told reporters after Friday's loss to the Grizzlies that he will \"probably not\" play against the Suns on Saturday, Nick Friedell of The Athletic reports.",
-      "updated": "2026-10-24T14:07Z"
-    },
-    {
-      "team_id": "9",
-      "team": "Golden State Warriors",
-      "team_abbr": "GS",
-      "player_id": null,
-      "player": "Charles Bassey",
-      "position": "C",
-      "status": "Day-To-Day",
-      "injury": "Knee",
-      "return_date": "2026-10-24",
-      "comment": "Bassey (knee) is out for Friday's game versus the Grizzlies.",
-      "updated": "2026-10-24T13:46Z"
     },
     {
       "team_id": "9",
@@ -489,13 +515,26 @@
       "team": "Indiana Pacers",
       "team_abbr": "IND",
       "player_id": null,
-      "player": "T.J. McConnell",
+      "player": "Aaron Nesmith",
       "position": "G",
       "status": "Day-To-Day",
       "injury": "Hamstring",
       "return_date": "2026-10-25",
-      "comment": "McConnell (hamstring) is out for Friday's game against Dallas.",
-      "updated": "2026-10-24T03:07Z"
+      "comment": "Nesmith (hamstring) is listed as probable for Sunday's game against Brooklyn.",
+      "updated": "2026-10-24T21:05Z"
+    },
+    {
+      "team_id": "11",
+      "team": "Indiana Pacers",
+      "team_abbr": "IND",
+      "player_id": null,
+      "player": "T.J. McConnell",
+      "position": "G",
+      "status": "Out",
+      "injury": "Hamstring",
+      "return_date": "2026-10-26",
+      "comment": "McConnell (hamstring) is out for Sunday's game against the Nets.",
+      "updated": "2026-10-24T21:03Z"
     },
     {
       "team_id": "11",
@@ -641,19 +680,6 @@
       "updated": "2026-10-24T13:45Z"
     },
     {
-      "team_id": "14",
-      "team": "Miami Heat",
-      "team_abbr": "MIA",
-      "player_id": null,
-      "player": "Pelle Larsson",
-      "position": "G",
-      "status": "Day-To-Day",
-      "injury": "Finger",
-      "return_date": "2026-10-24",
-      "comment": "Larsson (finger) is listed as probable for Saturday's game against Charlotte.",
-      "updated": "2026-10-24T17:13Z"
-    },
-    {
       "team_id": "16",
       "team": "Minnesota Timberwolves",
       "team_abbr": "MIN",
@@ -678,6 +704,19 @@
       "return_date": "2026-10-28",
       "comment": "Missi (knee) has been ruled out for Saturday's game against the Nuggets.",
       "updated": "2026-10-24T19:05Z"
+    },
+    {
+      "team_id": "18",
+      "team": "New York Knicks",
+      "team_abbr": "NY",
+      "player_id": null,
+      "player": "Jose Alvarado",
+      "position": "G",
+      "status": "Day-To-Day",
+      "injury": "Ankle",
+      "return_date": "2026-10-25",
+      "comment": "Alvarado is questionable for Sunday's game against Orlando due to a left ankle sprain.",
+      "updated": "2026-10-24T21:34Z"
     },
     {
       "team_id": "25",
@@ -859,7 +898,7 @@
       "injury": "Knee",
       "return_date": "2026-10-24",
       "comment": "Kennard (knee) is questionable to play Saturday against the Warriors.",
-      "updated": "2026-10-24T19:32Z"
+      "updated": "2026-10-24T22:00Z"
     },
     {
       "team_id": "21",
@@ -868,11 +907,11 @@
       "player_id": null,
       "player": "Oso Ighodaro",
       "position": "F",
-      "status": "Day-To-Day",
+      "status": "Out",
       "injury": "Oblique",
-      "return_date": "2026-10-24",
-      "comment": "Ighodaro (oblique) is listed as doubtful for Saturday's game against Golden State.",
-      "updated": "2026-10-24T00:24Z"
+      "return_date": "2026-10-26",
+      "comment": "Ighodaro (oblique) has been ruled out for Saturday's game against the Warriors, Duane Rankin of The Arizona Republic reports.",
+      "updated": "2026-10-24T20:24Z"
     },
     {
       "team_id": "21",
