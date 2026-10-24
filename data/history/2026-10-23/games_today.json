@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-23T23:04:58+00:00",
+  "fetched_at": "2026-10-24T01:32:15+00:00",
   "source": "espn",
   "count": 12,
   "game_date": "2026-10-23",
@@ -12,7 +12,7 @@
       "status": "Final",
       "completed": true,
       "period": 4,
-      "clock": "0.0",
+      "clock": "12:00",
       "venue": "Fiserv Forum",
       "neutral_site": false,
       "broadcasts": [
@@ -82,11 +82,11 @@
       "game_id": "401909095",
       "start_utc": "2026-10-23T23:00Z",
       "short_name": "NY @ BOS",
-      "state": "pre",
-      "status": "10/23 - 7:00 PM EDT",
+      "state": "in",
+      "status": "4:33 - 4th",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 4,
+      "clock": "4:33",
       "venue": "TD Garden",
       "neutral_site": false,
       "broadcasts": [
@@ -96,27 +96,27 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 0,
+        "score": 94,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Paul George",
-            "value": "38.0"
-          },
-          "reboundsPerGame": {
-            "player": "Jordan Walsh",
-            "value": "6.0"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Jayson Tatum",
-            "value": "11.0"
+            "value": "27"
+          },
+          "rebounds": {
+            "player": "Jayson Tatum",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Jayson Tatum",
+            "value": "6"
           },
           "rating": {
-            "player": "Paul George",
-            "value": "38.0 PPG, 5.0 RPG, 3.0 APG, 5.0 SPG"
+            "player": "Jayson Tatum",
+            "value": "27 PTS, 9 REB, 6 AST, 3 STL"
           }
         }
       },
@@ -124,45 +124,40 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 0,
+        "score": 89,
         "winner": null,
         "record": "0-1",
         "home_record": "0-1",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jalen Brunson",
-            "value": "21.0"
+          "points": {
+            "player": "Karl-Anthony Towns",
+            "value": "20"
           },
-          "reboundsPerGame": {
-            "player": "Andre Drummond",
-            "value": "14.0"
+          "rebounds": {
+            "player": "Josh Hart",
+            "value": "10"
           },
-          "assistsPerGame": {
-            "player": "Andre Drummond",
-            "value": "4.0"
+          "assists": {
+            "player": "OG Anunoby",
+            "value": "7"
           },
           "rating": {
             "player": "Karl-Anthony Towns",
-            "value": "19.0 PPG, 12.0 RPG, 1.0 APG, 1.0 SPG, 2.0 BPG"
+            "value": "20 PTS, 9 REB"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "BOS -2.5",
-        "spread": -2.5,
-        "over_under": 220.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909843",
       "start_utc": "2026-10-23T23:00Z",
       "short_name": "ATL @ CHA",
-      "state": "pre",
-      "status": "10/23 - 7:00 PM EDT",
-      "completed": false,
-      "period": 0,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 4,
       "clock": "0.0",
       "venue": "Spectrum Center",
       "neutral_site": false,
@@ -173,27 +168,27 @@
         "team_id": "30",
         "abbr": "CHA",
         "name": "Charlotte Hornets",
-        "score": 0,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "0-0",
+        "score": 81,
+        "winner": false,
+        "record": "1-1",
+        "home_record": "0-1",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Grayson Allen",
-            "value": "21.0"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Naz Reid",
-            "value": "11.0"
+            "value": "17"
           },
-          "assistsPerGame": {
-            "player": "Naz Reid",
-            "value": "7.0"
+          "rebounds": {
+            "player": "Moussa Diabate",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Sion James",
+            "value": "5"
           },
           "rating": {
             "player": "Naz Reid",
-            "value": "20.0 PPG, 11.0 RPG, 7.0 APG"
+            "value": "17 PTS, 6 REB"
           }
         }
       },
@@ -201,46 +196,41 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 0,
-        "winner": null,
-        "record": "1-0",
+        "score": 128,
+        "winner": true,
+        "record": "2-0",
         "home_record": "0-0",
-        "away_record": "1-0",
+        "away_record": "2-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Nickeil Alexander-Walker",
-            "value": "31.0"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Jalen Johnson",
-            "value": "14.0"
+            "value": "19"
           },
-          "assistsPerGame": {
-            "player": "Onyeka Okongwu",
-            "value": "7.0"
+          "rebounds": {
+            "player": "Dyson Daniels",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Jalen Johnson",
+            "value": "8"
           },
           "rating": {
-            "player": "Nickeil Alexander-Walker",
-            "value": "31.0 PPG, 4.0 RPG, 3.0 APG, 1.0 SPG, 1.0 BPG"
+            "player": "Jalen Johnson",
+            "value": "19 PTS, 7 REB, 8 AST, 3 STL"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ATL -2.5",
-        "spread": 2.5,
-        "over_under": 226.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909844",
       "start_utc": "2026-10-23T23:00Z",
       "short_name": "DAL @ IND",
-      "state": "pre",
-      "status": "10/23 - 7:00 PM EDT",
+      "state": "in",
+      "status": "5:31 - 4th",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 4,
+      "clock": "5:31",
       "venue": "Gainbridge Fieldhouse",
       "neutral_site": false,
       "broadcasts": [
@@ -252,27 +242,27 @@
         "team_id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers",
-        "score": 0,
+        "score": 92,
         "winner": null,
         "record": "1-0",
         "home_record": "0-0",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Pascal Siakam",
-            "value": "30.0"
+            "value": "21"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Ivica Zubac",
-            "value": "15.0"
+            "value": "11"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Tyrese Haliburton",
-            "value": "12.0"
+            "value": "6"
           },
           "rating": {
             "player": "Tyrese Haliburton",
-            "value": "23.0 PPG, 2.0 RPG, 12.0 APG, 1.0 SPG"
+            "value": "14 PTS, 6 AST"
           }
         }
       },
@@ -280,46 +270,41 @@
         "team_id": "6",
         "abbr": "DAL",
         "name": "Dallas Mavericks",
-        "score": 0,
+        "score": 112,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
+            "player": "Kyrie Irving",
+            "value": "24"
+          },
+          "rebounds": {
+            "player": "P.J. Washington",
+            "value": "10"
+          },
+          "assists": {
             "player": "Cooper Flagg",
-            "value": "32.0"
-          },
-          "reboundsPerGame": {
-            "player": "Zaccharie Risacher",
-            "value": "6.0"
-          },
-          "assistsPerGame": {
-            "player": "Naji Marshall",
-            "value": "6.0"
+            "value": "6"
           },
           "rating": {
-            "player": "Cooper Flagg",
-            "value": "32.0 PPG, 5.0 RPG, 2.0 APG, 3.0 SPG, 1.0 BPG"
+            "player": "Kyrie Irving",
+            "value": "24 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "IND -7.5",
-        "spread": -7.5,
-        "over_under": 241.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909845",
       "start_utc": "2026-10-23T23:00Z",
       "short_name": "MIN @ ORL",
-      "state": "pre",
-      "status": "10/23 - 7:00 PM EDT",
+      "state": "in",
+      "status": "1:48 - 4th",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 4,
+      "clock": "1:48",
       "venue": "Kia Center",
       "neutral_site": false,
       "broadcasts": [
@@ -330,27 +315,27 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 0,
+        "score": 92,
         "winner": null,
         "record": "0-1",
         "home_record": "0-1",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Paolo Banchero",
-            "value": "35.0"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Wendell Carter Jr.",
-            "value": "7.0"
+            "value": "20"
           },
-          "assistsPerGame": {
-            "player": "Paolo Banchero",
-            "value": "10.0"
+          "rebounds": {
+            "player": "Wendell Carter Jr.",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Jalen Suggs",
+            "value": "6"
           },
           "rating": {
-            "player": "Paolo Banchero",
-            "value": "35.0 PPG, 7.0 RPG, 10.0 APG, 1.0 SPG"
+            "player": "Wendell Carter Jr.",
+            "value": "20 PTS, 9 REB"
           }
         }
       },
@@ -358,46 +343,41 @@
         "team_id": "16",
         "abbr": "MIN",
         "name": "Minnesota Timberwolves",
-        "score": 0,
+        "score": 112,
         "winner": null,
         "record": "1-0",
         "home_record": "0-0",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Anthony Edwards",
-            "value": "45.0"
+          "points": {
+            "player": "Jaden McDaniels",
+            "value": "15"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Rudy Gobert",
-            "value": "15.0"
+            "value": "9"
           },
-          "assistsPerGame": {
-            "player": "LaMelo Ball",
-            "value": "6.0"
+          "assists": {
+            "player": "Ayo Dosunmu",
+            "value": "9"
           },
           "rating": {
-            "player": "Anthony Edwards",
-            "value": "45.0 PPG, 10.0 RPG, 3.0 APG, 2.0 SPG, 1.0 BPG"
+            "player": "Ayo Dosunmu",
+            "value": "14 PTS, 6 REB, 9 AST"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ORL -1.5",
-        "spread": -1.5,
-        "over_under": 234.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909846",
       "start_utc": "2026-10-23T23:00Z",
       "short_name": "TOR @ WSH",
-      "state": "pre",
-      "status": "10/23 - 7:00 PM EDT",
+      "state": "in",
+      "status": "3:15 - 4th",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 4,
+      "clock": "3:15",
       "venue": "Capital One Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -408,27 +388,27 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 0,
+        "score": 97,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Anthony Davis",
-            "value": "34.0"
-          },
-          "reboundsPerGame": {
-            "player": "Anthony Davis",
-            "value": "12.0"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Trae Young",
-            "value": "13.0"
+            "value": "22"
+          },
+          "rebounds": {
+            "player": "Anthony Davis",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Trae Young",
+            "value": "11"
           },
           "rating": {
-            "player": "Anthony Davis",
-            "value": "34.0 PPG, 12.0 RPG, 4.0 APG, 2.0 SPG, 1.0 BPG"
+            "player": "Trae Young",
+            "value": "22 PTS, 11 AST"
           }
         }
       },
@@ -436,46 +416,41 @@
         "team_id": "28",
         "abbr": "TOR",
         "name": "Toronto Raptors",
-        "score": 0,
+        "score": 105,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Kawhi Leonard",
-            "value": "23.0"
+          "points": {
+            "player": "Scottie Barnes",
+            "value": "25"
           },
-          "reboundsPerGame": {
-            "player": "Collin Murray-Boyles",
-            "value": "8.0"
+          "rebounds": {
+            "player": "Scottie Barnes",
+            "value": "11"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Immanuel Quickley",
-            "value": "7.0"
+            "value": "6"
           },
           "rating": {
-            "player": "Immanuel Quickley",
-            "value": "23.0 PPG, 4.0 RPG, 7.0 APG, 2.0 SPG"
+            "player": "Scottie Barnes",
+            "value": "25 PTS, 11 REB"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "TOR -9.5",
-        "spread": 9.5,
-        "over_under": 236.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909847",
       "start_utc": "2026-10-24T00:00Z",
       "short_name": "DET @ MIA",
-      "state": "pre",
-      "status": "10/23 - 8:00 PM EDT",
+      "state": "in",
+      "status": "9:53 - 3rd",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "9:53",
       "venue": "Kaseya Center",
       "neutral_site": false,
       "broadcasts": [
@@ -485,27 +460,27 @@
         "team_id": "14",
         "abbr": "MIA",
         "name": "Miami Heat",
-        "score": 0,
+        "score": 57,
         "winner": null,
         "record": "0-1",
         "home_record": "0-1",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Giannis Antetokounmpo",
-            "value": "35.0"
+            "value": "15"
           },
-          "reboundsPerGame": {
-            "player": "Bam Adebayo",
-            "value": "7.0"
+          "rebounds": {
+            "player": "Bobby Portis",
+            "value": "7"
           },
-          "assistsPerGame": {
-            "player": "Davion Mitchell",
-            "value": "11.0"
+          "assists": {
+            "player": "Giannis Antetokounmpo",
+            "value": "3"
           },
           "rating": {
             "player": "Giannis Antetokounmpo",
-            "value": "35.0 PPG, 6.0 RPG, 1.0 APG, 1.0 SPG"
+            "value": "15 PTS, 6 REB"
           }
         }
       },
@@ -513,36 +488,31 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 0,
+        "score": 73,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Cade Cunningham",
-            "value": "22.0"
+          "points": {
+            "player": "John Collins",
+            "value": "16"
           },
-          "reboundsPerGame": {
-            "player": "Ausar Thompson",
-            "value": "11.0"
+          "rebounds": {
+            "player": "Jalen Duren",
+            "value": "6"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Cade Cunningham",
-            "value": "8.0"
+            "value": "5"
           },
           "rating": {
-            "player": "Jalen Duren",
-            "value": "22.0 PPG, 9.0 RPG, 1.0 APG, 1.0 SPG, 1.0 BPG"
+            "player": "John Collins",
+            "value": "16 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "DET -1.5",
-        "spread": 1.5,
-        "over_under": 235.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909096",
@@ -615,7 +585,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SA -4.5",
         "spread": -4.5,
         "over_under": 224.5
@@ -696,7 +666,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "UTAH -1.5",
         "spread": -1.5,
         "over_under": 238.5
@@ -773,9 +743,9 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "GS -3.5",
-        "spread": -3.5,
+        "provider": "Draft Kings",
+        "details": "GS -4.5",
+        "spread": -4.5,
         "over_under": 236.5
       }
     },
@@ -853,7 +823,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "LAL -8.5",
         "spread": -8.5,
         "over_under": 225.5
@@ -932,7 +902,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "POR -9.5",
         "spread": 9.5,
         "over_under": 231.5

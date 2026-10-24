@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-23T23:05:00+00:00",
+  "finished_at": "2026-10-24T01:32:17+00:00",
   "game_date": "2026-10-23",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -13,7 +13,7 @@
   },
   "boxscores": {
     "new_games": 1,
-    "player_rows": 31,
+    "player_rows": 27,
     "unparsed": [],
     "queued": 1,
     "errors": [],
@@ -22,56 +22,49 @@
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 414,
-      "ODDS_API_KEY_2": 408
+      "ODDS_API_KEY": 383,
+      "ODDS_API_KEY_2": 388
     },
     "pulled": [
       {
-        "matchup": "Atlanta Hawks @ Charlotte Hornets",
+        "matchup": "Houston Rockets @ San Antonio Spurs",
         "type": "pregame",
         "status": "ok",
-        "rows": 312,
-        "markets": 9
-      },
-      {
-        "matchup": "Dallas Mavericks @ Indiana Pacers",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 410,
+        "rows": 398,
         "markets": 10
       },
       {
-        "matchup": "Minnesota Timberwolves @ Orlando Magic",
+        "matchup": "New Orleans Pelicans @ Utah Jazz",
         "type": "pregame",
         "status": "ok",
-        "rows": 352,
+        "rows": 326,
         "markets": 10
       },
       {
-        "matchup": "Toronto Raptors @ Washington Wizards",
+        "matchup": "Memphis Grizzlies @ Golden State Warriors",
         "type": "pregame",
         "status": "ok",
-        "rows": 370,
+        "rows": 386,
         "markets": 10
       },
       {
-        "matchup": "New York Knicks @ Boston Celtics",
+        "matchup": "Los Angeles Clippers @ Los Angeles Lakers",
         "type": "pregame",
         "status": "ok",
-        "rows": 408,
+        "rows": 342,
         "markets": 10
       },
       {
-        "matchup": "Detroit Pistons @ Miami Heat",
+        "matchup": "Portland Trail Blazers @ Sacramento Kings",
         "type": "pregame",
         "status": "ok",
-        "rows": 376,
-        "markets": 10
+        "rows": 322,
+        "markets": 8
       }
     ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 6,
+    "due": 5,
     "pregame_pulled": true,
     "status": "ok"
   }
