@@ -1,6 +1,6 @@
 {
-  "finished_at": "2026-10-24T01:32:17+00:00",
-  "game_date": "2026-10-23",
+  "finished_at": "2026-10-24T06:25:03+00:00",
+  "game_date": "2026-10-24",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
     "games_today": "ok",
@@ -9,63 +9,27 @@
     "injuries": "ok",
     "boxscores": "ok",
     "props": "ok",
-    "odds": "ok"
+    "odds": "not_due"
   },
   "boxscores": {
-    "new_games": 1,
-    "player_rows": 27,
+    "new_games": 10,
+    "player_rows": 278,
     "unparsed": [],
-    "queued": 1,
+    "queued": 10,
     "errors": [],
-    "rosters_fetched": 0
+    "rosters_fetched": 16
   },
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 383,
+      "ODDS_API_KEY": 380,
       "ODDS_API_KEY_2": 388
     },
-    "pulled": [
-      {
-        "matchup": "Houston Rockets @ San Antonio Spurs",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 398,
-        "markets": 10
-      },
-      {
-        "matchup": "New Orleans Pelicans @ Utah Jazz",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 326,
-        "markets": 10
-      },
-      {
-        "matchup": "Memphis Grizzlies @ Golden State Warriors",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 386,
-        "markets": 10
-      },
-      {
-        "matchup": "Los Angeles Clippers @ Los Angeles Lakers",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 342,
-        "markets": 10
-      },
-      {
-        "matchup": "Portland Trail Blazers @ Sacramento Kings",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 322,
-        "markets": 8
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 5,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
