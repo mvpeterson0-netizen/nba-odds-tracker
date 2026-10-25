@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-25T21:01:24+00:00",
+  "finished_at": "2026-10-25T22:30:39+00:00",
   "game_date": "2026-10-25",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -23,21 +23,42 @@
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 331,
-      "ODDS_API_KEY_2": 328
+      "ODDS_API_KEY": 323,
+      "ODDS_API_KEY_2": 320
     },
     "pulled": [
       {
-        "matchup": "Indiana Pacers @ Brooklyn Nets",
+        "matchup": "Orlando Magic @ New York Knicks",
         "type": "pregame",
         "status": "ok",
-        "rows": 174,
+        "rows": 180,
+        "markets": 4
+      },
+      {
+        "matchup": "Los Angeles Clippers @ Oklahoma City Thunder",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 182,
+        "markets": 4
+      },
+      {
+        "matchup": "Toronto Raptors @ Minnesota Timberwolves",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 172,
+        "markets": 4
+      },
+      {
+        "matchup": "Detroit Pistons @ Philadelphia 76ers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 148,
         "markets": 4
       }
     ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
+    "due": 4,
     "pregame_pulled": true,
     "status": "ok"
   }

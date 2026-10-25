@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-25T21:01:23+00:00",
+  "fetched_at": "2026-10-25T22:30:37+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-10-25",
@@ -8,11 +8,11 @@
       "game_id": "401909861",
       "start_utc": "2026-10-25T21:00Z",
       "short_name": "LAL @ UTAH",
-      "state": "pre",
-      "status": "10/25 - 5:00 PM EDT",
+      "state": "in",
+      "status": "11:58 - 3rd",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "11:58",
       "venue": "Delta Center",
       "neutral_site": false,
       "broadcasts": [
@@ -26,27 +26,27 @@
         "team_id": "26",
         "abbr": "UTAH",
         "name": "Utah Jazz",
-        "score": 0,
+        "score": 71,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Keyonte George",
-            "value": "20.5"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Lauri Markkanen",
-            "value": "7.5"
+            "value": "16"
           },
-          "assistsPerGame": {
+          "rebounds": {
+            "player": "Ace Bailey",
+            "value": "7"
+          },
+          "assists": {
             "player": "Keyonte George",
-            "value": "7.5"
+            "value": "9"
           },
           "rating": {
-            "player": "Jaren Jackson Jr.",
-            "value": "19.5 PPG, 7.5 RPG, 2.5 APG, 0.5 SPG, 2.5 BPG"
+            "player": "Ace Bailey",
+            "value": "15 PTS, 7 REB"
           }
         }
       },
@@ -54,46 +54,41 @@
         "team_id": "13",
         "abbr": "LAL",
         "name": "Los Angeles Lakers",
-        "score": 0,
+        "score": 74,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Luka Doncic",
-            "value": "25.5"
+            "value": "25"
           },
-          "reboundsPerGame": {
-            "player": "Walker Kessler",
-            "value": "8.5"
+          "rebounds": {
+            "player": "Luka Doncic",
+            "value": "5"
           },
-          "assistsPerGame": {
-            "player": "Austin Reaves",
-            "value": "7.5"
+          "assists": {
+            "player": "Luka Doncic",
+            "value": "4"
           },
           "rating": {
-            "player": "Walker Kessler",
-            "value": "24.0 PPG, 8.5 RPG, 2.0 APG, 1.5 SPG, 4.0 BPG"
+            "player": "Luka Doncic",
+            "value": "25 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "LAL -6.5",
-        "spread": 6.5,
-        "over_under": 236.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909862",
       "start_utc": "2026-10-25T22:00Z",
       "short_name": "IND @ BKN",
-      "state": "pre",
-      "status": "10/25 - 6:00 PM EDT",
+      "state": "in",
+      "status": "3:28 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "3:28",
       "venue": "Barclays Center",
       "neutral_site": false,
       "broadcasts": [
@@ -105,27 +100,27 @@
         "team_id": "17",
         "abbr": "BKN",
         "name": "Brooklyn Nets",
-        "score": 0,
+        "score": 18,
         "winner": null,
         "record": "0-2",
         "home_record": "0-1",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Julius Randle",
-            "value": "28.0"
+          "points": {
+            "player": "Day'Ron Sharpe",
+            "value": "7"
           },
-          "reboundsPerGame": {
-            "player": "Michael Porter Jr.",
-            "value": "8.0"
+          "rebounds": {
+            "player": "Day'Ron Sharpe",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Julius Randle",
-            "value": "6.0"
+          "assists": {
+            "player": "Keon Ellis",
+            "value": "3"
           },
           "rating": {
-            "player": "Julius Randle",
-            "value": "28.0 PPG, 7.0 RPG, 6.0 APG, 0.5 BPG"
+            "player": "Keon Ellis",
+            "value": "3 STL"
           }
         }
       },
@@ -133,36 +128,31 @@
         "team_id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers",
-        "score": 0,
+        "score": 21,
         "winner": null,
         "record": "1-1",
         "home_record": "0-1",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Pascal Siakam",
-            "value": "26.5"
+            "value": "5"
           },
-          "reboundsPerGame": {
+          "rebounds": {
+            "player": "Pascal Siakam",
+            "value": "2"
+          },
+          "assists": {
             "player": "Ivica Zubac",
-            "value": "13.0"
-          },
-          "assistsPerGame": {
-            "player": "Tyrese Haliburton",
-            "value": "9.5"
+            "value": "2"
           },
           "rating": {
-            "player": "Tyrese Haliburton",
-            "value": "20.5 PPG, 4.0 RPG, 9.5 APG, 1.0 SPG, 1.0 BPG"
+            "player": "Pascal Siakam",
+            "value": "5 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "IND -6.5",
-        "spread": 6.5,
-        "over_under": 231.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909863",
@@ -236,8 +226,8 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "NY -7.5",
-        "spread": -7.5,
+        "details": "NY -6.5",
+        "spread": -6.5,
         "over_under": 224.5
       }
     },
@@ -314,8 +304,8 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "MIN -1.5",
-        "spread": -1.5,
+        "details": "MIN -3.5",
+        "spread": -3.5,
         "over_under": 228.5
       }
     },
@@ -396,7 +386,7 @@
         "provider": "DraftKings",
         "details": "OKC -16.5",
         "spread": -16.5,
-        "over_under": 224.5
+        "over_under": 223.5
       }
     },
     {
