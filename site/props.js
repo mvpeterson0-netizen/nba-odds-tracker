@@ -9,6 +9,9 @@ let P_TYPING = null;
 
 const PX = () => D.props;
 const mkById = (id) => PX().markets.find((m) => m.id === id);
+// Short market names for player pages: "Pts", "Reb", "Ast", "3PM", "PRA", "P+R"…
+const ABBR = { PTS: "Pts", REB: "Reb", AST: "Ast", STL: "Stl", BLK: "Blk" };
+const mkAbbr = (m) => ABBR[m.short] || m.short;
 const mean = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : null);
 const n1 = (v) => (v == null ? "—" : Number.isInteger(v) ? String(v) : v.toFixed(1));
 const gameOf = (gid) => PX().games[gid] || {};
@@ -255,7 +258,7 @@ function viewPlayer(aid) {
   const f = form(aid, mk, curG ? gameOf(curG).date : null, cur ? cur.line : null);
   let h = `<div class="mplayer"><div class="mp-top"><a href="#/board" class="mback" id="m-back">‹ Board</a></div>
     <div class="mp-h"><div><h2>${esc(p.name)}</h2><div class="muted">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}</div>${curG ? `<div class="small">${gameHeader(curG)}</div>` : ""}</div></div>
-    <div class="mtabs">${PX().markets.map((x) => `<button data-pmk="${x.id}" class="${x.id === mk ? "on" : ""}">${esc(x.label)}</button>`).join("")}</div>
+    <div class="mtabs">${PX().markets.map((x) => `<button data-pmk="${x.id}" class="${x.id === mk ? "on" : ""}">${esc(mkAbbr(x))}</button>`).join("")}</div>
     <div class="mtiles">
       <div><span>LINE</span>${cur ? `<b title="${esc(lineTip(cur))}">${n1(cur.line)}</b><small>${lineOdds(cur)} ${bookShort(cur.book)}</small>` : `<span class="na">none</span>`}</div>
       <div><span>AVG</span><b>${n1(f.avg)}</b><small>${f.n} game${f.n === 1 ? "" : "s"}</small></div>
@@ -263,7 +266,7 @@ function viewPlayer(aid) {
       <div><span>HIT</span>${hitHtml(f)}<small>over line</small></div>
       <div><span>TREND</span>${trendHtml(f, true)}</div>
     </div>
-    <div class="panel"><h3>${esc(m.label)} by game</h3><div class="chart">${chartSVG(aid, mk)}</div>
+    <div class="panel"><h3>${esc(mkAbbr(m))} by game</h3><div class="chart">${chartSVG(aid, mk)}</div>
       <div class="legend"><span><i class="lg-act"></i>Actual</span><span><i class="lg-line"></i>Pre-game line</span><span><b class="dot" style="background:var(--over)"></b>Over</span><span><b class="dot" style="background:var(--under)"></b>Under</span><span><b class="dot" style="background:var(--accent)"></b>No line</span></div></div>`;
   // game log
   const logs = [...(PX().logs[aid] || [])].reverse();
@@ -283,7 +286,7 @@ function viewPlayer(aid) {
   const graded = Object.values(myLines).map((ms) => ms[mk]).filter((l) => l && ["over", "under", "push"].includes(l.res));
   if (graded.length) {
     const c = (k) => graded.filter((l) => l.res === k).length;
-    h += `<p class="callout">${esc(m.label)} props this season: <span class="res over">${c("over")} over</span> · <span class="res under">${c("under")} under</span>${c("push") ? ` · ${c("push")} push` : ""}</p>`;
+    h += `<p class="callout">${esc(mkAbbr(m))} props this season: <span class="res over">${c("over")} over</span> · <span class="res under">${c("under")} under</span>${c("push") ? ` · ${c("push")} push` : ""}</p>`;
   }
   return h + `</div>`;
 }
