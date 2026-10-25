@@ -10,7 +10,8 @@ Each run:
   1. Calls the free /events endpoint with every key — lists upcoming games and reports
      each key's remaining credits without spending any.
   2. Pulls DraftKings + FanDuel props for every game that is due (one call per game;
-     cost = markets returned, so 4 credits core, 10 with extras; an empty answer is free).
+     core markets only: points, rebounds, assists, threes — 4 credits; an empty answer is free.
+     Combo lines (PRA, P+R, P+A, R+A) are built from these in build.py, not pulled).
   3. Appends every price to data/prop_captures.csv and every attempt to data/pull_log.csv.
      Both files are append-only: captured lines are irreplaceable.
 
@@ -35,7 +36,8 @@ log = logging.getLogger(__name__)
 
 BASE = "https://api.the-odds-api.com/v4/sports/basketball_nba"
 CORE = ["player_points", "player_rebounds", "player_assists", "player_threes"]
-# Added only when credits allow (see extras_affordable).
+# No longer pulled (credits): combos are derived from CORE in build.py; steals/blocks dropped.
+# Kept so older captures in prop_captures.csv still map to known markets.
 EXTRA = ["player_points_rebounds_assists", "player_points_rebounds", "player_points_assists",
          "player_rebounds_assists", "player_steals", "player_blocks"]
 GAMES_PER_DAY_EST = 7.5   # rough NBA average (1,230 games over ~165 days); used only for the guard
@@ -229,30 +231,15 @@ def _days_left(now: datetime) -> float:
 
 
 def budget(total_remaining: int | None, now: datetime, pull_type: str) -> list[str] | None:
-    """Markets to request, or None to skip. Priority when credits are short:
-    pre-game core > morning core > pre-game extras > morning extras.
-    Each tier is spent only if the credits left afterwards still cover every higher tier
-    through the end of the month (assumes credits reset monthly)."""
-    if total_remaining is None:
-        return CORE + EXTRA
-    g = GAMES_PER_DAY_EST * _days_left(now)
-    pre_core = len(CORE) * g
-    morn_core = pre_core + len(CORE) * g
-    pre_extra = morn_core + len(EXTRA) * g
-    t = total_remaining - GUARD_RESERVE
-    if pull_type == "pregame":
-        if t - len(CORE) - len(EXTRA) >= morn_core:
-            return CORE + EXTRA
+    """Markets to request (core only), or None to skip.
+    Pre-game core is always pulled. Morning core is pulled only if the credits left afterwards
+    still cover every pre-game pull through the end of the month (assumes monthly reset)."""
+    if total_remaining is None or pull_type == "pregame":
         return list(CORE)
-    if t - len(CORE) - len(EXTRA) >= pre_extra:
-        return CORE + EXTRA
-    if t - len(CORE) >= pre_core:
+    pre_core = len(CORE) * GAMES_PER_DAY_EST * _days_left(now)
+    if total_remaining - GUARD_RESERVE - len(CORE) >= pre_core:
         return list(CORE)
     return None
-
-
-def extras_affordable(total_remaining: int | None, now: datetime) -> bool:   # kept for older callers/tests
-    return budget(total_remaining, now, "pregame") == CORE + EXTRA
 
 
 def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None) -> dict:
@@ -313,9 +300,6 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
         while True:
             cands = [(rem, lab) for lab, rem in remaining.items()
                      if lab not in tried and (rem is None or rem - RESERVE >= cost)]
-            if not cands and len(markets) > len(CORE):
-                markets, cost = list(CORE), len(CORE)      # no key can afford extras: core only
-                continue
             if not cands:
                 note = note or "no key with enough credits left"
                 status = "no_credits" if status == "failed" and not note.startswith("HTTP") else status

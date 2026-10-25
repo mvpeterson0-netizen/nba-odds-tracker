@@ -60,7 +60,18 @@ def estimate_combo(mk: str, parts: dict) -> dict | None:
             "pt": "morning" if morning else "pregame",
             "book": comps[0].get("book"), "cap": max(c.get("cap") or "" for c in comps),
             "mb": min(int(c.get("mb") or 0) for c in comps),
-            "from": {c: parts[c]["line"] for c in COMBO_PARTS[mk]}, "alt": {}}
+            "from": {c: parts[c]["line"] for c in COMBO_PARTS[mk]}, "alt": {},
+            **_est_am(mk, comps)}
+
+
+def _est_am(mk: str, comps: list[dict]) -> dict:
+    """8 AM version of a built combo line (for the movement arrow), when every part has one."""
+    if any(c.get("pt") == "morning" for c in comps):
+        return {}
+    ams = [c.get("am") for c in comps]
+    if any(not a or a.get("line") is None for a in ams):
+        return {}
+    return {"am": {"line": sum(a["line"] for a in ams) + COMBO_OFFSET[mk], "op": EST_PRICE, "up": EST_PRICE}}
 BOOK_ORDER = ["draftkings", "fanduel"]
 
 

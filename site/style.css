@@ -82,6 +82,11 @@ td.note { white-space: normal; color: var(--muted); font-size: 12px; max-width: 
 .lines > div > span:first-child { font-size: 10px; letter-spacing: .06em; color: var(--muted); font-weight: 600; }
 .lines b { font-size: 14px; }
 .lines small { font-size: 11px; color: var(--muted); }
+.ogrid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 10px 12px 12px; }
+.obest { background: var(--bg); border-radius: 8px; padding: 6px 8px; display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.obest .olbl { font-size: 10px; letter-spacing: .06em; color: var(--muted); font-weight: 600; text-transform: uppercase; }
+.obest b { font-size: 15px; }
+.obest small { font-size: 11px; color: var(--muted); }
 .gmeta { font-size: 12px; color: var(--muted); margin-top: 8px; display: flex; flex-direction: column; gap: 2px; }
 .inj-note { color: var(--warn-ink); }
 

@@ -85,3 +85,13 @@ def test_estimate_combo_offsets_and_price():
     pra = estimate_combo("player_points_rebounds_assists", parts)
     assert pra["line"] == 22.5 and pra["pt"] == "morning"
     assert estimate_combo("player_points_assists", {"player_points": parts["player_points"]}) is None
+
+
+def test_estimated_combo_carries_8am_line():
+    from nba_tracker.build import estimate_combo
+    p = {"player_points": {"line": 20.5, "pt": "pregame", "book": "draftkings", "am": {"line": 19.5}},
+         "player_rebounds": {"line": 7.5, "pt": "pregame", "book": "draftkings", "am": {"line": 7.5}}}
+    e = estimate_combo("player_points_rebounds", p)
+    assert e["line"] == 28.5 and e["am"]["line"] == 27.5
+    p["player_rebounds"].pop("am")
+    assert "am" not in estimate_combo("player_points_rebounds", p)

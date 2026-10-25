@@ -67,15 +67,13 @@ def test_falls_back_to_next_key_on_429(tmp_path, monkeypatch):
 def test_budget_priorities():
     from datetime import datetime, timezone
     now = datetime(2026, 10, 22, 23, 0, tzinfo=timezone.utc)   # ~9 days left in the month
-    full = props.CORE + props.EXTRA
-    assert props.budget(5000, now, "pregame") == full and props.budget(5000, now, "morning") == full
-    # One key at 485: pre-game and morning core only.
-    assert props.budget(485, now, "pregame") == props.CORE
-    assert props.budget(485, now, "morning") == props.CORE
+    core = props.CORE
+    assert props.budget(5000, now, "pregame") == core and props.budget(5000, now, "morning") == core
+    assert props.budget(485, now, "morning") == core
     # Very low: morning skipped to protect pre-game pulls; pre-game still core.
     assert props.budget(150, now, "morning") is None
-    assert props.budget(150, now, "pregame") == props.CORE
-    assert props.budget(None, now, "morning") == full
+    assert props.budget(150, now, "pregame") == core
+    assert props.budget(None, now, "morning") == core
 
 
 def test_plan_morning_and_pregame():

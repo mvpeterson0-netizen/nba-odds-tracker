@@ -3,7 +3,7 @@
 
 const FILES = ["run", "games_today", "results_yesterday", "standings", "injuries", "odds", "props"];
 const D = {};               // file name -> parsed JSON (or null if missing)
-const S = { day: "today", game: "", conf: "", team: "", status: "", q: "", book: "" };
+const S = { day: "today", game: "", conf: "", team: "", status: "", q: "" };
 let LIVE = null;            // recent workflow runs from the GitHub API (or null)
 const app = document.getElementById("app");
 
@@ -49,7 +49,7 @@ function oddsFor(home, away) {
   const all = pregame();
   if (!all.length) return null;
   const h = normTeam(home), a = normTeam(away);
-  const r = all.filter((x) => normTeam(x.home_team) === h && normTeam(x.away_team) === a && (!S.book || x.book === S.book));
+  const r = all.filter((x) => normTeam(x.home_team) === h && normTeam(x.away_team) === a);
   if (!r.length) return null;
   const out = { books: new Set(r.map((x) => x.book)).size };
   const bestOf = (list) => list.reduce((b, x) => (b == null || dec(x.price) > dec(b.price) ? x : b), null);
@@ -115,7 +115,7 @@ function linesBlock(g) {
     const sp = o.spread ? `<b>${esc(g.home.abbr)} ${pt(o.spread.line)}</b><small>${o.spread.home ? am(o.spread.home.price) : ""} best</small>` : NA("—");
     const tt = o.total ? `<b>${o.total.line}</b><small>o ${o.total.over ? am(o.total.over.price) : "—"} · u ${o.total.under ? am(o.total.under.price) : "—"}</small>` : NA("—");
     return `<div class="lines"><div><span>MONEYLINE</span><b>${ml}</b>${prob}</div><div><span>SPREAD</span>${sp}</div><div><span>TOTAL</span>${tt}</div></div>
-      <div class="gmeta">Best prices across ${o.books} book${o.books === 1 ? "" : "s"}${o.updated ? ` · updated ${ago(o.updated)}` : ""} · <a href="#/odds">all books</a></div>`;
+      <div class="gmeta">Best prices across ${o.books} book${o.books === 1 ? "" : "s"}${o.updated ? ` · updated ${ago(o.updated)}` : ""} · <a href="#/odds">odds</a></div>`;
   }
   if (g.espn_line && (g.espn_line.details || g.espn_line.over_under != null)) {
     return `<div class="lines"><div><span>LINE</span><b>${esc(g.espn_line.details || "—")}</b></div><div><span>TOTAL</span><b>${g.espn_line.over_under ?? "—"}</b></div>
@@ -169,6 +169,21 @@ function viewGames() {
 }
 
 // ---------- Odds ----------
+// One card per game: the best price for each side and the book offering it.
+// Spread and total use the most common number across books; "best" is the best price at that number.
+const BOOK_NAMES = { betmgm: "BetMGM", betonlineag: "BetOnline", betrivers: "BetRivers", betus: "BetUS", bovada: "Bovada",
+  draftkings: "DraftKings", fanduel: "FanDuel", lowvig: "LowVig", mybookieag: "MyBookie", williamhill_us: "Caesars",
+  espnbet: "ESPN BET", fliff: "Fliff", hardrockbet: "Hard Rock", ballybet: "Bally Bet", betparx: "betPARX" };
+const bookName = (b) => BOOK_NAMES[b] || b;
+function creditsLeft() {
+  const c = D.run && D.run.props && D.run.props.credits;
+  if (c && Object.keys(c).length) {
+    const vals = Object.values(c);
+    return vals.some((v) => v == null) ? null : { total: vals.reduce((s, v) => s + v, 0), keys: vals.length };
+  }
+  const q = D.odds && D.odds.quota;
+  return q && q.requests_remaining != null ? { total: Number(q.requests_remaining), keys: 1 } : null;
+}
 function viewOdds() {
   const f = D.odds;
   if (!f) {
@@ -177,45 +192,25 @@ function viewOdds() {
       <p class="muted">Add it under GitHub → repo <b>Settings → Secrets and variables → Actions → New repository secret</b>.
       The next scheduled run starts pulling moneyline, spread and total from US books. Until then, game cards show ESPN's line when ESPN publishes one.</p></div></div>`;
   }
-  const all = f.rows.filter((x) => !x.in_play);
-  const live = f.rows.length - all.length;
-  const books = [...new Set(all.map((x) => x.book))].sort();
+  const nowIso = new Date().toISOString();
+  const all = f.rows.filter((x) => !x.in_play && x.commence_utc > nowIso);
+  const live = f.rows.some((x) => x.in_play || x.commence_utc <= nowIso);
+  const books = new Set(all.map((x) => x.book)).size;
   const events = [...new Map(all.map((x) => [x.event_id, x])).values()].sort((a, b) => a.commence_utc.localeCompare(b.commence_utc));
-  let h = `<div class="filters"><label>Book <select id="o-book"><option value="">All books</option>${books.map((b) => `<option ${b === S.book ? "selected" : ""}>${esc(b)}</option>`).join("")}</select></label></div>
-    <p class="callout">${events.length} games · ${books.length} books · pulled ${ago(f.fetched_at)}${f.quota && f.quota.requests_remaining != null ? ` · API credits left: ${esc(f.quota.requests_remaining)}` : ""}. <span class="best">Green</span> = best price for that side.${live ? ` Games already under way are hidden (their prices were live, not pre-game).` : ""}</p>`;
+  const cr = creditsLeft();
+  let h = `<p class="callout">${events.length} games · best price across ${books} books · pulled ${ago(f.fetched_at)}${cr ? ` · API credits left: ${cr.total}${cr.keys > 1 ? ` (${cr.keys} keys)` : ""}` : ""}.${live ? ` Games that have tipped off are hidden.` : ""}${events.length ? "" : " No upcoming games in the last pull; the next one is at 8 AM Central."}</p>`;
+  const cell = (label, x, num) => `<div class="obest"><span class="olbl">${esc(label)}</span>${x ? `<b>${num != null ? num + " " : ""}${am(x.price)}</b><small>${esc(bookName(x.book))}</small>` : NA("—")}</div>`;
   for (const ev of events) {
-    const r = all.filter((x) => x.event_id === ev.event_id && (!S.book || x.book === S.book));
-    const bks = [...new Set(r.map((x) => x.book))].sort();
-    const H = normTeam(ev.home_team), A = normTeam(ev.away_team);
-    const get = (book, market, pred) => r.find((x) => x.book === book && x.market === market && pred(x));
-    const cols = [
-      ["ML " + ev.away_team.split(" ").pop(), "h2h", (x) => normTeam(x.outcome) === A],
-      ["ML " + ev.home_team.split(" ").pop(), "h2h", (x) => normTeam(x.outcome) === H],
-      ["Spread " + ev.away_team.split(" ").pop(), "spreads", (x) => normTeam(x.outcome) === A],
-      ["Spread " + ev.home_team.split(" ").pop(), "spreads", (x) => normTeam(x.outcome) === H],
-      ["Over", "totals", (x) => x.outcome === "Over"],
-      ["Under", "totals", (x) => x.outcome === "Under"],
-    ];
-    const best = cols.map(([, m, p]) => {
-      const c = r.filter((x) => x.market === m && p(x));
-      // "Best" compares price only among books offering the most common number.
-      const line = m === "h2h" ? null : mode(c.map((x) => x.point));
-      const pool = c.filter((x) => m === "h2h" || x.point === line);
-      return pool.length ? Math.max(...pool.map((x) => dec(x.price))) : null;
-    });
     const o = oddsFor(ev.home_team, ev.away_team);
-    h += `<div class="panel"><h3>${esc(ev.away_team)} @ ${esc(ev.home_team)} <span class="muted small">${fmtTime(ev.commence_utc)}${o && o.home_prob != null ? ` · ${esc(ev.home_team.split(" ").pop())} ${Math.round(o.home_prob * 100)}% no-vig` : ""}</span></h3>
-      <div class="scroll"><table class="stable"><thead><tr><th>Book</th>${cols.map(([l]) => `<th class="num">${esc(l)}</th>`).join("")}</tr></thead><tbody>`;
-    for (const b of bks) {
-      h += `<tr><td data-label="Book"><b>${esc(b)}</b></td>`;
-      cols.forEach(([l, m, p], i) => {
-        const x = get(b, m, p);
-        const isBest = x && best[i] != null && dec(x.price) === best[i] && (m === "h2h" || x.point === mode(r.filter((y) => y.market === m && p(y)).map((y) => y.point)));
-        h += `<td class="num" data-label="${esc(l)}">${x ? `${m === "h2h" ? "" : `${m === "totals" ? x.point : pt(x.point)} `}<span class="${isBest ? "best" : ""}">${am(x.price)}</span>` : NA("—")}</td>`;
-      });
-      h += `</tr>`;
-    }
-    h += `</tbody></table></div></div>`;
+    if (!o) continue;
+    const A = ev.away_team.split(" ").pop(), Hm = ev.home_team.split(" ").pop();
+    const sp = o.spread, tt = o.total;
+    h += `<div class="panel ocard"><h3>${esc(ev.away_team)} @ ${esc(ev.home_team)} <span class="muted small">${fmtTime(ev.commence_utc)}${o.home_prob != null ? ` · ${esc(Hm)} ${Math.round(o.home_prob * 100)}% no-vig` : ""}</span></h3>
+      <div class="ogrid">
+        ${cell("ML " + A, o.ml_away)}${cell("ML " + Hm, o.ml_home)}
+        ${cell("Spread " + A, sp && sp.away, sp ? pt(-sp.line) : null)}${cell("Spread " + Hm, sp && sp.home, sp ? pt(sp.line) : null)}
+        ${cell("Over", tt && tt.over, tt ? tt.line : null)}${cell("Under", tt && tt.under, tt ? tt.line : null)}
+      </div></div>`;
   }
   return h;
 }
@@ -349,7 +344,6 @@ function render() {
 function bind() {
   const on = (id, ev, fn) => { const el = document.getElementById(id); if (el) el.addEventListener(ev, fn); };
   document.querySelectorAll("[data-day]").forEach((b) => b.addEventListener("click", () => { S.day = b.dataset.day; render(); }));
-  on("o-book", "change", (e) => { S.book = e.target.value; render(); });
   on("i-team", "change", (e) => { S.team = e.target.value; render(); });
   on("i-status", "change", (e) => { S.status = e.target.value; render(); });
   on("i-q", "input", (e) => { S.q = e.target.value; clearTimeout(bind.t); bind.t = setTimeout(() => { render(); const el = document.getElementById("i-q"); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }, 200); });
