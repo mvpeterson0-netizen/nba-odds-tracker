@@ -1,6 +1,6 @@
 {
-  "finished_at": "2026-10-25T00:23:23+00:00",
-  "game_date": "2026-10-24",
+  "finished_at": "2026-10-25T05:14:09+00:00",
+  "game_date": "2026-10-25",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
     "games_today": "ok",
@@ -9,42 +9,27 @@
     "injuries": "ok",
     "boxscores": "ok",
     "props": "ok",
-    "odds": "ok"
+    "odds": "not_due"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
+    "new_games": 8,
+    "player_rows": 219,
     "unparsed": [],
-    "queued": 0,
+    "queued": 8,
     "errors": [],
-    "rosters_fetched": 0
+    "rosters_fetched": 14
   },
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 353,
+      "ODDS_API_KEY": 350,
       "ODDS_API_KEY_2": 348
     },
-    "pulled": [
-      {
-        "matchup": "Houston Rockets @ Atlanta Hawks",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 294,
-        "markets": 9
-      },
-      {
-        "matchup": "New Orleans Pelicans @ Denver Nuggets",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 324,
-        "markets": 10
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 2,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
