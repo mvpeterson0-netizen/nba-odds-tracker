@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-24T22:08:51+00:00",
+  "finished_at": "2026-10-25T00:23:23+00:00",
   "game_date": "2026-10-24",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -22,21 +22,28 @@
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 365,
-      "ODDS_API_KEY_2": 358
+      "ODDS_API_KEY": 353,
+      "ODDS_API_KEY_2": 348
     },
     "pulled": [
       {
-        "matchup": "Miami Heat @ Charlotte Hornets",
+        "matchup": "Houston Rockets @ Atlanta Hawks",
         "type": "pregame",
         "status": "ok",
-        "rows": 378,
+        "rows": 294,
+        "markets": 9
+      },
+      {
+        "matchup": "New Orleans Pelicans @ Denver Nuggets",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 324,
         "markets": 10
       }
     ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
+    "due": 2,
     "pregame_pulled": true,
     "status": "ok"
   }

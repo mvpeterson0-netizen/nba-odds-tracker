@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-24T22:08:50+00:00",
+  "fetched_at": "2026-10-25T00:23:21+00:00",
   "source": "espn",
   "count": 8,
   "game_date": "2026-10-24",
@@ -8,11 +8,11 @@
       "game_id": "401909853",
       "start_utc": "2026-10-24T22:00Z",
       "short_name": "MIA @ CHA",
-      "state": "pre",
-      "status": "10/24 - 6:00 PM EDT",
+      "state": "in",
+      "status": "3:19 - 4th",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 4,
+      "clock": "3:19",
       "venue": "Spectrum Center",
       "neutral_site": false,
       "broadcasts": [
@@ -22,27 +22,27 @@
         "team_id": "30",
         "abbr": "CHA",
         "name": "Charlotte Hornets",
-        "score": 0,
+        "score": 108,
         "winner": null,
         "record": "1-1",
         "home_record": "0-1",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Naz Reid",
-            "value": "18.5"
+          "points": {
+            "player": "Brandon Miller",
+            "value": "32"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Naz Reid",
-            "value": "8.5"
+            "value": "8"
           },
-          "assistsPerGame": {
-            "player": "Dennis Schroder",
-            "value": "4.5"
+          "assists": {
+            "player": "Grayson Allen",
+            "value": "5"
           },
           "rating": {
-            "player": "Naz Reid",
-            "value": "18.5 PPG, 8.5 RPG, 4.5 APG, 0.5 SPG"
+            "player": "Brandon Miller",
+            "value": "32 PTS, 6 REB"
           }
         }
       },
@@ -50,46 +50,41 @@
         "team_id": "14",
         "abbr": "MIA",
         "name": "Miami Heat",
-        "score": 0,
+        "score": 104,
         "winner": null,
         "record": "0-2",
         "home_record": "0-2",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Giannis Antetokounmpo",
-            "value": "35.5"
+          "points": {
+            "player": "Bam Adebayo",
+            "value": "20"
           },
-          "reboundsPerGame": {
-            "player": "Giannis Antetokounmpo",
-            "value": "9.0"
+          "rebounds": {
+            "player": "Bam Adebayo",
+            "value": "8"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Davion Mitchell",
-            "value": "8.0"
+            "value": "10"
           },
           "rating": {
-            "player": "Giannis Antetokounmpo",
-            "value": "35.5 PPG, 9.0 RPG, 3.0 APG, 1.5 SPG, 0.5 BPG"
+            "player": "Davion Mitchell",
+            "value": "19 PTS, 10 AST"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "MIA -4.5",
-        "spread": 4.5,
-        "over_under": 227.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909854",
       "start_utc": "2026-10-24T23:30Z",
       "short_name": "BKN @ CLE",
-      "state": "pre",
-      "status": "10/24 - 7:30 PM EDT",
+      "state": "in",
+      "status": "7:50 - 2nd",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 2,
+      "clock": "7:50",
       "venue": "Rocket Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -101,27 +96,27 @@
         "team_id": "5",
         "abbr": "CLE",
         "name": "Cleveland Cavaliers",
-        "score": 0,
+        "score": 42,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Donovan Mitchell",
-            "value": "32.0"
+          "points": {
+            "player": "Evan Mobley",
+            "value": "10"
           },
-          "reboundsPerGame": {
-            "player": "Donovan Mitchell",
-            "value": "10.0"
+          "rebounds": {
+            "player": "Evan Mobley",
+            "value": "4"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "James Harden",
-            "value": "5.0"
+            "value": "4"
           },
           "rating": {
-            "player": "Donovan Mitchell",
-            "value": "32.0 PPG, 10.0 RPG, 3.0 APG, 2.0 SPG, 1.0 BPG"
+            "player": "Evan Mobley",
+            "value": "10 PTS"
           }
         }
       },
@@ -129,46 +124,41 @@
         "team_id": "17",
         "abbr": "BKN",
         "name": "Brooklyn Nets",
-        "score": 0,
+        "score": 37,
         "winner": null,
         "record": "0-1",
         "home_record": "0-1",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Julius Randle",
-            "value": "33.0"
+          "points": {
+            "player": "Michael Porter Jr.",
+            "value": "7"
           },
-          "reboundsPerGame": {
-            "player": "Julius Randle",
-            "value": "8.0"
+          "rebounds": {
+            "player": "Michael Porter Jr.",
+            "value": "4"
           },
-          "assistsPerGame": {
-            "player": "Julius Randle",
-            "value": "7.0"
+          "assists": {
+            "player": "Egor Demin",
+            "value": "4"
           },
           "rating": {
-            "player": "Julius Randle",
-            "value": "33.0 PPG, 8.0 RPG, 7.0 APG, 1.0 BPG"
+            "player": "Michael Porter Jr.",
+            "value": "7 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "CLE -11.5",
-        "spread": -11.5,
-        "over_under": 228.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909855",
       "start_utc": "2026-10-24T23:30Z",
       "short_name": "MIL @ PHI",
-      "state": "pre",
-      "status": "10/24 - 7:30 PM EDT",
+      "state": "in",
+      "status": "6:30 - 2nd",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 2,
+      "clock": "6:30",
       "venue": "Xfinity Mobile Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -180,27 +170,27 @@
         "team_id": "20",
         "abbr": "PHI",
         "name": "Philadelphia 76ers",
-        "score": 0,
+        "score": 39,
         "winner": null,
         "record": "2-0",
         "home_record": "1-0",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tyrese Maxey",
-            "value": "30.0"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Joel Embiid",
-            "value": "9.0"
+            "value": "10"
           },
-          "assistsPerGame": {
-            "player": "Tyrese Maxey",
-            "value": "5.5"
+          "rebounds": {
+            "player": "VJ Edgecombe",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Joel Embiid",
+            "value": "4"
           },
           "rating": {
-            "player": "Tyrese Maxey",
-            "value": "30.0 PPG, 3.5 RPG, 5.5 APG, 2.5 SPG, 1.5 BPG"
+            "player": "Joel Embiid",
+            "value": "10 PTS"
           }
         }
       },
@@ -208,46 +198,41 @@
         "team_id": "15",
         "abbr": "MIL",
         "name": "Milwaukee Bucks",
-        "score": 0,
+        "score": 44,
         "winner": null,
         "record": "0-2",
         "home_record": "0-1",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tyler Herro",
-            "value": "28.0"
+          "points": {
+            "player": "Kyle Kuzma",
+            "value": "10"
           },
-          "reboundsPerGame": {
-            "player": "Jaime Jaquez Jr.",
-            "value": "8.5"
+          "rebounds": {
+            "player": "Kyle Kuzma",
+            "value": "5"
           },
-          "assistsPerGame": {
-            "player": "Tyler Herro",
-            "value": "6.5"
+          "assists": {
+            "player": "Kyle Kuzma",
+            "value": "2"
           },
           "rating": {
-            "player": "Tyler Herro",
-            "value": "28.0 PPG, 3.0 RPG, 6.5 APG, 1.0 SPG"
+            "player": "Kyle Kuzma",
+            "value": "10 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "PHI -13.5",
-        "spread": -13.5,
-        "over_under": 234.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909857",
       "start_utc": "2026-10-25T00:00Z",
       "short_name": "WSH @ CHI",
-      "state": "pre",
-      "status": "10/24 - 8:00 PM EDT",
+      "state": "in",
+      "status": "7:07 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "7:07",
       "venue": "United Center",
       "neutral_site": false,
       "broadcasts": [
@@ -258,27 +243,27 @@
         "team_id": "4",
         "abbr": "CHI",
         "name": "Chicago Bulls",
-        "score": 0,
+        "score": 17,
         "winner": null,
         "record": "1-1",
         "home_record": "0-0",
         "away_record": "1-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Norman Powell",
-            "value": "18.0"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Jalen Smith",
-            "value": "9.5"
+            "value": "5"
           },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "Josh Giddey",
-            "value": "7.5"
+            "value": "2"
+          },
+          "assists": {
+            "player": "Josh Giddey",
+            "value": "2"
           },
           "rating": {
-            "player": "Jalen Smith",
-            "value": "14.5 PPG, 9.5 RPG, 1.0 APG, 1.5 SPG, 0.5 BPG"
+            "player": "Josh Giddey",
+            "value": "3 PTS"
           }
         }
       },
@@ -286,46 +271,41 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "1-1",
         "home_record": "1-1",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Anthony Davis",
-            "value": "21.5"
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "Anthony Davis",
-            "value": "10.5"
-          },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "Trae Young",
-            "value": "12.5"
+            "value": "1"
+          },
+          "assists": {
+            "player": "Trae Young",
+            "value": "2"
           },
           "rating": {
             "player": "Trae Young",
-            "value": "21.0 PPG, 0.5 RPG, 12.5 APG, 1.5 SPG"
+            "value": "3 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "CHI -2.5",
-        "spread": -2.5,
-        "over_under": 244.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909858",
       "start_utc": "2026-10-25T00:00Z",
       "short_name": "SA @ DAL",
-      "state": "pre",
-      "status": "10/24 - 8:00 PM EDT",
+      "state": "in",
+      "status": "6:56 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "6:56",
       "venue": "American Airlines Center",
       "neutral_site": false,
       "broadcasts": [
@@ -338,27 +318,27 @@
         "team_id": "6",
         "abbr": "DAL",
         "name": "Dallas Mavericks",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "1-1",
         "home_record": "0-0",
         "away_record": "1-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Kyrie Irving",
-            "value": "19.5"
-          },
-          "reboundsPerGame": {
-            "player": "P.J. Washington",
-            "value": "8.5"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Naji Marshall",
-            "value": "6.0"
+            "value": "2"
+          },
+          "rebounds": {
+            "player": "Naji Marshall",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Naji Marshall",
+            "value": "1"
           },
           "rating": {
-            "player": "Kyrie Irving",
-            "value": "19.5 PPG, 2.5 RPG, 2.5 APG, 1.0 SPG, 0.5 BPG"
+            "player": "Daniel Gafford",
+            "value": "2 PTS"
           }
         }
       },
@@ -366,36 +346,31 @@
         "team_id": "24",
         "abbr": "SA",
         "name": "San Antonio Spurs",
-        "score": 0,
+        "score": 14,
         "winner": null,
         "record": "0-2",
         "home_record": "0-2",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Stephon Castle",
-            "value": "19.5"
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "Victor Wembanyama",
-            "value": "13.0"
+          "rebounds": {
+            "player": "Dylan Harper",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "De'Aaron Fox",
-            "value": "8.0"
+          "assists": {
+            "player": "Stephon Castle",
+            "value": "1"
           },
           "rating": {
-            "player": "De'Aaron Fox",
-            "value": "16.5 PPG, 5.5 RPG, 8.0 APG, 1.5 SPG"
+            "player": "Stephon Castle",
+            "value": "4 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "SA -14.5",
-        "spread": 14.5,
-        "over_under": 229.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909856",
@@ -468,7 +443,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "HOU -1.5",
         "spread": 1.5,
         "over_under": 227.5
@@ -547,7 +522,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "DEN -11.5",
         "spread": -11.5,
         "over_under": 239.5
@@ -626,7 +601,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "PHX -9.5",
         "spread": -9.5,
         "over_under": 221.5
