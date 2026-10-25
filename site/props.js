@@ -145,7 +145,7 @@ function viewBoard() {
 
   const phoneView = !!(window.matchMedia && window.matchMedia("(max-width: 760px)").matches);
   if (phoneView) h += `<div class="bgrid-top"><div class="seg">${[["core", "Core"], ["combo", "Combos"]].map(([k, l]) => `<button data-bset="${k}" class="${P.bset === k ? "on" : ""}">${l}</button>`).join("")}</div>
-    <span class="muted small">${P.day < 0 ? "Line / actual" : "Line / season avg · <span class=\"amdot\">•</span> 8 AM"}</span></div>`;
+    ${P.day < 0 ? "" : `<span class="muted small"><span class="amdot">•</span> = 8 AM line</span>`}</div>`;
   // group: game -> player -> markets
   const byGame = new Map();
   for (const r of rows) {
@@ -184,10 +184,10 @@ function viewBoard() {
             if (!l) return `<td class="bc na"><a href="${href}" aria-label="${esc(p.name)}">—</a></td>`;
             const tip = esc(lineTip(l));
             if (l.res === "void") return `<td class="bc void" title="${tip}"><a href="${href}"><b>${n1(l.line)}</b><small>DNP</small></a></td>`;
-            if (l.res && l.res !== "pending") return `<td class="bc ${l.res}" title="${tip}"><a href="${href}"><b>${n1(l.line)}</b><small>${n1(l.act)}</small></a></td>`;
+            if (l.res && l.res !== "pending") return `<td class="bc ${l.res}" title="${tip}"><a href="${href}"><b>${n1(l.line)}</b><small>act ${n1(l.act)}</small></a></td>`;
             const f = form(aid, mk, date, l.line);
             const cls = f.avg == null ? "" : f.avg > l.line ? "above" : f.avg < l.line ? "below" : "";
-            return `<td class="bc ${cls}${l.pt === "morning" ? " am" : ""}" title="${tip}"><a href="${href}"><b>${n1(l.line)}</b><small>${f.avg == null ? "—" : n1(f.avg)}</small></a></td>`;
+            return `<td class="bc ${cls}${l.pt === "morning" ? " am" : ""}" title="${tip}"><a href="${href}"><b>${n1(l.line)}</b><small>${f.avg == null ? "no games" : "avg " + n1(f.avg)}</small></a></td>`;
           }).join("") + `</tr>`;
         }
       }
@@ -296,7 +296,7 @@ function viewResults() {
   if (!PX()) return `<p class="muted">No prop data yet.</p>`;
   const dates = lineDates().filter((d) => propRows(d).some((r) => r.l.res && r.l.res !== "pending")).reverse();
   if (!dates.length) return `<p class="muted">No graded props yet. Props are graded once each game is final and its box score is in.</p>`;
-  let h = `<p class="callout">Big number = actual, small = line. Green over, red under; DNP = had a line but didn't play.</p>`;
+  let h = `<p class="callout">Green = over, red = under. DNP = had a line but didn't play.</p>`;
   const tally = (rs) => { const t = { over: 0, under: 0, push: 0, void: 0 }; rs.forEach((r) => { if (t[r.l.res] != null) t[r.l.res]++; }); return t; };
   const COLS = P.rmk === "combo" ? MK_ORDER.slice(4, 8) : MK_ORDER.slice(0, 4);
   h += `<div class="seg rseg">${[["core", "PTS · REB · AST · 3PM"], ["combo", "PRA · P+R · P+A · R+A"]].map(([k, l]) => `<button data-rmk="${k}" class="${P.rmk === k ? "on" : ""}">${l}</button>`).join("")}</div>`;
@@ -322,8 +322,8 @@ function viewResults() {
           h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${esc(nm)}</a></td>` + COLS.map((mk) => {
             const l = ms[mk];
             if (!l) return `<td class="rc na">—</td>`;
-            if (l.res === "void") return `<td class="rc void" title="${esc(l.why || "Did not play")}"><b>DNP</b><small>${n1(l.line)}</small></td>`;
-            return `<td class="rc ${l.res}" title="Line ${n1(l.line)}, actual ${n1(l.act)}: ${l.res}"><b>${n1(l.act)}</b><small>${n1(l.line)}</small></td>`;
+            if (l.res === "void") return `<td class="rc void" title="${esc(l.why || "Did not play")}"><b>${n1(l.line)}</b><small>DNP</small></td>`;
+            return `<td class="rc ${l.res}" title="Line ${n1(l.line)}, actual ${n1(l.act)}: ${l.res}"><b>${n1(l.line)}</b><small>act ${n1(l.act)}</small></td>`;
           }).join("") + `</tr>`;
         }
       }
@@ -331,7 +331,7 @@ function viewResults() {
       const other = [...byP.keys()].filter((aid) => team(aid) !== g.away && team(aid) !== g.home);
       for (const aid of other) {
         const ms = byP.get(aid), nm = (PX().players[aid] || {}).name || aid;
-        h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${esc(nm)}</a></td>` + COLS.map((mk) => { const l = ms[mk]; return l ? `<td class="rc ${l.res}"><b>${l.res === "void" ? "DNP" : n1(l.act)}</b><small>${n1(l.line)}</small></td>` : `<td class="rc na">—</td>`; }).join("") + `</tr>`;
+        h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${esc(nm)}</a></td>` + COLS.map((mk) => { const l = ms[mk]; return l ? `<td class="rc ${l.res}"><b>${n1(l.line)}</b><small>${l.res === "void" ? "DNP" : "act " + n1(l.act)}</small></td>` : `<td class="rc na">—</td>`; }).join("") + `</tr>`;
       }
       h += `</tbody></table></div>`;
     }

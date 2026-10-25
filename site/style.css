@@ -181,12 +181,10 @@ button.fclear[disabled] { opacity: .5; cursor: default; }
 .rgrid .rname { font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 2px; }
 .rgrid .rc { text-align: center; border-radius: 6px; padding: 3px 2px; background: var(--bg); line-height: 1.1; }
 .rgrid .rc b { display: block; font-size: 14px; }
-.rgrid .rc small { display: block; font-size: 10px; color: var(--muted); }
+.rgrid .rc small { display: block; font-size: 10px; color: var(--ink); opacity: .8; }
 .rgrid .rc.over { background: color-mix(in srgb, var(--over) 18%, transparent); }
-.rgrid .rc.over b { color: var(--over); }
 .rgrid .rc.under { background: color-mix(in srgb, var(--under) 16%, transparent); }
-.rgrid .rc.under b { color: var(--under); }
-.rgrid .rc.void b { color: var(--muted); font-size: 11px; }
+.rgrid .rc.void { opacity: .7; }
 .rgrid .rc.na { color: var(--muted); }
 
 /* Board team grid (phones) */
@@ -202,11 +200,10 @@ button.fclear[disabled] { opacity: .5; cursor: default; }
 .bgrid .bc { padding: 0; border-radius: 7px; background: var(--panel); text-align: center; }
 .bgrid .bc a { display: flex; flex-direction: column; justify-content: center; min-height: 44px; color: var(--ink); line-height: 1.15; }
 .bgrid .bc b { font-size: 15px; }
-.bgrid .bc small { font-size: 10px; color: var(--muted); }
+.bgrid .bc small { font-size: 10px; color: var(--ink); opacity: .8; }
 .bgrid .bc.na a { color: var(--muted); }
 .bgrid .bc.above, .bgrid .bc.over { background: color-mix(in srgb, var(--over) 16%, var(--panel)); }
 .bgrid .bc.below, .bgrid .bc.under { background: color-mix(in srgb, var(--under) 14%, var(--panel)); }
-.bgrid .bc.over small, .bgrid .bc.under small { color: var(--ink); font-weight: 700; }
-.bgrid .bc.void small { font-weight: 700; }
+.bgrid .bc.void { opacity: .7; }
 .bgrid .bc.am b::after { content: "•"; color: var(--push); margin-left: 2px; font-size: 10px; vertical-align: top; }
 .amdot { color: var(--push); }
