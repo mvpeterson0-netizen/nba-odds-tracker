@@ -179,7 +179,7 @@ function viewBoard() {
         for (const [aid, rs] of tp) {
           const p = pl(aid), by = Object.fromEntries(rs.map((r) => [r.mk, r.l]));
           const pHref = `#/player/${encodeURIComponent(aid)}`;
-          h += `<tr><td class="bname"><a href="${pHref}">${esc(p.name)}</a></td>` + COLS.map((mk) => {
+          h += `<tr><td class="bname"><a href="${pHref}">${face(aid, p.name)}<span class="nm">${esc(p.name)}</span></a></td>` + COLS.map((mk) => {
             const l = by[mk], href = `${pHref}/${mk}`;
             if (!l) return `<td class="bc na"><a href="${href}" aria-label="${esc(p.name)}">—</a></td>`;
             const tip = esc(lineTip(l));
@@ -199,7 +199,7 @@ function viewBoard() {
         const p = pl(aid);
         rs.sort((a, b) => MK_ORDER.indexOf(a.mk) - MK_ORDER.indexOf(b.mk)).forEach((r, i) => {
           const f = form(aid, r.mk, date, r.l.line);
-          h += `<tr class="${i === 0 ? "plr" : ""}">${i === 0 ? `<td rowspan="${rs.length}" class="pcell"><a href="#/player/${encodeURIComponent(aid)}"><b>${esc(p.name)}</b></a><div class="muted small">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}${p.nolog ? " · no games yet" : ""}</div></td>` : ""}
+          h += `<tr class="${i === 0 ? "plr" : ""}">${i === 0 ? `<td rowspan="${rs.length}" class="pcell"><a class="pc-a" href="#/player/${encodeURIComponent(aid)}">${face(aid, p.name)}<b>${esc(p.name)}</b></a><div class="muted small">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}${p.nolog ? " · no games yet" : ""}</div></td>` : ""}
             <td>${esc(mkById(r.mk).short)}</td><td class="num" title="${esc(lineTip(r.l))}"><a class="lnk" href="#/player/${encodeURIComponent(aid)}/${r.mk}">${lineCell(r.l)}</a></td><td class="num">${lineOdds(r.l)}</td><td class="muted">${bookShort(r.l.book)}</td>
             <td class="num">${n1(f.avg)}</td><td class="num">${n1(f.l5)}</td><td class="num">${hitHtml(f)}</td><td>${trendHtml(f)}</td>
             <td class="num">${r.l.act != null ? `<b>${n1(r.l.act)}</b>` : ""}</td><td>${resHtml(r.l)}</td></tr>`;
@@ -259,7 +259,7 @@ function viewPlayer(aid, sub) {
   const cur = curG ? myLines[curG][mk] : null;
   const f = form(aid, mk, curG ? gameOf(curG).date : null, cur ? cur.line : null);
   let h = `<div class="mplayer"><div class="mp-top"><a href="#/board" class="mback" id="m-back">‹ Board</a></div>
-    <div class="mp-h"><div><h2>${esc(p.name)}</h2><div class="muted">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}</div>${curG ? `<div class="small">${gameHeader(curG)}</div>` : ""}</div></div>
+    <div class="mp-h">${face(aid, p.name, "lg")}<div><h2>${esc(p.name)}</h2><div class="muted">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}</div>${curG ? `<div class="small">${gameHeader(curG)}</div>` : ""}</div></div>
     <div class="mtabs">${PX().markets.map((x) => `<button data-pmk="${x.id}" class="${x.id === mk ? "on" : ""}">${esc(mkAbbr(x))}</button>`).join("")}</div>
     <div class="mtiles">
       <div><span>LINE</span>${cur ? `<b title="${esc(lineTip(cur))}">${n1(cur.line)}</b><small>${lineOdds(cur)} ${bookShort(cur.book)}</small>` : `<span class="na">none</span>`}</div>
@@ -293,6 +293,21 @@ function viewPlayer(aid, sub) {
   return h + `</div>`;
 }
 
+// ---------- Player photos ----------
+// ESPN headshots keyed by ESPN athlete id (the ids Dime already uses). Tries ESPN's resized
+// image first, then the full-size file, then falls back to the player's initials.
+const HS = (aid) => `https://a.espncdn.com/i/headshots/nba/players/full/${encodeURIComponent(aid)}.png`;
+const HS_SM = (aid, w) => `https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/${encodeURIComponent(aid)}.png&w=${w}&h=${Math.round(w * 0.727)}`;
+function faceErr(img) {
+  if (img.dataset.full) { img.src = img.dataset.full; delete img.dataset.full; }
+  else img.remove();
+}
+function face(aid, name, cls = "") {
+  const ini = String(name || "").split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join("").toUpperCase();
+  const w = cls === "lg" ? 240 : 96;
+  return `<span class="face ${cls}" aria-hidden="true"><span class="ini">${esc(ini)}</span><img loading="lazy" alt="" src="${HS_SM(aid, w)}" data-full="${HS(aid)}" onerror="faceErr(this)"></span>`;
+}
+
 // ---------- Results ----------
 function viewResults() {
   if (!PX()) return `<p class="muted">No prop data yet.</p>`;
@@ -322,7 +337,7 @@ function viewResults() {
         h += `<tr class="rteam"><td colspan="${COLS.length + 1}">${esc(tm)}</td></tr>`;
         for (const [aid, ms] of plist) {
           const nm = (PX().players[aid] || {}).name || aid;
-          h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${esc(nm)}</a></td>` + COLS.map((mk) => {
+          h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${face(aid, nm)}<span class="nm">${esc(nm)}</span></a></td>` + COLS.map((mk) => {
             const l = ms[mk];
             if (!l) return `<td class="rc na">—</td>`;
             return `<td class="rc ${l.res}" title="Line ${n1(l.line)}, actual ${n1(l.act)}: ${l.res}"><b>${n1(l.line)}</b><small>act ${n1(l.act)}</small></td>`;
@@ -333,7 +348,7 @@ function viewResults() {
       const other = [...byP.keys()].filter((aid) => team(aid) !== g.away && team(aid) !== g.home);
       for (const aid of other) {
         const ms = byP.get(aid), nm = (PX().players[aid] || {}).name || aid;
-        h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${esc(nm)}</a></td>` + COLS.map((mk) => { const l = ms[mk]; return l ? `<td class="rc ${l.res}"><b>${n1(l.line)}</b><small>act ${n1(l.act)}</small></td>` : `<td class="rc na">—</td>`; }).join("") + `</tr>`;
+        h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${face(aid, nm)}<span class="nm">${esc(nm)}</span></a></td>` + COLS.map((mk) => { const l = ms[mk]; return l ? `<td class="rc ${l.res}"><b>${n1(l.line)}</b><small>act ${n1(l.act)}</small></td>` : `<td class="rc na">—</td>`; }).join("") + `</tr>`;
       }
       h += `</tbody></table></div>`;
     }

@@ -196,7 +196,7 @@ button.fclear[disabled] { opacity: .5; cursor: default; }
 .bgrid th:first-child { text-align: left; width: 40%; }
 .bgrid .rteam td { font-size: 11px; font-weight: 700; letter-spacing: .06em; color: var(--muted); padding: 8px 2px 2px; }
 .bgrid .bname { padding: 0 2px; }
-.bgrid .bname a { display: block; font-size: 14px; font-weight: 600; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 44px; }
+.bgrid .bname a { display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: var(--ink); line-height: 44px; min-width: 0; }
 .bgrid .bc { padding: 0; border-radius: 7px; background: var(--panel); text-align: center; }
 .bgrid .bc a { display: flex; flex-direction: column; justify-content: center; min-height: 44px; color: var(--ink); line-height: 1.15; }
 .bgrid .bc b { font-size: 15px; }
@@ -209,3 +209,14 @@ button.fclear[disabled] { opacity: .5; cursor: default; }
 .amdot { color: var(--push); }
 
 a.lnk { color: inherit; }
+
+/* Player photos */
+.face { position: relative; flex: none; display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; overflow: hidden; background: var(--bg); border: 1px solid var(--line); vertical-align: middle; }
+.face .ini { font-size: 11px; font-weight: 700; color: var(--muted); line-height: 1; }
+.face img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; transform: scale(1.35) translateY(8%); }
+.face.lg { width: 64px; height: 64px; }
+.face.lg .ini { font-size: 20px; }
+.nm { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rgrid .rname a { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.rgrid .rname .face { width: 24px; height: 24px; }
+.pc-a { display: inline-flex; align-items: center; gap: 8px; }
