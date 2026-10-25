@@ -296,16 +296,17 @@ function viewPlayer(aid, sub) {
 // ---------- Results ----------
 function viewResults() {
   if (!PX()) return `<p class="muted">No prop data yet.</p>`;
-  const dates = lineDates().filter((d) => propRows(d).some((r) => r.l.res && r.l.res !== "pending")).reverse();
+  const shown = (r) => r.l.res === "over" || r.l.res === "under"; // Results hides voids and pushes
+  const dates = lineDates().filter((d) => propRows(d).some(shown)).reverse();
   if (!dates.length) return `<p class="muted">No graded props yet. Props are graded once each game is final and its box score is in.</p>`;
-  let h = `<p class="callout">Green = over, red = under. DNP = had a line but didn't play.</p>`;
-  const tally = (rs) => { const t = { over: 0, under: 0, push: 0, void: 0 }; rs.forEach((r) => { if (t[r.l.res] != null) t[r.l.res]++; }); return t; };
+  let h = `<p class="callout">Green = over, red = under.</p>`;
+  const tally = (rs) => { const t = { over: 0, under: 0 }; rs.forEach((r) => { if (t[r.l.res] != null) t[r.l.res]++; }); return t; };
   const COLS = P.rmk === "combo" ? MK_ORDER.slice(4, 8) : MK_ORDER.slice(0, 4);
   h += `<div class="seg rseg">${[["core", "PTS · REB · AST · 3PM"], ["combo", "PRA · P+R · P+A · R+A"]].map(([k, l]) => `<button data-rmk="${k}" class="${P.rmk === k ? "on" : ""}">${l}</button>`).join("")}</div>`;
   dates.forEach((d, di) => {
-    const rs = propRows(d).filter((r) => r.l.res && r.l.res !== "pending");
+    const rs = propRows(d).filter(shown);
     const t = tally(rs);
-    h += `<details class="panel resday" ${di === 0 ? "open" : ""}><summary><b>${fmtDate(d)}</b> <span class="muted small"><span class="res over">${t.over} over</span> · <span class="res under">${t.under} under</span>${t.push ? ` · ${t.push} push` : ""}${t.void ? ` · ${t.void} void` : ""}</span></summary>`;
+    h += `<details class="panel resday" ${di === 0 ? "open" : ""}><summary><b>${fmtDate(d)}</b> <span class="muted small"><span class="res over">${t.over} over</span> · <span class="res under">${t.under} under</span></span></summary>`;
     const gids = [...new Set(rs.map((r) => r.gid))].sort((a, b) => String(gameOf(a).start).localeCompare(String(gameOf(b).start)));
     for (const gid of gids) {
       const g = gameOf(gid);
@@ -324,7 +325,6 @@ function viewResults() {
           h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${esc(nm)}</a></td>` + COLS.map((mk) => {
             const l = ms[mk];
             if (!l) return `<td class="rc na">—</td>`;
-            if (l.res === "void") return `<td class="rc void" title="${esc(l.why || "Did not play")}"><b>${n1(l.line)}</b><small>DNP</small></td>`;
             return `<td class="rc ${l.res}" title="Line ${n1(l.line)}, actual ${n1(l.act)}: ${l.res}"><b>${n1(l.line)}</b><small>act ${n1(l.act)}</small></td>`;
           }).join("") + `</tr>`;
         }
@@ -333,18 +333,18 @@ function viewResults() {
       const other = [...byP.keys()].filter((aid) => team(aid) !== g.away && team(aid) !== g.home);
       for (const aid of other) {
         const ms = byP.get(aid), nm = (PX().players[aid] || {}).name || aid;
-        h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${esc(nm)}</a></td>` + COLS.map((mk) => { const l = ms[mk]; return l ? `<td class="rc ${l.res}"><b>${n1(l.line)}</b><small>${l.res === "void" ? "DNP" : "act " + n1(l.act)}</small></td>` : `<td class="rc na">—</td>`; }).join("") + `</tr>`;
+        h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${esc(nm)}</a></td>` + COLS.map((mk) => { const l = ms[mk]; return l ? `<td class="rc ${l.res}"><b>${n1(l.line)}</b><small>act ${n1(l.act)}</small></td>` : `<td class="rc na">—</td>`; }).join("") + `</tr>`;
       }
       h += `</tbody></table></div>`;
     }
     h += `</details>`;
   });
   // season summary by market
-  const allRows = dates.flatMap((d) => propRows(d)).filter((r) => r.l.res && r.l.res !== "pending");
-  h += `<div class="panel"><h3>Season so far</h3><div class="scroll"><table><thead><tr><th>Market</th><th class="num">Over</th><th class="num">Under</th><th class="num">Push</th><th class="num">Void</th><th class="num">Over %</th></tr></thead><tbody>`;
+  const allRows = dates.flatMap((d) => propRows(d)).filter(shown);
+  h += `<div class="panel"><h3>Season so far</h3><div class="scroll"><table><thead><tr><th>Market</th><th class="num">Over</th><th class="num">Under</th><th class="num">Over %</th></tr></thead><tbody>`;
   for (const m of PX().markets) {
     const t = tally(allRows.filter((r) => r.mk === m.id)), dec2 = t.over + t.under;
-    h += `<tr><td>${esc(m.label)}</td><td class="num">${t.over}</td><td class="num">${t.under}</td><td class="num">${t.push}</td><td class="num">${t.void}</td><td class="num">${dec2 ? Math.round((t.over / dec2) * 100) + "%" : "—"}</td></tr>`;
+    h += `<tr><td>${esc(m.label)}</td><td class="num">${t.over}</td><td class="num">${t.under}</td><td class="num">${dec2 ? Math.round((t.over / dec2) * 100) + "%" : "—"}</td></tr>`;
   }
   h += `</tbody></table></div></div>`;
   return h;
