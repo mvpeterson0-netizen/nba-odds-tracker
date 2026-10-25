@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-25T13:00:30+00:00",
+  "finished_at": "2026-10-25T14:18:54+00:00",
   "game_date": "2026-10-25",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -9,7 +9,7 @@
     "injuries": "ok",
     "boxscores": "ok",
     "props": "ok",
-    "odds": "ok"
+    "odds": "not_due"
   },
   "boxscores": {
     "new_games": 0,
@@ -22,63 +22,13 @@
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 334,
+      "ODDS_API_KEY": 331,
       "ODDS_API_KEY_2": 336
     },
-    "pulled": [
-      {
-        "matchup": "Los Angeles Lakers @ Utah Jazz",
-        "type": "morning",
-        "status": "ok",
-        "rows": 176,
-        "markets": 4
-      },
-      {
-        "matchup": "Indiana Pacers @ Brooklyn Nets",
-        "type": "morning",
-        "status": "ok",
-        "rows": 168,
-        "markets": 4
-      },
-      {
-        "matchup": "Orlando Magic @ New York Knicks",
-        "type": "morning",
-        "status": "ok",
-        "rows": 160,
-        "markets": 4
-      },
-      {
-        "matchup": "Los Angeles Clippers @ Oklahoma City Thunder",
-        "type": "morning",
-        "status": "ok",
-        "rows": 164,
-        "markets": 4
-      },
-      {
-        "matchup": "Toronto Raptors @ Minnesota Timberwolves",
-        "type": "morning",
-        "status": "ok",
-        "rows": 180,
-        "markets": 4
-      },
-      {
-        "matchup": "Detroit Pistons @ Philadelphia 76ers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 112,
-        "markets": 4
-      },
-      {
-        "matchup": "Memphis Grizzlies @ Sacramento Kings",
-        "type": "morning",
-        "status": "ok",
-        "rows": 138,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 7,
+    "due": 0,
     "pregame_pulled": false,
     "status": "ok"
   }
