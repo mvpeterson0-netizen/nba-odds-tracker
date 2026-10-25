@@ -202,17 +202,30 @@ function chartSVG(aid, mk) {
   const logs = played(aid).filter((r) => r[st] != null).slice(-15);
   if (logs.length < 2) return `<p class="muted small pad">Not enough games for a chart yet.</p>`;
   const lineFor = (gid) => ((PX().lines[aid] || {})[gid] || {})[mk];
-  const W = 640, H = 220, L = 30, R = 12, T = 14, B = 26;
-  const maxV = Math.max(1, ...logs.map((r) => r[st]), ...logs.map((r) => (lineFor(r.g) || {}).line || 0)) * 1.12;
-  const x = (i) => L + (i + 0.5) * ((W - L - R) / logs.length), y = (v) => T + (H - T - B) * (1 - v / maxV);
-  const bw = Math.max(6, ((W - L - R) / logs.length) * 0.6);
-  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(mkById(mk).label)} by game">`;
-  for (const v of [0, maxV / 2, maxV]) s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 4}" y="${y(v) + 4}" font-size="11" text-anchor="end" fill="var(--muted)">${Math.round(v)}</text>`;
+  const W = 640, H = 230, L = 30, R = 16, T = 22, B = 26;
+  const vals = [...logs.map((r) => r[st]), ...logs.map((r) => lineFor(r.g)).filter(Boolean).map((l) => l.line)];
+  const hi0 = Math.max(...vals), lo0 = Math.min(...vals), pad = Math.max(2, (hi0 - lo0) * 0.18);
+  const lo = Math.max(0, Math.floor(lo0 - pad)), hi = Math.ceil(hi0 + pad);
+  const x = (i) => L + 10 + i * ((W - L - R - 20) / Math.max(1, logs.length - 1));
+  const y = (v) => T + (H - T - B) * (1 - (v - lo) / (hi - lo));
+  const tip = (r, l) => `${esc(r.d)} ${r.ha === "home" ? "vs" : "@"} ${esc(r.opp)}: ${n1(r[st])}${l ? ` (line ${n1(l.line)}${l.res ? ", " + l.res : ""})` : ""}`;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(mkById(mk).label)} by game: actual vs line">`;
+  for (const v of [lo, (lo + hi) / 2, hi]) s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 4}" y="${y(v) + 4}" font-size="11" text-anchor="end" fill="var(--muted)">${Math.round(v)}</text>`;
+  // Line series: dashed segments between consecutive games that both had a line; gaps stay open.
+  let seg = [];
+  const flush = () => { if (seg.length > 1) s += `<polyline points="${seg.join(" ")}" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 4"/>`; seg = []; };
+  logs.forEach((r, i) => { const l = lineFor(r.g); if (l) seg.push(`${x(i)},${y(l.line)}`); else flush(); });
+  flush();
+  // Actual series: solid line through every game.
+  s += `<polyline points="${logs.map((r, i) => `${x(i)},${y(r[st])}`).join(" ")}" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>`;
   logs.forEach((r, i) => {
     const l = lineFor(r.g);
+    if (l) s += `<rect x="${x(i) - 4.5}" y="${y(l.line) - 4.5}" width="9" height="9" transform="rotate(45 ${x(i)} ${y(l.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>Line ${n1(l.line)}</title></rect>`;
+    if (l) s += `<text x="${x(i)}" y="${y(l.line) + (r[st] >= l.line ? 18 : -10)}" font-size="10" text-anchor="middle" fill="var(--muted)">${n1(l.line)}</text>`;
     const col = l && l.res === "over" ? "var(--over)" : l && l.res === "under" ? "var(--under)" : "var(--accent)";
-    s += `<rect x="${x(i) - bw / 2}" y="${y(r[st])}" width="${bw}" height="${y(0) - y(r[st])}" rx="2" fill="${col}" opacity=".85"><title>${esc(r.d)} ${r.ha === "home" ? "vs" : "@"} ${esc(r.opp)}: ${n1(r[st])}${l ? ` (line ${n1(l.line)})` : ""}</title></rect>`;
-    if (l) s += `<line x1="${x(i) - bw / 2 - 3}" x2="${x(i) + bw / 2 + 3}" y1="${y(l.line)}" y2="${y(l.line)}" stroke="var(--ink)" stroke-width="2.5"/>`;
+    const above = !l || r[st] >= l.line;
+    s += `<circle cx="${x(i)}" cy="${y(r[st])}" r="5.5" fill="${col}" stroke="var(--panel)" stroke-width="2"><title>${tip(r, l)}</title></circle>`;
+    s += `<text x="${x(i)}" y="${y(r[st]) + (above ? -10 : 18)}" font-size="11" font-weight="600" text-anchor="middle" fill="var(--ink)">${n1(r[st])}</text>`;
     s += `<text x="${x(i)}" y="${H - 8}" font-size="10" text-anchor="middle" fill="var(--muted)">${esc((r.opp || "").slice(0, 3))}</text>`;
   });
   return s + `</svg>`;
@@ -238,7 +251,7 @@ function viewPlayer(aid) {
       <div><span>TREND</span>${trendHtml(f, true)}</div>
     </div>
     <div class="panel"><h3>${esc(m.label)} by game</h3><div class="chart">${chartSVG(aid, mk)}</div>
-      <div class="legend"><span><i style="border-color:var(--ink);border-top-width:3px"></i>Pre-game line</span><span><i style="border-color:var(--over)"></i>Over</span><span><i style="border-color:var(--under)"></i>Under</span><span><i style="border-color:var(--accent)"></i>No line</span></div></div>`;
+      <div class="legend"><span><i class="lg-act"></i>Actual</span><span><i class="lg-line"></i>Pre-game line</span><span><b class="dot" style="background:var(--over)"></b>Over</span><span><b class="dot" style="background:var(--under)"></b>Under</span><span><b class="dot" style="background:var(--accent)"></b>No line</span></div></div>`;
   // game log
   const logs = [...(PX().logs[aid] || [])].reverse();
   // Base box-score columns, plus the selected market's column when it's a combo (PRA, P+R, ...).
