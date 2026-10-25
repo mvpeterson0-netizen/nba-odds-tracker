@@ -188,3 +188,25 @@ button.fclear[disabled] { opacity: .5; cursor: default; }
 .rgrid .rc.under b { color: var(--under); }
 .rgrid .rc.void b { color: var(--muted); font-size: 11px; }
 .rgrid .rc.na { color: var(--muted); }
+
+/* Board team grid (phones) */
+.bgrid td, .bgrid th { border: 0; }
+.bgrid-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 4px; }
+.bgrid-top .seg { margin-bottom: 0; }
+.bgrid { width: 100%; border-collapse: separate; border-spacing: 3px; table-layout: fixed; margin: 0 -3px; }
+.bgrid th { font-size: 11px; color: var(--muted); font-weight: 600; text-align: center; padding: 2px; }
+.bgrid th:first-child { text-align: left; width: 40%; }
+.bgrid .rteam td { font-size: 11px; font-weight: 700; letter-spacing: .06em; color: var(--muted); padding: 8px 2px 2px; }
+.bgrid .bname { padding: 0 2px; }
+.bgrid .bname a { display: block; font-size: 14px; font-weight: 600; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 44px; }
+.bgrid .bc { padding: 0; border-radius: 7px; background: var(--panel); text-align: center; }
+.bgrid .bc a { display: flex; flex-direction: column; justify-content: center; min-height: 44px; color: var(--ink); line-height: 1.15; }
+.bgrid .bc b { font-size: 15px; }
+.bgrid .bc small { font-size: 10px; color: var(--muted); }
+.bgrid .bc.na a { color: var(--muted); }
+.bgrid .bc.above, .bgrid .bc.over { background: color-mix(in srgb, var(--over) 16%, var(--panel)); }
+.bgrid .bc.below, .bgrid .bc.under { background: color-mix(in srgb, var(--under) 14%, var(--panel)); }
+.bgrid .bc.over small, .bgrid .bc.under small { color: var(--ink); font-weight: 700; }
+.bgrid .bc.void small { font-weight: 700; }
+.bgrid .bc.am b::after { content: "•"; color: var(--push); margin-left: 2px; font-size: 10px; vertical-align: top; }
+.amdot { color: var(--push); }

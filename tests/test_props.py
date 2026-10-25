@@ -102,7 +102,7 @@ def test_lines_due():
     assert not lines_due(t("2026-10-23T12:30"), t("2026-10-22T23:00"))           # 7:30 AM CDT
     assert lines_due(t("2026-10-23T13:05"), t("2026-10-22T23:00"))               # 8:05 AM CDT
     assert not lines_due(t("2026-10-23T15:00"), t("2026-10-23T13:05"))
-    assert lines_due(t("2026-10-23T22:00"), t("2026-10-23T13:05"), pregame_pulled=True)
+    assert not lines_due(t("2026-10-23T22:00"), t("2026-10-23T13:05"))           # once a day only
 
 
 def test_empty_logged_once(tmp_path, monkeypatch):

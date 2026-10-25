@@ -41,15 +41,13 @@ def envelope(source: str, rows: list, **extra) -> dict:
     }
 
 
-# Game lines (moneyline/spread/total for every game, one 3-credit call) are pulled
-# at the 8:00 AM Central morning pull and again whenever a pre-game prop pull happens,
-# so each game also gets its line about an hour before tip.
+# Game lines (moneyline/spread/total for every game, one 3-credit call) are pulled once a
+# day, at the first run at or after 8:00 AM Central. Not shown on the site yet; kept in
+# data/latest/odds.json and the monthly odds_log CSV.
 CENTRAL = ZoneInfo("America/Chicago")
 
 
-def lines_due(now: datetime, last: datetime | None, pregame_pulled: bool = False) -> bool:
-    if pregame_pulled:
-        return True
+def lines_due(now: datetime, last: datetime | None) -> bool:
     local = now.astimezone(CENTRAL)
     eight = local.replace(hour=8, minute=0, second=0, microsecond=0)
     return local >= eight and (last is None or last < eight)
@@ -120,7 +118,7 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
             log.error("props failed: %s", e)
         # Game lines (moneyline/spread/total): only in the scheduled slots, to save credits.
         last = _last_lines_pull(out)
-        if not lines_due(now, last, bool(extra_info.get("props", {}).get("pregame_pulled"))):
+        if not lines_due(now, last):
             status["odds"] = "not_due"
             log.info("odds              not due (last pull %s)", last)
         else:

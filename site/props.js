@@ -4,7 +4,7 @@
 
 const TREND = { minGames: 3, lastN: 3, pct: 15 };   // trend arrow: last 3 games vs season avg, ±15%
 const HIT_N = 10;                                   // hit rate window (games played)
-const P = { day: 0, game: "", q: "", pmk: {}, rmk: "core" };   // day: -1 yesterday, 0 today, 1 tomorrow
+const P = { day: 0, game: "", q: "", pmk: {}, rmk: "core", bset: "core" };   // day: -1 yesterday, 0 today, 1 tomorrow
 let P_TYPING = null;
 
 const PX = () => D.props;
@@ -140,6 +140,9 @@ function viewBoard() {
   const waiting = gids.filter((g) => !all.some((r) => r.gid === g) && (!P.game || P.game === g));
   if (!rows.length && (filtered || !waiting.length)) return h + `<p class="muted">${filtered ? "No players match that search." : "No prop lines were captured for this date."}</p>`;
 
+  const phoneView = !!(window.matchMedia && window.matchMedia("(max-width: 760px)").matches);
+  if (phoneView) h += `<div class="bgrid-top"><div class="seg">${[["core", "Core"], ["combo", "Combos"]].map(([k, l]) => `<button data-bset="${k}" class="${P.bset === k ? "on" : ""}">${l}</button>`).join("")}</div>
+    <span class="muted small">${P.day < 0 ? "Line / actual" : "Line / season avg · <span class=\"amdot\">•</span> 8 AM"}</span></div>`;
   // group: game -> player -> markets
   const byGame = new Map();
   for (const r of rows) {
@@ -160,17 +163,32 @@ function viewBoard() {
     });
     h += `<section class="mgame"><div class="mgame-h">${gameHeader(gid)}</div>`;
     if (phone) {
-      for (const [aid, rs] of plist) {
-        const p = pl(aid);
-        h += `<a class="mcard" href="#/player/${encodeURIComponent(aid)}"><div class="mcard-h"><div><div class="mname">${esc(p.name)}</div>
-          <div class="muted small">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}${p.nolog ? " · no games yet" : ""}</div></div><span class="mchev">›</span></div>
-          <div class="mrow mhead"><span></span><span>LINE</span><span>AVG</span><span>L5</span><span>HIT</span><span>TREND</span></div>`;
-        for (const r of rs.sort((a, b) => MK_ORDER.indexOf(a.mk) - MK_ORDER.indexOf(b.mk))) {
-          const f = form(aid, r.mk, date, r.l.line);
-          h += `<div class="mrow"><span class="mlab">${esc(mkById(r.mk).short)}</span><span>${lineCell(r.l)} ${resHtml(r.l)}</span><span>${n1(f.avg)}</span><span>${n1(f.l5)}</span><span>${hitHtml(f)}</span><span>${trendHtml(f)}</span></div>`;
+      // Team grid: one row per player, one cell per market (line big; season avg, or actual once graded, small).
+      const COLS = P.bset === "combo" ? MK_ORDER.slice(4, 8) : MK_ORDER.slice(0, 4);
+      const g = gameOf(gid);
+      const teams = [g.away, g.home].filter(Boolean);
+      const order = [...teams, ...new Set(plist.map(([aid]) => pl(aid).team).filter((t) => !teams.includes(t)))];
+      h += `<table class="bgrid"><thead><tr><th>Player</th>${COLS.map((mk) => `<th>${esc(mkById(mk).short)}</th>`).join("")}</tr></thead><tbody>`;
+      for (const tm of order) {
+        const tp = plist.filter(([aid]) => (pl(aid).team || "") === (tm || ""));
+        if (!tp.length) continue;
+        h += `<tr class="rteam"><td colspan="${COLS.length + 1}">${esc(tm || "")}</td></tr>`;
+        for (const [aid, rs] of tp) {
+          const p = pl(aid), by = Object.fromEntries(rs.map((r) => [r.mk, r.l]));
+          const href = `#/player/${encodeURIComponent(aid)}`;
+          h += `<tr><td class="bname"><a href="${href}">${esc(p.name)}</a></td>` + COLS.map((mk) => {
+            const l = by[mk];
+            if (!l) return `<td class="bc na"><a href="${href}" aria-label="${esc(p.name)}">—</a></td>`;
+            const tip = esc(lineTip(l));
+            if (l.res === "void") return `<td class="bc void" title="${tip}"><a href="${href}"><b>${n1(l.line)}</b><small>DNP</small></a></td>`;
+            if (l.res && l.res !== "pending") return `<td class="bc ${l.res}" title="${tip}"><a href="${href}"><b>${n1(l.line)}</b><small>${n1(l.act)}</small></a></td>`;
+            const f = form(aid, mk, date, l.line);
+            const cls = f.avg == null ? "" : f.avg > l.line ? "above" : f.avg < l.line ? "below" : "";
+            return `<td class="bc ${cls}${l.pt === "morning" ? " am" : ""}" title="${tip}"><a href="${href}"><b>${n1(l.line)}</b><small>${f.avg == null ? "—" : n1(f.avg)}</small></a></td>`;
+          }).join("") + `</tr>`;
         }
-        h += `</a>`;
       }
+      h += `</tbody></table>`;
     } else {
       h += `<div class="panel scroll"><table class="ptable"><thead><tr><th>Player</th><th>Mkt</th><th class="num">Line</th><th class="num">Over/Under</th><th>Book</th>
         <th class="num" title="Season average, games played">AVG</th><th class="num" title="Last 5 games played">L5</th><th class="num" title="Over this line, last ${HIT_N} games played">HIT</th><th>Trend</th><th class="num">Actual</th><th>Result</th></tr></thead><tbody>`;
@@ -352,6 +370,7 @@ window.STIX_PROPS = {
     const on = (id, ev, fn) => { const el = document.getElementById(id); if (el) el.addEventListener(ev, fn); };
     document.querySelectorAll("[data-pgid]").forEach((b) => b.addEventListener("click", () => { P.game = P.game === b.dataset.pgid ? "" : b.dataset.pgid; render(); }));
     document.querySelectorAll("[data-pday]").forEach((b) => b.addEventListener("click", () => { P.day = Number(b.dataset.pday); P.game = ""; render(); }));
+    document.querySelectorAll("[data-bset]").forEach((b) => b.addEventListener("click", () => { P.bset = b.dataset.bset; render(); }));
     document.querySelectorAll("[data-rmk]").forEach((b) => b.addEventListener("click", () => { P.rmk = b.dataset.rmk; render(); }));
     on("p-q", "input", (e) => { P.q = e.target.value; clearTimeout(P_TYPING); P_TYPING = setTimeout(() => { render(); const el = document.getElementById("p-q"); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }, 200); });
     document.querySelectorAll("[data-pmk]").forEach((b) => b.addEventListener("click", () => { P.pmk[decodeURIComponent(arg)] = b.dataset.pmk; render(); }));
