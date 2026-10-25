@@ -34,6 +34,33 @@ MARKETS = [
     {"id": "player_blocks", "short": "BLK", "label": "Blocks", "stat": "blk"},
 ]
 STAT = {m["id"]: m["stat"] for m in MARKETS}
+
+# Combo lines estimated from component lines when the books' own combo line wasn't captured.
+# Offsets fit to this repo's captures (Oct 2026, ~1,600 DK/FD snapshots): books most often post
+# two-stat combos at the sum of the parts + 0.5, and PRA at the exact sum. Priced -110/-110.
+COMBO_PARTS = {
+    "player_points_rebounds_assists": ["player_points", "player_rebounds", "player_assists"],
+    "player_points_rebounds": ["player_points", "player_rebounds"],
+    "player_points_assists": ["player_points", "player_assists"],
+    "player_rebounds_assists": ["player_rebounds", "player_assists"],
+}
+COMBO_OFFSET = {"player_points_rebounds_assists": 0.0, "player_points_rebounds": 0.5,
+                "player_points_assists": 0.5, "player_rebounds_assists": 0.5}
+EST_PRICE = -110.0
+
+
+def estimate_combo(mk: str, parts: dict) -> dict | None:
+    """Estimated combo line from the component line objects, or None if any part is missing."""
+    comps = [parts.get(c) for c in COMBO_PARTS[mk]]
+    if any(c is None or c.get("line") is None for c in comps):
+        return None
+    line = sum(c["line"] for c in comps) + COMBO_OFFSET[mk]
+    morning = any(c.get("pt") == "morning" for c in comps)
+    return {"line": line, "op": EST_PRICE, "up": EST_PRICE, "est": True,
+            "pt": "morning" if morning else "pregame",
+            "book": comps[0].get("book"), "cap": max(c.get("cap") or "" for c in comps),
+            "mb": min(int(c.get("mb") or 0) for c in comps),
+            "from": {c: parts[c]["line"] for c in COMBO_PARTS[mk]}, "alt": {}}
 BOOK_ORDER = ["draftkings", "fanduel"]
 
 
@@ -163,6 +190,21 @@ def build(data_dir: Path) -> dict:
         am = next((by_time[t] for t in times if (next(iter(by_time[t].values())).get("pull_type") == "morning")), None)
         grouped[(ev, mk, pl)][book] = (cur, am)
 
+    def grade(obj: dict, aid: str, gid: str, mk: str) -> None:
+        g = games.get(gid, {})
+        log = next((x for x in logs.get(aid, []) if x["g"] == gid), None)
+        if g.get("final") and log is not None:
+            if not log["p"]:
+                obj["res"], obj["why"] = "void", log.get("why") or "did not play"
+            else:
+                act = log.get(STAT[mk])
+                obj["act"] = act
+                obj["res"] = None if act is None else ("over" if act > obj["line"] else "under" if act < obj["line"] else "push")
+        elif g.get("final"):
+            obj["res"], obj["why"] = "void", "no box score entry (likely inactive)"
+        else:
+            obj["res"] = "pending"
+
     lines: dict[str, dict] = defaultdict(dict)        # aid -> game_id -> market -> line obj
     unmatched_games, unmatched_players = set(), set()
     ev_game: dict[str, str | None] = {}
@@ -202,21 +244,19 @@ def build(data_dir: Path) -> dict:
         if prim is None:
             continue
         obj = {**per_book[prim], "book": prim, "alt": {b: v for b, v in per_book.items() if b != prim}}
-        # grade
-        g = games.get(gid, {})
-        log = next((x for x in logs.get(aid, []) if x["g"] == gid), None)
-        if g.get("final") and log is not None:
-            if not log["p"]:
-                obj["res"], obj["why"] = "void", log.get("why") or "did not play"
-            else:
-                act = log.get(STAT[mk])
-                obj["act"] = act
-                obj["res"] = None if act is None else ("over" if act > obj["line"] else "under" if act < obj["line"] else "push")
-        elif g.get("final"):
-            obj["res"], obj["why"] = "void", "no box score entry (likely inactive)"
-        else:
-            obj["res"] = "pending"
+        grade(obj, aid, gid, mk)
         lines[aid][gid] = {**lines[aid].get(gid, {}), mk: obj}
+
+    # ---- estimated combo lines where the real one is missing
+    for aid, by_game in lines.items():
+        for gid, ms in by_game.items():
+            for mk in COMBO_PARTS:
+                if mk in ms:
+                    continue
+                est = estimate_combo(mk, ms)
+                if est:
+                    grade(est, aid, gid, mk)
+                    ms[mk] = est
 
     pull_log = _read(data_dir / "pull_log.csv")
     return {

@@ -73,3 +73,15 @@ def test_pregame_line_graded_and_morning_kept(tmp_path):
     setup(tmp_path, [am, pre], [box("28")])
     ln = build.build(tmp_path)["lines"]["3112335"]["g1"]["player_points"]
     assert ln["line"] == 28.5 and ln["pt"] == "pregame" and ln["am"]["line"] == 26.5 and ln["res"] == "under"
+
+
+def test_estimate_combo_offsets_and_price():
+    from nba_tracker.build import estimate_combo
+    parts = {"player_points": {"line": 13.5, "pt": "pregame", "book": "draftkings", "cap": "a", "mb": 60},
+             "player_rebounds": {"line": 5.5, "pt": "pregame", "book": "draftkings", "cap": "b", "mb": 61},
+             "player_assists": {"line": 3.5, "pt": "morning", "book": "draftkings", "cap": "c", "mb": 500}}
+    pr = estimate_combo("player_points_rebounds", parts)
+    assert pr["line"] == 19.5 and pr["op"] == pr["up"] == -110 and pr["est"] and pr["pt"] == "pregame"
+    pra = estimate_combo("player_points_rebounds_assists", parts)
+    assert pra["line"] == 22.5 and pra["pt"] == "morning"
+    assert estimate_combo("player_points_assists", {"player_points": parts["player_points"]}) is None

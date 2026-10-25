@@ -136,6 +136,8 @@ tr:hover td.pcell { background: var(--panel); }
 .legend i.lg-line { border-top: 2px dashed var(--muted); position: relative; }
 .legend i.lg-line::after { content: ""; position: absolute; left: 5px; top: -6px; width: 7px; height: 7px; transform: rotate(45deg);
   background: var(--panel); border: 2px solid var(--ink); }
+.legend i.lg-est::after { border: 2px dotted var(--muted); }
+.estchip { background: transparent; border: 1px dashed var(--muted); color: var(--muted); font-size: 11px; padding: 0 6px; }
 .legend .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; vertical-align: middle; margin-right: 5px; }
 .ltable th.sel, .ltable td.sel { background: var(--chip); font-weight: 650; }
 details.resday summary { padding: 10px 14px; cursor: pointer; }

@@ -52,6 +52,10 @@ function resHtml(l) {
 const lineOdds = (l) => `${l.op != null ? am(l.op) : "—"}/${l.up != null ? am(l.up) : "—"}`;
 const bookShort = (b) => ({ draftkings: "DK", fanduel: "FD" }[b] || b);
 function lineTip(l) {
+  if (l.est) {
+    const parts = Object.entries(l.from || {}).map(([k, v]) => `${mkById(k).short} ${n1(v)}`).join(" + ");
+    return `Estimated line (no book line captured): ${parts}${l.line !== Object.values(l.from || {}).reduce((a, b) => a + b, 0) ? " + 0.5" : ""} = ${n1(l.line)}, priced -110/-110. Built from ${l.pt === "morning" ? "8 AM" : "pre-game"} ${bookShort(l.book)} lines.`;
+  }
   const alt = Object.entries(l.alt || {}).map(([b, x]) => `${bookShort(b)} ${n1(x.line)} (${lineOdds(x)})`).join(", ");
   const kind = l.pt === "morning" ? "8 AM line" : "Pre-game line";
   return `${kind}: ${bookShort(l.book)} ${n1(l.line)} ${lineOdds(l)}, captured ${fmtTime(l.cap)} (${l.mb} min before tip)` +
@@ -61,6 +65,7 @@ function lineTip(l) {
 // Line with its context: "8 AM" chip until the pre-game pull lands; movement since 8 AM after.
 function lineCell(l) {
   let h = `<b>${n1(l.line)}</b>`;
+  if (l.est) return h + ` <span class="chip estchip">EST</span>${l.pt === "morning" ? ` <span class="chip amchip">8 AM</span>` : ""}`;
   if (l.pt === "morning") h += ` <span class="chip amchip">8 AM</span>`;
   else if (l.am && l.am.line != null && l.am.line !== l.line) {
     const d = l.line - l.am.line;
@@ -208,7 +213,7 @@ function chartSVG(aid, mk) {
   const lo = Math.max(0, Math.floor(lo0 - pad)), hi = Math.ceil(hi0 + pad);
   const x = (i) => L + 10 + i * ((W - L - R - 20) / Math.max(1, logs.length - 1));
   const y = (v) => T + (H - T - B) * (1 - (v - lo) / (hi - lo));
-  const tip = (r, l) => `${esc(r.d)} ${r.ha === "home" ? "vs" : "@"} ${esc(r.opp)}: ${n1(r[st])}${l ? ` (line ${n1(l.line)}${l.res ? ", " + l.res : ""})` : ""}`;
+  const tip = (r, l) => `${esc(r.d)} ${r.ha === "home" ? "vs" : "@"} ${esc(r.opp)}: ${n1(r[st])}${l ? ` (${l.est ? "est. " : ""}line ${n1(l.line)}${l.res ? ", " + l.res : ""})` : ""}`;
   let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(mkById(mk).label)} by game: actual vs line">`;
   for (const v of [lo, (lo + hi) / 2, hi]) s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 4}" y="${y(v) + 4}" font-size="11" text-anchor="end" fill="var(--muted)">${Math.round(v)}</text>`;
   // Line series: dashed segments between consecutive games that both had a line; gaps stay open.
@@ -220,7 +225,7 @@ function chartSVG(aid, mk) {
   s += `<polyline points="${logs.map((r, i) => `${x(i)},${y(r[st])}`).join(" ")}" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>`;
   logs.forEach((r, i) => {
     const l = lineFor(r.g);
-    if (l) s += `<rect x="${x(i) - 4.5}" y="${y(l.line) - 4.5}" width="9" height="9" transform="rotate(45 ${x(i)} ${y(l.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>Line ${n1(l.line)}</title></rect>`;
+    if (l) s += `<rect x="${x(i) - 4.5}" y="${y(l.line) - 4.5}" width="9" height="9" transform="rotate(45 ${x(i)} ${y(l.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"${l.est ? ` stroke-dasharray="2 2"` : ""}><title>${l.est ? "Estimated line" : "Line"} ${n1(l.line)}</title></rect>`;
     if (l) s += `<text x="${x(i)}" y="${y(l.line) + (r[st] >= l.line ? 18 : -10)}" font-size="10" text-anchor="middle" fill="var(--muted)">${n1(l.line)}</text>`;
     const col = l && l.res === "over" ? "var(--over)" : l && l.res === "under" ? "var(--under)" : "var(--accent)";
     const above = !l || r[st] >= l.line;
@@ -244,14 +249,14 @@ function viewPlayer(aid) {
     <div class="mp-h"><div><h2>${esc(p.name)}</h2><div class="muted">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}</div>${curG ? `<div class="small">${gameHeader(curG)}</div>` : ""}</div></div>
     <div class="mtabs">${PX().markets.map((x) => `<button data-pmk="${x.id}" class="${x.id === mk ? "on" : ""}">${esc(x.label)}</button>`).join("")}</div>
     <div class="mtiles">
-      <div><span>LINE</span>${cur ? `<b title="${esc(lineTip(cur))}">${n1(cur.line)}</b><small>${lineOdds(cur)} ${bookShort(cur.book)}</small>` : `<span class="na">none</span>`}</div>
+      <div><span>LINE</span>${cur ? `<b title="${esc(lineTip(cur))}">${n1(cur.line)}</b><small>${cur.est ? "EST · " : ""}${lineOdds(cur)}${cur.est ? "" : " " + bookShort(cur.book)}</small>` : `<span class="na">none</span>`}</div>
       <div><span>AVG</span><b>${n1(f.avg)}</b><small>${f.n} game${f.n === 1 ? "" : "s"}</small></div>
       <div><span>L5</span><b>${n1(f.l5)}</b></div>
       <div><span>HIT</span>${hitHtml(f)}<small>over line</small></div>
       <div><span>TREND</span>${trendHtml(f, true)}</div>
     </div>
     <div class="panel"><h3>${esc(m.label)} by game</h3><div class="chart">${chartSVG(aid, mk)}</div>
-      <div class="legend"><span><i class="lg-act"></i>Actual</span><span><i class="lg-line"></i>Pre-game line</span><span><b class="dot" style="background:var(--over)"></b>Over</span><span><b class="dot" style="background:var(--under)"></b>Under</span><span><b class="dot" style="background:var(--accent)"></b>No line</span></div></div>`;
+      <div class="legend"><span><i class="lg-act"></i>Actual</span><span><i class="lg-line"></i>Pre-game line</span><span><i class="lg-line lg-est"></i>Estimated</span><span><b class="dot" style="background:var(--over)"></b>Over</span><span><b class="dot" style="background:var(--under)"></b>Under</span><span><b class="dot" style="background:var(--accent)"></b>No line</span></div></div>`;
   // game log
   const logs = [...(PX().logs[aid] || [])].reverse();
   // Base box-score columns, plus the selected market's column when it's a combo (PRA, P+R, ...).
@@ -263,14 +268,14 @@ function viewPlayer(aid) {
     const l = (myLines[r.g] || {})[mk];
     h += `<tr><td>${fmtDate(r.d)}</td><td>${r.ha === "home" ? "vs" : "@"} ${esc(r.opp || "")}${r.st ? "" : ` <span class="muted small">bench</span>`}</td>
       ${r.p ? `<td class="num">${n1(r.min)}</td>${cols.map(([k]) => `<td class="num ${k === m.stat ? "sel" : ""}">${n1(r[k])}</td>`).join("")}` : `<td colspan="${cols.length + 1}" class="na">DNP${r.why ? " — " + esc(r.why) : ""}</td>`}
-      <td class="num">${l ? `<span title="${esc(lineTip(l))}">${n1(l.line)}</span>` : ""}</td><td>${l ? resHtml(l) : ""}</td></tr>`;
+      <td class="num">${l ? `<span title="${esc(lineTip(l))}">${n1(l.line)}${l.est ? ` <span class="chip estchip">EST</span>` : ""}</span>` : ""}</td><td>${l ? resHtml(l) : ""}</td></tr>`;
   }
   h += `</tbody></table></div></div>`;
   // line record
   const graded = Object.values(myLines).map((ms) => ms[mk]).filter((l) => l && ["over", "under", "push"].includes(l.res));
   if (graded.length) {
     const c = (k) => graded.filter((l) => l.res === k).length;
-    h += `<p class="callout">${esc(m.label)} props this season: <span class="res over">${c("over")} over</span> · <span class="res under">${c("under")} under</span>${c("push") ? ` · ${c("push")} push` : ""}</p>`;
+    h += `<p class="callout">${esc(m.label)} props this season: <span class="res over">${c("over")} over</span> · <span class="res under">${c("under")} under</span>${c("push") ? ` · ${c("push")} push` : ""}${graded.some((l) => l.est) ? ` <span class="muted small">(${graded.filter((l) => l.est).length} vs estimated lines)</span>` : ""}</p>`;
   }
   return h + `</div>`;
 }
@@ -308,7 +313,7 @@ function viewResults() {
 // ---------- Guide ----------
 function viewGuide() {
   return `<div class="panel"><h3>How the player board works</h3><div class="body guide">
-    <p><b>Lines.</b> DraftKings and FanDuel player props are pulled from The Odds API twice per game: at <b>8:00 AM Central</b> on game day (retried until the books post them) and again about <b>1 hour before tip</b>. Until the 1-hour pull lands, the board shows the 8 AM line with an <span class="chip amchip">8 AM</span> chip; after it, ▲/▼ shows how far the line moved since 8 AM. The 1-hour line is the one graded. Nothing is pulled after tip. Core markets (points, rebounds, assists, threes) are always pulled. PRA, the two-stat combos, steals and blocks are added when API credits allow: the extras are skipped once the credits left are only enough for the core markets through the end of the month. DraftKings is the line shown and graded; FanDuel is used when DraftKings has no line for that player and stat. Hover or tap a line to see both books.</p>
+    <p><b>Lines.</b> DraftKings and FanDuel player props are pulled from The Odds API twice per game: at <b>8:00 AM Central</b> on game day (retried until the books post them) and again about <b>1 hour before tip</b>. Until the 1-hour pull lands, the board shows the 8 AM line with an <span class="chip amchip">8 AM</span> chip; after it, ▲/▼ shows how far the line moved since 8 AM. The 1-hour line is the one graded. When a book's PRA or two-stat combo line wasn't captured, an <span class="chip estchip">EST</span> line is built from the single-stat lines (two-stat combos: sum + 0.5; PRA: the sum, matching how DraftKings and FanDuel have most often set them in this season's captures), priced at -110/-110 and graded like any other line. Nothing is pulled after tip. Core markets (points, rebounds, assists, threes) are always pulled. PRA, the two-stat combos, steals and blocks are added when API credits allow: the extras are skipped once the credits left are only enough for the core markets through the end of the month. DraftKings is the line shown and graded; FanDuel is used when DraftKings has no line for that player and stat. Hover or tap a line to see both books.</p>
     <p><b>Grading.</b> Once the game is final, the actual stat from ESPN's box score is compared with the line: over, under or push. A player who had a line but didn't play is <i>void</i>, with ESPN's reason when it gives one.</p>
     <p><b>AVG / L5.</b> Season average and last-5 average over games the player actually played, counting only games before the date being viewed.</p>
     <p><b>HIT.</b> How many of his last ${HIT_N} games played went over <i>this</i> line (not the lines he had in those games).</p>
