@@ -1,9 +1,9 @@
 "use strict";
 // Dime front end (NBA props). Reads the JSON the GitHub Action writes to data/. No external libraries.
 
-const FILES = ["run", "games_today", "results_yesterday", "standings", "injuries", "odds", "props"];
+const FILES = ["run", "standings", "injuries", "props"];
 const D = {};               // file name -> parsed JSON (or null if missing)
-const S = { day: "today", game: "", conf: "", team: "", status: "", q: "" };
+const S = { conf: "", team: "", status: "", q: "" };
 let LIVE = null;            // recent workflow runs from the GitHub API (or null)
 const app = document.getElementById("app");
 
@@ -37,59 +37,6 @@ const median = (a) => { if (!a.length) return null; const s = [...a].sort((x, y)
 const mode = (a) => { const c = new Map(); a.forEach((v) => c.set(v, (c.get(v) || 0) + 1)); let best = null, n = 0; c.forEach((k, v) => { if (k > n || (k === n && Math.abs(v) < Math.abs(best))) { best = v; n = k; } }); return best; };
 const rows = (name) => (D[name] && D[name].rows) || [];
 
-// ESPN and The Odds API spell a few teams differently; compare on a normalized key.
-const normTeam = (n) => String(n || "").toLowerCase().replace(/^la /, "los angeles ").replace(/[^a-z0-9]/g, "");
-
-// ---------- odds summary ----------
-// For one game: best moneyline per side (and its book), consensus spread/total with best price at that number,
-// and a no-vig win probability averaged across books.
-// Live (in-progress) prices are stored but not shown as pre-game lines.
-const pregame = () => rows("odds").filter((x) => !x.in_play);
-function oddsFor(home, away) {
-  const all = pregame();
-  if (!all.length) return null;
-  const h = normTeam(home), a = normTeam(away);
-  const r = all.filter((x) => normTeam(x.home_team) === h && normTeam(x.away_team) === a);
-  if (!r.length) return null;
-  const out = { books: new Set(r.map((x) => x.book)).size };
-  const bestOf = (list) => list.reduce((b, x) => (b == null || dec(x.price) > dec(b.price) ? x : b), null);
-  // Moneyline
-  const ml = r.filter((x) => x.market === "h2h");
-  for (const [side, team] of [["home", h], ["away", a]]) {
-    const b = bestOf(ml.filter((x) => normTeam(x.outcome) === team));
-    if (b) out[`ml_${side}`] = { price: b.price, book: b.book };
-  }
-  const fair = [];
-  for (const book of new Set(ml.map((x) => x.book))) {
-    const hp = ml.find((x) => x.book === book && normTeam(x.outcome) === h);
-    const ap = ml.find((x) => x.book === book && normTeam(x.outcome) === a);
-    if (hp && ap) { const ih = impl(hp.price), ia = impl(ap.price); fair.push(ih / (ih + ia)); }
-  }
-  if (fair.length) out.home_prob = fair.reduce((s, v) => s + v, 0) / fair.length;
-  // Spread (home number)
-  const sp = r.filter((x) => x.market === "spreads" && x.point != null);
-  const homeSp = sp.filter((x) => normTeam(x.outcome) === h);
-  if (homeSp.length) {
-    const line = mode(homeSp.map((x) => x.point));
-    out.spread = {
-      line, range: [Math.min(...homeSp.map((x) => x.point)), Math.max(...homeSp.map((x) => x.point))],
-      home: bestOf(homeSp.filter((x) => x.point === line)),
-      away: bestOf(sp.filter((x) => normTeam(x.outcome) === a && x.point === -line)),
-    };
-  }
-  // Total
-  const tot = r.filter((x) => x.market === "totals" && x.point != null);
-  if (tot.length) {
-    const line = mode(tot.filter((x) => x.outcome === "Over").map((x) => x.point)) ?? mode(tot.map((x) => x.point));
-    out.total = {
-      line, range: [Math.min(...tot.map((x) => x.point)), Math.max(...tot.map((x) => x.point))],
-      over: bestOf(tot.filter((x) => x.outcome === "Over" && x.point === line)),
-      under: bestOf(tot.filter((x) => x.outcome === "Under" && x.point === line)),
-    };
-  }
-  out.updated = r.map((x) => x.market_updated).filter(Boolean).sort().pop();
-  return out;
-}
 
 // ---------- injuries helpers ----------
 function stClass(s) {
@@ -99,121 +46,6 @@ function stClass(s) {
   return "other";
 }
 const injFor = (teamId) => rows("injuries").filter((i) => i.team_id === teamId);
-
-// ---------- Games ----------
-function teamRow(t, g) {
-  const lost = g.state === "post" && t.winner === false;
-  const showScore = g.state !== "pre" && t.score != null;
-  return `<div class="trow ${lost ? "lost" : ""}"><span><span class="tn">${esc(t.abbr || t.name || "?")}</span><span class="tr">${esc(t.name || "")}${t.record ? ` · ${esc(t.record)}` : ""}</span></span>
-    <span class="sc">${showScore ? esc(t.score) : ""}</span></div>`;
-}
-function linesBlock(g) {
-  const o = oddsFor(g.home.name, g.away.name);
-  if (o) {
-    const ml = `${o.ml_away ? am(o.ml_away.price) : "—"} / ${o.ml_home ? am(o.ml_home.price) : "—"}`;
-    const prob = o.home_prob != null ? `<small>${esc(g.home.abbr)} ${Math.round(o.home_prob * 100)}% no-vig</small>` : "";
-    const sp = o.spread ? `<b>${esc(g.home.abbr)} ${pt(o.spread.line)}</b><small>${o.spread.home ? am(o.spread.home.price) : ""} best</small>` : NA("—");
-    const tt = o.total ? `<b>${o.total.line}</b><small>o ${o.total.over ? am(o.total.over.price) : "—"} · u ${o.total.under ? am(o.total.under.price) : "—"}</small>` : NA("—");
-    return `<div class="lines"><div><span>MONEYLINE</span><b>${ml}</b>${prob}</div><div><span>SPREAD</span>${sp}</div><div><span>TOTAL</span>${tt}</div></div>
-      <div class="gmeta">Best prices across ${o.books} book${o.books === 1 ? "" : "s"}${o.updated ? ` · updated ${ago(o.updated)}` : ""} · <a href="#/odds">odds</a></div>`;
-  }
-  if (g.espn_line && (g.espn_line.details || g.espn_line.over_under != null)) {
-    return `<div class="lines"><div><span>LINE</span><b>${esc(g.espn_line.details || "—")}</b></div><div><span>TOTAL</span><b>${g.espn_line.over_under ?? "—"}</b></div>
-      <div><span>SOURCE</span><small>${esc(g.espn_line.provider || "ESPN")}</small><small>via ESPN</small></div></div>`;
-  }
-  return g.state === "pre" ? `<div class="gmeta">${D.odds ? "No sportsbook odds for this game yet." : "Sportsbook odds appear here once the API key is added."}</div>` : "";
-}
-function leadersBlock(g) {
-  if (g.state === "pre") return "";
-  // "Banchero 35 pts, 7 reb, 10 ast" when one player leads several categories.
-  const l = (t) => {
-    if (!t.leaders) return "";
-    let prev = null;
-    const bits = [["points", "pts"], ["rebounds", "reb"], ["assists", "ast"]].filter(([k]) => t.leaders[k]).map(([k, u]) => {
-      const x = t.leaders[k], same = x.player === prev; prev = x.player;
-      return `${same ? "" : esc(x.player) + " "}${esc(x.value)} ${u}`;
-    });
-    return bits.length ? `${esc(t.abbr)}: ${bits.join(", ")}` : "";
-  };
-  const parts = [l(g.away), l(g.home)].filter(Boolean);
-  return parts.length ? `<div class="gmeta">${parts.map((p) => `<span>${p}</span>`).join("")}</div>` : "";
-}
-function injLine(g) {
-  if (g.state !== "pre") return "";
-  const outs = [...injFor(g.away.team_id), ...injFor(g.home.team_id)].filter((i) => stClass(i.status) === "out");
-  const dtd = [...injFor(g.away.team_id), ...injFor(g.home.team_id)].filter((i) => stClass(i.status) === "dtd");
-  if (!outs.length && !dtd.length) return "";
-  const nm = (list) => list.map((i) => `${esc(i.player)} (${esc(i.team_abbr)})`).join(", ");
-  return `<div class="gmeta inj-note">${outs.length ? `<span><b>Out:</b> ${nm(outs)}</span>` : ""}${dtd.length ? `<span><b>Day-to-day:</b> ${nm(dtd)}</span>` : ""}</div>`;
-}
-function gameCard(g) {
-  let when;
-  if (g.state === "in") when = `<span class="live">● ${esc(g.status || "Live")}</span>`;
-  else if (g.state === "post") when = `<span class="res">${esc(g.status || "Final")}</span>`;
-  else when = `<span class="when">${fmtClock(g.start_utc)}</span>`;
-  const meta = [g.venue, (g.broadcasts || []).join(", ")].filter(Boolean).map(esc).join(" · ");
-  return `<div class="gcard"><div class="gcard-h"><b>${esc(g.away.abbr)} @ ${esc(g.home.abbr)}</b>${when}</div>
-    ${teamRow(g.away, g)}${teamRow(g.home, g)}${linesBlock(g)}${leadersBlock(g)}${injLine(g)}
-    ${meta ? `<div class="gmeta">${meta}</div>` : ""}</div>`;
-}
-function viewGames() {
-  const today = D.games_today, yest = D.results_yesterday;
-  const chip = (key, label, file) => `<button class="gchip ${S.day === key ? "on" : ""}" data-day="${key}"><b>${label}</b><span class="muted small">${file ? `${fmtDate(file.game_date)} · ${file.count} game${file.count === 1 ? "" : "s"}` : "not loaded"}</span></button>`;
-  let h = `<div class="gamebar">${chip("today", "Today", today)}${chip("yesterday", "Yesterday", yest)}</div>`;
-  const file = S.day === "today" ? today : yest;
-  if (!file) return h + `<p class="muted">This data wasn't loaded. Check the <a href="#/log">Log</a> tab.</p>`;
-  const gs = [...file.rows].sort((a, b) => String(a.start_utc).localeCompare(String(b.start_utc)));
-  if (!gs.length) return h + `<p class="muted">No NBA games on ${fmtDate(file.game_date)}.</p>`;
-  h += `<p class="callout">Times in your time zone. ${S.day === "today" ? "Odds show the best price across books; the no-vig % is the market's implied win chance for the home team." : "Final scores and each team's leaders."}</p>`;
-  return h + `<div class="cards">${gs.map(gameCard).join("")}</div>`;
-}
-
-// ---------- Odds ----------
-// One card per game: the best price for each side and the book offering it.
-// Spread and total use the most common number across books; "best" is the best price at that number.
-const BOOK_NAMES = { betmgm: "BetMGM", betonlineag: "BetOnline", betrivers: "BetRivers", betus: "BetUS", bovada: "Bovada",
-  draftkings: "DraftKings", fanduel: "FanDuel", lowvig: "LowVig", mybookieag: "MyBookie", williamhill_us: "Caesars",
-  espnbet: "ESPN BET", fliff: "Fliff", hardrockbet: "Hard Rock", ballybet: "Bally Bet", betparx: "betPARX" };
-const bookName = (b) => BOOK_NAMES[b] || b;
-function creditsLeft() {
-  const c = D.run && D.run.props && D.run.props.credits;
-  if (c && Object.keys(c).length) {
-    const vals = Object.values(c);
-    return vals.some((v) => v == null) ? null : { total: vals.reduce((s, v) => s + v, 0), keys: vals.length };
-  }
-  const q = D.odds && D.odds.quota;
-  return q && q.requests_remaining != null ? { total: Number(q.requests_remaining), keys: 1 } : null;
-}
-function viewOdds() {
-  const f = D.odds;
-  if (!f) {
-    return `<div class="panel"><h3>Sportsbook odds</h3><div class="body">
-      <p>Odds aren't being collected yet — the <span class="mono">ODDS_API_KEY</span> secret hasn't been added to the repo.</p>
-      <p class="muted">Add it under GitHub → repo <b>Settings → Secrets and variables → Actions → New repository secret</b>.
-      The next scheduled run starts pulling moneyline, spread and total from US books. Until then, game cards show ESPN's line when ESPN publishes one.</p></div></div>`;
-  }
-  const nowIso = new Date().toISOString();
-  const all = f.rows.filter((x) => !x.in_play && x.commence_utc > nowIso);
-  const live = f.rows.some((x) => x.in_play || x.commence_utc <= nowIso);
-  const books = new Set(all.map((x) => x.book)).size;
-  const events = [...new Map(all.map((x) => [x.event_id, x])).values()].sort((a, b) => a.commence_utc.localeCompare(b.commence_utc));
-  const cr = creditsLeft();
-  let h = `<p class="callout">${events.length} games · best price across ${books} books · pulled ${ago(f.fetched_at)}${cr ? ` · API credits left: ${cr.total}${cr.keys > 1 ? ` (${cr.keys} keys)` : ""}` : ""}.${live ? ` Games that have tipped off are hidden.` : ""}${events.length ? "" : " No upcoming games in the last pull; the next one is at 8 AM Central."}</p>`;
-  const cell = (label, x, num) => `<div class="obest"><span class="olbl">${esc(label)}</span>${x ? `<b>${num != null ? num + " " : ""}${am(x.price)}</b><small>${esc(bookName(x.book))}</small>` : NA("—")}</div>`;
-  for (const ev of events) {
-    const o = oddsFor(ev.home_team, ev.away_team);
-    if (!o) continue;
-    const A = ev.away_team.split(" ").pop(), Hm = ev.home_team.split(" ").pop();
-    const sp = o.spread, tt = o.total;
-    h += `<div class="panel ocard"><h3>${esc(ev.away_team)} @ ${esc(ev.home_team)} <span class="muted small">${fmtTime(ev.commence_utc)}${o.home_prob != null ? ` · ${esc(Hm)} ${Math.round(o.home_prob * 100)}% no-vig` : ""}</span></h3>
-      <div class="ogrid">
-        ${cell("ML " + A, o.ml_away)}${cell("ML " + Hm, o.ml_home)}
-        ${cell("Spread " + A, sp && sp.away, sp ? pt(-sp.line) : null)}${cell("Spread " + Hm, sp && sp.home, sp ? pt(sp.line) : null)}
-        ${cell("Over", tt && tt.over, tt ? tt.line : null)}${cell("Under", tt && tt.under, tt ? tt.line : null)}
-      </div></div>`;
-  }
-  return h;
-}
 
 // ---------- Standings ----------
 function viewStandings() {
@@ -328,22 +160,22 @@ function propsLog() {
 // ---------- router ----------
 function render() {
   const hash = location.hash || "#/board";
-  const [, tab, arg] = hash.split("/");
+  let [, tab, arg] = hash.split("/");
+  if (tab === "games" || tab === "odds") { location.replace("#/board"); return; }   // removed pages
   const active = tab === "player" ? "board" : tab || "board";
   document.querySelectorAll("#tabs a").forEach((a) => a.classList.toggle("on", a.dataset.tab === active));
-  const views = { games: viewGames, odds: viewOdds, standings: viewStandings, injuries: viewInjuries, log: viewLog };
+  const views = { standings: viewStandings, injuries: viewInjuries, log: viewLog };
   let propsView = false;
   try {
     let html = views[tab] ? views[tab]() : null;
     if (html == null && window.STIX_PROPS) { html = window.STIX_PROPS.render(tab, arg); propsView = html != null; }
-    app.innerHTML = html ?? viewGames();
+    app.innerHTML = html ?? `<p class="pad">Page not found. <a href="#/board">Back to the board</a>.</p>`;
   } catch (e) { console.error(e); app.innerHTML = `<p class="pad">This view hit an error: ${esc(e.message)}. The data may have changed shape — check the <a href="#/log">Log</a>.</p>`; }
   bind();
   if (propsView) { try { window.STIX_PROPS.bind(tab, arg); } catch (e) { console.error(e); } }
 }
 function bind() {
   const on = (id, ev, fn) => { const el = document.getElementById(id); if (el) el.addEventListener(ev, fn); };
-  document.querySelectorAll("[data-day]").forEach((b) => b.addEventListener("click", () => { S.day = b.dataset.day; render(); }));
   on("i-team", "change", (e) => { S.team = e.target.value; render(); });
   on("i-status", "change", (e) => { S.status = e.target.value; render(); });
   on("i-q", "input", (e) => { S.q = e.target.value; clearTimeout(bind.t); bind.t = setTimeout(() => { render(); const el = document.getElementById("i-q"); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }, 200); });
@@ -386,7 +218,7 @@ async function status() {
 
 (async function init() {
   await loadAll();
-  if (!D.run && !D.games_today) {
+  if (!D.run && !D.props) {
     app.innerHTML = `<p class="pad">Could not load data yet. The first scheduled run may still be in progress.</p>`;
     document.getElementById("status").textContent = "No data";
     return;

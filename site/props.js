@@ -4,7 +4,7 @@
 
 const TREND = { minGames: 3, lastN: 3, pct: 15 };   // trend arrow: last 3 games vs season avg, ±15%
 const HIT_N = 10;                                   // hit rate window (games played)
-const P = { date: "", game: "", mk: "", team: "", q: "", pmk: {} };
+const P = { day: 0, game: "", q: "", pmk: {}, rmk: "core" };   // day: -1 yesterday, 0 today, 1 tomorrow
 let P_TYPING = null;
 
 const PX = () => D.props;
@@ -101,10 +101,12 @@ function linesDueText(gid) {
   return `Lines are pulled at 8:00 AM Central (once the books post them) and again about 1 hour before tip (~${fmtClock(pre.toISOString())}).`;
 }
 function todayET() { return new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" }); }
-function defaultDate() {
-  const ds = lineDates(), t = todayET();
-  return ds.includes(t) ? t : ds.filter((d) => d <= t).pop() || ds[ds.length - 1] || t;
+function dayET(offset) {   // NBA game date (US Eastern) offset from today
+  const d = new Date(todayET() + "T12:00:00Z");
+  d.setUTCDate(d.getUTCDate() + offset);
+  return d.toISOString().slice(0, 10);
 }
+const DAYS = [[-1, "Yesterday"], [0, "Today"], [1, "Tomorrow"]];
 const MK_ORDER = ["player_points", "player_rebounds", "player_assists", "player_threes", "player_points_rebounds_assists",
   "player_points_rebounds", "player_points_assists", "player_rebounds_assists", "player_steals", "player_blocks"];
 const BASE_COLS = [["pts", "PTS"], ["reb", "REB"], ["ast", "AST"], ["fg3m", "3PM"], ["stl", "STL"], ["blk", "BLK"]];
@@ -121,34 +123,22 @@ function gameHeader(gid) {
 // ---------- Board ----------
 function viewBoard() {
   if (!PX()) return `<p class="muted">Player prop data isn't available yet. It's built on each scheduled run — check the <a href="#/log">Log</a>.</p>`;
-  const dates = lineDates();
-  if (!P.date || !dates.includes(P.date)) P.date = defaultDate();
-  const all = propRows(P.date);
-  const gids = [...new Set([...all.map((r) => r.gid), ...gamesOn(P.date)])].sort((a, b) => String(gameOf(a).start).localeCompare(String(gameOf(b).start)));
+  const date = dayET(P.day);
+  const all = propRows(date);
+  const gids = [...new Set([...all.map((r) => r.gid), ...gamesOn(date)])].sort((a, b) => String(gameOf(a).start).localeCompare(String(gameOf(b).start)));
   if (P.game && !gids.includes(P.game)) P.game = "";
   const q = P.q.trim().toLowerCase();
   const pl = (aid) => PX().players[aid] || { name: aid };
-  const GROUPS = { core: MK_ORDER.slice(0, 4), combo: MK_ORDER.slice(4, 8), def: MK_ORDER.slice(8) };
-  const mkOk = (mk) => !P.mk || (GROUPS[P.mk] ? GROUPS[P.mk].includes(mk) : mk === P.mk);
-  let rows = all.filter((r) => (!P.game || r.gid === P.game) && mkOk(r.mk) &&
-    (!P.team || pl(r.aid).team === P.team) && (!q || pl(r.aid).name.toLowerCase().includes(q)));
-  const teams = [...new Set(all.map((r) => pl(r.aid).team).filter(Boolean))].sort();
+  let rows = all.filter((r) => (!P.game || r.gid === P.game) && (!q || pl(r.aid).name.toLowerCase().includes(q)));
 
-  const chip = (gid, label, sub) => `<button class="gchip ${P.game === gid ? "on" : ""}" data-pgid="${esc(gid)}">${label}<span class="muted small">${sub}</span></button>`;
-  let h = `<div class="gamebar">${chip("", "<b>All games</b>", `${gids.length} game${gids.length === 1 ? "" : "s"}`)}` +
-    gids.map((g) => chip(g, `<b>${esc(gLabel(g))}</b>`, gameOf(g).final ? "Final" : esc(fmtClock(gameOf(g).start)))).join("") + `</div>`;
-  h += `<div class="filters">
-    <label>Date <select id="p-date">${dates.slice().reverse().map((d) => `<option value="${d}" ${d === P.date ? "selected" : ""}>${fmtDate(d)}</option>`).join("")}</select></label>
-    <label>Market <select id="p-mk">${[["", "All markets"], ["core", "Core (PTS/REB/AST/3PM)"], ["combo", "Combos (PRA, P+R, P+A, R+A)"], ["def", "Steals & blocks"]].map(([v, t]) => `<option value="${v}" ${v === P.mk ? "selected" : ""}>${t}</option>`).join("")}
-      <optgroup label="Single market">${PX().markets.map((m) => `<option value="${m.id}" ${m.id === P.mk ? "selected" : ""}>${esc(m.label)}</option>`).join("")}</optgroup></select></label>
-    <label>Team <select id="p-team"><option value="">All</option>${teams.map((t) => `<option ${t === P.team ? "selected" : ""}>${esc(t)}</option>`).join("")}</select></label>
-    <label>Player <input type="search" id="p-q" placeholder="Search name" value="${esc(P.q)}"></label>
-    <button type="button" id="p-clear" class="fclear" ${P.game || P.mk || P.team || P.q || P.date !== defaultDate() ? "" : "disabled"}>Clear filters</button></div>`;
-  const nPl = new Set(rows.map((r) => r.aid)).size;
-  h += `<p class="callout">${nPl} players · lines pulled at 8 AM CT and ~1 h before tip; the 1-hour line is graded (DraftKings; FanDuel if DK has none) · AVG/L5/HIT use games before this date · HIT = games over this line, last ${HIT_N} played · <a href="#/guide">how it works</a></p>`;
-  const filtered = P.mk || P.team || q;
+  let h = `<div class="dayseg">${DAYS.map(([o, l]) => `<button data-pday="${o}" class="${P.day === o ? "on" : ""}">${l}<span>${fmtDate(dayET(o))}</span></button>`).join("")}</div>`;
+  // Game chips filter to one game; tap the selected chip again to show every game.
+  if (gids.length) h += `<div class="gamebar">` + gids.map((g) => `<button class="gchip ${P.game === g ? "on" : ""}" data-pgid="${esc(g)}"><b>${esc(gLabel(g))}</b><span class="muted small">${gameOf(g).final ? "Final" : esc(fmtClock(gameOf(g).start))}</span></button>`).join("") + `</div>`;
+  h += `<div class="filters fsearch"><input type="search" id="p-q" placeholder="Search player" aria-label="Search player" value="${esc(P.q)}"></div>`;
+  if (!gids.length) return h + `<p class="muted">No NBA games ${P.day < 0 ? "were played" : "scheduled"} on ${fmtDate(date)}.</p>`;
+  const filtered = !!q;
   const waiting = gids.filter((g) => !all.some((r) => r.gid === g) && (!P.game || P.game === g));
-  if (!rows.length && (filtered || !waiting.length)) return h + `<p class="muted">${dates.length ? "No lines match these filters." : "No prop lines captured yet. Lines are pulled about 3 hours before each tip-off."}</p>`;
+  if (!rows.length && (filtered || !waiting.length)) return h + `<p class="muted">${filtered ? "No players match that search." : "No prop lines were captured for this date."}</p>`;
 
   // group: game -> player -> markets
   const byGame = new Map();
@@ -176,7 +166,7 @@ function viewBoard() {
           <div class="muted small">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}${p.nolog ? " · no games yet" : ""}</div></div><span class="mchev">›</span></div>
           <div class="mrow mhead"><span></span><span>LINE</span><span>AVG</span><span>L5</span><span>HIT</span><span>TREND</span></div>`;
         for (const r of rs.sort((a, b) => MK_ORDER.indexOf(a.mk) - MK_ORDER.indexOf(b.mk))) {
-          const f = form(aid, r.mk, P.date, r.l.line);
+          const f = form(aid, r.mk, date, r.l.line);
           h += `<div class="mrow"><span class="mlab">${esc(mkById(r.mk).short)}</span><span>${lineCell(r.l)} ${resHtml(r.l)}</span><span>${n1(f.avg)}</span><span>${n1(f.l5)}</span><span>${hitHtml(f)}</span><span>${trendHtml(f)}</span></div>`;
         }
         h += `</a>`;
@@ -187,7 +177,7 @@ function viewBoard() {
       for (const [aid, rs] of plist) {
         const p = pl(aid);
         rs.sort((a, b) => MK_ORDER.indexOf(a.mk) - MK_ORDER.indexOf(b.mk)).forEach((r, i) => {
-          const f = form(aid, r.mk, P.date, r.l.line);
+          const f = form(aid, r.mk, date, r.l.line);
           h += `<tr class="${i === 0 ? "plr" : ""}">${i === 0 ? `<td rowspan="${rs.length}" class="pcell"><a href="#/player/${encodeURIComponent(aid)}"><b>${esc(p.name)}</b></a><div class="muted small">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}${p.nolog ? " · no games yet" : ""}</div></td>` : ""}
             <td>${esc(mkById(r.mk).short)}</td><td class="num" title="${esc(lineTip(r.l))}">${lineCell(r.l)}</td><td class="num">${lineOdds(r.l)}</td><td class="muted">${bookShort(r.l.book)}</td>
             <td class="num">${n1(f.avg)}</td><td class="num">${n1(f.l5)}</td><td class="num">${hitHtml(f)}</td><td>${trendHtml(f)}</td>
@@ -285,8 +275,47 @@ function viewResults() {
   if (!PX()) return `<p class="muted">No prop data yet.</p>`;
   const dates = lineDates().filter((d) => propRows(d).some((r) => r.l.res && r.l.res !== "pending")).reverse();
   if (!dates.length) return `<p class="muted">No graded props yet. Props are graded once each game is final and its box score is in.</p>`;
-  let h = `<p class="callout">Every captured line, graded against the box score. Void = had a line but didn't play.</p>`;
+  let h = `<p class="callout">Big number = actual, small = line. Green over, red under; DNP = had a line but didn't play.</p>`;
   const tally = (rs) => { const t = { over: 0, under: 0, push: 0, void: 0 }; rs.forEach((r) => { if (t[r.l.res] != null) t[r.l.res]++; }); return t; };
+  const COLS = P.rmk === "combo" ? MK_ORDER.slice(4, 8) : MK_ORDER.slice(0, 4);
+  h += `<div class="seg rseg">${[["core", "PTS · REB · AST · 3PM"], ["combo", "PRA · P+R · P+A · R+A"]].map(([k, l]) => `<button data-rmk="${k}" class="${P.rmk === k ? "on" : ""}">${l}</button>`).join("")}</div>`;
+  dates.forEach((d, di) => {
+    const rs = propRows(d).filter((r) => r.l.res && r.l.res !== "pending");
+    const t = tally(rs);
+    h += `<details class="panel resday" ${di === 0 ? "open" : ""}><summary><b>${fmtDate(d)}</b> <span class="muted small"><span class="res over">${t.over} over</span> · <span class="res under">${t.under} under</span>${t.push ? ` · ${t.push} push` : ""}${t.void ? ` · ${t.void} void` : ""}</span></summary>`;
+    const gids = [...new Set(rs.map((r) => r.gid))].sort((a, b) => String(gameOf(a).start).localeCompare(String(gameOf(b).start)));
+    for (const gid of gids) {
+      const g = gameOf(gid);
+      const byP = new Map();
+      for (const r of rs.filter((x) => x.gid === gid)) { if (!byP.has(r.aid)) byP.set(r.aid, {}); byP.get(r.aid)[r.mk] = r.l; }
+      const team = (aid) => (PX().players[aid] || {}).team || "";
+      const ptsLine = (m) => (m.player_points || {}).line || 0;
+      h += `<div class="rgame"><div class="rgame-h"><b>${esc(g.away || "")} ${g.as ?? ""}</b> @ <b>${esc(g.home || "")} ${g.hs ?? ""}</b>${g.final ? ` <span class="muted small">Final</span>` : ""}</div>
+        <table class="rgrid"><thead><tr><th>Player</th>${COLS.map((mk) => `<th>${esc(mkById(mk).short)}</th>`).join("")}</tr></thead><tbody>`;
+      for (const tm of [g.away, g.home]) {
+        const plist = [...byP.entries()].filter(([aid]) => team(aid) === tm).sort((a, b) => ptsLine(b[1]) - ptsLine(a[1]));
+        if (!plist.length) continue;
+        h += `<tr class="rteam"><td colspan="${COLS.length + 1}">${esc(tm)}</td></tr>`;
+        for (const [aid, ms] of plist) {
+          const nm = (PX().players[aid] || {}).name || aid;
+          h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${esc(nm)}</a></td>` + COLS.map((mk) => {
+            const l = ms[mk];
+            if (!l) return `<td class="rc na">—</td>`;
+            if (l.res === "void") return `<td class="rc void" title="${esc(l.why || "Did not play")}"><b>DNP</b><small>${n1(l.line)}</small></td>`;
+            return `<td class="rc ${l.res}" title="Line ${n1(l.line)}, actual ${n1(l.act)}: ${l.res}"><b>${n1(l.act)}</b><small>${n1(l.line)}</small></td>`;
+          }).join("") + `</tr>`;
+        }
+      }
+      // Players whose team didn't match either side (rare name/roster mismatches)
+      const other = [...byP.keys()].filter((aid) => team(aid) !== g.away && team(aid) !== g.home);
+      for (const aid of other) {
+        const ms = byP.get(aid), nm = (PX().players[aid] || {}).name || aid;
+        h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${esc(nm)}</a></td>` + COLS.map((mk) => { const l = ms[mk]; return l ? `<td class="rc ${l.res}"><b>${l.res === "void" ? "DNP" : n1(l.act)}</b><small>${n1(l.line)}</small></td>` : `<td class="rc na">—</td>`; }).join("") + `</tr>`;
+      }
+      h += `</tbody></table></div>`;
+    }
+    h += `</details>`;
+  });
   // season summary by market
   const allRows = dates.flatMap((d) => propRows(d)).filter((r) => r.l.res && r.l.res !== "pending");
   h += `<div class="panel"><h3>Season so far</h3><div class="scroll"><table><thead><tr><th>Market</th><th class="num">Over</th><th class="num">Under</th><th class="num">Push</th><th class="num">Void</th><th class="num">Over %</th></tr></thead><tbody>`;
@@ -295,18 +324,6 @@ function viewResults() {
     h += `<tr><td>${esc(m.label)}</td><td class="num">${t.over}</td><td class="num">${t.under}</td><td class="num">${t.push}</td><td class="num">${t.void}</td><td class="num">${dec2 ? Math.round((t.over / dec2) * 100) + "%" : "—"}</td></tr>`;
   }
   h += `</tbody></table></div></div>`;
-  for (const d of dates) {
-    const rs = propRows(d).filter((r) => r.l.res && r.l.res !== "pending");
-    const t = tally(rs);
-    h += `<details class="panel resday"><summary><b>${fmtDate(d)}</b> <span class="muted small">${rs.length} props · <span class="res over">${t.over} over</span> · <span class="res under">${t.under} under</span>${t.push ? ` · ${t.push} push` : ""}${t.void ? ` · ${t.void} void` : ""}</span></summary>
-      <div class="scroll"><table class="stable"><thead><tr><th>Player</th><th>Game</th><th>Mkt</th><th class="num">Line</th><th class="num">Actual</th><th>Result</th></tr></thead><tbody>`;
-    rs.sort((a, b) => (PX().players[a.aid] || {}).name?.localeCompare((PX().players[b.aid] || {}).name) || MK_ORDER.indexOf(a.mk) - MK_ORDER.indexOf(b.mk));
-    for (const r of rs) {
-      h += `<tr><td data-label="Player"><a href="#/player/${encodeURIComponent(r.aid)}">${esc((PX().players[r.aid] || {}).name || r.aid)}</a></td><td data-label="Game">${esc(gLabel(r.gid))}</td>
-        <td data-label="Market">${esc(mkById(r.mk).short)}</td><td class="num" data-label="Line">${n1(r.l.line)}</td><td class="num" data-label="Actual">${r.l.act != null ? n1(r.l.act) : "—"}</td><td data-label="Result">${resHtml(r.l)}</td></tr>`;
-    }
-    h += `</tbody></table></div></details>`;
-  }
   return h;
 }
 
@@ -333,11 +350,9 @@ window.STIX_PROPS = {
   },
   bind(tab, arg) {
     const on = (id, ev, fn) => { const el = document.getElementById(id); if (el) el.addEventListener(ev, fn); };
-    document.querySelectorAll("[data-pgid]").forEach((b) => b.addEventListener("click", () => { P.game = b.dataset.pgid; render(); }));
-    on("p-date", "change", (e) => { P.date = e.target.value; P.game = ""; render(); });
-    on("p-clear", "click", () => { Object.assign(P, { date: defaultDate(), game: "", mk: "", team: "", q: "" }); render(); });
-    on("p-mk", "change", (e) => { P.mk = e.target.value; render(); });
-    on("p-team", "change", (e) => { P.team = e.target.value; render(); });
+    document.querySelectorAll("[data-pgid]").forEach((b) => b.addEventListener("click", () => { P.game = P.game === b.dataset.pgid ? "" : b.dataset.pgid; render(); }));
+    document.querySelectorAll("[data-pday]").forEach((b) => b.addEventListener("click", () => { P.day = Number(b.dataset.pday); P.game = ""; render(); }));
+    document.querySelectorAll("[data-rmk]").forEach((b) => b.addEventListener("click", () => { P.rmk = b.dataset.rmk; render(); }));
     on("p-q", "input", (e) => { P.q = e.target.value; clearTimeout(P_TYPING); P_TYPING = setTimeout(() => { render(); const el = document.getElementById("p-q"); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }, 200); });
     document.querySelectorAll("[data-pmk]").forEach((b) => b.addEventListener("click", () => { P.pmk[decodeURIComponent(arg)] = b.dataset.pmk; render(); }));
     const back = document.getElementById("m-back");

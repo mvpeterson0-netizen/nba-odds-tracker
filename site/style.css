@@ -158,3 +158,33 @@ details.resday[open] summary { border-bottom: 1px solid var(--line); }
 button.fclear { align-self: end; padding: 6px 14px; }
 button.fclear:not([disabled]) { border-color: var(--accent); color: var(--accent); font-weight: 600; }
 button.fclear[disabled] { opacity: .5; cursor: default; }
+
+/* Board day tabs */
+.dayseg { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 3px; margin-bottom: 10px; }
+.dayseg button { font: inherit; font-weight: 600; border: 0; background: transparent; color: var(--ink); border-radius: 7px; padding: 7px 4px; display: flex; flex-direction: column; align-items: center; gap: 1px; cursor: pointer; }
+.dayseg button span { font-size: 11px; font-weight: 400; color: var(--muted); }
+.dayseg button.on { background: var(--accent); color: var(--panel); }
+.dayseg button.on span { color: var(--panel); opacity: .8; }
+.filters.fsearch { display: block; }
+.filters.fsearch input { width: 100%; box-sizing: border-box; font-size: 16px; padding: 8px 10px; }
+/* Results: one table per game */
+.seg { display: inline-flex; gap: 4px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 3px; margin-bottom: 10px; }
+.seg button { font: inherit; font-size: 13px; border: 0; background: transparent; color: var(--ink); border-radius: 7px; padding: 6px 10px; cursor: pointer; }
+.seg button.on { background: var(--accent); color: var(--panel); }
+.rgame { padding: 4px 10px 10px; }
+.rgame + .rgame { border-top: 1px solid var(--line); }
+.rgame-h { padding: 8px 2px 6px; }
+.rgrid { width: 100%; border-collapse: separate; border-spacing: 3px; table-layout: fixed; }
+.rgrid th { font-size: 11px; color: var(--muted); font-weight: 600; text-align: center; padding: 2px; }
+.rgrid th:first-child { text-align: left; width: 38%; }
+.rgrid .rteam td { font-size: 11px; font-weight: 700; letter-spacing: .06em; color: var(--muted); padding: 8px 2px 2px; }
+.rgrid .rname { font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 2px; }
+.rgrid .rc { text-align: center; border-radius: 6px; padding: 3px 2px; background: var(--bg); line-height: 1.1; }
+.rgrid .rc b { display: block; font-size: 14px; }
+.rgrid .rc small { display: block; font-size: 10px; color: var(--muted); }
+.rgrid .rc.over { background: color-mix(in srgb, var(--over) 18%, transparent); }
+.rgrid .rc.over b { color: var(--over); }
+.rgrid .rc.under { background: color-mix(in srgb, var(--under) 16%, transparent); }
+.rgrid .rc.under b { color: var(--under); }
+.rgrid .rc.void b { color: var(--muted); font-size: 11px; }
+.rgrid .rc.na { color: var(--muted); }

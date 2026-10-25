@@ -73,6 +73,9 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
         ("results_yesterday",
          lambda: espn.parse_scoreboard(espn.fetch_scoreboard(day - timedelta(days=1))),
          {"game_date": (day - timedelta(days=1)).isoformat()}),
+        ("games_tomorrow",
+         lambda: espn.parse_scoreboard(espn.fetch_scoreboard(day + timedelta(days=1))),
+         {"game_date": (day + timedelta(days=1)).isoformat()}),
         ("standings", lambda: espn.parse_standings(espn.fetch_standings()), {}),
         ("injuries", lambda: espn.parse_injuries(espn.fetch_injuries()), {}),
     ]

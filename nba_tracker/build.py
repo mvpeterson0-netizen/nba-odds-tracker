@@ -112,8 +112,8 @@ def build(data_dir: Path) -> dict:
     caps = _read(data_dir / "prop_captures.csv")
     box = _read(data_dir / "player_games.csv")
     games = _json(data_dir / "games.json", {})
-    # Today's and yesterday's scoreboards add upcoming/live games (and live scores).
-    for name in ("results_yesterday", "games_today"):
+    # Yesterday's, today's and tomorrow's scoreboards add upcoming/live games (and live scores).
+    for name in ("results_yesterday", "games_today", "games_tomorrow"):
         for g in (_json(data_dir / "latest" / f"{name}.json", {}) or {}).get("rows", []):
             gid = g.get("game_id")
             if not gid:
