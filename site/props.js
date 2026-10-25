@@ -4,7 +4,7 @@
 
 const TREND = { minGames: 3, lastN: 3, pct: 15 };   // trend arrow: last 3 games vs season avg, ±15%
 const HIT_N = 10;                                   // hit rate window (games played)
-const P = { day: 0, game: "", q: "", pmk: {}, rmk: "core", bset: "core" };   // day: -1 yesterday, 0 today, 1 tomorrow
+const P = { day: 0, game: "", q: "", pmk: {}, rmk: "core", bset: "core", subFrom: "" };   // day: -1 yesterday, 0 today, 1 tomorrow
 let P_TYPING = null;
 
 const PX = () => D.props;
@@ -178,9 +178,9 @@ function viewBoard() {
         h += `<tr class="rteam"><td colspan="${COLS.length + 1}">${esc(tm || "")}</td></tr>`;
         for (const [aid, rs] of tp) {
           const p = pl(aid), by = Object.fromEntries(rs.map((r) => [r.mk, r.l]));
-          const href = `#/player/${encodeURIComponent(aid)}`;
-          h += `<tr><td class="bname"><a href="${href}">${esc(p.name)}</a></td>` + COLS.map((mk) => {
-            const l = by[mk];
+          const pHref = `#/player/${encodeURIComponent(aid)}`;
+          h += `<tr><td class="bname"><a href="${pHref}">${esc(p.name)}</a></td>` + COLS.map((mk) => {
+            const l = by[mk], href = `${pHref}/${mk}`;
             if (!l) return `<td class="bc na"><a href="${href}" aria-label="${esc(p.name)}">—</a></td>`;
             const tip = esc(lineTip(l));
             if (l.res === "void") return `<td class="bc void" title="${tip}"><a href="${href}"><b>${n1(l.line)}</b><small>DNP</small></a></td>`;
@@ -200,7 +200,7 @@ function viewBoard() {
         rs.sort((a, b) => MK_ORDER.indexOf(a.mk) - MK_ORDER.indexOf(b.mk)).forEach((r, i) => {
           const f = form(aid, r.mk, date, r.l.line);
           h += `<tr class="${i === 0 ? "plr" : ""}">${i === 0 ? `<td rowspan="${rs.length}" class="pcell"><a href="#/player/${encodeURIComponent(aid)}"><b>${esc(p.name)}</b></a><div class="muted small">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}${p.nolog ? " · no games yet" : ""}</div></td>` : ""}
-            <td>${esc(mkById(r.mk).short)}</td><td class="num" title="${esc(lineTip(r.l))}">${lineCell(r.l)}</td><td class="num">${lineOdds(r.l)}</td><td class="muted">${bookShort(r.l.book)}</td>
+            <td>${esc(mkById(r.mk).short)}</td><td class="num" title="${esc(lineTip(r.l))}"><a class="lnk" href="#/player/${encodeURIComponent(aid)}/${r.mk}">${lineCell(r.l)}</a></td><td class="num">${lineOdds(r.l)}</td><td class="muted">${bookShort(r.l.book)}</td>
             <td class="num">${n1(f.avg)}</td><td class="num">${n1(f.l5)}</td><td class="num">${hitHtml(f)}</td><td>${trendHtml(f)}</td>
             <td class="num">${r.l.act != null ? `<b>${n1(r.l.act)}</b>` : ""}</td><td>${resHtml(r.l)}</td></tr>`;
         });
@@ -246,8 +246,10 @@ function chartSVG(aid, mk) {
   });
   return s + `</svg>`;
 }
-function viewPlayer(aid) {
+function viewPlayer(aid, sub) {
   aid = decodeURIComponent(aid || "");
+  // #/player/<id>/<market> opens with that market selected (applied once per visit, so tabs still work).
+  if (sub && location.hash !== P.subFrom && PX() && mkById(sub)) { P.pmk[aid] = sub; P.subFrom = location.hash; }
   const p = PX() && PX().players[aid];
   if (!p) return `<p>Player not found. <a href="#/board">Back to the board</a></p>`;
   const mk = P.pmk[aid] || "player_points", m = mkById(mk);
@@ -362,8 +364,9 @@ function viewGuide() {
 }
 
 window.STIX_PROPS = {
-  render(tab, arg) {
-    if (tab === "player") return viewPlayer(arg);
+  render(tab, arg, sub) {
+    if (tab !== "player") P.subFrom = "";
+    if (tab === "player") return viewPlayer(arg, sub);
     if (tab === "results") return viewResults();
     if (tab === "guide") return viewGuide();
     if (!tab || tab === "board") return viewBoard();
@@ -377,6 +380,8 @@ window.STIX_PROPS = {
     document.querySelectorAll("[data-rmk]").forEach((b) => b.addEventListener("click", () => { P.rmk = b.dataset.rmk; render(); }));
     on("p-q", "input", (e) => { P.q = e.target.value; clearTimeout(P_TYPING); P_TYPING = setTimeout(() => { render(); const el = document.getElementById("p-q"); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }, 200); });
     document.querySelectorAll("[data-pmk]").forEach((b) => b.addEventListener("click", () => { P.pmk[decodeURIComponent(arg)] = b.dataset.pmk; render(); }));
+    const onTab = document.querySelector(".mtabs button.on");
+    if (onTab && onTab.scrollIntoView) onTab.scrollIntoView({ block: "nearest", inline: "center" });
     const back = document.getElementById("m-back");
     if (back) back.addEventListener("click", (e) => { if (history.length > 1) { e.preventDefault(); history.back(); } });
   },

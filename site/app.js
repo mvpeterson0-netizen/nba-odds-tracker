@@ -160,7 +160,7 @@ function propsLog() {
 // ---------- router ----------
 function render() {
   const hash = location.hash || "#/board";
-  let [, tab, arg] = hash.split("/");
+  let [, tab, arg, sub] = hash.split("/");
   if (tab === "games" || tab === "odds") { location.replace("#/board"); return; }   // removed pages
   const active = tab === "player" ? "board" : tab || "board";
   document.querySelectorAll("#tabs a").forEach((a) => a.classList.toggle("on", a.dataset.tab === active));
@@ -168,7 +168,7 @@ function render() {
   let propsView = false;
   try {
     let html = views[tab] ? views[tab]() : null;
-    if (html == null && window.STIX_PROPS) { html = window.STIX_PROPS.render(tab, arg); propsView = html != null; }
+    if (html == null && window.STIX_PROPS) { html = window.STIX_PROPS.render(tab, arg, sub); propsView = html != null; }
     app.innerHTML = html ?? `<p class="pad">Page not found. <a href="#/board">Back to the board</a>.</p>`;
   } catch (e) { console.error(e); app.innerHTML = `<p class="pad">This view hit an error: ${esc(e.message)}. The data may have changed shape — check the <a href="#/log">Log</a>.</p>`; }
   bind();

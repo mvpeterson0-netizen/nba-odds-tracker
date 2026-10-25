@@ -207,3 +207,5 @@ button.fclear[disabled] { opacity: .5; cursor: default; }
 .bgrid .bc.void { opacity: .7; }
 .bgrid .bc.am b::after { content: "•"; color: var(--push); margin-left: 2px; font-size: 10px; vertical-align: top; }
 .amdot { color: var(--push); }
+
+a.lnk { color: inherit; }
