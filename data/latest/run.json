@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-26T11:30:36+00:00",
+  "finished_at": "2026-10-26T17:38:15+00:00",
   "game_date": "2026-10-26",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -10,7 +10,7 @@
     "injuries": "ok",
     "boxscores": "ok",
     "props": "ok",
-    "odds": "not_due"
+    "odds": "ok"
   },
   "boxscores": {
     "new_games": 0,
@@ -23,13 +23,77 @@
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 319,
-      "ODDS_API_KEY_2": 320
+      "ODDS_API_KEY": 303,
+      "ODDS_API_KEY_2": 300
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Washington Wizards @ Charlotte Hornets",
+        "type": "morning",
+        "status": "ok",
+        "rows": 178,
+        "markets": 4
+      },
+      {
+        "matchup": "Minnesota Timberwolves @ Cleveland Cavaliers",
+        "type": "morning",
+        "status": "ok",
+        "rows": 180,
+        "markets": 4
+      },
+      {
+        "matchup": "Chicago Bulls @ Boston Celtics",
+        "type": "morning",
+        "status": "ok",
+        "rows": 172,
+        "markets": 4
+      },
+      {
+        "matchup": "Dallas Mavericks @ Miami Heat",
+        "type": "morning",
+        "status": "ok",
+        "rows": 148,
+        "markets": 4
+      },
+      {
+        "matchup": "Indiana Pacers @ Milwaukee Bucks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 152,
+        "markets": 4
+      },
+      {
+        "matchup": "Phoenix Suns @ Oklahoma City Thunder",
+        "type": "morning",
+        "status": "ok",
+        "rows": 170,
+        "markets": 4
+      },
+      {
+        "matchup": "Atlanta Hawks @ Houston Rockets",
+        "type": "morning",
+        "status": "ok",
+        "rows": 186,
+        "markets": 4
+      },
+      {
+        "matchup": "Memphis Grizzlies @ Utah Jazz",
+        "type": "morning",
+        "status": "ok",
+        "rows": 168,
+        "markets": 4
+      },
+      {
+        "matchup": "Golden State Warriors @ Denver Nuggets",
+        "type": "morning",
+        "status": "ok",
+        "rows": 156,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
+    "due": 9,
     "pregame_pulled": false,
     "status": "ok"
   }
