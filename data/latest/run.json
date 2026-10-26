@@ -1,6 +1,6 @@
 {
-  "finished_at": "2026-10-26T00:42:01+00:00",
-  "game_date": "2026-10-25",
+  "finished_at": "2026-10-26T05:28:11+00:00",
+  "game_date": "2026-10-26",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
     "games_today": "ok",
@@ -13,12 +13,12 @@
     "odds": "not_due"
   },
   "boxscores": {
-    "new_games": 2,
-    "player_rows": 58,
+    "new_games": 5,
+    "player_rows": 138,
     "unparsed": [],
-    "queued": 2,
+    "queued": 5,
     "errors": [],
-    "rosters_fetched": 0
+    "rosters_fetched": 18
   },
   "props": {
     "keys": 2,
@@ -26,19 +26,11 @@
       "ODDS_API_KEY": 319,
       "ODDS_API_KEY_2": 320
     },
-    "pulled": [
-      {
-        "matchup": "Memphis Grizzlies @ Sacramento Kings",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 134,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
