@@ -214,13 +214,24 @@ function viewBoard() {
 }
 
 // ---------- Player page ----------
+// Games with captured lines that haven't been played yet (no box score, not final): today's game,
+// shown in the log and chart with lines only until the actual stats arrive.
+function pendingGames(aid) {
+  const p = PX().players[aid] || {}, seen = new Set((PX().logs[aid] || []).map((r) => r.g));
+  return Object.keys(PX().lines[aid] || {}).filter((gid) => !seen.has(gid) && !gameOf(gid).final)
+    .sort((a, b) => String(gameOf(a).start).localeCompare(String(gameOf(b).start)))
+    .map((gid) => { const g = gameOf(gid), home = p.team ? p.team === g.home : false;
+      return { g: gid, d: g.date, pend: true, ha: home ? "home" : "away", opp: home ? g.away : g.home }; });
+}
 function chartSVG(aid, mk) {
   const st = mkById(mk).stat;
-  const logs = played(aid).filter((r) => r[st] != null).slice(-15);
+  const lineFor0 = (gid) => ((PX().lines[aid] || {})[gid] || {})[mk];
+  const pend = pendingGames(aid).filter((r) => lineFor0(r.g)).slice(0, 2);
+  const logs = [...played(aid).filter((r) => r[st] != null).slice(-(15 - pend.length)), ...pend];
   if (logs.length < 2) return `<p class="muted small pad">Not enough games for a chart yet.</p>`;
   const lineFor = (gid) => ((PX().lines[aid] || {})[gid] || {})[mk];
   const W = 640, H = 236, L = 36, R = 16, T = 26, B = 32;
-  const vals = [...logs.map((r) => r[st]), ...logs.map((r) => lineFor(r.g)).filter(Boolean).map((l) => l.line)];
+  const vals = [...logs.filter((r) => !r.pend).map((r) => r[st]), ...logs.map((r) => lineFor(r.g)).filter(Boolean).map((l) => l.line)];
   const hi0 = Math.max(...vals), lo0 = Math.min(...vals), pad = Math.max(2, (hi0 - lo0) * 0.18);
   const lo = Math.max(0, Math.floor(lo0 - pad)), hi = Math.ceil(hi0 + pad);
   const x = (i) => L + 10 + i * ((W - L - R - 20) / Math.max(1, logs.length - 1));
@@ -234,9 +245,15 @@ function chartSVG(aid, mk) {
   logs.forEach((r, i) => { const l = lineFor(r.g); if (l) seg.push(`${x(i)},${y(l.line)}`); else flush(); });
   flush();
   // Actual series: solid line through every game.
-  s += `<polyline points="${logs.map((r, i) => `${x(i)},${y(r[st])}`).join(" ")}" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>`;
+  s += `<polyline points="${logs.map((r, i) => (r.pend ? "" : `${x(i)},${y(r[st])}`)).filter(Boolean).join(" ")}" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>`;
   logs.forEach((r, i) => {
     const l = lineFor(r.g);
+    if (r.pend) {   // not played yet: line only, label above; the actual point appears once the box score is in
+      s += `<rect x="${x(i) - 4.5}" y="${y(l.line) - 4.5}" width="9" height="9" transform="rotate(45 ${x(i)} ${y(l.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>${esc(r.d)} ${r.ha === "home" ? "vs" : "@"} ${esc(r.opp || "")}: line ${n1(l.line)} (not played yet)</title></rect>`;
+      s += `<text x="${x(i)}" y="${y(l.line) - 12}" font-size="13" text-anchor="middle" fill="var(--muted)" font-style="italic">${n1(l.line)}</text>`;
+      s += `<text x="${x(i)}" y="${H - 9}" font-size="13" text-anchor="middle" fill="var(--muted)">${esc((r.opp || "").slice(0, 3))}</text>`;
+      return;
+    }
     if (l) s += `<rect x="${x(i) - 4.5}" y="${y(l.line) - 4.5}" width="9" height="9" transform="rotate(45 ${x(i)} ${y(l.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>Line ${n1(l.line)}</title></rect>`;
     if (l) s += `<text x="${x(i)}" y="${y(l.line) + (r[st] >= l.line ? 22 : -12)}" font-size="13" text-anchor="middle" fill="var(--muted)">${n1(l.line)}</text>`;
     const col = l && l.res === "over" ? "var(--over)" : l && l.res === "under" ? "var(--under)" : "var(--accent)";
@@ -277,7 +294,16 @@ function viewPlayer(aid, sub) {
   const cols = BASE_COLS.some(([k]) => k === m.stat) ? BASE_COLS : [...BASE_COLS, [m.stat, m.short]];
   h += `<div class="panel"><h3>Game log</h3><div class="scroll"><table class="ltable"><thead><tr><th>Date</th><th>Opp</th><th class="num">MIN</th>
     ${cols.map(([k, lab]) => `<th class="num ${k === m.stat ? "sel" : ""}">${esc(lab)}</th>`).join("")}<th class="num">Line</th><th>Result</th></tr></thead><tbody>`;
-  if (!logs.length) h += `<tr><td colspan="${cols.length + 5}" class="muted">No games played yet this season.</td></tr>`;
+  // Today's (unplayed) game on top: each stat column shows that market's line in italics until the box score is in.
+  const pendRows = pendingGames(aid).reverse();
+  for (const r of pendRows) {
+    const ms = myLines[r.g] || {}, l = ms[mk];
+    const lineOf = (k) => { const x = PX().markets.find((mm) => mm.stat === k && ms[mm.id]); return x ? ms[x.id] : null; };
+    h += `<tr class="pendrow"><td>${fmtDate(r.d)}</td><td>${r.ha === "home" ? "vs" : "@"} ${esc(r.opp || "")}</td><td class="num na">—</td>
+      ${cols.map(([k]) => { const lx = lineOf(k); return `<td class="num ${k === m.stat ? "sel" : ""}">${lx ? `<i title="${esc(lineTip(lx))}">${n1(lx.line)}</i>` : `<span class="na">—</span>`}</td>`; }).join("")}
+      <td class="num">${l ? `<span title="${esc(lineTip(l))}">${n1(l.line)}</span>` : ""}</td><td>${l ? resHtml(l) : ""}</td></tr>`;
+  }
+  if (!logs.length && !pendRows.length) h += `<tr><td colspan="${cols.length + 5}" class="muted">No games played yet this season.</td></tr>`;
   for (const r of logs) {
     const l = (myLines[r.g] || {})[mk];
     h += `<tr><td>${fmtDate(r.d)}</td><td>${r.ha === "home" ? "vs" : "@"} ${esc(r.opp || "")}${r.st ? "" : ` <span class="muted small">bench</span>`}</td>
