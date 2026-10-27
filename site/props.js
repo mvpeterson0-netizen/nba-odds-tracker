@@ -218,7 +218,7 @@ function chartSVG(aid, mk) {
   const logs = played(aid).filter((r) => r[st] != null).slice(-15);
   if (logs.length < 2) return `<p class="muted small pad">Not enough games for a chart yet.</p>`;
   const lineFor = (gid) => ((PX().lines[aid] || {})[gid] || {})[mk];
-  const W = 640, H = 230, L = 30, R = 16, T = 22, B = 26;
+  const W = 640, H = 236, L = 36, R = 16, T = 26, B = 32;
   const vals = [...logs.map((r) => r[st]), ...logs.map((r) => lineFor(r.g)).filter(Boolean).map((l) => l.line)];
   const hi0 = Math.max(...vals), lo0 = Math.min(...vals), pad = Math.max(2, (hi0 - lo0) * 0.18);
   const lo = Math.max(0, Math.floor(lo0 - pad)), hi = Math.ceil(hi0 + pad);
@@ -226,7 +226,7 @@ function chartSVG(aid, mk) {
   const y = (v) => T + (H - T - B) * (1 - (v - lo) / (hi - lo));
   const tip = (r, l) => `${esc(r.d)} ${r.ha === "home" ? "vs" : "@"} ${esc(r.opp)}: ${n1(r[st])}${l ? ` (line ${n1(l.line)}${l.res ? ", " + l.res : ""})` : ""}`;
   let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(mkById(mk).label)} by game: actual vs line">`;
-  for (const v of [lo, (lo + hi) / 2, hi]) s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 4}" y="${y(v) + 4}" font-size="11" text-anchor="end" fill="var(--muted)">${Math.round(v)}</text>`;
+  for (const v of [lo, (lo + hi) / 2, hi]) s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 4}" y="${y(v) + 5}" font-size="14" text-anchor="end" fill="var(--muted)">${Math.round(v)}</text>`;
   // Line series: dashed segments between consecutive games that both had a line; gaps stay open.
   let seg = [];
   const flush = () => { if (seg.length > 1) s += `<polyline points="${seg.join(" ")}" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 4"/>`; seg = []; };
@@ -237,12 +237,12 @@ function chartSVG(aid, mk) {
   logs.forEach((r, i) => {
     const l = lineFor(r.g);
     if (l) s += `<rect x="${x(i) - 4.5}" y="${y(l.line) - 4.5}" width="9" height="9" transform="rotate(45 ${x(i)} ${y(l.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>Line ${n1(l.line)}</title></rect>`;
-    if (l) s += `<text x="${x(i)}" y="${y(l.line) + (r[st] >= l.line ? 18 : -10)}" font-size="10" text-anchor="middle" fill="var(--muted)">${n1(l.line)}</text>`;
+    if (l) s += `<text x="${x(i)}" y="${y(l.line) + (r[st] >= l.line ? 22 : -12)}" font-size="13" text-anchor="middle" fill="var(--muted)">${n1(l.line)}</text>`;
     const col = l && l.res === "over" ? "var(--over)" : l && l.res === "under" ? "var(--under)" : "var(--accent)";
     const above = !l || r[st] >= l.line;
     s += `<circle cx="${x(i)}" cy="${y(r[st])}" r="5.5" fill="${col}" stroke="var(--panel)" stroke-width="2"><title>${tip(r, l)}</title></circle>`;
-    s += `<text x="${x(i)}" y="${y(r[st]) + (above ? -10 : 18)}" font-size="11" font-weight="600" text-anchor="middle" fill="var(--ink)">${n1(r[st])}</text>`;
-    s += `<text x="${x(i)}" y="${H - 8}" font-size="10" text-anchor="middle" fill="var(--muted)">${esc((r.opp || "").slice(0, 3))}</text>`;
+    s += `<text x="${x(i)}" y="${y(r[st]) + (above ? -12 : 22)}" font-size="14" font-weight="600" text-anchor="middle" fill="var(--ink)">${n1(r[st])}</text>`;
+    s += `<text x="${x(i)}" y="${H - 9}" font-size="13" text-anchor="middle" fill="var(--muted)">${esc((r.opp || "").slice(0, 3))}</text>`;
   });
   return s + `</svg>`;
 }
