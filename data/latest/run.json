@@ -1,6 +1,6 @@
 {
-  "finished_at": "2026-10-27T01:00:13+00:00",
-  "game_date": "2026-10-26",
+  "finished_at": "2026-10-27T06:12:50+00:00",
+  "game_date": "2026-10-27",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
     "games_today": "ok",
@@ -13,12 +13,12 @@
     "odds": "not_due"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
+    "new_games": 9,
+    "player_rows": 251,
     "unparsed": [],
-    "queued": 0,
+    "queued": 9,
     "errors": [],
-    "rosters_fetched": 0
+    "rosters_fetched": 8
   },
   "props": {
     "keys": 2,
@@ -26,19 +26,11 @@
       "ODDS_API_KEY": 296,
       "ODDS_API_KEY_2": 296
     },
-    "pulled": [
-      {
-        "matchup": "Golden State Warriors @ Denver Nuggets",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 156,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
