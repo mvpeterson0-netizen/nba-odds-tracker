@@ -291,7 +291,11 @@ function viewPlayer(aid, sub) {
   // game log
   const logs = [...(PX().logs[aid] || [])].reverse();
   // Base box-score columns, plus the selected market's column when it's a combo (PRA, P+R, ...).
-  const cols = BASE_COLS.some(([k]) => k === m.stat) ? BASE_COLS : [...BASE_COLS, [m.stat, m.short]];
+  // Phones hide STL/BLK (no longer pulled) unless that market is the one selected.
+  const isPhone = !!(window.matchMedia && window.matchMedia("(max-width: 760px)").matches);
+  const base = isPhone ? BASE_COLS.filter(([k]) => !["stl", "blk"].includes(k) || k === m.stat) : BASE_COLS;
+  const cols = base.some(([k]) => k === m.stat) ? base : [...base, [m.stat, m.short]];
+  const oppTxt = (r) => `${r.ha === "home" ? "" : "@"}${esc(r.opp || "")}`;   // "IND" = home, "@CLE" = away
   h += `<div class="panel"><h3>Game log</h3><div class="scroll"><table class="ltable"><thead><tr><th>Date</th><th>Opp</th><th class="num">MIN</th>
     ${cols.map(([k, lab]) => `<th class="num ${k === m.stat ? "sel" : ""}">${esc(lab)}</th>`).join("")}<th class="num">Line</th><th>Result</th></tr></thead><tbody>`;
   // Today's (unplayed) game on top: each stat column shows that market's line in italics until the box score is in.
@@ -299,14 +303,14 @@ function viewPlayer(aid, sub) {
   for (const r of pendRows) {
     const ms = myLines[r.g] || {}, l = ms[mk];
     const lineOf = (k) => { const x = PX().markets.find((mm) => mm.stat === k && ms[mm.id]); return x ? ms[x.id] : null; };
-    h += `<tr class="pendrow"><td>${fmtDate(r.d)}</td><td>${r.ha === "home" ? "vs" : "@"} ${esc(r.opp || "")}</td><td class="num na">—</td>
+    h += `<tr class="pendrow"><td>${fmtDate(r.d)}</td><td>${oppTxt(r)}</td><td class="num na">—</td>
       ${cols.map(([k]) => { const lx = lineOf(k); return `<td class="num ${k === m.stat ? "sel" : ""}">${lx ? `<i title="${esc(lineTip(lx))}">${n1(lx.line)}</i>` : `<span class="na">—</span>`}</td>`; }).join("")}
       <td class="num">${l ? `<span title="${esc(lineTip(l))}">${n1(l.line)}</span>` : ""}</td><td>${l ? resHtml(l) : ""}</td></tr>`;
   }
   if (!logs.length && !pendRows.length) h += `<tr><td colspan="${cols.length + 5}" class="muted">No games played yet this season.</td></tr>`;
   for (const r of logs) {
     const l = (myLines[r.g] || {})[mk];
-    h += `<tr><td>${fmtDate(r.d)}</td><td>${r.ha === "home" ? "vs" : "@"} ${esc(r.opp || "")}${r.st ? "" : ` <span class="muted small">bench</span>`}</td>
+    h += `<tr><td>${fmtDate(r.d)}</td><td>${oppTxt(r)}${r.st ? "" : ` <span class="muted small">bench</span>`}</td>
       ${r.p ? `<td class="num">${n1(r.min)}</td>${cols.map(([k]) => `<td class="num ${k === m.stat ? "sel" : ""}">${n1(r[k])}</td>`).join("")}` : `<td colspan="${cols.length + 1}" class="na">DNP${r.why ? " — " + esc(r.why) : ""}</td>`}
       <td class="num">${l ? `<span title="${esc(lineTip(l))}">${n1(l.line)}</span>` : ""}</td><td>${l ? resHtml(l) : ""}</td></tr>`;
   }
