@@ -18,7 +18,7 @@ blocked at any time, and Disney's Terms of Use (which cover ESPN) limit use to p
 noncommercial use and bar automated access. Michael accepted those risks for Stix on 2026-10-25.
 A news failure is logged and the previous file kept; it never stops a run.
 
-"New": an item counts as new for 48 h after Dime first saw it (Dime's detection time, not the
+"New": an item counts as new for 24 h after Dime first saw it (Dime's detection time, not the
 source's date). Items that already existed the first time this ran have a blank time, so they never
 show as new. Seen-times are kept only for items still live, so an item that disappears and later
 comes back counts as new again.
