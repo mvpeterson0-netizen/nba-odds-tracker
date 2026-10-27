@@ -1,7 +1,7 @@
 "use strict";
 // Dime front end (NBA props). Reads the JSON the GitHub Action writes to data/. No external libraries.
 
-const FILES = ["run", "standings", "injuries", "props"];
+const FILES = ["run", "standings", "injuries", "props", "updates"];
 const D = {};               // file name -> parsed JSON (or null if missing)
 const S = { conf: "", team: "", status: "", q: "" };
 let LIVE = null;            // recent workflow runs from the GitHub API (or null)
@@ -131,6 +131,7 @@ function viewLog() {
       <tr><td data-label="Data">Schedule, scores, leaders</td><td data-label="Source">ESPN scoreboard feed</td><td class="note">Unofficial, undocumented endpoint; may change without notice.</td></tr>
       <tr><td data-label="Data">Standings</td><td data-label="Source">ESPN standings feed</td><td class="note">Same caveat.</td></tr>
       <tr><td data-label="Data">Injuries</td><td data-label="Source">ESPN league injury feed</td><td class="note">Return dates are ESPN estimates, not official.</td></tr>
+      <tr><td data-label="Data">Player updates (notes icon)</td><td data-label="Source">ESPN injury + news feeds, ESPN box scores and rosters</td><td class="note">Unofficial, undocumented endpoints (no key, no SLA); may change or be blocked at any time. Disney's Terms of Use limit use to personal, noncommercial use and bar automated access. One extra request per run (league news).</td></tr>
       <tr><td data-label="Data">Sportsbook odds</td><td data-label="Source"><a href="https://the-odds-api.com/liveapi/guides/v4/">The Odds API v4</a></td><td class="note">US books; moneyline, spread, total in American odds. Each pull costs API credits. No-vig % = each book's two moneyline prices normalized to 100%, averaged across books.</td></tr>
     </tbody></table>
     <p class="muted small">Lines are pulled at 8:00 AM Central and about 1 hour before each tip; ESPN data refreshes on every run. Code and raw data: <a href="https://github.com/${esc(repo())}">github.com/${esc(repo())}</a></p>

@@ -1,5 +1,6 @@
 "use strict";
 // Player props: Board, player pages and Results. Loaded before app.js; uses its helpers at render time.
+const updIcon = (aid) => (window.DIME_NEWS ? window.DIME_NEWS.icon(aid) : "");   // notes icon (news.js)
 // Data: data/props.json (built by nba_tracker/build.py).
 
 const TREND = { minGames: 3, lastN: 3, pct: 15 };   // trend arrow: last 3 games vs season avg, ±15%
@@ -179,7 +180,7 @@ function viewBoard() {
         for (const [aid, rs] of tp) {
           const p = pl(aid), by = Object.fromEntries(rs.map((r) => [r.mk, r.l]));
           const pHref = `#/player/${encodeURIComponent(aid)}`;
-          h += `<tr><td class="bname"><a href="${pHref}">${face(aid, p.name)}<span class="nm">${esc(p.name)}</span></a></td>` + COLS.map((mk) => {
+          h += `<tr><td class="bname"><a href="${pHref}">${face(aid, p.name)}<span class="nm">${esc(p.name)}</span>${updIcon(aid)}</a></td>` + COLS.map((mk) => {
             const l = by[mk], href = `${pHref}/${mk}`;
             if (!l) return `<td class="bc na"><a href="${href}" aria-label="${esc(p.name)}">—</a></td>`;
             const tip = esc(lineTip(l));
@@ -199,7 +200,7 @@ function viewBoard() {
         const p = pl(aid);
         rs.sort((a, b) => MK_ORDER.indexOf(a.mk) - MK_ORDER.indexOf(b.mk)).forEach((r, i) => {
           const f = form(aid, r.mk, date, r.l.line);
-          h += `<tr class="${i === 0 ? "plr" : ""}">${i === 0 ? `<td rowspan="${rs.length}" class="pcell"><a class="pc-a" href="#/player/${encodeURIComponent(aid)}">${face(aid, p.name)}<b>${esc(p.name)}</b></a><div class="muted small">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}${p.nolog ? " · no games yet" : ""}</div></td>` : ""}
+          h += `<tr class="${i === 0 ? "plr" : ""}">${i === 0 ? `<td rowspan="${rs.length}" class="pcell"><a class="pc-a" href="#/player/${encodeURIComponent(aid)}">${face(aid, p.name)}<b>${esc(p.name)}</b></a> ${updIcon(aid)}<div class="muted small">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}${p.nolog ? " · no games yet" : ""}</div></td>` : ""}
             <td>${esc(mkById(r.mk).short)}</td><td class="num" title="${esc(lineTip(r.l))}"><a class="lnk" href="#/player/${encodeURIComponent(aid)}/${r.mk}">${lineCell(r.l)}</a></td><td class="num">${lineOdds(r.l)}</td><td class="muted">${bookShort(r.l.book)}</td>
             <td class="num">${n1(f.avg)}</td><td class="num">${n1(f.l5)}</td><td class="num">${hitHtml(f)}</td><td>${trendHtml(f)}</td>
             <td class="num">${r.l.act != null ? `<b>${n1(r.l.act)}</b>` : ""}</td><td>${resHtml(r.l)}</td></tr>`;
@@ -259,7 +260,7 @@ function viewPlayer(aid, sub) {
   const cur = curG ? myLines[curG][mk] : null;
   const f = form(aid, mk, curG ? gameOf(curG).date : null, cur ? cur.line : null);
   let h = `<div class="mplayer"><div class="mp-top"><a href="#/board" class="mback" id="m-back">‹ Board</a></div>
-    <div class="mp-h">${face(aid, p.name, "lg")}<div><h2>${esc(p.name)}</h2><div class="muted">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}</div>${curG ? `<div class="small">${gameHeader(curG)}</div>` : ""}</div></div>
+    <div class="mp-h">${face(aid, p.name, "lg")}<div><h2>${esc(p.name)} ${updIcon(aid)}</h2><div class="muted">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}</div>${curG ? `<div class="small">${gameHeader(curG)}</div>` : ""}</div></div>
     <div class="mtabs">${PX().markets.map((x) => `<button data-pmk="${x.id}" class="${x.id === mk ? "on" : ""}">${esc(mkAbbr(x))}</button>`).join("")}</div>
     <div class="mtiles">
       <div><span>LINE</span>${cur ? `<b title="${esc(lineTip(cur))}">${n1(cur.line)}</b><small>${lineOdds(cur)} ${bookShort(cur.book)}</small>` : `<span class="na">none</span>`}</div>
@@ -373,6 +374,7 @@ function viewGuide() {
     <p><b>AVG / L5.</b> Season average and last-5 average over games the player actually played, counting only games before the date being viewed.</p>
     <p><b>HIT.</b> How many of his last ${HIT_N} games played went over <i>this</i> line (not the lines he had in those games).</p>
     <p><b>Trend.</b> Average of the last ${TREND.lastN} games vs. the season average: ↑ at least ${TREND.pct}% higher, ↓ at least ${TREND.pct}% lower, → otherwise. Needs ${TREND.minGames} games.</p>
+    <p><b>Player updates.</b> A notes icon next to a name means Dime has updates for that player; tap it for the list. It's red when something was first seen by Dime in the last 48 hours (Dime's own detection time, not the source's date), gray otherwise. Items: <b>ESPN</b> — ESPN's status note (status, injury, one-line note); <b>ESPN news</b> — ESPN headlines tagged with the player, last 7 days, newest 3; <b>Roster</b> — he's on a different team's ESPN roster than in his last box score; <b>Role</b> — from his team's most recent game, once he has 4+ games played: minutes at least 10 away from his prior average, or he started after coming off the bench in every prior game (or the reverse). "Info as of" is the source's own date for ESPN and roster items, and when Dime first saw the item otherwise. ESPN's feeds are unofficial and can change or stop at any time.</p>
     <p><b>Players with "no games yet"</b> have a line but no box score this season (first game, new team, or returning from injury). They're matched to ESPN's roster; stats appear after their first game.</p>
     <p class="muted">Data quality: ESPN's feeds are unofficial and can change. Player names are matched between the sportsbooks and ESPN by name; unmatched names are listed in the Log tab. Research tool only — not betting advice.</p>
   </div></div>`;

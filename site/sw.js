@@ -2,7 +2,7 @@
 // Network first for everything, so data and code are always fresh when online;
 // the last good copy is served only when the network fails.
 const CACHE = "dime-v1";
-const SHELL = ["./", "index.html", "style.css", "mobile.css", "app.js", "props.js", "manifest.webmanifest",
+const SHELL = ["./", "index.html", "style.css", "mobile.css", "app.js", "props.js", "news.js", "manifest.webmanifest",
   "icons/dime-180.png", "icons/dime-192.png", "icons/dime-512.png", "icons/dime-64.png", "icons/dime-32.png"];
 
 self.addEventListener("install", (e) => {

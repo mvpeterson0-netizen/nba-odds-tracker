@@ -6,6 +6,7 @@ parser here reads fields defensively and never assumes a key exists.
 
 from __future__ import annotations
 
+import re
 from datetime import date
 from typing import Any
 
@@ -33,7 +34,35 @@ def fetch_injuries() -> Any:
     return data
 
 
+def fetch_news() -> Any:
+    """League news (latest 100 items). Used only for headlines ESPN tags with a player."""
+    data, _ = get_json(f"{SITE}/news", {"limit": 100})
+    return data
+
+
 # ---------------------------------------------------------------- helpers
+
+_ID_RE = re.compile(r"/id/(\d+)")
+
+
+def athlete_id(ath: dict) -> str | None:
+    """ESPN athlete id: the "id" field when present, else parsed from the athlete's links."""
+    if ath.get("id"):
+        return str(ath["id"])
+    for ln in ath.get("links") or []:
+        m = _ID_RE.search(str(ln.get("href") or ""))
+        if m:
+            return m.group(1)
+    return None
+
+
+def player_news_link(ath: dict) -> str | None:
+    """ESPN's player news page from the athlete's links (rel includes "news" and "desktop")."""
+    for ln in ath.get("links") or []:
+        rel = ln.get("rel") or []
+        if "news" in rel and "desktop" in rel and str(ln.get("href") or "").startswith("https://"):
+            return ln["href"]
+    return None
 
 def _first(seq: Any) -> dict:
     return seq[0] if isinstance(seq, list) and seq and isinstance(seq[0], dict) else {}
@@ -172,7 +201,7 @@ def parse_injuries(raw: Any) -> list[dict]:
                 "team_id": team.get("id") or ath_team.get("id"),
                 "team": team.get("displayName") or ath_team.get("displayName"),
                 "team_abbr": team.get("abbreviation") or ath_team.get("abbreviation"),
-                "player_id": ath.get("id"),
+                "player_id": athlete_id(ath),
                 "player": ath.get("displayName"),
                 "position": (ath.get("position") or {}).get("abbreviation"),
                 "status": inj.get("status") or (inj.get("type") or {}).get("description"),
@@ -180,5 +209,22 @@ def parse_injuries(raw: Any) -> list[dict]:
                 "return_date": details.get("returnDate"),
                 "comment": inj.get("shortComment"),
                 "updated": inj.get("date"),
+                "url": player_news_link(ath),
             })
     return rows
+
+
+def parse_news(raw: Any) -> dict[str, list[dict]]:
+    """Headlines ESPN tags with a player: {athlete id: [{headline, date, url}]}. Untagged items are dropped."""
+    out: dict[str, list[dict]] = {}
+    for a in (raw or {}).get("articles") or []:
+        head = str(a.get("headline") or "").strip()
+        url = ((a.get("links") or {}).get("web") or {}).get("href") or ""
+        if not head or not str(url).startswith("https://"):
+            continue
+        ids = {str(c.get("athleteId") or (c.get("athlete") or {}).get("id"))
+               for c in a.get("categories") or []
+               if c.get("type") == "athlete" and (c.get("athleteId") or (c.get("athlete") or {}).get("id"))}
+        for aid in sorted(ids):
+            out.setdefault(aid, []).append({"headline": head, "date": a.get("published") or "", "url": url})
+    return out

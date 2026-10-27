@@ -17,12 +17,25 @@ snapshots to `data/`.
 | Data | Source | Key needed |
 | --- | --- | --- |
 | Today's games, yesterday's results, standings, injuries | ESPN public JSON endpoints | No |
+| Player updates (notes icon): ESPN status notes, player-tagged ESPN headlines | ESPN public JSON endpoints (injuries + league news, 1 extra request per run) | No |
 | Sportsbook odds (moneyline, spread, total) | [The Odds API](https://the-odds-api.com/liveapi/guides/v4/) v4 | Yes — `ODDS_API_KEY` |
 
 ESPN's endpoints are **unofficial and undocumented**; field names can change without
 notice. Parsers read every field defensively, and one failing source doesn't stop the
 others. The scoreboard sometimes includes an ESPN consensus line (`espn_line`) — useful
 as a placeholder, not a substitute for the odds feed.
+
+### Player updates (notes icon)
+
+A notes icon next to a player's name on the Board and player page opens his updates: ESPN's status
+note, ESPN headlines tagged with him (last 7 days, newest 3), roster moves (on a different team's ESPN
+roster than in his last box score) and role changes from his team's most recent game (4+ games played;
+minutes 10+ away from his prior average, or a bench/starter switch). Red = something Dime first saw
+in the last 48 hours. Built by `nba_tracker/updates.py` into `data/latest/updates.json`; first-seen
+times live in `data/updates_seen.json`, headlines in `data/espn_news.json` (overwritten each run).
+A news failure keeps the previous file and never stops a run. Same risks as Stix: ESPN's endpoints have
+no SLA and can change or be blocked, and Disney's Terms of Use limit use to personal, noncommercial use
+and bar automated access.
 
 ## Output
 

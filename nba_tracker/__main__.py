@@ -16,7 +16,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import boxscores, espn, odds, props
+from . import boxscores, espn, odds, props, updates
 
 log = logging.getLogger("nba_tracker")
 
@@ -96,6 +96,16 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
         status["boxscores"] = "failed"
         extra_info["boxscores"] = {"error": f"{type(e).__name__}: {e}"[:500]}
         log.exception("boxscores failed")
+
+    # Player updates (notes icon): ESPN news headlines + updates built from data already collected.
+    # Optional extras: a failure is logged and shown on the Log tab, but never fails the run.
+    status["espn_news"] = updates.refresh_news(out)
+    try:
+        updates.build(out)
+        status["updates"] = "ok"
+    except Exception as e:
+        status["updates"] = "failed"
+        log.exception("updates failed: %s", e)
 
     keys = props.load_keys(dict(os.environ))
     now = datetime.now(timezone.utc)
