@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-27T12:27:33+00:00",
+  "finished_at": "2026-10-27T15:00:28+00:00",
   "game_date": "2026-10-27",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -10,7 +10,7 @@
     "injuries": "ok",
     "boxscores": "ok",
     "props": "ok",
-    "odds": "not_due"
+    "odds": "ok"
   },
   "boxscores": {
     "new_games": 0,
@@ -23,13 +23,42 @@
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 296,
-      "ODDS_API_KEY_2": 296
+      "ODDS_API_KEY": 288,
+      "ODDS_API_KEY_2": 288
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Brooklyn Nets @ Boston Celtics",
+        "type": "morning",
+        "status": "ok",
+        "rows": 156,
+        "markets": 4
+      },
+      {
+        "matchup": "Detroit Pistons @ New York Knicks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 160,
+        "markets": 4
+      },
+      {
+        "matchup": "Sacramento Kings @ San Antonio Spurs",
+        "type": "morning",
+        "status": "ok",
+        "rows": 162,
+        "markets": 4
+      },
+      {
+        "matchup": "Portland Trail Blazers @ Los Angeles Lakers",
+        "type": "morning",
+        "status": "ok",
+        "rows": 184,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
+    "due": 4,
     "pregame_pulled": false,
     "status": "ok"
   }
