@@ -1,33 +1,67 @@
 {
-  "finished_at": "2026-10-28T22:45:31+00:00",
+  "finished_at": "2026-10-28T23:00:19+00:00",
   "game_date": "2026-10-28",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
     "games_today": "ok",
-    "results_yesterday": "failed",
+    "results_yesterday": "ok",
     "games_tomorrow": "ok",
     "standings": "ok",
     "injuries": "ok",
-    "boxscores": "failed",
+    "boxscores": "ok",
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
     "odds": "not_due"
   },
   "boxscores": {
-    "error": "FetchError: Giving up on https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard: Expecting value: line 1 column 1 (char 0)"
+    "new_games": 0,
+    "player_rows": 0,
+    "unparsed": [],
+    "queued": 0,
+    "errors": [],
+    "rosters_fetched": 0
   },
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 242,
-      "ODDS_API_KEY_2": 244
+      "ODDS_API_KEY": 234,
+      "ODDS_API_KEY_2": 236
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "New York Knicks @ Chicago Bulls",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 160,
+        "markets": 4
+      },
+      {
+        "matchup": "Denver Nuggets @ New Orleans Pelicans",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 166,
+        "markets": 4
+      },
+      {
+        "matchup": "Golden State Warriors @ Minnesota Timberwolves",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 166,
+        "markets": 4
+      },
+      {
+        "matchup": "Houston Rockets @ Milwaukee Bucks",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 176,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 4,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
