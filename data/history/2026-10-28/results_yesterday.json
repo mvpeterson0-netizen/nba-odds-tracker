@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-28T05:45:14+00:00",
+  "fetched_at": "2026-10-28T06:00:18+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-10-27",
@@ -225,11 +225,11 @@
       "game_id": "401909880",
       "start_utc": "2026-10-28T03:00Z",
       "short_name": "POR @ LAL",
-      "state": "in",
-      "status": "3:19 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "3:19",
+      "clock": "0.0",
       "venue": "crypto.com Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -242,19 +242,19 @@
         "team_id": "13",
         "abbr": "LAL",
         "name": "Los Angeles Lakers",
-        "score": 124,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "2-0",
+        "score": 129,
+        "winner": false,
+        "record": "3-1",
+        "home_record": "2-1",
         "away_record": "1-0",
         "leaders": {
           "points": {
             "player": "Luka Doncic",
-            "value": "36"
+            "value": "41"
           },
           "rebounds": {
             "player": "Walker Kessler",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Luka Doncic",
@@ -262,7 +262,7 @@
           },
           "rating": {
             "player": "Luka Doncic",
-            "value": "36 PTS, 9 AST"
+            "value": "41 PTS, 9 AST"
           }
         }
       },
@@ -270,27 +270,27 @@
         "team_id": "22",
         "abbr": "POR",
         "name": "Portland Trail Blazers",
-        "score": 125,
-        "winner": null,
-        "record": "2-0",
+        "score": 136,
+        "winner": true,
+        "record": "3-0",
         "home_record": "1-0",
-        "away_record": "1-0",
+        "away_record": "2-0",
         "leaders": {
           "points": {
-            "player": "Jrue Holiday",
-            "value": "21"
+            "player": "Deni Avdija",
+            "value": "23"
           },
           "rebounds": {
-            "player": "Donovan Clingan",
+            "player": "Robert Williams III",
             "value": "10"
           },
           "assists": {
             "player": "Deni Avdija",
-            "value": "8"
+            "value": "9"
           },
           "rating": {
             "player": "Deni Avdija",
-            "value": "20 PTS, 8 AST"
+            "value": "23 PTS, 9 AST"
           }
         }
       },
