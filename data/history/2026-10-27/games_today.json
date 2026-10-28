@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-28T03:00:23+00:00",
+  "fetched_at": "2026-10-28T03:15:16+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-10-27",
@@ -225,11 +225,11 @@
       "game_id": "401909880",
       "start_utc": "2026-10-28T03:00Z",
       "short_name": "POR @ LAL",
-      "state": "pre",
-      "status": "10/27 - 11:00 PM EDT",
+      "state": "in",
+      "status": "10:30 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:30",
       "venue": "crypto.com Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -242,27 +242,27 @@
         "team_id": "13",
         "abbr": "LAL",
         "name": "Los Angeles Lakers",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Luka Doncic",
-            "value": "34.3"
+          "points": {
+            "player": "Austin Reaves",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Walker Kessler",
-            "value": "8.0"
+          "rebounds": {
+            "player": "Austin Reaves",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Luka Doncic",
-            "value": "8.0"
+          "assists": {
+            "player": "Austin Reaves",
+            "value": "1"
           },
           "rating": {
-            "player": "Luka Doncic",
-            "value": "34.3 PPG, 7.3 RPG, 8.0 APG, 1.7 SPG, 0.3 BPG"
+            "player": "Austin Reaves",
+            "value": "3 PTS"
           }
         }
       },
@@ -276,30 +276,13 @@
         "home_record": "1-0",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Damian Lillard",
-            "value": "22.0"
-          },
-          "reboundsPerGame": {
-            "player": "Deni Avdija",
-            "value": "8.5"
-          },
-          "assistsPerGame": {
-            "player": "Ja Morant",
-            "value": "7.5"
-          },
           "rating": {
-            "player": "Deni Avdija",
-            "value": "22.0 PPG, 8.5 RPG, 5.0 APG, 1.5 SPG"
+            "player": "Toumani Camara",
+            "value": "1 STL"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "LAL -1.5",
-        "spread": -1.5,
-        "over_under": 234.5
-      }
+      "espn_line": null
     }
   ]
 }
