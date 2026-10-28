@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-28T21:45:14+00:00",
+  "finished_at": "2026-10-28T22:00:28+00:00",
   "game_date": "2026-10-28",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -8,31 +8,55 @@
     "games_tomorrow": "ok",
     "standings": "ok",
     "injuries": "ok",
-    "boxscores": "ok",
+    "boxscores": "failed",
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
     "odds": "not_due"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
-    "unparsed": [],
-    "queued": 0,
-    "errors": [],
-    "rosters_fetched": 0
+    "error": "FetchError: Giving up on https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard: Expecting value: line 1 column 1 (char 0)"
   },
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 250,
-      "ODDS_API_KEY_2": 256
+      "ODDS_API_KEY": 246,
+      "ODDS_API_KEY_2": 244
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Miami Heat @ Atlanta Hawks",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 190,
+        "markets": 4
+      },
+      {
+        "matchup": "Charlotte Hornets @ Detroit Pistons",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 166,
+        "markets": 4
+      },
+      {
+        "matchup": "Washington Wizards @ Cleveland Cavaliers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 182,
+        "markets": 4
+      },
+      {
+        "matchup": "Philadelphia 76ers @ Indiana Pacers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 170,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 4,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
