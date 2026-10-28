@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-28T02:30:16+00:00",
+  "fetched_at": "2026-10-28T02:45:17+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-10-27",
@@ -8,9 +8,9 @@
       "game_id": "401909877",
       "start_utc": "2026-10-27T23:30Z",
       "short_name": "BKN @ BOS",
-      "state": "in",
-      "status": "End of OT",
-      "completed": false,
+      "state": "post",
+      "status": "Final/OT",
+      "completed": true,
       "period": 5,
       "clock": "0.0",
       "venue": "TD Garden",
@@ -24,9 +24,9 @@
         "abbr": "BOS",
         "name": "Boston Celtics",
         "score": 125,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
+        "winner": true,
+        "record": "3-1",
+        "home_record": "3-0",
         "away_record": "0-1",
         "leaders": {
           "points": {
@@ -52,10 +52,10 @@
         "abbr": "BKN",
         "name": "Brooklyn Nets",
         "score": 124,
-        "winner": null,
-        "record": "0-3",
+        "winner": false,
+        "record": "0-4",
         "home_record": "0-2",
-        "away_record": "0-1",
+        "away_record": "0-2",
         "leaders": {
           "points": {
             "player": "Michael Porter Jr.",
@@ -82,10 +82,10 @@
       "start_utc": "2026-10-28T00:00Z",
       "short_name": "DET @ NY",
       "state": "in",
-      "status": "7:28 - 4th",
+      "status": "2:13 - 4th",
       "completed": false,
       "period": 4,
-      "clock": "7:28",
+      "clock": "2:13",
       "venue": "Madison Square Garden",
       "neutral_site": false,
       "broadcasts": [
@@ -95,7 +95,7 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 95,
+        "score": 107,
         "winner": null,
         "record": "0-3",
         "home_record": "0-2",
@@ -107,15 +107,15 @@
           },
           "rebounds": {
             "player": "Karl-Anthony Towns",
-            "value": "15"
+            "value": "18"
           },
           "assists": {
             "player": "Jalen Brunson",
-            "value": "5"
+            "value": "7"
           },
           "rating": {
             "player": "Karl-Anthony Towns",
-            "value": "25 PTS, 15 REB"
+            "value": "25 PTS, 18 REB"
           }
         }
       },
@@ -123,27 +123,27 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 75,
+        "score": 95,
         "winner": null,
         "record": "3-0",
         "home_record": "1-0",
         "away_record": "2-0",
         "leaders": {
           "points": {
-            "player": "Cade Cunningham",
-            "value": "19"
+            "player": "Paul Reed",
+            "value": "20"
           },
           "rebounds": {
-            "player": "John Collins",
+            "player": "Paul Reed",
             "value": "9"
           },
           "assists": {
             "player": "Cade Cunningham",
-            "value": "7"
+            "value": "8"
           },
           "rating": {
             "player": "Paul Reed",
-            "value": "18 PTS, 8 REB"
+            "value": "20 PTS, 9 REB"
           }
         }
       },
@@ -295,7 +295,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "LAL -1.5",
         "spread": -1.5,
         "over_under": 233.5
