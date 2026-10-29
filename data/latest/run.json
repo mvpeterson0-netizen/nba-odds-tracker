@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-29T01:15:20+00:00",
+  "finished_at": "2026-10-29T01:30:16+00:00",
   "game_date": "2026-10-28",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -15,10 +15,10 @@
     "odds": "not_due"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
+    "new_games": 2,
+    "player_rows": 54,
     "unparsed": [],
-    "queued": 0,
+    "queued": 2,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -26,13 +26,21 @@
     "keys": 2,
     "credits": {
       "ODDS_API_KEY": 230,
-      "ODDS_API_KEY_2": 232
+      "ODDS_API_KEY_2": 228
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Los Angeles Lakers @ Los Angeles Clippers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 172,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
