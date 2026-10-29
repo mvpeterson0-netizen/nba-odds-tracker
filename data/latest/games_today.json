@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-29T01:30:15+00:00",
+  "fetched_at": "2026-10-29T01:45:15+00:00",
   "source": "espn",
   "count": 12,
   "game_date": "2026-10-28",
@@ -84,7 +84,7 @@
       "status": "Final",
       "completed": true,
       "period": 4,
-      "clock": "0.0",
+      "clock": "12:00",
       "venue": "Rocket Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -154,11 +154,11 @@
       "game_id": "401909883",
       "start_utc": "2026-10-28T23:00Z",
       "short_name": "CHA @ DET",
-      "state": "in",
-      "status": "1:23 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "1:23",
+      "clock": "0.0",
       "venue": "Little Caesars Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -168,27 +168,27 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 94,
-        "winner": null,
-        "record": "3-1",
-        "home_record": "1-0",
+        "score": 97,
+        "winner": true,
+        "record": "4-1",
+        "home_record": "2-0",
         "away_record": "2-1",
         "leaders": {
           "points": {
             "player": "Cade Cunningham",
-            "value": "27"
+            "value": "30"
           },
           "rebounds": {
             "player": "Ausar Thompson",
             "value": "9"
           },
           "assists": {
-            "player": "Cade Cunningham",
-            "value": "7"
+            "player": "Ausar Thompson",
+            "value": "8"
           },
           "rating": {
             "player": "Cade Cunningham",
-            "value": "27 PTS, 7 AST"
+            "value": "30 PTS, 7 AST"
           }
         }
       },
@@ -196,11 +196,11 @@
         "team_id": "30",
         "abbr": "CHA",
         "name": "Charlotte Hornets",
-        "score": 86,
-        "winner": null,
-        "record": "3-1",
+        "score": 89,
+        "winner": false,
+        "record": "3-2",
         "home_record": "2-1",
-        "away_record": "1-0",
+        "away_record": "1-1",
         "leaders": {
           "points": {
             "player": "Brandon Miller",
@@ -227,10 +227,10 @@
       "start_utc": "2026-10-28T23:00Z",
       "short_name": "PHI @ IND",
       "state": "in",
-      "status": "5:51 - 4th",
+      "status": "1:42 - 4th",
       "completed": false,
       "period": 4,
-      "clock": "5:51",
+      "clock": "1:42",
       "venue": "Gainbridge Fieldhouse",
       "neutral_site": false,
       "broadcasts": [
@@ -241,7 +241,7 @@
         "team_id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers",
-        "score": 94,
+        "score": 102,
         "winner": null,
         "record": "2-2",
         "home_record": "0-1",
@@ -249,7 +249,7 @@
         "leaders": {
           "points": {
             "player": "Pascal Siakam",
-            "value": "20"
+            "value": "26"
           },
           "rebounds": {
             "player": "Pascal Siakam",
@@ -257,11 +257,11 @@
           },
           "assists": {
             "player": "Andrew Nembhard",
-            "value": "13"
+            "value": "14"
           },
           "rating": {
             "player": "Pascal Siakam",
-            "value": "20 PTS, 11 REB"
+            "value": "26 PTS, 11 REB"
           }
         }
       },
@@ -269,27 +269,27 @@
         "team_id": "20",
         "abbr": "PHI",
         "name": "Philadelphia 76ers",
-        "score": 92,
+        "score": 105,
         "winner": null,
         "record": "3-1",
         "home_record": "2-1",
         "away_record": "1-0",
         "leaders": {
           "points": {
-            "player": "Jaylen Brown",
-            "value": "20"
+            "player": "Joel Embiid",
+            "value": "21"
           },
           "rebounds": {
-            "player": "Jaylen Brown",
-            "value": "9"
+            "player": "Joel Embiid",
+            "value": "11"
           },
           "assists": {
             "player": "LeBron James",
             "value": "9"
           },
           "rating": {
-            "player": "Jaylen Brown",
-            "value": "20 PTS, 9 REB"
+            "player": "Joel Embiid",
+            "value": "21 PTS, 11 REB"
           }
         }
       },
@@ -300,10 +300,10 @@
       "start_utc": "2026-10-28T23:30Z",
       "short_name": "ORL @ TOR",
       "state": "in",
-      "status": "End of 3rd",
+      "status": "6:35 - 4th",
       "completed": false,
-      "period": 3,
-      "clock": "0.0",
+      "period": 4,
+      "clock": "6:35",
       "venue": "Scotiabank Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -313,7 +313,7 @@
         "team_id": "28",
         "abbr": "TOR",
         "name": "Toronto Raptors",
-        "score": 103,
+        "score": 111,
         "winner": null,
         "record": "2-1",
         "home_record": "1-0",
@@ -321,11 +321,11 @@
         "leaders": {
           "points": {
             "player": "Scottie Barnes",
-            "value": "26"
+            "value": "28"
           },
           "rebounds": {
-            "player": "RJ Barrett",
-            "value": "7"
+            "player": "Trayce Jackson-Davis",
+            "value": "10"
           },
           "assists": {
             "player": "Immanuel Quickley",
@@ -333,7 +333,7 @@
           },
           "rating": {
             "player": "Scottie Barnes",
-            "value": "26 PTS, 6 REB, 3 STL"
+            "value": "28 PTS, 6 REB, 3 STL, 3 BLK"
           }
         }
       },
@@ -341,27 +341,27 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 76,
+        "score": 87,
         "winner": null,
         "record": "1-2",
         "home_record": "0-2",
         "away_record": "1-0",
         "leaders": {
           "points": {
-            "player": "Desmond Bane",
-            "value": "13"
+            "player": "Tristan da Silva",
+            "value": "20"
           },
           "rebounds": {
             "player": "Wendell Carter Jr.",
-            "value": "8"
+            "value": "10"
           },
           "assists": {
             "player": "Franz Wagner",
             "value": "5"
           },
           "rating": {
-            "player": "Desmond Bane",
-            "value": "13 PTS"
+            "player": "Tristan da Silva",
+            "value": "20 PTS"
           }
         }
       },
@@ -372,10 +372,10 @@
       "start_utc": "2026-10-29T00:00Z",
       "short_name": "NY @ CHI",
       "state": "in",
-      "status": "11:10 - 3rd",
+      "status": "4:02 - 3rd",
       "completed": false,
       "period": 3,
-      "clock": "11:10",
+      "clock": "4:02",
       "venue": "United Center",
       "neutral_site": false,
       "broadcasts": [
@@ -385,7 +385,7 @@
         "team_id": "4",
         "abbr": "CHI",
         "name": "Chicago Bulls",
-        "score": 64,
+        "score": 89,
         "winner": null,
         "record": "1-3",
         "home_record": "0-1",
@@ -393,19 +393,19 @@
         "leaders": {
           "points": {
             "player": "Norman Powell",
-            "value": "11"
+            "value": "21"
           },
           "rebounds": {
-            "player": "Caleb Wilson",
-            "value": "5"
+            "player": "Jalen Smith",
+            "value": "7"
           },
           "assists": {
             "player": "Josh Giddey",
-            "value": "6"
+            "value": "9"
           },
           "rating": {
             "player": "Jalen Smith",
-            "value": "9 PTS"
+            "value": "14 PTS, 7 REB"
           }
         }
       },
@@ -413,7 +413,7 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 58,
+        "score": 74,
         "winner": null,
         "record": "1-3",
         "home_record": "1-2",
@@ -428,12 +428,12 @@
             "value": "11"
           },
           "assists": {
-            "player": "Tyler Kolek",
-            "value": "3"
+            "player": "Jalen Brunson",
+            "value": "5"
           },
           "rating": {
-            "player": "Jalen Brunson",
-            "value": "18 PTS"
+            "player": "Karl-Anthony Towns",
+            "value": "14 PTS, 11 REB"
           }
         }
       },
@@ -444,10 +444,10 @@
       "start_utc": "2026-10-29T00:00Z",
       "short_name": "HOU @ MIL",
       "state": "in",
-      "status": "8:37 - 3rd",
+      "status": "3:55 - 3rd",
       "completed": false,
       "period": 3,
-      "clock": "8:37",
+      "clock": "3:55",
       "venue": "Fiserv Forum",
       "neutral_site": false,
       "broadcasts": [
@@ -459,7 +459,7 @@
         "team_id": "15",
         "abbr": "MIL",
         "name": "Milwaukee Bucks",
-        "score": 49,
+        "score": 61,
         "winner": null,
         "record": "1-3",
         "home_record": "1-1",
@@ -467,7 +467,7 @@
         "leaders": {
           "points": {
             "player": "Tyler Herro",
-            "value": "20"
+            "value": "23"
           },
           "rebounds": {
             "player": "Kyle Kuzma",
@@ -479,7 +479,7 @@
           },
           "rating": {
             "player": "Tyler Herro",
-            "value": "20 PTS"
+            "value": "23 PTS"
           }
         }
       },
@@ -487,27 +487,27 @@
         "team_id": "10",
         "abbr": "HOU",
         "name": "Houston Rockets",
-        "score": 64,
+        "score": 83,
         "winner": null,
         "record": "4-0",
         "home_record": "2-0",
         "away_record": "2-0",
         "leaders": {
           "points": {
-            "player": "Kevin Durant",
-            "value": "16"
+            "player": "Fred VanVleet",
+            "value": "21"
           },
           "rebounds": {
             "player": "Tari Eason",
             "value": "8"
           },
           "assists": {
-            "player": "Kevin Durant",
-            "value": "3"
+            "player": "Fred VanVleet",
+            "value": "4"
           },
           "rating": {
-            "player": "Kevin Durant",
-            "value": "16 PTS, 3 BLK"
+            "player": "Fred VanVleet",
+            "value": "21 PTS"
           }
         }
       },
@@ -518,10 +518,10 @@
       "start_utc": "2026-10-29T00:00Z",
       "short_name": "GS @ MIN",
       "state": "in",
-      "status": "11:22 - 3rd",
+      "status": "6:35 - 3rd",
       "completed": false,
       "period": 3,
-      "clock": "11:22",
+      "clock": "6:35",
       "venue": "Target Center",
       "neutral_site": false,
       "broadcasts": [
@@ -531,7 +531,7 @@
         "team_id": "16",
         "abbr": "MIN",
         "name": "Minnesota Timberwolves",
-        "score": 48,
+        "score": 53,
         "winner": null,
         "record": "3-1",
         "home_record": "1-0",
@@ -539,7 +539,7 @@
         "leaders": {
           "points": {
             "player": "Jonathan Kuminga",
-            "value": "12"
+            "value": "14"
           },
           "rebounds": {
             "player": "Joan Beringer",
@@ -547,11 +547,11 @@
           },
           "assists": {
             "player": "LaMelo Ball",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
             "player": "Jonathan Kuminga",
-            "value": "12 PTS"
+            "value": "14 PTS"
           }
         }
       },
@@ -559,7 +559,7 @@
         "team_id": "9",
         "abbr": "GS",
         "name": "Golden State Warriors",
-        "score": 64,
+        "score": 75,
         "winner": null,
         "record": "1-3",
         "home_record": "0-1",
@@ -567,19 +567,19 @@
         "leaders": {
           "points": {
             "player": "Stephen Curry",
-            "value": "23"
+            "value": "30"
           },
           "rebounds": {
             "player": "Stephen Curry",
-            "value": "4"
+            "value": "7"
           },
           "assists": {
             "player": "Draymond Green",
-            "value": "5"
+            "value": "7"
           },
           "rating": {
             "player": "Stephen Curry",
-            "value": "23 PTS"
+            "value": "30 PTS, 7 REB"
           }
         }
       },
@@ -590,10 +590,10 @@
       "start_utc": "2026-10-29T00:00Z",
       "short_name": "DEN @ NO",
       "state": "in",
-      "status": "9:13 - 3rd",
+      "status": "3:05 - 3rd",
       "completed": false,
       "period": 3,
-      "clock": "9:13",
+      "clock": "3:05",
       "venue": "Smoothie King Center",
       "neutral_site": false,
       "broadcasts": [
@@ -605,7 +605,7 @@
         "team_id": "3",
         "abbr": "NO",
         "name": "New Orleans Pelicans",
-        "score": 48,
+        "score": 64,
         "winner": null,
         "record": "0-3",
         "home_record": "0-1",
@@ -616,12 +616,12 @@
             "value": "20"
           },
           "rebounds": {
-            "player": "Derik Queen",
-            "value": "4"
+            "player": "Dejounte Murray",
+            "value": "6"
           },
           "assists": {
             "player": "Dejounte Murray",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Zion Williamson",
@@ -633,7 +633,7 @@
         "team_id": "7",
         "abbr": "DEN",
         "name": "Denver Nuggets",
-        "score": 65,
+        "score": 77,
         "winner": null,
         "record": "1-2",
         "home_record": "1-1",
@@ -641,19 +641,19 @@
         "leaders": {
           "points": {
             "player": "Nikola Jokic",
-            "value": "14"
+            "value": "19"
           },
           "rebounds": {
             "player": "Aaron Gordon",
-            "value": "7"
+            "value": "10"
           },
           "assists": {
             "player": "Nikola Jokic",
-            "value": "9"
+            "value": "10"
           },
           "rating": {
             "player": "Nikola Jokic",
-            "value": "14 PTS, 6 REB, 9 AST"
+            "value": "19 PTS, 7 REB, 10 AST"
           }
         }
       },
@@ -664,10 +664,10 @@
       "start_utc": "2026-10-29T01:00Z",
       "short_name": "SA @ UTAH",
       "state": "in",
-      "status": "3:10 - 1st",
+      "status": "10:14 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "3:10",
+      "period": 2,
+      "clock": "10:14",
       "venue": "Delta Center",
       "neutral_site": false,
       "broadcasts": [
@@ -680,7 +680,7 @@
         "team_id": "26",
         "abbr": "UTAH",
         "name": "Utah Jazz",
-        "score": 26,
+        "score": 32,
         "winner": null,
         "record": "1-3",
         "home_record": "1-2",
@@ -691,12 +691,12 @@
             "value": "13"
           },
           "rebounds": {
-            "player": "Josh Okogie",
-            "value": "3"
+            "player": "Isaiah Collier",
+            "value": "4"
           },
           "assists": {
-            "player": "Darryn Peterson",
-            "value": "1"
+            "player": "Isaiah Collier",
+            "value": "2"
           },
           "rating": {
             "player": "Keyonte George",
@@ -708,7 +708,7 @@
         "team_id": "24",
         "abbr": "SA",
         "name": "San Antonio Spurs",
-        "score": 20,
+        "score": 27,
         "winner": null,
         "record": "2-2",
         "home_record": "1-2",
@@ -720,7 +720,7 @@
           },
           "rebounds": {
             "player": "Victor Wembanyama",
-            "value": "2"
+            "value": "4"
           },
           "assists": {
             "player": "Stephon Castle",
