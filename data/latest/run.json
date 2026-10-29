@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-29T00:15:15+00:00",
+  "finished_at": "2026-10-29T00:30:16+00:00",
   "game_date": "2026-10-28",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -25,14 +25,22 @@
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 234,
+      "ODDS_API_KEY": 230,
       "ODDS_API_KEY_2": 232
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Oklahoma City Thunder @ Dallas Mavericks",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 134,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
