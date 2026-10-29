@@ -1,26 +1,21 @@
 {
-  "finished_at": "2026-10-29T00:30:16+00:00",
+  "finished_at": "2026-10-29T00:45:34+00:00",
   "game_date": "2026-10-28",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
     "games_today": "ok",
-    "results_yesterday": "ok",
+    "results_yesterday": "failed",
     "games_tomorrow": "ok",
     "standings": "ok",
     "injuries": "ok",
-    "boxscores": "ok",
+    "boxscores": "failed",
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
     "odds": "not_due"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
-    "unparsed": [],
-    "queued": 0,
-    "errors": [],
-    "rosters_fetched": 0
+    "error": "FetchError: Giving up on https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard: Expecting value: line 1 column 1 (char 0)"
   },
   "props": {
     "keys": 2,
@@ -28,19 +23,11 @@
       "ODDS_API_KEY": 230,
       "ODDS_API_KEY_2": 232
     },
-    "pulled": [
-      {
-        "matchup": "Oklahoma City Thunder @ Dallas Mavericks",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 134,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
