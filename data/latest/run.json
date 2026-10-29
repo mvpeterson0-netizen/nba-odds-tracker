@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-29T22:45:15+00:00",
+  "finished_at": "2026-10-29T23:00:19+00:00",
   "game_date": "2026-10-29",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -26,13 +26,28 @@
     "keys": 2,
     "credits": {
       "ODDS_API_KEY": 219,
-      "ODDS_API_KEY_2": 224
+      "ODDS_API_KEY_2": 216
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Cleveland Cavaliers @ Atlanta Hawks",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 212,
+        "markets": 4
+      },
+      {
+        "matchup": "Sacramento Kings @ New Orleans Pelicans",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 138,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 2,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
