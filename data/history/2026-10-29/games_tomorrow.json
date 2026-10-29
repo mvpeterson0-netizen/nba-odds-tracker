@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-29T16:30:20+00:00",
+  "fetched_at": "2026-10-29T16:45:16+00:00",
   "source": "espn",
   "count": 10,
   "game_date": "2026-10-30",
@@ -619,7 +619,12 @@
           }
         }
       },
-      "espn_line": null
+      "espn_line": {
+        "provider": "Draft Kings",
+        "details": "MIN -7.5",
+        "spread": -7.5,
+        "over_under": 222.5
+      }
     },
     {
       "game_id": "401909285",
@@ -770,12 +775,7 @@
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": null,
-        "spread": null,
-        "over_under": 233.5
-      }
+      "espn_line": null
     }
   ]
 }
