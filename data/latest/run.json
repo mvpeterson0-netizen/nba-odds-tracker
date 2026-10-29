@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-29T00:00:19+00:00",
+  "finished_at": "2026-10-29T00:15:15+00:00",
   "game_date": "2026-10-28",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,19 +28,11 @@
       "ODDS_API_KEY": 234,
       "ODDS_API_KEY_2": 232
     },
-    "pulled": [
-      {
-        "matchup": "San Antonio Spurs @ Utah Jazz",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 176,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
