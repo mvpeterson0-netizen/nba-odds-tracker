@@ -19,7 +19,7 @@ ODDS_URL = "https://api.the-odds-api.com/v4/sports/basketball_nba/odds"
 DEFAULT_MARKETS = "h2h,spreads,totals"
 
 
-KEY_VARS = ["ODDS_API_KEY"] + [f"ODDS_API_KEY_{i}" for i in range(2, 7)]
+KEY_VARS = ["ODDS_API_KEY"] + [f"ODDS_API_KEY_{i}" for i in range(2, 7)] + ["ODDS_API_KEY_20K"]
 
 
 def api_key() -> str | None:

@@ -92,8 +92,24 @@ def _credits(h: dict) -> tuple[int | None, int | None]:
 
 
 def load_keys(env: dict) -> list[tuple[str, str]]:
-    """[(label, key)] for every non-empty ODDS_API_KEY / _2 … _6."""
-    return [(var, env[var].strip()) for var in KEY_VARS if env.get(var, "").strip()]
+    """Load distinct free keys first, then the explicitly named paid fallback."""
+    paid = env.get("ODDS_API_KEY_20K", "").strip()
+    out, seen = [], set()
+    for var in KEY_VARS:
+        key = env.get(var, "").strip()
+        if not key or key in seen or (key == paid and var != "ODDS_API_KEY_20K"):
+            continue
+        out.append((var, key))
+        seen.add(key)
+    return out
+
+
+def choose_key(remaining: dict, cost: int, tried=()) -> str | None:
+    """Richest eligible FREE key first; paid key only after all free keys are unusable."""
+    eligible = [lab for lab, rem in remaining.items()
+                if lab not in tried and rem is not None and rem - RESERVE >= cost]
+    free = [lab for lab in eligible if lab != "ODDS_API_KEY_20K"]
+    return max(free or eligible, key=lambda lab: remaining[lab]) if eligible else None
 
 
 def _read_csv(path: Path) -> list[dict]:
@@ -209,8 +225,8 @@ def probe_markets(data_dir: Path, events: list[dict], keys: list[tuple[str, str]
     if not soon:
         return "no_game_near_tip"
     ev = min(soon, key=lambda e: e["commence_time"])
-    lab = max(remaining, key=lambda k: remaining[k] or 0)
-    if (remaining.get(lab) or 0) < 1:
+    lab = choose_key(remaining, 1)
+    if lab is None:
         return "no_credits"
     code, body, h = _get(f"{BASE}/events/{ev['id']}/markets",
                          {"apiKey": dict(keys)[lab], "bookmakers": ",".join(BOOKS), "dateFormat": "iso"})
@@ -279,7 +295,7 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
     summary["pregame_pulled"] = False
     log_rows, cap_rows = [], []
 
-    # 2) Pull each due game with the key that has the most credits left.
+    # 2) Use eligible free keys before the paid fallback for every due game.
     for ev, ptype in games:
         start = parse_iso(ev["commence_time"])
         mins = int((start - now).total_seconds() // 60)
@@ -298,13 +314,11 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
         tried: set[str] = set()
         status, note, rows, last, rem_after, used = "failed", "", [], None, None, ""
         while True:
-            cands = [(rem, lab) for lab, rem in remaining.items()
-                     if lab not in tried and (rem is None or rem - RESERVE >= cost)]
-            if not cands:
+            lab = choose_key(remaining, cost, tried)
+            if lab is None:
                 note = note or "no key with enough credits left"
                 status = "no_credits" if status == "failed" and not note.startswith("HTTP") else status
                 break
-            _, lab = max(cands, key=lambda c: -1 if c[0] is None else c[0])
             tried.add(lab)
             key = dict(keys)[lab]
             captured = iso(utcnow())
