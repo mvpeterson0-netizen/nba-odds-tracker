@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-30T13:00:22+00:00",
+  "finished_at": "2026-10-30T13:15:16+00:00",
   "game_date": "2026-10-30",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "ok"
+    "odds": "not_due"
   },
   "boxscores": {
     "new_games": 0,
@@ -25,84 +25,13 @@
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 194,
+      "ODDS_API_KEY": 191,
       "ODDS_API_KEY_2": 196
     },
-    "pulled": [
-      {
-        "matchup": "Charlotte Hornets @ Washington Wizards",
-        "type": "morning",
-        "status": "ok",
-        "rows": 182,
-        "markets": 4
-      },
-      {
-        "matchup": "Chicago Bulls @ Boston Celtics",
-        "type": "morning",
-        "status": "ok",
-        "rows": 180,
-        "markets": 4
-      },
-      {
-        "matchup": "Detroit Pistons @ Brooklyn Nets",
-        "type": "morning",
-        "status": "ok",
-        "rows": 168,
-        "markets": 4
-      },
-      {
-        "matchup": "New York Knicks @ Philadelphia 76ers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 166,
-        "markets": 4
-      },
-      {
-        "matchup": "Orlando Magic @ Toronto Raptors",
-        "type": "morning",
-        "status": "ok",
-        "rows": 180,
-        "markets": 4
-      },
-      {
-        "matchup": "Houston Rockets @ Dallas Mavericks",
-        "type": "morning",
-        "status": "ok",
-        "rows": 164,
-        "markets": 4
-      },
-      {
-        "matchup": "Indiana Pacers @ Miami Heat",
-        "type": "morning",
-        "status": "ok",
-        "rows": 166,
-        "markets": 4
-      },
-      {
-        "matchup": "Los Angeles Clippers @ Minnesota Timberwolves",
-        "type": "morning",
-        "status": "ok",
-        "rows": 170,
-        "markets": 4
-      },
-      {
-        "matchup": "Denver Nuggets @ Phoenix Suns",
-        "type": "morning",
-        "status": "ok",
-        "rows": 182,
-        "markets": 4
-      },
-      {
-        "matchup": "Los Angeles Lakers @ Golden State Warriors",
-        "type": "morning",
-        "status": "ok",
-        "rows": 184,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 10,
+    "due": 0,
     "pregame_pulled": false,
     "status": "ok"
   }
