@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-30T21:30:24+00:00",
+  "finished_at": "2026-10-30T21:45:23+00:00",
   "game_date": "2026-10-30",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -8,26 +8,21 @@
     "games_tomorrow": "ok",
     "standings": "ok",
     "injuries": "ok",
-    "boxscores": "ok",
+    "boxscores": "failed",
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
     "odds": "not_due"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
-    "unparsed": [],
-    "queued": 0,
-    "errors": [],
-    "rosters_fetched": 0
+    "error": "FetchError: Giving up on https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard: Expecting value: line 1 column 1 (char 0)"
   },
   "props": {
     "keys": 3,
     "credits": {
       "ODDS_API_KEY": 191,
       "ODDS_API_KEY_2": 196,
-      "ODDS_API_KEY_20K": 3882
+      "ODDS_API_KEY_20K": 3234
     },
     "pulled": [],
     "errors": [],
