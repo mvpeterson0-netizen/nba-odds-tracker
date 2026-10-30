@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-30T01:20:04+00:00",
+  "fetched_at": "2026-10-30T01:30:14+00:00",
   "source": "espn",
   "count": 3,
   "game_date": "2026-10-29",
@@ -9,10 +9,10 @@
       "start_utc": "2026-10-30T00:00Z",
       "short_name": "CLE @ ATL",
       "state": "in",
-      "status": "Halftime",
+      "status": "8:41 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "8:41",
       "venue": "State Farm Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -22,7 +22,7 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 46,
+        "score": 61,
         "winner": null,
         "record": "2-3",
         "home_record": "0-2",
@@ -30,19 +30,19 @@
         "leaders": {
           "points": {
             "player": "Onyeka Okongwu",
-            "value": "11"
+            "value": "18"
           },
           "rebounds": {
             "player": "Onyeka Okongwu",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "CJ McCollum",
-            "value": "6"
+            "value": "7"
           },
           "rating": {
-            "player": "Aaron Wiggins",
-            "value": "10 PTS"
+            "player": "Onyeka Okongwu",
+            "value": "18 PTS, 8 REB"
           }
         }
       },
@@ -50,7 +50,7 @@
         "team_id": "5",
         "abbr": "CLE",
         "name": "Cleveland Cavaliers",
-        "score": 44,
+        "score": 53,
         "winner": null,
         "record": "3-1",
         "home_record": "3-0",
@@ -58,7 +58,7 @@
         "leaders": {
           "points": {
             "player": "James Harden",
-            "value": "11"
+            "value": "14"
           },
           "rebounds": {
             "player": "Evan Mobley",
@@ -66,11 +66,11 @@
           },
           "assists": {
             "player": "Evan Mobley",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
-            "player": "Evan Mobley",
-            "value": "8 PTS"
+            "player": "James Harden",
+            "value": "14 PTS"
           }
         }
       },
@@ -81,10 +81,10 @@
       "start_utc": "2026-10-30T00:00Z",
       "short_name": "SAC @ NO",
       "state": "in",
-      "status": "Halftime",
+      "status": "10:05 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "10:05",
       "venue": "Smoothie King Center",
       "neutral_site": false,
       "broadcasts": [
@@ -96,7 +96,7 @@
         "team_id": "3",
         "abbr": "NO",
         "name": "New Orleans Pelicans",
-        "score": 63,
+        "score": 71,
         "winner": null,
         "record": "0-4",
         "home_record": "0-2",
@@ -104,19 +104,19 @@
         "leaders": {
           "points": {
             "player": "Jeremiah Fears",
-            "value": "11"
+            "value": "15"
           },
           "rebounds": {
             "player": "Jeremiah Fears",
-            "value": "4"
+            "value": "6"
           },
           "assists": {
             "player": "Jeremiah Fears",
-            "value": "6"
+            "value": "8"
           },
           "rating": {
             "player": "Jeremiah Fears",
-            "value": "11 PTS, 6 AST"
+            "value": "15 PTS, 6 REB, 8 AST"
           }
         }
       },
@@ -124,7 +124,7 @@
         "team_id": "23",
         "abbr": "SAC",
         "name": "Sacramento Kings",
-        "score": 61,
+        "score": 65,
         "winner": null,
         "record": "0-4",
         "home_record": "0-2",
@@ -132,11 +132,11 @@
         "leaders": {
           "points": {
             "player": "Darius Acuff Jr.",
-            "value": "21"
+            "value": "23"
           },
           "rebounds": {
             "player": "Domantas Sabonis",
-            "value": "10"
+            "value": "12"
           },
           "assists": {
             "player": "Darius Acuff Jr.",
@@ -144,7 +144,7 @@
           },
           "rating": {
             "player": "Darius Acuff Jr.",
-            "value": "21 PTS, 6 AST"
+            "value": "23 PTS, 6 AST"
           }
         }
       },
@@ -225,9 +225,9 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "POR -7.5",
-        "spread": -7.5,
-        "over_under": 232.5
+        "details": "POR -8.5",
+        "spread": -8.5,
+        "over_under": 231.5
       }
     }
   ]
