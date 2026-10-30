@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-30T22:00:19+00:00",
+  "finished_at": "2026-10-30T22:15:18+00:00",
   "game_date": "2026-10-30",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -27,21 +27,13 @@
     "credits": {
       "ODDS_API_KEY": 191,
       "ODDS_API_KEY_2": 192,
-      "ODDS_API_KEY_20K": 3234
+      "ODDS_API_KEY_20K": 2584
     },
-    "pulled": [
-      {
-        "matchup": "Charlotte Hornets @ Washington Wizards",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 188,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
