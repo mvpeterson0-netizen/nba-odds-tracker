@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-30T04:15:15+00:00",
+  "fetched_at": "2026-10-30T04:30:16+00:00",
   "source": "espn",
   "count": 3,
   "game_date": "2026-10-29",
@@ -154,11 +154,11 @@
       "game_id": "401909895",
       "start_utc": "2026-10-30T02:00Z",
       "short_name": "MEM @ POR",
-      "state": "in",
-      "status": "2:33 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "2:33",
+      "clock": "0.0",
       "venue": "Moda Center",
       "neutral_site": false,
       "broadcasts": [
@@ -171,10 +171,10 @@
         "team_id": "22",
         "abbr": "POR",
         "name": "Portland Trail Blazers",
-        "score": 96,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "1-0",
+        "score": 103,
+        "winner": false,
+        "record": "3-1",
+        "home_record": "1-1",
         "away_record": "2-0",
         "leaders": {
           "points": {
@@ -199,11 +199,11 @@
         "team_id": "29",
         "abbr": "MEM",
         "name": "Memphis Grizzlies",
-        "score": 120,
-        "winner": null,
-        "record": "4-0",
+        "score": 124,
+        "winner": true,
+        "record": "5-0",
         "home_record": "1-0",
-        "away_record": "3-0",
+        "away_record": "4-0",
         "leaders": {
           "points": {
             "player": "Cameron Boozer",
@@ -211,7 +211,7 @@
           },
           "rebounds": {
             "player": "Cameron Boozer",
-            "value": "11"
+            "value": "12"
           },
           "assists": {
             "player": "Cameron Boozer",
@@ -219,7 +219,7 @@
           },
           "rating": {
             "player": "Cameron Boozer",
-            "value": "18 PTS, 11 REB, 12 AST"
+            "value": "18 PTS, 12 REB, 12 AST"
           }
         }
       },
