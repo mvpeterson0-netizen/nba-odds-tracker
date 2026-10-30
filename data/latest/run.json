@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-30T00:45:22+00:00",
+  "finished_at": "2026-10-30T01:00:26+00:00",
   "game_date": "2026-10-29",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -20,14 +20,22 @@
   "props": {
     "keys": 2,
     "credits": {
-      "ODDS_API_KEY": 218,
+      "ODDS_API_KEY": 214,
       "ODDS_API_KEY_2": 216
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Memphis Grizzlies @ Portland Trail Blazers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 194,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
