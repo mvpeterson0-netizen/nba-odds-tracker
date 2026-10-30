@@ -123,3 +123,17 @@ def test_migrates_old_files(tmp_path):
     (tmp_path / "pull_log.csv").write_text(old)
     props.migrate_columns(tmp_path / "pull_log.csv", props.PULL_FIELDS)
     assert props.done_pulls(tmp_path)[0] == {("e1", "pregame")}
+
+
+def test_free_keys_before_paid_even_when_paid_is_richer():
+    assert props.choose_key({'ODDS_API_KEY': 5, 'ODDS_API_KEY_20K': 12945}, 4) == 'ODDS_API_KEY'
+    assert props.choose_key({'ODDS_API_KEY': 3, 'ODDS_API_KEY_20K': 12945}, 4) == 'ODDS_API_KEY_20K'
+    assert props.choose_key({'ODDS_API_KEY': 5, 'ODDS_API_KEY_20K': 12945}, 4, {'ODDS_API_KEY'}) == 'ODDS_API_KEY_20K'
+    assert props.choose_key({'ODDS_API_KEY': None, 'ODDS_API_KEY_20K': 3}, 4) is None
+    assert props.choose_key({'ODDS_API_KEY': 2, 'ODDS_API_KEY_20K': 12945}, 1) == 'ODDS_API_KEY'
+
+
+def test_load_keys_deduplicates_and_keeps_paid_last():
+    assert props.load_keys({'ODDS_API_KEY': ' paid ', 'ODDS_API_KEY_2': 'free',
+                            'ODDS_API_KEY_3': 'free', 'ODDS_API_KEY_20K': 'paid'}) == [
+        ('ODDS_API_KEY_2', 'free'), ('ODDS_API_KEY_20K', 'paid')]
