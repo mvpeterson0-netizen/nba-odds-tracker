@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-31T00:45:19+00:00",
+  "finished_at": "2026-10-31T01:00:17+00:00",
   "game_date": "2026-10-30",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -25,15 +25,30 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 179,
-      "ODDS_API_KEY_2": 176,
+      "ODDS_API_KEY": 175,
+      "ODDS_API_KEY_2": 172,
       "ODDS_API_KEY_20K": 1969
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Denver Nuggets @ Phoenix Suns",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 190,
+        "markets": 4
+      },
+      {
+        "matchup": "Los Angeles Lakers @ Golden State Warriors",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 188,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 2,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
