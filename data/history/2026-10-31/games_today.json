@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-31T19:00:16+00:00",
+  "fetched_at": "2026-10-31T19:15:15+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-10-31",
@@ -8,11 +8,11 @@
       "game_id": "401909896",
       "start_utc": "2026-10-31T19:00Z",
       "short_name": "POR @ UTAH",
-      "state": "pre",
-      "status": "10/31 - 3:00 PM EDT",
+      "state": "in",
+      "status": "9:10 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:10",
       "venue": "Delta Center",
       "neutral_site": false,
       "broadcasts": [
@@ -26,27 +26,27 @@
         "team_id": "26",
         "abbr": "UTAH",
         "name": "Utah Jazz",
-        "score": 0,
+        "score": 3,
         "winner": null,
         "record": "1-4",
         "home_record": "1-3",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Keyonte George",
-            "value": "24.4"
+          "points": {
+            "player": "Darryn Peterson",
+            "value": "3"
           },
-          "reboundsPerGame": {
+          "rebounds": {
+            "player": "Darryn Peterson",
+            "value": "2"
+          },
+          "assists": {
             "player": "Ace Bailey",
-            "value": "8.0"
-          },
-          "assistsPerGame": {
-            "player": "Keyonte George",
-            "value": "6.8"
+            "value": "1"
           },
           "rating": {
-            "player": "Keyonte George",
-            "value": "24.4 PPG, 4.0 RPG, 6.8 APG, 0.6 SPG"
+            "player": "Darryn Peterson",
+            "value": "3 PTS"
           }
         }
       },
@@ -54,36 +54,31 @@
         "team_id": "22",
         "abbr": "POR",
         "name": "Portland Trail Blazers",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "3-1",
         "home_record": "1-1",
         "away_record": "2-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Deni Avdija",
-            "value": "22.8"
+          "points": {
+            "player": "Damian Lillard",
+            "value": "5"
           },
-          "reboundsPerGame": {
-            "player": "Donovan Clingan",
-            "value": "9.0"
+          "rebounds": {
+            "player": "Damian Lillard",
+            "value": "1"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Deni Avdija",
-            "value": "6.5"
+            "value": "1"
           },
           "rating": {
-            "player": "Deni Avdija",
-            "value": "22.8 PPG, 7.5 RPG, 6.5 APG, 1.0 SPG, 0.2 BPG"
+            "player": "Damian Lillard",
+            "value": "5 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "POR -6.5",
-        "spread": 6.5,
-        "over_under": 232.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909897",
@@ -156,10 +151,10 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "PHI -1.5",
         "spread": 1.5,
-        "over_under": 212.5
+        "over_under": 211.5
       }
     },
     {
@@ -235,7 +230,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ATL -4.5",
         "spread": 4.5,
         "over_under": 241.5
@@ -313,7 +308,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MEM -8.5",
         "spread": -8.5,
         "over_under": 230.5
@@ -393,7 +388,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CLE -9.5",
         "spread": 9.5,
         "over_under": 235.5
@@ -472,7 +467,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SA -12.5",
         "spread": -12.5,
         "over_under": 228.5
@@ -550,7 +545,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "HOU -2.5",
         "spread": -2.5,
         "over_under": 219.5
