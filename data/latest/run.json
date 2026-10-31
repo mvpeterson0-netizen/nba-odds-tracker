@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-31T23:30:31+00:00",
+  "finished_at": "2026-10-31T23:45:26+00:00",
   "game_date": "2026-10-31",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -24,19 +24,11 @@
       "ODDS_API_KEY_2": 144,
       "ODDS_API_KEY_20K": 1969
     },
-    "pulled": [
-      {
-        "matchup": "Oklahoma City Thunder @ Houston Rockets",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 180,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
