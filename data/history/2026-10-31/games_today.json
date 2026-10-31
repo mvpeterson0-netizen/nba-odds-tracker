@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-31T17:15:12+00:00",
+  "fetched_at": "2026-10-31T17:30:22+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-10-31",
@@ -142,12 +142,12 @@
             "value": "28.2"
           },
           "reboundsPerGame": {
-            "player": "Joel Embiid",
-            "value": "9.4"
+            "player": "VJ Edgecombe",
+            "value": "7.8"
           },
           "assistsPerGame": {
-            "player": "LeBron James",
-            "value": "7.0"
+            "player": "Tyrese Maxey",
+            "value": "4.5"
           },
           "rating": {
             "player": "Tyrese Maxey",
@@ -157,8 +157,8 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "PHI -1.5",
-        "spread": 1.5,
+        "details": "CHA -1.5",
+        "spread": -1.5,
         "over_under": 214.5
       }
     },
@@ -316,7 +316,7 @@
         "provider": "DraftKings",
         "details": "MEM -8.5",
         "spread": -8.5,
-        "over_under": 231.5
+        "over_under": 230.5
       }
     },
     {
@@ -549,7 +549,12 @@
           }
         }
       },
-      "espn_line": null
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "HOU -3.5",
+        "spread": -3.5,
+        "over_under": 219.5
+      }
     }
   ]
 }
