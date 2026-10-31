@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-31T23:15:13+00:00",
+  "fetched_at": "2026-10-31T23:30:23+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-10-31",
@@ -85,10 +85,10 @@
       "start_utc": "2026-10-31T22:00Z",
       "short_name": "PHI @ CHA",
       "state": "in",
-      "status": "Halftime",
+      "status": "9:17 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "9:17",
       "venue": "Spectrum Center",
       "neutral_site": false,
       "broadcasts": [
@@ -98,7 +98,7 @@
         "team_id": "30",
         "abbr": "CHA",
         "name": "Charlotte Hornets",
-        "score": 54,
+        "score": 61,
         "winner": null,
         "record": "3-3",
         "home_record": "2-1",
@@ -110,11 +110,11 @@
           },
           "rebounds": {
             "player": "Royce O'Neale",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
             "player": "Dennis Schroder",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
             "player": "Grayson Allen",
@@ -126,7 +126,7 @@
         "team_id": "20",
         "abbr": "PHI",
         "name": "Philadelphia 76ers",
-        "score": 57,
+        "score": 62,
         "winner": null,
         "record": "5-1",
         "home_record": "3-1",
@@ -134,19 +134,19 @@
         "leaders": {
           "points": {
             "player": "Tyrese Maxey",
-            "value": "19"
+            "value": "20"
           },
           "rebounds": {
             "player": "Adem Bona",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
-            "player": "Jaylen Brown",
+            "player": "Tyrese Maxey",
             "value": "3"
           },
           "rating": {
             "player": "Tyrese Maxey",
-            "value": "19 PTS"
+            "value": "20 PTS"
           }
         }
       },
@@ -157,10 +157,10 @@
       "start_utc": "2026-10-31T23:00Z",
       "short_name": "ATL @ NO",
       "state": "in",
-      "status": "8:59 - 1st",
+      "status": "3:56 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "8:59",
+      "clock": "3:56",
       "venue": "Smoothie King Center",
       "neutral_site": false,
       "broadcasts": [
@@ -172,27 +172,27 @@
         "team_id": "3",
         "abbr": "NO",
         "name": "New Orleans Pelicans",
-        "score": 7,
+        "score": 25,
         "winner": null,
         "record": "1-4",
         "home_record": "1-2",
         "away_record": "0-2",
         "leaders": {
           "points": {
-            "player": "Jeremiah Fears",
-            "value": "2"
+            "player": "Zion Williamson",
+            "value": "7"
           },
           "rebounds": {
             "player": "Karlo Matkovic",
-            "value": "3"
+            "value": "6"
           },
           "assists": {
             "player": "Jeremiah Fears",
-            "value": "1"
+            "value": "3"
           },
           "rating": {
-            "player": "Karlo Matkovic",
-            "value": "3 REB"
+            "player": "Jeremiah Fears",
+            "value": "6 PTS"
           }
         }
       },
@@ -200,7 +200,7 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 4,
+        "score": 15,
         "winner": null,
         "record": "3-3",
         "home_record": "1-2",
@@ -208,19 +208,19 @@
         "leaders": {
           "points": {
             "player": "Jalen Johnson",
-            "value": "2"
+            "value": "9"
           },
           "rebounds": {
             "player": "Jalen Johnson",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
-            "player": "CJ McCollum",
+            "player": "Jalen Johnson",
             "value": "1"
           },
           "rating": {
             "player": "Jalen Johnson",
-            "value": "2 PTS"
+            "value": "9 PTS"
           }
         }
       },
@@ -252,8 +252,8 @@
         "away_record": "4-0",
         "leaders": {
           "pointsPerGame": {
-            "player": "Ty Jerome",
-            "value": "25.8"
+            "player": "Cameron Boozer",
+            "value": "15.4"
           },
           "reboundsPerGame": {
             "player": "Cameron Boozer",
@@ -264,8 +264,8 @@
             "value": "6.2"
           },
           "rating": {
-            "player": "Ty Jerome",
-            "value": "25.8 PPG, 3.2 RPG, 5.8 APG, 1.0 SPG, 0.2 BPG"
+            "player": "Cameron Boozer",
+            "value": "15.4 PPG, 10.8 RPG, 6.2 APG, 0.4 SPG, 0.6 BPG"
           }
         }
       },
@@ -298,9 +298,9 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "MEM -9.5",
-        "spread": -9.5,
+        "provider": "Draft Kings",
+        "details": "MEM -7.5",
+        "spread": -7.5,
         "over_under": 229.5
       }
     },
@@ -378,7 +378,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CLE -9.5",
         "spread": 9.5,
         "over_under": 235.5
@@ -457,7 +457,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SA -12.5",
         "spread": -12.5,
         "over_under": 229.5
@@ -535,7 +535,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "HOU -2.5",
         "spread": -2.5,
         "over_under": 219.5
