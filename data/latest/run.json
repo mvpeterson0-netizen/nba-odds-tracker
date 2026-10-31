@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-31T21:45:14+00:00",
+  "finished_at": "2026-10-31T22:00:19+00:00",
   "game_date": "2026-10-31",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -15,10 +15,10 @@
     "odds": "not_due"
   },
   "boxscores": {
-    "new_games": 1,
-    "player_rows": 27,
+    "new_games": 0,
+    "player_rows": 0,
     "unparsed": [],
-    "queued": 1,
+    "queued": 0,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -26,14 +26,22 @@
     "keys": 3,
     "credits": {
       "ODDS_API_KEY": 152,
-      "ODDS_API_KEY_2": 156,
+      "ODDS_API_KEY_2": 152,
       "ODDS_API_KEY_20K": 1969
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Atlanta Hawks @ New Orleans Pelicans",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 192,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
