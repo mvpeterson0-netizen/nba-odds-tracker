@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-31T03:30:17+00:00",
+  "fetched_at": "2026-10-31T03:45:13+00:00",
   "source": "espn",
   "count": 10,
   "game_date": "2026-10-30",
@@ -374,7 +374,7 @@
       "status": "Final",
       "completed": true,
       "period": 4,
-      "clock": "0.0",
+      "clock": "12:00",
       "venue": "Kaseya Center",
       "neutral_site": false,
       "broadcasts": [
@@ -390,7 +390,24 @@
         "record": "2-4",
         "home_record": "1-3",
         "away_record": "1-1",
-        "leaders": null
+        "leaders": {
+          "points": {
+            "player": "Giannis Antetokounmpo",
+            "value": "31"
+          },
+          "rebounds": {
+            "player": "Giannis Antetokounmpo",
+            "value": "18"
+          },
+          "assists": {
+            "player": "Davion Mitchell",
+            "value": "11"
+          },
+          "rating": {
+            "player": "Giannis Antetokounmpo",
+            "value": "31 PTS, 18 REB, 10 AST"
+          }
+        }
       },
       "away": {
         "team_id": "11",
@@ -430,7 +447,7 @@
       "status": "Final",
       "completed": true,
       "period": 4,
-      "clock": "0.0",
+      "clock": "12:00",
       "venue": "American Airlines Center",
       "neutral_site": false,
       "broadcasts": [
@@ -574,10 +591,10 @@
       "start_utc": "2026-10-31T02:00Z",
       "short_name": "LAL @ GS",
       "state": "in",
-      "status": "Halftime",
+      "status": "7:27 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "7:27",
       "venue": "Chase Center",
       "neutral_site": false,
       "broadcasts": [
@@ -587,7 +604,7 @@
         "team_id": "9",
         "abbr": "GS",
         "name": "Golden State Warriors",
-        "score": 53,
+        "score": 57,
         "winner": null,
         "record": "2-3",
         "home_record": "0-1",
@@ -595,7 +612,7 @@
         "leaders": {
           "points": {
             "player": "Stephen Curry",
-            "value": "14"
+            "value": "16"
           },
           "rebounds": {
             "player": "Gui Santos",
@@ -607,7 +624,7 @@
           },
           "rating": {
             "player": "Stephen Curry",
-            "value": "14 PTS"
+            "value": "16 PTS"
           }
         }
       },
@@ -615,7 +632,7 @@
         "team_id": "13",
         "abbr": "LAL",
         "name": "Los Angeles Lakers",
-        "score": 53,
+        "score": 63,
         "winner": null,
         "record": "4-1",
         "home_record": "2-1",
@@ -623,11 +640,11 @@
         "leaders": {
           "points": {
             "player": "Luka Doncic",
-            "value": "24"
+            "value": "26"
           },
           "rebounds": {
             "player": "Walker Kessler",
-            "value": "6"
+            "value": "9"
           },
           "assists": {
             "player": "Luka Doncic",
@@ -635,7 +652,7 @@
           },
           "rating": {
             "player": "Luka Doncic",
-            "value": "24 PTS"
+            "value": "26 PTS, 7 REB"
           }
         }
       },
@@ -646,10 +663,10 @@
       "start_utc": "2026-10-31T02:00Z",
       "short_name": "DEN @ PHX",
       "state": "in",
-      "status": "8:05 - 3rd",
+      "status": "3:29 - 3rd",
       "completed": false,
       "period": 3,
-      "clock": "8:05",
+      "clock": "3:29",
       "venue": "Mortgage Matchup Center",
       "neutral_site": false,
       "broadcasts": [
@@ -661,7 +678,7 @@
         "team_id": "21",
         "abbr": "PHX",
         "name": "Phoenix Suns",
-        "score": 76,
+        "score": 88,
         "winner": null,
         "record": "1-2",
         "home_record": "1-0",
@@ -673,11 +690,11 @@
           },
           "rebounds": {
             "player": "Khaman Maluach",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Collin Gillespie",
-            "value": "5"
+            "value": "7"
           },
           "rating": {
             "player": "Dillon Brooks",
@@ -689,7 +706,7 @@
         "team_id": "7",
         "abbr": "DEN",
         "name": "Denver Nuggets",
-        "score": 84,
+        "score": 95,
         "winner": null,
         "record": "2-2",
         "home_record": "1-1",
@@ -697,7 +714,7 @@
         "leaders": {
           "points": {
             "player": "Christian Braun",
-            "value": "22"
+            "value": "26"
           },
           "rebounds": {
             "player": "Cameron Johnson",
@@ -705,11 +722,11 @@
           },
           "assists": {
             "player": "Nikola Jokic",
-            "value": "6"
+            "value": "9"
           },
           "rating": {
-            "player": "Jamal Murray",
-            "value": "20 PTS"
+            "player": "Christian Braun",
+            "value": "26 PTS, 3 STL"
           }
         }
       },
