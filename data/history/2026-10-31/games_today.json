@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-31T23:00:15+00:00",
+  "fetched_at": "2026-10-31T23:15:13+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-10-31",
@@ -85,10 +85,10 @@
       "start_utc": "2026-10-31T22:00Z",
       "short_name": "PHI @ CHA",
       "state": "in",
-      "status": "2:30 - 2nd",
+      "status": "Halftime",
       "completed": false,
       "period": 2,
-      "clock": "2:30",
+      "clock": "0.0",
       "venue": "Spectrum Center",
       "neutral_site": false,
       "broadcasts": [
@@ -98,27 +98,27 @@
         "team_id": "30",
         "abbr": "CHA",
         "name": "Charlotte Hornets",
-        "score": 44,
+        "score": 54,
         "winner": null,
         "record": "3-3",
         "home_record": "2-1",
         "away_record": "1-2",
         "leaders": {
           "points": {
-            "player": "Brandon Miller",
-            "value": "13"
+            "player": "Grayson Allen",
+            "value": "19"
           },
           "rebounds": {
             "player": "Royce O'Neale",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "Dennis Schroder",
-            "value": "3"
+            "value": "5"
           },
           "rating": {
             "player": "Grayson Allen",
-            "value": "11 PTS"
+            "value": "19 PTS"
           }
         }
       },
@@ -126,7 +126,7 @@
         "team_id": "20",
         "abbr": "PHI",
         "name": "Philadelphia 76ers",
-        "score": 46,
+        "score": 57,
         "winner": null,
         "record": "5-1",
         "home_record": "3-1",
@@ -134,19 +134,19 @@
         "leaders": {
           "points": {
             "player": "Tyrese Maxey",
-            "value": "16"
+            "value": "19"
           },
           "rebounds": {
-            "player": "Jaylen Brown",
-            "value": "3"
+            "player": "Adem Bona",
+            "value": "4"
           },
           "assists": {
-            "player": "Dean Wade",
+            "player": "Jaylen Brown",
             "value": "3"
           },
           "rating": {
             "player": "Tyrese Maxey",
-            "value": "16 PTS"
+            "value": "19 PTS"
           }
         }
       },
@@ -156,11 +156,11 @@
       "game_id": "401909898",
       "start_utc": "2026-10-31T23:00Z",
       "short_name": "ATL @ NO",
-      "state": "pre",
-      "status": "10/31 - 7:00 PM EDT",
+      "state": "in",
+      "status": "8:59 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "8:59",
       "venue": "Smoothie King Center",
       "neutral_site": false,
       "broadcasts": [
@@ -172,27 +172,27 @@
         "team_id": "3",
         "abbr": "NO",
         "name": "New Orleans Pelicans",
-        "score": 0,
+        "score": 7,
         "winner": null,
         "record": "1-4",
         "home_record": "1-2",
         "away_record": "0-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Zion Williamson",
-            "value": "21.8"
-          },
-          "reboundsPerGame": {
-            "player": "Derik Queen",
-            "value": "7.8"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Jeremiah Fears",
-            "value": "4.0"
+            "value": "2"
+          },
+          "rebounds": {
+            "player": "Karlo Matkovic",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Jeremiah Fears",
+            "value": "1"
           },
           "rating": {
-            "player": "Zion Williamson",
-            "value": "21.8 PPG, 4.0 RPG, 2.2 APG, 3.2 SPG, 0.6 BPG"
+            "player": "Karlo Matkovic",
+            "value": "3 REB"
           }
         }
       },
@@ -200,36 +200,31 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 0,
+        "score": 4,
         "winner": null,
         "record": "3-3",
         "home_record": "1-2",
         "away_record": "2-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Nickeil Alexander-Walker",
-            "value": "20.5"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Jalen Johnson",
-            "value": "9.3"
+            "value": "2"
           },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "Jalen Johnson",
-            "value": "8.5"
+            "value": "2"
+          },
+          "assists": {
+            "player": "CJ McCollum",
+            "value": "1"
           },
           "rating": {
             "player": "Jalen Johnson",
-            "value": "19.0 PPG, 9.3 RPG, 8.5 APG, 1.0 SPG, 0.7 BPG"
+            "value": "2 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ATL -5.5",
-        "spread": 5.5,
-        "over_under": 239.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909899",
@@ -465,7 +460,7 @@
         "provider": "DraftKings",
         "details": "SA -12.5",
         "spread": -12.5,
-        "over_under": 228.5
+        "over_under": 229.5
       }
     },
     {
