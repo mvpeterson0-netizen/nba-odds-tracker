@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-31T12:45:20+00:00",
+  "finished_at": "2026-10-31T13:00:25+00:00",
   "game_date": "2026-10-31",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "not_due"
+    "odds": "ok"
   },
   "boxscores": {
     "new_games": 0,
@@ -25,14 +25,64 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 175,
-      "ODDS_API_KEY_2": 172,
+      "ODDS_API_KEY": 159,
+      "ODDS_API_KEY_2": 160,
       "ODDS_API_KEY_20K": 1969
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Portland Trail Blazers @ Utah Jazz",
+        "type": "morning",
+        "status": "ok",
+        "rows": 170,
+        "markets": 4
+      },
+      {
+        "matchup": "Philadelphia 76ers @ Charlotte Hornets",
+        "type": "morning",
+        "status": "ok",
+        "rows": 88,
+        "markets": 4
+      },
+      {
+        "matchup": "Atlanta Hawks @ New Orleans Pelicans",
+        "type": "morning",
+        "status": "ok",
+        "rows": 210,
+        "markets": 4
+      },
+      {
+        "matchup": "Cleveland Cavaliers @ Milwaukee Bucks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 184,
+        "markets": 4
+      },
+      {
+        "matchup": "Sacramento Kings @ Memphis Grizzlies",
+        "type": "morning",
+        "status": "ok",
+        "rows": 142,
+        "markets": 4
+      },
+      {
+        "matchup": "Minnesota Timberwolves @ San Antonio Spurs",
+        "type": "morning",
+        "status": "ok",
+        "rows": 200,
+        "markets": 4
+      },
+      {
+        "matchup": "Oklahoma City Thunder @ Houston Rockets",
+        "type": "morning",
+        "status": "ok",
+        "rows": 144,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
+    "due": 7,
     "pregame_pulled": false,
     "status": "ok"
   }
