@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-10-31T21:00:18+00:00",
+  "finished_at": "2026-10-31T21:15:16+00:00",
   "game_date": "2026-10-31",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -29,19 +29,11 @@
       "ODDS_API_KEY_2": 156,
       "ODDS_API_KEY_20K": 1969
     },
-    "pulled": [
-      {
-        "matchup": "Philadelphia 76ers @ Charlotte Hornets",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 172,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
