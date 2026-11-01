@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-01T23:15:14+00:00",
+  "fetched_at": "2026-11-01T23:30:18+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-01",
@@ -12,7 +12,7 @@
       "status": "Final",
       "completed": true,
       "period": 4,
-      "clock": "0.0",
+      "clock": "12:00",
       "venue": "Kia Center",
       "neutral_site": false,
       "broadcasts": [
@@ -81,10 +81,10 @@
       "start_utc": "2026-11-01T22:00Z",
       "short_name": "BKN @ IND",
       "state": "in",
-      "status": "1:46 - 2nd",
+      "status": "Halftime",
       "completed": false,
       "period": 2,
-      "clock": "1:46",
+      "clock": "0.0",
       "venue": "Gainbridge Fieldhouse",
       "neutral_site": false,
       "broadcasts": [
@@ -96,7 +96,7 @@
         "team_id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers",
-        "score": 33,
+        "score": 40,
         "winner": null,
         "record": "2-4",
         "home_record": "0-2",
@@ -104,7 +104,7 @@
         "leaders": {
           "points": {
             "player": "Pascal Siakam",
-            "value": "9"
+            "value": "13"
           },
           "rebounds": {
             "player": "Jarace Walker",
@@ -115,8 +115,8 @@
             "value": "3"
           },
           "rating": {
-            "player": "Jarace Walker",
-            "value": "3 PTS"
+            "player": "Pascal Siakam",
+            "value": "13 PTS"
           }
         }
       },
@@ -124,7 +124,7 @@
         "team_id": "17",
         "abbr": "BKN",
         "name": "Brooklyn Nets",
-        "score": 39,
+        "score": 43,
         "winner": null,
         "record": "0-5",
         "home_record": "0-3",
@@ -132,7 +132,7 @@
         "leaders": {
           "points": {
             "player": "Michael Porter Jr.",
-            "value": "11"
+            "value": "13"
           },
           "rebounds": {
             "player": "Day'Ron Sharpe",
@@ -143,8 +143,8 @@
             "value": "4"
           },
           "rating": {
-            "player": "Moritz Wagner",
-            "value": "8 PTS"
+            "player": "Michael Porter Jr.",
+            "value": "13 PTS"
           }
         }
       },
@@ -222,9 +222,9 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "GS -2.5",
-        "spread": -2.5,
+        "provider": "Draft Kings",
+        "details": "GS -1.5",
+        "spread": -1.5,
         "over_under": 220.5
       }
     },
@@ -301,7 +301,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "LAL -2.5",
         "spread": -2.5,
         "over_under": 224.5
