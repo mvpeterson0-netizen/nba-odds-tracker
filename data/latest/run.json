@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-01T20:45:26+00:00",
+  "finished_at": "2026-11-01T21:00:20+00:00",
   "game_date": "2026-11-01",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -25,15 +25,23 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 489,
+      "ODDS_API_KEY": 485,
       "ODDS_API_KEY_2": 488,
       "ODDS_API_KEY_20K": 20000
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Brooklyn Nets @ Indiana Pacers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 156,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
