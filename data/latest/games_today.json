@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-01T22:00:17+00:00",
+  "fetched_at": "2026-11-01T22:15:14+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-01",
@@ -9,10 +9,10 @@
       "start_utc": "2026-11-01T20:30Z",
       "short_name": "BOS @ ORL",
       "state": "in",
-      "status": "10:04 - 3rd",
+      "status": "3:57 - 3rd",
       "completed": false,
       "period": 3,
-      "clock": "10:04",
+      "clock": "3:57",
       "venue": "Kia Center",
       "neutral_site": false,
       "broadcasts": [
@@ -22,27 +22,27 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 50,
+        "score": 66,
         "winner": null,
         "record": "2-3",
         "home_record": "0-2",
         "away_record": "2-1",
         "leaders": {
           "points": {
-            "player": "Desmond Bane",
-            "value": "11"
+            "player": "Tristan da Silva",
+            "value": "15"
           },
           "rebounds": {
             "player": "Anthony Black",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Franz Wagner",
-            "value": "8"
+            "value": "10"
           },
           "rating": {
-            "player": "Franz Wagner",
-            "value": "8 PTS, 8 AST"
+            "player": "Tristan da Silva",
+            "value": "15 PTS"
           }
         }
       },
@@ -50,7 +50,7 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 60,
+        "score": 69,
         "winner": null,
         "record": "4-1",
         "home_record": "4-0",
@@ -58,19 +58,19 @@
         "leaders": {
           "points": {
             "player": "Jayson Tatum",
-            "value": "17"
+            "value": "23"
           },
           "rebounds": {
             "player": "Neemias Queta",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Paul George",
-            "value": "6"
+            "value": "7"
           },
           "rating": {
             "player": "Jayson Tatum",
-            "value": "17 PTS"
+            "value": "23 PTS"
           }
         }
       },
@@ -80,11 +80,11 @@
       "game_id": "401909904",
       "start_utc": "2026-11-01T22:00Z",
       "short_name": "BKN @ IND",
-      "state": "pre",
-      "status": "11/1 - 5:00 PM EST",
+      "state": "in",
+      "status": "9:20 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:20",
       "venue": "Gainbridge Fieldhouse",
       "neutral_site": false,
       "broadcasts": [
@@ -96,27 +96,27 @@
         "team_id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "2-4",
         "home_record": "0-2",
         "away_record": "2-2",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Pascal Siakam",
-            "value": "22.2"
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Pascal Siakam",
-            "value": "7.8"
+          "rebounds": {
+            "player": "Aaron Nesmith",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Andrew Nembhard",
-            "value": "8.0"
+          "assists": {
+            "player": "Jarace Walker",
+            "value": "1"
           },
           "rating": {
-            "player": "Pascal Siakam",
-            "value": "22.2 PPG, 7.8 RPG, 3.8 APG, 0.8 SPG"
+            "player": "Aaron Nesmith",
+            "value": "1 REB"
           }
         }
       },
@@ -124,36 +124,31 @@
         "team_id": "17",
         "abbr": "BKN",
         "name": "Brooklyn Nets",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "0-5",
         "home_record": "0-3",
         "away_record": "0-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Julius Randle",
-            "value": "21.0"
+          "points": {
+            "player": "Day'Ron Sharpe",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Julius Randle",
-            "value": "7.6"
+          "rebounds": {
+            "player": "Day'Ron Sharpe",
+            "value": "4"
           },
-          "assistsPerGame": {
-            "player": "Julius Randle",
-            "value": "5.2"
+          "assists": {
+            "player": "Michael Porter Jr.",
+            "value": "1"
           },
           "rating": {
-            "player": "Julius Randle",
-            "value": "21.0 PPG, 7.6 RPG, 5.2 APG, 0.6 SPG, 0.2 BPG"
+            "player": "Michael Porter Jr.",
+            "value": "3 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "IND -3.5",
-        "spread": -3.5,
-        "over_under": 230.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909905",
