@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-01T20:30:17+00:00",
+  "fetched_at": "2026-11-01T20:45:19+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-01",
@@ -8,11 +8,11 @@
       "game_id": "401909903",
       "start_utc": "2026-11-01T20:30Z",
       "short_name": "BOS @ ORL",
-      "state": "pre",
-      "status": "11/1 - 3:30 PM EST",
+      "state": "in",
+      "status": "9:06 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:06",
       "venue": "Kia Center",
       "neutral_site": false,
       "broadcasts": [
@@ -22,27 +22,27 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 0,
+        "score": 10,
         "winner": null,
         "record": "2-3",
         "home_record": "0-2",
         "away_record": "2-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Franz Wagner",
-            "value": "20.8"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Wendell Carter Jr.",
-            "value": "8.6"
+            "value": "3"
           },
-          "assistsPerGame": {
-            "player": "Franz Wagner",
-            "value": "7.0"
+          "rebounds": {
+            "player": "Anthony Black",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Jase Richardson",
+            "value": "1"
           },
           "rating": {
-            "player": "Franz Wagner",
-            "value": "20.8 PPG, 6.8 RPG, 7.0 APG, 1.0 SPG"
+            "player": "Wendell Carter Jr.",
+            "value": "3 PTS"
           }
         }
       },
@@ -50,36 +50,31 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "4-1",
         "home_record": "4-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jayson Tatum",
-            "value": "27.6"
+          "points": {
+            "player": "Derrick White",
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Jayson Tatum",
-            "value": "6.4"
+          "rebounds": {
+            "player": "Neemias Queta",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Jayson Tatum",
-            "value": "7.8"
+          "assists": {
+            "player": "Hugo Gonzalez",
+            "value": "1"
           },
           "rating": {
-            "player": "Jayson Tatum",
-            "value": "27.6 PPG, 6.4 RPG, 7.8 APG, 0.8 SPG, 0.2 BPG"
+            "player": "Derrick White",
+            "value": "2 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "BOS -6.5",
-        "spread": 6.5,
-        "over_under": 221.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909904",
@@ -154,7 +149,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "IND -3.5",
         "spread": -3.5,
         "over_under": 230.5
@@ -232,7 +227,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GS -2.5",
         "spread": -2.5,
         "over_under": 220.5
@@ -311,7 +306,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "LAL -2.5",
         "spread": -2.5,
         "over_under": 224.5
