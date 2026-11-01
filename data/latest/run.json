@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-01T14:00:21+00:00",
+  "finished_at": "2026-11-01T14:15:17+00:00",
   "game_date": "2026-11-01",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "ok"
+    "odds": "not_due"
   },
   "boxscores": {
     "new_games": 0,
@@ -25,43 +25,14 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 492,
+      "ODDS_API_KEY": 489,
       "ODDS_API_KEY_2": 492,
       "ODDS_API_KEY_20K": 20000
     },
-    "pulled": [
-      {
-        "matchup": "Boston Celtics @ Orlando Magic",
-        "type": "morning",
-        "status": "ok",
-        "rows": 170,
-        "markets": 4
-      },
-      {
-        "matchup": "Brooklyn Nets @ Indiana Pacers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 170,
-        "markets": 4
-      },
-      {
-        "matchup": "Los Angeles Clippers @ Golden State Warriors",
-        "type": "morning",
-        "status": "ok",
-        "rows": 174,
-        "markets": 4
-      },
-      {
-        "matchup": "Toronto Raptors @ Los Angeles Lakers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 178,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 4,
+    "due": 0,
     "pregame_pulled": false,
     "status": "ok"
   }
