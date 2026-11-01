@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-01T23:02:18+00:00",
+  "fetched_at": "2026-11-01T23:15:14+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-01",
@@ -8,11 +8,11 @@
       "game_id": "401909903",
       "start_utc": "2026-11-01T20:30Z",
       "short_name": "BOS @ ORL",
-      "state": "in",
-      "status": "8.7 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "8.7",
+      "clock": "0.0",
       "venue": "Kia Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,9 +23,9 @@
         "abbr": "ORL",
         "name": "Orlando Magic",
         "score": 97,
-        "winner": null,
-        "record": "2-3",
-        "home_record": "0-2",
+        "winner": false,
+        "record": "2-4",
+        "home_record": "0-3",
         "away_record": "2-1",
         "leaders": {
           "points": {
@@ -51,10 +51,10 @@
         "abbr": "BOS",
         "name": "Boston Celtics",
         "score": 108,
-        "winner": null,
-        "record": "4-1",
+        "winner": true,
+        "record": "5-1",
         "home_record": "4-0",
-        "away_record": "0-1",
+        "away_record": "1-1",
         "leaders": {
           "points": {
             "player": "Jayson Tatum",
@@ -62,7 +62,7 @@
           },
           "rebounds": {
             "player": "Neemias Queta",
-            "value": "9"
+            "value": "8"
           },
           "assists": {
             "player": "Paul George",
@@ -81,10 +81,10 @@
       "start_utc": "2026-11-01T22:00Z",
       "short_name": "BKN @ IND",
       "state": "in",
-      "status": "7:05 - 2nd",
+      "status": "1:46 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "7:05",
+      "clock": "1:46",
       "venue": "Gainbridge Fieldhouse",
       "neutral_site": false,
       "broadcasts": [
@@ -96,7 +96,7 @@
         "team_id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers",
-        "score": 25,
+        "score": 33,
         "winner": null,
         "record": "2-4",
         "home_record": "0-2",
@@ -108,11 +108,11 @@
           },
           "rebounds": {
             "player": "Jarace Walker",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "Jarace Walker",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Jarace Walker",
@@ -124,27 +124,27 @@
         "team_id": "17",
         "abbr": "BKN",
         "name": "Brooklyn Nets",
-        "score": 28,
+        "score": 39,
         "winner": null,
         "record": "0-5",
         "home_record": "0-3",
         "away_record": "0-2",
         "leaders": {
           "points": {
-            "player": "Julius Randle",
-            "value": "9"
+            "player": "Michael Porter Jr.",
+            "value": "11"
           },
           "rebounds": {
             "player": "Day'Ron Sharpe",
             "value": "6"
           },
           "assists": {
-            "player": "Michael Porter Jr.",
-            "value": "2"
+            "player": "Nolan Traore",
+            "value": "4"
           },
           "rating": {
-            "player": "Julius Randle",
-            "value": "9 PTS"
+            "player": "Moritz Wagner",
+            "value": "8 PTS"
           }
         }
       },
