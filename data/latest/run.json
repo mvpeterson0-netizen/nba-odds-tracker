@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-02T22:45:19+00:00",
+  "finished_at": "2026-11-02T23:00:24+00:00",
   "game_date": "2026-11-02",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -26,14 +26,22 @@
     "keys": 3,
     "credits": {
       "ODDS_API_KEY": 445,
-      "ODDS_API_KEY_2": 446,
+      "ODDS_API_KEY_2": 442,
       "ODDS_API_KEY_20K": 16188
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Oklahoma City Thunder @ Cleveland Cavaliers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 172,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
