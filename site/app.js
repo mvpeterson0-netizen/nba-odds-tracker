@@ -136,7 +136,7 @@ function viewLog() {
       <tr><td data-label="Data">Player updates (notes icon)</td><td data-label="Source">ESPN injury + news feeds, ESPN box scores and rosters</td><td class="note">Unofficial, undocumented endpoints (no key, no SLA); may change or be blocked at any time. Disney's Terms of Use limit use to personal, noncommercial use and bar automated access. One extra request per run (league news).</td></tr>
       <tr><td data-label="Data">Sportsbook odds</td><td data-label="Source"><a href="https://the-odds-api.com/liveapi/guides/v4/">The Odds API v4</a></td><td class="note">US books; moneyline, spread, total in American odds. Each pull costs API credits. No-vig % = each book's two moneyline prices normalized to 100%, averaged across books.</td></tr>
     </tbody></table>
-    <p class="muted small">Lines are pulled at 8:00 AM Central and about 1 hour before each tip; ESPN data refreshes on every run. Code and raw data: <a href="https://github.com/${esc(repo())}">github.com/${esc(repo())}</a></p>
+    <p class="muted small">Lines are pulled at 8:00 AM Central (NBA also about 1 hour before each tip); ESPN data refreshes on every run. Code and raw data: <a href="https://github.com/${esc(repo())}">github.com/${esc(repo())}</a></p>
   </div></div>`;
   return h;
 }
@@ -172,7 +172,7 @@ const FOOT = {
     Lines: <a href="https://the-odds-api.com">The Odds API</a> (props: DraftKings, FanDuel), captured about 3 hours before tip — not closing lines.
     Research tool only; not betting advice.`,
   cbb: `Power 4 men's college basketball. Games, rankings and box scores: ESPN public data feeds (unofficial; can change without notice).
-    Points lines: <a href="https://the-odds-api.com">The Odds API</a> (DraftKings, FanDuel), pulled at 8 AM Central and about 1 hour before tip.
+    Player points: <a href="https://the-odds-api.com">The Odds API</a> (DraftKings, FanDuel), pulled once at 8 AM Central. Spread and total: 8 AM Central and about 1 hour before tip.
     Research tool only; not betting advice.`,
 };
 const savedMode = () => { try { return localStorage.getItem("dime-mode") === "cbb" ? "cbb" : "nba"; } catch { return "nba"; } };

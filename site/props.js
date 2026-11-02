@@ -63,22 +63,24 @@ function resHtml(l) {
 }
 const lineOdds = (l) => `${l.op != null ? am(l.op) : "—"}/${l.up != null ? am(l.up) : "—"}`;
 const bookShort = (b) => ({ draftkings: "DK", fanduel: "FD" }[b] || b);
+const ONE_PULL = () => MODE === "cbb";      // college props are pulled once (8 AM), so there is no "updates before tip" step
+const lineKind = (l) => (ONE_PULL() ? "Line (8 AM)" : l.pt === "morning" ? "8 AM line" : "Pre-game line");
 function lineTip(l) {
   if (l.est) {
     const parts = Object.entries(l.from || {}).map(([k, v]) => `${mkById(k).short} ${n1(v)}`).join(" + ");
-    return `${l.pt === "morning" ? "8 AM line" : "Pre-game line"}: ${bookShort(l.book)} ${n1(l.line)} -110/-110 (from ${parts})` +
-      (l.pt === "morning" ? ". Updates about 1 hour before tip." : "");
+    return `${lineKind(l)}: ${bookShort(l.book)} ${n1(l.line)} -110/-110 (from ${parts})` +
+      (l.pt === "morning" && !ONE_PULL() ? ". Updates about 1 hour before tip." : "");
   }
   const alt = Object.entries(l.alt || {}).map(([b, x]) => `${bookShort(b)} ${n1(x.line)} (${lineOdds(x)})`).join(", ");
-  const kind = l.pt === "morning" ? "8 AM line" : "Pre-game line";
+  const kind = lineKind(l);
   return `${kind}: ${bookShort(l.book)} ${n1(l.line)} ${lineOdds(l)}, captured ${fmtTime(l.cap)} (${l.mb} min before tip)` +
     (l.am ? `. 8 AM: ${n1(l.am.line)} (${lineOdds(l.am)})` : "") +
-    (l.pt === "morning" ? ". Updates about 1 hour before tip." : "") + (alt ? `. Also: ${alt}` : "");
+    (l.pt === "morning" && !ONE_PULL() ? ". Updates about 1 hour before tip." : "") + (alt ? `. Also: ${alt}` : "");
 }
 // Line with its context: "8 AM" chip until the pre-game pull lands; movement since 8 AM after.
 function lineCell(l) {
   let h = `<b>${n1(l.line)}</b>`;
-  if (l.pt === "morning") h += ` <span class="chip amchip">8 AM</span>`;
+  if (l.pt === "morning" && !ONE_PULL()) h += ` <span class="chip amchip">8 AM</span>`;
   else if (l.am && l.am.line != null && l.am.line !== l.line) {
     const d = l.line - l.am.line;
     h += ` <span class="mv ${d > 0 ? "up" : "down"}" title="Moved from ${n1(l.am.line)} at 8 AM">${d > 0 ? "▲" : "▼"}${n1(Math.abs(d))}</span>`;
@@ -110,6 +112,7 @@ function linesDueText(gid) {
   const g = gameOf(gid);
   if (g.final || g.state === "in") return "No lines were captured for this game.";
   const pre = new Date(new Date(g.start).getTime() - 3600000);
+  if (ONE_PULL()) return "Player points are pulled once, at 8:00 AM Central on game day (re-checked about hourly until the books post them).";
   return `Lines are pulled at 8:00 AM Central (once the books post them) and again about 1 hour before tip (~${fmtClock(pre.toISOString())}).`;
 }
 function todayET() { return new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" }); }
@@ -154,7 +157,7 @@ function viewBoard() {
 
   const phoneView = !!(window.matchMedia && window.matchMedia("(max-width: 760px)").matches);
   if (phoneView) h += `<div class="bgrid-top"><div class="seg">${[["core", "Core"], ["combo", "Combos"]].map(([k, l]) => `<button data-bset="${k}" class="${P.bset === k ? "on" : ""}">${l}</button>`).join("")}</div>
-    ${P.day < 0 ? "" : `<span class="muted small"><span class="amdot">•</span> = 8 AM line</span>`}</div>`;
+    ${P.day < 0 || ONE_PULL() ? "" : `<span class="muted small"><span class="amdot">•</span> = 8 AM line</span>`}</div>`;
   // group: game -> player -> markets
   const byGame = new Map();
   for (const r of rows) {
@@ -196,7 +199,7 @@ function viewBoard() {
             if (l.res && l.res !== "pending") return `<td class="bc ${l.res}" title="${tip}"><a href="${href}"><b>${n1(l.line)}</b><small>act ${n1(l.act)}</small></a></td>`;
             const f = form(aid, mk, date, l.line);
             const cls = f.avg == null ? "" : f.avg > l.line ? "above" : f.avg < l.line ? "below" : "";
-            return `<td class="bc ${cls}${l.pt === "morning" ? " am" : ""}" title="${tip}"><a href="${href}"><b>${n1(l.line)}</b><small>${f.avg == null ? "no games" : "avg " + n1(f.avg)}</small></a></td>`;
+            return `<td class="bc ${cls}${l.pt === "morning" && !ONE_PULL() ? " am" : ""}" title="${tip}"><a href="${href}"><b>${n1(l.line)}</b><small>${f.avg == null ? "no games" : "avg " + n1(f.avg)}</small></a></td>`;
           }).join("") + `</tr>`;
         }
       }

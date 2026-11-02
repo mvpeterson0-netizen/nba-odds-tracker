@@ -1,9 +1,10 @@
 """College basketball player-points capture from The Odds API (v4), Power 4 games only.
 
-Same two captures per game as the NBA side:
-  morning  — first run at or after 8:00 AM Central on game day (retried, at most about hourly, until the
-             books post props, while tip is more than ~70 min away)
-  pregame  — first run within ~70 minutes of tip. This is the graded line.
+Player points are pulled ONCE per game, in the morning (PROP_PULLS):
+  morning  — first run at or after 8:00 AM Central on game day; retried at most about hourly until the books post
+             props or the game tips. This is the graded line (there is no later pull to replace it).
+Add "pregame" to PROP_PULLS to also capture within ~70 minutes of tip.
+Game spreads and totals are separate (lines.py): 8 AM and about 1 hour before tip.
 
 Each run:
   1. Free /events call with every key: upcoming games, and each key's remaining credits.
@@ -41,6 +42,7 @@ ET = ZoneInfo("America/New_York")
 CBB_GAMES_PER_DAY_EST = 12                      # Power 4 games a day that books post props for (rough)
 NBA_PREGAME_PER_DAY = len(nba.CORE) * nba.GAMES_PER_DAY_EST    # credits/day the NBA pre-game pulls need
 RETRY_EMPTY = timedelta(minutes=55)             # re-ask for a morning line at most about hourly
+PROP_PULLS = ("morning",)                       # when player points are pulled: "morning", and optionally "pregame"
 
 
 def classify(events: list[dict], games: list[dict], now: datetime, end: datetime) -> tuple[list[tuple[dict, dict]], list[str]]:
@@ -62,7 +64,7 @@ def classify(events: list[dict], games: list[dict], now: datetime, end: datetime
 
 
 def plan(p4_events: list[tuple[dict, dict]], done: set, last_empty: dict[str, datetime], now: datetime) -> list[tuple[dict, dict, str]]:
-    """Games due this run, as (event, ESPN game, pull_type). Pre-game first: those are the graded lines."""
+    """Games due this run, as (event, ESPN game, pull_type)."""
     local = now.astimezone(CENTRAL)
     morning_open = local.time() >= MORNING_AT
     out = []
@@ -70,10 +72,11 @@ def plan(p4_events: list[tuple[dict, dict]], done: set, last_empty: dict[str, da
         start, eid = parse_iso(ev["commence_time"]), ev.get("id")
         if start <= now:
             continue
-        if start - now <= PREGAME_WINDOW:
+        if "pregame" in PROP_PULLS and start - now <= PREGAME_WINDOW:
             if (eid, "pregame") not in done:
                 out.append((ev, g, "pregame"))
-        elif morning_open and start.astimezone(CENTRAL).date() == local.date() and (eid, "morning") not in done:
+        elif "morning" in PROP_PULLS and morning_open and start.astimezone(CENTRAL).date() == local.date() \
+                and (eid, "morning") not in done:
             if eid in last_empty and now - last_empty[eid] < RETRY_EMPTY:
                 continue
             out.append((ev, g, "morning"))
@@ -87,9 +90,28 @@ def credits_ok(total: int | None, now: datetime, pull_type: str, cost: int = len
         return True
     left = _days_left(now)
     need = NBA_PREGAME_PER_DAY * left + nba.GUARD_RESERVE + cost
-    if pull_type == "morning":
+    if pull_type == "morning" and "pregame" in PROP_PULLS:
         need += CBB_GAMES_PER_DAY_EST * left
     return total >= need
+
+
+def _snapshot_credits(data_dir: Path, remaining: dict) -> None:
+    """data/cbb/credit_log.csv: each key's balance, written only when a balance changed (the /events call is free).
+    Balances cover ALL use of the key (NBA included), so college's own share comes from the pull logs."""
+    path = data_dir / "credit_log.csv"
+    row = {"at": iso(utcnow())}
+    row.update({f"{k}": v for k, v in sorted(remaining.items())})
+    try:
+        last = path.read_text().strip().splitlines()[-1].split(",") if path.exists() else None
+        header = path.read_text().splitlines()[0].split(",") if path.exists() else None
+    except Exception:
+        last = header = None
+    cols = ["at"] + sorted(remaining)
+    if header == cols and last and last[1:] == [str(row[c]) if row[c] is not None else "" for c in cols[1:]]:
+        return
+    if header and header != cols:                       # a key was added or removed: start a new file
+        path.rename(path.with_name(f"credit_log_{iso(utcnow())[:10]}.csv"))
+    _append_csv(path, cols, [row])
 
 
 def _load_state(path: Path) -> dict[str, datetime]:
@@ -123,6 +145,7 @@ def run(data_dir: Path, keys: list[tuple[str, str]], games: list[dict], day: dat
         elif code != 200:
             summary["errors"].append(f"{label}: events HTTP {code or h.get('error')}")
     summary["credits"] = remaining
+    _snapshot_credits(data_dir, remaining)
     if events is None:
         summary["status"] = "failed"
         return summary
@@ -201,6 +224,14 @@ def run(data_dir: Path, keys: list[tuple[str, str]], games: list[dict], day: dat
     _append_csv(data_dir / "prop_captures.csv", CAPTURE_FIELDS, cap_rows)
     _append_csv(data_dir / "pull_log.csv", PULL_FIELDS, log_rows)
     _save_state(state_path, last_empty)
+    # Game spreads and totals: one bulk call serves every due game. A failure here never stops the props above.
+    from . import lines
+    try:
+        summary["lines"] = lines.run(data_dir, keys, p4_events, remaining, now)
+    except Exception as e:
+        log.warning("cbb lines failed: %s", e)
+        summary["lines"] = {"status": "failed", "error": f"{type(e).__name__}: {e}"[:300]}
     summary["credits"] = remaining
-    summary["status"] = "failed" if any(p["status"] == "failed" for p in summary["pulled"]) else "ok"
+    bad = any(p["status"] == "failed" for p in summary["pulled"]) or summary["lines"].get("status") == "failed"
+    summary["status"] = "failed" if bad else "ok"
     return summary

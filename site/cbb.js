@@ -14,6 +14,20 @@
     if (g.state === "in") return `<span class="live">● ${esc(g.status || "Live")}</span> ${g.as ?? ""}–${g.hs ?? ""}`;
     return esc(fmtClock(g.start));
   };
+  // Game spread and total (bulk pull at 8 AM and about 1 hour before tip): "DUKE -7.5 · O/U 151.5 ▼1.5".
+  const sgn = (x) => (x > 0 ? "+" : "") + n1(x);
+  function glineHtml(gid) {
+    const gl = (PX().game_lines || {})[gid], g = gameOf(gid);
+    if (!gl || (gl.sp == null && gl.tot == null)) return "";
+    const mv = (cur, old) => (cur != null && old != null && cur !== old ? ` <span class="mv ${cur > old ? "up" : "down"}">${cur > old ? "▲" : "▼"}${n1(Math.abs(cur - old))}</span>` : "");
+    const am = gl.am || {};
+    const parts = [];
+    if (gl.sp != null) parts.push(`<b>${esc(g.home || "")} ${sgn(gl.sp)}</b>${mv(gl.sp, am.sp)}`);
+    if (gl.tot != null) parts.push(`O/U <b>${n1(gl.tot)}</b>${mv(gl.tot, am.tot)}`);
+    const tip = `${bookShort(gl.book)}, captured ${fmtTime(gl.cap)} (${gl.mb} min before tip)` +
+      (gl.am ? `. 8 AM: ${gl.am.sp != null ? esc(g.home || "") + " " + sgn(gl.am.sp) : ""}${gl.am.tot != null ? " / O/U " + n1(gl.am.tot) : ""}` : "");
+    return `<span class="gline" title="${esc(tip)}">${parts.join(" · ")}</span>`;
+  }
   const byStart = (a, b) => String(gameOf(a).start).localeCompare(String(gameOf(b).start));
   const phone = () => !!(window.matchMedia && window.matchMedia("(max-width: 760px)").matches);
   const plink = (aid) => R(`player/${encodeURIComponent(aid)}`);
@@ -43,11 +57,10 @@
       byGame.get(r.gid).push(r);
     }
     const isPhone = phone();
-    if (isPhone && rows.length && P.day >= 0) h += `<div class="bgrid-top"><span></span><span class="muted small"><span class="amdot">•</span> = 8 AM line</span></div>`;
     for (const gid of lined.filter((g) => byGame.has(g))) {
       const plist = byGame.get(gid).sort((a, b) => b.l.line - a.l.line);
       const g = gameOf(gid);
-      h += `<section class="mgame"><div class="mgame-h">${gameHeader(gid)} ${confChips(gid)}</div>`;
+      h += `<section class="mgame"><div class="mgame-h">${gameHeader(gid)} ${confChips(gid)} ${glineHtml(gid)}</div>`;
       if (isPhone) {
         // One row per player: line (big) with season avg, or the actual once graded; last-5 average; hit rate.
         const teams = [g.away, g.home].filter(Boolean);
@@ -90,9 +103,9 @@
     // Power 4 games with no points line: most of a day's games, since books only post props for some.
     if (bare.length && !P.game && !q) {
       const why = P.day < 0 ? "No player-points lines were captured for these games."
-        : "Books post props for only some games. Dime checks at 8:00 AM Central and again about 1 hour before tip; a game moves up to the board once a line posts.";
+        : "Books post props for only some games. Dime checks at 8:00 AM Central on game day (and about hourly until props post); a game moves up to the board once a points line posts. Spread and total, when posted, show beside each game.";
       h += `<section class="mgame"><div class="mgame-h"><b>No points lines</b> <span class="muted small">${bare.length} game${bare.length === 1 ? "" : "s"}</span></div>
-        <p class="muted small">${why}</p><ul class="nolines">${bare.map((g) => `<li><b>${esc(gLabel(g))}</b> ${confChips(g)} <span class="muted small">${gameStatus(g)}</span></li>`).join("")}</ul></section>`;
+        <p class="muted small">${why}</p><ul class="nolines">${bare.map((g) => `<li><b>${esc(gLabel(g))}</b> ${confChips(g)} <span class="muted small">${gameStatus(g)}</span> ${glineHtml(g)}</li>`).join("")}</ul></section>`;
     }
     return h;
   }
@@ -175,7 +188,8 @@
   function viewGuide() {
     return `<div class="panel"><h3>How the college board works</h3><div class="body guide">
       <p><b>What's tracked.</b> Power 4 games (ACC, Big Ten, Big 12, SEC), and only <b>player points</b>. By default a game counts when at least one team is Power 4, so a Power 4 team against a mid-major is included; the Log tab shows which setting is live. Conferences come from ESPN's current membership. Ranks (#) are ESPN's AP-style ranks for the top 25.</p>
-      <p><b>Lines.</b> DraftKings and FanDuel points props from The Odds API, pulled at <b>8:00 AM Central</b> on game day (re-checked about hourly until the books post them) and again about <b>1 hour before tip</b>. Books post college props for only some games, so many games show under "No points lines". Until the 1-hour pull lands the board shows the 8 AM line with a <span class="chip amchip">8 AM</span> chip; after it, ▲/▼ shows the move since 8 AM. The 1-hour line is the one graded. DraftKings is shown and graded; FanDuel is used when DraftKings has no line for that player.</p>
+      <p><b>Player lines.</b> DraftKings and FanDuel points props from The Odds API, pulled <b>once per game, at 8:00 AM Central</b> on game day (re-checked about hourly until the books post them, up to tip). Books post college props for only some games, so many games show under "No points lines". That morning line is the one graded; it is not updated later, so it can differ from the closing line. DraftKings is shown and graded; FanDuel is used when DraftKings has no line for that player.</p>
+      <p><b>Game lines.</b> Each game's spread (shown for the home team) and total come from the same books, captured at <b>8:00 AM Central</b> and again about <b>1 hour before tip</b>. The header shows the latest capture, with ▲/▼ for the move since 8 AM. They are for context only and are not graded.</p>
       <p><b>Grading.</b> Once the game is final, the player's actual points from ESPN's box score are compared with the line: over, under or push. A player with a line who didn't play is <i>void</i>. Results hides voids and pushes, like the NBA.</p>
       <p><b>AVG / L5 / HIT / Trend.</b> Same as the NBA tab (season average, last-5 average, how many of the last ${HIT_N} games went over this line, last ${TREND.lastN} vs season ±${TREND.pct}%), but computed over the games Dime tracks: Power 4 games since opening night (Nov 2). A mid-major player's numbers only include his games against Power 4 teams, and a Power 4 player's games against other opponents (such as Division II exhibitions) aren't counted.</p>
       <p><b>Players with "no games yet"</b> have a line but no tracked box score (first game, a transfer or a freshman). They're matched to ESPN's roster; stats appear after their first game.</p>

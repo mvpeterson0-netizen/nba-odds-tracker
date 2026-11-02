@@ -4,7 +4,7 @@ from datetime import date, datetime, timedelta, timezone
 
 import pytest
 
-from cbb_tracker import boxscores, build, espn, props
+from cbb_tracker import boxscores, build, credits, espn, lines, props
 from cbb_tracker.teams import find_game, same_team, team_key
 
 UTC = timezone.utc
@@ -164,17 +164,25 @@ def test_classify_keeps_power4_and_reports_unknown_names():
     assert [e["id"] for e, _ in p4] == ["e1"] and unmatched == ["Nowhere Tech Owls @ Zzyzx State Wizards"]
 
 
-def test_plan_morning_pregame_and_empty_throttle():
+def test_plan_props_are_morning_only_and_keep_retrying_until_tip():
     g = {"p4": True}
     far = odds_event("a", "H", "A", "2026-11-05T00:30:00Z")                            # 6:30 PM Central, today
-    near = odds_event("b", "H", "A", "2026-11-04T15:20:00Z")                           # 50 min out
+    near = odds_event("b", "H", "A", "2026-11-04T15:20:00Z")                           # 50 min out: still a morning pull
     tomorrow = odds_event("c", "H", "A", "2026-11-06T00:30:00Z")                       # a different Central day
+    assert props.PROP_PULLS == ("morning",)
     out = props.plan([(far, g), (near, g), (tomorrow, g)], set(), {}, NOW)
-    assert [(e["id"], t) for e, _, t in out] == [("b", "pregame"), ("a", "morning")]   # pre-game first
+    assert sorted((e["id"], t) for e, _, t in out) == [("a", "morning"), ("b", "morning")]    # never "pregame"
     assert props.plan([(far, g)], {("a", "morning")}, {}, NOW) == []                   # already captured
     assert props.plan([(far, g)], set(), {"a": NOW - timedelta(minutes=20)}, NOW) == []     # asked 20 min ago, empty
     assert len(props.plan([(far, g)], set(), {"a": NOW - timedelta(minutes=70)}, NOW)) == 1
     assert props.plan([(far, g)], set(), {}, datetime(2026, 11, 4, 13, 0, tzinfo=UTC)) == []   # 7:00 AM Central: too early
+
+
+def test_pregame_props_can_be_switched_back_on(monkeypatch):
+    monkeypatch.setattr(props, "PROP_PULLS", ("morning", "pregame"))
+    g = {"p4": True}
+    near = odds_event("b", "H", "A", "2026-11-04T15:20:00Z")
+    assert [t for _, _, t in props.plan([(near, g)], set(), {}, NOW)] == ["pregame"]
 
 
 def test_credits_never_eat_into_nba_pregame_needs():
@@ -183,7 +191,8 @@ def test_credits_never_eat_into_nba_pregame_needs():
     nba_need = props.NBA_PREGAME_PER_DAY * props._days_left(now) + props.nba.GUARD_RESERVE
     assert props.credits_ok(int(nba_need) + 5, now, "pregame")
     assert not props.credits_ok(int(nba_need) - 5, now, "pregame")
-    assert not props.credits_ok(int(nba_need) + 5, now, "morning")                    # morning also keeps college's own pre-game share
+    assert not props.credits_ok(int(nba_need) + 1, now, "pregame", cost=2)             # the bulk call costs 2
+    assert props.credits_ok(int(nba_need) + 5, now, "morning")                        # no college pre-game props to save for
     assert props.credits_ok(20000, now, "morning")
 
 
@@ -207,6 +216,8 @@ def test_run_pulls_points_for_power4_only_and_retries_empties_hourly(tmp_path, m
         hdr = {"x-requests-remaining": "19000", "x-requests-last": "1"}
         if url.endswith("/events"):
             return 200, events, hdr
+        if url.endswith("/odds") and "/events/" not in url:
+            return 200, [], {"x-requests-remaining": "18998", "x-requests-last": "2"}     # bulk spreads/totals: nothing posted
         if posted["yes"]:
             return 200, odds_body("e1"), hdr
         return 200, {"id": "e1", "bookmakers": []}, hdr
@@ -214,14 +225,14 @@ def test_run_pulls_points_for_power4_only_and_retries_empties_hourly(tmp_path, m
     monkeypatch.setattr(props, "_get", fake_get)
     keys = [("ODDS_API_KEY", "k1")]
     s = props.run(tmp_path, keys, games, date(2026, 11, 4), NOW)
-    odds_calls = [u for u, _ in seen if "/odds" in u]
+    odds_calls = [u for u, _ in seen if "/events/" in u and u.endswith("/odds")]
     assert odds_calls == [f"{props.BASE}/events/e1/odds"]                              # the mid-major game is never pulled
-    assert seen[-1][1]["markets"] == "player_points" and s["status"] == "ok" and s["p4_events"] == 1
+    assert [p["markets"] for u, p in seen if "/events/" in u][-1] == "player_points" and s["status"] == "ok" and s["p4_events"] == 1
     assert s["pulled"][0]["status"] == "empty"
 
     seen.clear()
     props.run(tmp_path, keys, games, date(2026, 11, 4), NOW + timedelta(minutes=15))   # too soon to ask again
-    assert not [u for u, _ in seen if "/odds" in u]
+    assert not [u for u, _ in seen if "/events/" in u and u.endswith("/odds")]
 
     posted["yes"] = True
     seen.clear()
@@ -231,7 +242,7 @@ def test_run_pulls_points_for_power4_only_and_retries_empties_hourly(tmp_path, m
     assert {c["market"] for c in caps} == {"player_points"} and {c["pull_type"] for c in caps} == {"morning"}
     seen.clear()
     props.run(tmp_path, keys, games, date(2026, 11, 4), NOW + timedelta(minutes=75))   # captured: not pulled again
-    assert not [u for u, _ in seen if "/odds" in u]
+    assert not [u for u, _ in seen if "/events/" in u and u.endswith("/odds")]
 
 
 def test_run_without_keys_does_nothing(tmp_path):
@@ -340,3 +351,109 @@ def test_full_run_writes_power4_files_and_builds(tmp_path, monkeypatch):
     assert run["power4"] == ["ACC", "Big 12", "Big Ten", "SEC"]
     d = build.build(tmp_path, datetime(2026, 11, 5, 12, tzinfo=UTC))
     assert d["games"]["g1"]["final"] and d["logs"]["11"][0]["pts"] == 23 and "g3" not in d["games"]
+
+
+# ---------------------------------------------------------------- game lines (spreads and totals)
+
+def bulk_event(eid, spread=-7.5, total=151.5, start="2026-11-05T00:30:00Z"):
+    def mk(key, outs):
+        return {"key": key, "outcomes": outs}
+    return {"id": eid, "commence_time": start, "home_team": "Duke Blue Devils", "away_team": "Grambling Tigers",
+            "bookmakers": [{"key": "draftkings", "markets": [
+                mk("spreads", [{"name": "Duke Blue Devils", "price": -110, "point": spread},
+                               {"name": "Grambling Tigers", "price": -110, "point": -spread}]),
+                mk("totals", [{"name": "Over", "price": -108, "point": total}, {"name": "Under", "price": -112, "point": total}])]}]}
+
+
+def test_lines_due_8am_once_and_one_hour_before_tip():
+    g = {"p4": True}
+    evt = odds_event("a", "H", "A", "2026-11-05T00:30:00Z")                            # 6:30 PM Central
+    early = datetime(2026, 11, 4, 13, 0, tzinfo=UTC)                                   # 7:00 AM Central
+    assert lines.due([(evt, g)], {}, early) == (False, set())
+    assert lines.due([(evt, g)], {}, NOW) == (True, set())                             # 8:30 AM Central
+    assert lines.due([(evt, g)], {"morning_date": "2026-11-04"}, NOW) == (False, set())   # done today
+    assert lines.due([(evt, g)], {"morning_try": NOW.isoformat()}, NOW + timedelta(minutes=20))[0] is False   # empty: wait
+    assert lines.due([(evt, g)], {"morning_try": NOW.isoformat()}, NOW + timedelta(minutes=60))[0] is True
+    near = datetime(2026, 11, 4, 23, 40, tzinfo=UTC)                                   # 50 min before tip
+    assert lines.due([(evt, g)], {"morning_date": "2026-11-04"}, near) == (False, {"a"})
+    assert lines.due([(evt, g)], {"morning_date": "2026-11-04", "pregame": ["a"]}, near) == (False, set())
+
+
+def test_lines_run_one_bulk_call_serves_all_due_games_and_logs_credits(tmp_path, monkeypatch):
+    g = {"p4": True}
+    e1, e2 = odds_event("e1", "Duke Blue Devils", "Grambling Tigers", "2026-11-05T00:30:00Z"), odds_event("e2", "H", "A", "2026-11-05T01:00:00Z")
+    calls = []
+
+    def fake_get(url, params, timeout=25.0):
+        calls.append((url, dict(params)))
+        return 200, [bulk_event("e1"), bulk_event("e2"), bulk_event("other")], {"x-requests-remaining": "19998", "x-requests-last": "2"}
+
+    monkeypatch.setattr(props, "_get", fake_get)
+    st = lines.run(tmp_path, [("K", "k1")], [(e1, g), (e2, g)], {"K": 20000}, NOW)
+    assert st["status"] == "ok" and st["pull_type"] == "morning" and st["credits_last"] == 2 and len(calls) == 1
+    assert calls[0][0].endswith("/basketball_ncaab/odds") and calls[0][1]["markets"] == "spreads,totals"
+    rows = list(csv.DictReader((tmp_path / "line_captures.csv").open()))
+    assert {r["event_id"] for r in rows} == {"e1", "e2"} and {r["market"] for r in rows} == {"spreads", "totals"}   # "other" ignored
+    assert lines.run(tmp_path, [("K", "k1")], [(e1, g), (e2, g)], {"K": 19998}, NOW + timedelta(minutes=5))["status"] == "not_due"
+    assert len(calls) == 1
+    near = datetime(2026, 11, 4, 23, 40, tzinfo=UTC)
+    assert lines.run(tmp_path, [("K", "k1")], [(e1, g), (e2, g)], {"K": 19998}, near)["pull_type"] == "pregame"
+    assert len(calls) == 2
+    log = list(csv.DictReader((tmp_path / "lines_log.csv").open()))
+    assert [r["pull_type"] for r in log] == ["morning", "pregame"] and {r["credits_last"] for r in log} == {"2"}
+
+
+def test_lines_empty_morning_retries_and_low_credits_are_skipped(tmp_path, monkeypatch):
+    g = {"p4": True}
+    e1 = odds_event("e1", "Duke Blue Devils", "Grambling Tigers", "2026-11-05T00:30:00Z")
+    monkeypatch.setattr(props, "_get", lambda *a, **k: (200, [], {"x-requests-remaining": "19998", "x-requests-last": "0"}))
+    assert lines.run(tmp_path, [("K", "k1")], [(e1, g)], {"K": 20000}, NOW)["status"] == "empty"
+    assert lines.run(tmp_path, [("K", "k1")], [(e1, g)], {"K": 20000}, NOW + timedelta(minutes=10))["status"] == "not_due"
+    low = lines.run(tmp_path / "low", [("K", "k1")], [(e1, g)], {"K": 30}, NOW)
+    assert low["status"] == "skipped"
+
+
+def test_lines_failure_never_blocks_props_run(tmp_path, monkeypatch):
+    events = [odds_event("e1", "Duke Blue Devils", "Grambling Tigers", "2026-11-05T00:30:00Z")]
+    games = [espn_game("g1", "Duke Blue Devils", "Grambling Tigers", "2026-11-05T00:30Z")]
+
+    def fake_get(url, params, timeout=25.0):
+        hdr = {"x-requests-remaining": "19000", "x-requests-last": "1"}
+        if url.endswith("/events"):
+            return 200, events, hdr
+        if url.endswith("/odds") and "/events/" not in url:
+            return 500, None, hdr
+        return 200, odds_body("e1"), hdr
+
+    monkeypatch.setattr(props, "_get", fake_get)
+    s = props.run(tmp_path, [("K", "k1")], games, date(2026, 11, 4), NOW)
+    assert s["pulled"][0]["status"] == "ok" and s["lines"]["status"] == "failed" and s["status"] == "failed"
+    assert (tmp_path / "prop_captures.csv").exists()
+
+
+def test_build_game_lines_home_spread_total_and_movement(tmp_path):
+    from cbb_tracker.build import _game_lines
+    caps = []
+    for when, ptype, sp, tot in (("2026-11-04T14:00:00Z", "morning", -7.5, 151.5), ("2026-11-04T23:40:00Z", "pregame", -9.0, 153.0)):
+        for r in lines.parse_rows([bulk_event("e1", sp, tot)], {"e1": ptype}, when, datetime(2026, 11, 4, 23, 40, tzinfo=UTC)):
+            caps.append({k: str(v) for k, v in r.items()})
+    mr = [{"game_id": "g1", "start_utc": "2026-11-05T00:30:00Z", "home": {"name": "Duke Blue Devils"}, "away": {"name": "Grambling Tigers"}}]
+    gl = _game_lines(caps, mr, {})
+    assert gl["g1"]["sp"] == -9.0 and gl["g1"]["tot"] == 153.0 and gl["g1"]["book"] == "draftkings" and gl["g1"]["pt"] == "pregame"
+    assert gl["g1"]["am"]["sp"] == -7.5 and gl["g1"]["am"]["tot"] == 151.5
+
+
+# ---------------------------------------------------------------- credit report
+
+def test_credit_report_counts_college_spend_by_day_and_type(tmp_path):
+    (tmp_path / "pull_log.csv").write_text("at,event_id,matchup,status,credits_last,pull_type\n"
+                                           "2026-11-03T15:00:00Z,e1,x,ok,1,morning\n2026-11-03T16:00:00Z,e2,y,empty,0,morning\n"
+                                           "2026-11-04T15:00:00Z,e3,z,ok,1,morning\n2026-11-04T16:00:00Z,e4,z,skipped,,morning\n")
+    (tmp_path / "lines_log.csv").write_text("at,pull_type,status,credits_last\n2026-11-03T14:00:00Z,morning,ok,2\n"
+                                            "2026-11-03T23:40:00Z,pregame,ok,2\n2026-11-04T14:00:00Z,morning,ok,2\n")
+    (tmp_path / "credit_log.csv").write_text("at,K\n2026-11-02T20:00:00Z,20000\n2026-11-04T20:00:00Z,19950\n")
+    s = credits.summarize(tmp_path, date(2026, 11, 2), date(2026, 11, 4))
+    assert s["props"] == 2 and s["lines"] == 6 and s["balance_drop"] == 50 and s["empty_props"] == 1 and s["skipped"] == 1
+    assert s["by_day"]["2026-11-03"] == {"props": 1.0, "lines": 4.0, "prop_pulls": 2, "line_pulls": 2}
+    text = credits.render(s)
+    assert "Total: 8" in text and "player points, morning" in text and "spreads+totals, pregame" in text

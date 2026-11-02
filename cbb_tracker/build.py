@@ -28,6 +28,48 @@ ET = ZoneInfo("America/New_York")
 KEEP_DAYS = 2      # games without lines are dropped from the site file once they are older than this
 
 
+def _snap(rows: list[dict], home: str) -> dict:
+    """One capture's rows (both markets) -> {sp: home spread, spp: its price, tot: total, op/up: over/under prices}."""
+    out: dict = {}
+    for r in rows:
+        if r["market"] == "spreads" and r["name"] == home:
+            out["sp"], out["spp"] = _f(r["point"]), _f(r["price"])
+        elif r["market"] == "totals" and r["name"] == "Over":
+            out["tot"], out["op"] = _f(r["point"]), _f(r["price"])
+        elif r["market"] == "totals" and r["name"] == "Under":
+            out["up"] = _f(r["price"])
+    return out
+
+
+def _game_lines(caps: list[dict], match_rows: list[dict], games: dict) -> dict:
+    by_ev: dict[str, dict] = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
+    for c in caps:
+        if (_f(c.get("minutes_before")) or 0) > 0:
+            by_ev[c["event_id"]][c["book"]][c["captured_at"]].append(c)
+    out: dict[str, dict] = {}
+    for ev, books in by_ev.items():
+        first = next(iter(next(iter(books.values())).values()))[0]
+        hit = find_game(first["home_team"], first["away_team"], first["commence_utc"], match_rows)
+        if not hit:
+            continue
+        per = {}
+        for book, by_time in books.items():
+            times = sorted(by_time)
+            cur = _snap(by_time[times[-1]], first["home_team"])
+            if "sp" not in cur and "tot" not in cur:
+                continue
+            cur.update({"cap": times[-1], "mb": int(_f(by_time[times[-1]][0]["minutes_before"]) or 0),
+                        "pt": by_time[times[-1]][0].get("pull_type") or "pregame"})
+            am_t = next((t for t in times if by_time[t][0].get("pull_type") == "morning"), None)
+            if am_t and am_t != times[-1]:
+                cur["am"] = _snap(by_time[am_t], first["home_team"])
+            per[book] = cur
+        prim = next((b for b in BOOK_ORDER if b in per), None)
+        if prim:
+            out[hit["game_id"]] = {**per[prim], "book": prim, "alt": {b: v for b, v in per.items() if b != prim}}
+    return out
+
+
 def build(data_dir: Path, now: datetime | None = None) -> dict:
     now = now or datetime.now(timezone.utc)
     caps = _read(data_dir / "prop_captures.csv")
@@ -150,8 +192,11 @@ def build(data_dir: Path, now: datetime | None = None) -> dict:
         grade(obj, aid, gid)
         lines[aid][gid] = {MK: obj}
 
+    # ---- game spreads and totals (lines.py): latest pre-tip capture per book, plus the 8 AM one for movement
+    game_lines = _game_lines(_read(data_dir / "line_captures.csv"), match_rows, games)
+
     # Keep the site file lean: games without any line are only needed for the board's three days.
-    with_lines = {gid for gs in lines.values() for gid in gs}
+    with_lines = {gid for gs in lines.values() for gid in gs} | set(game_lines)
     cutoff = (now.astimezone(ET) - timedelta(days=KEEP_DAYS)).date().isoformat()
     games = {gid: g for gid, g in games.items() if gid in with_lines or str(g.get("date") or "") >= cutoff}
     pull_log = _read(data_dir / "pull_log.csv")
@@ -162,6 +207,7 @@ def build(data_dir: Path, now: datetime | None = None) -> dict:
         "players": players,
         "logs": dict(logs),
         "lines": lines,
+        "game_lines": game_lines,
         "pulls": pull_log[-60:],
         "unmatched": {"games": sorted(unmatched_games), "players": sorted(unmatched_players)},
     }

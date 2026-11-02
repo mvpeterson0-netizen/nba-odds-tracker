@@ -46,9 +46,16 @@ points** only, styled like the NBA side (Board, Results, player pages, Log, Guid
 - Games, rankings, conferences, box scores, rosters: ESPN men's college basketball feeds. Power 4 comes from each team's ESPN
   `conferenceId` (2 ACC, 7 Big Ten, 8 Big 12, 23 SEC). `P4_MODE` in `cbb_tracker/espn.py`: `"either"` (default; a Power 4 team
   vs a mid-major counts) or `"both"` (Power 4 vs Power 4 only).
-- Lines: The Odds API `basketball_ncaab`, `player_points`, DraftKings/FanDuel, same 8 AM + ~1 h pre-game schedule. 1 credit per
-  game pulled (an empty answer is free), from the **same keys** as the NBA; college never spends credits the NBA pre-game pulls
-  need for the rest of the month. Books post college props for only some games; the rest show under "No points lines".
+- Player points: The Odds API `basketball_ncaab`, `player_points`, DraftKings/FanDuel, pulled **once per game, at 8 AM Central**
+  (retried about hourly until the books post them, up to tip). 1 credit per game pulled (an empty answer is free). That morning
+  line is the graded line; set `PROP_PULLS = ("morning", "pregame")` in `cbb_tracker/props.py` to add a pull ~1 h before tip.
+- Game spreads and totals (`cbb_tracker/lines.py`): one bulk `/odds` call (`spreads,totals`; 2 credits however many games it
+  returns) at **8 AM Central** and again when a Power 4 game is within ~70 min of tip. Shown beside each game, with the move
+  since 8 AM; not graded. Raw rows: `data/cbb/line_captures.csv`, calls: `lines_log.csv`.
+- Credits come from the **same keys** as the NBA; college never spends credits the NBA pre-game pulls need for the rest of the
+  month. Books post college props for only some games; the rest show under "No points lines".
+- Credit use: `python -m cbb_tracker.credits --since 2026-11-02` summarizes college spend by day and type from the pull logs,
+  next to the all-keys balance drop from `data/cbb/credit_log.csv` (a balance snapshot per run when it changes).
 - ESPN and the Odds API spell some schools differently. Odds events matching no ESPN game are listed in the CBB Log tab;
   add an alias in `cbb_tracker/teams.py` if a Power 4 game appears there.
 - Local: `python -m cbb_tracker` (needs network), `python -m cbb_tracker.build data/cbb site/data`.
@@ -67,8 +74,8 @@ once the key exists). Each is `{fetched_at, source, count, ..., rows: [...]}`.
 ## Schedule
 
 `.github/workflows/update-data.yml` runs tests, collects data, commits it, and redeploys the
-site to GitHub Pages. Player props and game lines are pulled at **8:00 AM Central** on game day
-and again **about 1 hour before each tip** (the graded line). GitHub's own schedule is
+site to GitHub Pages. NBA player props and game lines are pulled at **8:00 AM Central** on game day
+and again **about 1 hour before each tip** (the graded line). College is different: see the College basketball section. GitHub's own schedule is
 best-effort, so an external trigger should call the workflow's "Run workflow" (dispatch) API
 every 30 minutes. If a source fails, the rest still publish and the run is marked
 failed; the site shows a warning banner.

@@ -251,3 +251,5 @@ h2 .newsbtn { vertical-align: 2px; }
 ul.nolines { list-style: none; margin: 0; padding: 0; }
 ul.nolines li { padding: 5px 2px; border-bottom: 1px solid var(--line); }
 ul.nolines li:last-child { border-bottom: 0; }
+.gline { margin-left: 8px; font-size: 12px; white-space: nowrap; color: var(--muted); } .gline b { color: var(--text, inherit); }
+ul.nolines .gline { margin-left: 4px; }
