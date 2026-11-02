@@ -1,8 +1,93 @@
 {
-  "fetched_at": "2026-11-02T04:45:20+00:00",
+  "fetched_at": "2026-11-02T05:00:26+00:00",
   "source": "espn",
-  "count": 0,
-  "game_date": "2026-10-31",
-  "division_i_games": 0,
-  "rows": []
+  "count": 1,
+  "game_date": "2026-11-01",
+  "division_i_games": 2,
+  "rows": [
+    {
+      "game_id": "401920982",
+      "start_utc": "2026-11-01T14:30Z",
+      "short_name": "ND VS VILL",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Palazzo dello Sport",
+      "neutral_site": true,
+      "broadcasts": [
+        "Fox"
+      ],
+      "home": {
+        "team_id": "222",
+        "abbr": "VILL",
+        "name": "Villanova Wildcats",
+        "score": 72,
+        "winner": false,
+        "record": "0-1",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Tyler Perkins",
+            "value": "18"
+          },
+          "rebounds": {
+            "player": "Devin Royal",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Elijah Crawford",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Tyler Perkins",
+            "value": "18 PTS"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Villanova",
+        "nick": "Wildcats"
+      },
+      "away": {
+        "team_id": "87",
+        "abbr": "ND",
+        "name": "Notre Dame Fighting Irish",
+        "score": 74,
+        "winner": true,
+        "record": "1-0",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Brady Koehler",
+            "value": "16"
+          },
+          "rebounds": {
+            "player": "Brady Koehler",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Logan Duncomb",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Brady Koehler",
+            "value": "16 PTS, 8 REB"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Notre Dame",
+        "nick": "Fighting Irish"
+      },
+      "espn_line": null,
+      "date": "2026-11-01",
+      "p4": true
+    }
+  ]
 }
