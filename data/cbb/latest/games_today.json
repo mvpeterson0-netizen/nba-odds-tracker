@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-02T23:00:24+00:00",
+  "fetched_at": "2026-11-02T23:15:18+00:00",
   "source": "espn",
   "count": 48,
   "game_date": "2026-11-02",
@@ -9,11 +9,11 @@
       "game_id": "401906769",
       "start_utc": "2026-11-02T23:00Z",
       "short_name": "MIA VS FLA",
-      "state": "pre",
-      "status": "11/2 - 6:00 PM EST",
+      "state": "in",
+      "status": "15:51 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:51",
       "venue": "Benchmark International Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,12 +23,29 @@
         "team_id": "57",
         "abbr": "FLA",
         "name": "Florida Gators",
-        "score": 0,
+        "score": 10,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
         "away_record": "0-0",
-        "leaders": null,
+        "leaders": {
+          "points": {
+            "player": "Thomas Haugh",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Rueben Chinyelu",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Rueben Chinyelu",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Thomas Haugh",
+            "value": "5 PTS"
+          }
+        },
         "conf_id": "23",
         "conf": "SEC",
         "rank": 1,
@@ -39,24 +56,36 @@
         "team_id": "2390",
         "abbr": "MIA",
         "name": "Miami Hurricanes",
-        "score": 0,
+        "score": 11,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
         "away_record": "0-0",
-        "leaders": null,
+        "leaders": {
+          "points": {
+            "player": "Acaden Lewis",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Shelton Henderson",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Somto Cyril",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Acaden Lewis",
+            "value": "5 PTS"
+          }
+        },
         "conf_id": "2",
         "conf": "ACC",
         "rank": 14,
         "loc": "Miami",
         "nick": "Hurricanes"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "FLA -6.5",
-        "spread": -6.5,
-        "over_under": 158.5
-      },
+      "espn_line": null,
       "date": "2026-11-02",
       "p4": true
     },
@@ -64,11 +93,11 @@
       "game_id": "401925733",
       "start_utc": "2026-11-02T23:00Z",
       "short_name": "OAK @ MICH",
-      "state": "pre",
-      "status": "11/2 - 6:00 PM EST",
+      "state": "in",
+      "status": "12:54 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "12:54",
       "venue": "Crisler Center",
       "neutral_site": false,
       "broadcasts": [
@@ -78,12 +107,29 @@
         "team_id": "130",
         "abbr": "MICH",
         "name": "Michigan Wolverines",
-        "score": 0,
+        "score": 13,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
         "away_record": "0-0",
-        "leaders": null,
+        "leaders": {
+          "points": {
+            "player": "J.P. Estrella",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "J.P. Estrella",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Elliot Cadeau",
+            "value": "2"
+          },
+          "rating": {
+            "player": "J.P. Estrella",
+            "value": "6 PTS"
+          }
+        },
         "conf_id": "7",
         "conf": "Big Ten",
         "rank": 16,
@@ -94,24 +140,36 @@
         "team_id": "2473",
         "abbr": "OAK",
         "name": "Oakland Golden Grizzlies",
-        "score": 0,
+        "score": 12,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
         "away_record": "0-0",
-        "leaders": null,
+        "leaders": {
+          "points": {
+            "player": "Ryder Bradley",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Nassim Mashhour",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Warren Marshall IV",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Ryder Bradley",
+            "value": "6 PTS"
+          }
+        },
         "conf_id": "45",
         "conf": null,
         "rank": null,
         "loc": "Oakland",
         "nick": "Golden Grizzlies"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "MICH -26.5",
-        "spread": -26.5,
-        "over_under": 157.5
-      },
+      "espn_line": null,
       "date": "2026-11-02",
       "p4": true
     },
@@ -2086,7 +2144,7 @@
         "provider": "DraftKings",
         "details": "UTAH -19.5",
         "spread": -19.5,
-        "over_under": 147.5
+        "over_under": 146.5
       },
       "date": "2026-11-02",
       "p4": true
