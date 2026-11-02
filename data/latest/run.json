@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-02T00:45:17+00:00",
+  "finished_at": "2026-11-02T01:00:19+00:00",
   "game_date": "2026-11-01",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -15,25 +15,33 @@
     "odds": "not_due"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
+    "new_games": 1,
+    "player_rows": 24,
     "unparsed": [],
-    "queued": 0,
+    "queued": 1,
     "errors": [],
     "rosters_fetched": 0
   },
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 485,
+      "ODDS_API_KEY": 481,
       "ODDS_API_KEY_2": 484,
       "ODDS_API_KEY_20K": 20000
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Toronto Raptors @ Los Angeles Lakers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 178,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }

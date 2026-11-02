@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-02T00:45:13+00:00",
+  "fetched_at": "2026-11-02T01:00:16+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-01",
@@ -80,11 +80,11 @@
       "game_id": "401909904",
       "start_utc": "2026-11-01T22:00Z",
       "short_name": "BKN @ IND",
-      "state": "in",
-      "status": "39.4 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "39.4",
+      "clock": "0.0",
       "venue": "Gainbridge Fieldhouse",
       "neutral_site": false,
       "broadcasts": [
@@ -97,9 +97,9 @@
         "abbr": "IND",
         "name": "Indiana Pacers",
         "score": 90,
-        "winner": null,
-        "record": "2-4",
-        "home_record": "0-2",
+        "winner": false,
+        "record": "2-5",
+        "home_record": "0-3",
         "away_record": "2-2",
         "leaders": {
           "points": {
@@ -125,10 +125,10 @@
         "abbr": "BKN",
         "name": "Brooklyn Nets",
         "score": 98,
-        "winner": null,
-        "record": "0-5",
+        "winner": true,
+        "record": "1-5",
         "home_record": "0-3",
-        "away_record": "0-2",
+        "away_record": "1-2",
         "leaders": {
           "points": {
             "player": "Michael Porter Jr.",
@@ -304,7 +304,7 @@
         "provider": "DraftKings",
         "details": "LAL -3.5",
         "spread": -3.5,
-        "over_under": 224.5
+        "over_under": 223.5
       }
     }
   ]
