@@ -37,6 +37,22 @@ A news failure keeps the previous file and never stops a run. Same risks as Stix
 no SLA and can change or be blocked, and Disney's Terms of Use limit use to personal, noncommercial use
 and bar automated access.
 
+## College basketball (CBB)
+
+The **NBA | CBB** toggle in the header opens a sister section: **Power 4 games** (ACC, Big Ten, Big 12, SEC) and **player
+points** only, styled like the NBA side (Board, Results, player pages, Log, Guide). Code is in `cbb_tracker/`, data in
+`data/cbb/`, front end in `site/cbb.js`; it runs as its own step after the NBA pull, so a college failure never stops NBA data.
+
+- Games, rankings, conferences, box scores, rosters: ESPN men's college basketball feeds. Power 4 comes from each team's ESPN
+  `conferenceId` (2 ACC, 7 Big Ten, 8 Big 12, 23 SEC). `P4_MODE` in `cbb_tracker/espn.py`: `"either"` (default; a Power 4 team
+  vs a mid-major counts) or `"both"` (Power 4 vs Power 4 only).
+- Lines: The Odds API `basketball_ncaab`, `player_points`, DraftKings/FanDuel, same 8 AM + ~1 h pre-game schedule. 1 credit per
+  game pulled (an empty answer is free), from the **same keys** as the NBA; college never spends credits the NBA pre-game pulls
+  need for the rest of the month. Books post college props for only some games; the rest show under "No points lines".
+- ESPN and the Odds API spell some schools differently. Odds events matching no ESPN game are listed in the CBB Log tab;
+  add an alias in `cbb_tracker/teams.py` if a Power 4 game appears there.
+- Local: `python -m cbb_tracker` (needs network), `python -m cbb_tracker.build data/cbb site/data`.
+
 ## Output
 
 ```

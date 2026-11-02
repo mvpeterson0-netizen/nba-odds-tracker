@@ -3,7 +3,10 @@ body { font-size: 15px; -webkit-text-size-adjust: 100%; }
 .top { flex-wrap: wrap; gap: 6px 12px; padding: 8px 12px; padding-top: max(8px, env(safe-area-inset-top)); }
 .brand { font-size: 17px; }
 .brand .muted { display: none; }
-.status { order: 2; margin-left: auto; font-size: 11px; max-width: 55%; text-align: right; }
+.modeseg { order: 1; }
+.modeseg a { padding: 3px 11px; }
+.status { order: 2; margin-left: auto; font-size: 11px; flex: 1 1 0; min-width: 0; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.status .full { display: none; }
 #tabs { order: 3; width: 100%; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
 #tabs::-webkit-scrollbar { display: none; }
 #tabs a { white-space: nowrap; padding: 6px 10px; }

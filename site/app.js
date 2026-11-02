@@ -2,7 +2,9 @@
 // Dime front end (NBA props). Reads the JSON the GitHub Action writes to data/. No external libraries.
 
 const FILES = ["run", "standings", "injuries", "props", "updates"];
-const D = {};               // file name -> parsed JSON (or null if missing)
+const CBB_FILES = ["cbb", "cbb_run"];   // college basketball (cbb.js); loaded the first time the CBB toggle is used
+let MODE = "nba";                       // "nba" | "cbb": the section being shown (props.js and cbb.js read it)
+const D = {};               // file name -> parsed JSON (or null if missing; undefined = not loaded yet)
 const S = { conf: "", team: "", status: "", q: "" };
 let LIVE = null;            // recent workflow runs from the GitHub API (or null)
 const app = document.getElementById("app");
@@ -139,8 +141,7 @@ function viewLog() {
   return h;
 }
 
-function propsLog() {
-  const px = D.props;
+function propsLog(px = D.props) {
   if (!px) return "";
   let h = `<div class="panel"><h3>Recent prop pulls</h3><div class="scroll"><table class="stable"><thead><tr><th>When</th><th>Game</th><th>Pull</th><th class="num">Min before tip</th><th>Status</th><th class="num">Prices</th><th class="num">Credits used / left</th></tr></thead><tbody>`;
   const pulls = [...(px.pulls || [])].reverse().slice(0, 25);
@@ -159,21 +160,66 @@ function propsLog() {
 }
 
 // ---------- router ----------
+// NBA:  #/board  #/results  #/standings  #/injuries  #/log  #/guide  #/player/<id>[/<market>]
+// CBB:  #/cbb/board  #/cbb/results  #/cbb/log  #/cbb/guide  #/cbb/player/<id>
+const TABS = {
+  nba: [["board", "Board"], ["results", "Results"], ["standings", "Standings"], ["injuries", "Injuries"], ["log", "Log & sources"], ["guide", "Guide"]],
+  cbb: [["board", "Board"], ["results", "Results"], ["log", "Log"], ["guide", "Guide"]],
+};
+const SUB = { nba: "NBA props · 2026–27", cbb: "Power 4 points · 2026–27" };
+const FOOT = {
+  nba: `Games, results, standings and injuries: ESPN public data feeds (unofficial; can change without notice).
+    Lines: <a href="https://the-odds-api.com">The Odds API</a> (props: DraftKings, FanDuel), captured about 3 hours before tip — not closing lines.
+    Research tool only; not betting advice.`,
+  cbb: `Power 4 men's college basketball. Games, rankings and box scores: ESPN public data feeds (unofficial; can change without notice).
+    Points lines: <a href="https://the-odds-api.com">The Odds API</a> (DraftKings, FanDuel), pulled at 8 AM Central and about 1 hour before tip.
+    Research tool only; not betting advice.`,
+};
+const savedMode = () => { try { return localStorage.getItem("dime-mode") === "cbb" ? "cbb" : "nba"; } catch { return "nba"; } };
+const hashFor = (m) => (m === "cbb" ? "#/cbb/board" : "#/board");
+
+function setMode(m) {
+  if (m !== MODE) { P.game = ""; P.q = ""; }          // game ids and searches don't carry across sections
+  MODE = m;
+  try { localStorage.setItem("dime-mode", m); } catch { /* private mode: just don't remember */ }
+  document.querySelectorAll("#mode a").forEach((a) => { const on = a.dataset.mode === m; a.classList.toggle("on", on); a.setAttribute("aria-current", on ? "true" : "false"); });
+  const sub = document.getElementById("brand-sub"); if (sub) sub.textContent = SUB[m];
+  const foot = document.getElementById("foot"); if (foot) foot.innerHTML = FOOT[m];
+}
+function drawTabs(active) {
+  const pre = MODE === "cbb" ? "#/cbb/" : "#/";
+  document.getElementById("tabs").innerHTML = TABS[MODE].map(([t, l]) => `<a href="${pre}${t}" data-tab="${t}" class="${t === active ? "on" : ""}">${l}</a>`).join("");
+}
+
+let cbbLoading = null;
 function render() {
-  const hash = location.hash || "#/board";
-  let [, tab, arg, sub] = hash.split("/");
-  if (tab === "games" || tab === "odds") { location.replace("#/board"); return; }   // removed pages
+  let parts = (location.hash || hashFor(savedMode())).split("/");          // ["#", "cbb", "board", ...]
+  const mode = parts[1] === "cbb" ? "cbb" : "nba";
+  if (mode === "cbb") parts = ["#", ...parts.slice(2)];
+  let [, tab, arg, sub] = parts;
+  if (mode === "nba" && (tab === "games" || tab === "odds")) { location.replace("#/board"); return; }   // removed pages
+  const modeChanged = mode !== MODE;
+  setMode(mode);
   const active = tab === "player" ? "board" : tab || "board";
-  document.querySelectorAll("#tabs a").forEach((a) => a.classList.toggle("on", a.dataset.tab === active));
-  const views = { standings: viewStandings, injuries: viewInjuries, log: viewLog };
+  drawTabs(active);
+  if (modeChanged) renderStatus();
+  if (modeChanged && mode === "cbb" && D.cbb !== undefined) refresh();   // it isn't re-fetched while hidden: catch up now
+  if (mode === "cbb" && D.cbb === undefined) {                // first visit: fetch the college files, then draw
+    app.innerHTML = `<p class="muted pad">Loading college basketball…</p>`;
+    cbbLoading = cbbLoading || loadFiles(CBB_FILES).then(() => { cbbLoading = null; renderStatus(); render(); });
+    return;
+  }
+  const views = mode === "nba" ? { standings: viewStandings, injuries: viewInjuries, log: viewLog } : {};
+  const home = R("board");
   let propsView = false;
   try {
     let html = views[tab] ? views[tab]() : null;
-    if (html == null && window.STIX_PROPS) { html = window.STIX_PROPS.render(tab, arg, sub); propsView = html != null; }
-    app.innerHTML = html ?? `<p class="pad">Page not found. <a href="#/board">Back to the board</a>.</p>`;
-  } catch (e) { console.error(e); app.innerHTML = `<p class="pad">This view hit an error: ${esc(e.message)}. The data may have changed shape — check the <a href="#/log">Log</a>.</p>`; }
+    const section = mode === "cbb" ? window.DIME_CBB : window.STIX_PROPS;
+    if (html == null && section) { html = section.render(tab, arg, sub); propsView = html != null; }
+    app.innerHTML = html ?? `<p class="pad">Page not found. <a href="${home}">Back to the board</a>.</p>`;
+  } catch (e) { console.error(e); app.innerHTML = `<p class="pad">This view hit an error: ${esc(e.message)}. The data may have changed shape — check the <a href="${R("log")}">Log</a>.</p>`; }
   bind();
-  if (propsView) { try { window.STIX_PROPS.bind(tab, arg); } catch (e) { console.error(e); } }
+  if (propsView) { try { (mode === "cbb" ? window.DIME_CBB : window.STIX_PROPS).bind(tab, arg); } catch (e) { console.error(e); } }
 }
 function bind() {
   const on = (id, ev, fn) => { const el = document.getElementById(id); if (el) el.addEventListener(ev, fn); };
@@ -184,14 +230,17 @@ function bind() {
 
 // ---------- loading + status ----------
 const repo = () => (D.run && D.run.repo) || "mvpeterson0-netizen/nba-odds-tracker";
-async function loadAll() {
-  await Promise.all(FILES.map(async (f) => {
+const RUN = () => (MODE === "cbb" ? D.cbb_run : D.run);          // run summary of the section being shown
+async function loadFiles(list) {
+  await Promise.all(list.map(async (f) => {
     try {
       const r = await fetch(`data/${f}.json?t=${Date.now()}`, { cache: "no-store" });
       D[f] = r.ok ? await r.json() : null;
     } catch { D[f] = null; }
   }));
 }
+// The college file is the bigger one, so it is only re-fetched while the college section is open.
+const loadAll = () => loadFiles(MODE === "cbb" ? [...FILES, ...CBB_FILES] : FILES);
 async function liveRuns() {
   try {
     const r = await fetch(`https://api.github.com/repos/${repo()}/actions/workflows/update-data.yml/runs?per_page=20`);
@@ -199,27 +248,43 @@ async function liveRuns() {
     return (await r.json()).workflow_runs || null;
   } catch { return null; }
 }
-async function status() {
+// Status line and warning banner for the section being shown (uses the last workflow-run list, fetched once by status()).
+function renderStatus() {
   const st = document.getElementById("status"), stale = document.getElementById("stale");
   const warn = [];
-  const t = D.run && D.run.finished_at;
+  const run = RUN(), t = run && run.finished_at;
   if (t) {
-    st.textContent = `Updated ${ago(t)} (${fmtTime(t)})`;
+    st.innerHTML = `Updated ${ago(t)}<span class="full"> (${fmtTime(t)})</span>`;   // phones show just "Updated 4 min ago"
     if (Date.now() - new Date(t).getTime() > 75 * 60000) warn.push(`Data may be stale: the last pull was ${ago(t)}.`);
-    const failed = Object.entries(D.run.sources || {}).filter(([, v]) => v === "failed").map(([k]) => k.replace(/_/g, " "));
+    const failed = Object.entries(run.sources || {}).filter(([, v]) => v === "failed").map(([k]) => k.replace(/_/g, " "));
     if (failed.length) warn.push(`Last pull failed for: ${failed.join(", ")}. Showing the previous data for those.`);
-  } else st.textContent = "No run summary";
-  LIVE = await liveRuns();
+  } else st.textContent = MODE === "cbb" ? "No college run yet" : "No run summary";
   const latest = LIVE && LIVE.find((r) => r.status === "completed");
   if (latest && latest.conclusion !== "success") warn.push(`The most recent workflow run (${fmtTime(latest.updated_at)}) ended with "${latest.conclusion}".`);
   stale.hidden = !warn.length; stale.textContent = warn.length ? "⚠ " + warn.join(" ") : "";
   st.classList.toggle("bad", warn.length > 0);
-  if ((location.hash || "").startsWith("#/log")) render();
+}
+async function status() {
+  renderStatus();
+  LIVE = await liveRuns();
+  renderStatus();
+  if (/^#\/(cbb\/)?log/.test(location.hash || "")) render();
+}
+// Pick up new data without a manual reload: every 5 minutes, when the tab comes back into view, and on switching sections.
+async function refresh() {
+  const before = RUN() && RUN().finished_at;
+  await loadAll();
+  if ((RUN() && RUN().finished_at) !== before) {
+    const typing = document.activeElement && document.activeElement.tagName === "INPUT";
+    if (!typing) render();
+    status();
+  }
 }
 
 (async function init() {
   await loadAll();
-  if (!D.run && !D.props) {
+  const wantsCbb = (location.hash || hashFor(savedMode())).startsWith("#/cbb");
+  if (!wantsCbb && !D.run && !D.props) {
     app.innerHTML = `<p class="pad">Could not load data yet. The first scheduled run may still be in progress.</p>`;
     document.getElementById("status").textContent = "No data";
     return;
@@ -227,16 +292,6 @@ async function status() {
   window.addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
   render();
   status();
-  // Pick up new data without a manual reload: check every 5 minutes and when the tab comes back into view.
-  const refresh = async () => {
-    const before = D.run && D.run.finished_at;
-    await loadAll();
-    if ((D.run && D.run.finished_at) !== before) {
-      const typing = document.activeElement && document.activeElement.tagName === "INPUT";
-      if (!typing) render();
-      status();
-    }
-  };
   setInterval(refresh, 5 * 60 * 1000);
   document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") refresh(); });
 })();

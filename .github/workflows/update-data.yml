@@ -12,7 +12,7 @@ on:
   workflow_dispatch: {}
   push:
     branches: [main]
-    paths: ["nba_tracker/**", "tests/**", "site/**", "requirements*.txt", ".github/workflows/**"]
+    paths: ["nba_tracker/**", "cbb_tracker/**", "tests/**", "site/**", "requirements*.txt", ".github/workflows/**"]
 
 permissions:
   contents: write
@@ -30,6 +30,7 @@ jobs:
     timeout-minutes: 15
     outputs:
       collect: ${{ steps.collect.outcome }}
+      collect_cbb: ${{ steps.collect_cbb.outcome }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -54,6 +55,21 @@ jobs:
           ODDS_API_KEY_6: ${{ secrets.ODDS_API_KEY_6 }}
           ODDS_API_KEY_20K: ${{ secrets.ODDS_API_KEY_20K }}
         run: python -m nba_tracker
+
+      - name: Pull college basketball (Power 4 games, player points)
+        id: collect_cbb
+        # After the NBA pull, so the NBA pre-game props get first call on the shared API credits.
+        # Independent of the NBA step: a failure here never stops NBA data from publishing.
+        continue-on-error: true
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          ODDS_API_KEY_2: ${{ secrets.ODDS_API_KEY_2 }}
+          ODDS_API_KEY_3: ${{ secrets.ODDS_API_KEY_3 }}
+          ODDS_API_KEY_4: ${{ secrets.ODDS_API_KEY_4 }}
+          ODDS_API_KEY_5: ${{ secrets.ODDS_API_KEY_5 }}
+          ODDS_API_KEY_6: ${{ secrets.ODDS_API_KEY_6 }}
+          ODDS_API_KEY_20K: ${{ secrets.ODDS_API_KEY_20K }}
+        run: python -m cbb_tracker
 
       - name: Commit data
         run: |
@@ -82,6 +98,8 @@ jobs:
           mkdir -p site/data
           cp data/latest/*.json site/data/
           python -m nba_tracker.build data site/data
+          python -m cbb_tracker.build data/cbb site/data
+          cp data/cbb/latest/run.json site/data/cbb_run.json 2>/dev/null || true
           V=$(cat site/*.html site/*.js site/*.css | sha256sum | cut -c1-10)
           sed -i -E "s/(src|href)=\"([a-z]+\.(js|css))\"/\1=\"\2?v=$V\"/g" site/index.html
           sed -i "s/dime-v1/dime-$V/" site/sw.js
@@ -100,7 +118,7 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v4
       - name: Report collection failure
-        if: needs.update.outputs.collect == 'failure'
+        if: needs.update.outputs.collect == 'failure' || needs.update.outputs.collect_cbb == 'failure'
         run: |
-          echo "::error::One or more data sources failed this run; see the 'Pull stats' step log."
+          echo "::error::One or more data sources failed this run; see the 'Pull stats' / 'Pull college basketball' step logs."
           exit 1

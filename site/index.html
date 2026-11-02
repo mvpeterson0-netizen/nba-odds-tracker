@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Dime</title>
-<meta name="description" content="NBA player props, lines and results.">
+<meta name="description" content="NBA player props, plus Power 4 college basketball points: lines and results.">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="application-name" content="Dime">
 <meta name="apple-mobile-web-app-title" content="Dime">
@@ -20,7 +20,11 @@
 </head>
 <body>
 <header class="top">
-  <div class="brand"><img src="icons/dime-64.png" alt="" width="28" height="28"> Dime <span class="muted">NBA props · 2026–27</span></div>
+  <div class="brand"><img src="icons/dime-64.png" alt="" width="28" height="28"> Dime <span class="muted" id="brand-sub">NBA props · 2026–27</span></div>
+  <div class="modeseg" id="mode" role="group" aria-label="Sport">
+    <a href="#/board" data-mode="nba" class="on" aria-current="true">NBA</a>
+    <a href="#/cbb/board" data-mode="cbb" aria-current="false">CBB</a>
+  </div>
   <nav id="tabs">
     <a href="#/board" data-tab="board">Board</a>
     <a href="#/results" data-tab="results">Results</a>
@@ -33,13 +37,14 @@
 </header>
 <div id="stale" class="stale" hidden></div>
 <main id="app"><p class="muted pad">Loading data…</p></main>
-<footer class="foot muted">
+<footer class="foot muted" id="foot">
   Games, results, standings and injuries: ESPN public data feeds (unofficial; can change without notice).
   Lines: <a href="https://the-odds-api.com">The Odds API</a> (props: DraftKings, FanDuel), captured about 3 hours before tip — not closing lines.
   Research tool only; not betting advice.
 </footer>
 <script src="props.js"></script>
 <script src="news.js"></script>
+<script src="cbb.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

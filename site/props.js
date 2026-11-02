@@ -1,6 +1,9 @@
 "use strict";
 // Player props: Board, player pages and Results. Loaded before app.js; uses its helpers at render time.
-const updIcon = (aid) => (window.DIME_NEWS ? window.DIME_NEWS.icon(aid) : "");   // notes icon (news.js)
+const updIcon = (aid) => (window.DIME_NEWS && MODE === "nba" ? window.DIME_NEWS.icon(aid) : "");   // notes icon (news.js); NBA only
+// Everything below is shared by the NBA and college (cbb.js) sections: MODE ("nba" | "cbb", set by app.js) picks the
+// data file and the links. College only ever has the points market, so its views are built in cbb.js.
+const R = (path) => `#/${MODE === "cbb" ? "cbb/" : ""}${path}`;       // in-app link for the current section
 // Data: data/props.json (built by nba_tracker/build.py).
 
 const TREND = { minGames: 3, lastN: 3, pct: 15 };   // trend arrow: last 3 games vs season avg, ±15%
@@ -8,7 +11,7 @@ const HIT_N = 10;                                   // hit rate window (games pl
 const P = { day: 0, game: "", q: "", pmk: {}, rmk: "core", bset: "core", subFrom: "" };   // day: -1 yesterday, 0 today, 1 tomorrow
 let P_TYPING = null;
 
-const PX = () => D.props;
+const PX = () => (MODE === "cbb" ? D.cbb : D.props);
 const mkById = (id) => PX().markets.find((m) => m.id === id);
 // Short market names for player pages: "Pts", "Reb", "Ast", "3PM", "PRA", "P+R"…
 const ABBR = { PTS: "Pts", REB: "Reb", AST: "Ast", STL: "Stl", BLK: "Blk" };
@@ -16,7 +19,12 @@ const mkAbbr = (m) => ABBR[m.short] || m.short;
 const mean = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : null);
 const n1 = (v) => (v == null ? "—" : Number.isInteger(v) ? String(v) : v.toFixed(1));
 const gameOf = (gid) => PX().games[gid] || {};
-const gLabel = (gid) => { const g = gameOf(gid); return g.away ? `${g.away} @ ${g.home}` : gid; };
+const gLabel = (gid) => {
+  const g = gameOf(gid);
+  if (!g.away) return gid;
+  const rk = (r) => (MODE === "cbb" && r ? `#${r} ` : "");   // AP-style rank, college only
+  return `${rk(g.ar)}${g.away} @ ${rk(g.hr)}${g.home}`;
+};
 
 function played(aid, beforeDate) {
   return (PX().logs[aid] || []).filter((r) => r.p && (!beforeDate || r.d < beforeDate));
@@ -223,6 +231,7 @@ function pendingGames(aid) {
     .map((gid) => { const g = gameOf(gid), home = p.team ? p.team === g.home : false;
       return { g: gid, d: g.date, pend: true, ha: home ? "home" : "away", opp: home ? g.away : g.home }; });
 }
+const OPP_CH = () => (MODE === "cbb" ? 4 : 3);   // opponent label length under the chart (college abbreviations run longer)
 function chartSVG(aid, mk) {
   const st = mkById(mk).stat;
   const lineFor0 = (gid) => ((PX().lines[aid] || {})[gid] || {})[mk];
@@ -251,7 +260,7 @@ function chartSVG(aid, mk) {
     if (r.pend) {   // not played yet: line only, label above; the actual point appears once the box score is in
       s += `<rect x="${x(i) - 4.5}" y="${y(l.line) - 4.5}" width="9" height="9" transform="rotate(45 ${x(i)} ${y(l.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>${esc(r.d)} ${r.ha === "home" ? "vs" : "@"} ${esc(r.opp || "")}: line ${n1(l.line)} (not played yet)</title></rect>`;
       s += `<text x="${x(i)}" y="${y(l.line) - 12}" font-size="13" text-anchor="middle" fill="var(--muted)" font-style="italic">${n1(l.line)}</text>`;
-      s += `<text x="${x(i)}" y="${H - 9}" font-size="13" text-anchor="middle" fill="var(--muted)">${esc((r.opp || "").slice(0, 3))}</text>`;
+      s += `<text x="${x(i)}" y="${H - 9}" font-size="13" text-anchor="middle" fill="var(--muted)">${esc((r.opp || "").slice(0, OPP_CH()))}</text>`;
       return;
     }
     if (l) s += `<rect x="${x(i) - 4.5}" y="${y(l.line) - 4.5}" width="9" height="9" transform="rotate(45 ${x(i)} ${y(l.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>Line ${n1(l.line)}</title></rect>`;
@@ -260,7 +269,7 @@ function chartSVG(aid, mk) {
     const above = !l || r[st] >= l.line;
     s += `<circle cx="${x(i)}" cy="${y(r[st])}" r="5.5" fill="${col}" stroke="var(--panel)" stroke-width="2"><title>${tip(r, l)}</title></circle>`;
     s += `<text x="${x(i)}" y="${y(r[st]) + (above ? -12 : 22)}" font-size="14" font-weight="600" text-anchor="middle" fill="var(--ink)">${n1(r[st])}</text>`;
-    s += `<text x="${x(i)}" y="${H - 9}" font-size="13" text-anchor="middle" fill="var(--muted)">${esc((r.opp || "").slice(0, 3))}</text>`;
+    s += `<text x="${x(i)}" y="${H - 9}" font-size="13" text-anchor="middle" fill="var(--muted)">${esc((r.opp || "").slice(0, OPP_CH()))}</text>`;
   });
   return s + `</svg>`;
 }
@@ -269,16 +278,16 @@ function viewPlayer(aid, sub) {
   // #/player/<id>/<market> opens with that market selected (applied once per visit, so tabs still work).
   if (sub && location.hash !== P.subFrom && PX() && mkById(sub)) { P.pmk[aid] = sub; P.subFrom = location.hash; }
   const p = PX() && PX().players[aid];
-  if (!p) return `<p>Player not found. <a href="#/board">Back to the board</a></p>`;
+  if (!p) return `<p>Player not found. <a href="${R("board")}">Back to the board</a></p>`;
   const mk = P.pmk[aid] || "player_points", m = mkById(mk);
   const myLines = PX().lines[aid] || {};
   const upcoming = Object.keys(myLines).filter((g) => !gameOf(g).final).sort((a, b) => String(gameOf(a).start).localeCompare(String(gameOf(b).start)))[0];
   const curG = upcoming || Object.keys(myLines).sort((a, b) => String(gameOf(b).start).localeCompare(String(gameOf(a).start)))[0];
   const cur = curG ? myLines[curG][mk] : null;
   const f = form(aid, mk, curG ? gameOf(curG).date : null, cur ? cur.line : null);
-  let h = `<div class="mplayer"><div class="mp-top"><a href="#/board" class="mback" id="m-back">‹ Board</a></div>
+  let h = `<div class="mplayer"><div class="mp-top"><a href="${R("board")}" class="mback" id="m-back">‹ Board</a></div>
     <div class="mp-h">${face(aid, p.name, "lg")}<div><h2>${esc(p.name)} ${updIcon(aid)}</h2><div class="muted">${esc(p.team || "")}${p.pos ? " · " + esc(p.pos) : ""}</div>${curG ? `<div class="small">${gameHeader(curG)}</div>` : ""}</div></div>
-    <div class="mtabs">${PX().markets.map((x) => `<button data-pmk="${x.id}" class="${x.id === mk ? "on" : ""}">${esc(mkAbbr(x))}</button>`).join("")}</div>
+    ${PX().markets.length > 1 ? `<div class="mtabs">${PX().markets.map((x) => `<button data-pmk="${x.id}" class="${x.id === mk ? "on" : ""}">${esc(mkAbbr(x))}</button>`).join("")}</div>` : ""}
     <div class="mtiles">
       <div><span>LINE</span>${cur ? `<b title="${esc(lineTip(cur))}">${n1(cur.line)}</b><small>${lineOdds(cur)} ${bookShort(cur.book)}</small>` : `<span class="na">none</span>`}</div>
       <div><span>AVG</span><b>${n1(f.avg)}</b><small>${f.n} game${f.n === 1 ? "" : "s"}</small></div>
@@ -293,7 +302,8 @@ function viewPlayer(aid, sub) {
   // Base box-score columns, plus the selected market's column when it's a combo (PRA, P+R, ...).
   // Phones hide STL/BLK (no longer pulled) unless that market is the one selected.
   const isPhone = !!(window.matchMedia && window.matchMedia("(max-width: 760px)").matches);
-  const base = isPhone ? BASE_COLS.filter(([k]) => !["stl", "blk"].includes(k) || k === m.stat) : BASE_COLS;
+  const allCols = MODE === "cbb" ? [["pts", "PTS"]] : BASE_COLS;    // college box scores are kept for points only
+  const base = isPhone ? allCols.filter(([k]) => !["stl", "blk"].includes(k) || k === m.stat) : allCols;
   const cols = base.some(([k]) => k === m.stat) ? base : [...base, [m.stat, m.short]];
   const oppTxt = (r) => `${r.ha === "home" ? "" : "@"}${esc(r.opp || "")}`;   // "IND" = home, "@CLE" = away
   h += `<div class="panel"><h3>Game log</h3><div class="scroll"><table class="ltable"><thead><tr><th>Date</th><th>Opp</th><th class="num">MIN</th>
@@ -327,8 +337,9 @@ function viewPlayer(aid, sub) {
 // ---------- Player photos ----------
 // ESPN headshots keyed by ESPN athlete id (the ids Dime already uses). Tries ESPN's resized
 // image first, then the full-size file, then falls back to the player's initials.
-const HS = (aid) => `https://a.espncdn.com/i/headshots/nba/players/full/${encodeURIComponent(aid)}.png`;
-const HS_SM = (aid, w) => `https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/${encodeURIComponent(aid)}.png&w=${w}&h=${Math.round(w * 0.727)}`;
+const HS_LG = () => (MODE === "cbb" ? "mens-college-basketball" : "nba");     // ESPN's headshot folder per league
+const HS = (aid) => `https://a.espncdn.com/i/headshots/${HS_LG()}/players/full/${encodeURIComponent(aid)}.png`;
+const HS_SM = (aid, w) => `https://a.espncdn.com/combiner/i?img=/i/headshots/${HS_LG()}/players/full/${encodeURIComponent(aid)}.png&w=${w}&h=${Math.round(w * 0.727)}`;
 function faceErr(img) {
   if (img.dataset.full) { img.src = img.dataset.full; delete img.dataset.full; }
   else img.remove();
