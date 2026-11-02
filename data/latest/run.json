@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-02T14:00:27+00:00",
+  "finished_at": "2026-11-02T14:15:22+00:00",
   "game_date": "2026-11-02",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "ok"
+    "odds": "not_due"
   },
   "boxscores": {
     "new_games": 0,
@@ -25,120 +25,14 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 453,
-      "ODDS_API_KEY_2": 452,
+      "ODDS_API_KEY": 450,
+      "ODDS_API_KEY_2": 450,
       "ODDS_API_KEY_20K": 16188
     },
-    "pulled": [
-      {
-        "matchup": "Oklahoma City Thunder @ Cleveland Cavaliers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 174,
-        "markets": 4
-      },
-      {
-        "matchup": "Atlanta Hawks @ Indiana Pacers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 140,
-        "markets": 4
-      },
-      {
-        "matchup": "Brooklyn Nets @ New York Knicks",
-        "type": "morning",
-        "status": "ok",
-        "rows": 178,
-        "markets": 4
-      },
-      {
-        "matchup": "Detroit Pistons @ Charlotte Hornets",
-        "type": "morning",
-        "status": "ok",
-        "rows": 174,
-        "markets": 4
-      },
-      {
-        "matchup": "Chicago Bulls @ Philadelphia 76ers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 182,
-        "markets": 4
-      },
-      {
-        "matchup": "Washington Wizards @ Orlando Magic",
-        "type": "morning",
-        "status": "ok",
-        "rows": 162,
-        "markets": 4
-      },
-      {
-        "matchup": "Sacramento Kings @ Dallas Mavericks",
-        "type": "morning",
-        "status": "ok",
-        "rows": 128,
-        "markets": 4
-      },
-      {
-        "matchup": "New Orleans Pelicans @ Memphis Grizzlies",
-        "type": "morning",
-        "status": "ok",
-        "rows": 202,
-        "markets": 4
-      },
-      {
-        "matchup": "Milwaukee Bucks @ Minnesota Timberwolves",
-        "type": "morning",
-        "status": "ok",
-        "rows": 190,
-        "markets": 4
-      },
-      {
-        "matchup": "Boston Celtics @ Houston Rockets",
-        "type": "morning",
-        "status": "ok",
-        "rows": 174,
-        "markets": 4
-      },
-      {
-        "matchup": "Utah Jazz @ San Antonio Spurs",
-        "type": "morning",
-        "status": "ok",
-        "rows": 184,
-        "markets": 4
-      },
-      {
-        "matchup": "Portland Trail Blazers @ Denver Nuggets",
-        "type": "morning",
-        "status": "ok",
-        "rows": 198,
-        "markets": 4
-      },
-      {
-        "matchup": "Phoenix Suns @ Golden State Warriors",
-        "type": "morning",
-        "status": "ok",
-        "rows": 164,
-        "markets": 4
-      },
-      {
-        "matchup": "Toronto Raptors @ Los Angeles Clippers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 106,
-        "markets": 4
-      },
-      {
-        "matchup": "Miami Heat @ Los Angeles Lakers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 156,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 15,
+    "due": 0,
     "pregame_pulled": false,
     "status": "ok"
   }
