@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-02T23:15:20+00:00",
+  "finished_at": "2026-11-02T23:30:31+00:00",
   "game_date": "2026-11-02",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -27,58 +27,24 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 443,
-      "ODDS_API_KEY_2": 442,
+      "ODDS_API_KEY": 431,
+      "ODDS_API_KEY_2": 432,
       "ODDS_API_KEY_20K": 16188
     },
-    "pulled": [
-      {
-        "matchup": "Bellarmine Knights @ Vanderbilt Commodores",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Eastern Illinois Panthers @ Indiana Hoosiers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Niagara Purple Eagles @ West Virginia Mountaineers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Le Moyne Dolphins @ Nebraska Cornhuskers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Tennessee Tech Golden Eagles @ Mississippi St Bulldogs",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "East Texas A&M Lions @ Oklahoma Sooners",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "events": 139,
     "p4_events": 52,
     "unmatched": [],
-    "due": 6,
+    "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 7,
+      "pull_type": "pregame",
+      "rows": 56,
+      "credits_last": 2
     },
     "status": "ok"
   }
