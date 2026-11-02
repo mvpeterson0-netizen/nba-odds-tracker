@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-02T01:30:21+00:00",
+  "fetched_at": "2026-11-02T01:45:15+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-01",
@@ -154,11 +154,11 @@
       "game_id": "401909905",
       "start_utc": "2026-11-02T01:30Z",
       "short_name": "LAC @ GS",
-      "state": "pre",
-      "status": "11/1 - 8:30 PM EST",
+      "state": "in",
+      "status": "9:33 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:33",
       "venue": "Chase Center",
       "neutral_site": false,
       "broadcasts": [
@@ -169,27 +169,27 @@
         "team_id": "9",
         "abbr": "GS",
         "name": "Golden State Warriors",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "3-3",
         "home_record": "1-1",
         "away_record": "2-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Yaxel Lendeborg",
-            "value": "19.8"
+          "points": {
+            "player": "De'Anthony Melton",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Yaxel Lendeborg",
-            "value": "7.8"
+          "rebounds": {
+            "player": "Charles Bassey",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Brandin Podziemski",
-            "value": "5.0"
+          "assists": {
+            "player": "Yaxel Lendeborg",
+            "value": "2"
           },
           "rating": {
-            "player": "Yaxel Lendeborg",
-            "value": "19.8 PPG, 7.8 RPG, 3.3 APG, 0.8 SPG, 0.5 BPG"
+            "player": "Charles Bassey",
+            "value": "2 PTS"
           }
         }
       },
@@ -197,36 +197,31 @@
         "team_id": "12",
         "abbr": "LAC",
         "name": "LA Clippers",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "1-4",
         "home_record": "1-1",
         "away_record": "0-3",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Darius Garland",
-            "value": "22.0"
+          "points": {
+            "player": "Rui Hachimura",
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Isaiah Jackson",
-            "value": "5.8"
+          "rebounds": {
+            "player": "Rui Hachimura",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Darius Garland",
-            "value": "6.2"
+          "assists": {
+            "player": "Kris Dunn",
+            "value": "1"
           },
           "rating": {
-            "player": "Darius Garland",
-            "value": "22.0 PPG, 1.6 RPG, 6.2 APG, 0.8 SPG"
+            "player": "Kris Dunn",
+            "value": "2 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "GS -2.5",
-        "spread": -2.5,
-        "over_under": 220.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909906",
@@ -301,7 +296,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "LAL -3.5",
         "spread": -3.5,
         "over_under": 223.5
