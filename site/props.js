@@ -406,46 +406,20 @@ const gradedRow = (r) => r.l && (r.l.res === "over" || r.l.res === "under");   /
 
 function viewResults() {
   if (!PX()) return `<p class="muted">No prop data yet.</p>`;
-  const F = P.rf;
-  const COLS = rfCols(F.mk);
   const allGraded = lineDates().flatMap((d) => propRows(d)).filter(gradedRow);
   if (!allGraded.length) return `<p class="muted">No graded props yet. Props are graded once each game is final and its box score is in.</p>`;
-  if (!FILTER_MKS.includes(F.mk)) F.mk = "player_points";
-  let h = `<div class="filters rfilters">
-    <label>Market <select id="r-mk">${FILTER_MKS.map((id) => `<option value="${id}" ${F.mk === id ? "selected" : ""}>${FILTER_LABEL[id]}</option>`).join("")}</select></label></div>`;
-
-  // base = position + opponent filters; the chosen market(s) apply to the player table
-  const base = (r) => gradedRow(r);
-  const tally = (rs) => { const t = { over: 0, under: 0, diff: 0 }; rs.forEach((r) => { if (t[r.l.res] != null) t[r.l.res]++; t.diff += r.l.act - r.l.line; }); return t; };
+  const tally = (rs) => {
+    const t = { over: 0, under: 0, diff: 0 };
+    rs.forEach((r) => { if (t[r.l.res] != null) t[r.l.res]++; t.diff += r.l.act - r.l.line; });
+    return t;
+  };
   const pct = (t) => (t.over + t.under ? Math.round((t.over / (t.over + t.under)) * 100) + "%" : "—");
-  const allRows = allGraded.filter(base);
-  h += `<p class="callout">Season to date. Each cell is the over–under record, with the average of (actual − line) below it. Green = mostly overs, red = mostly unders.</p>`;
-
-  // season by market (always shows every market)
+  let h = `<p class="callout">Season to date. Over–under counts and the average of (actual − line) for graded props. Pushes and voids are excluded.</p>`;
   h += `<div class="panel"><h3>Season by market</h3><div class="scroll"><table><thead><tr><th>Market</th><th class="num">Over</th><th class="num">Under</th><th class="num">Over %</th><th class="num">Avg vs line</th></tr></thead><tbody>`;
   for (const m of PX().markets) {
-    const t = tally(allRows.filter((r) => r.mk === m.id)), n = t.over + t.under;
+    const t = tally(allGraded.filter((r) => r.mk === m.id)), n = t.over + t.under;
     if (!n && !["player_points", "player_rebounds", "player_assists", "player_threes"].includes(m.id)) continue;
     h += `<tr><td>${esc(m.label)}</td><td class="num">${t.over}</td><td class="num">${t.under}</td><td class="num">${pct(t)}</td><td class="num">${n ? sgn(t.diff / n) : "—"}</td></tr>`;
-  }
-  h += `</tbody></table></div></div>`;
-
-  // one row per player: over–under record for the chosen market(s) across the whole season
-  const byP = new Map();
-  for (const r of allRows.filter((x) => COLS.includes(x.mk))) { if (!byP.has(r.aid)) byP.set(r.aid, []); byP.get(r.aid).push(r); }
-  const plist = [...byP.entries()].map(([aid, rs]) => ({ aid, rs, t: tally(rs) })).filter((x) => x.t.over + x.t.under >= 1)
-    .sort((a, b) => (b.t.over + b.t.under) - (a.t.over + a.t.under) || b.t.over - a.t.over);
-  if (!plist.length) return h + `<p class="muted">No players match these filters.</p>`;
-  const cell = (rs) => {
-    if (!rs.length) return `<td class="rc na">—</td>`;
-    const t = tally(rs), n = t.over + t.under, o = t.over / n;
-    return `<td class="rc ${o >= 0.6 ? "over" : o <= 0.4 ? "under" : "even"}" title="${t.over} over, ${t.under} under; average actual − line ${sgn(t.diff / n)}"><b>${t.over}–${t.under}</b><small>${sgn(t.diff / n)}</small></td>`;
-  };
-  h += `<div class="panel"><h3>Players · ${plist.length}</h3><div class="scroll"><table class="rgrid rseason"><thead><tr><th>Player</th>${COLS.map((mk) => `<th>${esc(mkById(mk).short)}</th>`).join("")}${COLS.length > 1 ? `<th>All</th>` : ""}</tr></thead><tbody>`;
-  for (const { aid, rs } of plist) {
-    const p = PX().players[aid] || {}, nm = p.name || aid;
-    h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${face(aid, nm)}<span class="nm">${esc(nm)}</span> <span class="muted small">${esc(p.team || "")}${p.pos && p.pos !== "NA" ? " · " + esc(p.pos) : ""}</span></a></td>` +
-      COLS.map((mk) => cell(rs.filter((r) => r.mk === mk))).join("") + (COLS.length > 1 ? cell(rs) : "") + `</tr>`;
   }
   return h + `</tbody></table></div></div>`;
 }
