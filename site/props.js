@@ -453,7 +453,7 @@ function viewDefense() {
   const mks = MK_ORDER.filter((id) => PX().markets.some((m) => m.id === id) && POS_LIST.some((p) => stats[`${id}|${p}`]));
   if (!mks.length) return `<p class="muted">No graded props yet, so there's nothing to rank. Props are graded once each game is final and its box score is in.</p>`;
   if (!mks.includes(P.dmk)) P.dmk = mks[0];
-  let h = `<p class="callout">Worst defenses first, by position and market. “vs line” is the average of (actual − line) for every graded player the team faced at that position: higher means the defense gives up more than the books expect. Teams with fewer than ${DEF_MIN_N} graded player-games are listed after the ranked ones. Position is ESPN's G / F / C.</p>`;
+  let h = `<p class="callout">Worst defenses first, by position and market (30 = worst defense, 1 = toughest). “vs line” is the average of (actual − line) for every graded player the team faced at that position: higher means the defense gives up more than the books expect. Teams with fewer than ${DEF_MIN_N} graded player-games are listed after the ranked ones. Position is ESPN's G / F / C.</p>`;
   // overview: the single worst defense for every position × market
   h += `<div class="panel"><h3>Worst defense by position &amp; market</h3><div class="scroll"><table class="defgrid"><thead><tr><th>Market</th>${POS_LIST.map((p) => `<th>${p}</th>`).join("")}</tr></thead><tbody>`;
   for (const mk of mks) {
@@ -473,7 +473,7 @@ function viewDefense() {
     h += `<div class="panel"><h3>${esc(mkById(P.dmk).short)} vs ${pos}</h3><div class="scroll"><table class="deftbl"><thead><tr><th>#</th><th>Defense</th><th class="num">Avg</th><th class="num">vs line</th><th class="num">Over</th><th class="num">N</th></tr></thead><tbody>`;
     if (!list.length) h += `<tr><td colspan="6" class="muted">Not enough games yet.</td></tr>`;
     list.forEach((r) => {
-      const rk = ok.indexOf(r) + 1;
+      const rk = ok.indexOf(r) < 0 ? 0 : ok.length - ok.indexOf(r);   // 30 = worst defense
       h += `<tr class="${rk ? "" : "lowN"}"><td class="muted">${rk || "·"}</td><td><b>${esc(r.team)}</b></td><td class="num">${n1(Number(r.act.toFixed(1)))}</td>
         <td class="num ${r.diff > 0 ? "win" : r.diff < 0 ? "loss" : ""}">${sgn(r.diff)}</td><td class="num">${r.over == null ? "—" : Math.round(r.over * 100) + "%"}</td><td class="num">${r.n}</td></tr>`;
     });
@@ -485,7 +485,7 @@ function viewDefense() {
 
 // ---------- Line trend vs opponent defense (player page) ----------
 // For each game, the opponent's defensive rank against the player's position for the selected stat, using only games
-// played BEFORE that game's date (so it's what you could have known then). 1 = gives up the most vs the line.
+// played BEFORE that game's date (so it's what you could have known then). Highest number = worst defense (gives up the most vs the line); 1 = toughest.
 const DEF_ASOF_N = 3;      // a defense needs this many graded player-games (at that position and market) to be ranked
 let DEF_CACHE = { key: null, map: null };
 function defEntries() {
@@ -505,7 +505,7 @@ function defAsOf(mk, pos, opp, date) {
   for (const e of defEntries()[`${mk}|${pos}`] || []) if (e.d < date) { const t = (agg[e.opp] = agg[e.opp] || { n: 0, s: 0 }); t.n++; t.s += e.diff; }
   const ranked = Object.entries(agg).filter(([, t]) => t.n >= DEF_ASOF_N).map(([team, t]) => ({ team, diff: t.s / t.n, n: t.n })).sort((a, b) => b.diff - a.diff);
   const i = ranked.findIndex((r) => r.team === opp);
-  return i < 0 ? null : { rank: i + 1, of: ranked.length, diff: ranked[i].diff, n: ranked[i].n };
+  return i < 0 ? null : { rank: ranked.length - i, of: ranked.length, diff: ranked[i].diff, n: ranked[i].n };   // 30 = worst defense, 1 = toughest
 }
 function defTrendRows(aid, mk) {
   const p = PX().players[aid] || {}, lines = PX().lines[aid] || {}, st = mkById(mk).stat;
@@ -523,10 +523,10 @@ function defTrendSVG(rows) {
   const hi0 = Math.max(...vals), lo0 = Math.min(...vals), pad = Math.max(2, (hi0 - lo0) * 0.18);
   const lo = Math.max(0, Math.floor(lo0 - pad)), hi = Math.ceil(hi0 + pad);
   const y = (v) => T + (H - T - B) * (1 - (v - lo) / (hi - lo));
-  const yr = (rk, of) => T + (H - T - B) * ((rk - 1) / Math.max(1, of - 1));      // rank 1 (worst defense) at the top
+  const yr = (rk, of) => T + (H - T - B) * ((of - rk) / Math.max(1, of - 1));      // worst defense (highest rank) at the top
   let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Line vs opponent defensive rank by game">`;
   for (const v of [lo, (lo + hi) / 2, hi]) s += `<line x1="${L}" x2="${W - Rr}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 4}" y="${y(v) + 5}" font-size="14" text-anchor="end" fill="var(--muted)">${Math.round(v)}</text>`;
-  s += `<text x="${W - Rr + 6}" y="${T + 4}" font-size="12" fill="var(--def)">worst D</text><text x="${W - Rr + 6}" y="${H - B + 4}" font-size="12" fill="var(--def)">best D</text>`;
+  s += `<text x="${W - Rr + 6}" y="${T + 4}" font-size="12" fill="var(--def)">worst D</text><text x="${W - Rr + 6}" y="${H - B + 4}" font-size="12" fill="var(--def)">toughest D</text>`;
   const seg = (pts, attrs) => { if (pts.length > 1) s += `<polyline points="${pts.join(" ")}" fill="none" ${attrs}/>`; };
   seg(rows.map((r, i) => `${x(i)},${y(r.line)}`), `stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 4"`);
   // defense rank series (orange), gaps where a team wasn't rankable yet
@@ -554,10 +554,10 @@ function defTrendPanel(aid, mk) {
   const rows = defTrendRows(aid, mk);
   if (rows.length < 2) return "";
   let h = `<div class="panel"><h3>${esc(mkAbbr(mkById(mk)))} line vs opponent defense</h3><div class="chart">${defTrendSVG(rows)}</div>
-    <div class="legend"><span><i class="lg-line"></i>Line</span><span><i class="lg-act"></i>Actual (<b class="dot" style="background:var(--over)"></b>over / <b class="dot" style="background:var(--under)"></b>under)</span><span><b class="dot" style="background:var(--def)"></b>Opp. defense rank vs ${esc(p.pos)} (1 = worst)</span></div>`;
+    <div class="legend"><span><i class="lg-line"></i>Line</span><span><i class="lg-act"></i>Actual (<b class="dot" style="background:var(--over)"></b>over / <b class="dot" style="background:var(--under)"></b>under)</span><span><b class="dot" style="background:var(--def)"></b>Opp. defense rank vs ${esc(p.pos)} (30 = worst, 1 = toughest)</span></div>`;
   // does he go over more against soft defenses? (thirds of the ranked teams)
   const g = rows.filter((r) => r.def && (r.res === "over" || r.res === "under"));
-  const soft = g.filter((r) => r.def.rank <= Math.ceil(r.def.of / 3)), hard = g.filter((r) => r.def.rank > r.def.of - Math.ceil(r.def.of / 3));
+  const soft = g.filter((r) => r.def.rank > r.def.of - Math.ceil(r.def.of / 3)), hard = g.filter((r) => r.def.rank <= Math.ceil(r.def.of / 3));
   const rec = (a) => `${a.filter((r) => r.res === "over").length}–${a.filter((r) => r.res === "under").length}`;
   if (g.length) h += `<p class="callout">Over–under vs the line: <b>${rec(soft)}</b> against the weakest third of defenses, <b>${rec(hard)}</b> against the strongest third (${g.length} graded game${g.length === 1 ? "" : "s"}). Ranks use only games before each date, at least ${DEF_ASOF_N} per team; early-season ranks are noisy.</p>`;
   else h += `<p class="callout">Ranks use only games before each date, at least ${DEF_ASOF_N} graded player-games per defense, so early games have no rank yet.</p>`;
@@ -570,7 +570,7 @@ function viewGuide() {
     <p><b>Lines.</b> DraftKings and FanDuel player props are pulled from The Odds API twice per game: at <b>8:00 AM Central</b> on game day (retried until the books post them) and again about <b>1 hour before tip</b>. Until the 1-hour pull lands, the board shows the 8 AM line with an <span class="chip amchip">8 AM</span> chip; after it, ▲/▼ shows how far the line moved since 8 AM. The 1-hour line is the one graded. Only the core markets (points, rebounds, assists, threes) are pulled. PRA and the two-stat combos are built from those lines (two-stat combos: sum + 0.5; PRA: the sum, matching how DraftKings and FanDuel have most often set them in this season's captures), priced at -110/-110 and graded like any other line. Steals and blocks are no longer pulled; earlier captures still show. Nothing is pulled after tip. DraftKings is the line shown and graded; FanDuel is used when DraftKings has no line for that player and stat. Hover or tap a line to see both books.</p>
     <p><b>Grading.</b> Once the game is final, the actual stat from ESPN's box score is compared with the line: over, under or push. A player who had a line but didn't play is <i>void</i>, with ESPN's reason when it gives one.</p>
     <p><b>Results filters.</b> The Results tab can be filtered by market, by position (ESPN's G / F / C), and by <i>Against</i>, the team the player was facing. The page is season to date: one row per player with an over–under record per market (and the average of actual − line). “Min graded” hides players with too few graded props. The market summary above it follows position and Against and always shows every market.</p>
-    <p><b>Defense.</b> For every graded player-game, the opponent's defense is credited with actual minus line. Each team's average of that, by position and market, ranks the worst defenses first (higher = gives up more than the books expect). Using the line as the baseline keeps a team from looking weak just because it faced stars. Teams with fewer than ${DEF_MIN_N} graded player-games are listed after the ranked ones. Early in the season these samples are small, so treat the rankings as a lean, not a conclusion.</p>
+    <p><b>Defense.</b> For every graded player-game, the opponent's defense is credited with actual minus line. Each team's average of that, by position and market, ranks the defenses with 30 = worst (gives up the most over the books' lines) and 1 = toughest. Using the line as the baseline keeps a team from looking weak just because it faced stars. Teams with fewer than ${DEF_MIN_N} graded player-games are listed after the ranked ones. Early in the season these samples are small, so treat the rankings as a lean, not a conclusion.</p>
     <p><b>AVG / L5.</b> Season average and last-5 average over games the player actually played, counting only games before the date being viewed.</p>
     <p><b>HIT.</b> How many of his last ${HIT_N} games played went over <i>this</i> line (not the lines he had in those games).</p>
     <p><b>Trend.</b> Average of the last ${TREND.lastN} games vs. the season average: ↑ at least ${TREND.pct}% higher, ↓ at least ${TREND.pct}% lower, → otherwise. Needs ${TREND.minGames} games.</p>
