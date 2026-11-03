@@ -97,6 +97,7 @@ jobs:
         run: |
           mkdir -p site/data
           cp data/latest/*.json site/data/
+          cp data/research/theses.json site/data/research_theses.json 2>/dev/null || true
           python -m nba_tracker.build data site/data
           python -m cbb_tracker.build data/cbb site/data
           cp data/cbb/latest/run.json site/data/cbb_run.json 2>/dev/null || true
