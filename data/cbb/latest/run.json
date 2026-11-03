@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-03T02:52:37+00:00",
+  "finished_at": "2026-11-03T02:56:02+00:00",
   "game_date": "2026-11-02",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,10 +17,10 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 2,
-    "player_rows": 61,
+    "new_games": 0,
+    "player_rows": 0,
     "unparsed": [],
-    "queued": 2,
+    "queued": 0,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -31,12 +31,43 @@
       "ODDS_API_KEY_2": 408,
       "ODDS_API_KEY_20K": 16188
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "East Tennessee St Buccaneers @ Arizona St Sun Devils",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Colgate Raiders @ Washington Huskies",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Eastern Washington Eagles @ Stanford Cardinal",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Montana Grizzlies @ Oregon Ducks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Milwaukee Panthers @ USC Trojans",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 66,
+    "events": 62,
     "p4_events": 13,
     "unmatched": [],
-    "due": 0,
+    "due": 5,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",
