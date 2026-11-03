@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-03T00:00:20+00:00",
+  "fetched_at": "2026-11-03T00:15:17+00:00",
   "source": "espn",
   "count": 15,
   "game_date": "2026-11-02",
@@ -8,11 +8,11 @@
       "game_id": "401909907",
       "start_utc": "2026-11-03T00:00Z",
       "short_name": "OKC @ CLE",
-      "state": "pre",
-      "status": "11/2 - 7:00 PM EST",
+      "state": "in",
+      "status": "9:25 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:25",
       "venue": "Rocket Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -22,27 +22,27 @@
         "team_id": "5",
         "abbr": "CLE",
         "name": "Cleveland Cavaliers",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "4-2",
         "home_record": "3-0",
         "away_record": "1-2",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Donovan Mitchell",
-            "value": "22.7"
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Jarrett Allen",
-            "value": "9.2"
+          "rebounds": {
+            "player": "Evan Mobley",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "James Harden",
-            "value": "6.3"
+          "assists": {
+            "player": "Evan Mobley",
+            "value": "1"
           },
           "rating": {
             "player": "Evan Mobley",
-            "value": "19.7 PPG, 8.2 RPG, 3.5 APG, 0.5 SPG, 1.0 BPG"
+            "value": "2 PTS"
           }
         }
       },
@@ -50,36 +50,31 @@
         "team_id": "25",
         "abbr": "OKC",
         "name": "Oklahoma City Thunder",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "4-2",
         "home_record": "3-0",
         "away_record": "1-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "26.0"
-          },
-          "reboundsPerGame": {
-            "player": "Isaiah Hartenstein",
-            "value": "9.2"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Ajay Mitchell",
-            "value": "3.8"
+            "value": "2"
+          },
+          "rebounds": {
+            "player": "Ajay Mitchell",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Jaylin Williams",
+            "value": "1"
           },
           "rating": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "26.0 PPG, 4.5 RPG, 3.3 APG, 1.2 SPG, 1.2 BPG"
+            "player": "Ajay Mitchell",
+            "value": "2 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "CLE -4.5",
-        "spread": -4.5,
-        "over_under": 229.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909908",
@@ -152,7 +147,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "DET -5.5",
         "spread": 5.5,
         "over_under": 209.5
@@ -230,7 +225,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ATL -9.5",
         "spread": 9.5,
         "over_under": 227.5
@@ -308,7 +303,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "NY -14.5",
         "spread": -14.5,
         "over_under": 218.5
@@ -386,10 +381,10 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ORL -2.5",
         "spread": -2.5,
-        "over_under": 225.5
+        "over_under": 224.5
       }
     },
     {
@@ -463,10 +458,10 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "PHI -9.5",
-        "spread": -9.5,
-        "over_under": 238.5
+        "provider": "Draft Kings",
+        "details": "PHI -10.5",
+        "spread": -10.5,
+        "over_under": 239.5
       }
     },
     {
@@ -542,10 +537,10 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "DAL -8.5",
-        "spread": -8.5,
-        "over_under": 231.5
+        "provider": "Draft Kings",
+        "details": "DAL -7.5",
+        "spread": -7.5,
+        "over_under": 232.5
       }
     },
     {
@@ -621,7 +616,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MEM -5.5",
         "spread": -5.5,
         "over_under": 231.5
@@ -701,7 +696,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MIN -10.5",
         "spread": -10.5,
         "over_under": 230.5
@@ -778,7 +773,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "HOU -4.5",
         "spread": -4.5,
         "over_under": 215.5
@@ -858,7 +853,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SA -16.5",
         "spread": -16.5,
         "over_under": 228.5
@@ -938,7 +933,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "DEN -4.5",
         "spread": -4.5,
         "over_under": 231.5
@@ -1017,7 +1012,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GS -2.5",
         "spread": -2.5,
         "over_under": 227.5
@@ -1096,7 +1091,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TOR -4.5",
         "spread": 4.5,
         "over_under": 219.5
@@ -1175,7 +1170,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "LAL -2.5",
         "spread": -2.5,
         "over_under": 236.5
