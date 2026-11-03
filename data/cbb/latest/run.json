@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-03T03:31:54+00:00",
+  "finished_at": "2026-11-03T03:43:20+00:00",
   "game_date": "2026-11-02",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -11,19 +11,17 @@
   "p4_mode": "either",
   "sources": {
     "results_yesterday": "ok",
-    "games_today": "failed",
+    "games_today": "ok",
     "games_tomorrow": "ok",
     "boxscores": "ok",
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
+    "new_games": 1,
+    "player_rows": 29,
     "unparsed": [],
-    "queued": 0,
-    "errors": [
-      "scoreboard 2026-11-02: AttributeError: 'str' object has no attribute 'get'"
-    ],
+    "queued": 1,
+    "errors": [],
     "rosters_fetched": 0
   },
   "props": {
@@ -35,11 +33,9 @@
     },
     "pulled": [],
     "errors": [],
-    "events": 44,
+    "events": 43,
     "p4_events": 7,
-    "unmatched": [
-      "Seattle Redhawks @ Hawai'i Rainbow Warriors"
-    ],
+    "unmatched": [],
     "due": 0,
     "pregame_pulled": false,
     "lines": {
