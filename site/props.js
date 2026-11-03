@@ -240,8 +240,8 @@ function pendingGames(aid) {
 // any marker; a label with no clear spot is dropped (its value is still in the marker's tooltip).
 const chartPhone = () => !!(window.matchMedia && window.matchMedia("(max-width: 760px)").matches);
 const chartDims = (rank) => (chartPhone()
-  ? { W: 420, H: 380, L: 38, R: rank ? 34 : 14, T: 26, B: 50, fs: 17, games: 10 }
-  : { W: 720, H: 380, L: 44, R: rank ? 40 : 18, T: 28, B: 52, fs: 17, games: 15 });
+  ? { W: 420, H: 380, L: 38, R: rank ? 34 : 14, T: 26, B: 50, fs: 17, games: 7 }
+  : { W: 720, H: 380, L: 44, R: rank ? 40 : 18, T: 28, B: 52, fs: 17, games: 7 });
 function labelLayer(bounds) {
   const rects = [], pad = 2;
   const hit = (a, b) => a[0] < b[2] + pad && a[2] > b[0] - pad && a[1] < b[3] + pad && a[3] > b[1] - pad;
@@ -269,7 +269,7 @@ function labelLayer(bounds) {
 // Axis scale for a set of stat values: padded range with whole-number ticks.
 function statScale(vals, T, H, B) {
   const hi0 = Math.max(...vals), lo0 = Math.min(...vals), pad = Math.max(hi0 - lo0 <= 6 ? 1 : 2, (hi0 - lo0) * 0.18);
-  const lo = Math.max(0, Math.floor(lo0 - pad)), hi = Math.ceil(hi0 + pad);
+  const lo = Math.max(0, Math.floor(lo0 - pad)); let hi = Math.ceil(hi0 + pad); if ((hi - lo) % 2) hi++;     // even span: the middle tick is a whole number
   return { lo, hi, y: (v) => T + (H - T - B) * (1 - (v - lo) / (hi - lo)) };
 }
 const oppLabel = (r) => esc((r.opp || "").slice(0, MODE === "cbb" ? 4 : 3));
