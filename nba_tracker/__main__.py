@@ -16,7 +16,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import boxscores, espn, odds, props, updates
+from . import boxscores, build, defense, espn, odds, props, updates
 
 log = logging.getLogger("nba_tracker")
 
@@ -154,6 +154,15 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
                 failures += 1
                 status["odds"] = "failed"
                 log.error("odds failed: %s", e)
+    # Frozen opponent-defense ranks for each game date (written once, never changed). Never fails the run.
+    try:
+        wrote = defense.freeze(out, build.build(out), day.isoformat())
+        status["defense_ranks"] = "ok"
+        if wrote:
+            log.info("defense ranks     froze %s", ", ".join(wrote))
+    except Exception as e:
+        status["defense_ranks"] = "failed"
+        log.exception("defense ranks failed: %s", e)
     # Run summary, read by the website's status line.
     (out / "latest").mkdir(parents=True, exist_ok=True)
     (out / "latest" / "run.json").write_text(json.dumps({

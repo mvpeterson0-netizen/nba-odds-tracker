@@ -472,7 +472,7 @@ function viewDefense() {
   const mks = MK_ORDER.filter((id) => PX().markets.some((m) => m.id === id) && POS_LIST.some((p) => ent[`${id}|${p}`]));
   if (!mks.length) return `<p class="muted">No graded props yet, so there's nothing to rank. Props are graded once each game is final and its box score is in.</p>`;
   if (!mks.includes(P.dmk)) P.dmk = mks[0];
-  let h = `<p class="callout">Worst defenses first, by position and market (30 = worst defense, 1 = toughest). “vs line” is the average of (actual − line) for every graded player the team faced at that position. The rank pulls each team's average toward zero, as if it had ${DEF_K} extra games at exactly the line, so a team with few games can't jump to the top or bottom; all 30 teams are always ranked. Greyed rows have fewer than ${DEF_MIN_N} graded player-games. Position is ESPN's G / F / C.</p>`;
+  let h = `<p class="callout">Worst defenses first, by position and market (30 = worst defense, 1 = toughest). “vs line” is the average of (actual − line) for every graded player the team faced at that position. The rank pulls each team's average toward zero, as if it had ${DEF_K} extra games at exactly the line, so a team with few games can't jump to the top or bottom; all 30 teams are always ranked. Greyed rows have fewer than ${DEF_MIN_N} graded player-games. Position is ESPN's G / F / C. These are today's live standings; the ranks on player pages are frozen on each game's date.</p>`;
   // overview: the single worst defense for every position × market
   h += `<div class="panel"><h3>Worst defense by position &amp; market</h3><div class="scroll"><table class="defgrid"><thead><tr><th>Market</th>${POS_LIST.map((p) => `<th>${p}</th>`).join("")}</tr></thead><tbody>`;
   for (const mk of mks) {
@@ -501,11 +501,16 @@ function viewDefense() {
 
 // ---------- Line trend vs opponent defense (player page) ----------
 // For each game, the opponent's rank (same table as the Defense tab; 30 = worst defense) against the player's position
-// for the selected stat, using only games played BEFORE that game's date (what you could have known then).
+// for the selected stat, using only games played BEFORE that game's date (what you could have known then). The rank is
+// frozen: it comes from the snapshot taken for that game date (data/defense/), so later games never change it.
 const DEF_THIN_N = 3;      // fewer prior games than this: the marker is hollow (a rough lean, shrunk toward the middle)
 function defAsOf(mk, pos, opp, date) {
+  // Frozen snapshot for that game date (data/defense/<date>.json, written once by the collector) when it exists.
+  const snap = (PX().defense || {})[date], frozen = snap && snap.r[`${mk}|${pos}`];
+  if (frozen) { const r = frozen.find((x) => x[0] === opp); return r ? { rank: r[1], of: frozen.length, diff: r[3], n: r[2], frozen: true, backfilled: snap.b } : null; }
+  // No snapshot yet (a game on a future date): preview from today's data; it freezes on game day.
   const rows = defTable(mk, pos, date), r = rows.find((x) => x.team === opp);
-  return r ? { rank: r.rank, of: rows.length, diff: r.diff, n: r.n } : null;
+  return r ? { rank: r.rank, of: rows.length, diff: r.diff, n: r.n, frozen: false } : null;
 }
 function defTrendRows(aid, mk) {
   const p = PX().players[aid] || {}, lines = PX().lines[aid] || {}, st = mkById(mk).stat;
@@ -537,7 +542,7 @@ function defTrendSVG(rows) {
     if (r.def) {
       const cy = yr(r.def.rank, r.def.of), thin = r.def.n < DEF_THIN_N, none = r.def.n === 0;
       const tip = none ? `${esc(r.opp)}: no earlier games against this position, so it sits in the middle (n/a)`
-        : `${esc(r.opp)} defense: #${r.def.rank} of ${r.def.of} (${sgn(r.def.diff)} vs line, ${r.def.n} earlier game${r.def.n === 1 ? "" : "s"})${thin ? ". Small sample: a rough lean" : ""}`;
+        : `${esc(r.opp)} defense: #${r.def.rank} of ${r.def.of} (${sgn(r.def.diff)} vs line, ${r.def.n} earlier game${r.def.n === 1 ? "" : "s"})${thin ? ". Small sample: a rough lean" : ""}. ${r.def.frozen ? (r.def.backfilled ? "Frozen as of that date (rebuilt from the data after the fact)" : "Frozen on game day") : "Preview: freezes on game day"}.`;
       s += `<circle cx="${x(i)}" cy="${cy}" r="5" fill="${thin ? "var(--panel)" : "var(--def)"}" stroke="var(--def)" stroke-width="2"><title>${tip}</title></circle>
         <text x="${x(i)}" y="${cy + (cy < T + 16 ? 18 : -9)}" font-size="12" font-weight="700" text-anchor="middle" fill="var(--def)" ${thin ? 'opacity=".75"' : ""}>${none ? "n/a" : "#" + r.def.rank + (thin ? "*" : "")}</text>`;
     }
@@ -561,7 +566,7 @@ function defTrendPanel(aid, mk) {
   const g = rows.filter((r) => r.def && r.def.n >= DEF_THIN_N && (r.res === "over" || r.res === "under"));
   const soft = g.filter((r) => r.def.rank > r.def.of - Math.ceil(r.def.of / 3)), hard = g.filter((r) => r.def.rank <= Math.ceil(r.def.of / 3));
   const rec = (a) => `${a.filter((r) => r.res === "over").length}–${a.filter((r) => r.res === "under").length}`;
-  h += `<p class="callout">${g.length ? `Over–under vs the line: <b>${rec(soft)}</b> against the weakest third of defenses, <b>${rec(hard)}</b> against the strongest third (${g.length} graded game${g.length === 1 ? "" : "s"} with a solid rank). ` : ""}Each rank uses only games before that date. Hollow markers (*) rest on fewer than ${DEF_THIN_N} earlier games at this position and are shrunk toward the middle; n/a means none yet.</p>`;
+  h += `<p class="callout">${g.length ? `Over–under vs the line: <b>${rec(soft)}</b> against the weakest third of defenses, <b>${rec(hard)}</b> against the strongest third (${g.length} graded game${g.length === 1 ? "" : "s"} with a solid rank). ` : ""}Each rank is frozen on the day of the game, using only games before that date, so it never changes afterward. Hollow markers (*) rest on fewer than ${DEF_THIN_N} earlier games at this position and are shrunk toward the middle; n/a means none yet.</p>`;
   return h + `</div>`;
 }
 
@@ -571,7 +576,7 @@ function viewGuide() {
     <p><b>Lines.</b> DraftKings and FanDuel player props are pulled from The Odds API twice per game: at <b>8:00 AM Central</b> on game day (retried until the books post them) and again about <b>1 hour before tip</b>. Until the 1-hour pull lands, the board shows the 8 AM line with an <span class="chip amchip">8 AM</span> chip; after it, ▲/▼ shows how far the line moved since 8 AM. The 1-hour line is the one graded. Only the core markets (points, rebounds, assists, threes) are pulled. PRA and the two-stat combos are built from those lines (two-stat combos: sum + 0.5; PRA: the sum, matching how DraftKings and FanDuel have most often set them in this season's captures), priced at -110/-110 and graded like any other line. Steals and blocks are no longer pulled; earlier captures still show. Nothing is pulled after tip. DraftKings is the line shown and graded; FanDuel is used when DraftKings has no line for that player and stat. Hover or tap a line to see both books.</p>
     <p><b>Grading.</b> Once the game is final, the actual stat from ESPN's box score is compared with the line: over, under or push. A player who had a line but didn't play is <i>void</i>, with ESPN's reason when it gives one.</p>
     <p><b>Results filters.</b> The Results tab can be filtered by market, by position (ESPN's G / F / C), and by <i>Against</i>, the team the player was facing. The page is season to date: one row per player with an over–under record per market (and the average of actual − line). “Min graded” hides players with too few graded props. The market summary above it follows position and Against and always shows every market.</p>
-    <p><b>Defense.</b> For every graded player-game, the opponent's defense is credited with actual minus line. Each team's average of that, by position and market, ranks all 30 defenses: 30 = worst (gives up the most over the books' lines), 1 = toughest. A team's average is pulled toward zero as if it had ${DEF_K} extra games at exactly the line, so a defense with few games can't jump to the extremes and one with none sits in the middle. That is why every game on a player's chart gets a rank, even early on or for centers (few graded games per team). Hollow markers (*) on the player chart mean fewer than ${DEF_THIN_N} earlier games at that position, so treat them as a rough lean. Greyed rows on the Defense tab have fewer than ${DEF_MIN_N} graded player-games. Early in the season these samples are small.</p>
+    <p><b>Defense.</b> For every graded player-game, the opponent's defense is credited with actual minus line. Each team's average of that, by position and market, ranks all 30 defenses: 30 = worst (gives up the most over the books' lines), 1 = toughest. A team's average is pulled toward zero as if it had ${DEF_K} extra games at exactly the line, so a defense with few games can't jump to the extremes and one with none sits in the middle. That is why every game on a player's chart gets a rank, even early on or for centers (few graded games per team). On player pages the rank is frozen: a snapshot is saved for each game date (using only earlier games) and never rewritten, so a game keeps the rank it had on the day it was played even as defenses change; snapshots for dates before this feature existed were rebuilt from the data afterward, and a game on a future date shows a preview until its date arrives. Hollow markers (*) on the player chart mean fewer than ${DEF_THIN_N} earlier games at that position, so treat them as a rough lean. Greyed rows on the Defense tab have fewer than ${DEF_MIN_N} graded player-games. Early in the season these samples are small.</p>
     <p><b>AVG / L5.</b> Season average and last-5 average over games the player actually played, counting only games before the date being viewed.</p>
     <p><b>HIT.</b> How many of his last ${HIT_N} games played went over <i>this</i> line (not the lines he had in those games).</p>
     <p><b>Trend.</b> Average of the last ${TREND.lastN} games vs. the season average: ↑ at least ${TREND.pct}% higher, ↓ at least ${TREND.pct}% lower, → otherwise. Needs ${TREND.minGames} games.</p>

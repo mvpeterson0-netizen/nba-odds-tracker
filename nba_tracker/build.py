@@ -288,6 +288,8 @@ def main(argv: list[str] | None = None) -> int:
     out_dir = Path(argv[1] if len(argv) > 1 else "site/data")
     out_dir.mkdir(parents=True, exist_ok=True)
     d = build(data_dir)
+    from . import defense          # frozen opponent-defense ranks (data/defense/), written by the collection run
+    d["defense"] = defense.load(data_dir)
     (out_dir / "props.json").write_text(json.dumps(d, separators=(",", ":")), encoding="utf-8")
     print(f"props.json: {len(d['players'])} players, {sum(len(v) for v in d['lines'].values())} player-games with lines, "
           f"unmatched games {len(d['unmatched']['games'])}, players {len(d['unmatched']['players'])}")
