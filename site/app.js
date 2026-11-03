@@ -1,11 +1,10 @@
 "use strict";
 // Dime front end (NBA props). Reads the JSON the GitHub Action writes to data/. No external libraries.
 
-const FILES = ["run", "standings", "injuries", "props", "updates"];
+const FILES = ["run", "props", "updates"];
 const CBB_FILES = ["cbb", "cbb_run"];   // college basketball (cbb.js); loaded the first time the CBB toggle is used
 let MODE = "nba";                       // "nba" | "cbb": the section being shown (props.js and cbb.js read it)
 const D = {};               // file name -> parsed JSON (or null if missing; undefined = not loaded yet)
-const S = { conf: "", team: "", status: "", q: "" };
 let LIVE = null;            // recent workflow runs from the GitHub API (or null)
 const app = document.getElementById("app");
 
@@ -40,69 +39,6 @@ const mode = (a) => { const c = new Map(); a.forEach((v) => c.set(v, (c.get(v) |
 const rows = (name) => (D[name] && D[name].rows) || [];
 
 
-// ---------- injuries helpers ----------
-function stClass(s) {
-  const t = String(s || "").toLowerCase();
-  if (t.startsWith("out")) return "out";
-  if (t.includes("day") || t.includes("question") || t.includes("doubt") || t.includes("prob")) return "dtd";
-  return "other";
-}
-const injFor = (teamId) => rows("injuries").filter((i) => i.team_id === teamId);
-
-// ---------- Standings ----------
-function viewStandings() {
-  const all = rows("standings");
-  if (!all.length) return `<p class="muted">Standings weren't loaded. Check the <a href="#/log">Log</a> tab.</p>`;
-  const confs = [...new Set(all.map((r) => r.conference))];
-  const st = (r, k) => r.stats[k + "_display"] ?? r.stats[k];
-  let h = `<p class="callout">From ESPN. Lines under seeds 6 and 10 mark the play-in and lottery cutoffs.</p><div class="grid2">`;
-  for (const c of confs) {
-    const list = all.filter((r) => r.conference === c).sort((a, b) => (a.stats.playoffSeed ?? 99) - (b.stats.playoffSeed ?? 99) || (b.stats.winPercent ?? 0) - (a.stats.winPercent ?? 0));
-    h += `<div class="panel"><h3>${esc(c)}</h3><div class="scroll"><table class="stand"><thead><tr>
-      <th>#</th><th>Team</th><th class="num">W</th><th class="num">L</th><th class="num">PCT</th><th class="num">GB</th>
-      <th class="num wide">Home</th><th class="num wide">Road</th><th class="num wide">L10</th><th>Strk</th>
-      <th class="num wide">PPG</th><th class="num wide">OPP</th><th class="num">Diff</th></tr></thead><tbody>`;
-    for (const r of list) {
-      const seed = r.stats.playoffSeed;
-      const strk = String(st(r, "streak") || "");
-      const diff = r.stats.differential;
-      h += `<tr class="${seed === 6 || seed === 10 ? "cut" : ""}"><td class="muted">${seed ?? ""}</td><td><b>${esc(r.abbr)}</b> <span class="muted small wide">${esc(r.name)}</span>${r.note ? ` <span class="chip" title="${esc(r.note)}">${esc(r.note)}</span>` : ""}</td>
-        <td class="num">${esc(st(r, "wins"))}</td><td class="num">${esc(st(r, "losses"))}</td><td class="num">${esc(st(r, "winPercent"))}</td><td class="num">${esc(st(r, "gamesBehind"))}</td>
-        <td class="num wide">${esc(r.stats.Home ?? "")}</td><td class="num wide">${esc(r.stats.Road ?? "")}</td><td class="num wide">${esc(r.stats["Last Ten Games"] ?? "")}</td>
-        <td class="strk ${strk[0] || ""}">${esc(strk)}</td>
-        <td class="num wide">${esc(st(r, "avgPointsFor") ?? "")}</td><td class="num wide">${esc(st(r, "avgPointsAgainst") ?? "")}</td>
-        <td class="num ${diff > 0 ? "win" : diff < 0 ? "loss" : ""}">${diff == null ? "" : pt(Number(diff.toFixed(1)))}</td></tr>`;
-    }
-    h += `</tbody></table></div></div>`;
-  }
-  return h + `</div>`;
-}
-
-// ---------- Injuries ----------
-function viewInjuries() {
-  const all = rows("injuries");
-  if (!D.injuries) return `<p class="muted">Injuries weren't loaded. Check the <a href="#/log">Log</a> tab.</p>`;
-  const teams = [...new Map(all.map((i) => [i.team_abbr, i.team])).entries()].sort((a, b) => String(a[1]).localeCompare(String(b[1])));
-  const statuses = [...new Set(all.map((i) => i.status).filter(Boolean))].sort();
-  const q = S.q.trim().toLowerCase();
-  const list = all.filter((i) => (!S.team || i.team_abbr === S.team) && (!S.status || i.status === S.status) &&
-    (!q || String(i.player).toLowerCase().includes(q) || String(i.injury).toLowerCase().includes(q)));
-  let h = `<div class="filters">
-    <label>Team <select id="i-team"><option value="">All teams</option>${teams.map(([a, n]) => `<option value="${esc(a)}" ${a === S.team ? "selected" : ""}>${esc(n)}</option>`).join("")}</select></label>
-    <label>Status <select id="i-status"><option value="">All</option>${statuses.map((s) => `<option ${s === S.status ? "selected" : ""}>${esc(s)}</option>`).join("")}</select></label>
-    <label>Player / injury <input type="search" id="i-q" placeholder="Search" value="${esc(S.q)}"></label></div>
-    <p class="callout">${list.length} of ${all.length} players · from ESPN, pulled ${ago(D.injuries.fetched_at)}. Return dates are ESPN's estimates.</p>`;
-  if (!list.length) return h + `<p class="muted">No injuries match these filters.</p>`;
-  h += `<div class="panel stablep"><div class="scroll"><table class="stable"><thead><tr><th>Team</th><th>Player</th><th>Status</th><th>Injury</th><th>Est. return</th><th>Updated</th><th>Note</th></tr></thead><tbody>`;
-  for (const i of list) {
-    h += `<tr><td data-label="Team">${esc(i.team_abbr)}</td><td><b>${esc(i.player)}</b> <span class="muted small">${esc(i.position || "")}</span></td>
-      <td data-label="Status"><span class="st ${stClass(i.status)}">${esc(i.status || "—")}</span></td><td data-label="Injury">${esc(i.injury || "—")}</td>
-      <td data-label="Est. return">${i.return_date ? fmtDate(i.return_date) : NA("—")}</td><td data-label="Updated">${i.updated ? fmtDate(i.updated.slice(0, 10)) : ""}</td>
-      <td class="note">${esc(i.comment || "")}</td></tr>`;
-  }
-  return h + `</tbody></table></div></div>`;
-}
-
 // ---------- Log & sources ----------
 function viewLog() {
   const run = D.run;
@@ -131,8 +67,6 @@ function viewLog() {
   <div class="panel"><h3>Sources</h3><div class="body">
     <table class="stable"><thead><tr><th>Data</th><th>Source</th><th>Notes</th></tr></thead><tbody>
       <tr><td data-label="Data">Schedule, scores, leaders</td><td data-label="Source">ESPN scoreboard feed</td><td class="note">Unofficial, undocumented endpoint; may change without notice.</td></tr>
-      <tr><td data-label="Data">Standings</td><td data-label="Source">ESPN standings feed</td><td class="note">Same caveat.</td></tr>
-      <tr><td data-label="Data">Injuries</td><td data-label="Source">ESPN league injury feed</td><td class="note">Return dates are ESPN estimates, not official.</td></tr>
       <tr><td data-label="Data">Player updates (notes icon)</td><td data-label="Source">ESPN injury + news feeds, ESPN box scores and rosters</td><td class="note">Unofficial, undocumented endpoints (no key, no SLA); may change or be blocked at any time. Disney's Terms of Use limit use to personal, noncommercial use and bar automated access. One extra request per run (league news).</td></tr>
       <tr><td data-label="Data">Sportsbook odds</td><td data-label="Source"><a href="https://the-odds-api.com/liveapi/guides/v4/">The Odds API v4</a></td><td class="note">US books; moneyline, spread, total in American odds. Each pull costs API credits. No-vig % = each book's two moneyline prices normalized to 100%, averaged across books.</td></tr>
     </tbody></table>
@@ -160,15 +94,15 @@ function propsLog(px = D.props) {
 }
 
 // ---------- router ----------
-// NBA:  #/board  #/results  #/standings  #/injuries  #/log  #/guide  #/player/<id>[/<market>]
+// NBA:  #/board  #/results  #/defense  #/log  #/guide  #/player/<id>[/<market>]
 // CBB:  #/cbb/board  #/cbb/results  #/cbb/log  #/cbb/guide  #/cbb/player/<id>
 const TABS = {
-  nba: [["board", "Board"], ["results", "Results"], ["standings", "Standings"], ["injuries", "Injuries"], ["log", "Log & sources"], ["guide", "Guide"]],
+  nba: [["board", "Board"], ["results", "Results"], ["defense", "Defense"], ["log", "Log & sources"], ["guide", "Guide"]],
   cbb: [["board", "Board"], ["results", "Results"], ["log", "Log"], ["guide", "Guide"]],
 };
 const SUB = { nba: "NBA props · 2026–27", cbb: "Power 4 points · 2026–27" };
 const FOOT = {
-  nba: `Games, results, standings and injuries: ESPN public data feeds (unofficial; can change without notice).
+  nba: `Games, results and player news: ESPN public data feeds (unofficial; can change without notice).
     Lines: <a href="https://the-odds-api.com">The Odds API</a> (props: DraftKings, FanDuel), captured about 3 hours before tip — not closing lines.
     Research tool only; not betting advice.`,
   cbb: `Power 4 men's college basketball. Games, rankings and box scores: ESPN public data feeds (unofficial; can change without notice).
@@ -197,7 +131,7 @@ function render() {
   const mode = parts[1] === "cbb" ? "cbb" : "nba";
   if (mode === "cbb") parts = ["#", ...parts.slice(2)];
   let [, tab, arg, sub] = parts;
-  if (mode === "nba" && (tab === "games" || tab === "odds")) { location.replace("#/board"); return; }   // removed pages
+  if (mode === "nba" && ["games", "odds", "standings", "injuries"].includes(tab)) { location.replace("#/board"); return; }   // removed pages
   const modeChanged = mode !== MODE;
   setMode(mode);
   const active = tab === "player" ? "board" : tab || "board";
@@ -209,7 +143,7 @@ function render() {
     cbbLoading = cbbLoading || loadFiles(CBB_FILES).then(() => { cbbLoading = null; renderStatus(); render(); });
     return;
   }
-  const views = mode === "nba" ? { standings: viewStandings, injuries: viewInjuries, log: viewLog } : {};
+  const views = mode === "nba" ? { log: viewLog } : {};
   const home = R("board");
   let propsView = false;
   try {
@@ -218,16 +152,8 @@ function render() {
     if (html == null && section) { html = section.render(tab, arg, sub); propsView = html != null; }
     app.innerHTML = html ?? `<p class="pad">Page not found. <a href="${home}">Back to the board</a>.</p>`;
   } catch (e) { console.error(e); app.innerHTML = `<p class="pad">This view hit an error: ${esc(e.message)}. The data may have changed shape — check the <a href="${R("log")}">Log</a>.</p>`; }
-  bind();
   if (propsView) { try { (mode === "cbb" ? window.DIME_CBB : window.STIX_PROPS).bind(tab, arg); } catch (e) { console.error(e); } }
 }
-function bind() {
-  const on = (id, ev, fn) => { const el = document.getElementById(id); if (el) el.addEventListener(ev, fn); };
-  on("i-team", "change", (e) => { S.team = e.target.value; render(); });
-  on("i-status", "change", (e) => { S.status = e.target.value; render(); });
-  on("i-q", "input", (e) => { S.q = e.target.value; clearTimeout(bind.t); bind.t = setTimeout(() => { render(); const el = document.getElementById("i-q"); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }, 200); });
-}
-
 // ---------- loading + status ----------
 const repo = () => (D.run && D.run.repo) || "mvpeterson0-netizen/nba-odds-tracker";
 const RUN = () => (MODE === "cbb" ? D.cbb_run : D.run);          // run summary of the section being shown

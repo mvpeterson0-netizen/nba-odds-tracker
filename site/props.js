@@ -8,7 +8,7 @@ const R = (path) => `#/${MODE === "cbb" ? "cbb/" : ""}${path}`;       // in-app 
 
 const TREND = { minGames: 3, lastN: 3, pct: 15 };   // trend arrow: last 3 games vs season avg, ±15%
 const HIT_N = 10;                                   // hit rate window (games played)
-const P = { day: 0, game: "", q: "", pmk: {}, rmk: "core", bset: "core", subFrom: "" };   // day: -1 yesterday, 0 today, 1 tomorrow
+const P = { day: 0, game: "", q: "", pmk: {}, rf: { mk: "core", pos: "", opp: "" }, dmk: "player_points", dall: false, bset: "core", subFrom: "" };   // day: -1 yesterday, 0 today, 1 tomorrow
 let P_TYPING = null;
 
 const PX = () => (MODE === "cbb" ? D.cbb : D.props);
@@ -354,15 +354,39 @@ function face(aid, name, cls = "") {
 }
 
 // ---------- Results ----------
+// Filters (top of page): market, position, and the team the player was up against (the opponent).
+const POS_LIST = ["G", "F", "C"];
+const posOf = (aid) => (PX().players[aid] || {}).pos || "";
+const oppOf = (r) => {     // opponent of the player's team in that game ("" if the player's team doesn't match either side)
+  const g = gameOf(r.gid), t = (PX().players[r.aid] || {}).team;
+  return t && t === g.home ? g.away || "" : t && t === g.away ? g.home || "" : "";
+};
+const rfCols = (mk) => (mk === "core" ? MK_ORDER.slice(0, 4) : mk === "combo" ? MK_ORDER.slice(4, 8) : [mk]);
+const gradedRow = (r) => r.l && (r.l.res === "over" || r.l.res === "under");   // Results hides voids and pushes
+
 function viewResults() {
   if (!PX()) return `<p class="muted">No prop data yet.</p>`;
-  const shown = (r) => r.l.res === "over" || r.l.res === "under"; // Results hides voids and pushes
+  const F = P.rf;
+  const COLS = rfCols(F.mk);
+  const allGraded = lineDates().flatMap((d) => propRows(d)).filter(gradedRow);
+  if (!allGraded.length) return `<p class="muted">No graded props yet. Props are graded once each game is final and its box score is in.</p>`;
+  const opps = [...new Set(allGraded.map(oppOf).filter(Boolean))].sort();
+  const mkOpts = [["core", "Core: PTS · REB · AST · 3PM"], ["combo", "Combos: PRA · P+R · P+A · R+A"],
+    ...MK_ORDER.filter((id) => PX().markets.some((m) => m.id === id) && allGraded.some((r) => r.mk === id)).map((id) => [id, mkById(id).label])];
+  const touched = F.mk !== "core" || F.pos || F.opp;
+  let h = `<div class="filters rfilters">
+    <label>Market <select id="r-mk">${mkOpts.map(([v, l]) => `<option value="${esc(v)}" ${F.mk === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
+    <label>Position <select id="r-pos"><option value="">All</option>${POS_LIST.map((p) => `<option ${F.pos === p ? "selected" : ""}>${p}</option>`).join("")}</select></label>
+    <label>Against <select id="r-opp"><option value="">All teams</option>${opps.map((t) => `<option ${F.opp === t ? "selected" : ""}>${esc(t)}</option>`).join("")}</select></label>
+    ${touched ? `<button type="button" class="fclear" id="r-clear">Clear filters</button>` : ""}</div>`;
+
+  // base = position + opponent filters; shown = base + the chosen market(s)
+  const base = (r) => gradedRow(r) && (!F.pos || posOf(r.aid) === F.pos) && (!F.opp || oppOf(r) === F.opp);
+  const shown = (r) => base(r) && COLS.includes(r.mk);
   const dates = lineDates().filter((d) => propRows(d).some(shown)).reverse();
-  if (!dates.length) return `<p class="muted">No graded props yet. Props are graded once each game is final and its box score is in.</p>`;
-  let h = `<p class="callout">Green = over, red = under.</p>`;
+  h += `<p class="callout">Green = over, red = under.${F.pos ? ` Position ${esc(F.pos)} only.` : ""}${F.opp ? ` Players facing ${esc(F.opp)} only.` : ""}</p>`;
+  if (!dates.length) return h + `<p class="muted">No graded props match these filters.</p>`;
   const tally = (rs) => { const t = { over: 0, under: 0 }; rs.forEach((r) => { if (t[r.l.res] != null) t[r.l.res]++; }); return t; };
-  const COLS = P.rmk === "combo" ? MK_ORDER.slice(4, 8) : MK_ORDER.slice(0, 4);
-  h += `<div class="seg rseg">${[["core", "PTS · REB · AST · 3PM"], ["combo", "PRA · P+R · P+A · R+A"]].map(([k, l]) => `<button data-rmk="${k}" class="${P.rmk === k ? "on" : ""}">${l}</button>`).join("")}</div>`;
   dates.forEach((d, di) => {
     const rs = propRows(d).filter(shown);
     const t = tally(rs);
@@ -399,9 +423,9 @@ function viewResults() {
     }
     h += `</details>`;
   });
-  // season summary by market
-  const allRows = dates.flatMap((d) => propRows(d)).filter(shown);
-  h += `<div class="panel"><h3>Season so far</h3><div class="scroll"><table><thead><tr><th>Market</th><th class="num">Over</th><th class="num">Under</th><th class="num">Over %</th></tr></thead><tbody>`;
+  // season summary by market (follows the position and opponent filters; shows every market)
+  const allRows = allGraded.filter(base);
+  h += `<div class="panel"><h3>Season so far${F.pos || F.opp ? " (filtered)" : ""}</h3><div class="scroll"><table><thead><tr><th>Market</th><th class="num">Over</th><th class="num">Under</th><th class="num">Over %</th></tr></thead><tbody>`;
   for (const m of PX().markets) {
     const t = tally(allRows.filter((r) => r.mk === m.id)), dec2 = t.over + t.under;
     h += `<tr><td>${esc(m.label)}</td><td class="num">${t.over}</td><td class="num">${t.under}</td><td class="num">${dec2 ? Math.round((t.over / dec2) * 100) + "%" : "—"}</td></tr>`;
@@ -410,11 +434,75 @@ function viewResults() {
   return h;
 }
 
+// ---------- Defense ----------
+// Which defenses give up the most to each position, by market. For every graded player-game (a line plus the actual
+// stat; pushes count, voids don't) the opponent's defense is credited with (actual − line): using the line as the
+// baseline keeps a team from looking bad just because it faced stars. Worst = highest average over the line.
+const DEF_MIN_N = 5;       // fewer graded player-games than this and a team is listed below the ranked ones, greyed
+const DEF_TOP = 10;
+function defenseStats() {
+  const out = {};          // `${mk}|${pos}` -> { team -> {n, diff, act, over, dec} }
+  for (const d of lineDates()) {
+    for (const r of propRows(d)) {
+      const l = r.l, pos = posOf(r.aid), opp = oppOf(r);
+      if (!l || l.act == null || !["over", "under", "push"].includes(l.res) || !POS_LIST.includes(pos) || !opp) continue;
+      const k = `${r.mk}|${pos}`, t = ((out[k] = out[k] || {})[opp] = out[k][opp] || { n: 0, diff: 0, act: 0, over: 0, dec: 0 });
+      t.n++; t.diff += l.act - l.line; t.act += l.act;
+      if (l.res !== "push") { t.dec++; if (l.res === "over") t.over++; }
+    }
+  }
+  return out;
+}
+function defenseRank(stats, mk, pos) {
+  const rows = Object.entries(stats[`${mk}|${pos}`] || {}).map(([team, t]) => ({ team, n: t.n, diff: t.diff / t.n, act: t.act / t.n, over: t.dec ? t.over / t.dec : null }));
+  const ok = rows.filter((r) => r.n >= DEF_MIN_N).sort((a, b) => b.diff - a.diff);
+  const small = rows.filter((r) => r.n < DEF_MIN_N).sort((a, b) => b.n - a.n || b.diff - a.diff);
+  return { ok, small };
+}
+const sgn = (v) => (v > 0 ? "+" : "") + v.toFixed(1);
+
+function viewDefense() {
+  if (!PX()) return `<p class="muted">No prop data yet.</p>`;
+  const stats = defenseStats();
+  const mks = MK_ORDER.filter((id) => PX().markets.some((m) => m.id === id) && POS_LIST.some((p) => stats[`${id}|${p}`]));
+  if (!mks.length) return `<p class="muted">No graded props yet, so there's nothing to rank. Props are graded once each game is final and its box score is in.</p>`;
+  if (!mks.includes(P.dmk)) P.dmk = mks[0];
+  let h = `<p class="callout">Worst defenses first, by position and market. “vs line” is the average of (actual − line) for every graded player the team faced at that position: higher means the defense gives up more than the books expect. Teams with fewer than ${DEF_MIN_N} graded player-games are listed after the ranked ones. Position is ESPN's G / F / C.</p>`;
+  // overview: the single worst defense for every position × market
+  h += `<div class="panel"><h3>Worst defense by position &amp; market</h3><div class="scroll"><table class="defgrid"><thead><tr><th>Market</th>${POS_LIST.map((p) => `<th>${p}</th>`).join("")}</tr></thead><tbody>`;
+  for (const mk of mks) {
+    h += `<tr class="${P.dmk === mk ? "sel" : ""}"><td><button type="button" class="linkbtn" data-dmk="${esc(mk)}">${esc(mkById(mk).short)}</button></td>` + POS_LIST.map((p) => {
+      const w = defenseRank(stats, mk, p).ok[0];
+      return w ? `<td><b>${esc(w.team)}</b> <span class="muted small">${sgn(w.diff)}</span></td>` : `<td class="na">—</td>`;
+    }).join("") + `</tr>`;
+  }
+  h += `</tbody></table></div></div>`;
+  // detail for one market: one ranked table per position
+  h += `<div class="filters"><label>Market <select id="d-mk">${mks.map((id) => `<option value="${esc(id)}" ${P.dmk === id ? "selected" : ""}>${esc(mkById(id).label)}</option>`).join("")}</select></label>
+    <label>Teams shown <select id="d-all"><option value="" ${P.dall ? "" : "selected"}>Worst ${DEF_TOP}</option><option value="1" ${P.dall ? "selected" : ""}>All teams</option></select></label></div>`;
+  h += `<div class="grid3">`;
+  for (const pos of POS_LIST) {
+    const { ok, small } = defenseRank(stats, P.dmk, pos);
+    const list = P.dall ? [...ok, ...small] : ok.slice(0, DEF_TOP);
+    h += `<div class="panel"><h3>${esc(mkById(P.dmk).short)} vs ${pos}</h3><div class="scroll"><table class="deftbl"><thead><tr><th>#</th><th>Defense</th><th class="num">Avg</th><th class="num">vs line</th><th class="num">Over</th><th class="num">N</th></tr></thead><tbody>`;
+    if (!list.length) h += `<tr><td colspan="6" class="muted">Not enough games yet.</td></tr>`;
+    list.forEach((r) => {
+      const rk = ok.indexOf(r) + 1;
+      h += `<tr class="${rk ? "" : "lowN"}"><td class="muted">${rk || "·"}</td><td><b>${esc(r.team)}</b></td><td class="num">${n1(Number(r.act.toFixed(1)))}</td>
+        <td class="num ${r.diff > 0 ? "win" : r.diff < 0 ? "loss" : ""}">${sgn(r.diff)}</td><td class="num">${r.over == null ? "—" : Math.round(r.over * 100) + "%"}</td><td class="num">${r.n}</td></tr>`;
+    });
+    h += `</tbody></table></div></div>`;
+  }
+  return h + `</div>`;
+}
+
 // ---------- Guide ----------
 function viewGuide() {
   return `<div class="panel"><h3>How the player board works</h3><div class="body guide">
     <p><b>Lines.</b> DraftKings and FanDuel player props are pulled from The Odds API twice per game: at <b>8:00 AM Central</b> on game day (retried until the books post them) and again about <b>1 hour before tip</b>. Until the 1-hour pull lands, the board shows the 8 AM line with an <span class="chip amchip">8 AM</span> chip; after it, ▲/▼ shows how far the line moved since 8 AM. The 1-hour line is the one graded. Only the core markets (points, rebounds, assists, threes) are pulled. PRA and the two-stat combos are built from those lines (two-stat combos: sum + 0.5; PRA: the sum, matching how DraftKings and FanDuel have most often set them in this season's captures), priced at -110/-110 and graded like any other line. Steals and blocks are no longer pulled; earlier captures still show. Nothing is pulled after tip. DraftKings is the line shown and graded; FanDuel is used when DraftKings has no line for that player and stat. Hover or tap a line to see both books.</p>
     <p><b>Grading.</b> Once the game is final, the actual stat from ESPN's box score is compared with the line: over, under or push. A player who had a line but didn't play is <i>void</i>, with ESPN's reason when it gives one.</p>
+    <p><b>Results filters.</b> The Results tab can be filtered by market, by position (ESPN's G / F / C), and by <i>Against</i>, the team the player was facing. The day tallies and game tables follow all three; the season table follows position and Against and always shows every market.</p>
+    <p><b>Defense.</b> For every graded player-game, the opponent's defense is credited with actual minus line. Each team's average of that, by position and market, ranks the worst defenses first (higher = gives up more than the books expect). Using the line as the baseline keeps a team from looking weak just because it faced stars. Teams with fewer than ${DEF_MIN_N} graded player-games are listed after the ranked ones. Early in the season these samples are small, so treat the rankings as a lean, not a conclusion.</p>
     <p><b>AVG / L5.</b> Season average and last-5 average over games the player actually played, counting only games before the date being viewed.</p>
     <p><b>HIT.</b> How many of his last ${HIT_N} games played went over <i>this</i> line (not the lines he had in those games).</p>
     <p><b>Trend.</b> Average of the last ${TREND.lastN} games vs. the season average: ↑ at least ${TREND.pct}% higher, ↓ at least ${TREND.pct}% lower, → otherwise. Needs ${TREND.minGames} games.</p>
@@ -429,6 +517,7 @@ window.STIX_PROPS = {
     if (tab !== "player") P.subFrom = "";
     if (tab === "player") return viewPlayer(arg, sub);
     if (tab === "results") return viewResults();
+    if (tab === "defense" && MODE === "nba") return viewDefense();
     if (tab === "guide") return viewGuide();
     if (!tab || tab === "board") return viewBoard();
     return null;
@@ -438,7 +527,13 @@ window.STIX_PROPS = {
     document.querySelectorAll("[data-pgid]").forEach((b) => b.addEventListener("click", () => { P.game = P.game === b.dataset.pgid ? "" : b.dataset.pgid; render(); }));
     document.querySelectorAll("[data-pday]").forEach((b) => b.addEventListener("click", () => { P.day = Number(b.dataset.pday); P.game = ""; render(); }));
     document.querySelectorAll("[data-bset]").forEach((b) => b.addEventListener("click", () => { P.bset = b.dataset.bset; render(); }));
-    document.querySelectorAll("[data-rmk]").forEach((b) => b.addEventListener("click", () => { P.rmk = b.dataset.rmk; render(); }));
+    on("r-mk", "change", (e) => { P.rf.mk = e.target.value; render(); });
+    on("r-pos", "change", (e) => { P.rf.pos = e.target.value; render(); });
+    on("r-opp", "change", (e) => { P.rf.opp = e.target.value; render(); });
+    on("r-clear", "click", () => { P.rf = { mk: "core", pos: "", opp: "" }; render(); });
+    on("d-mk", "change", (e) => { P.dmk = e.target.value; render(); });
+    on("d-all", "change", (e) => { P.dall = e.target.value === "1"; render(); });
+    document.querySelectorAll("[data-dmk]").forEach((b) => b.addEventListener("click", () => { P.dmk = b.dataset.dmk; render(); }));
     on("p-q", "input", (e) => { P.q = e.target.value; clearTimeout(P_TYPING); P_TYPING = setTimeout(() => { render(); const el = document.getElementById("p-q"); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }, 200); });
     document.querySelectorAll("[data-pmk]").forEach((b) => b.addEventListener("click", () => { P.pmk[decodeURIComponent(arg)] = b.dataset.pmk; render(); }));
     const onTab = document.querySelector(".mtabs button.on");

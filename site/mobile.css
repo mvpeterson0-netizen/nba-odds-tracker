@@ -37,3 +37,6 @@ main { padding: 10px 12px 32px; }
 .mtabs button { white-space: nowrap; padding: 8px 12px; font-size: 14px; }
 .ltable th, .ltable td { padding: 5px 5px; }
 .filters button.fclear { grid-column: 1 / -1; padding: 10px; font-size: 15px; }
+.rfilters { grid-template-columns: 1fr 1fr 1fr; }
+.rfilters select { min-width: 0; font-size: 14px; padding: 8px 4px; }
+.defgrid td, .deftbl td { padding: 5px 5px; }
