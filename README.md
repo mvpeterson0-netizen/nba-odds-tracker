@@ -98,3 +98,12 @@ python -m nba_tracker                     # today
 python -m nba_tracker --date 2026-10-21   # a specific date
 ODDS_API_KEY=xxx python -m nba_tracker    # include odds
 ```
+
+
+## Research thesis registry
+
+Dime keeps a versioned NBA research registry in `data/research/theses.json`. The standing intake policy is documented in `THESIS_INTAKE.md`.
+
+When an authorized coding assistant (ChatGPT, Claude Code, or another repo-aware agent) is used to discuss a concrete, testable NBA prop hypothesis, it should check the registry for duplicates and append a new immutable `NBA-TH-###` entry without requiring a separate “add this thesis” prompt. Registering a thesis does **not** change the live app model, thresholds, or data-collection spend by itself.
+
+The registry is copied into the deployed site and shown at the bottom of the NBA **Results** tab. Dime currently has no authenticated admin layer, so this display is public. Do not put confidential research content in the registry until server-enforced admin access is added.
