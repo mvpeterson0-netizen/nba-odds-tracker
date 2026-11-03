@@ -234,47 +234,81 @@ function pendingGames(aid) {
     .map((gid) => { const g = gameOf(gid), home = p.team ? p.team === g.home : false;
       return { g: gid, d: g.date, pend: true, ha: home ? "home" : "away", opp: home ? g.away : g.home }; });
 }
-const OPP_CH = () => (MODE === "cbb" ? 4 : 3);   // opponent label length under the chart (college abbreviations run longer)
-function chartSVG(aid, mk) {
-  const st = mkById(mk).stat;
-  const lineFor0 = (gid) => ((PX().lines[aid] || {})[gid] || {})[mk];
-  const pend = pendingGames(aid).filter((r) => lineFor0(r.g)).slice(0, 2);
-  const logs = [...played(aid).filter((r) => r[st] != null).slice(-(15 - pend.length)), ...pend];
-  if (logs.length < 2) return `<p class="muted small pad">Not enough games for a chart yet.</p>`;
-  const lineFor = (gid) => ((PX().lines[aid] || {})[gid] || {})[mk];
-  const W = 640, H = 236, L = 36, R = 16, T = 26, B = 32;
-  const vals = [...logs.filter((r) => !r.pend).map((r) => r[st]), ...logs.map((r) => lineFor(r.g)).filter(Boolean).map((l) => l.line)];
-  const hi0 = Math.max(...vals), lo0 = Math.min(...vals), pad = Math.max(2, (hi0 - lo0) * 0.18);
+// ---------- Chart labels: sizes and collision-free placement ----------
+// Both player charts (line vs defense, and the plain by-game chart) share these. Labels are placed greedily, most
+// important first: each tries a few spots around its point and takes the first one that doesn't touch another label or
+// any marker; a label with no clear spot is dropped (its value is still in the marker's tooltip).
+const chartPhone = () => !!(window.matchMedia && window.matchMedia("(max-width: 760px)").matches);
+const chartDims = (rank) => (chartPhone()
+  ? { W: 420, H: 380, L: 38, R: rank ? 34 : 14, T: 26, B: 50, fs: 17, games: 10 }
+  : { W: 720, H: 380, L: 44, R: rank ? 40 : 18, T: 28, B: 52, fs: 17, games: 15 });
+function labelLayer(bounds) {
+  const rects = [], pad = 2;
+  const hit = (a, b) => a[0] < b[2] + pad && a[2] > b[0] - pad && a[1] < b[3] + pad && a[3] > b[1] - pad;
+  const inside = (r) => r[0] >= bounds[0] && r[2] <= bounds[2] && r[1] >= bounds[1] && r[3] <= bounds[3];
+  const box = (text, x, y, fs) => { const w = String(text).length * fs * 0.52 + 4; return [x - w / 2, y - fs * 0.92, x + w / 2, y + fs * 0.28]; };   // a little wider than real glyphs
+  return {
+    marker(x, y, r = 7) { rects.push([x - r, y - r, x + r, y + r]); },
+    // pref "up" / "down": which side of the point to try first. Returns {x, y} of the text baseline, or null.
+    place(text, x, y, fs, pref, bold) {
+      const w = String(text).length * fs * 0.52 + 4, step = fs * 1.15;
+      const up = (k) => y - 16 - k * step, dn = (k) => y + fs + 9 + k * step;
+      const order = pref === "down" ? [dn, up] : [up, dn];
+      const spots = [];
+      for (const k of [0, 1, 2, 3]) for (const f of order) spots.push([x, f(k)]);                 // straight above / below, nearer first
+      for (const k of [0, 1]) for (const f of order) for (const sx of [-1, 1]) spots.push([x + sx * (w / 2 + 9), f(k)]);   // diagonals
+      for (const sx of [-1, 1]) spots.push([x + sx * (w / 2 + 12), y + fs * 0.36]);            // beside the point
+      for (const [sx, sy] of spots) {
+        const b = box(text, sx, sy, fs);
+        if (inside(b) && !rects.some((o) => hit(b, o))) { rects.push(b); return { x: sx, y: sy }; }
+      }
+      return null;
+    },
+  };
+}
+// Axis scale for a set of stat values: padded range with whole-number ticks.
+function statScale(vals, T, H, B) {
+  const hi0 = Math.max(...vals), lo0 = Math.min(...vals), pad = Math.max(hi0 - lo0 <= 6 ? 1 : 2, (hi0 - lo0) * 0.18);
   const lo = Math.max(0, Math.floor(lo0 - pad)), hi = Math.ceil(hi0 + pad);
-  const x = (i) => L + 10 + i * ((W - L - R - 20) / Math.max(1, logs.length - 1));
-  const y = (v) => T + (H - T - B) * (1 - (v - lo) / (hi - lo));
+  return { lo, hi, y: (v) => T + (H - T - B) * (1 - (v - lo) / (hi - lo)) };
+}
+const oppLabel = (r) => esc((r.opp || "").slice(0, MODE === "cbb" ? 4 : 3));
+
+function chartSVG(aid, mk) {
+  const st = mkById(mk).stat, D0 = chartDims(false), { W, H, L, R, T, B, fs } = D0;
+  const lineFor = (gid) => ((PX().lines[aid] || {})[gid] || {})[mk];
+  const pend = pendingGames(aid).filter((r) => lineFor(r.g)).slice(0, 2);
+  const logs = [...played(aid).filter((r) => r[st] != null).slice(-(D0.games - pend.length)), ...pend];
+  if (logs.length < 2) return `<p class="muted small pad">Not enough games for a chart yet.</p>`;
+  const x = (i) => L + 28 + i * ((W - L - R - 56) / Math.max(1, logs.length - 1));
+  const vals = [...logs.filter((r) => !r.pend).map((r) => r[st]), ...logs.map((r) => lineFor(r.g)).filter(Boolean).map((l) => l.line)];
+  const { lo, hi, y } = statScale(vals, T, H, B);
   const tip = (r, l) => `${esc(r.d)} ${r.ha === "home" ? "vs" : "@"} ${esc(r.opp)}: ${n1(r[st])}${l ? ` (line ${n1(l.line)}${l.res ? ", " + l.res : ""})` : ""}`;
+  const lay = labelLayer([L, 4, W - R, H - B - 1]);
+  logs.forEach((r, i) => { const l = lineFor(r.g); if (l) lay.marker(x(i), y(l.line)); if (!r.pend) lay.marker(x(i), y(r[st])); });
   let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(mkById(mk).label)} by game: actual vs line">`;
-  for (const v of [lo, (lo + hi) / 2, hi]) s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 4}" y="${y(v) + 5}" font-size="14" text-anchor="end" fill="var(--muted)">${Math.round(v)}</text>`;
-  // Line series: dashed segments between consecutive games that both had a line; gaps stay open.
+  for (const v of [lo, (lo + hi) / 2, hi]) s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 6}" y="${y(v) + fs * 0.35}" font-size="${fs}" text-anchor="end" fill="var(--muted)">${Math.round(v)}</text>`;
   let seg = [];
   const flush = () => { if (seg.length > 1) s += `<polyline points="${seg.join(" ")}" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 4"/>`; seg = []; };
   logs.forEach((r, i) => { const l = lineFor(r.g); if (l) seg.push(`${x(i)},${y(l.line)}`); else flush(); });
   flush();
-  // Actual series: solid line through every game.
   s += `<polyline points="${logs.map((r, i) => (r.pend ? "" : `${x(i)},${y(r[st])}`)).filter(Boolean).join(" ")}" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>`;
+  let marks = "", text = "";
   logs.forEach((r, i) => {
     const l = lineFor(r.g);
-    if (r.pend) {   // not played yet: line only, label above; the actual point appears once the box score is in
-      s += `<rect x="${x(i) - 4.5}" y="${y(l.line) - 4.5}" width="9" height="9" transform="rotate(45 ${x(i)} ${y(l.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>${esc(r.d)} ${r.ha === "home" ? "vs" : "@"} ${esc(r.opp || "")}: line ${n1(l.line)} (not played yet)</title></rect>`;
-      s += `<text x="${x(i)}" y="${y(l.line) - 12}" font-size="13" text-anchor="middle" fill="var(--muted)" font-style="italic">${n1(l.line)}</text>`;
-      s += `<text x="${x(i)}" y="${H - 9}" font-size="13" text-anchor="middle" fill="var(--muted)">${esc((r.opp || "").slice(0, OPP_CH()))}</text>`;
-      return;
+    if (l) marks += `<rect x="${x(i) - 4.5}" y="${y(l.line) - 4.5}" width="9" height="9" transform="rotate(45 ${x(i)} ${y(l.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>${r.pend ? `${esc(r.d)} ${r.ha === "home" ? "vs" : "@"} ${esc(r.opp || "")}: line ${n1(l.line)} (not played yet)` : `Line ${n1(l.line)}`}</title></rect>`;
+    if (!r.pend) {
+      const col = l && l.res === "over" ? "var(--over)" : l && l.res === "under" ? "var(--under)" : "var(--accent)";
+      marks += `<circle cx="${x(i)}" cy="${y(r[st])}" r="5.5" fill="${col}" stroke="var(--panel)" stroke-width="2"><title>${tip(r, l)}</title></circle>`;
     }
-    if (l) s += `<rect x="${x(i) - 4.5}" y="${y(l.line) - 4.5}" width="9" height="9" transform="rotate(45 ${x(i)} ${y(l.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>Line ${n1(l.line)}</title></rect>`;
-    if (l) s += `<text x="${x(i)}" y="${y(l.line) + (r[st] >= l.line ? 22 : -12)}" font-size="13" text-anchor="middle" fill="var(--muted)">${n1(l.line)}</text>`;
-    const col = l && l.res === "over" ? "var(--over)" : l && l.res === "under" ? "var(--under)" : "var(--accent)";
-    const above = !l || r[st] >= l.line;
-    s += `<circle cx="${x(i)}" cy="${y(r[st])}" r="5.5" fill="${col}" stroke="var(--panel)" stroke-width="2"><title>${tip(r, l)}</title></circle>`;
-    s += `<text x="${x(i)}" y="${y(r[st]) + (above ? -12 : 22)}" font-size="14" font-weight="600" text-anchor="middle" fill="var(--ink)">${n1(r[st])}</text>`;
-    s += `<text x="${x(i)}" y="${H - 9}" font-size="13" text-anchor="middle" fill="var(--muted)">${esc((r.opp || "").slice(0, OPP_CH()))}</text>`;
+    text += `<text x="${x(i)}" y="${H - B + fs + 8}" font-size="${fs}" text-anchor="middle" fill="var(--muted)">${oppLabel(r)}</text>` + (r.pend ? `<text x="${x(i)}" y="${H - 6}" font-size="${fs - 3}" text-anchor="middle" fill="var(--muted)">next</text>` : "");
   });
-  return s + `</svg>`;
+  // value labels, most important first: actuals, then lines
+  logs.forEach((r, i) => { if (r.pend) return; const l = lineFor(r.g), p = lay.place(n1(r[st]), x(i), y(r[st]), fs, !l || r[st] >= l.line ? "up" : "down", true);
+    if (p) text += `<text x="${p.x}" y="${p.y}" stroke="var(--panel)" stroke-width="4" paint-order="stroke" stroke-linejoin="round" font-size="${fs}" font-weight="700" text-anchor="middle" fill="var(--ink)">${n1(r[st])}</text>`; });
+  logs.forEach((r, i) => { const l = lineFor(r.g); if (!l) return; const p = lay.place(n1(l.line), x(i), y(l.line), fs, "up", false);
+    if (p) text += `<text x="${p.x}" y="${p.y}" stroke="var(--panel)" stroke-width="4" paint-order="stroke" stroke-linejoin="round" font-size="${fs}" text-anchor="middle" fill="var(--muted)"${r.pend ? ' font-style="italic"' : ""}>${n1(l.line)}</text>`; });
+  return s + marks + text + `</svg>`;
 }
 function viewPlayer(aid, sub) {
   aid = decodeURIComponent(aid || "");
@@ -302,7 +336,7 @@ function viewPlayer(aid, sub) {
   // NBA: the line-vs-opponent-defense chart replaces the plain "by game" chart; fall back to the plain one when it can't be drawn
   const defPanel = MODE === "nba" ? defTrendPanel(aid, mk) : "";
   h += defPanel || `<div class="panel"><h3>${esc(mkAbbr(m))} by game</h3><div class="chart">${chartSVG(aid, mk)}</div>
-      <div class="legend"><span><i class="lg-act"></i>Actual</span><span><i class="lg-line"></i>Pre-game line</span><span><b class="dot" style="background:var(--over)"></b>Over</span><span><b class="dot" style="background:var(--under)"></b>Under</span><span><b class="dot" style="background:var(--accent)"></b>No line</span></div></div>`;
+      <div class="legend"><span><i class="lg-act"></i>Actual</span>${Object.values(myLines).some((ms) => ms[mk]) ? `<span><i class="lg-line"></i>Line</span>` : ""}</div></div>`;
   // game log
   const logs = [...(PX().logs[aid] || [])].reverse();
   // Base box-score columns, plus the selected market's column when it's a combo (PRA, P+R, ...).
@@ -519,55 +553,56 @@ function defTrendRows(aid, mk) {
     const g = gameOf(gid), home = p.team === g.home, opp = home ? g.away : g.home, l = ms[mk], lg = logByG[gid];
     return { gid, d: g.date, start: g.start, opp, home, line: l.line, res: l.res, act: l.act != null ? l.act : lg && lg.p && lg[st] != null ? lg[st] : null,
       def: POS_LIST.includes(p.pos) ? defAsOf(mk, p.pos, opp, g.date) : null };
-  }).sort((a, b) => String(a.start).localeCompare(String(b.start))).slice(-15);
+  }).sort((a, b) => String(a.start).localeCompare(String(b.start))).slice(-chartDims(true).games);
 }
 function defTrendSVG(rows) {
-  const W = 640, H = 270, L = 36, Rr = 40, T = 24, B = 34;
-  const x = (i) => L + 10 + i * ((W - L - Rr - 20) / Math.max(1, rows.length - 1));
-  const vals = rows.flatMap((r) => [r.line, r.act].filter((v) => v != null));
-  const hi0 = Math.max(...vals), lo0 = Math.min(...vals), pad = Math.max(2, (hi0 - lo0) * 0.18);
-  const lo = Math.max(0, Math.floor(lo0 - pad)), hi = Math.ceil(hi0 + pad);
-  const y = (v) => T + (H - T - B) * (1 - (v - lo) / (hi - lo));
+  const D0 = chartDims(true), { W, H, L, R, T, B, fs } = D0;
+  const x = (i) => L + 28 + i * ((W - L - R - 56) / Math.max(1, rows.length - 1));
+  const { lo, hi, y } = statScale(rows.flatMap((r) => [r.line, r.act].filter((v) => v != null)), T, H, B);
   const yr = (rk, of) => T + (H - T - B) * ((of - rk) / Math.max(1, of - 1));      // worst defense (highest rank) at the top
+  const lay = labelLayer([L, 4, W - R, H - B - 1]);
+  rows.forEach((r, i) => { lay.marker(x(i), y(r.line)); if (r.act != null) lay.marker(x(i), y(r.act)); if (r.def) lay.marker(x(i), yr(r.def.rank, r.def.of)); });
   let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Line vs opponent defensive rank by game">`;
-  for (const v of [lo, (lo + hi) / 2, hi]) s += `<line x1="${L}" x2="${W - Rr}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 4}" y="${y(v) + 5}" font-size="14" text-anchor="end" fill="var(--muted)">${Math.round(v)}</text>`;
-  s += `<text x="${W - Rr + 6}" y="${T + 4}" font-size="12" fill="var(--def)">worst D</text><text x="${W - Rr + 6}" y="${H - B + 4}" font-size="12" fill="var(--def)">toughest D</text>`;
+  for (const v of [lo, (lo + hi) / 2, hi]) s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 6}" y="${y(v) + fs * 0.35}" font-size="${fs}" text-anchor="end" fill="var(--muted)">${Math.round(v)}</text>`;
+  // right axis: defense rank, 30 (worst) at the top to 1 (toughest) at the bottom
+  const of = (rows.find((r) => r.def) || { def: { of: 30 } }).def.of;
+  for (const [v, yy] of [[of, T], [Math.round((of + 1) / 2), (T + H - B) / 2], [1, H - B]]) s += `<text x="${W - R + 6}" y="${yy + fs * 0.35}" font-size="${fs}" font-weight="700" fill="var(--def)">${v}</text>`;
   const seg = (pts, attrs) => { if (pts.length > 1) s += `<polyline points="${pts.join(" ")}" fill="none" ${attrs}/>`; };
   seg(rows.map((r, i) => `${x(i)},${y(r.line)}`), `stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 4"`);
-  seg(rows.filter((r) => r.def).map((r) => `${x(rows.indexOf(r))},${yr(r.def.rank, r.def.of)}`), `stroke="var(--def)" stroke-width="2"`);
-  seg(rows.filter((r) => r.act != null).map((r) => `${x(rows.indexOf(r))},${y(r.act)}`), `stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"`);
+  seg(rows.map((r, i) => (r.def ? `${x(i)},${yr(r.def.rank, r.def.of)}` : "")).filter(Boolean), `stroke="var(--def)" stroke-width="2"`);
+  seg(rows.map((r, i) => (r.act != null ? `${x(i)},${y(r.act)}` : "")).filter(Boolean), `stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"`);
+  let marks = "", text = "";
   rows.forEach((r, i) => {
-    s += `<rect x="${x(i) - 4}" y="${y(r.line) - 4}" width="8" height="8" transform="rotate(45 ${x(i)} ${y(r.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>Line ${n1(r.line)}</title></rect>`;
-    s += `<text x="${x(i)}" y="${y(r.line) - 11}" font-size="13" text-anchor="middle" fill="var(--muted)">${n1(r.line)}</text>`;
+    marks += `<rect x="${x(i) - 4.5}" y="${y(r.line) - 4.5}" width="9" height="9" transform="rotate(45 ${x(i)} ${y(r.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>Line ${n1(r.line)}</title></rect>`;
     if (r.def) {
       const cy = yr(r.def.rank, r.def.of), thin = r.def.n < DEF_THIN_N, none = r.def.n === 0;
       const tip = none ? `${esc(r.opp)}: no earlier games against this position, so it sits in the middle (n/a)`
         : `${esc(r.opp)} defense: #${r.def.rank} of ${r.def.of} (${sgn(r.def.diff)} vs line, ${r.def.n} earlier game${r.def.n === 1 ? "" : "s"})${thin ? ". Small sample: a rough lean" : ""}. ${r.def.frozen ? (r.def.backfilled ? "Frozen as of that date (rebuilt from the data after the fact)" : "Frozen on game day") : "Preview: freezes on game day"}.`;
-      s += `<circle cx="${x(i)}" cy="${cy}" r="5" fill="${thin ? "var(--panel)" : "var(--def)"}" stroke="var(--def)" stroke-width="2"><title>${tip}</title></circle>
-        <text x="${x(i)}" y="${cy + (cy < T + 16 ? 18 : -9)}" font-size="12" font-weight="700" text-anchor="middle" fill="var(--def)" ${thin ? 'opacity=".75"' : ""}>${none ? "n/a" : "#" + r.def.rank + (thin ? "*" : "")}</text>`;
+      marks += `<circle cx="${x(i)}" cy="${cy}" r="5.5" fill="${thin ? "var(--panel)" : "var(--def)"}" stroke="var(--def)" stroke-width="2"><title>${tip}</title></circle>`;
     }
     if (r.act != null) {
       const col = r.res === "over" ? "var(--over)" : r.res === "under" ? "var(--under)" : "var(--accent)";
-      s += `<circle cx="${x(i)}" cy="${y(r.act)}" r="5.5" fill="${col}" stroke="var(--panel)" stroke-width="2"><title>${esc(r.d)} ${r.home ? "vs" : "@"} ${esc(r.opp)}: ${n1(r.act)}</title></circle>`;
-      s += `<text x="${x(i)}" y="${y(r.act) + (r.act >= r.line ? -11 : 21)}" font-size="13" font-weight="600" text-anchor="middle" fill="var(--ink)">${n1(r.act)}</text>`;
+      marks += `<circle cx="${x(i)}" cy="${y(r.act)}" r="5.5" fill="${col}" stroke="var(--panel)" stroke-width="2"><title>${esc(r.d)} ${r.home ? "vs" : "@"} ${esc(r.opp)}: ${n1(r.act)}</title></circle>`;
     }
-    s += `<text x="${x(i)}" y="${H - 18}" font-size="13" text-anchor="middle" fill="var(--muted)">${esc((r.opp || "").slice(0, 3))}</text><text x="${x(i)}" y="${H - 4}" font-size="11" text-anchor="middle" fill="var(--muted)">${r.act == null ? "next" : ""}</text>`;
+    text += `<text x="${x(i)}" y="${H - B + fs + 8}" font-size="${fs}" text-anchor="middle" fill="var(--muted)">${oppLabel(r)}</text>` + (r.act == null ? `<text x="${x(i)}" y="${H - 6}" font-size="${fs - 3}" text-anchor="middle" fill="var(--muted)">next</text>` : "");
   });
-  return s + `</svg>`;
+  // value labels, most important first: actuals, defense ranks, then lines
+  rows.forEach((r, i) => { if (r.act == null) return; const p = lay.place(n1(r.act), x(i), y(r.act), fs, r.act >= r.line ? "up" : "down", true);
+    if (p) text += `<text x="${p.x}" y="${p.y}" stroke="var(--panel)" stroke-width="4" paint-order="stroke" stroke-linejoin="round" font-size="${fs}" font-weight="700" text-anchor="middle" fill="var(--ink)">${n1(r.act)}</text>`; });
+  rows.forEach((r, i) => { if (!r.def) return; const lab = r.def.n === 0 ? "n/a" : "#" + r.def.rank + (r.def.n < DEF_THIN_N ? "*" : "");
+    const yy = yr(r.def.rank, r.def.of), p = lay.place(lab, x(i), yy, fs, yy < (T + H - B) / 2 ? "down" : "up", true);
+    if (p) text += `<text x="${p.x}" y="${p.y}" stroke="var(--panel)" stroke-width="4" paint-order="stroke" stroke-linejoin="round" font-size="${fs}" font-weight="700" text-anchor="middle" fill="var(--def)">${lab}</text>`; });
+  rows.forEach((r, i) => { const p = lay.place(n1(r.line), x(i), y(r.line), fs, "up", false);
+    if (p) text += `<text x="${p.x}" y="${p.y}" stroke="var(--panel)" stroke-width="4" paint-order="stroke" stroke-linejoin="round" font-size="${fs}" text-anchor="middle" fill="var(--muted)">${n1(r.line)}</text>`; });
+  return s + marks + text + `</svg>`;
 }
 function defTrendPanel(aid, mk) {
   const p = PX().players[aid] || {};
   if (!POS_LIST.includes(p.pos)) return "";
   const rows = defTrendRows(aid, mk);
   if (rows.length < 2) return "";
-  let h = `<div class="panel"><h3>${esc(mkAbbr(mkById(mk)))} line vs opponent defense</h3><div class="chart">${defTrendSVG(rows)}</div>
-    <div class="legend"><span><i class="lg-line"></i>Line</span><span><i class="lg-act"></i>Actual (<b class="dot" style="background:var(--over)"></b>over / <b class="dot" style="background:var(--under)"></b>under)</span><span><b class="dot" style="background:var(--def)"></b>Opp. defense rank vs ${esc(p.pos)} (30 = worst, 1 = toughest)</span><span><b class="dot" style="background:var(--panel);border:2px solid var(--def)"></b>* fewer than ${DEF_THIN_N} earlier games (rough)</span></div>`;
-  // does he go over more against soft defenses? (thirds of the ranked teams; thin-sample games left out)
-  const g = rows.filter((r) => r.def && r.def.n >= DEF_THIN_N && (r.res === "over" || r.res === "under"));
-  const soft = g.filter((r) => r.def.rank > r.def.of - Math.ceil(r.def.of / 3)), hard = g.filter((r) => r.def.rank <= Math.ceil(r.def.of / 3));
-  const rec = (a) => `${a.filter((r) => r.res === "over").length}–${a.filter((r) => r.res === "under").length}`;
-  h += `<p class="callout">${g.length ? `Over–under vs the line: <b>${rec(soft)}</b> against the weakest third of defenses, <b>${rec(hard)}</b> against the strongest third (${g.length} graded game${g.length === 1 ? "" : "s"} with a solid rank). ` : ""}Each rank is frozen on the day of the game, using only games before that date, so it never changes afterward. Hollow markers (*) rest on fewer than ${DEF_THIN_N} earlier games at this position and are shrunk toward the middle; n/a means none yet.</p>`;
-  return h + `</div>`;
+  return `<div class="panel"><h3>${esc(mkAbbr(mkById(mk)))} line vs opponent defense</h3><div class="chart">${defTrendSVG(rows)}</div>
+    <div class="legend"><span><i class="lg-line"></i>Line</span><span><i class="lg-act"></i>Actual</span><span><b class="dot" style="background:var(--def)"></b>Opp. defense rank (30 = worst)</span></div></div>`;
 }
 
 // ---------- Guide ----------
