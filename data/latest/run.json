@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-03T00:15:19+00:00",
+  "finished_at": "2026-11-03T00:30:19+00:00",
   "game_date": "2026-11-02",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -25,15 +25,30 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 425,
-      "ODDS_API_KEY_2": 424,
+      "ODDS_API_KEY": 421,
+      "ODDS_API_KEY_2": 420,
       "ODDS_API_KEY_20K": 16188
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Boston Celtics @ Houston Rockets",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 166,
+        "markets": 4
+      },
+      {
+        "matchup": "Utah Jazz @ San Antonio Spurs",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 190,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 2,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }

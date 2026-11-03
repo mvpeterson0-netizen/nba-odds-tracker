@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-03T00:15:21+00:00",
+  "finished_at": "2026-11-03T00:30:22+00:00",
   "game_date": "2026-11-02",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -27,52 +27,24 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 425,
-      "ODDS_API_KEY_2": 424,
+      "ODDS_API_KEY": 419,
+      "ODDS_API_KEY_2": 420,
       "ODDS_API_KEY_20K": 16188
     },
-    "pulled": [
-      {
-        "matchup": "Le Moyne Dolphins @ Nebraska Cornhuskers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Tennessee Tech Golden Eagles @ Mississippi St Bulldogs",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "East Texas A&M Lions @ Oklahoma Sooners",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Alcorn St Braves @ Ole Miss Rebels",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Long Beach St 49ers @ Utah Utes",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "events": 122,
-    "p4_events": 38,
+    "p4_events": 33,
     "unmatched": [],
-    "due": 5,
+    "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 2,
+      "pull_type": "pregame",
+      "rows": 16,
+      "credits_last": 2
     },
     "status": "ok"
   }
