@@ -1,7 +1,7 @@
 "use strict";
 // Dime front end (NBA props). Reads the JSON the GitHub Action writes to data/. No external libraries.
 
-const FILES = ["run", "props", "updates"];
+const FILES = ["run", "props", "updates", "research_theses"];
 const CBB_FILES = ["cbb", "cbb_run"];   // college basketball (cbb.js); loaded the first time the CBB toggle is used
 let MODE = "nba";                       // "nba" | "cbb": the section being shown (props.js and cbb.js read it)
 const D = {};               // file name -> parsed JSON (or null if missing; undefined = not loaded yet)
@@ -37,6 +37,32 @@ const impl = (o) => (o == null ? null : o > 0 ? 100 / (o + 100) : -o / (-o + 100
 const median = (a) => { if (!a.length) return null; const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
 const mode = (a) => { const c = new Map(); a.forEach((v) => c.set(v, (c.get(v) || 0) + 1)); let best = null, n = 0; c.forEach((k, v) => { if (k > n || (k === n && Math.abs(v) < Math.abs(best))) { best = v; n = k; } }); return best; };
 const rows = (name) => (D[name] && D[name].rows) || [];
+
+function thesisRegistryHtml() {
+  const source = D.research_theses;
+  if (!source) return `<div class="panel"><h3>Research Thesis Registry</h3><div class="body"><p class="muted small">Registry data is unavailable on this deploy.</p></div></div>`;
+  const entries = source.entries || [];
+  const statusLabel = (s) => ({
+    proposed: "Proposed",
+    needs_data: "Needs data",
+    backtesting: "Backtesting",
+    forward_monitoring: "Forward monitoring",
+    validated: "Validated",
+    rejected: "Rejected",
+    retired: "Retired",
+  }[s] || String(s || "Proposed").replace(/_/g, " "));
+  const items = entries.map((t) => `<details>
+    <summary><b>${esc(t.id)} · ${esc(t.title)}</b> <span class="muted small">— ${esc(statusLabel(t.status))}</span></summary>
+    <p>${esc(t.question)}</p>
+    ${t.scope ? `<p class="muted small"><b>Scope:</b> ${esc(t.scope)}</p>` : ""}
+    ${t.data_needs ? `<p class="muted small"><b>Data needs:</b> ${esc(t.data_needs)}</p>` : ""}
+    ${t.notes ? `<p class="muted small">${esc(t.notes)}</p>` : ""}
+  </details>`).join("");
+  return `<div class="panel"><h3>Research Thesis Registry (${entries.length})</h3><div class="body">
+    <p class="muted small">Stable, versioned hypotheses for NBA prop research. Registering an idea does not change the production model or count as evidence. Discovery results and prospective validation must remain separate.</p>
+    ${items || '<p class="muted">No NBA research theses have been registered yet.</p>'}
+  </div></div>`;
+}
 
 
 // ---------- Log & sources ----------
@@ -150,6 +176,7 @@ function render() {
     let html = views[tab] ? views[tab]() : null;
     const section = mode === "cbb" ? window.DIME_CBB : window.STIX_PROPS;
     if (html == null && section) { html = section.render(tab, arg, sub); propsView = html != null; }
+    if (mode === "nba" && tab === "results" && html != null) html += thesisRegistryHtml();
     app.innerHTML = html ?? `<p class="pad">Page not found. <a href="${home}">Back to the board</a>.</p>`;
   } catch (e) { console.error(e); app.innerHTML = `<p class="pad">This view hit an error: ${esc(e.message)}. The data may have changed shape — check the <a href="${R("log")}">Log</a>.</p>`; }
   if (propsView) { try { (mode === "cbb" ? window.DIME_CBB : window.STIX_PROPS).bind(tab, arg); } catch (e) { console.error(e); } }
