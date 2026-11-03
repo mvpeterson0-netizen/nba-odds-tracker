@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-03T05:15:22+00:00",
+  "fetched_at": "2026-11-03T05:30:20+00:00",
   "source": "espn",
   "count": 48,
   "game_date": "2026-11-02",
@@ -9,11 +9,11 @@
       "game_id": "401909738",
       "start_utc": "2026-11-03T03:00Z",
       "short_name": "ARIZ VS UCLA",
-      "state": "in",
-      "status": "1:30 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "1:30",
+      "clock": "0:00",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,15 +23,15 @@
         "team_id": "26",
         "abbr": "UCLA",
         "name": "UCLA Bruins",
-        "score": 76,
-        "winner": null,
-        "record": "0-0",
+        "score": 84,
+        "winner": true,
+        "record": "1-0",
         "home_record": "0-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "Trent Perry",
-            "value": "17"
+            "value": "21"
           },
           "rebounds": {
             "player": "Eric Dailey Jr.",
@@ -42,8 +42,8 @@
             "value": "7"
           },
           "rating": {
-            "player": "Jaylen Petty",
-            "value": "13 PTS, 6 REB, 7 AST"
+            "player": "Trent Perry",
+            "value": "21 PTS"
           }
         },
         "conf_id": "7",
@@ -56,9 +56,9 @@
         "team_id": "12",
         "abbr": "ARIZ",
         "name": "Arizona Wildcats",
-        "score": 70,
-        "winner": null,
-        "record": "0-0",
+        "score": 75,
+        "winner": false,
+        "record": "0-1",
         "home_record": "0-0",
         "away_record": "0-0",
         "leaders": {
@@ -93,11 +93,11 @@
       "game_id": "401926771",
       "start_utc": "2026-11-03T03:30Z",
       "short_name": "MILW @ USC",
-      "state": "in",
-      "status": "3:21 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "3:21",
+      "clock": "0:00",
       "venue": "Galen Center",
       "neutral_site": false,
       "broadcasts": [
@@ -107,10 +107,10 @@
         "team_id": "30",
         "abbr": "USC",
         "name": "USC Trojans",
-        "score": 89,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
+        "score": 95,
+        "winner": true,
+        "record": "1-0",
+        "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -140,11 +140,11 @@
         "team_id": "270",
         "abbr": "MILW",
         "name": "Milwaukee Panthers",
-        "score": 56,
-        "winner": null,
-        "record": "0-0",
+        "score": 63,
+        "winner": false,
+        "record": "0-1",
         "home_record": "0-0",
-        "away_record": "0-0",
+        "away_record": "0-1",
         "leaders": {
           "points": {
             "player": "Amare Hereford",
@@ -177,9 +177,9 @@
       "game_id": "401920769",
       "start_utc": "2026-11-03T03:00Z",
       "short_name": "COLG @ WASH",
-      "state": "in",
-      "status": "End of 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
       "clock": "0:00",
       "venue": "Alaska Airlines Arena",
@@ -192,9 +192,9 @@
         "abbr": "WASH",
         "name": "Washington Huskies",
         "score": 90,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
+        "winner": true,
+        "record": "1-0",
+        "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -225,10 +225,10 @@
         "abbr": "COLG",
         "name": "Colgate Raiders",
         "score": 76,
-        "winner": null,
-        "record": "0-0",
+        "winner": false,
+        "record": "0-1",
         "home_record": "0-0",
-        "away_record": "0-0",
+        "away_record": "0-1",
         "leaders": {
           "points": {
             "player": "Andrew Alekseyenko",
@@ -252,90 +252,6 @@
         "rank": null,
         "loc": "Colgate",
         "nick": "Raiders"
-      },
-      "espn_line": null,
-      "date": "2026-11-02",
-      "p4": true
-    },
-    {
-      "game_id": "401920716",
-      "start_utc": "2026-11-03T03:00Z",
-      "short_name": "EWU @ STAN",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Maples Pavilion",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACCNX"
-      ],
-      "home": {
-        "team_id": "24",
-        "abbr": "STAN",
-        "name": "Stanford Cardinal",
-        "score": 74,
-        "winner": true,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Julius Price",
-            "value": "17"
-          },
-          "rebounds": {
-            "player": "Nick Townsend",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Nick Townsend",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Nick Townsend",
-            "value": "12 PTS, 6 REB"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Stanford",
-        "nick": "Cardinal"
-      },
-      "away": {
-        "team_id": "331",
-        "abbr": "EWU",
-        "name": "Eastern Washington Eagles",
-        "score": 65,
-        "winner": false,
-        "record": "0-1",
-        "home_record": "0-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Alton Hamilton IV",
-            "value": "20"
-          },
-          "rebounds": {
-            "player": "Alton Hamilton IV",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Jalen Griffith",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Alton Hamilton IV",
-            "value": "20 PTS, 9 REB"
-          }
-        },
-        "conf_id": "5",
-        "conf": null,
-        "rank": null,
-        "loc": "Eastern Washington",
-        "nick": "Eagles"
       },
       "espn_line": null,
       "date": "2026-11-02",
@@ -4033,6 +3949,90 @@
         "rank": null,
         "loc": "East Tennessee State",
         "nick": "Buccaneers"
+      },
+      "espn_line": null,
+      "date": "2026-11-02",
+      "p4": true
+    },
+    {
+      "game_id": "401920716",
+      "start_utc": "2026-11-03T03:00Z",
+      "short_name": "EWU @ STAN",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Maples Pavilion",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACCNX"
+      ],
+      "home": {
+        "team_id": "24",
+        "abbr": "STAN",
+        "name": "Stanford Cardinal",
+        "score": 74,
+        "winner": true,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Julius Price",
+            "value": "17"
+          },
+          "rebounds": {
+            "player": "Nick Townsend",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Nick Townsend",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Nick Townsend",
+            "value": "12 PTS, 6 REB"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Stanford",
+        "nick": "Cardinal"
+      },
+      "away": {
+        "team_id": "331",
+        "abbr": "EWU",
+        "name": "Eastern Washington Eagles",
+        "score": 65,
+        "winner": false,
+        "record": "0-1",
+        "home_record": "0-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Alton Hamilton IV",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Alton Hamilton IV",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Jalen Griffith",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Alton Hamilton IV",
+            "value": "20 PTS, 9 REB"
+          }
+        },
+        "conf_id": "5",
+        "conf": null,
+        "rank": null,
+        "loc": "Eastern Washington",
+        "nick": "Eagles"
       },
       "espn_line": null,
       "date": "2026-11-02",
