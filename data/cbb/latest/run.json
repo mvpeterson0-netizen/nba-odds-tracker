@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-03T01:00:45+00:00",
+  "finished_at": "2026-11-03T01:15:20+00:00",
   "game_date": "2026-11-02",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,10 +17,10 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
+    "new_games": 1,
+    "player_rows": 32,
     "unparsed": [],
-    "queued": 0,
+    "queued": 1,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -33,103 +33,13 @@
     },
     "pulled": [
       {
-        "matchup": "Fairleigh Dickinson Knights @ Illinois Fighting Illini",
+        "matchup": "Alcorn St Braves @ Ole Miss Rebels",
         "type": "morning",
         "status": "empty",
         "rows": 0
       },
       {
-        "matchup": "Maryland-Eastern Shore Hawks @ Wake Forest Demon Deacons",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Southern Jaguars @ SMU Mustangs",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Florida A&M Rattlers @ Florida St Seminoles",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Abilene Christian Wildcats @ Colorado Buffaloes",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Ohio State Buckeyes @ BYU Cougars",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Chattanooga Mocs @ Louisville Cardinals",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Chicago St Cougars @ Texas Longhorns",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "La Salle Explorers @ Houston Cougars",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Incarnate Word Cardinals @ Oklahoma St Cowboys",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "North Dakota Fighting Hawks @ Minnesota Golden Gophers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Northwestern St Demons @ Baylor Bears",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "East Tennessee St Buccaneers @ Arizona St Sun Devils",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Colgate Raiders @ Washington Huskies",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Eastern Washington Eagles @ Stanford Cardinal",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Montana Grizzlies @ Oregon Ducks",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Milwaukee Panthers @ USC Trojans",
+        "matchup": "Long Beach St 49ers @ Utah Utes",
         "type": "morning",
         "status": "empty",
         "rows": 0
@@ -137,17 +47,14 @@
     ],
     "errors": [],
     "events": 121,
-    "p4_events": 28,
+    "p4_events": 24,
     "unmatched": [],
-    "due": 17,
+    "due": 2,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "not_due",
       "morning_due": false,
-      "pregame_due": 8,
-      "pull_type": "pregame",
-      "rows": 64,
-      "credits_last": 2
+      "pregame_due": 0
     },
     "status": "ok"
   }
