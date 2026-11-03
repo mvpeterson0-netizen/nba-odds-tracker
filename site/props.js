@@ -8,7 +8,7 @@ const R = (path) => `#/${MODE === "cbb" ? "cbb/" : ""}${path}`;       // in-app 
 
 const TREND = { minGames: 3, lastN: 3, pct: 15 };   // trend arrow: last 3 games vs season avg, ±15%
 const HIT_N = 10;                                   // hit rate window (games played)
-const P = { day: 0, game: "", q: "", pmk: {}, rf: { mk: "core", pos: "", opp: "" }, dmk: "player_points", dall: false, bset: "core", subFrom: "" };   // day: -1 yesterday, 0 today, 1 tomorrow
+const P = { day: 0, game: "", q: "", pmk: {}, rf: { mk: "core", pos: "", opp: "", min: 3 }, dmk: "player_points", dall: false, bset: "core", subFrom: "" };   // day: -1 yesterday, 0 today, 1 tomorrow
 let P_TYPING = null;
 
 const PX = () => (MODE === "cbb" ? D.cbb : D.props);
@@ -298,7 +298,10 @@ function viewPlayer(aid, sub) {
       <div><span>HIT</span>${hitHtml(f)}<small>over line</small></div>
       <div><span>TREND</span>${trendHtml(f, true)}</div>
     </div>
-    <div class="panel"><h3>${esc(mkAbbr(m))} by game</h3><div class="chart">${chartSVG(aid, mk)}</div>
+  `;
+  // NBA: the line-vs-opponent-defense chart replaces the plain "by game" chart; fall back to the plain one when it can't be drawn
+  const defPanel = MODE === "nba" ? defTrendPanel(aid, mk) : "";
+  h += defPanel || `<div class="panel"><h3>${esc(mkAbbr(m))} by game</h3><div class="chart">${chartSVG(aid, mk)}</div>
       <div class="legend"><span><i class="lg-act"></i>Actual</span><span><i class="lg-line"></i>Pre-game line</span><span><b class="dot" style="background:var(--over)"></b>Over</span><span><b class="dot" style="background:var(--under)"></b>Under</span><span><b class="dot" style="background:var(--accent)"></b>No line</span></div></div>`;
   // game log
   const logs = [...(PX().logs[aid] || [])].reverse();
@@ -373,65 +376,48 @@ function viewResults() {
   const opps = [...new Set(allGraded.map(oppOf).filter(Boolean))].sort();
   const mkOpts = [["core", "Core: PTS · REB · AST · 3PM"], ["combo", "Combos: PRA · P+R · P+A · R+A"],
     ...MK_ORDER.filter((id) => PX().markets.some((m) => m.id === id) && allGraded.some((r) => r.mk === id)).map((id) => [id, mkById(id).label])];
-  const touched = F.mk !== "core" || F.pos || F.opp;
+  const touched = F.mk !== "core" || F.pos || F.opp || F.min !== 3;
   let h = `<div class="filters rfilters">
     <label>Market <select id="r-mk">${mkOpts.map(([v, l]) => `<option value="${esc(v)}" ${F.mk === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
     <label>Position <select id="r-pos"><option value="">All</option>${POS_LIST.map((p) => `<option ${F.pos === p ? "selected" : ""}>${p}</option>`).join("")}</select></label>
     <label>Against <select id="r-opp"><option value="">All teams</option>${opps.map((t) => `<option ${F.opp === t ? "selected" : ""}>${esc(t)}</option>`).join("")}</select></label>
+    <label>Min graded <select id="r-min">${[1, 3, 5, 8].map((n) => `<option value="${n}" ${F.min === n ? "selected" : ""}>${n}+ props</option>`).join("")}</select></label>
     ${touched ? `<button type="button" class="fclear" id="r-clear">Clear filters</button>` : ""}</div>`;
 
-  // base = position + opponent filters; shown = base + the chosen market(s)
+  // base = position + opponent filters; the chosen market(s) apply to the player table
   const base = (r) => gradedRow(r) && (!F.pos || posOf(r.aid) === F.pos) && (!F.opp || oppOf(r) === F.opp);
-  const shown = (r) => base(r) && COLS.includes(r.mk);
-  const dates = lineDates().filter((d) => propRows(d).some(shown)).reverse();
-  h += `<p class="callout">Green = over, red = under.${F.pos ? ` Position ${esc(F.pos)} only.` : ""}${F.opp ? ` Players facing ${esc(F.opp)} only.` : ""}</p>`;
-  if (!dates.length) return h + `<p class="muted">No graded props match these filters.</p>`;
-  const tally = (rs) => { const t = { over: 0, under: 0 }; rs.forEach((r) => { if (t[r.l.res] != null) t[r.l.res]++; }); return t; };
-  dates.forEach((d, di) => {
-    const rs = propRows(d).filter(shown);
-    const t = tally(rs);
-    h += `<details class="panel resday" ${di === 0 ? "open" : ""}><summary><b>${fmtDate(d)}</b> <span class="muted small"><span class="res over">${t.over} over</span> · <span class="res under">${t.under} under</span></span></summary>`;
-    const gids = [...new Set(rs.map((r) => r.gid))].sort((a, b) => String(gameOf(a).start).localeCompare(String(gameOf(b).start)));
-    for (const gid of gids) {
-      const g = gameOf(gid);
-      const byP = new Map();
-      for (const r of rs.filter((x) => x.gid === gid)) { if (!byP.has(r.aid)) byP.set(r.aid, {}); byP.get(r.aid)[r.mk] = r.l; }
-      const team = (aid) => (PX().players[aid] || {}).team || "";
-      const ptsLine = (m) => (m.player_points || {}).line || 0;
-      h += `<div class="rgame"><div class="rgame-h"><b>${esc(g.away || "")} ${g.as ?? ""}</b> @ <b>${esc(g.home || "")} ${g.hs ?? ""}</b>${g.final ? ` <span class="muted small">Final</span>` : ""}</div>
-        <table class="rgrid"><thead><tr><th>Player</th>${COLS.map((mk) => `<th>${esc(mkById(mk).short)}</th>`).join("")}</tr></thead><tbody>`;
-      for (const tm of [g.away, g.home]) {
-        const plist = [...byP.entries()].filter(([aid]) => team(aid) === tm).sort((a, b) => ptsLine(b[1]) - ptsLine(a[1]));
-        if (!plist.length) continue;
-        h += `<tr class="rteam"><td colspan="${COLS.length + 1}">${esc(tm)}</td></tr>`;
-        for (const [aid, ms] of plist) {
-          const nm = (PX().players[aid] || {}).name || aid;
-          h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${face(aid, nm)}<span class="nm">${esc(nm)}</span></a></td>` + COLS.map((mk) => {
-            const l = ms[mk];
-            if (!l) return `<td class="rc na">—</td>`;
-            return `<td class="rc ${l.res}" title="Line ${n1(l.line)}, actual ${n1(l.act)}: ${l.res}"><b>${n1(l.line)}</b><small>act ${n1(l.act)}</small></td>`;
-          }).join("") + `</tr>`;
-        }
-      }
-      // Players whose team didn't match either side (rare name/roster mismatches)
-      const other = [...byP.keys()].filter((aid) => team(aid) !== g.away && team(aid) !== g.home);
-      for (const aid of other) {
-        const ms = byP.get(aid), nm = (PX().players[aid] || {}).name || aid;
-        h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${face(aid, nm)}<span class="nm">${esc(nm)}</span></a></td>` + COLS.map((mk) => { const l = ms[mk]; return l ? `<td class="rc ${l.res}"><b>${n1(l.line)}</b><small>act ${n1(l.act)}</small></td>` : `<td class="rc na">—</td>`; }).join("") + `</tr>`;
-      }
-      h += `</tbody></table></div>`;
-    }
-    h += `</details>`;
-  });
-  // season summary by market (follows the position and opponent filters; shows every market)
+  const tally = (rs) => { const t = { over: 0, under: 0, diff: 0 }; rs.forEach((r) => { if (t[r.l.res] != null) t[r.l.res]++; t.diff += r.l.act - r.l.line; }); return t; };
+  const pct = (t) => (t.over + t.under ? Math.round((t.over / (t.over + t.under)) * 100) + "%" : "—");
   const allRows = allGraded.filter(base);
-  h += `<div class="panel"><h3>Season so far${F.pos || F.opp ? " (filtered)" : ""}</h3><div class="scroll"><table><thead><tr><th>Market</th><th class="num">Over</th><th class="num">Under</th><th class="num">Over %</th></tr></thead><tbody>`;
+  h += `<p class="callout">Season to date. Each cell is the over–under record, with the average of (actual − line) below it. Green = mostly overs, red = mostly unders.${F.pos ? ` Position ${esc(F.pos)} only.` : ""}${F.opp ? ` Players facing ${esc(F.opp)} only.` : ""}</p>`;
+
+  // season by market (follows the position/opponent filters; always shows every market)
+  h += `<div class="panel"><h3>Season by market${F.pos || F.opp ? " (filtered)" : ""}</h3><div class="scroll"><table><thead><tr><th>Market</th><th class="num">Over</th><th class="num">Under</th><th class="num">Over %</th><th class="num">Avg vs line</th></tr></thead><tbody>`;
   for (const m of PX().markets) {
-    const t = tally(allRows.filter((r) => r.mk === m.id)), dec2 = t.over + t.under;
-    h += `<tr><td>${esc(m.label)}</td><td class="num">${t.over}</td><td class="num">${t.under}</td><td class="num">${dec2 ? Math.round((t.over / dec2) * 100) + "%" : "—"}</td></tr>`;
+    const t = tally(allRows.filter((r) => r.mk === m.id)), n = t.over + t.under;
+    if (!n && !["player_points", "player_rebounds", "player_assists", "player_threes"].includes(m.id)) continue;
+    h += `<tr><td>${esc(m.label)}</td><td class="num">${t.over}</td><td class="num">${t.under}</td><td class="num">${pct(t)}</td><td class="num">${n ? sgn(t.diff / n) : "—"}</td></tr>`;
   }
   h += `</tbody></table></div></div>`;
-  return h;
+
+  // one row per player: over–under record for the chosen market(s) across the whole season
+  const byP = new Map();
+  for (const r of allRows.filter((x) => COLS.includes(x.mk))) { if (!byP.has(r.aid)) byP.set(r.aid, []); byP.get(r.aid).push(r); }
+  const plist = [...byP.entries()].map(([aid, rs]) => ({ aid, rs, t: tally(rs) })).filter((x) => x.t.over + x.t.under >= F.min)
+    .sort((a, b) => (b.t.over + b.t.under) - (a.t.over + a.t.under) || b.t.over - a.t.over);
+  if (!plist.length) return h + `<p class="muted">No players match these filters.</p>`;
+  const cell = (rs) => {
+    if (!rs.length) return `<td class="rc na">—</td>`;
+    const t = tally(rs), n = t.over + t.under, o = t.over / n;
+    return `<td class="rc ${o >= 0.6 ? "over" : o <= 0.4 ? "under" : "even"}" title="${t.over} over, ${t.under} under; average actual − line ${sgn(t.diff / n)}"><b>${t.over}–${t.under}</b><small>${sgn(t.diff / n)}</small></td>`;
+  };
+  h += `<div class="panel"><h3>Players · ${plist.length}</h3><div class="scroll"><table class="rgrid rseason"><thead><tr><th>Player</th>${COLS.map((mk) => `<th>${esc(mkById(mk).short)}</th>`).join("")}${COLS.length > 1 ? `<th>All</th>` : ""}</tr></thead><tbody>`;
+  for (const { aid, rs } of plist) {
+    const p = PX().players[aid] || {}, nm = p.name || aid;
+    h += `<tr><td class="rname"><a href="#/player/${encodeURIComponent(aid)}">${face(aid, nm)}<span class="nm">${esc(nm)}</span> <span class="muted small">${esc(p.team || "")}${p.pos && p.pos !== "NA" ? " · " + esc(p.pos) : ""}</span></a></td>` +
+      COLS.map((mk) => cell(rs.filter((r) => r.mk === mk))).join("") + (COLS.length > 1 ? cell(rs) : "") + `</tr>`;
+  }
+  return h + `</tbody></table></div></div>`;
 }
 
 // ---------- Defense ----------
@@ -496,12 +482,94 @@ function viewDefense() {
   return h + `</div>`;
 }
 
+
+// ---------- Line trend vs opponent defense (player page) ----------
+// For each game, the opponent's defensive rank against the player's position for the selected stat, using only games
+// played BEFORE that game's date (so it's what you could have known then). 1 = gives up the most vs the line.
+const DEF_ASOF_N = 3;      // a defense needs this many graded player-games (at that position and market) to be ranked
+let DEF_CACHE = { key: null, map: null };
+function defEntries() {
+  const key = PX().generated_utc;
+  if (DEF_CACHE.key === key && DEF_CACHE.map) return DEF_CACHE.map;
+  const map = {};
+  for (const d of lineDates()) for (const r of propRows(d)) {
+    const l = r.l, pos = posOf(r.aid), opp = oppOf(r);
+    if (!l || l.act == null || !["over", "under", "push"].includes(l.res) || !POS_LIST.includes(pos) || !opp) continue;
+    (map[`${r.mk}|${pos}`] = map[`${r.mk}|${pos}`] || []).push({ d, opp, diff: l.act - l.line });
+  }
+  DEF_CACHE = { key, map };
+  return map;
+}
+function defAsOf(mk, pos, opp, date) {
+  const agg = {};
+  for (const e of defEntries()[`${mk}|${pos}`] || []) if (e.d < date) { const t = (agg[e.opp] = agg[e.opp] || { n: 0, s: 0 }); t.n++; t.s += e.diff; }
+  const ranked = Object.entries(agg).filter(([, t]) => t.n >= DEF_ASOF_N).map(([team, t]) => ({ team, diff: t.s / t.n, n: t.n })).sort((a, b) => b.diff - a.diff);
+  const i = ranked.findIndex((r) => r.team === opp);
+  return i < 0 ? null : { rank: i + 1, of: ranked.length, diff: ranked[i].diff, n: ranked[i].n };
+}
+function defTrendRows(aid, mk) {
+  const p = PX().players[aid] || {}, lines = PX().lines[aid] || {}, st = mkById(mk).stat;
+  const logByG = Object.fromEntries((PX().logs[aid] || []).map((r) => [r.g, r]));
+  return Object.entries(lines).filter(([, ms]) => ms[mk]).map(([gid, ms]) => {
+    const g = gameOf(gid), home = p.team === g.home, opp = home ? g.away : g.home, l = ms[mk], lg = logByG[gid];
+    return { gid, d: g.date, start: g.start, opp, home, line: l.line, res: l.res, act: l.act != null ? l.act : lg && lg.p && lg[st] != null ? lg[st] : null,
+      def: POS_LIST.includes(p.pos) ? defAsOf(mk, p.pos, opp, g.date) : null };
+  }).sort((a, b) => String(a.start).localeCompare(String(b.start))).slice(-15);
+}
+function defTrendSVG(rows) {
+  const W = 640, H = 270, L = 36, Rr = 40, T = 24, B = 34;
+  const x = (i) => L + 10 + i * ((W - L - Rr - 20) / Math.max(1, rows.length - 1));
+  const vals = rows.flatMap((r) => [r.line, r.act].filter((v) => v != null));
+  const hi0 = Math.max(...vals), lo0 = Math.min(...vals), pad = Math.max(2, (hi0 - lo0) * 0.18);
+  const lo = Math.max(0, Math.floor(lo0 - pad)), hi = Math.ceil(hi0 + pad);
+  const y = (v) => T + (H - T - B) * (1 - (v - lo) / (hi - lo));
+  const yr = (rk, of) => T + (H - T - B) * ((rk - 1) / Math.max(1, of - 1));      // rank 1 (worst defense) at the top
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Line vs opponent defensive rank by game">`;
+  for (const v of [lo, (lo + hi) / 2, hi]) s += `<line x1="${L}" x2="${W - Rr}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 4}" y="${y(v) + 5}" font-size="14" text-anchor="end" fill="var(--muted)">${Math.round(v)}</text>`;
+  s += `<text x="${W - Rr + 6}" y="${T + 4}" font-size="12" fill="var(--def)">worst D</text><text x="${W - Rr + 6}" y="${H - B + 4}" font-size="12" fill="var(--def)">best D</text>`;
+  const seg = (pts, attrs) => { if (pts.length > 1) s += `<polyline points="${pts.join(" ")}" fill="none" ${attrs}/>`; };
+  seg(rows.map((r, i) => `${x(i)},${y(r.line)}`), `stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 4"`);
+  // defense rank series (orange), gaps where a team wasn't rankable yet
+  let run = [];
+  rows.forEach((r, i) => { if (r.def) run.push(`${x(i)},${yr(r.def.rank, r.def.of)}`); else { seg(run, `stroke="var(--def)" stroke-width="2"`); run = []; } });
+  seg(run, `stroke="var(--def)" stroke-width="2"`);
+  seg(rows.filter((r) => r.act != null).map((r) => `${x(rows.indexOf(r))},${y(r.act)}`), `stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"`);
+  rows.forEach((r, i) => {
+    s += `<rect x="${x(i) - 4}" y="${y(r.line) - 4}" width="8" height="8" transform="rotate(45 ${x(i)} ${y(r.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>Line ${n1(r.line)}</title></rect>`;
+    s += `<text x="${x(i)}" y="${y(r.line) - 11}" font-size="13" text-anchor="middle" fill="var(--muted)">${n1(r.line)}</text>`;
+    if (r.def) s += `<circle cx="${x(i)}" cy="${yr(r.def.rank, r.def.of)}" r="5" fill="var(--def)" stroke="var(--panel)" stroke-width="2"><title>${esc(r.opp)} defense: #${r.def.rank} of ${r.def.of} (${sgn(r.def.diff)} vs line, ${r.def.n} games)</title></circle>
+      <text x="${x(i)}" y="${yr(r.def.rank, r.def.of) + (yr(r.def.rank, r.def.of) < T + 16 ? 18 : -9)}" font-size="12" font-weight="700" text-anchor="middle" fill="var(--def)">#${r.def.rank}</text>`;
+    if (r.act != null) {
+      const col = r.res === "over" ? "var(--over)" : r.res === "under" ? "var(--under)" : "var(--accent)";
+      s += `<circle cx="${x(i)}" cy="${y(r.act)}" r="5.5" fill="${col}" stroke="var(--panel)" stroke-width="2"><title>${esc(r.d)} ${r.home ? "vs" : "@"} ${esc(r.opp)}: ${n1(r.act)}</title></circle>`
+      s += `<text x="${x(i)}" y="${y(r.act) + (r.act >= r.line ? -11 : 21)}" font-size="13" font-weight="600" text-anchor="middle" fill="var(--ink)">${n1(r.act)}</text>`;
+    }
+    s += `<text x="${x(i)}" y="${H - 18}" font-size="13" text-anchor="middle" fill="var(--muted)">${esc((r.opp || "").slice(0, 3))}</text><text x="${x(i)}" y="${H - 4}" font-size="11" text-anchor="middle" fill="var(--muted)">${r.act == null ? "next" : ""}</text>`;
+  });
+  return s + `</svg>`;
+}
+function defTrendPanel(aid, mk) {
+  const p = PX().players[aid] || {};
+  if (!POS_LIST.includes(p.pos)) return "";
+  const rows = defTrendRows(aid, mk);
+  if (rows.length < 2) return "";
+  let h = `<div class="panel"><h3>${esc(mkAbbr(mkById(mk)))} line vs opponent defense</h3><div class="chart">${defTrendSVG(rows)}</div>
+    <div class="legend"><span><i class="lg-line"></i>Line</span><span><i class="lg-act"></i>Actual (<b class="dot" style="background:var(--over)"></b>over / <b class="dot" style="background:var(--under)"></b>under)</span><span><b class="dot" style="background:var(--def)"></b>Opp. defense rank vs ${esc(p.pos)} (1 = worst)</span></div>`;
+  // does he go over more against soft defenses? (thirds of the ranked teams)
+  const g = rows.filter((r) => r.def && (r.res === "over" || r.res === "under"));
+  const soft = g.filter((r) => r.def.rank <= Math.ceil(r.def.of / 3)), hard = g.filter((r) => r.def.rank > r.def.of - Math.ceil(r.def.of / 3));
+  const rec = (a) => `${a.filter((r) => r.res === "over").length}–${a.filter((r) => r.res === "under").length}`;
+  if (g.length) h += `<p class="callout">Over–under vs the line: <b>${rec(soft)}</b> against the weakest third of defenses, <b>${rec(hard)}</b> against the strongest third (${g.length} graded game${g.length === 1 ? "" : "s"}). Ranks use only games before each date, at least ${DEF_ASOF_N} per team; early-season ranks are noisy.</p>`;
+  else h += `<p class="callout">Ranks use only games before each date, at least ${DEF_ASOF_N} graded player-games per defense, so early games have no rank yet.</p>`;
+  return h + `</div>`;
+}
+
 // ---------- Guide ----------
 function viewGuide() {
   return `<div class="panel"><h3>How the player board works</h3><div class="body guide">
     <p><b>Lines.</b> DraftKings and FanDuel player props are pulled from The Odds API twice per game: at <b>8:00 AM Central</b> on game day (retried until the books post them) and again about <b>1 hour before tip</b>. Until the 1-hour pull lands, the board shows the 8 AM line with an <span class="chip amchip">8 AM</span> chip; after it, ▲/▼ shows how far the line moved since 8 AM. The 1-hour line is the one graded. Only the core markets (points, rebounds, assists, threes) are pulled. PRA and the two-stat combos are built from those lines (two-stat combos: sum + 0.5; PRA: the sum, matching how DraftKings and FanDuel have most often set them in this season's captures), priced at -110/-110 and graded like any other line. Steals and blocks are no longer pulled; earlier captures still show. Nothing is pulled after tip. DraftKings is the line shown and graded; FanDuel is used when DraftKings has no line for that player and stat. Hover or tap a line to see both books.</p>
     <p><b>Grading.</b> Once the game is final, the actual stat from ESPN's box score is compared with the line: over, under or push. A player who had a line but didn't play is <i>void</i>, with ESPN's reason when it gives one.</p>
-    <p><b>Results filters.</b> The Results tab can be filtered by market, by position (ESPN's G / F / C), and by <i>Against</i>, the team the player was facing. The day tallies and game tables follow all three; the season table follows position and Against and always shows every market.</p>
+    <p><b>Results filters.</b> The Results tab can be filtered by market, by position (ESPN's G / F / C), and by <i>Against</i>, the team the player was facing. The page is season to date: one row per player with an over–under record per market (and the average of actual − line). “Min graded” hides players with too few graded props. The market summary above it follows position and Against and always shows every market.</p>
     <p><b>Defense.</b> For every graded player-game, the opponent's defense is credited with actual minus line. Each team's average of that, by position and market, ranks the worst defenses first (higher = gives up more than the books expect). Using the line as the baseline keeps a team from looking weak just because it faced stars. Teams with fewer than ${DEF_MIN_N} graded player-games are listed after the ranked ones. Early in the season these samples are small, so treat the rankings as a lean, not a conclusion.</p>
     <p><b>AVG / L5.</b> Season average and last-5 average over games the player actually played, counting only games before the date being viewed.</p>
     <p><b>HIT.</b> How many of his last ${HIT_N} games played went over <i>this</i> line (not the lines he had in those games).</p>
@@ -530,7 +598,8 @@ window.STIX_PROPS = {
     on("r-mk", "change", (e) => { P.rf.mk = e.target.value; render(); });
     on("r-pos", "change", (e) => { P.rf.pos = e.target.value; render(); });
     on("r-opp", "change", (e) => { P.rf.opp = e.target.value; render(); });
-    on("r-clear", "click", () => { P.rf = { mk: "core", pos: "", opp: "" }; render(); });
+    on("r-min", "change", (e) => { P.rf.min = Number(e.target.value); render(); });
+    on("r-clear", "click", () => { P.rf = { mk: "core", pos: "", opp: "", min: 3 }; render(); });
     on("d-mk", "change", (e) => { P.dmk = e.target.value; render(); });
     on("d-all", "change", (e) => { P.dall = e.target.value === "1"; render(); });
     document.querySelectorAll("[data-dmk]").forEach((b) => b.addEventListener("click", () => { P.dmk = b.dataset.dmk; render(); }));
