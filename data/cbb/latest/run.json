@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-03T02:00:47+00:00",
+  "finished_at": "2026-11-03T02:15:20+00:00",
   "game_date": "2026-11-02",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,10 +17,10 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 4,
-    "player_rows": 126,
+    "new_games": 5,
+    "player_rows": 158,
     "unparsed": [],
-    "queued": 4,
+    "queued": 5,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -31,69 +31,17 @@
       "ODDS_API_KEY_2": 408,
       "ODDS_API_KEY_20K": 16188
     },
-    "pulled": [
-      {
-        "matchup": "Ohio State Buckeyes @ BYU Cougars",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Florida A&M Rattlers @ Florida St Seminoles",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Northwestern St Demons @ Baylor Bears",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "East Tennessee St Buccaneers @ Arizona St Sun Devils",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Colgate Raiders @ Washington Huskies",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Eastern Washington Eagles @ Stanford Cardinal",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Montana Grizzlies @ Oregon Ducks",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Milwaukee Panthers @ USC Trojans",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      }
-    ],
+    "pulled": [],
     "errors": [],
-    "events": 113,
-    "p4_events": 16,
+    "events": 95,
+    "p4_events": 15,
     "unmatched": [],
-    "due": 8,
+    "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "not_due",
       "morning_due": false,
-      "pregame_due": 5,
-      "pull_type": "pregame",
-      "rows": 40,
-      "credits_last": 2
+      "pregame_due": 0
     },
     "status": "ok"
   }
