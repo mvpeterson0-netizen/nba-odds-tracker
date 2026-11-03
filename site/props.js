@@ -489,6 +489,37 @@ function defTable(mk, pos, date) {
 }
 const sgn = (v) => (v > 0 ? "+" : "") + v.toFixed(1);
 
+// A team's next game that hasn't started (not final, not live), today or later; earliest tip first.
+function nextGameFor(team) {
+  const t = todayET();
+  return Object.entries(PX().games)
+    .filter(([, g]) => (g.home === team || g.away === team) && !g.final && g.state !== "in" && g.date >= t)
+    .sort((a, b) => String(a[1].start).localeCompare(String(b[1].start)))[0] || null;
+}
+// Expanded detail under a Defense row: the opposing players at this position in the defense's next game, with their line.
+// Markets with no book line (steals / blocks) show the player's season average instead.
+function defPlayersHtml(team, mk, pos) {
+  const ng = nextGameFor(team);
+  if (!ng) return `<p class="muted small">${esc(team)} has no upcoming game on the schedule.</p>`;
+  const [gid, g] = ng, oppTeam = g.home === team ? g.away : g.home, avgMode = DEF_AVG.includes(mk);
+  const head = `<div class="defx-h"><b>${esc(gLabel(gid))}</b> <span class="muted">${esc(g.date)} · ${fmtTime(g.start)}</span></div>`;
+  const rows = Object.entries(PX().players)
+    .filter(([aid, p]) => p.team === oppTeam && p.pos === pos)
+    .map(([aid, p]) => {
+      const l = ((PX().lines[aid] || {})[gid] || {})[mk];
+      return { aid, p, l, avg: avgMode ? form(aid, mk).avg : null };
+    })
+    .filter((r) => (avgMode ? r.avg != null : r.l))
+    .sort((a, b) => (avgMode ? b.avg - a.avg : b.l.line - a.l.line));
+  if (!rows.length) return head + `<p class="muted small">No ${esc(oppTeam)} ${pos} ${avgMode ? "averages" : "lines"} for ${esc(mkById(mk).short)} yet. ${avgMode ? "" : esc(linesDueText(gid))}</p>`;
+  let h = head + `<table class="defx-t"><thead><tr><th>Player</th><th class="num">${avgMode ? "Avg" : "Line"}</th>${avgMode ? "" : `<th class="num">O/U</th>`}</tr></thead><tbody>`;
+  for (const r of rows) {
+    h += `<tr><td class="bname"><a href="#/player/${encodeURIComponent(r.aid)}/${mk}">${face(r.aid, r.p.name)}<span class="nm">${esc(r.p.name)}</span></a> <span class="muted small">${esc(oppTeam)}</span></td>` +
+      (avgMode ? `<td class="num"><b>${n1(Number(r.avg.toFixed(1)))}</b></td>` : `<td class="num" title="${esc(lineTip(r.l))}">${lineCell(r.l)}</td><td class="num muted small">${lineOdds(r.l)}</td>`) + `</tr>`;
+  }
+  return h + `</tbody></table>`;
+}
+
 function viewDefense() {
   if (!PX()) return `<p class="muted">No prop data yet.</p>`;
   const ent = defEntries();
@@ -512,8 +543,9 @@ function viewDefense() {
     const rows = defTable(P.dmk, pos), list = rows.slice(0, DEF_TOP);
     h += `<div class="panel"><h3>${esc(mkById(P.dmk).short)} vs ${pos}</h3><div class="scroll"><table class="deftbl"><thead><tr><th>#</th><th>Defense</th><th class="num">Avg</th><th class="num">${DEF_AVG.includes(P.dmk) ? "vs avg" : "vs line"}</th><th class="num">${DEF_AVG.includes(P.dmk) ? "Above" : "Over"}</th><th class="num">N</th></tr></thead><tbody>`;
     list.forEach((r) => {
-      h += `<tr class="${r.n < DEF_MIN_N ? "lowN" : ""}"><td class="muted">${r.rank}</td><td><b>${esc(r.team)}</b></td><td class="num">${r.n ? n1(Number(r.act.toFixed(1))) : "—"}</td>
-        <td class="num ${r.diff > 0 ? "win" : r.diff < 0 ? "loss" : ""}">${r.n ? sgn(r.diff) : "—"}</td><td class="num">${r.over == null ? "—" : Math.round(r.over * 100) + "%"}</td><td class="num">${r.n}</td></tr>`;
+      h += `<tr class="deft ${r.n < DEF_MIN_N ? "lowN" : ""}"><td class="muted">${r.rank}</td><td><button type="button" class="linkbtn deftm" aria-expanded="false" data-dteam="${esc(r.team)}">${esc(r.team)}</button></td><td class="num">${r.n ? n1(Number(r.act.toFixed(1))) : "—"}</td>
+        <td class="num ${r.diff > 0 ? "win" : r.diff < 0 ? "loss" : ""}">${r.n ? sgn(r.diff) : "—"}</td><td class="num">${r.over == null ? "—" : Math.round(r.over * 100) + "%"}</td><td class="num">${r.n}</td></tr>
+        <tr class="defx" hidden><td colspan="6">${defPlayersHtml(r.team, P.dmk, pos)}</td></tr>`;
     });
     h += `</tbody></table></div></div>`;
   }
@@ -629,6 +661,11 @@ window.STIX_PROPS = {
     on("r-mk", "change", (e) => { P.rf.mk = e.target.value; render(); });
     on("d-mk", "change", (e) => { P.dmk = e.target.value; render(); });
     document.querySelectorAll("[data-dmk]").forEach((b) => b.addEventListener("click", () => { P.dmk = b.dataset.dmk; render(); }));
+    // Defense tab: tap a team to show / hide the opposing players at that position in its next game (no re-render)
+    document.querySelectorAll("[data-dteam]").forEach((b) => b.addEventListener("click", () => {
+      const x = b.closest("tr").nextElementSibling, open = x.hidden;
+      x.hidden = !open; b.setAttribute("aria-expanded", String(open)); b.closest("tr").classList.toggle("open", open);
+    }));
     on("p-q", "input", (e) => { P.q = e.target.value; clearTimeout(P_TYPING); P_TYPING = setTimeout(() => { render(); const el = document.getElementById("p-q"); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }, 200); });
     document.querySelectorAll("[data-pmk]").forEach((b) => b.addEventListener("click", () => { P.pmk[decodeURIComponent(arg)] = b.dataset.pmk; render(); }));
     const onTab = document.querySelector(".mtabs button.on");

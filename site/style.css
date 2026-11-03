@@ -263,6 +263,15 @@ ul.nolines .gline { margin-left: 4px; }
 .defgrid tr.sel td { background: var(--chip); }
 .linkbtn { font: inherit; border: 0; background: transparent; color: var(--accent); cursor: pointer; padding: 0; font-weight: 600; }
 .deftbl tr.lowN td { color: var(--muted); }
+.deftbl .deftm::after { content: " ▸"; font-weight: 400; color: var(--muted); }
+.deftbl tr.open .deftm::after { content: " ▾"; }
+.deftbl tr.open td { background: var(--chip); }
+.deftbl tr.defx[hidden] { display: none; }
+.deftbl tr.defx > td { padding: 8px 10px 12px; background: var(--chip); white-space: normal; }
+.defx-h { margin-bottom: 6px; font-size: 13px; }
+.defx-t { width: 100%; }
+.defx-t td, .defx-t th { padding: 4px 6px; }
+.defx-t .bname a { color: inherit; text-decoration: none; }
 @media (max-width: 1000px) { .grid3 { grid-template-columns: 1fr; } }
 .rseason td.rc.even { background: transparent; }
 .rseason td.rc small { display: block; }
