@@ -463,13 +463,32 @@ function viewResults() {
 const DEF_MIN_N = 5;       // fewer graded player-games than this and the row is greyed ("thin sample")
 const DEF_K = 5;           // shrinkage strength (extra games at exactly the line)
 const DEF_TOP = 10;
+// Steals and blocks have no book lines any more, so for those the baseline is the player's own average over his earlier
+// games (at least AVG_MIN played games before the one being judged); the opponent is credited with (actual − that average).
+const DEF_AVG = ["player_steals", "player_blocks"];
+const AVG_MIN = 3;
+function avgGames(aid, mk) {
+  const st = mkById(mk).stat, p = PX().players[aid] || {};
+  const rs = (PX().logs[aid] || []).filter((r) => r.p && r[st] != null && r.opp).sort((a, b) => a.d.localeCompare(b.d) || String(a.g).localeCompare(String(b.g)));
+  const out = []; let sum = 0;
+  rs.forEach((r, i) => {
+    if (i >= AVG_MIN) out.push({ gid: r.g, d: r.d, opp: r.opp, home: r.ha === "home", line: sum / i, act: r[st], res: r[st] > sum / i ? "over" : r[st] < sum / i ? "under" : "push", avg: true, team: p.team });
+    sum += r[st];
+  });
+  return out;
+}
 let DEF_CACHE = { key: null, map: null };
 function defEntries() {
   const key = PX().generated_utc;
   if (DEF_CACHE.key === key && DEF_CACHE.map) return DEF_CACHE.map;
   const map = {};
+  for (const mk of DEF_AVG) for (const aid of Object.keys(PX().logs || {})) {
+    const pos = posOf(aid); if (!POS_LIST.includes(pos)) continue;
+    for (const g of avgGames(aid, mk)) (map[`${mk}|${pos}`] = map[`${mk}|${pos}`] || []).push({ d: g.d, opp: g.opp, diff: g.act - g.line, act: g.act, res: g.res });
+  }
   for (const d of lineDates()) for (const r of propRows(d)) {
     const l = r.l, pos = posOf(r.aid), opp = oppOf(r);
+    if (DEF_AVG.includes(r.mk)) continue;
     if (!l || l.act == null || !["over", "under", "push"].includes(l.res) || !POS_LIST.includes(pos) || !opp) continue;
     (map[`${r.mk}|${pos}`] = map[`${r.mk}|${pos}`] || []).push({ d, opp, diff: l.act - l.line, act: l.act, res: l.res });
   }
@@ -488,7 +507,7 @@ function defTable(mk, pos, date) {
   }
   const rows = allTeams().map((team) => {
     const t = agg[team] || { n: 0, s: 0, a: 0, o: 0, dec: 0 };
-    return { team, n: t.n, diff: t.n ? t.s / t.n : null, act: t.n ? t.a / t.n : null, over: t.dec ? t.o / t.dec : null, score: t.s / (t.n + DEF_K) };
+    return { team, n: t.n, diff: t.n ? t.s / t.n : null, act: t.n ? t.a / t.n : null, over: t.dec ? t.o / t.dec : null, score: Math.round((t.s / (t.n + DEF_K)) * 1e9) / 1e9 };
   }).sort((a, b) => b.score - a.score || b.n - a.n || a.team.localeCompare(b.team));
   const of = rows.length;
   for (let i = 0; i < of;) {      // tied scores (e.g. teams with no games yet) share the middle rank of their group
@@ -522,7 +541,7 @@ function viewDefense() {
   h += `<div class="grid3">`;
   for (const pos of POS_LIST) {
     const rows = defTable(P.dmk, pos), list = P.dall ? rows : rows.slice(0, DEF_TOP);
-    h += `<div class="panel"><h3>${esc(mkById(P.dmk).short)} vs ${pos}</h3><div class="scroll"><table class="deftbl"><thead><tr><th>#</th><th>Defense</th><th class="num">Avg</th><th class="num">vs line</th><th class="num">Over</th><th class="num">N</th></tr></thead><tbody>`;
+    h += `<div class="panel"><h3>${esc(mkById(P.dmk).short)} vs ${pos}</h3><div class="scroll"><table class="deftbl"><thead><tr><th>#</th><th>Defense</th><th class="num">Avg</th><th class="num">${DEF_AVG.includes(P.dmk) ? "vs avg" : "vs line"}</th><th class="num">${DEF_AVG.includes(P.dmk) ? "Above" : "Over"}</th><th class="num">N</th></tr></thead><tbody>`;
     list.forEach((r) => {
       h += `<tr class="${r.n < DEF_MIN_N ? "lowN" : ""}"><td class="muted">${r.rank}</td><td><b>${esc(r.team)}</b></td><td class="num">${r.n ? n1(Number(r.act.toFixed(1))) : "—"}</td>
         <td class="num ${r.diff > 0 ? "win" : r.diff < 0 ? "loss" : ""}">${r.n ? sgn(r.diff) : "—"}</td><td class="num">${r.over == null ? "—" : Math.round(r.over * 100) + "%"}</td><td class="num">${r.n}</td></tr>`;
@@ -548,6 +567,8 @@ function defAsOf(mk, pos, opp, date) {
 }
 function defTrendRows(aid, mk) {
   const p = PX().players[aid] || {}, lines = PX().lines[aid] || {}, st = mkById(mk).stat;
+  if (DEF_AVG.includes(mk)) return avgGames(aid, mk).map((r) => ({ ...r, start: gameOf(r.gid).start || r.d, def: POS_LIST.includes(p.pos) ? defAsOf(mk, p.pos, r.opp, r.d) : null }))
+    .sort((a, b) => String(a.start).localeCompare(String(b.start))).slice(-chartDims(true).games);
   const logByG = Object.fromEntries((PX().logs[aid] || []).map((r) => [r.g, r]));
   return Object.entries(lines).filter(([, ms]) => ms[mk]).map(([gid, ms]) => {
     const g = gameOf(gid), home = p.team === g.home, opp = home ? g.away : g.home, l = ms[mk], lg = logByG[gid];
@@ -563,7 +584,7 @@ function defTrendSVG(rows) {
   const lay = labelLayer([L, 4, W - R, H - B - 1]);
   rows.forEach((r, i) => { lay.marker(x(i), y(r.line)); if (r.act != null) lay.marker(x(i), y(r.act)); if (r.def) lay.marker(x(i), yr(r.def.rank, r.def.of)); });
   let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Line vs opponent defensive rank by game">`;
-  for (const v of [lo, (lo + hi) / 2, hi]) s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 6}" y="${y(v) + fs * 0.35}" font-size="${fs}" text-anchor="end" fill="var(--muted)">${Math.round(v)}</text>`;
+  for (const v of [lo, (lo + hi) / 2, hi]) s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 6}" y="${y(v) + fs * 0.35}" font-size="${fs}" text-anchor="end" fill="var(--muted)">${Number.isInteger(v) ? v : v.toFixed(1)}</text>`;
   // right axis: defense rank, 30 (worst) at the top to 1 (toughest) at the bottom
   const of = (rows.find((r) => r.def) || { def: { of: 30 } }).def.of;
   for (const [v, yy] of [[of, T], [Math.round((of + 1) / 2), (T + H - B) / 2], [1, H - B]]) s += `<text x="${W - R + 6}" y="${yy + fs * 0.35}" font-size="${fs}" font-weight="700" fill="var(--def)">${v}</text>`;
@@ -573,11 +594,11 @@ function defTrendSVG(rows) {
   seg(rows.map((r, i) => (r.act != null ? `${x(i)},${y(r.act)}` : "")).filter(Boolean), `stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"`);
   let marks = "", text = "";
   rows.forEach((r, i) => {
-    marks += `<rect x="${x(i) - 4.5}" y="${y(r.line) - 4.5}" width="9" height="9" transform="rotate(45 ${x(i)} ${y(r.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>Line ${n1(r.line)}</title></rect>`;
+    marks += `<rect x="${x(i) - 4.5}" y="${y(r.line) - 4.5}" width="9" height="9" transform="rotate(45 ${x(i)} ${y(r.line)})" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"><title>${r.avg ? "Average before this game" : "Line"} ${n1(r.line)}</title></rect>`;
     if (r.def) {
       const cy = yr(r.def.rank, r.def.of), thin = r.def.n < DEF_THIN_N, none = r.def.n === 0;
       const tip = none ? `${esc(r.opp)}: no earlier games against this position, so it sits in the middle (n/a)`
-        : `${esc(r.opp)} defense: #${r.def.rank} of ${r.def.of} (${sgn(r.def.diff)} vs line, ${r.def.n} earlier game${r.def.n === 1 ? "" : "s"})${thin ? ". Small sample: a rough lean" : ""}. ${r.def.frozen ? (r.def.backfilled ? "Frozen as of that date (rebuilt from the data after the fact)" : "Frozen on game day") : "Preview: freezes on game day"}.`;
+        : `${esc(r.opp)} defense: #${r.def.rank} of ${r.def.of} (${sgn(r.def.diff)} vs ${r.avg ? "average" : "line"}, ${r.def.n} earlier game${r.def.n === 1 ? "" : "s"})${thin ? ". Small sample: a rough lean" : ""}. ${r.def.frozen ? (r.def.backfilled ? "Frozen as of that date (rebuilt from the data after the fact)" : "Frozen on game day") : "Preview: freezes on game day"}.`;
       marks += `<circle cx="${x(i)}" cy="${cy}" r="5.5" fill="${thin ? "var(--panel)" : "var(--def)"}" stroke="var(--def)" stroke-width="2"><title>${tip}</title></circle>`;
     }
     if (r.act != null) {
@@ -601,14 +622,14 @@ function defTrendPanel(aid, mk) {
   if (!POS_LIST.includes(p.pos)) return "";
   const rows = defTrendRows(aid, mk);
   if (rows.length < 2) return "";
-  return `<div class="panel"><h3>${esc(mkAbbr(mkById(mk)))} line vs opponent defense</h3><div class="chart">${defTrendSVG(rows)}</div>
-    <div class="legend"><span><i class="lg-line"></i>Line</span><span><i class="lg-act"></i>Actual</span><span><b class="dot" style="background:var(--def)"></b>Opp. defense rank (30 = worst)</span></div></div>`;
+  return `<div class="panel"><h3>${esc(mkAbbr(mkById(mk)))} ${DEF_AVG.includes(mk) ? "average" : "line"} vs opponent defense</h3><div class="chart">${defTrendSVG(rows)}</div>
+    <div class="legend"><span><i class="lg-line"></i>${DEF_AVG.includes(mk) ? "Avg" : "Line"}</span><span><i class="lg-act"></i>Actual</span><span><b class="dot" style="background:var(--def)"></b>Opp. defense rank (30 = worst)</span></div></div>`;
 }
 
 // ---------- Guide ----------
 function viewGuide() {
   return `<div class="panel"><h3>How the player board works</h3><div class="body guide">
-    <p><b>Lines.</b> DraftKings and FanDuel player props are pulled from The Odds API twice per game: at <b>8:00 AM Central</b> on game day (retried until the books post them) and again about <b>1 hour before tip</b>. Until the 1-hour pull lands, the board shows the 8 AM line with an <span class="chip amchip">8 AM</span> chip; after it, ▲/▼ shows how far the line moved since 8 AM. The 1-hour line is the one graded. Only the core markets (points, rebounds, assists, threes) are pulled. PRA and the two-stat combos are built from those lines (two-stat combos: sum + 0.5; PRA: the sum, matching how DraftKings and FanDuel have most often set them in this season's captures), priced at -110/-110 and graded like any other line. Steals and blocks are no longer pulled; earlier captures still show. Nothing is pulled after tip. DraftKings is the line shown and graded; FanDuel is used when DraftKings has no line for that player and stat. Hover or tap a line to see both books.</p>
+    <p><b>Lines.</b> DraftKings and FanDuel player props are pulled from The Odds API twice per game: at <b>8:00 AM Central</b> on game day (retried until the books post them) and again about <b>1 hour before tip</b>. Until the 1-hour pull lands, the board shows the 8 AM line with an <span class="chip amchip">8 AM</span> chip; after it, ▲/▼ shows how far the line moved since 8 AM. The 1-hour line is the one graded. Only the core markets (points, rebounds, assists, threes) are pulled. PRA and the two-stat combos are built from those lines (two-stat combos: sum + 0.5; PRA: the sum, matching how DraftKings and FanDuel have most often set them in this season's captures), priced at -110/-110 and graded like any other line. Steals and blocks are no longer pulled; earlier captures still show. Their opponent-defense chart uses the player's own average over his earlier games (at least ${AVG_MIN}) in place of a line, and the defense is credited with actual minus that average. Nothing is pulled after tip. DraftKings is the line shown and graded; FanDuel is used when DraftKings has no line for that player and stat. Hover or tap a line to see both books.</p>
     <p><b>Grading.</b> Once the game is final, the actual stat from ESPN's box score is compared with the line: over, under or push. A player who had a line but didn't play is <i>void</i>, with ESPN's reason when it gives one.</p>
     <p><b>Results filters.</b> The Results tab can be filtered by market, by position (ESPN's G / F / C), and by <i>Against</i>, the team the player was facing. The page is season to date: one row per player with an over–under record per market (and the average of actual − line). “Min graded” hides players with too few graded props. The market summary above it follows position and Against and always shows every market.</p>
     <p><b>Defense.</b> For every graded player-game, the opponent's defense is credited with actual minus line. Each team's average of that, by position and market, ranks all 30 defenses: 30 = worst (gives up the most over the books' lines), 1 = toughest. A team's average is pulled toward zero as if it had ${DEF_K} extra games at exactly the line, so a defense with few games can't jump to the extremes and one with none sits in the middle. That is why every game on a player's chart gets a rank, even early on or for centers (few graded games per team). On player pages the rank is frozen: a snapshot is saved for each game date (using only earlier games) and never rewritten, so a game keeps the rank it had on the day it was played even as defenses change; snapshots for dates before this feature existed were rebuilt from the data afterward, and a game on a future date shows a preview until its date arrives. Hollow markers (*) on the player chart mean fewer than ${DEF_THIN_N} earlier games at that position, so treat them as a rough lean. Greyed rows on the Defense tab have fewer than ${DEF_MIN_N} graded player-games. Early in the season these samples are small.</p>

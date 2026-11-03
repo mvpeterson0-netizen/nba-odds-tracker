@@ -20,6 +20,8 @@ from pathlib import Path
 
 from .build import MARKETS
 
+AVG_MARKETS = ("player_steals", "player_blocks")   # no book lines: baseline is the player's average over earlier games
+AVG_MIN = 3                            # played games needed before a player has a baseline
 K = 5                                  # shrinkage: extra games at exactly the line
 POS = ("G", "F", "C")
 FOLDER = "defense"
@@ -46,6 +48,25 @@ def entries(props: dict) -> dict[str, list[dict]]:
     return out
 
 
+def avg_entries(props: dict) -> dict[str, list[dict]]:
+    """Same shape as entries(), for markets without lines: actual minus the player's average over his earlier games."""
+    out: dict[str, list[dict]] = {}
+    stat = {m["id"]: m["stat"] for m in MARKETS}
+    for aid, rows in props["logs"].items():
+        pos = (props["players"].get(aid) or {}).get("pos")
+        if pos not in POS:
+            continue
+        for mk in AVG_MARKETS:
+            st = stat[mk]
+            rs = sorted((r for r in rows if r.get("p") and r.get(st) is not None and r.get("opp")), key=lambda r: (r["d"], str(r["g"])))
+            total = 0.0
+            for i, r in enumerate(rs):
+                if i >= AVG_MIN:
+                    out.setdefault(f"{mk}|{pos}", []).append({"d": r["d"], "opp": r["opp"], "diff": r[st] - total / i})
+                total += r[st]
+    return out
+
+
 def table(rows: list[dict], teams: list[str], before: str) -> list[list]:
     """Every team, worst first: [team, rank, n, avg_vs_line|None]. Only games dated before `before` count."""
     agg: dict[str, list[float]] = {}
@@ -57,7 +78,7 @@ def table(rows: list[dict], teams: list[str], before: str) -> list[list]:
     ranked = []
     for t in teams:
         n, s = agg.get(t, (0, 0.0))
-        ranked.append({"team": t, "n": n, "s": s, "score": s / (n + K)})
+        ranked.append({"team": t, "n": n, "s": s, "score": round(s / (n + K), 9)})   # rounded so float noise can't break ties differently from the site
     ranked.sort(key=lambda r: (-r["score"], -r["n"], r["team"]))
     size = len(ranked)
     i = 0
@@ -77,6 +98,12 @@ def snapshot(props: dict, day: str) -> dict[str, list[list]]:
     return {f"{m['id']}|{p}": table(ent.get(f"{m['id']}|{p}", []), teams, day) for m in MARKETS for p in POS}
 
 
+def avg_snapshot(props: dict, day: str) -> dict[str, list[list]]:
+    ent = avg_entries(props)
+    teams = sorted({t for g in props["games"].values() for t in (g.get("home"), g.get("away")) if t})
+    return {f"{mk}|{p}": table(ent.get(f"{mk}|{p}", []), teams, day) for mk in AVG_MARKETS for p in POS}
+
+
 def _ready(props: dict, day: str) -> bool:
     """Every game before `day` that has finished has its box score in, so the snapshot doesn't miss late results."""
     logged = {r["g"] for rs in props["logs"].values() for r in rs}
@@ -94,7 +121,14 @@ def freeze(data_dir: Path, props: dict, today: str, now: datetime | None = None)
     dates = sorted({g["date"] for g in props["games"].values() if g.get("date") and g["date"] <= today})
     for day in dates:
         path = folder / f"{day}.json"
+        apath = folder / f"{day}.avg.json"
         if path.exists():
+            if not apath.exists():          # steals/blocks ranks (average baseline) added after the first snapshots: write once, same rules
+                folder.mkdir(parents=True, exist_ok=True)
+                apath.write_text(json.dumps({
+                    "date": day, "frozen_at": now.isoformat(timespec="seconds"), "method": {"k": K, "avg_min": AVG_MIN},
+                    "backfilled": True, "ranks": avg_snapshot(props, day)}, separators=(",", ":")) + "\n", encoding="utf-8")
+                wrote.append(day + ".avg")
             continue
         backfilled = day < today
         ready = _ready(props, day)
@@ -107,6 +141,9 @@ def freeze(data_dir: Path, props: dict, today: str, now: datetime | None = None)
             "date": day, "frozen_at": now.isoformat(timespec="seconds"), "method": {"k": K},
             "backfilled": backfilled, "prior_games_complete": ready,
             "ranks": snapshot(props, day)}, separators=(",", ":")) + "\n", encoding="utf-8")
+        apath.write_text(json.dumps({
+            "date": day, "frozen_at": now.isoformat(timespec="seconds"), "method": {"k": K, "avg_min": AVG_MIN},
+            "backfilled": backfilled, "ranks": avg_snapshot(props, day)}, separators=(",", ":")) + "\n", encoding="utf-8")
         wrote.append(day)
     return wrote
 
@@ -114,10 +151,17 @@ def freeze(data_dir: Path, props: dict, today: str, now: datetime | None = None)
 def load(data_dir: Path) -> dict[str, dict]:
     """date -> {"b": backfilled?, "r": {key: rows}} for the site."""
     out = {}
-    for f in sorted((data_dir / FOLDER).glob("*.json")):
+    for f in sorted((data_dir / FOLDER).glob("????-??-??.json")):
         try:
             s = json.loads(f.read_text(encoding="utf-8"))
             out[s["date"]] = {"b": bool(s.get("backfilled")), "r": s["ranks"]}
+        except Exception:
+            continue
+    for f in sorted((data_dir / FOLDER).glob("????-??-??.avg.json")):      # steals/blocks (average baseline) replace the older line-based keys
+        try:
+            s = json.loads(f.read_text(encoding="utf-8"))
+            if s["date"] in out:
+                out[s["date"]]["r"] = {**out[s["date"]]["r"], **s["ranks"]}
         except Exception:
             continue
     return out
