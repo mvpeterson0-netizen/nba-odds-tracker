@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-04T02:41:28+00:00",
+  "fetched_at": "2026-11-04T02:45:21+00:00",
   "source": "espn",
   "count": 14,
   "game_date": "2026-11-03",
@@ -9,11 +9,11 @@
       "game_id": "401920422",
       "start_utc": "2026-11-04T00:30Z",
       "short_name": "DREX @ UVA",
-      "state": "in",
-      "status": "0:55 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "0:55",
+      "clock": "0:00",
       "venue": "John Paul Jones Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,10 +23,10 @@
         "team_id": "258",
         "abbr": "UVA",
         "name": "Virginia Cavaliers",
-        "score": 86,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
+        "score": 89,
+        "winner": true,
+        "record": "1-0",
+        "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -56,14 +56,14 @@
         "team_id": "2182",
         "abbr": "DREX",
         "name": "Drexel Dragons",
-        "score": 56,
-        "winner": null,
-        "record": "0-0",
+        "score": 60,
+        "winner": false,
+        "record": "0-1",
         "home_record": "0-0",
-        "away_record": "0-0",
+        "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "LaDricus Pittman",
+            "player": "Latief Lorenzano-White",
             "value": "11"
           },
           "rebounds": {
@@ -71,12 +71,12 @@
             "value": "4"
           },
           "assists": {
-            "player": "Josh Reed",
+            "player": "LaDricus Pittman",
             "value": "4"
           },
           "rating": {
             "player": "Latief Lorenzano-White",
-            "value": "9 PTS"
+            "value": "11 PTS"
           }
         },
         "conf_id": "10",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-04T01:00Z",
       "short_name": "UAPB @ ARK",
       "state": "in",
-      "status": "12:53 - 2nd",
+      "status": "11:45 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "12:53",
+      "clock": "11:45",
       "venue": "Bud Walton Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "8",
         "abbr": "ARK",
         "name": "Arkansas Razorbacks",
-        "score": 66,
+        "score": 72,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -115,19 +115,19 @@
         "leaders": {
           "points": {
             "player": "Jeremiah Wilkinson",
-            "value": "17"
+            "value": "19"
           },
           "rebounds": {
             "player": "Jeremiah Wilkinson",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Jeremiah Wilkinson",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Jeremiah Wilkinson",
-            "value": "17 PTS"
+            "value": "19 PTS, 6 REB, 3 STL"
           }
         },
         "conf_id": "23",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-04T01:00Z",
       "short_name": "NOLA @ LSU",
       "state": "in",
-      "status": "6:32 - 2nd",
+      "status": "5:07 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "6:32",
+      "clock": "5:07",
       "venue": "Pete Maravich Assembly Center",
       "neutral_site": false,
       "broadcasts": [
@@ -191,7 +191,7 @@
         "team_id": "99",
         "abbr": "LSU",
         "name": "LSU Tigers",
-        "score": 84,
+        "score": 88,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -224,7 +224,7 @@
         "team_id": "2443",
         "abbr": "NOLA",
         "name": "LSU New Orleans Privateers",
-        "score": 38,
+        "score": 41,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -232,11 +232,11 @@
         "leaders": {
           "points": {
             "player": "Yohandry Ortiz",
-            "value": "8"
+            "value": "9"
           },
           "rebounds": {
             "player": "Solomon Ominu",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Yohandry Ortiz",
@@ -244,7 +244,7 @@
           },
           "rating": {
             "player": "Solomon Ominu",
-            "value": "7 REB"
+            "value": "8 REB"
           }
         },
         "conf_id": "25",
@@ -262,10 +262,10 @@
       "start_utc": "2026-11-04T01:00Z",
       "short_name": "CLE @ MIZ",
       "state": "in",
-      "status": "5:02 - 2nd",
+      "status": "4:14 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "5:02",
+      "clock": "4:14",
       "venue": "Mizzou Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -275,7 +275,7 @@
         "team_id": "142",
         "abbr": "MIZ",
         "name": "Missouri Tigers",
-        "score": 97,
+        "score": 99,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -308,19 +308,19 @@
         "team_id": "325",
         "abbr": "CLE",
         "name": "Cleveland State Vikings",
-        "score": 39,
+        "score": 42,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Rayvon Griffith",
+            "player": "Dre Jones",
             "value": "11"
           },
           "rebounds": {
             "player": "Dre Jones",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Gavin Headings",
@@ -328,7 +328,7 @@
           },
           "rating": {
             "player": "Dre Jones",
-            "value": "10 PTS, 7 REB"
+            "value": "11 PTS, 8 REB"
           }
         },
         "conf_id": "45",
@@ -346,10 +346,10 @@
       "start_utc": "2026-11-04T01:00Z",
       "short_name": "ALST @ TA&M",
       "state": "in",
-      "status": "12:46 - 2nd",
+      "status": "11:35 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "12:46",
+      "clock": "11:35",
       "venue": "Reed Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -392,7 +392,7 @@
         "team_id": "2011",
         "abbr": "ALST",
         "name": "Alabama State Hornets",
-        "score": 43,
+        "score": 46,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -404,7 +404,7 @@
           },
           "rebounds": {
             "player": "Damarion Bonds",
-            "value": "9"
+            "value": "10"
           },
           "assists": {
             "player": "Mike James",
@@ -430,10 +430,10 @@
       "start_utc": "2026-11-04T01:00Z",
       "short_name": "LIP @ IOWA",
       "state": "in",
-      "status": "9:14 - 2nd",
+      "status": "7:41 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:14",
+      "clock": "7:41",
       "venue": "Carver-Hawkeye Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -443,7 +443,7 @@
         "team_id": "2294",
         "abbr": "IOWA",
         "name": "Iowa Hawkeyes",
-        "score": 54,
+        "score": 58,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -459,7 +459,7 @@
           },
           "assists": {
             "player": "Kael Combs",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Cooper Koch",
@@ -476,7 +476,7 @@
         "team_id": "288",
         "abbr": "LIP",
         "name": "Lipscomb Bisons",
-        "score": 35,
+        "score": 41,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
@@ -484,7 +484,7 @@
         "leaders": {
           "points": {
             "player": "Takai Simpkins",
-            "value": "14"
+            "value": "18"
           },
           "rebounds": {
             "player": "Devyn Martin",
@@ -495,8 +495,8 @@
             "value": "4"
           },
           "rating": {
-            "player": "Devyn Martin",
-            "value": "11 PTS, 7 REB"
+            "player": "Takai Simpkins",
+            "value": "18 PTS"
           }
         },
         "conf_id": "46",
@@ -514,10 +514,10 @@
       "start_utc": "2026-11-04T01:00Z",
       "short_name": "SDST @ KSU",
       "state": "in",
-      "status": "4:38 - 2nd",
+      "status": "2:51 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "4:38",
+      "clock": "2:51",
       "venue": "Bramlage Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -527,15 +527,15 @@
         "team_id": "2306",
         "abbr": "KSU",
         "name": "Kansas State Wildcats",
-        "score": 56,
+        "score": 60,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Brandon Rechsteiner",
-            "value": "14"
+            "player": "Pape N'Diaye",
+            "value": "16"
           },
           "rebounds": {
             "player": "Pape N'Diaye",
@@ -547,7 +547,7 @@
           },
           "rating": {
             "player": "Pape N'Diaye",
-            "value": "13 PTS, 8 REB"
+            "value": "16 PTS, 8 REB"
           }
         },
         "conf_id": "8",
@@ -560,7 +560,7 @@
         "team_id": "2571",
         "abbr": "SDST",
         "name": "South Dakota State Jackrabbits",
-        "score": 58,
+        "score": 60,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -580,7 +580,7 @@
           },
           "rating": {
             "player": "Davis Kern",
-            "value": "19 PTS, 6 REB"
+            "value": "19 PTS, 7 REB"
           }
         },
         "conf_id": "49",
