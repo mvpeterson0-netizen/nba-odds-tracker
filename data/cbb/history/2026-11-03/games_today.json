@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-04T02:00:21+00:00",
+  "fetched_at": "2026-11-04T02:15:19+00:00",
   "source": "espn",
   "count": 14,
   "game_date": "2026-11-03",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-04T00:30Z",
       "short_name": "DREX @ UVA",
       "state": "in",
-      "status": "15:03 - 2nd",
+      "status": "10:34 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "15:03",
+      "clock": "10:34",
       "venue": "John Paul Jones Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "258",
         "abbr": "UVA",
         "name": "Virginia Cavaliers",
-        "score": 56,
+        "score": 60,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -56,7 +56,7 @@
         "team_id": "2182",
         "abbr": "DREX",
         "name": "Drexel Dragons",
-        "score": 36,
+        "score": 42,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -68,11 +68,11 @@
           },
           "rebounds": {
             "player": "Josh Reed",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "Josh Reed",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "LaDricus Pittman",
@@ -94,7 +94,7 @@
       "start_utc": "2026-11-04T01:00Z",
       "short_name": "UAPB @ ARK",
       "state": "in",
-      "status": "0:00 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
       "clock": "0:00",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-04T00:30Z",
       "short_name": "SHSU @ ALA",
       "state": "in",
-      "status": "11:06 - 2nd",
+      "status": "5:07 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "11:06",
+      "clock": "5:07",
       "venue": "Coleman Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -191,27 +191,27 @@
         "team_id": "333",
         "abbr": "ALA",
         "name": "Alabama Crimson Tide",
-        "score": 71,
+        "score": 85,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Tarris Bouie",
-            "value": "13"
+            "player": "London Jemison",
+            "value": "15"
           },
           "rebounds": {
             "player": "Drew Fielder",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Amari Allen",
             "value": "4"
           },
           "rating": {
-            "player": "Tarris Bouie",
-            "value": "13 PTS"
+            "player": "London Jemison",
+            "value": "15 PTS"
           }
         },
         "conf_id": "23",
@@ -224,23 +224,23 @@
         "team_id": "2534",
         "abbr": "SHSU",
         "name": "Sam Houston Bearkats",
-        "score": 45,
+        "score": 58,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Zion Pipkin",
-            "value": "11"
+            "player": "Justin Begg",
+            "value": "13"
           },
           "rebounds": {
             "player": "Enel St. Bernard",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Zion Pipkin",
-            "value": "3"
+            "value": "5"
           },
           "rating": {
             "player": "Zion Pipkin",
@@ -252,6 +252,762 @@
         "rank": null,
         "loc": "Sam Houston",
         "nick": "Bearkats"
+      },
+      "espn_line": null,
+      "date": "2026-11-03",
+      "p4": true
+    },
+    {
+      "game_id": "401920376",
+      "start_utc": "2026-11-04T00:00Z",
+      "short_name": "COPP @ VT",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Cassell Coliseum",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACCNX"
+      ],
+      "home": {
+        "team_id": "259",
+        "abbr": "VT",
+        "name": "Virginia Tech Hokies",
+        "score": 88,
+        "winner": true,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Ben Hammond",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Amani Hansberry",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Ben Hammond",
+            "value": "8"
+          },
+          "rating": {
+            "player": "Ben Hammond",
+            "value": "20 PTS, 8 AST, 7 STL"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Virginia Tech",
+        "nick": "Hokies"
+      },
+      "away": {
+        "team_id": "2154",
+        "abbr": "COPP",
+        "name": "Coppin State Eagles",
+        "score": 54,
+        "winner": false,
+        "record": "0-1",
+        "home_record": "0-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Brendan Johnson",
+            "value": "17"
+          },
+          "rebounds": {
+            "player": "Brendan Johnson",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Brendan Johnson",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Brendan Johnson",
+            "value": "17 PTS, 6 REB"
+          }
+        },
+        "conf_id": "16",
+        "conf": null,
+        "rank": null,
+        "loc": "Coppin State",
+        "nick": "Eagles"
+      },
+      "espn_line": null,
+      "date": "2026-11-03",
+      "p4": true
+    },
+    {
+      "game_id": "401920304",
+      "start_utc": "2026-11-04T00:00Z",
+      "short_name": "HAMP @ GT",
+      "state": "in",
+      "status": "1:14 - 2nd",
+      "completed": false,
+      "period": 2,
+      "clock": "1:14",
+      "venue": "McCamish Pavilion",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACCNX"
+      ],
+      "home": {
+        "team_id": "59",
+        "abbr": "GT",
+        "name": "Georgia Tech Yellow Jackets",
+        "score": 74,
+        "winner": null,
+        "record": "0-0",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Colby Garland",
+            "value": "16"
+          },
+          "rebounds": {
+            "player": "Cole Kirouac",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Colby Garland",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Colby Garland",
+            "value": "16 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Georgia Tech",
+        "nick": "Yellow Jackets"
+      },
+      "away": {
+        "team_id": "2261",
+        "abbr": "HAMP",
+        "name": "Hampton Pirates",
+        "score": 53,
+        "winner": null,
+        "record": "0-0",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Etienne Strothers",
+            "value": "10"
+          },
+          "rebounds": {
+            "player": "Max Frazier",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Nehemiah Lawrence",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Nehemiah Lawrence",
+            "value": "10 PTS"
+          }
+        },
+        "conf_id": "10",
+        "conf": null,
+        "rank": null,
+        "loc": "Hampton",
+        "nick": "Pirates"
+      },
+      "espn_line": null,
+      "date": "2026-11-03",
+      "p4": true
+    },
+    {
+      "game_id": "401909551",
+      "start_utc": "2026-11-04T00:00Z",
+      "short_name": "WAG @ BC",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Conte Forum",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACCNX"
+      ],
+      "home": {
+        "team_id": "103",
+        "abbr": "BC",
+        "name": "Boston College Eagles",
+        "score": 76,
+        "winner": true,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Money Williams",
+            "value": "22"
+          },
+          "rebounds": {
+            "player": "Brandon Benjamin",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Money Williams",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Money Williams",
+            "value": "22 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Boston College",
+        "nick": "Eagles"
+      },
+      "away": {
+        "team_id": "2681",
+        "abbr": "WAG",
+        "name": "Wagner Seahawks",
+        "score": 50,
+        "winner": false,
+        "record": "0-1",
+        "home_record": "0-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Kareem Watson",
+            "value": "13"
+          },
+          "rebounds": {
+            "player": "Taj Bryant",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Taj Bryant",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Taj Bryant",
+            "value": "10 PTS, 6 REB"
+          }
+        },
+        "conf_id": "19",
+        "conf": null,
+        "rank": null,
+        "loc": "Wagner",
+        "nick": "Seahawks"
+      },
+      "espn_line": null,
+      "date": "2026-11-03",
+      "p4": true
+    },
+    {
+      "game_id": "401921808",
+      "start_utc": "2026-11-04T01:00Z",
+      "short_name": "NOLA @ LSU",
+      "state": "in",
+      "status": "16:16 - 2nd",
+      "completed": false,
+      "period": 2,
+      "clock": "16:16",
+      "venue": "Pete Maravich Assembly Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "99",
+        "abbr": "LSU",
+        "name": "LSU Tigers",
+        "score": 64,
+        "winner": null,
+        "record": "0-0",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Donovan Dent",
+            "value": "13"
+          },
+          "rebounds": {
+            "player": "Saliou Niang",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Donovan Dent",
+            "value": "8"
+          },
+          "rating": {
+            "player": "Saliou Niang",
+            "value": "11 PTS, 9 REB, 6 STL"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "LSU",
+        "nick": "Tigers"
+      },
+      "away": {
+        "team_id": "2443",
+        "abbr": "NOLA",
+        "name": "LSU New Orleans Privateers",
+        "score": 17,
+        "winner": null,
+        "record": "0-0",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Kedrick Osby",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Solomon Ominu",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Kyran Ratliff",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Eze Nwakamma",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "25",
+        "conf": null,
+        "rank": null,
+        "loc": "LSU New Orleans",
+        "nick": "Privateers"
+      },
+      "espn_line": null,
+      "date": "2026-11-03",
+      "p4": true
+    },
+    {
+      "game_id": "401921165",
+      "start_utc": "2026-11-04T01:00Z",
+      "short_name": "CLE @ MIZ",
+      "state": "in",
+      "status": "15:23 - 2nd",
+      "completed": false,
+      "period": 2,
+      "clock": "15:23",
+      "venue": "Mizzou Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "142",
+        "abbr": "MIZ",
+        "name": "Missouri Tigers",
+        "score": 71,
+        "winner": null,
+        "record": "0-0",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Jason Crowe Jr.",
+            "value": "16"
+          },
+          "rebounds": {
+            "player": "Bryson Tiller",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Mark Mitchell Jr.",
+            "value": "9"
+          },
+          "rating": {
+            "player": "Jason Crowe Jr.",
+            "value": "16 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Missouri",
+        "nick": "Tigers"
+      },
+      "away": {
+        "team_id": "325",
+        "abbr": "CLE",
+        "name": "Cleveland State Vikings",
+        "score": 25,
+        "winner": null,
+        "record": "0-0",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Rayvon Griffith",
+            "value": "9"
+          },
+          "rebounds": {
+            "player": "Dre Jones",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Gavin Headings",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Dre Jones",
+            "value": "6 PTS, 6 REB"
+          }
+        },
+        "conf_id": "45",
+        "conf": null,
+        "rank": null,
+        "loc": "Cleveland State",
+        "nick": "Vikings"
+      },
+      "espn_line": null,
+      "date": "2026-11-03",
+      "p4": true
+    },
+    {
+      "game_id": "401920806",
+      "start_utc": "2026-11-04T01:00Z",
+      "short_name": "ALST @ TA&M",
+      "state": "in",
+      "status": "Halftime",
+      "completed": false,
+      "period": 1,
+      "clock": "0:00",
+      "venue": "Reed Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "245",
+        "abbr": "TA&M",
+        "name": "Texas A&M Aggies",
+        "score": 44,
+        "winner": null,
+        "record": "0-0",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "PJ Haggerty",
+            "value": "10"
+          },
+          "rebounds": {
+            "player": "Jalen Shelley",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Jalen Reece",
+            "value": "2"
+          },
+          "rating": {
+            "player": "PJ Haggerty",
+            "value": "10 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Texas A&M",
+        "nick": "Aggies"
+      },
+      "away": {
+        "team_id": "2011",
+        "abbr": "ALST",
+        "name": "Alabama State Hornets",
+        "score": 29,
+        "winner": null,
+        "record": "0-0",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Mike James",
+            "value": "10"
+          },
+          "rebounds": {
+            "player": "Damarion Bonds",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Mike James",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Mike James",
+            "value": "10 PTS"
+          }
+        },
+        "conf_id": "26",
+        "conf": null,
+        "rank": null,
+        "loc": "Alabama State",
+        "nick": "Hornets"
+      },
+      "espn_line": null,
+      "date": "2026-11-03",
+      "p4": true
+    },
+    {
+      "game_id": "401920702",
+      "start_utc": "2026-11-04T01:00Z",
+      "short_name": "LIP @ IOWA",
+      "state": "in",
+      "status": "17:43 - 2nd",
+      "completed": false,
+      "period": 2,
+      "clock": "17:43",
+      "venue": "Carver-Hawkeye Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "BTN"
+      ],
+      "home": {
+        "team_id": "2294",
+        "abbr": "IOWA",
+        "name": "Iowa Hawkeyes",
+        "score": 40,
+        "winner": null,
+        "record": "0-0",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Cooper Koch",
+            "value": "9"
+          },
+          "rebounds": {
+            "player": "Trevin Jirak",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Ty'Reek Coleman",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Cooper Koch",
+            "value": "9 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Iowa",
+        "nick": "Hawkeyes"
+      },
+      "away": {
+        "team_id": "288",
+        "abbr": "LIP",
+        "name": "Lipscomb Bisons",
+        "score": 29,
+        "winner": null,
+        "record": "0-1",
+        "home_record": "0-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Takai Simpkins",
+            "value": "13"
+          },
+          "rebounds": {
+            "player": "Devyn Martin",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Mateo Esmeraldo",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Takai Simpkins",
+            "value": "13 PTS"
+          }
+        },
+        "conf_id": "46",
+        "conf": null,
+        "rank": null,
+        "loc": "Lipscomb",
+        "nick": "Bisons"
+      },
+      "espn_line": null,
+      "date": "2026-11-03",
+      "p4": true
+    },
+    {
+      "game_id": "401909796",
+      "start_utc": "2026-11-04T01:00Z",
+      "short_name": "SDST @ KSU",
+      "state": "in",
+      "status": "15:03 - 2nd",
+      "completed": false,
+      "period": 2,
+      "clock": "15:03",
+      "venue": "Bramlage Coliseum",
+      "neutral_site": false,
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "home": {
+        "team_id": "2306",
+        "abbr": "KSU",
+        "name": "Kansas State Wildcats",
+        "score": 44,
+        "winner": null,
+        "record": "0-0",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Brandon Rechsteiner",
+            "value": "14"
+          },
+          "rebounds": {
+            "player": "Pape N'Diaye",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Jaden Schutt",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Brandon Rechsteiner",
+            "value": "14 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Kansas State",
+        "nick": "Wildcats"
+      },
+      "away": {
+        "team_id": "2571",
+        "abbr": "SDST",
+        "name": "South Dakota State Jackrabbits",
+        "score": 38,
+        "winner": null,
+        "record": "0-0",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Jon Mekonnen",
+            "value": "12"
+          },
+          "rebounds": {
+            "player": "Kalen Garry",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Kalen Garry",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Kalen Garry",
+            "value": "9 PTS, 7 REB"
+          }
+        },
+        "conf_id": "49",
+        "conf": null,
+        "rank": null,
+        "loc": "South Dakota State",
+        "nick": "Jackrabbits"
+      },
+      "espn_line": null,
+      "date": "2026-11-03",
+      "p4": true
+    },
+    {
+      "game_id": "401906848",
+      "start_utc": "2026-11-03T23:00Z",
+      "short_name": "WOF @ TENN",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Food City Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "SEC Network"
+      ],
+      "home": {
+        "team_id": "2633",
+        "abbr": "TENN",
+        "name": "Tennessee Volunteers",
+        "score": 90,
+        "winner": true,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "DeWayne Brown II",
+            "value": "17"
+          },
+          "rebounds": {
+            "player": "DeWayne Brown II",
+            "value": "17"
+          },
+          "assists": {
+            "player": "DeWayne Brown II",
+            "value": "3"
+          },
+          "rating": {
+            "player": "DeWayne Brown II",
+            "value": "17 PTS, 17 REB"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 8,
+        "loc": "Tennessee",
+        "nick": "Volunteers"
+      },
+      "away": {
+        "team_id": "2747",
+        "abbr": "WOF",
+        "name": "Wofford Terriers",
+        "score": 59,
+        "winner": false,
+        "record": "0-1",
+        "home_record": "0-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Cam Lowe",
+            "value": "14"
+          },
+          "rebounds": {
+            "player": "Evan Ramsey",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Cutter Sisk",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Evan Ramsey",
+            "value": "8 PTS, 10 REB"
+          }
+        },
+        "conf_id": "24",
+        "conf": null,
+        "rank": null,
+        "loc": "Wofford",
+        "nick": "Terriers"
       },
       "espn_line": null,
       "date": "2026-11-03",
@@ -420,762 +1176,6 @@
         "rank": null,
         "loc": "Stetson",
         "nick": "Hatters"
-      },
-      "espn_line": null,
-      "date": "2026-11-03",
-      "p4": true
-    },
-    {
-      "game_id": "401920376",
-      "start_utc": "2026-11-04T00:00Z",
-      "short_name": "COPP @ VT",
-      "state": "in",
-      "status": "4:20 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "4:20",
-      "venue": "Cassell Coliseum",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACCNX"
-      ],
-      "home": {
-        "team_id": "259",
-        "abbr": "VT",
-        "name": "Virginia Tech Hokies",
-        "score": 77,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Jaylen Curry",
-            "value": "19"
-          },
-          "rebounds": {
-            "player": "Amani Hansberry",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Ben Hammond",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Ben Hammond",
-            "value": "17 PTS, 7 AST, 7 STL"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Virginia Tech",
-        "nick": "Hokies"
-      },
-      "away": {
-        "team_id": "2154",
-        "abbr": "COPP",
-        "name": "Coppin State Eagles",
-        "score": 46,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Brendan Johnson",
-            "value": "17"
-          },
-          "rebounds": {
-            "player": "Brendan Johnson",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Brendan Johnson",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Brendan Johnson",
-            "value": "17 PTS, 6 REB"
-          }
-        },
-        "conf_id": "16",
-        "conf": null,
-        "rank": null,
-        "loc": "Coppin State",
-        "nick": "Eagles"
-      },
-      "espn_line": null,
-      "date": "2026-11-03",
-      "p4": true
-    },
-    {
-      "game_id": "401920304",
-      "start_utc": "2026-11-04T00:00Z",
-      "short_name": "HAMP @ GT",
-      "state": "in",
-      "status": "4:24 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "4:24",
-      "venue": "McCamish Pavilion",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACCNX"
-      ],
-      "home": {
-        "team_id": "59",
-        "abbr": "GT",
-        "name": "Georgia Tech Yellow Jackets",
-        "score": 62,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Colby Garland",
-            "value": "12"
-          },
-          "rebounds": {
-            "player": "Cole Kirouac",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Colby Garland",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Tylis Jordan",
-            "value": "7 PTS, 8 REB, 5 BLK"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Georgia Tech",
-        "nick": "Yellow Jackets"
-      },
-      "away": {
-        "team_id": "2261",
-        "abbr": "HAMP",
-        "name": "Hampton Pirates",
-        "score": 44,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Etienne Strothers",
-            "value": "10"
-          },
-          "rebounds": {
-            "player": "Max Frazier",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Nehemiah Lawrence",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Etienne Strothers",
-            "value": "10 PTS, 4 STL"
-          }
-        },
-        "conf_id": "10",
-        "conf": null,
-        "rank": null,
-        "loc": "Hampton",
-        "nick": "Pirates"
-      },
-      "espn_line": null,
-      "date": "2026-11-03",
-      "p4": true
-    },
-    {
-      "game_id": "401909551",
-      "start_utc": "2026-11-04T00:00Z",
-      "short_name": "WAG @ BC",
-      "state": "in",
-      "status": "2:18 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "2:18",
-      "venue": "Conte Forum",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACCNX"
-      ],
-      "home": {
-        "team_id": "103",
-        "abbr": "BC",
-        "name": "Boston College Eagles",
-        "score": 69,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Money Williams",
-            "value": "18"
-          },
-          "rebounds": {
-            "player": "Brandon Benjamin",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Money Williams",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Money Williams",
-            "value": "18 PTS"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Boston College",
-        "nick": "Eagles"
-      },
-      "away": {
-        "team_id": "2681",
-        "abbr": "WAG",
-        "name": "Wagner Seahawks",
-        "score": 44,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Kareem Watson",
-            "value": "13"
-          },
-          "rebounds": {
-            "player": "Taj Bryant",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Taj Bryant",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Taj Bryant",
-            "value": "10 PTS, 6 REB"
-          }
-        },
-        "conf_id": "19",
-        "conf": null,
-        "rank": null,
-        "loc": "Wagner",
-        "nick": "Seahawks"
-      },
-      "espn_line": null,
-      "date": "2026-11-03",
-      "p4": true
-    },
-    {
-      "game_id": "401921808",
-      "start_utc": "2026-11-04T01:00Z",
-      "short_name": "NOLA @ LSU",
-      "state": "in",
-      "status": "Halftime",
-      "completed": false,
-      "period": 1,
-      "clock": "0:00",
-      "venue": "Pete Maravich Assembly Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "99",
-        "abbr": "LSU",
-        "name": "LSU Tigers",
-        "score": 53,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Michael Ruzic",
-            "value": "12"
-          },
-          "rebounds": {
-            "player": "Saliou Niang",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Donovan Dent",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Saliou Niang",
-            "value": "11 PTS, 8 REB, 6 STL"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "LSU",
-        "nick": "Tigers"
-      },
-      "away": {
-        "team_id": "2443",
-        "abbr": "NOLA",
-        "name": "LSU New Orleans Privateers",
-        "score": 17,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Kedrick Osby",
-            "value": "6"
-          },
-          "rebounds": {
-            "player": "Solomon Ominu",
-            "value": "4"
-          },
-          "assists": {
-            "player": "Kyran Ratliff",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Eze Nwakamma",
-            "value": "3 PTS"
-          }
-        },
-        "conf_id": "25",
-        "conf": null,
-        "rank": null,
-        "loc": "LSU New Orleans",
-        "nick": "Privateers"
-      },
-      "espn_line": null,
-      "date": "2026-11-03",
-      "p4": true
-    },
-    {
-      "game_id": "401921165",
-      "start_utc": "2026-11-04T01:00Z",
-      "short_name": "CLE @ MIZ",
-      "state": "in",
-      "status": "Halftime",
-      "completed": false,
-      "period": 1,
-      "clock": "0:00",
-      "venue": "Mizzou Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "142",
-        "abbr": "MIZ",
-        "name": "Missouri Tigers",
-        "score": 56,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Jason Crowe Jr.",
-            "value": "13"
-          },
-          "rebounds": {
-            "player": "Bryson Tiller",
-            "value": "5"
-          },
-          "assists": {
-            "player": "Mark Mitchell Jr.",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Toni Bryant",
-            "value": "11 PTS, 3 BLK"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Missouri",
-        "nick": "Tigers"
-      },
-      "away": {
-        "team_id": "325",
-        "abbr": "CLE",
-        "name": "Cleveland State Vikings",
-        "score": 18,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Dre Jones",
-            "value": "4"
-          },
-          "rebounds": {
-            "player": "Dre Jones",
-            "value": "5"
-          },
-          "assists": {
-            "player": "Gavin Headings",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Brandon White",
-            "value": "4 PTS"
-          }
-        },
-        "conf_id": "45",
-        "conf": null,
-        "rank": null,
-        "loc": "Cleveland State",
-        "nick": "Vikings"
-      },
-      "espn_line": null,
-      "date": "2026-11-03",
-      "p4": true
-    },
-    {
-      "game_id": "401920806",
-      "start_utc": "2026-11-04T01:00Z",
-      "short_name": "ALST @ TA&M",
-      "state": "in",
-      "status": "1:04 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "1:04",
-      "venue": "Reed Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "245",
-        "abbr": "TA&M",
-        "name": "Texas A&M Aggies",
-        "score": 44,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "PJ Haggerty",
-            "value": "8"
-          },
-          "rebounds": {
-            "player": "Jalen Shelley",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Jalen Reece",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Cade Phillips",
-            "value": "6 PTS"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Texas A&M",
-        "nick": "Aggies"
-      },
-      "away": {
-        "team_id": "2011",
-        "abbr": "ALST",
-        "name": "Alabama State Hornets",
-        "score": 29,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Mike James",
-            "value": "10"
-          },
-          "rebounds": {
-            "player": "Joseph Scott",
-            "value": "4"
-          },
-          "assists": {
-            "player": "Mike James",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Mike James",
-            "value": "10 PTS"
-          }
-        },
-        "conf_id": "26",
-        "conf": null,
-        "rank": null,
-        "loc": "Alabama State",
-        "nick": "Hornets"
-      },
-      "espn_line": null,
-      "date": "2026-11-03",
-      "p4": true
-    },
-    {
-      "game_id": "401920702",
-      "start_utc": "2026-11-04T01:00Z",
-      "short_name": "LIP @ IOWA",
-      "state": "in",
-      "status": "Halftime",
-      "completed": false,
-      "period": 1,
-      "clock": "0:00",
-      "venue": "Carver-Hawkeye Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "BTN"
-      ],
-      "home": {
-        "team_id": "2294",
-        "abbr": "IOWA",
-        "name": "Iowa Hawkeyes",
-        "score": 38,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Cooper Koch",
-            "value": "9"
-          },
-          "rebounds": {
-            "player": "Trevin Jirak",
-            "value": "5"
-          },
-          "assists": {
-            "player": "Ty'Reek Coleman",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Cooper Koch",
-            "value": "9 PTS"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Iowa",
-        "nick": "Hawkeyes"
-      },
-      "away": {
-        "team_id": "288",
-        "abbr": "LIP",
-        "name": "Lipscomb Bisons",
-        "score": 29,
-        "winner": null,
-        "record": "0-1",
-        "home_record": "0-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Takai Simpkins",
-            "value": "13"
-          },
-          "rebounds": {
-            "player": "Devyn Martin",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Mateo Esmeraldo",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Takai Simpkins",
-            "value": "13 PTS"
-          }
-        },
-        "conf_id": "46",
-        "conf": null,
-        "rank": null,
-        "loc": "Lipscomb",
-        "nick": "Bisons"
-      },
-      "espn_line": null,
-      "date": "2026-11-03",
-      "p4": true
-    },
-    {
-      "game_id": "401909796",
-      "start_utc": "2026-11-04T01:00Z",
-      "short_name": "SDST @ KSU",
-      "state": "in",
-      "status": "Halftime",
-      "completed": false,
-      "period": 1,
-      "clock": "0:00",
-      "venue": "Bramlage Coliseum",
-      "neutral_site": false,
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "home": {
-        "team_id": "2306",
-        "abbr": "KSU",
-        "name": "Kansas State Wildcats",
-        "score": 28,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Pape N'Diaye",
-            "value": "8"
-          },
-          "rebounds": {
-            "player": "Pape N'Diaye",
-            "value": "5"
-          },
-          "assists": {
-            "player": "Jaden Schutt",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Pape N'Diaye",
-            "value": "8 PTS"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Kansas State",
-        "nick": "Wildcats"
-      },
-      "away": {
-        "team_id": "2571",
-        "abbr": "SDST",
-        "name": "South Dakota State Jackrabbits",
-        "score": 35,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Davis Kern",
-            "value": "11"
-          },
-          "rebounds": {
-            "player": "Kalen Garry",
-            "value": "7"
-          },
-          "assists": {
-            "player": "EJ Ryans",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Kalen Garry",
-            "value": "9 PTS, 7 REB"
-          }
-        },
-        "conf_id": "49",
-        "conf": null,
-        "rank": null,
-        "loc": "South Dakota State",
-        "nick": "Jackrabbits"
-      },
-      "espn_line": null,
-      "date": "2026-11-03",
-      "p4": true
-    },
-    {
-      "game_id": "401906848",
-      "start_utc": "2026-11-03T23:00Z",
-      "short_name": "WOF @ TENN",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Food City Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "SEC Network"
-      ],
-      "home": {
-        "team_id": "2633",
-        "abbr": "TENN",
-        "name": "Tennessee Volunteers",
-        "score": 90,
-        "winner": true,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "DeWayne Brown II",
-            "value": "17"
-          },
-          "rebounds": {
-            "player": "DeWayne Brown II",
-            "value": "17"
-          },
-          "assists": {
-            "player": "DeWayne Brown II",
-            "value": "3"
-          },
-          "rating": {
-            "player": "DeWayne Brown II",
-            "value": "17 PTS, 17 REB"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 8,
-        "loc": "Tennessee",
-        "nick": "Volunteers"
-      },
-      "away": {
-        "team_id": "2747",
-        "abbr": "WOF",
-        "name": "Wofford Terriers",
-        "score": 59,
-        "winner": false,
-        "record": "0-1",
-        "home_record": "0-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Cam Lowe",
-            "value": "14"
-          },
-          "rebounds": {
-            "player": "Evan Ramsey",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Cutter Sisk",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Evan Ramsey",
-            "value": "8 PTS, 10 REB"
-          }
-        },
-        "conf_id": "24",
-        "conf": null,
-        "rank": null,
-        "loc": "Wofford",
-        "nick": "Terriers"
       },
       "espn_line": null,
       "date": "2026-11-03",
