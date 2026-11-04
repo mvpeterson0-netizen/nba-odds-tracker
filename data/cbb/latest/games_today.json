@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-04T02:30:18+00:00",
+  "fetched_at": "2026-11-04T02:41:28+00:00",
   "source": "espn",
   "count": 14,
   "game_date": "2026-11-03",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-04T00:30Z",
       "short_name": "DREX @ UVA",
       "state": "in",
-      "status": "4:54 - 2nd",
+      "status": "0:55 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "4:54",
+      "clock": "0:55",
       "venue": "John Paul Jones Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "258",
         "abbr": "UVA",
         "name": "Virginia Cavaliers",
-        "score": 77,
+        "score": 86,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -34,7 +34,7 @@
             "value": "24"
           },
           "rebounds": {
-            "player": "Johann Grunloh",
+            "player": "Thijs De Ridder",
             "value": "9"
           },
           "assists": {
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Thijs De Ridder",
-            "value": "24 PTS, 8 REB"
+            "value": "24 PTS, 9 REB"
           }
         },
         "conf_id": "2",
@@ -56,7 +56,7 @@
         "team_id": "2182",
         "abbr": "DREX",
         "name": "Drexel Dragons",
-        "score": 49,
+        "score": 56,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -75,8 +75,8 @@
             "value": "4"
           },
           "rating": {
-            "player": "LaDricus Pittman",
-            "value": "11 PTS"
+            "player": "Latief Lorenzano-White",
+            "value": "9 PTS"
           }
         },
         "conf_id": "10",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-04T01:00Z",
       "short_name": "UAPB @ ARK",
       "state": "in",
-      "status": "16:25 - 2nd",
+      "status": "12:53 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "16:25",
+      "clock": "12:53",
       "venue": "Bud Walton Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "8",
         "abbr": "ARK",
         "name": "Arkansas Razorbacks",
-        "score": 57,
+        "score": 66,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -115,7 +115,7 @@
         "leaders": {
           "points": {
             "player": "Jeremiah Wilkinson",
-            "value": "14"
+            "value": "17"
           },
           "rebounds": {
             "player": "Jeremiah Wilkinson",
@@ -127,7 +127,7 @@
           },
           "rating": {
             "player": "Jeremiah Wilkinson",
-            "value": "14 PTS"
+            "value": "17 PTS"
           }
         },
         "conf_id": "23",
@@ -140,7 +140,7 @@
         "team_id": "2029",
         "abbr": "UAPB",
         "name": "Arkansas-Pine Bluff Golden Lions",
-        "score": 36,
+        "score": 42,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -174,98 +174,14 @@
       "p4": true
     },
     {
-      "game_id": "401906757",
-      "start_utc": "2026-11-04T00:30Z",
-      "short_name": "SHSU @ ALA",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Coleman Coliseum",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "333",
-        "abbr": "ALA",
-        "name": "Alabama Crimson Tide",
-        "score": 96,
-        "winner": true,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Drew Fielder",
-            "value": "15"
-          },
-          "rebounds": {
-            "player": "Tarris Bouie",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Qayden Samuels",
-            "value": "5"
-          },
-          "rating": {
-            "player": "London Jemison",
-            "value": "15 PTS"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 20,
-        "loc": "Alabama",
-        "nick": "Crimson Tide"
-      },
-      "away": {
-        "team_id": "2534",
-        "abbr": "SHSU",
-        "name": "Sam Houston Bearkats",
-        "score": 74,
-        "winner": false,
-        "record": "0-1",
-        "home_record": "0-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Jacobe Coleman",
-            "value": "16"
-          },
-          "rebounds": {
-            "player": "Enel St. Bernard",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Zion Pipkin",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Zion Pipkin",
-            "value": "11 PTS, 6 AST, 4 STL"
-          }
-        },
-        "conf_id": "11",
-        "conf": null,
-        "rank": null,
-        "loc": "Sam Houston",
-        "nick": "Bearkats"
-      },
-      "espn_line": null,
-      "date": "2026-11-03",
-      "p4": true
-    },
-    {
       "game_id": "401921808",
       "start_utc": "2026-11-04T01:00Z",
       "short_name": "NOLA @ LSU",
       "state": "in",
-      "status": "10:47 - 2nd",
+      "status": "6:32 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "10:47",
+      "clock": "6:32",
       "venue": "Pete Maravich Assembly Center",
       "neutral_site": false,
       "broadcasts": [
@@ -275,7 +191,7 @@
         "team_id": "99",
         "abbr": "LSU",
         "name": "LSU Tigers",
-        "score": 74,
+        "score": 84,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -287,15 +203,15 @@
           },
           "rebounds": {
             "player": "Saliou Niang",
-            "value": "9"
+            "value": "12"
           },
           "assists": {
             "player": "Donovan Dent",
-            "value": "8"
+            "value": "9"
           },
           "rating": {
-            "player": "Donovan Dent",
-            "value": "17 PTS, 8 AST"
+            "player": "Saliou Niang",
+            "value": "13 PTS, 12 REB, 6 STL"
           }
         },
         "conf_id": "23",
@@ -308,27 +224,27 @@
         "team_id": "2443",
         "abbr": "NOLA",
         "name": "LSU New Orleans Privateers",
-        "score": 27,
+        "score": 38,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Kedrick Osby",
+            "player": "Yohandry Ortiz",
             "value": "8"
           },
           "rebounds": {
             "player": "Solomon Ominu",
-            "value": "5"
+            "value": "7"
           },
           "assists": {
             "player": "Yohandry Ortiz",
             "value": "1"
           },
           "rating": {
-            "player": "Yohandry Ortiz",
-            "value": "5 PTS"
+            "player": "Solomon Ominu",
+            "value": "7 REB"
           }
         },
         "conf_id": "25",
@@ -346,10 +262,10 @@
       "start_utc": "2026-11-04T01:00Z",
       "short_name": "CLE @ MIZ",
       "state": "in",
-      "status": "9:14 - 2nd",
+      "status": "5:02 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:14",
+      "clock": "5:02",
       "venue": "Mizzou Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -359,7 +275,7 @@
         "team_id": "142",
         "abbr": "MIZ",
         "name": "Missouri Tigers",
-        "score": 84,
+        "score": 97,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -367,19 +283,19 @@
         "leaders": {
           "points": {
             "player": "Jason Crowe Jr.",
-            "value": "18"
+            "value": "23"
           },
           "rebounds": {
             "player": "Bryson Tiller",
-            "value": "7"
+            "value": "9"
           },
           "assists": {
             "player": "Mark Mitchell Jr.",
-            "value": "9"
+            "value": "10"
           },
           "rating": {
             "player": "Mark Mitchell Jr.",
-            "value": "9 PTS, 9 AST"
+            "value": "11 PTS, 10 AST"
           }
         },
         "conf_id": "23",
@@ -392,7 +308,7 @@
         "team_id": "325",
         "abbr": "CLE",
         "name": "Cleveland State Vikings",
-        "score": 34,
+        "score": 39,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -412,7 +328,7 @@
           },
           "rating": {
             "player": "Dre Jones",
-            "value": "8 PTS, 7 REB"
+            "value": "10 PTS, 7 REB"
           }
         },
         "conf_id": "45",
@@ -430,10 +346,10 @@
       "start_utc": "2026-11-04T01:00Z",
       "short_name": "ALST @ TA&M",
       "state": "in",
-      "status": "16:09 - 2nd",
+      "status": "12:46 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "16:09",
+      "clock": "12:46",
       "venue": "Reed Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -443,7 +359,7 @@
         "team_id": "245",
         "abbr": "TA&M",
         "name": "Texas A&M Aggies",
-        "score": 52,
+        "score": 58,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -455,15 +371,15 @@
           },
           "rebounds": {
             "player": "Jalen Shelley",
-            "value": "8"
+            "value": "9"
           },
           "assists": {
-            "player": "Jalen Shelley",
-            "value": "2"
+            "player": "Jalen Reece",
+            "value": "3"
           },
           "rating": {
             "player": "Mackenzie Mgbako",
-            "value": "9 PTS"
+            "value": "10 PTS"
           }
         },
         "conf_id": "23",
@@ -476,7 +392,7 @@
         "team_id": "2011",
         "abbr": "ALST",
         "name": "Alabama State Hornets",
-        "score": 34,
+        "score": 43,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -484,11 +400,11 @@
         "leaders": {
           "points": {
             "player": "Mike James",
-            "value": "13"
+            "value": "16"
           },
           "rebounds": {
             "player": "Damarion Bonds",
-            "value": "7"
+            "value": "9"
           },
           "assists": {
             "player": "Mike James",
@@ -496,7 +412,7 @@
           },
           "rating": {
             "player": "Mike James",
-            "value": "13 PTS"
+            "value": "16 PTS"
           }
         },
         "conf_id": "26",
@@ -514,10 +430,10 @@
       "start_utc": "2026-11-04T01:00Z",
       "short_name": "LIP @ IOWA",
       "state": "in",
-      "status": "13:11 - 2nd",
+      "status": "9:14 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "13:11",
+      "clock": "9:14",
       "venue": "Carver-Hawkeye Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -527,7 +443,7 @@
         "team_id": "2294",
         "abbr": "IOWA",
         "name": "Iowa Hawkeyes",
-        "score": 49,
+        "score": 54,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -543,7 +459,7 @@
           },
           "assists": {
             "player": "Kael Combs",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Cooper Koch",
@@ -560,7 +476,7 @@
         "team_id": "288",
         "abbr": "LIP",
         "name": "Lipscomb Bisons",
-        "score": 34,
+        "score": 35,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
@@ -568,7 +484,7 @@
         "leaders": {
           "points": {
             "player": "Takai Simpkins",
-            "value": "13"
+            "value": "14"
           },
           "rebounds": {
             "player": "Devyn Martin",
@@ -598,10 +514,10 @@
       "start_utc": "2026-11-04T01:00Z",
       "short_name": "SDST @ KSU",
       "state": "in",
-      "status": "9:15 - 2nd",
+      "status": "4:38 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:15",
+      "clock": "4:38",
       "venue": "Bramlage Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -611,7 +527,7 @@
         "team_id": "2306",
         "abbr": "KSU",
         "name": "Kansas State Wildcats",
-        "score": 52,
+        "score": 56,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -630,8 +546,8 @@
             "value": "3"
           },
           "rating": {
-            "player": "Brandon Rechsteiner",
-            "value": "14 PTS"
+            "player": "Pape N'Diaye",
+            "value": "13 PTS, 8 REB"
           }
         },
         "conf_id": "8",
@@ -644,27 +560,27 @@
         "team_id": "2571",
         "abbr": "SDST",
         "name": "South Dakota State Jackrabbits",
-        "score": 49,
+        "score": 58,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Jon Mekonnen",
-            "value": "14"
+            "player": "Davis Kern",
+            "value": "19"
           },
           "rebounds": {
             "player": "Kalen Garry",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
-            "player": "Kalen Garry",
-            "value": "3"
+            "player": "EJ Ryans",
+            "value": "4"
           },
           "rating": {
-            "player": "Kalen Garry",
-            "value": "11 PTS, 7 REB"
+            "player": "Davis Kern",
+            "value": "19 PTS, 6 REB"
           }
         },
         "conf_id": "49",
@@ -756,6 +672,90 @@
         "rank": null,
         "loc": "Wofford",
         "nick": "Terriers"
+      },
+      "espn_line": null,
+      "date": "2026-11-03",
+      "p4": true
+    },
+    {
+      "game_id": "401906757",
+      "start_utc": "2026-11-04T00:30Z",
+      "short_name": "SHSU @ ALA",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Coleman Coliseum",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "333",
+        "abbr": "ALA",
+        "name": "Alabama Crimson Tide",
+        "score": 96,
+        "winner": true,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Drew Fielder",
+            "value": "15"
+          },
+          "rebounds": {
+            "player": "Tarris Bouie",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Qayden Samuels",
+            "value": "5"
+          },
+          "rating": {
+            "player": "London Jemison",
+            "value": "15 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 20,
+        "loc": "Alabama",
+        "nick": "Crimson Tide"
+      },
+      "away": {
+        "team_id": "2534",
+        "abbr": "SHSU",
+        "name": "Sam Houston Bearkats",
+        "score": 74,
+        "winner": false,
+        "record": "0-1",
+        "home_record": "0-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Jacobe Coleman",
+            "value": "16"
+          },
+          "rebounds": {
+            "player": "Enel St. Bernard",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Zion Pipkin",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Zion Pipkin",
+            "value": "11 PTS, 6 AST, 4 STL"
+          }
+        },
+        "conf_id": "11",
+        "conf": null,
+        "rank": null,
+        "loc": "Sam Houston",
+        "nick": "Bearkats"
       },
       "espn_line": null,
       "date": "2026-11-03",
