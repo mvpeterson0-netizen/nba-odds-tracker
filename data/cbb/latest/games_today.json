@@ -1,94 +1,10 @@
 {
-  "fetched_at": "2026-11-04T03:30:25+00:00",
+  "fetched_at": "2026-11-04T03:45:22+00:00",
   "source": "espn",
   "count": 14,
   "game_date": "2026-11-03",
   "division_i_games": 29,
   "rows": [
-    {
-      "game_id": "401920806",
-      "start_utc": "2026-11-04T01:00Z",
-      "short_name": "ALST @ TA&M",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Reed Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "245",
-        "abbr": "TA&M",
-        "name": "Texas A&M Aggies",
-        "score": 97,
-        "winner": true,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "PJ Haggerty",
-            "value": "22"
-          },
-          "rebounds": {
-            "player": "Jalen Shelley",
-            "value": "12"
-          },
-          "assists": {
-            "player": "Jalen Shelley",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Jalen Shelley",
-            "value": "14 PTS, 12 REB"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Texas A&M",
-        "nick": "Aggies"
-      },
-      "away": {
-        "team_id": "2011",
-        "abbr": "ALST",
-        "name": "Alabama State Hornets",
-        "score": 66,
-        "winner": false,
-        "record": "0-1",
-        "home_record": "0-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Paul McMillan IV",
-            "value": "17"
-          },
-          "rebounds": {
-            "player": "Damarion Bonds",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Paul McMillan IV",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Mike James",
-            "value": "16 PTS"
-          }
-        },
-        "conf_id": "26",
-        "conf": null,
-        "rank": null,
-        "loc": "Alabama State",
-        "nick": "Hornets"
-      },
-      "espn_line": null,
-      "date": "2026-11-03",
-      "p4": true
-    },
     {
       "game_id": "401906848",
       "start_utc": "2026-11-03T23:00Z",
@@ -1008,6 +924,90 @@
         "rank": null,
         "loc": "Cleveland State",
         "nick": "Vikings"
+      },
+      "espn_line": null,
+      "date": "2026-11-03",
+      "p4": true
+    },
+    {
+      "game_id": "401920806",
+      "start_utc": "2026-11-04T01:00Z",
+      "short_name": "ALST @ TA&M",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Reed Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "245",
+        "abbr": "TA&M",
+        "name": "Texas A&M Aggies",
+        "score": 97,
+        "winner": true,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "PJ Haggerty",
+            "value": "22"
+          },
+          "rebounds": {
+            "player": "Jalen Shelley",
+            "value": "12"
+          },
+          "assists": {
+            "player": "Jalen Shelley",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Jalen Shelley",
+            "value": "14 PTS, 12 REB"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Texas A&M",
+        "nick": "Aggies"
+      },
+      "away": {
+        "team_id": "2011",
+        "abbr": "ALST",
+        "name": "Alabama State Hornets",
+        "score": 66,
+        "winner": false,
+        "record": "0-1",
+        "home_record": "0-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Paul McMillan IV",
+            "value": "17"
+          },
+          "rebounds": {
+            "player": "Damarion Bonds",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Paul McMillan IV",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Mike James",
+            "value": "16 PTS"
+          }
+        },
+        "conf_id": "26",
+        "conf": null,
+        "rank": null,
+        "loc": "Alabama State",
+        "nick": "Hornets"
       },
       "espn_line": null,
       "date": "2026-11-03",
