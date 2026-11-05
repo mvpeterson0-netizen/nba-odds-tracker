@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-05T02:00:33+00:00",
+  "fetched_at": "2026-11-05T02:15:18+00:00",
   "source": "espn",
   "count": 2,
   "game_date": "2026-11-04",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-05T01:00Z",
       "short_name": "SELA @ AUB",
       "state": "in",
-      "status": "Halftime",
+      "status": "19:05 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "19:05",
       "venue": "Neville Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2",
         "abbr": "AUB",
         "name": "Auburn Tigers",
-        "score": 42,
+        "score": 46,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -31,7 +31,7 @@
         "leaders": {
           "points": {
             "player": "Tahaad Pettiford",
-            "value": "13"
+            "value": "15"
           },
           "rebounds": {
             "player": "Narcisse Ngoy",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Tahaad Pettiford",
-            "value": "13 PTS"
+            "value": "15 PTS"
           }
         },
         "conf_id": "23",
@@ -56,7 +56,7 @@
         "team_id": "2545",
         "abbr": "SELA",
         "name": "SE Louisiana Lions",
-        "score": 25,
+        "score": 27,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -64,7 +64,7 @@
         "leaders": {
           "points": {
             "player": "Yanis Ndjonga",
-            "value": "11"
+            "value": "13"
           },
           "rebounds": {
             "player": "Yanis Ndjonga",
@@ -76,7 +76,7 @@
           },
           "rating": {
             "player": "Yanis Ndjonga",
-            "value": "11 PTS"
+            "value": "13 PTS"
           }
         },
         "conf_id": "25",
@@ -93,11 +93,11 @@
       "game_id": "401918052",
       "start_utc": "2026-11-05T02:00Z",
       "short_name": "RAD @ CAL",
-      "state": "pre",
-      "status": "11/4 - 9:00 PM EST",
+      "state": "in",
+      "status": "13:29 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "13:29",
       "venue": "Haas Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -107,23 +107,27 @@
         "team_id": "25",
         "abbr": "CAL",
         "name": "California Golden Bears",
-        "score": 0,
+        "score": 17,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Michael Cooper",
-            "value": "24.0"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Jake Wilkins",
-            "value": "7.0"
+            "value": "6"
           },
-          "assistsPerGame": {
+          "rebounds": {
+            "player": "Jake Wilkins",
+            "value": "2"
+          },
+          "assists": {
             "player": "Jordan Ross",
-            "value": "9.0"
+            "value": "3"
+          },
+          "rating": {
+            "player": "Jake Wilkins",
+            "value": "6 PTS"
           }
         },
         "conf_id": "2",
@@ -136,23 +140,27 @@
         "team_id": "2515",
         "abbr": "RAD",
         "name": "Radford Highlanders",
-        "score": 0,
+        "score": 13,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Frederik Erichsen",
-            "value": "12.0"
-          },
-          "reboundsPerGame": {
-            "player": "Frederik Erichsen",
-            "value": "7.0"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Ja'Corey Robinson",
-            "value": "5.0"
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Cameron Jackson",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Tristan Gross",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Ja'Corey Robinson",
+            "value": "6 PTS"
           }
         },
         "conf_id": "6",
@@ -161,12 +169,7 @@
         "loc": "Radford",
         "nick": "Highlanders"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "CAL -16.5",
-        "spread": -16.5,
-        "over_under": 156.5
-      },
+      "espn_line": null,
       "date": "2026-11-04",
       "p4": true
     }
