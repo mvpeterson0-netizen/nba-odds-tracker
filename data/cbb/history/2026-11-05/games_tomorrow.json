@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-05T19:04:55+00:00",
+  "fetched_at": "2026-11-05T19:15:20+00:00",
   "source": "espn",
   "count": 37,
   "game_date": "2026-11-06",
@@ -16,7 +16,9 @@
       "clock": "0:00",
       "venue": "TD Garden",
       "neutral_site": true,
-      "broadcasts": null,
+      "broadcasts": [
+        "ESPN+"
+      ],
       "home": {
         "team_id": "103",
         "abbr": "BC",
@@ -1507,7 +1509,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CONN -5.5",
         "spread": 5.5,
         "over_under": 146.5
