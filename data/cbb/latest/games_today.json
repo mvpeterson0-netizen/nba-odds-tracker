@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-05T07:00:21+00:00",
+  "fetched_at": "2026-11-05T07:15:17+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-05",
@@ -806,7 +806,12 @@
         "loc": "Jacksonville",
         "nick": "Dolphins"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "FLA -34.5",
+        "spread": -34.5,
+        "over_under": 152.5
+      },
       "date": "2026-11-05",
       "p4": true
     },
@@ -1274,7 +1279,12 @@
         "loc": "Bethune-Cookman",
         "nick": "Wildcats"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "TTU -26.5",
+        "spread": -26.5,
+        "over_under": 150.5
+      },
       "date": "2026-11-05",
       "p4": true
     },
