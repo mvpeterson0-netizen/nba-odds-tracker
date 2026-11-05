@@ -1,19 +1,103 @@
 {
-  "fetched_at": "2026-11-05T03:00:21+00:00",
+  "fetched_at": "2026-11-05T03:15:24+00:00",
   "source": "espn",
   "count": 2,
   "game_date": "2026-11-04",
   "division_i_games": 26,
   "rows": [
     {
+      "game_id": "401918052",
+      "start_utc": "2026-11-05T02:00Z",
+      "short_name": "RAD @ CAL",
+      "state": "in",
+      "status": "15:32 - 2nd",
+      "completed": false,
+      "period": 2,
+      "clock": "15:32",
+      "venue": "Haas Pavilion",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACCNX"
+      ],
+      "home": {
+        "team_id": "25",
+        "abbr": "CAL",
+        "name": "California Golden Bears",
+        "score": 50,
+        "winner": null,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Nojus Indrusaitis",
+            "value": "17"
+          },
+          "rebounds": {
+            "player": "Nojus Indrusaitis",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Jordan Ross",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Nojus Indrusaitis",
+            "value": "17 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "California",
+        "nick": "Golden Bears"
+      },
+      "away": {
+        "team_id": "2515",
+        "abbr": "RAD",
+        "name": "Radford Highlanders",
+        "score": 44,
+        "winner": null,
+        "record": "0-1",
+        "home_record": "0-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Frederik Erichsen",
+            "value": "13"
+          },
+          "rebounds": {
+            "player": "Ja'Corey Robinson",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Ja'Corey Robinson",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Frederik Erichsen",
+            "value": "13 PTS"
+          }
+        },
+        "conf_id": "6",
+        "conf": null,
+        "rank": null,
+        "loc": "Radford",
+        "nick": "Highlanders"
+      },
+      "espn_line": null,
+      "date": "2026-11-04",
+      "p4": true
+    },
+    {
       "game_id": "401920798",
       "start_utc": "2026-11-05T01:00Z",
       "short_name": "SELA @ AUB",
-      "state": "in",
-      "status": "1:42 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "1:42",
+      "clock": "0:00",
       "venue": "Neville Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,10 +107,10 @@
         "team_id": "2",
         "abbr": "AUB",
         "name": "Auburn Tigers",
-        "score": 90,
-        "winner": null,
-        "record": "0-0",
-        "home_record": "0-0",
+        "score": 92,
+        "winner": true,
+        "record": "1-0",
+        "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -56,11 +140,11 @@
         "team_id": "2545",
         "abbr": "SELA",
         "name": "SE Louisiana Lions",
-        "score": 56,
-        "winner": null,
-        "record": "0-0",
+        "score": 59,
+        "winner": false,
+        "record": "0-1",
         "home_record": "0-0",
-        "away_record": "0-0",
+        "away_record": "0-1",
         "leaders": {
           "points": {
             "player": "Quincy Allen",
@@ -84,90 +168,6 @@
         "rank": null,
         "loc": "SE Louisiana",
         "nick": "Lions"
-      },
-      "espn_line": null,
-      "date": "2026-11-04",
-      "p4": true
-    },
-    {
-      "game_id": "401918052",
-      "start_utc": "2026-11-05T02:00Z",
-      "short_name": "RAD @ CAL",
-      "state": "in",
-      "status": "Halftime",
-      "completed": false,
-      "period": 1,
-      "clock": "0:00",
-      "venue": "Haas Pavilion",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACCNX"
-      ],
-      "home": {
-        "team_id": "25",
-        "abbr": "CAL",
-        "name": "California Golden Bears",
-        "score": 45,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Nojus Indrusaitis",
-            "value": "12"
-          },
-          "rebounds": {
-            "player": "Jake Wilkins",
-            "value": "4"
-          },
-          "assists": {
-            "player": "Jordan Ross",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Jake Wilkins",
-            "value": "11 PTS"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "California",
-        "nick": "Golden Bears"
-      },
-      "away": {
-        "team_id": "2515",
-        "abbr": "RAD",
-        "name": "Radford Highlanders",
-        "score": 37,
-        "winner": null,
-        "record": "0-1",
-        "home_record": "0-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Frederik Erichsen",
-            "value": "8"
-          },
-          "rebounds": {
-            "player": "Ja'Corey Robinson",
-            "value": "4"
-          },
-          "assists": {
-            "player": "Ja'Corey Robinson",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Mathieu Grujicic",
-            "value": "7 PTS, 3 STL"
-          }
-        },
-        "conf_id": "6",
-        "conf": null,
-        "rank": null,
-        "loc": "Radford",
-        "nick": "Highlanders"
       },
       "espn_line": null,
       "date": "2026-11-04",
