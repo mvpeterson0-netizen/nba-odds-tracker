@@ -1,8 +1,36 @@
 {
-  "fetched_at": "2026-11-05T15:00:27+00:00",
+  "fetched_at": "2026-11-05T15:15:20+00:00",
   "source": "espn",
   "count": 91,
   "rows": [
+    {
+      "team_id": "1",
+      "team": "Atlanta Hawks",
+      "team_abbr": "ATL",
+      "player_id": "3146557",
+      "player": "Jock Landale",
+      "position": "C",
+      "status": "Day-To-Day",
+      "injury": "Hip",
+      "return_date": "2026-11-06",
+      "comment": "Landale is out for Wednesday's game against the Wizards with a left hip strain, Kevin Chouinard of the Hawks' official site reports.",
+      "updated": "2026-11-05T14:58Z",
+      "url": "https://www.espn.com/nba/player/news/_/id/3146557/jock-landale"
+    },
+    {
+      "team_id": "1",
+      "team": "Atlanta Hawks",
+      "team_abbr": "ATL",
+      "player_id": "4701230",
+      "player": "Jalen Johnson",
+      "position": "F",
+      "status": "Day-To-Day",
+      "injury": "Ankle",
+      "return_date": "2026-11-06",
+      "comment": "Johnson (ankle) is listed as out for Wednesday's game in Washington.",
+      "updated": "2026-11-05T14:58Z",
+      "url": "https://www.espn.com/nba/player/news/_/id/4701230/jalen-johnson"
+    },
     {
       "team_id": "1",
       "team": "Atlanta Hawks",
@@ -16,34 +44,6 @@
       "comment": "Newell won't return to Wednesday's game against the Wizards due to a left great toe hyperextension, Brad Rowland of the Locked On Podcast Network reports. He'll finish with two points (1-1 FG), three rebounds and three assists across 10 minutes.",
       "updated": "2026-11-05T01:19Z",
       "url": "https://www.espn.com/nba/player/news/_/id/4873201/asa-newell"
-    },
-    {
-      "team_id": "1",
-      "team": "Atlanta Hawks",
-      "team_abbr": "ATL",
-      "player_id": "4701230",
-      "player": "Jalen Johnson",
-      "position": "F",
-      "status": "Out",
-      "injury": "Ankle",
-      "return_date": "2026-11-06",
-      "comment": "Johnson (ankle) is listed as out for Wednesday's game in Washington.",
-      "updated": "2026-11-04T23:05Z",
-      "url": "https://www.espn.com/nba/player/news/_/id/4701230/jalen-johnson"
-    },
-    {
-      "team_id": "1",
-      "team": "Atlanta Hawks",
-      "team_abbr": "ATL",
-      "player_id": "3146557",
-      "player": "Jock Landale",
-      "position": "C",
-      "status": "Out",
-      "injury": "Hip",
-      "return_date": "2026-11-06",
-      "comment": "Landale is out for Wednesday's game against the Wizards with a left hip strain, Kevin Chouinard of the Hawks' official site reports.",
-      "updated": "2026-11-03T22:08Z",
-      "url": "https://www.espn.com/nba/player/news/_/id/3146557/jock-landale"
     },
     {
       "team_id": "1",
@@ -152,7 +152,7 @@
       "position": "G",
       "status": "Out",
       "injury": "Leg",
-      "return_date": "2026-11-07",
+      "return_date": "2026-11-11",
       "comment": "The Nets exercised Demin's third-year team option for the 2027-28 season, Sharif Phillips-Keaton of USA Today reports Thursday.",
       "updated": "2026-10-29T17:09Z",
       "url": "https://www.espn.com/nba/player/news/_/id/5175643/egor-demin"
@@ -245,6 +245,20 @@
       "team_id": "5",
       "team": "Cleveland Cavaliers",
       "team_abbr": "CLE",
+      "player_id": "4576087",
+      "player": "Peyton Watson",
+      "position": "G",
+      "status": "Day-To-Day",
+      "injury": "Hamstring",
+      "return_date": "2026-11-06",
+      "comment": "Watson (hamstring) is out for Wednesday's game in Oklahoma City.",
+      "updated": "2026-11-05T15:03Z",
+      "url": "https://www.espn.com/nba/player/news/_/id/4576087/peyton-watson"
+    },
+    {
+      "team_id": "5",
+      "team": "Cleveland Cavaliers",
+      "team_abbr": "CLE",
       "player_id": "4066328",
       "player": "Jarrett Allen",
       "position": "C",
@@ -282,20 +296,6 @@
       "comment": "According to Cavaliers head coach Kenny Atkinson, Tyson (ankle) has been \"on the court lately progressing well,\" Chris Fedor of The Cleveland Plain Dealer reports.",
       "updated": "2026-11-05T00:33Z",
       "url": "https://www.espn.com/nba/player/news/_/id/4683747/jaylon-tyson"
-    },
-    {
-      "team_id": "5",
-      "team": "Cleveland Cavaliers",
-      "team_abbr": "CLE",
-      "player_id": "4576087",
-      "player": "Peyton Watson",
-      "position": "G",
-      "status": "Out",
-      "injury": "Hamstring",
-      "return_date": "2026-11-06",
-      "comment": "Watson (hamstring) is out for Wednesday's game in Oklahoma City.",
-      "updated": "2026-11-03T22:09Z",
-      "url": "https://www.espn.com/nba/player/news/_/id/4576087/peyton-watson"
     },
     {
       "team_id": "6",
@@ -374,11 +374,11 @@
       "player_id": "3978",
       "player": "DeMar DeRozan",
       "position": "G",
-      "status": "Out",
+      "status": "Day-To-Day",
       "injury": "Back",
       "return_date": "2026-11-07",
       "comment": "DeRozan has been ruled out for Wednesday's game against the Raptors due to lower-back spasms.",
-      "updated": "2026-11-05T02:05Z",
+      "updated": "2026-11-05T15:04Z",
       "url": "https://www.espn.com/nba/player/news/_/id/3978/demar-derozan"
     },
     {
@@ -528,11 +528,11 @@
       "player_id": "3133603",
       "player": "Kelly Oubre Jr.",
       "position": "G",
-      "status": "Out",
+      "status": "Day-To-Day",
       "injury": "Calf",
       "return_date": "2026-11-07",
       "comment": "Oubre (calf) has been ruled out for Wednesday's game against the Grizzlies.",
-      "updated": "2026-11-05T00:37Z",
+      "updated": "2026-11-05T15:00Z",
       "url": "https://www.espn.com/nba/player/news/_/id/3133603/kelly-oubre-jr"
     },
     {
@@ -710,11 +710,11 @@
       "player_id": "4432847",
       "player": "Terrence Shannon Jr.",
       "position": "G",
-      "status": "Out",
+      "status": "Day-To-Day",
       "injury": "Hip",
       "return_date": "2026-11-06",
       "comment": "Shannon (hip) is out for Wednesday against the Rockets.",
-      "updated": "2026-11-04T18:16Z",
+      "updated": "2026-11-05T15:03Z",
       "url": "https://www.espn.com/nba/player/news/_/id/4432847/terrence-shannon-jr"
     },
     {
@@ -752,11 +752,11 @@
       "player_id": "4397688",
       "player": "Trey Murphy III",
       "position": "F",
-      "status": "Out",
+      "status": "Day-To-Day",
       "injury": "Knee",
       "return_date": "2026-11-06",
       "comment": "Murphy (knees) is listed as out for Wednesday's game against Utah.",
-      "updated": "2026-11-04T23:10Z",
+      "updated": "2026-11-05T15:02Z",
       "url": "https://www.espn.com/nba/player/news/_/id/4397688/trey-murphy-iii"
     },
     {
@@ -780,11 +780,11 @@
       "player_id": "3062679",
       "player": "Josh Hart",
       "position": "G",
-      "status": "Out",
+      "status": "Day-To-Day",
       "injury": "Ankle",
       "return_date": "2026-11-07",
       "comment": "Hart is out for Wednesday's game against the Bulls due to right ankle soreness.",
-      "updated": "2026-11-04T18:08Z",
+      "updated": "2026-11-05T15:00Z",
       "url": "https://www.espn.com/nba/player/news/_/id/3062679/josh-hart"
     },
     {
@@ -794,11 +794,11 @@
       "player_id": "4432823",
       "player": "Jaylin Williams",
       "position": "F",
-      "status": "Out",
+      "status": "Day-To-Day",
       "injury": "Back",
       "return_date": "2026-11-06",
       "comment": "Williams (back) is listed as out for Wednesday's game versus Cleveland, Clemente Almanza of USA Today reports.",
-      "updated": "2026-11-04T23:18Z",
+      "updated": "2026-11-05T15:03Z",
       "url": "https://www.espn.com/nba/player/news/_/id/4432823/jaylin-williams"
     },
     {
@@ -1074,11 +1074,11 @@
       "player_id": "4279318",
       "player": "Daeqwon Plowden",
       "position": "G",
-      "status": "Out",
+      "status": "Day-To-Day",
       "injury": "Illness",
       "return_date": "2026-11-06",
       "comment": "Plowden (illness) is out for Wednesday's game against the Lakers.",
-      "updated": "2026-11-04T21:04Z",
+      "updated": "2026-11-05T15:05Z",
       "url": "https://www.espn.com/nba/player/news/_/id/4279318/daeqwon-plowden"
     },
     {
