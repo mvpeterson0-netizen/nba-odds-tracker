@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-05T06:15:16+00:00",
+  "fetched_at": "2026-11-05T06:30:18+00:00",
   "source": "espn",
   "count": 14,
   "game_date": "2026-11-04",
@@ -951,11 +951,11 @@
       "game_id": "401909935",
       "start_utc": "2026-11-05T03:30Z",
       "short_name": "MIA @ LAC",
-      "state": "in",
-      "status": "50.0 - OT",
-      "completed": false,
+      "state": "post",
+      "status": "Final/OT",
+      "completed": true,
       "period": 5,
-      "clock": "50.0",
+      "clock": "5:00",
       "venue": "Intuit Dome",
       "neutral_site": false,
       "broadcasts": [
@@ -965,15 +965,15 @@
         "team_id": "12",
         "abbr": "LAC",
         "name": "LA Clippers",
-        "score": 114,
-        "winner": null,
-        "record": "1-6",
-        "home_record": "1-2",
+        "score": 116,
+        "winner": false,
+        "record": "1-7",
+        "home_record": "1-3",
         "away_record": "0-4",
         "leaders": {
           "points": {
             "player": "Darius Garland",
-            "value": "22"
+            "value": "26"
           },
           "rebounds": {
             "player": "Rui Hachimura",
@@ -984,8 +984,8 @@
             "value": "7"
           },
           "rating": {
-            "player": "Rui Hachimura",
-            "value": "21 PTS, 9 REB, 7 AST"
+            "player": "Darius Garland",
+            "value": "26 PTS, 7 AST"
           }
         }
       },
@@ -993,19 +993,19 @@
         "team_id": "14",
         "abbr": "MIA",
         "name": "Miami Heat",
-        "score": 112,
-        "winner": null,
-        "record": "2-5",
+        "score": 117,
+        "winner": true,
+        "record": "3-5",
         "home_record": "1-3",
-        "away_record": "1-2",
+        "away_record": "2-2",
         "leaders": {
           "points": {
             "player": "Bam Adebayo",
-            "value": "33"
+            "value": "35"
           },
           "rebounds": {
             "player": "Giannis Antetokounmpo",
-            "value": "13"
+            "value": "14"
           },
           "assists": {
             "player": "Davion Mitchell",
@@ -1013,7 +1013,7 @@
           },
           "rating": {
             "player": "Bam Adebayo",
-            "value": "33 PTS, 9 REB"
+            "value": "35 PTS, 10 REB"
           }
         }
       },
