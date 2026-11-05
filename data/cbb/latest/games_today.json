@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-05T23:00:24+00:00",
+  "fetched_at": "2026-11-05T23:15:20+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-05",
@@ -9,11 +9,11 @@
       "game_id": "401909726",
       "start_utc": "2026-11-05T23:00Z",
       "short_name": "WAKE @ VAN",
-      "state": "pre",
-      "status": "11/5 - 6:00 PM EST",
+      "state": "in",
+      "status": "14:01 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "14:01",
       "venue": "Memorial Gymnasium (TN)",
       "neutral_site": false,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "238",
         "abbr": "VAN",
         "name": "Vanderbilt Commodores",
-        "score": 0,
+        "score": 12,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tyler Tanner",
-            "value": "20.0"
+          "points": {
+            "player": "Berke Buyuktuncel",
+            "value": "5"
           },
-          "reboundsPerGame": {
-            "player": "Sebastian Williams-Adams",
-            "value": "9.0"
+          "rebounds": {
+            "player": "Berke Buyuktuncel",
+            "value": "4"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Tyler Tanner",
-            "value": "6.0"
+            "value": "1"
+          },
+          "rating": {
+            "player": "Berke Buyuktuncel",
+            "value": "5 PTS"
           }
         },
         "conf_id": "23",
@@ -52,23 +56,27 @@
         "team_id": "154",
         "abbr": "WAKE",
         "name": "Wake Forest Demon Deacons",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Gavin Placide",
-            "value": "20.0"
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "Kevair Kennedy",
-            "value": "9.0"
+          "rebounds": {
+            "player": "Gavin Placide",
+            "value": "3"
           },
-          "assistsPerGame": {
-            "player": "Kevair Kennedy",
-            "value": "8.0"
+          "assists": {
+            "player": "Isaac Carr",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Gavin Placide",
+            "value": "4 PTS"
           }
         },
         "conf_id": "2",
@@ -77,12 +85,7 @@
         "loc": "Wake Forest",
         "nick": "Demon Deacons"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "VAN -18.5",
-        "spread": -18.5,
-        "over_under": 155.5
-      },
+      "espn_line": null,
       "date": "2026-11-05",
       "p4": true
     },
@@ -90,11 +93,11 @@
       "game_id": "401917177",
       "start_utc": "2026-11-05T23:00Z",
       "short_name": "UTC @ PSU",
-      "state": "pre",
-      "status": "11/5 - 6:00 PM EST",
+      "state": "in",
+      "status": "14:16 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "14:16",
       "venue": "Bryce Jordan Center",
       "neutral_site": false,
       "broadcasts": [
@@ -104,23 +107,27 @@
         "team_id": "213",
         "abbr": "PSU",
         "name": "Penn State Nittany Lions",
-        "score": 0,
+        "score": 14,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Roko Prkacin",
-            "value": "28.0"
+          "points": {
+            "player": "Thomas Allard",
+            "value": "8"
           },
-          "reboundsPerGame": {
-            "player": "Ivan Juric",
-            "value": "15.0"
+          "rebounds": {
+            "player": "Thomas Allard",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Roberts Blums",
-            "value": "4.0"
+          "assists": {
+            "player": "Dasonte Bowen",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Thomas Allard",
+            "value": "8 PTS"
           }
         },
         "conf_id": "7",
@@ -133,23 +140,27 @@
         "team_id": "236",
         "abbr": "UTC",
         "name": "Chattanooga Mocs",
-        "score": 0,
+        "score": 11,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Yonatan Levy",
-            "value": "14.0"
-          },
-          "reboundsPerGame": {
-            "player": "Zach Bleshoy",
-            "value": "7.0"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Kobe McDowell-White",
-            "value": "7.0"
+            "value": "9"
+          },
+          "rebounds": {
+            "player": "Lenny Anigbata",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Kobe McDowell-White",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Kobe McDowell-White",
+            "value": "9 PTS"
           }
         },
         "conf_id": "24",
@@ -158,12 +169,7 @@
         "loc": "Chattanooga",
         "nick": "Mocs"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "PSU -12.5",
-        "spread": -12.5,
-        "over_under": 159.5
-      },
+      "espn_line": null,
       "date": "2026-11-05",
       "p4": true
     },
@@ -171,11 +177,11 @@
       "game_id": "401916287",
       "start_utc": "2026-11-05T23:00Z",
       "short_name": "BELL @ IU",
-      "state": "pre",
-      "status": "11/5 - 6:00 PM EST",
+      "state": "in",
+      "status": "15:13 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:13",
       "venue": "Simon Skjodt Assembly Hall",
       "neutral_site": false,
       "broadcasts": [
@@ -185,23 +191,27 @@
         "team_id": "84",
         "abbr": "IU",
         "name": "Indiana Hoosiers",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Markus Burton",
-            "value": "19.0"
+          "points": {
+            "player": "Darren Harris",
+            "value": "6"
           },
-          "reboundsPerGame": {
-            "player": "Samet Yigitoglu",
-            "value": "7.0"
+          "rebounds": {
+            "player": "Aiden Sherrell",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Markus Burton",
-            "value": "5.0"
+          "assists": {
+            "player": "Jaeden Mustaf",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Darren Harris",
+            "value": "6 PTS"
           }
         },
         "conf_id": "7",
@@ -214,23 +224,23 @@
         "team_id": "91",
         "abbr": "BELL",
         "name": "Bellarmine Knights",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Demarcus Surratt",
-            "value": "9.0"
+          "points": {
+            "player": "Kenyon Goodin",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Grant Neal",
-            "value": "4.0"
+          "rebounds": {
+            "player": "Kenyon Goodin",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Tyler Doyle",
-            "value": "3.0"
+          "rating": {
+            "player": "Kenyon Goodin",
+            "value": "3 PTS"
           }
         },
         "conf_id": "46",
@@ -239,12 +249,7 @@
         "loc": "Bellarmine",
         "nick": "Knights"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "IU -30.5",
-        "spread": -30.5,
-        "over_under": 153.5
-      },
+      "espn_line": null,
       "date": "2026-11-05",
       "p4": true
     },
@@ -321,9 +326,9 @@
         "nick": "Phoenix"
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "CIN -24.5",
-        "spread": -24.5,
+        "provider": "Draft Kings",
+        "details": "CIN -23.5",
+        "spread": -23.5,
         "over_under": 152.5
       },
       "date": "2026-11-05",
@@ -402,7 +407,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "VT -20.5",
         "spread": -20.5,
         "over_under": 154.5
@@ -483,7 +488,7 @@
         "nick": "Lakers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ND -21.5",
         "spread": -21.5,
         "over_under": 137.5
@@ -564,7 +569,7 @@
         "nick": "Blue Devils"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SYR -23.5",
         "spread": -23.5,
         "over_under": 135.5
@@ -645,7 +650,7 @@
         "nick": "Bulls"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "PITT -17.5",
         "spread": -17.5,
         "over_under": 150.5
@@ -726,7 +731,7 @@
         "nick": "Demons"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MSST -21.5",
         "spread": -21.5,
         "over_under": 151.5
@@ -807,7 +812,7 @@
         "nick": "Dolphins"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "FLA -36.5",
         "spread": -36.5,
         "over_under": 155.5
@@ -888,7 +893,7 @@
         "nick": "Chanticleers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "DUKE -40.5",
         "spread": -40.5,
         "over_under": 149.5
@@ -969,7 +974,7 @@
         "nick": "Rockets"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MSU -26.5",
         "spread": -26.5,
         "over_under": 155.5
@@ -1050,7 +1055,7 @@
         "nick": "Runnin' Bulldogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TEX -41.5",
         "spread": -41.5,
         "over_under": 154.5
@@ -1131,7 +1136,7 @@
         "nick": "Keydets"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SMU -24.5",
         "spread": -24.5,
         "over_under": 160.5
@@ -1199,7 +1204,7 @@
         "nick": "Quakers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ILL -29.5",
         "spread": -29.5,
         "over_under": 172.5
@@ -1280,7 +1285,7 @@
         "nick": "Wildcats"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TTU -28.5",
         "spread": -28.5,
         "over_under": 149.5
@@ -1361,7 +1366,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "UTAH -8.5",
         "spread": -8.5,
         "over_under": 137.5
@@ -1442,7 +1447,7 @@
         "nick": "Mustangs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ARIZ -30.5",
         "spread": -30.5,
         "over_under": 173.5
