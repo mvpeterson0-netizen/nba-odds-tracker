@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-05T01:00:22+00:00",
+  "fetched_at": "2026-11-05T01:15:19+00:00",
   "source": "espn",
   "count": 2,
   "game_date": "2026-11-04",
@@ -9,11 +9,11 @@
       "game_id": "401920798",
       "start_utc": "2026-11-05T01:00Z",
       "short_name": "SELA @ AUB",
-      "state": "pre",
-      "status": "11/4 - 8:00 PM EST",
+      "state": "in",
+      "status": "13:47 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "13:47",
       "venue": "Neville Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,12 +23,29 @@
         "team_id": "2",
         "abbr": "AUB",
         "name": "Auburn Tigers",
-        "score": 0,
+        "score": 13,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
         "away_record": "0-0",
-        "leaders": null,
+        "leaders": {
+          "points": {
+            "player": "Thomas Dowd",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Owen Freeman",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Caleb Williams",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Thomas Dowd",
+            "value": "3 PTS"
+          }
+        },
         "conf_id": "23",
         "conf": "SEC",
         "rank": null,
@@ -39,24 +56,36 @@
         "team_id": "2545",
         "abbr": "SELA",
         "name": "SE Louisiana Lions",
-        "score": 0,
+        "score": 10,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
         "away_record": "0-0",
-        "leaders": null,
+        "leaders": {
+          "points": {
+            "player": "Yanis Ndjonga",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Logan Suber",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Tyler Rolison",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Yanis Ndjonga",
+            "value": "6 PTS"
+          }
+        },
         "conf_id": "25",
         "conf": null,
         "rank": null,
         "loc": "SE Louisiana",
         "nick": "Lions"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "AUB -29.5",
-        "spread": -29.5,
-        "over_under": 149.5
-      },
+      "espn_line": null,
       "date": "2026-11-04",
       "p4": true
     },
