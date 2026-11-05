@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-04T23:45:20+00:00",
+  "finished_at": "2026-11-05T00:00:25+00:00",
   "game_date": "2026-11-04",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -27,21 +27,37 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 361,
-      "ODDS_API_KEY_2": 360,
+      "ODDS_API_KEY": 353,
+      "ODDS_API_KEY_2": 354,
       "ODDS_API_KEY_20K": 16110
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "SE Louisiana Lions @ Auburn Tigers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Radford Highlanders @ California Golden Bears",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 49,
-    "p4_events": 19,
+    "events": 53,
+    "p4_events": 20,
     "unmatched": [],
-    "due": 0,
+    "due": 2,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 1,
+      "pull_type": "pregame",
+      "rows": 8,
+      "credits_last": 2
     },
     "status": "ok"
   }
