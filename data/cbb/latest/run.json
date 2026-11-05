@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-05T21:45:19+00:00",
+  "finished_at": "2026-11-05T22:00:25+00:00",
   "game_date": "2026-11-05",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -28,20 +28,126 @@
     "keys": 3,
     "credits": {
       "ODDS_API_KEY": 332,
-      "ODDS_API_KEY_2": 335,
+      "ODDS_API_KEY_2": 333,
       "ODDS_API_KEY_20K": 16097
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Bellarmine Knights @ Indiana Hoosiers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Chattanooga Mocs @ Penn State Nittany Lions",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Wake Forest Demon Deacons @ Vanderbilt Commodores",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Buffalo Bulls @ Pittsburgh Panthers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Central Connecticut St Blue Devils @ Syracuse Orange",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Green Bay Phoenix @ Cincinnati Bearcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Mercer Bears @ Virginia Tech Hokies",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Mercyhurst Lakers @ Notre Dame Fighting Irish",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Northwestern St Demons @ Mississippi St Bulldogs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Jacksonville Dolphins @ Florida Gators",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Gardner-Webb Bulldogs @ Texas Longhorns",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Toledo Rockets @ Michigan St Spartans",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "VMI Keydets @ SMU Mustangs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Pennsylvania Quakers @ Illinois Fighting Illini",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Bethune-Cookman Wildcats @ Texas Tech Red Raiders",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Towson Tigers @ Utah Utes",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Cal Poly Mustangs @ Arizona Wildcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 83,
     "p4_events": 44,
     "unmatched": [],
-    "due": 0,
+    "due": 17,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 3,
+      "pull_type": "pregame",
+      "rows": 24,
+      "credits_last": 2
     },
     "status": "ok"
   }
