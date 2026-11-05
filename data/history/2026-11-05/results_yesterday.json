@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-05T05:15:19+00:00",
+  "fetched_at": "2026-11-05T05:30:18+00:00",
   "source": "espn",
   "count": 14,
   "game_date": "2026-11-04",
@@ -806,11 +806,11 @@
       "game_id": "401909933",
       "start_utc": "2026-11-05T02:30Z",
       "short_name": "DAL @ SA",
-      "state": "in",
-      "status": "3:15 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "3:15",
+      "clock": "0.0",
       "venue": "Frost Bank Center",
       "neutral_site": false,
       "broadcasts": [
@@ -820,19 +820,19 @@
         "team_id": "24",
         "abbr": "SA",
         "name": "San Antonio Spurs",
-        "score": 107,
-        "winner": null,
-        "record": "5-2",
-        "home_record": "3-2",
+        "score": 112,
+        "winner": true,
+        "record": "6-2",
+        "home_record": "4-2",
         "away_record": "2-0",
         "leaders": {
           "points": {
             "player": "Victor Wembanyama",
-            "value": "47"
+            "value": "52"
           },
           "rebounds": {
             "player": "Victor Wembanyama",
-            "value": "22"
+            "value": "24"
           },
           "assists": {
             "player": "De'Aaron Fox",
@@ -840,7 +840,7 @@
           },
           "rating": {
             "player": "Victor Wembanyama",
-            "value": "47 PTS, 22 REB, 8 BLK"
+            "value": "52 PTS, 24 REB, 8 BLK"
           }
         }
       },
@@ -848,15 +848,15 @@
         "team_id": "6",
         "abbr": "DAL",
         "name": "Dallas Mavericks",
-        "score": 104,
-        "winner": null,
-        "record": "4-3",
+        "score": 111,
+        "winner": false,
+        "record": "4-4",
         "home_record": "2-2",
-        "away_record": "2-1",
+        "away_record": "2-2",
         "leaders": {
           "points": {
             "player": "Kyrie Irving",
-            "value": "27"
+            "value": "29"
           },
           "rebounds": {
             "player": "P.J. Washington",
@@ -868,7 +868,7 @@
           },
           "rating": {
             "player": "Kyrie Irving",
-            "value": "27 PTS, 6 REB"
+            "value": "29 PTS, 7 REB"
           }
         }
       },
@@ -879,10 +879,10 @@
       "start_utc": "2026-11-05T03:00Z",
       "short_name": "LAL @ SAC",
       "state": "in",
-      "status": "6:39 - 4th",
+      "status": "3:27 - 4th",
       "completed": false,
       "period": 4,
-      "clock": "6:39",
+      "clock": "3:27",
       "venue": "Golden 1 Center",
       "neutral_site": false,
       "broadcasts": [
@@ -893,7 +893,7 @@
         "team_id": "23",
         "abbr": "SAC",
         "name": "Sacramento Kings",
-        "score": 83,
+        "score": 94,
         "winner": null,
         "record": "1-6",
         "home_record": "0-2",
@@ -905,15 +905,15 @@
           },
           "rebounds": {
             "player": "Domantas Sabonis",
-            "value": "15"
+            "value": "16"
           },
           "assists": {
             "player": "Darius Acuff Jr.",
-            "value": "9"
+            "value": "11"
           },
           "rating": {
             "player": "Darius Acuff Jr.",
-            "value": "22 PTS, 9 AST"
+            "value": "22 PTS, 11 AST"
           }
         }
       },
@@ -921,7 +921,7 @@
         "team_id": "13",
         "abbr": "LAL",
         "name": "Los Angeles Lakers",
-        "score": 98,
+        "score": 104,
         "winner": null,
         "record": "6-2",
         "home_record": "4-1",
@@ -929,11 +929,11 @@
         "leaders": {
           "points": {
             "player": "Luka Doncic",
-            "value": "35"
+            "value": "38"
           },
           "rebounds": {
             "player": "Luka Doncic",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Luka Doncic",
@@ -941,7 +941,7 @@
           },
           "rating": {
             "player": "Luka Doncic",
-            "value": "35 PTS, 7 REB, 7 AST"
+            "value": "38 PTS, 8 REB, 7 AST"
           }
         }
       },
@@ -952,10 +952,10 @@
       "start_utc": "2026-11-05T03:30Z",
       "short_name": "MIA @ LAC",
       "state": "in",
-      "status": "1:17 - 3rd",
+      "status": "9:11 - 4th",
       "completed": false,
-      "period": 3,
-      "clock": "1:17",
+      "period": 4,
+      "clock": "9:11",
       "venue": "Intuit Dome",
       "neutral_site": false,
       "broadcasts": [
@@ -965,7 +965,7 @@
         "team_id": "12",
         "abbr": "LAC",
         "name": "LA Clippers",
-        "score": 85,
+        "score": 89,
         "winner": null,
         "record": "1-6",
         "home_record": "1-2",
@@ -977,7 +977,7 @@
           },
           "rebounds": {
             "player": "Brook Lopez",
-            "value": "7"
+            "value": "6"
           },
           "assists": {
             "player": "Rui Hachimura",
@@ -993,7 +993,7 @@
         "team_id": "14",
         "abbr": "MIA",
         "name": "Miami Heat",
-        "score": 74,
+        "score": 86,
         "winner": null,
         "record": "2-5",
         "home_record": "1-3",
@@ -1004,8 +1004,8 @@
             "value": "26"
           },
           "rebounds": {
-            "player": "Bam Adebayo",
-            "value": "6"
+            "player": "Bobby Portis",
+            "value": "9"
           },
           "assists": {
             "player": "Davion Mitchell",
