@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-05T05:30:18+00:00",
+  "fetched_at": "2026-11-05T05:45:19+00:00",
   "source": "espn",
   "count": 14,
   "game_date": "2026-11-04",
@@ -878,11 +878,11 @@
       "game_id": "401909934",
       "start_utc": "2026-11-05T03:00Z",
       "short_name": "LAL @ SAC",
-      "state": "in",
-      "status": "3:27 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "3:27",
+      "clock": "0.0",
       "venue": "Golden 1 Center",
       "neutral_site": false,
       "broadcasts": [
@@ -893,10 +893,10 @@
         "team_id": "23",
         "abbr": "SAC",
         "name": "Sacramento Kings",
-        "score": 94,
-        "winner": null,
-        "record": "1-6",
-        "home_record": "0-2",
+        "score": 103,
+        "winner": false,
+        "record": "1-7",
+        "home_record": "0-3",
         "away_record": "1-4",
         "leaders": {
           "points": {
@@ -905,15 +905,15 @@
           },
           "rebounds": {
             "player": "Domantas Sabonis",
-            "value": "16"
+            "value": "17"
           },
           "assists": {
             "player": "Darius Acuff Jr.",
-            "value": "11"
+            "value": "12"
           },
           "rating": {
             "player": "Darius Acuff Jr.",
-            "value": "22 PTS, 11 AST"
+            "value": "22 PTS, 12 AST"
           }
         }
       },
@@ -921,19 +921,19 @@
         "team_id": "13",
         "abbr": "LAL",
         "name": "Los Angeles Lakers",
-        "score": 104,
-        "winner": null,
-        "record": "6-2",
+        "score": 116,
+        "winner": true,
+        "record": "7-2",
         "home_record": "4-1",
-        "away_record": "2-1",
+        "away_record": "3-1",
         "leaders": {
           "points": {
             "player": "Luka Doncic",
-            "value": "38"
+            "value": "40"
           },
           "rebounds": {
             "player": "Luka Doncic",
-            "value": "8"
+            "value": "9"
           },
           "assists": {
             "player": "Luka Doncic",
@@ -941,7 +941,7 @@
           },
           "rating": {
             "player": "Luka Doncic",
-            "value": "38 PTS, 8 REB, 7 AST"
+            "value": "40 PTS, 9 REB, 7 AST"
           }
         }
       },
@@ -952,10 +952,10 @@
       "start_utc": "2026-11-05T03:30Z",
       "short_name": "MIA @ LAC",
       "state": "in",
-      "status": "9:11 - 4th",
+      "status": "3:46 - 4th",
       "completed": false,
       "period": 4,
-      "clock": "9:11",
+      "clock": "3:46",
       "venue": "Intuit Dome",
       "neutral_site": false,
       "broadcasts": [
@@ -965,7 +965,7 @@
         "team_id": "12",
         "abbr": "LAC",
         "name": "LA Clippers",
-        "score": 89,
+        "score": 101,
         "winner": null,
         "record": "1-6",
         "home_record": "1-2",
@@ -973,19 +973,19 @@
         "leaders": {
           "points": {
             "player": "Rui Hachimura",
-            "value": "17"
+            "value": "20"
           },
           "rebounds": {
-            "player": "Brook Lopez",
-            "value": "6"
+            "player": "Rui Hachimura",
+            "value": "7"
           },
           "assists": {
             "player": "Rui Hachimura",
-            "value": "6"
+            "value": "7"
           },
           "rating": {
             "player": "Rui Hachimura",
-            "value": "17 PTS, 6 AST"
+            "value": "20 PTS, 7 REB, 7 AST"
           }
         }
       },
@@ -993,7 +993,7 @@
         "team_id": "14",
         "abbr": "MIA",
         "name": "Miami Heat",
-        "score": 86,
+        "score": 97,
         "winner": null,
         "record": "2-5",
         "home_record": "1-3",
@@ -1001,11 +1001,11 @@
         "leaders": {
           "points": {
             "player": "Bam Adebayo",
-            "value": "26"
+            "value": "31"
           },
           "rebounds": {
             "player": "Bobby Portis",
-            "value": "9"
+            "value": "10"
           },
           "assists": {
             "player": "Davion Mitchell",
@@ -1013,7 +1013,7 @@
           },
           "rating": {
             "player": "Bam Adebayo",
-            "value": "26 PTS, 6 REB"
+            "value": "31 PTS, 7 REB"
           }
         }
       },
