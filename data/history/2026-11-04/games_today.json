@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-05T00:00:18+00:00",
+  "fetched_at": "2026-11-05T00:15:16+00:00",
   "source": "espn",
   "count": 14,
   "game_date": "2026-11-04",
@@ -8,11 +8,11 @@
       "game_id": "401909922",
       "start_utc": "2026-11-05T00:00Z",
       "short_name": "PHI @ DET",
-      "state": "pre",
-      "status": "11/4 - 7:00 PM EST",
+      "state": "in",
+      "status": "10:21 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:21",
       "venue": "Little Caesars Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -22,27 +22,27 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "6-1",
         "home_record": "2-0",
         "away_record": "4-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Cade Cunningham",
-            "value": "23.7"
+          "points": {
+            "player": "Duncan Robinson",
+            "value": "3"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Ausar Thompson",
-            "value": "7.2"
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Cade Cunningham",
-            "value": "7.1"
+          "assists": {
+            "player": "Ausar Thompson",
+            "value": "1"
           },
           "rating": {
-            "player": "Cade Cunningham",
-            "value": "23.7 PPG, 5.4 RPG, 7.1 APG, 1.6 SPG, 1.1 BPG"
+            "player": "Duncan Robinson",
+            "value": "3 PTS"
           }
         }
       },
@@ -50,46 +50,37 @@
         "team_id": "20",
         "abbr": "PHI",
         "name": "Philadelphia 76ers",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "7-1",
         "home_record": "4-1",
         "away_record": "3-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tyrese Maxey",
-            "value": "29.1"
+          "points": {
+            "player": "Jaylen Brown",
+            "value": "2"
           },
-          "reboundsPerGame": {
+          "assists": {
             "player": "Joel Embiid",
-            "value": "9.2"
-          },
-          "assistsPerGame": {
-            "player": "LeBron James",
-            "value": "7.3"
+            "value": "1"
           },
           "rating": {
-            "player": "Tyrese Maxey",
-            "value": "29.1 PPG, 4.1 RPG, 5.2 APG, 1.8 SPG, 0.9 BPG"
+            "player": "Jaylen Brown",
+            "value": "2 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "DET -2.5",
-        "spread": -2.5,
-        "over_under": 219.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909923",
       "start_utc": "2026-11-05T00:00Z",
       "short_name": "ATL @ WSH",
-      "state": "pre",
-      "status": "11/4 - 7:00 PM EST",
+      "state": "in",
+      "status": "9:57 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:57",
       "venue": "Capital One Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -99,27 +90,27 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "4-3",
         "home_record": "2-1",
         "away_record": "2-2",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Anthony Davis",
-            "value": "23.0"
+            "value": "6"
           },
-          "reboundsPerGame": {
-            "player": "Anthony Davis",
-            "value": "9.1"
+          "rebounds": {
+            "player": "AJ Dybantsa",
+            "value": "1"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Trae Young",
-            "value": "10.0"
+            "value": "2"
           },
           "rating": {
             "player": "Anthony Davis",
-            "value": "23.0 PPG, 9.1 RPG, 2.0 APG, 1.6 SPG, 0.9 BPG"
+            "value": "6 PTS"
           }
         }
       },
@@ -127,36 +118,27 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 0,
+        "score": 3,
         "winner": null,
         "record": "4-4",
         "home_record": "1-2",
         "away_record": "3-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Nickeil Alexander-Walker",
-            "value": "21.1"
-          },
-          "reboundsPerGame": {
-            "player": "Onyeka Okongwu",
-            "value": "7.5"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Kingston Flemings",
-            "value": "4.7"
+            "value": "3"
+          },
+          "assists": {
+            "player": "Onyeka Okongwu",
+            "value": "1"
           },
           "rating": {
-            "player": "Nickeil Alexander-Walker",
-            "value": "21.1 PPG, 3.2 RPG, 2.8 APG, 1.6 SPG, 0.2 BPG"
+            "player": "Kingston Flemings",
+            "value": "3 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ATL -1.5",
-        "spread": 1.5,
-        "over_under": 229.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909924",
@@ -461,8 +443,8 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "MEM -6.5",
-        "spread": -6.5,
+        "details": "MEM -5.5",
+        "spread": -5.5,
         "over_under": 228.5
       }
     },

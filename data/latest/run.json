@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-05T00:00:23+00:00",
+  "finished_at": "2026-11-05T00:15:19+00:00",
   "game_date": "2026-11-04",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -27,36 +27,14 @@
     "keys": 3,
     "credits": {
       "ODDS_API_KEY": 353,
-      "ODDS_API_KEY_2": 356,
+      "ODDS_API_KEY_2": 354,
       "ODDS_API_KEY_20K": 16110
     },
-    "pulled": [
-      {
-        "matchup": "Cleveland Cavaliers @ Oklahoma City Thunder",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 178,
-        "markets": 4
-      },
-      {
-        "matchup": "Indiana Pacers @ Memphis Grizzlies",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 160,
-        "markets": 4
-      },
-      {
-        "matchup": "Utah Jazz @ New Orleans Pelicans",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 170,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 3,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
