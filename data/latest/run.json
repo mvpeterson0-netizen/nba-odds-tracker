@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-05T02:30:21+00:00",
+  "finished_at": "2026-11-05T02:45:17+00:00",
   "game_date": "2026-11-04",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -16,10 +16,10 @@
     "defense_ranks": "ok"
   },
   "boxscores": {
-    "new_games": 1,
-    "player_rows": 26,
+    "new_games": 0,
+    "player_rows": 0,
     "unparsed": [],
-    "queued": 1,
+    "queued": 0,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -30,19 +30,11 @@
       "ODDS_API_KEY_2": 342,
       "ODDS_API_KEY_20K": 16110
     },
-    "pulled": [
-      {
-        "matchup": "Miami Heat @ Los Angeles Clippers",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 194,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
