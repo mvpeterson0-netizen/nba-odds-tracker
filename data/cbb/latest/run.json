@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-06T01:45:17+00:00",
+  "finished_at": "2026-11-06T02:00:31+00:00",
   "game_date": "2026-11-05",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,26 +17,33 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
+    "new_games": 1,
+    "player_rows": 31,
     "unparsed": [],
-    "queued": 0,
+    "queued": 1,
     "errors": [],
     "rosters_fetched": 0
   },
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 325,
+      "ODDS_API_KEY": 321,
       "ODDS_API_KEY_2": 325,
       "ODDS_API_KEY_20K": 16097
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Cal Poly Mustangs @ Arizona Wildcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 81,
-    "p4_events": 31,
+    "events": 80,
+    "p4_events": 29,
     "unmatched": [],
-    "due": 0,
+    "due": 1,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",
