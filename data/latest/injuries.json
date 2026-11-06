@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-06T23:00:21+00:00",
+  "fetched_at": "2026-11-06T23:15:18+00:00",
   "source": "espn",
   "count": 97,
   "rows": [
@@ -305,8 +305,8 @@
       "player": "Kyrie Irving",
       "position": "G",
       "status": "Day-To-Day",
-      "injury": "Illness",
-      "return_date": "2026-11-06",
+      "injury": "INJURY_STATUS_DAYTODAY",
+      "return_date": null,
       "comment": "Irving (illness) is probable for Friday's game against Utah.",
       "updated": "2026-11-06T19:05Z",
       "url": "https://www.espn.com/nba/player/news/_/id/6442/kyrie-irving"
@@ -333,8 +333,8 @@
       "player": "Santi Aldama",
       "position": "F",
       "status": "Out",
-      "injury": "Knee",
-      "return_date": "2026-11-06",
+      "injury": "INJURY_STATUS_OUT",
+      "return_date": null,
       "comment": "Aldama (knee) is probable to suit up for Friday's game against the Jazz.",
       "updated": "2026-11-05T22:24Z",
       "url": "https://www.espn.com/nba/player/news/_/id/4593125/santi-aldama"
@@ -567,29 +567,29 @@
       "team_id": "11",
       "team": "Indiana Pacers",
       "team_abbr": "IND",
+      "player_id": "2530530",
+      "player": "T.J. McConnell",
+      "position": "G",
+      "status": "Out",
+      "injury": "Hamstring",
+      "return_date": "2026-11-07",
+      "comment": "McConnell (hamstring) is questionable for Saturday's game against Denver.",
+      "updated": "2026-11-06T23:06Z",
+      "url": "https://www.espn.com/nba/player/news/_/id/2530530/tj-mcconnell"
+    },
+    {
+      "team_id": "11",
+      "team": "Indiana Pacers",
+      "team_abbr": "IND",
       "player_id": "3133603",
       "player": "Kelly Oubre Jr.",
       "position": "G",
       "status": "Day-To-Day",
       "injury": "Calf",
       "return_date": "2026-11-07",
-      "comment": "Oubre (calf) has been ruled out for Wednesday's game against the Grizzlies.",
-      "updated": "2026-11-05T15:00Z",
+      "comment": "Oubre (calf) is questionable for Saturday's game against Denver.",
+      "updated": "2026-11-06T23:04Z",
       "url": "https://www.espn.com/nba/player/news/_/id/3133603/kelly-oubre-jr"
-    },
-    {
-      "team_id": "11",
-      "team": "Indiana Pacers",
-      "team_abbr": "IND",
-      "player_id": "2530530",
-      "player": "T.J. McConnell",
-      "position": "G",
-      "status": "Out",
-      "injury": "Hamstring",
-      "return_date": "2026-11-09",
-      "comment": "McConnell (hamstring) is out for Monday's game against the Hawks and remains week-to-week.",
-      "updated": "2026-11-02T18:19Z",
-      "url": "https://www.espn.com/nba/player/news/_/id/2530530/tj-mcconnell"
     },
     {
       "team_id": "11",
@@ -964,7 +964,7 @@
       "position": "C",
       "status": "Day-To-Day",
       "injury": "Back",
-      "return_date": "2026-11-06",
+      "return_date": "2026-11-08",
       "comment": "Bona (back) is doubtful to play in Friday's game against the Cavaliers, Ky Carlin of USA Today reports.",
       "updated": "2026-11-05T22:18Z",
       "url": "https://www.espn.com/nba/player/news/_/id/5105637/adem-bona"

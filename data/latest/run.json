@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-06T23:00:25+00:00",
+  "finished_at": "2026-11-06T23:15:22+00:00",
   "game_date": "2026-11-06",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -27,29 +27,14 @@
     "keys": 3,
     "credits": {
       "ODDS_API_KEY": 292,
-      "ODDS_API_KEY_2": 294,
-      "ODDS_API_KEY_20K": 16094
+      "ODDS_API_KEY_2": 292,
+      "ODDS_API_KEY_20K": 16091
     },
-    "pulled": [
-      {
-        "matchup": "Washington Wizards @ Atlanta Hawks",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 170,
-        "markets": 4
-      },
-      {
-        "matchup": "Boston Celtics @ Charlotte Hornets",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 182,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 2,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
