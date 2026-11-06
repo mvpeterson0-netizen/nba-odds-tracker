@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-05T23:45:20+00:00",
+  "finished_at": "2026-11-06T00:01:00+00:00",
   "game_date": "2026-11-05",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -28,20 +28,80 @@
     "keys": 3,
     "credits": {
       "ODDS_API_KEY": 329,
-      "ODDS_API_KEY_2": 331,
-      "ODDS_API_KEY_20K": 16097
+      "ODDS_API_KEY_2": 329,
+      "ODDS_API_KEY_20K": null
     },
-    "pulled": [],
-    "errors": [],
+    "pulled": [
+      {
+        "matchup": "Northwestern St Demons @ Mississippi St Bulldogs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Jacksonville Dolphins @ Florida Gators",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Gardner-Webb Bulldogs @ Texas Longhorns",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Toledo Rockets @ Michigan St Spartans",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "VMI Keydets @ SMU Mustangs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Pennsylvania Quakers @ Illinois Fighting Illini",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Bethune-Cookman Wildcats @ Texas Tech Red Raiders",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Towson Tigers @ Utah Utes",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Cal Poly Mustangs @ Arizona Wildcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
+    "errors": [
+      "ODDS_API_KEY_20K: events HTTP 502"
+    ],
     "events": 84,
-    "p4_events": 42,
+    "p4_events": 37,
     "unmatched": [],
-    "due": 0,
+    "due": 9,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 5,
+      "pull_type": "pregame",
+      "rows": 40,
+      "credits_last": 2
     },
     "status": "ok"
   }
