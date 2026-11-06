@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-06T00:45:25+00:00",
+  "finished_at": "2026-11-06T01:00:38+00:00",
   "game_date": "2026-11-05",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -27,21 +27,49 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 327,
-      "ODDS_API_KEY_2": 329,
+      "ODDS_API_KEY": 325,
+      "ODDS_API_KEY_2": 325,
       "ODDS_API_KEY_20K": 16097
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Pennsylvania Quakers @ Illinois Fighting Illini",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Bethune-Cookman Wildcats @ Texas Tech Red Raiders",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Towson Tigers @ Utah Utes",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Cal Poly Mustangs @ Arizona Wildcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 84,
-    "p4_events": 37,
+    "p4_events": 32,
     "unmatched": [],
-    "due": 0,
+    "due": 4,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 2,
+      "pull_type": "pregame",
+      "rows": 16,
+      "credits_last": 2
     },
     "status": "ok"
   }
