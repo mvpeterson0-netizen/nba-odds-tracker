@@ -1,19 +1,103 @@
 {
-  "fetched_at": "2026-11-06T03:45:19+00:00",
+  "fetched_at": "2026-11-06T04:00:19+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-05",
   "division_i_games": 65,
   "rows": [
     {
+      "game_id": "401909739",
+      "start_utc": "2026-11-06T03:30Z",
+      "short_name": "CP @ ARIZ",
+      "state": "in",
+      "status": "13:47 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "13:47",
+      "venue": "McKale Center at ALKEME Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "truTV"
+      ],
+      "home": {
+        "team_id": "12",
+        "abbr": "ARIZ",
+        "name": "Arizona Wildcats",
+        "score": 14,
+        "winner": null,
+        "record": "0-1",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Caleb Holt",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Caleb Holt",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Derek Dixon",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Caleb Holt",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 5,
+        "loc": "Arizona",
+        "nick": "Wildcats"
+      },
+      "away": {
+        "team_id": "13",
+        "abbr": "CP",
+        "name": "Cal Poly Mustangs",
+        "score": 12,
+        "winner": null,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Hamad Mousa",
+            "value": "10"
+          },
+          "rebounds": {
+            "player": "Guzman Vasilic",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Jess Esso Essis",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Hamad Mousa",
+            "value": "10 PTS"
+          }
+        },
+        "conf_id": "9",
+        "conf": null,
+        "rank": null,
+        "loc": "Cal Poly",
+        "nick": "Mustangs"
+      },
+      "espn_line": null,
+      "date": "2026-11-05",
+      "p4": true
+    },
+    {
       "game_id": "401921133",
       "start_utc": "2026-11-06T02:00Z",
       "short_name": "BCU @ TTU",
       "state": "in",
-      "status": "9:35 - 2nd",
+      "status": "6:31 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:35",
+      "clock": "6:31",
       "venue": "United Supermarkets Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +107,7 @@
         "team_id": "2641",
         "abbr": "TTU",
         "name": "Texas Tech Red Raiders",
-        "score": 53,
+        "score": 63,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -35,15 +119,15 @@
           },
           "rebounds": {
             "player": "Josiah Moseley",
-            "value": "6"
+            "value": "8"
           },
           "assists": {
             "player": "Cruz Davis",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Cruz Davis",
-            "value": "12 PTS, 3 STL"
+            "value": "14 PTS, 6 REB, 3 STL"
           }
         },
         "conf_id": "8",
@@ -56,15 +140,15 @@
         "team_id": "2065",
         "abbr": "BCU",
         "name": "Bethune-Cookman Wildcats",
-        "score": 44,
+        "score": 48,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Jameel Morris",
-            "value": "8"
+            "player": "Vuk Boskovic",
+            "value": "10"
           },
           "rebounds": {
             "player": "Jameel Morris",
@@ -75,8 +159,8 @@
             "value": "2"
           },
           "rating": {
-            "player": "Jameel Morris",
-            "value": "8 PTS, 6 REB"
+            "player": "Vuk Boskovic",
+            "value": "10 PTS"
           }
         },
         "conf_id": "26",
@@ -94,10 +178,10 @@
       "start_utc": "2026-11-06T02:00Z",
       "short_name": "TOW @ UTAH",
       "state": "in",
-      "status": "5:34 - 2nd",
+      "status": "1:42 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "5:34",
+      "clock": "1:42",
       "venue": "Jon M. Huntsman Center",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +191,7 @@
         "team_id": "254",
         "abbr": "UTAH",
         "name": "Utah Utes",
-        "score": 51,
+        "score": 59,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -127,7 +211,7 @@
           },
           "rating": {
             "player": "Jackson Holcombe",
-            "value": "8 PTS"
+            "value": "8 PTS, 6 REB"
           }
         },
         "conf_id": "8",
@@ -140,7 +224,7 @@
         "team_id": "119",
         "abbr": "TOW",
         "name": "Towson Tigers",
-        "score": 44,
+        "score": 51,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
@@ -148,7 +232,7 @@
         "leaders": {
           "points": {
             "player": "Jaquan Womack",
-            "value": "12"
+            "value": "13"
           },
           "rebounds": {
             "player": "Caleb Embeya",
@@ -159,8 +243,8 @@
             "value": "2"
           },
           "rating": {
-            "player": "Jaquan Womack",
-            "value": "12 PTS"
+            "player": "Ben Roseborough",
+            "value": "13 PTS"
           }
         },
         "conf_id": "10",
@@ -1428,74 +1512,6 @@
         "rank": null,
         "loc": "VMI",
         "nick": "Keydets"
-      },
-      "espn_line": null,
-      "date": "2026-11-05",
-      "p4": true
-    },
-    {
-      "game_id": "401909739",
-      "start_utc": "2026-11-06T03:30Z",
-      "short_name": "CP @ ARIZ",
-      "state": "in",
-      "status": "19:05 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "19:05",
-      "venue": "McKale Center at ALKEME Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "truTV"
-      ],
-      "home": {
-        "team_id": "12",
-        "abbr": "ARIZ",
-        "name": "Arizona Wildcats",
-        "score": 1,
-        "winner": null,
-        "record": "0-1",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Caleb Holt",
-            "value": "1"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 5,
-        "loc": "Arizona",
-        "nick": "Wildcats"
-      },
-      "away": {
-        "team_id": "13",
-        "abbr": "CP",
-        "name": "Cal Poly Mustangs",
-        "score": 2,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Hamad Mousa",
-            "value": "2"
-          },
-          "rebounds": {
-            "player": "Hamad Mousa",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Hamad Mousa",
-            "value": "2 PTS"
-          }
-        },
-        "conf_id": "9",
-        "conf": null,
-        "rank": null,
-        "loc": "Cal Poly",
-        "nick": "Mustangs"
       },
       "espn_line": null,
       "date": "2026-11-05",
