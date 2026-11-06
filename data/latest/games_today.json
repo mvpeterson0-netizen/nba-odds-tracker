@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-06T02:00:20+00:00",
+  "fetched_at": "2026-11-06T02:15:15+00:00",
   "source": "espn",
   "count": 2,
   "game_date": "2026-11-05",
@@ -8,11 +8,11 @@
       "game_id": "401909936",
       "start_utc": "2026-11-06T02:00Z",
       "short_name": "ORL @ PHX",
-      "state": "pre",
-      "status": "11/5 - 9:00 PM EST",
+      "state": "in",
+      "status": "9:25 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:25",
       "venue": "Mortgage Matchup Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,27 +23,23 @@
         "team_id": "21",
         "abbr": "PHX",
         "name": "Phoenix Suns",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "1-5",
         "home_record": "1-2",
         "away_record": "0-3",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Devin Booker",
-            "value": "24.7"
+            "value": "6"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Miles Bridges",
-            "value": "7.0"
-          },
-          "assistsPerGame": {
-            "player": "Devin Booker",
-            "value": "4.7"
+            "value": "1"
           },
           "rating": {
             "player": "Devin Booker",
-            "value": "24.7 PPG, 3.2 RPG, 4.7 APG, 0.5 SPG, 0.3 BPG"
+            "value": "6 PTS"
           }
         }
       },
@@ -51,36 +47,31 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "2-5",
         "home_record": "0-4",
         "away_record": "2-1",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Franz Wagner",
-            "value": "20.3"
+            "value": "3"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Wendell Carter Jr.",
-            "value": "8.9"
+            "value": "3"
           },
-          "assistsPerGame": {
-            "player": "Franz Wagner",
-            "value": "7.6"
+          "assists": {
+            "player": "Anthony Black",
+            "value": "2"
           },
           "rating": {
             "player": "Franz Wagner",
-            "value": "20.3 PPG, 6.1 RPG, 7.6 APG, 0.9 SPG"
+            "value": "3 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "PHX -1.5",
-        "spread": -1.5,
-        "over_under": 222.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909937",
