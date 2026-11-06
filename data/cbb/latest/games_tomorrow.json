@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-06T19:30:24+00:00",
+  "fetched_at": "2026-11-06T19:45:17+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-07",
@@ -153,7 +153,12 @@
         "loc": "San Diego State",
         "nick": "Aztecs"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "SDSU -2.5",
+        "spread": 2.5,
+        "over_under": 155.5
+      },
       "date": "2026-11-07",
       "p4": true
     },
@@ -310,7 +315,12 @@
         "loc": "Maryland",
         "nick": "Terrapins"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "GTWN -1.5",
+        "spread": -1.5,
+        "over_under": 147.5
+      },
       "date": "2026-11-07",
       "p4": true
     }
