@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-06T02:45:21+00:00",
+  "fetched_at": "2026-11-06T03:00:24+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-05",
@@ -9,11 +9,11 @@
       "game_id": "401906770",
       "start_utc": "2026-11-06T01:00Z",
       "short_name": "JAX @ FLA",
-      "state": "in",
-      "status": "2:21 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "2:21",
+      "clock": "0:00",
       "venue": "Stephen C. O'Connell Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,10 +23,10 @@
         "team_id": "57",
         "abbr": "FLA",
         "name": "Florida Gators",
-        "score": 87,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "0-0",
+        "score": 88,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -56,19 +56,19 @@
         "team_id": "294",
         "abbr": "JAX",
         "name": "Jacksonville Dolphins",
-        "score": 52,
-        "winner": null,
-        "record": "1-0",
+        "score": 57,
+        "winner": false,
+        "record": "1-1",
         "home_record": "1-0",
-        "away_record": "0-0",
+        "away_record": "0-1",
         "leaders": {
           "points": {
             "player": "Hayden Wood",
             "value": "11"
           },
           "rebounds": {
-            "player": "Hayden Wood",
-            "value": "3"
+            "player": "Rex Stirling",
+            "value": "4"
           },
           "assists": {
             "player": "Jamie Phillips Jr.",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-06T01:00Z",
       "short_name": "CCU @ DUKE",
       "state": "in",
-      "status": "12:34 - 2nd",
+      "status": "7:33 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "12:34",
+      "clock": "7:33",
       "venue": "Cameron Indoor Stadium",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "150",
         "abbr": "DUKE",
         "name": "Duke Blue Devils",
-        "score": 73,
+        "score": 92,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -115,19 +115,19 @@
         "leaders": {
           "points": {
             "player": "Patrick Ngongba II",
-            "value": "26"
+            "value": "28"
           },
           "rebounds": {
-            "player": "Sebastian Wilkins",
+            "player": "Patrick Ngongba II",
             "value": "9"
           },
           "assists": {
             "player": "Cayden Boozer",
-            "value": "8"
+            "value": "11"
           },
           "rating": {
             "player": "Patrick Ngongba II",
-            "value": "26 PTS, 8 REB"
+            "value": "28 PTS, 9 REB"
           }
         },
         "conf_id": "2",
@@ -140,7 +140,7 @@
         "team_id": "324",
         "abbr": "CCU",
         "name": "Coastal Carolina Chanticleers",
-        "score": 27,
+        "score": 36,
         "winner": null,
         "record": "0-1",
         "home_record": "0-1",
@@ -148,7 +148,7 @@
         "leaders": {
           "points": {
             "player": "Trey Perry",
-            "value": "8"
+            "value": "12"
           },
           "rebounds": {
             "player": "Jaylen Cross",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-06T01:30Z",
       "short_name": "PENN @ ILL",
       "state": "in",
-      "status": "17:11 - 2nd",
+      "status": "11:09 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "17:11",
+      "clock": "11:09",
       "venue": "State Farm Center",
       "neutral_site": false,
       "broadcasts": [
@@ -191,7 +191,7 @@
         "team_id": "356",
         "abbr": "ILL",
         "name": "Illinois Fighting Illini",
-        "score": 62,
+        "score": 79,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -199,11 +199,11 @@
         "leaders": {
           "points": {
             "player": "Andrej Stojakovic",
-            "value": "23"
+            "value": "25"
           },
           "rebounds": {
             "player": "Ethan Brown",
-            "value": "6"
+            "value": "8"
           },
           "assists": {
             "player": "Tomislav Ivisic",
@@ -211,7 +211,7 @@
           },
           "rating": {
             "player": "Andrej Stojakovic",
-            "value": "23 PTS"
+            "value": "25 PTS"
           }
         },
         "conf_id": "7",
@@ -224,7 +224,7 @@
         "team_id": "219",
         "abbr": "PENN",
         "name": "Pennsylvania Quakers",
-        "score": 35,
+        "score": 48,
         "winner": null,
         "record": "0-0",
         "home_record": "0-0",
@@ -232,7 +232,7 @@
         "leaders": {
           "points": {
             "player": "Michael Zanoni",
-            "value": "10"
+            "value": "16"
           },
           "rebounds": {
             "player": "Sir Mohammed",
@@ -243,8 +243,8 @@
             "value": "3"
           },
           "rating": {
-            "player": "Michael Zanoni",
-            "value": "10 PTS"
+            "player": "Lucas Lueth",
+            "value": "14 PTS, 3 BLK"
           }
         },
         "conf_id": "12",
@@ -262,10 +262,10 @@
       "start_utc": "2026-11-06T01:00Z",
       "short_name": "TOL @ MSU",
       "state": "in",
-      "status": "9:16 - 2nd",
+      "status": "4:02 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:16",
+      "clock": "4:02",
       "venue": "Breslin Center",
       "neutral_site": false,
       "broadcasts": [
@@ -275,7 +275,7 @@
         "team_id": "127",
         "abbr": "MSU",
         "name": "Michigan State Spartans",
-        "score": 71,
+        "score": 80,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -287,15 +287,15 @@
           },
           "rebounds": {
             "player": "Jordan Scott",
-            "value": "7"
+            "value": "9"
           },
           "assists": {
             "player": "Jeremy Fears Jr.",
-            "value": "8"
+            "value": "9"
           },
           "rating": {
-            "player": "Jasiah Jervis",
-            "value": "13 PTS"
+            "player": "Jordan Scott",
+            "value": "12 PTS, 9 REB"
           }
         },
         "conf_id": "7",
@@ -308,7 +308,7 @@
         "team_id": "2649",
         "abbr": "TOL",
         "name": "Toledo Rockets",
-        "score": 41,
+        "score": 51,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
@@ -320,15 +320,15 @@
           },
           "rebounds": {
             "player": "Will James Jr.",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
             "player": "Mynor Strong",
             "value": "2"
           },
           "rating": {
-            "player": "Sean Jones",
-            "value": "9 PTS"
+            "player": "Angel Montas Jr.",
+            "value": "8 PTS"
           }
         },
         "conf_id": "14",
@@ -346,10 +346,10 @@
       "start_utc": "2026-11-06T01:00Z",
       "short_name": "GWEB @ TEX",
       "state": "in",
-      "status": "6:54 - 2nd",
+      "status": "0:23 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "6:54",
+      "clock": "0:23",
       "venue": "Moody Center",
       "neutral_site": false,
       "broadcasts": [
@@ -359,7 +359,7 @@
         "team_id": "251",
         "abbr": "TEX",
         "name": "Texas Longhorns",
-        "score": 83,
+        "score": 98,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -392,7 +392,7 @@
         "team_id": "2241",
         "abbr": "GWEB",
         "name": "Gardner-Webb Runnin' Bulldogs",
-        "score": 33,
+        "score": 49,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
@@ -400,19 +400,19 @@
         "leaders": {
           "points": {
             "player": "Mikhali Pocknett",
-            "value": "7"
+            "value": "12"
           },
           "rebounds": {
-            "player": "Sam Nosakhare",
-            "value": "4"
+            "player": "Mikhali Pocknett",
+            "value": "5"
           },
           "assists": {
-            "player": "Ace Talbert",
+            "player": "Jackson Skipper",
             "value": "2"
           },
           "rating": {
-            "player": "Jamias Ferere",
-            "value": "7 PTS"
+            "player": "Mikhali Pocknett",
+            "value": "12 PTS"
           }
         },
         "conf_id": "6",
@@ -430,10 +430,10 @@
       "start_utc": "2026-11-06T02:00Z",
       "short_name": "BCU @ TTU",
       "state": "in",
-      "status": "5:33 - 1st",
+      "status": "1:58 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "5:33",
+      "clock": "1:58",
       "venue": "United Supermarkets Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -443,7 +443,7 @@
         "team_id": "2641",
         "abbr": "TTU",
         "name": "Texas Tech Red Raiders",
-        "score": 25,
+        "score": 35,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -451,19 +451,19 @@
         "leaders": {
           "points": {
             "player": "Dra Gibbs-Lawhorn",
-            "value": "12"
+            "value": "16"
           },
           "rebounds": {
-            "player": "Bassala Bagayoko",
+            "player": "Cruz Davis",
             "value": "4"
           },
           "assists": {
-            "player": "Donovan Atwell",
+            "player": "Dra Gibbs-Lawhorn",
             "value": "1"
           },
           "rating": {
             "player": "Dra Gibbs-Lawhorn",
-            "value": "12 PTS"
+            "value": "16 PTS"
           }
         },
         "conf_id": "8",
@@ -476,27 +476,27 @@
         "team_id": "2065",
         "abbr": "BCU",
         "name": "Bethune-Cookman Wildcats",
-        "score": 11,
+        "score": 19,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Quentin Heady",
-            "value": "4"
+            "player": "Connor Teasley",
+            "value": "5"
           },
           "rebounds": {
             "player": "Jameel Morris",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Vuk Boskovic",
             "value": "1"
           },
           "rating": {
-            "player": "Quentin Heady",
-            "value": "4 PTS"
+            "player": "Jameel Morris",
+            "value": "6 REB"
           }
         },
         "conf_id": "26",
@@ -510,182 +510,14 @@
       "p4": true
     },
     {
-      "game_id": "401909706",
-      "start_utc": "2026-11-06T00:00Z",
-      "short_name": "BUF @ PITT",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Petersen Events Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACCNX"
-      ],
-      "home": {
-        "team_id": "221",
-        "abbr": "PITT",
-        "name": "Pittsburgh Panthers",
-        "score": 80,
-        "winner": true,
-        "record": "2-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Baye Ndongo",
-            "value": "23"
-          },
-          "rebounds": {
-            "player": "Baye Ndongo",
-            "value": "21"
-          },
-          "assists": {
-            "player": "Naithan George",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Baye Ndongo",
-            "value": "23 PTS, 21 REB"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Pittsburgh",
-        "nick": "Panthers"
-      },
-      "away": {
-        "team_id": "2084",
-        "abbr": "BUF",
-        "name": "Buffalo Bulls",
-        "score": 61,
-        "winner": false,
-        "record": "0-2",
-        "home_record": "0-0",
-        "away_record": "0-2",
-        "leaders": {
-          "points": {
-            "player": "Drew Steffe",
-            "value": "15"
-          },
-          "rebounds": {
-            "player": "Drew Steffe",
-            "value": "5"
-          },
-          "assists": {
-            "player": "Drew Steffe",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Drew Steffe",
-            "value": "15 PTS, 3 STL"
-          }
-        },
-        "conf_id": "14",
-        "conf": null,
-        "rank": null,
-        "loc": "Buffalo",
-        "nick": "Bulls"
-      },
-      "espn_line": null,
-      "date": "2026-11-05",
-      "p4": true
-    },
-    {
-      "game_id": "401906792",
-      "start_utc": "2026-11-06T00:30Z",
-      "short_name": "NWST @ MSST",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Humphrey Coliseum",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "344",
-        "abbr": "MSST",
-        "name": "Mississippi State Bulldogs",
-        "score": 82,
-        "winner": true,
-        "record": "2-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Josh Hubbard",
-            "value": "15"
-          },
-          "rebounds": {
-            "player": "Thomas Bassong",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Josh Hubbard",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Josh Hubbard",
-            "value": "15 PTS"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Mississippi State",
-        "nick": "Bulldogs"
-      },
-      "away": {
-        "team_id": "2466",
-        "abbr": "NWST",
-        "name": "Northwestern State Demons",
-        "score": 44,
-        "winner": false,
-        "record": "0-2",
-        "home_record": "0-0",
-        "away_record": "0-2",
-        "leaders": {
-          "points": {
-            "player": "Kai Simpson",
-            "value": "13"
-          },
-          "rebounds": {
-            "player": "Kai Simpson",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Kai Simpson",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Dionjahe Thomas",
-            "value": "7 PTS, 6 REB"
-          }
-        },
-        "conf_id": "25",
-        "conf": null,
-        "rank": null,
-        "loc": "Northwestern State",
-        "nick": "Demons"
-      },
-      "espn_line": null,
-      "date": "2026-11-05",
-      "p4": true
-    },
-    {
       "game_id": "401918968",
       "start_utc": "2026-11-06T01:00Z",
       "short_name": "VMI @ SMU",
       "state": "in",
-      "status": "8:03 - 2nd",
+      "status": "4:22 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "8:03",
+      "clock": "4:22",
       "venue": "Moody Coliseum (Dallas)",
       "neutral_site": false,
       "broadcasts": [
@@ -695,7 +527,7 @@
         "team_id": "2567",
         "abbr": "SMU",
         "name": "SMU Mustangs",
-        "score": 72,
+        "score": 83,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -711,7 +543,7 @@
           },
           "assists": {
             "player": "David Terrell Jr.",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
             "player": "Oziyah Sellers",
@@ -728,7 +560,7 @@
         "team_id": "2678",
         "abbr": "VMI",
         "name": "VMI Keydets",
-        "score": 53,
+        "score": 58,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -736,19 +568,19 @@
         "leaders": {
           "points": {
             "player": "TJ Johnson",
-            "value": "16"
+            "value": "19"
           },
           "rebounds": {
             "player": "TJ Johnson",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
             "player": "Trap Johnson",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "TJ Johnson",
-            "value": "16 PTS"
+            "value": "19 PTS"
           }
         },
         "conf_id": "24",
@@ -766,7 +598,7 @@
       "start_utc": "2026-11-06T02:00Z",
       "short_name": "TOW @ UTAH",
       "state": "in",
-      "status": "0:00 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
       "clock": "0:00",
@@ -1120,7 +952,24 @@
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
-        "leaders": null,
+        "leaders": {
+          "points": {
+            "player": "Myles Colvin",
+            "value": "28"
+          },
+          "rebounds": {
+            "player": "Myles Colvin",
+            "value": "6"
+          },
+          "assists": {
+            "player": "MJ Collins Jr.",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Myles Colvin",
+            "value": "28 PTS, 6 REB"
+          }
+        },
         "conf_id": "8",
         "conf": "Big 12",
         "rank": null,
@@ -1136,7 +985,24 @@
         "record": "1-1",
         "home_record": "1-0",
         "away_record": "0-1",
-        "leaders": null,
+        "leaders": {
+          "points": {
+            "player": "Orlando Lovejoy",
+            "value": "16"
+          },
+          "rebounds": {
+            "player": "Aidan Hadaway",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Ahmere Carson",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Orlando Lovejoy",
+            "value": "16 PTS"
+          }
+        },
         "conf_id": "45",
         "conf": null,
         "rank": null,
@@ -1394,6 +1260,174 @@
         "rank": null,
         "loc": "Central Connecticut",
         "nick": "Blue Devils"
+      },
+      "espn_line": null,
+      "date": "2026-11-05",
+      "p4": true
+    },
+    {
+      "game_id": "401909706",
+      "start_utc": "2026-11-06T00:00Z",
+      "short_name": "BUF @ PITT",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Petersen Events Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACCNX"
+      ],
+      "home": {
+        "team_id": "221",
+        "abbr": "PITT",
+        "name": "Pittsburgh Panthers",
+        "score": 80,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Baye Ndongo",
+            "value": "23"
+          },
+          "rebounds": {
+            "player": "Baye Ndongo",
+            "value": "21"
+          },
+          "assists": {
+            "player": "Naithan George",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Baye Ndongo",
+            "value": "23 PTS, 21 REB"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Pittsburgh",
+        "nick": "Panthers"
+      },
+      "away": {
+        "team_id": "2084",
+        "abbr": "BUF",
+        "name": "Buffalo Bulls",
+        "score": 61,
+        "winner": false,
+        "record": "0-2",
+        "home_record": "0-0",
+        "away_record": "0-2",
+        "leaders": {
+          "points": {
+            "player": "Drew Steffe",
+            "value": "15"
+          },
+          "rebounds": {
+            "player": "Drew Steffe",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Drew Steffe",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Drew Steffe",
+            "value": "15 PTS, 3 STL"
+          }
+        },
+        "conf_id": "14",
+        "conf": null,
+        "rank": null,
+        "loc": "Buffalo",
+        "nick": "Bulls"
+      },
+      "espn_line": null,
+      "date": "2026-11-05",
+      "p4": true
+    },
+    {
+      "game_id": "401906792",
+      "start_utc": "2026-11-06T00:30Z",
+      "short_name": "NWST @ MSST",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Humphrey Coliseum",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "344",
+        "abbr": "MSST",
+        "name": "Mississippi State Bulldogs",
+        "score": 82,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Josh Hubbard",
+            "value": "15"
+          },
+          "rebounds": {
+            "player": "Thomas Bassong",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Josh Hubbard",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Josh Hubbard",
+            "value": "15 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Mississippi State",
+        "nick": "Bulldogs"
+      },
+      "away": {
+        "team_id": "2466",
+        "abbr": "NWST",
+        "name": "Northwestern State Demons",
+        "score": 44,
+        "winner": false,
+        "record": "0-2",
+        "home_record": "0-0",
+        "away_record": "0-2",
+        "leaders": {
+          "points": {
+            "player": "Kai Simpson",
+            "value": "13"
+          },
+          "rebounds": {
+            "player": "Kai Simpson",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Kai Simpson",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Dionjahe Thomas",
+            "value": "7 PTS, 6 REB"
+          }
+        },
+        "conf_id": "25",
+        "conf": null,
+        "rank": null,
+        "loc": "Northwestern State",
+        "nick": "Demons"
       },
       "espn_line": null,
       "date": "2026-11-05",
