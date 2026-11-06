@@ -1,10 +1,262 @@
 {
-  "fetched_at": "2026-11-06T03:30:22+00:00",
+  "fetched_at": "2026-11-06T03:45:19+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-05",
   "division_i_games": 65,
   "rows": [
+    {
+      "game_id": "401921133",
+      "start_utc": "2026-11-06T02:00Z",
+      "short_name": "BCU @ TTU",
+      "state": "in",
+      "status": "9:35 - 2nd",
+      "completed": false,
+      "period": 2,
+      "clock": "9:35",
+      "venue": "United Supermarkets Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "home": {
+        "team_id": "2641",
+        "abbr": "TTU",
+        "name": "Texas Tech Red Raiders",
+        "score": 53,
+        "winner": null,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Dra Gibbs-Lawhorn",
+            "value": "18"
+          },
+          "rebounds": {
+            "player": "Josiah Moseley",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Cruz Davis",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Cruz Davis",
+            "value": "12 PTS, 3 STL"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 19,
+        "loc": "Texas Tech",
+        "nick": "Red Raiders"
+      },
+      "away": {
+        "team_id": "2065",
+        "abbr": "BCU",
+        "name": "Bethune-Cookman Wildcats",
+        "score": 44,
+        "winner": null,
+        "record": "0-1",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Jameel Morris",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Jameel Morris",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Vuk Boskovic",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Jameel Morris",
+            "value": "8 PTS, 6 REB"
+          }
+        },
+        "conf_id": "26",
+        "conf": null,
+        "rank": null,
+        "loc": "Bethune-Cookman",
+        "nick": "Wildcats"
+      },
+      "espn_line": null,
+      "date": "2026-11-05",
+      "p4": true
+    },
+    {
+      "game_id": "401921698",
+      "start_utc": "2026-11-06T02:00Z",
+      "short_name": "TOW @ UTAH",
+      "state": "in",
+      "status": "5:34 - 2nd",
+      "completed": false,
+      "period": 2,
+      "clock": "5:34",
+      "venue": "Jon M. Huntsman Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "home": {
+        "team_id": "254",
+        "abbr": "UTAH",
+        "name": "Utah Utes",
+        "score": 51,
+        "winner": null,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Taison Chatman",
+            "value": "13"
+          },
+          "rebounds": {
+            "player": "Jaxon Johnson",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Trey Campbell",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Jackson Holcombe",
+            "value": "8 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Utah",
+        "nick": "Utes"
+      },
+      "away": {
+        "team_id": "119",
+        "abbr": "TOW",
+        "name": "Towson Tigers",
+        "score": 44,
+        "winner": null,
+        "record": "0-1",
+        "home_record": "0-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Jaquan Womack",
+            "value": "12"
+          },
+          "rebounds": {
+            "player": "Caleb Embeya",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Ben Roseborough",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Jaquan Womack",
+            "value": "12 PTS"
+          }
+        },
+        "conf_id": "10",
+        "conf": null,
+        "rank": null,
+        "loc": "Towson",
+        "nick": "Tigers"
+      },
+      "espn_line": null,
+      "date": "2026-11-05",
+      "p4": true
+    },
+    {
+      "game_id": "401906770",
+      "start_utc": "2026-11-06T01:00Z",
+      "short_name": "JAX @ FLA",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Stephen C. O'Connell Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "57",
+        "abbr": "FLA",
+        "name": "Florida Gators",
+        "score": 88,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Rueben Chinyelu",
+            "value": "21"
+          },
+          "rebounds": {
+            "player": "Alex Condon",
+            "value": "12"
+          },
+          "assists": {
+            "player": "Alex Condon",
+            "value": "8"
+          },
+          "rating": {
+            "player": "Alex Condon",
+            "value": "12 PTS, 12 REB, 8 AST, 3 BLK"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 1,
+        "loc": "Florida",
+        "nick": "Gators"
+      },
+      "away": {
+        "team_id": "294",
+        "abbr": "JAX",
+        "name": "Jacksonville Dolphins",
+        "score": 57,
+        "winner": false,
+        "record": "1-1",
+        "home_record": "1-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Hayden Wood",
+            "value": "11"
+          },
+          "rebounds": {
+            "player": "Rex Stirling",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Jamie Phillips Jr.",
+            "value": "4"
+          },
+          "rating": {
+            "player": "James Morrow",
+            "value": "9 PTS"
+          }
+        },
+        "conf_id": "46",
+        "conf": null,
+        "rank": null,
+        "loc": "Jacksonville",
+        "nick": "Dolphins"
+      },
+      "espn_line": null,
+      "date": "2026-11-05",
+      "p4": true
+    },
     {
       "game_id": "401909563",
       "start_utc": "2026-11-06T01:00Z",
@@ -168,258 +420,6 @@
         "rank": null,
         "loc": "Pennsylvania",
         "nick": "Quakers"
-      },
-      "espn_line": null,
-      "date": "2026-11-05",
-      "p4": true
-    },
-    {
-      "game_id": "401921133",
-      "start_utc": "2026-11-06T02:00Z",
-      "short_name": "BCU @ TTU",
-      "state": "in",
-      "status": "15:17 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "15:17",
-      "venue": "United Supermarkets Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "home": {
-        "team_id": "2641",
-        "abbr": "TTU",
-        "name": "Texas Tech Red Raiders",
-        "score": 44,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Dra Gibbs-Lawhorn",
-            "value": "16"
-          },
-          "rebounds": {
-            "player": "Josiah Moseley",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Dra Gibbs-Lawhorn",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Dra Gibbs-Lawhorn",
-            "value": "16 PTS"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 19,
-        "loc": "Texas Tech",
-        "nick": "Red Raiders"
-      },
-      "away": {
-        "team_id": "2065",
-        "abbr": "BCU",
-        "name": "Bethune-Cookman Wildcats",
-        "score": 34,
-        "winner": null,
-        "record": "0-1",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Jameel Morris",
-            "value": "8"
-          },
-          "rebounds": {
-            "player": "Jameel Morris",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Jameel Morris",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Jameel Morris",
-            "value": "8 PTS, 6 REB"
-          }
-        },
-        "conf_id": "26",
-        "conf": null,
-        "rank": null,
-        "loc": "Bethune-Cookman",
-        "nick": "Wildcats"
-      },
-      "espn_line": null,
-      "date": "2026-11-05",
-      "p4": true
-    },
-    {
-      "game_id": "401921698",
-      "start_utc": "2026-11-06T02:00Z",
-      "short_name": "TOW @ UTAH",
-      "state": "in",
-      "status": "11:32 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "11:32",
-      "venue": "Jon M. Huntsman Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "home": {
-        "team_id": "254",
-        "abbr": "UTAH",
-        "name": "Utah Utes",
-        "score": 39,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Taison Chatman",
-            "value": "8"
-          },
-          "rebounds": {
-            "player": "Jaxon Johnson",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Trey Campbell",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Jackson Holcombe",
-            "value": "6 PTS"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Utah",
-        "nick": "Utes"
-      },
-      "away": {
-        "team_id": "119",
-        "abbr": "TOW",
-        "name": "Towson Tigers",
-        "score": 30,
-        "winner": null,
-        "record": "0-1",
-        "home_record": "0-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Christian Doerr",
-            "value": "7"
-          },
-          "rebounds": {
-            "player": "Caleb Embeya",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Zion Stanford",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Christian Doerr",
-            "value": "7 PTS, 4 STL"
-          }
-        },
-        "conf_id": "10",
-        "conf": null,
-        "rank": null,
-        "loc": "Towson",
-        "nick": "Tigers"
-      },
-      "espn_line": null,
-      "date": "2026-11-05",
-      "p4": true
-    },
-    {
-      "game_id": "401906770",
-      "start_utc": "2026-11-06T01:00Z",
-      "short_name": "JAX @ FLA",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Stephen C. O'Connell Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "57",
-        "abbr": "FLA",
-        "name": "Florida Gators",
-        "score": 88,
-        "winner": true,
-        "record": "2-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Rueben Chinyelu",
-            "value": "21"
-          },
-          "rebounds": {
-            "player": "Alex Condon",
-            "value": "12"
-          },
-          "assists": {
-            "player": "Alex Condon",
-            "value": "8"
-          },
-          "rating": {
-            "player": "Alex Condon",
-            "value": "12 PTS, 12 REB, 8 AST, 3 BLK"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 1,
-        "loc": "Florida",
-        "nick": "Gators"
-      },
-      "away": {
-        "team_id": "294",
-        "abbr": "JAX",
-        "name": "Jacksonville Dolphins",
-        "score": 57,
-        "winner": false,
-        "record": "1-1",
-        "home_record": "1-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Hayden Wood",
-            "value": "11"
-          },
-          "rebounds": {
-            "player": "Rex Stirling",
-            "value": "4"
-          },
-          "assists": {
-            "player": "Jamie Phillips Jr.",
-            "value": "4"
-          },
-          "rating": {
-            "player": "James Morrow",
-            "value": "9 PTS"
-          }
-        },
-        "conf_id": "46",
-        "conf": null,
-        "rank": null,
-        "loc": "Jacksonville",
-        "nick": "Dolphins"
       },
       "espn_line": null,
       "date": "2026-11-05",
@@ -1437,11 +1437,11 @@
       "game_id": "401909739",
       "start_utc": "2026-11-06T03:30Z",
       "short_name": "CP @ ARIZ",
-      "state": "pre",
-      "status": "11/5 - 10:30 PM EST",
+      "state": "in",
+      "status": "19:05 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "19:05",
       "venue": "McKale Center at ALKEME Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -1451,23 +1451,15 @@
         "team_id": "12",
         "abbr": "ARIZ",
         "name": "Arizona Wildcats",
-        "score": 0,
+        "score": 1,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Ivan Kharchenkov",
-            "value": "38.0"
-          },
-          "reboundsPerGame": {
-            "player": "Ivan Kharchenkov",
-            "value": "10.0"
-          },
-          "assistsPerGame": {
-            "player": "JJ Mandaquit",
-            "value": "6.0"
+          "points": {
+            "player": "Caleb Holt",
+            "value": "1"
           }
         },
         "conf_id": "8",
@@ -1480,23 +1472,23 @@
         "team_id": "13",
         "abbr": "CP",
         "name": "Cal Poly Mustangs",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Hamad Mousa",
-            "value": "18.0"
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Cayden Ward",
-            "value": "11.0"
+          "rebounds": {
+            "player": "Hamad Mousa",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Jackson Mosley",
-            "value": "5.0"
+          "rating": {
+            "player": "Hamad Mousa",
+            "value": "2 PTS"
           }
         },
         "conf_id": "9",
@@ -1505,12 +1497,7 @@
         "loc": "Cal Poly",
         "nick": "Mustangs"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ARIZ -31.5",
-        "spread": -31.5,
-        "over_under": 174.5
-      },
+      "espn_line": null,
       "date": "2026-11-05",
       "p4": true
     }
