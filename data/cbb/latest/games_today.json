@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-06T21:00:24+00:00",
+  "fetched_at": "2026-11-06T21:15:20+00:00",
   "source": "espn",
   "count": 37,
   "game_date": "2026-11-06",
@@ -9,11 +9,11 @@
       "game_id": "401909552",
       "start_utc": "2026-11-06T21:00Z",
       "short_name": "MASS VS BC",
-      "state": "pre",
-      "status": "11/6 - 4:00 PM EST",
+      "state": "in",
+      "status": "13:35 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "13:35",
       "venue": "TD Garden",
       "neutral_site": true,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "103",
         "abbr": "BC",
         "name": "Boston College Eagles",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Money Williams",
-            "value": "22.0"
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Brandon Benjamin",
-            "value": "10.0"
-          },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "Money Williams",
-            "value": "4.0"
+            "value": "2"
+          },
+          "assists": {
+            "player": "Money Williams",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Money Williams",
+            "value": "2 PTS"
           }
         },
         "conf_id": "2",
@@ -52,23 +56,27 @@
         "team_id": "113",
         "abbr": "MASS",
         "name": "Massachusetts Minutemen",
-        "score": 0,
+        "score": 14,
         "winner": null,
         "record": "1-0",
         "home_record": "0-0",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Junjie Wang",
-            "value": "18.0"
+          "points": {
+            "player": "Dwayne Wimbley Jr.",
+            "value": "8"
           },
-          "reboundsPerGame": {
-            "player": "Junjie Wang",
-            "value": "13.0"
+          "rebounds": {
+            "player": "Dwayne Wimbley Jr.",
+            "value": "3"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Danny Carbuccia",
-            "value": "8.0"
+            "value": "4"
+          },
+          "rating": {
+            "player": "Dwayne Wimbley Jr.",
+            "value": "8 PTS"
           }
         },
         "conf_id": "14",
@@ -77,12 +85,7 @@
         "loc": "Massachusetts",
         "nick": "Minutemen"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "BC -5.5",
-        "spread": -5.5,
-        "over_under": 143.5
-      },
+      "espn_line": null,
       "date": "2026-11-06",
       "p4": true
     },
@@ -241,8 +244,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "BAY -38.5",
-        "spread": -38.5,
+        "details": "BAY -37.5",
+        "spread": -37.5,
         "over_under": 164.5
       },
       "date": "2026-11-06",
@@ -565,8 +568,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "UK -23.5",
-        "spread": -23.5,
+        "details": "UK -24.5",
+        "spread": -24.5,
         "over_under": 156.5
       },
       "date": "2026-11-06",
