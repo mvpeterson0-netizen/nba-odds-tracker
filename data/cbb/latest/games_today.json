@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-06T04:30:18+00:00",
+  "fetched_at": "2026-11-06T04:45:22+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-05",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-06T03:30Z",
       "short_name": "CP @ ARIZ",
       "state": "in",
-      "status": "4:17 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "4:17",
+      "clock": "0:00",
       "venue": "McKale Center at ALKEME Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "12",
         "abbr": "ARIZ",
         "name": "Arizona Wildcats",
-        "score": 46,
+        "score": 59,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
@@ -38,11 +38,11 @@
             "value": "4"
           },
           "assists": {
-            "player": "Derek Dixon",
+            "player": "Ivan Kharchenkov",
             "value": "4"
           },
           "rating": {
-            "player": "Motiejus Krivas",
+            "player": "Ivan Kharchenkov",
             "value": "14 PTS"
           }
         },
@@ -56,7 +56,7 @@
         "team_id": "13",
         "abbr": "CP",
         "name": "Cal Poly Mustangs",
-        "score": 25,
+        "score": 41,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -71,8 +71,8 @@
             "value": "3"
           },
           "assists": {
-            "player": "Jess Esso Essis",
-            "value": "1"
+            "player": "Hamad Mousa",
+            "value": "2"
           },
           "rating": {
             "player": "Hamad Mousa",
@@ -84,90 +84,6 @@
         "rank": null,
         "loc": "Cal Poly",
         "nick": "Mustangs"
-      },
-      "espn_line": null,
-      "date": "2026-11-05",
-      "p4": true
-    },
-    {
-      "game_id": "401921133",
-      "start_utc": "2026-11-06T02:00Z",
-      "short_name": "BCU @ TTU",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "United Supermarkets Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "home": {
-        "team_id": "2641",
-        "abbr": "TTU",
-        "name": "Texas Tech Red Raiders",
-        "score": 76,
-        "winner": true,
-        "record": "2-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Dra Gibbs-Lawhorn",
-            "value": "25"
-          },
-          "rebounds": {
-            "player": "Josiah Moseley",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Cruz Davis",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Dra Gibbs-Lawhorn",
-            "value": "25 PTS"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 19,
-        "loc": "Texas Tech",
-        "nick": "Red Raiders"
-      },
-      "away": {
-        "team_id": "2065",
-        "abbr": "BCU",
-        "name": "Bethune-Cookman Wildcats",
-        "score": 58,
-        "winner": false,
-        "record": "0-2",
-        "home_record": "0-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Connor Teasley",
-            "value": "11"
-          },
-          "rebounds": {
-            "player": "Daniel Johnson",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Vuk Boskovic",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Vuk Boskovic",
-            "value": "10 PTS"
-          }
-        },
-        "conf_id": "26",
-        "conf": null,
-        "rank": null,
-        "loc": "Bethune-Cookman",
-        "nick": "Wildcats"
       },
       "espn_line": null,
       "date": "2026-11-05",
@@ -588,6 +504,90 @@
         "rank": null,
         "loc": "Gardner-Webb",
         "nick": "Runnin' Bulldogs"
+      },
+      "espn_line": null,
+      "date": "2026-11-05",
+      "p4": true
+    },
+    {
+      "game_id": "401921133",
+      "start_utc": "2026-11-06T02:00Z",
+      "short_name": "BCU @ TTU",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "United Supermarkets Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "home": {
+        "team_id": "2641",
+        "abbr": "TTU",
+        "name": "Texas Tech Red Raiders",
+        "score": 76,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Dra Gibbs-Lawhorn",
+            "value": "25"
+          },
+          "rebounds": {
+            "player": "Josiah Moseley",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Cruz Davis",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Dra Gibbs-Lawhorn",
+            "value": "25 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 19,
+        "loc": "Texas Tech",
+        "nick": "Red Raiders"
+      },
+      "away": {
+        "team_id": "2065",
+        "abbr": "BCU",
+        "name": "Bethune-Cookman Wildcats",
+        "score": 58,
+        "winner": false,
+        "record": "0-2",
+        "home_record": "0-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Connor Teasley",
+            "value": "11"
+          },
+          "rebounds": {
+            "player": "Daniel Johnson",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Vuk Boskovic",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Vuk Boskovic",
+            "value": "10 PTS"
+          }
+        },
+        "conf_id": "26",
+        "conf": null,
+        "rank": null,
+        "loc": "Bethune-Cookman",
+        "nick": "Wildcats"
       },
       "espn_line": null,
       "date": "2026-11-05",
