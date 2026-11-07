@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-07T01:45:20+00:00",
+  "finished_at": "2026-11-07T02:00:25+00:00",
   "game_date": "2026-11-06",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,33 +17,49 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 1,
-    "player_rows": 29,
+    "new_games": 2,
+    "player_rows": 65,
     "unparsed": [],
-    "queued": 1,
+    "queued": 2,
     "errors": [],
     "rosters_fetched": 0
   },
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 278,
-      "ODDS_API_KEY_2": 278,
+      "ODDS_API_KEY": 272,
+      "ODDS_API_KEY_2": 274,
       "ODDS_API_KEY_20K": 16088
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Oakland Golden Grizzlies @ Stanford Cardinal",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "North Florida Ospreys @ UCLA Bruins",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 95,
-    "p4_events": 12,
+    "p4_events": 6,
     "unmatched": [
       "Tenn-Martin Skyhawks @ IUPUI Jaguars"
     ],
-    "due": 0,
+    "due": 2,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 1,
+      "pull_type": "pregame",
+      "rows": 8,
+      "credits_last": 2
     },
     "status": "ok"
   }
