@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-07T14:00:42+00:00",
+  "finished_at": "2026-11-07T14:15:18+00:00",
   "game_date": "2026-11-07",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "ok",
+    "odds": "not_due",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -26,66 +26,14 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 256,
-      "ODDS_API_KEY_2": 260,
-      "ODDS_API_KEY_20K": null
+      "ODDS_API_KEY": 253,
+      "ODDS_API_KEY_2": 258,
+      "ODDS_API_KEY_20K": 16043
     },
-    "pulled": [
-      {
-        "matchup": "Denver Nuggets @ Indiana Pacers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 168,
-        "markets": 4
-      },
-      {
-        "matchup": "Brooklyn Nets @ Atlanta Hawks",
-        "type": "morning",
-        "status": "ok",
-        "rows": 146,
-        "markets": 4
-      },
-      {
-        "matchup": "New York Knicks @ Cleveland Cavaliers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 158,
-        "markets": 4
-      },
-      {
-        "matchup": "Washington Wizards @ Oklahoma City Thunder",
-        "type": "morning",
-        "status": "ok",
-        "rows": 170,
-        "markets": 4
-      },
-      {
-        "matchup": "Orlando Magic @ Golden State Warriors",
-        "type": "morning",
-        "status": "ok",
-        "rows": 150,
-        "markets": 4
-      },
-      {
-        "matchup": "Houston Rockets @ Phoenix Suns",
-        "type": "morning",
-        "status": "ok",
-        "rows": 198,
-        "markets": 4
-      },
-      {
-        "matchup": "San Antonio Spurs @ Portland Trail Blazers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 174,
-        "markets": 4
-      }
-    ],
-    "errors": [
-      "ODDS_API_KEY_20K: events HTTP 502"
-    ],
+    "pulled": [],
+    "errors": [],
     "markets_probe": "not_due",
-    "due": 7,
+    "due": 0,
     "pregame_pulled": false,
     "status": "ok"
   }
