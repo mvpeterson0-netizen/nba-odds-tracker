@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-07T02:15:13+00:00",
+  "fetched_at": "2026-11-07T02:30:13+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-06",
@@ -8,11 +8,11 @@
       "game_id": "401909287",
       "start_utc": "2026-11-07T00:00Z",
       "short_name": "WSH @ ATL",
-      "state": "in",
-      "status": "16.0 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "16.0",
+      "clock": "0.0",
       "venue": "State Farm Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -22,19 +22,19 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 135,
-        "winner": null,
-        "record": "5-4",
-        "home_record": "1-2",
+        "score": 139,
+        "winner": true,
+        "record": "6-4",
+        "home_record": "2-2",
         "away_record": "4-2",
         "leaders": {
           "points": {
             "player": "Nickeil Alexander-Walker",
-            "value": "26"
+            "value": "28"
           },
           "rebounds": {
             "player": "Onyeka Okongwu",
-            "value": "9"
+            "value": "10"
           },
           "assists": {
             "player": "Dyson Daniels",
@@ -50,15 +50,15 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 129,
-        "winner": null,
-        "record": "4-4",
+        "score": 132,
+        "winner": false,
+        "record": "4-5",
         "home_record": "2-2",
-        "away_record": "2-2",
+        "away_record": "2-3",
         "leaders": {
           "points": {
             "player": "Kyshawn George",
-            "value": "30"
+            "value": "33"
           },
           "rebounds": {
             "player": "Deandre Ayton",
@@ -70,7 +70,7 @@
           },
           "rating": {
             "player": "Kyshawn George",
-            "value": "30 PTS, 7 AST"
+            "value": "33 PTS, 7 AST"
           }
         }
       },
@@ -80,11 +80,11 @@
       "game_id": "401909288",
       "start_utc": "2026-11-07T00:00Z",
       "short_name": "BOS @ CHA",
-      "state": "in",
-      "status": "2:40 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "2:40",
+      "clock": "0.0",
       "venue": "Spectrum Center",
       "neutral_site": false,
       "broadcasts": null,
@@ -92,10 +92,10 @@
         "team_id": "30",
         "abbr": "CHA",
         "name": "Charlotte Hornets",
-        "score": 72,
-        "winner": null,
-        "record": "3-6",
-        "home_record": "2-3",
+        "score": 80,
+        "winner": false,
+        "record": "3-7",
+        "home_record": "2-4",
         "away_record": "1-3",
         "leaders": {
           "points": {
@@ -104,11 +104,11 @@
           },
           "rebounds": {
             "player": "Hannes Steinbach",
-            "value": "10"
+            "value": "11"
           },
           "assists": {
             "player": "Christian Anderson",
-            "value": "3"
+            "value": "5"
           },
           "rating": {
             "player": "Naz Reid",
@@ -120,11 +120,11 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 115,
-        "winner": null,
-        "record": "6-2",
+        "score": 119,
+        "winner": true,
+        "record": "7-2",
         "home_record": "5-0",
-        "away_record": "1-2",
+        "away_record": "2-2",
         "leaders": {
           "points": {
             "player": "Jayson Tatum",
@@ -151,10 +151,10 @@
       "start_utc": "2026-11-07T00:30Z",
       "short_name": "PHI @ CLE",
       "state": "in",
-      "status": "8:08 - 3rd",
+      "status": "1:40 - 3rd",
       "completed": false,
       "period": 3,
-      "clock": "8:08",
+      "clock": "1:40",
       "venue": "Rocket Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -164,7 +164,7 @@
         "team_id": "5",
         "abbr": "CLE",
         "name": "Cleveland Cavaliers",
-        "score": 67,
+        "score": 83,
         "winner": null,
         "record": "4-4",
         "home_record": "3-1",
@@ -172,19 +172,19 @@
         "leaders": {
           "points": {
             "player": "Evan Mobley",
-            "value": "15"
+            "value": "17"
           },
           "rebounds": {
-            "player": "Donovan Mitchell",
-            "value": "6"
+            "player": "Mario Hezonja",
+            "value": "7"
           },
           "assists": {
             "player": "Donovan Mitchell",
-            "value": "7"
+            "value": "8"
           },
           "rating": {
             "player": "Evan Mobley",
-            "value": "15 PTS"
+            "value": "17 PTS"
           }
         }
       },
@@ -192,7 +192,7 @@
         "team_id": "20",
         "abbr": "PHI",
         "name": "Philadelphia 76ers",
-        "score": 63,
+        "score": 73,
         "winner": null,
         "record": "8-1",
         "home_record": "4-1",
@@ -204,7 +204,7 @@
           },
           "rebounds": {
             "player": "Joel Embiid",
-            "value": "5"
+            "value": "7"
           },
           "assists": {
             "player": "Jaylen Brown",
@@ -223,10 +223,10 @@
       "start_utc": "2026-11-07T01:00Z",
       "short_name": "UTAH @ DAL",
       "state": "in",
-      "status": "Halftime",
+      "status": "7:42 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "7:42",
       "venue": "American Airlines Center",
       "neutral_site": false,
       "broadcasts": [
@@ -239,7 +239,7 @@
         "team_id": "6",
         "abbr": "DAL",
         "name": "Dallas Mavericks",
-        "score": 57,
+        "score": 68,
         "winner": null,
         "record": "4-4",
         "home_record": "2-2",
@@ -267,7 +267,7 @@
         "team_id": "26",
         "abbr": "UTAH",
         "name": "Utah Jazz",
-        "score": 57,
+        "score": 70,
         "winner": null,
         "record": "1-7",
         "home_record": "1-4",
@@ -275,19 +275,19 @@
         "leaders": {
           "points": {
             "player": "Lauri Markkanen",
-            "value": "12"
+            "value": "21"
           },
           "rebounds": {
             "player": "Keyonte George",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
             "player": "Keyonte George",
-            "value": "6"
+            "value": "8"
           },
           "rating": {
             "player": "Keyonte George",
-            "value": "11 PTS, 6 AST"
+            "value": "11 PTS, 8 AST"
           }
         }
       },
@@ -298,10 +298,10 @@
       "start_utc": "2026-11-07T01:00Z",
       "short_name": "OKC @ MEM",
       "state": "in",
-      "status": "Halftime",
+      "status": "9:49 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.1",
+      "period": 3,
+      "clock": "9:49",
       "venue": "FedExForum",
       "neutral_site": false,
       "broadcasts": [
@@ -313,7 +313,7 @@
         "team_id": "29",
         "abbr": "MEM",
         "name": "Memphis Grizzlies",
-        "score": 49,
+        "score": 51,
         "winner": null,
         "record": "6-2",
         "home_record": "2-2",
@@ -321,19 +321,19 @@
         "leaders": {
           "points": {
             "player": "Ty Jerome",
-            "value": "11"
+            "value": "13"
           },
           "rebounds": {
             "player": "Cameron Boozer",
-            "value": "9"
+            "value": "10"
           },
           "assists": {
-            "player": "Ty Jerome",
-            "value": "3"
+            "player": "Cameron Boozer",
+            "value": "4"
           },
           "rating": {
             "player": "Ty Jerome",
-            "value": "11 PTS"
+            "value": "13 PTS"
           }
         }
       },
@@ -341,7 +341,7 @@
         "team_id": "25",
         "abbr": "OKC",
         "name": "Oklahoma City Thunder",
-        "score": 71,
+        "score": 80,
         "winner": null,
         "record": "6-2",
         "home_record": "4-0",
@@ -349,7 +349,7 @@
         "leaders": {
           "points": {
             "player": "Ajay Mitchell",
-            "value": "21"
+            "value": "24"
           },
           "rebounds": {
             "player": "Alex Caruso",
@@ -361,7 +361,7 @@
           },
           "rating": {
             "player": "Ajay Mitchell",
-            "value": "21 PTS"
+            "value": "24 PTS"
           }
         }
       },
@@ -372,10 +372,10 @@
       "start_utc": "2026-11-07T01:00Z",
       "short_name": "TOR @ MIL",
       "state": "in",
-      "status": "Halftime",
+      "status": "10:10 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "10:10",
       "venue": "Fiserv Forum",
       "neutral_site": false,
       "broadcasts": [
@@ -398,7 +398,7 @@
           },
           "rebounds": {
             "player": "Brayden Burries",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Tyler Herro",
@@ -406,7 +406,7 @@
           },
           "rating": {
             "player": "Brayden Burries",
-            "value": "15 PTS, 7 REB"
+            "value": "15 PTS, 8 REB"
           }
         }
       },
@@ -414,7 +414,7 @@
         "team_id": "28",
         "abbr": "TOR",
         "name": "Toronto Raptors",
-        "score": 51,
+        "score": 55,
         "winner": null,
         "record": "4-4",
         "home_record": "2-1",
@@ -425,16 +425,16 @@
             "value": "14"
           },
           "rebounds": {
-            "player": "Jakob Poeltl",
+            "player": "Ja'Kobe Walter",
             "value": "3"
           },
           "assists": {
             "player": "Jamal Shead",
-            "value": "10"
+            "value": "11"
           },
           "rating": {
-            "player": "Alijah Martin",
-            "value": "14 PTS"
+            "player": "Jamal Shead",
+            "value": "11 AST"
           }
         }
       },
@@ -445,10 +445,10 @@
       "start_utc": "2026-11-07T01:00Z",
       "short_name": "MIN @ NO",
       "state": "in",
-      "status": "Halftime",
+      "status": "11:19 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "11:19",
       "venue": "Smoothie King Center",
       "neutral_site": false,
       "broadcasts": [
@@ -459,7 +459,7 @@
         "team_id": "3",
         "abbr": "NO",
         "name": "New Orleans Pelicans",
-        "score": 51,
+        "score": 53,
         "winner": null,
         "record": "4-4",
         "home_record": "3-2",

@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-07T02:15:18+00:00",
+  "finished_at": "2026-11-07T02:30:24+00:00",
   "game_date": "2026-11-06",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,10 +17,10 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 7,
-    "player_rows": 213,
+    "new_games": 2,
+    "player_rows": 62,
     "unparsed": [],
-    "queued": 7,
+    "queued": 2,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -28,12 +28,12 @@
     "keys": 3,
     "credits": {
       "ODDS_API_KEY": 272,
-      "ODDS_API_KEY_2": 274,
+      "ODDS_API_KEY_2": 272,
       "ODDS_API_KEY_20K": 16085
     },
     "pulled": [],
     "errors": [],
-    "events": 87,
+    "events": 77,
     "p4_events": 6,
     "unmatched": [
       "Tenn-Martin Skyhawks @ IUPUI Jaguars"
@@ -41,9 +41,12 @@
     "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 1,
+      "pull_type": "pregame",
+      "rows": 8,
+      "credits_last": 2
     },
     "status": "ok"
   }
