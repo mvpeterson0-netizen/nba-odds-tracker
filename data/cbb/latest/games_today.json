@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-07T20:30:21+00:00",
+  "fetched_at": "2026-11-07T20:45:17+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-07",
@@ -93,11 +93,11 @@
       "game_id": "401909760",
       "start_utc": "2026-11-07T20:30Z",
       "short_name": "SDSU VS COLO",
-      "state": "pre",
-      "status": "11/7 - 3:30 PM EST",
+      "state": "in",
+      "status": "17:35 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "17:35",
       "venue": "Pechanga Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,23 +107,23 @@
         "team_id": "38",
         "abbr": "COLO",
         "name": "Colorado Buffaloes",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jalin Holland",
-            "value": "18.0"
+          "points": {
+            "player": "Josiah Sanders",
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Jalin Holland",
-            "value": "6.0"
+          "rebounds": {
+            "player": "Justin Neely",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Alex Dickeson",
-            "value": "6.0"
+          "rating": {
+            "player": "Josiah Sanders",
+            "value": "2 PTS"
           }
         },
         "conf_id": "8",
@@ -136,23 +136,27 @@
         "team_id": "21",
         "abbr": "SDSU",
         "name": "San Diego State Aztecs",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Latrell Davis",
-            "value": "25.0"
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Tae Simmons",
-            "value": "11.0"
+          "rebounds": {
+            "player": "Elzie Harrington",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Chance Gladden",
-            "value": "8.0"
+          "assists": {
+            "player": "Elzie Harrington",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Elzie Harrington",
+            "value": "2 PTS"
           }
         },
         "conf_id": "21",
@@ -161,12 +165,7 @@
         "loc": "San Diego State",
         "nick": "Aztecs"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "SDSU -3.5",
-        "spread": 3.5,
-        "over_under": 152.5
-      },
+      "espn_line": null,
       "date": "2026-11-07",
       "p4": true
     },
@@ -243,7 +242,7 @@
         "nick": "Friars"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NEB -2.5",
         "spread": -2.5,
         "over_under": 158.5
@@ -324,7 +323,7 @@
         "nick": "Terrapins"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MD -3.5",
         "spread": 3.5,
         "over_under": 146.5
