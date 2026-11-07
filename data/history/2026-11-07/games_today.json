@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-07T22:15:14+00:00",
+  "fetched_at": "2026-11-07T22:30:16+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-07",
@@ -9,10 +9,10 @@
       "start_utc": "2026-11-07T22:00Z",
       "short_name": "DEN VS IND",
       "state": "in",
-      "status": "12:00 - 1st",
+      "status": "4:06 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "12:00",
+      "clock": "4:06",
       "venue": "Arena CDMX",
       "neutral_site": true,
       "broadcasts": [
@@ -23,23 +23,57 @@
         "team_id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers",
-        "score": 0,
+        "score": 13,
         "winner": null,
         "record": "3-6",
         "home_record": "0-4",
         "away_record": "3-2",
-        "leaders": null
+        "leaders": {
+          "points": {
+            "player": "Ivica Zubac",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Ivica Zubac",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Ivica Zubac",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Ivica Zubac",
+            "value": "4 PTS"
+          }
+        }
       },
       "away": {
         "team_id": "7",
         "abbr": "DEN",
         "name": "Denver Nuggets",
-        "score": 0,
+        "score": 18,
         "winner": null,
         "record": "4-3",
         "home_record": "2-2",
         "away_record": "2-1",
-        "leaders": null
+        "leaders": {
+          "points": {
+            "player": "Nikola Jokic",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Nikola Jokic",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Nikola Jokic",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Nikola Jokic",
+            "value": "6 PTS"
+          }
+        }
       },
       "espn_line": null
     },
@@ -114,7 +148,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ATL -6.5",
         "spread": -6.5,
         "over_under": 226.5
@@ -192,10 +226,10 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "NY -5.5",
-        "spread": 5.5,
-        "over_under": 224.5
+        "provider": "Draft Kings",
+        "details": "NY -4.5",
+        "spread": 4.5,
+        "over_under": 223.5
       }
     },
     {
@@ -271,7 +305,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "OKC -11.5",
         "spread": -11.5,
         "over_under": 223.5
@@ -346,7 +380,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GS -7.5",
         "spread": -7.5,
         "over_under": 219.5
@@ -424,7 +458,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "HOU -6.5",
         "spread": 6.5,
         "over_under": 224.5
@@ -503,7 +537,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SA -5.5",
         "spread": 5.5,
         "over_under": 229.5
