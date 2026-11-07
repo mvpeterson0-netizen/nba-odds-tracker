@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-07T03:45:18+00:00",
+  "fetched_at": "2026-11-07T04:00:27+00:00",
   "source": "espn",
   "count": 37,
   "game_date": "2026-11-06",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-07T02:00Z",
       "short_name": "WAG @ MIA",
       "state": "in",
-      "status": "9:44 - 2nd",
+      "status": "3:43 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:44",
+      "clock": "3:43",
       "venue": "Watsco Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2390",
         "abbr": "MIA",
         "name": "Miami Hurricanes",
-        "score": 57,
+        "score": 75,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
@@ -31,19 +31,19 @@
         "leaders": {
           "points": {
             "player": "Shelton Henderson",
-            "value": "13"
+            "value": "19"
           },
           "rebounds": {
             "player": "Caleb Gaskins",
             "value": "6"
           },
           "assists": {
-            "player": "Dante Allen",
-            "value": "3"
+            "player": "Shelton Henderson",
+            "value": "5"
           },
           "rating": {
             "player": "Shelton Henderson",
-            "value": "13 PTS"
+            "value": "19 PTS, 3 STL"
           }
         },
         "conf_id": "2",
@@ -56,7 +56,7 @@
         "team_id": "2681",
         "abbr": "WAG",
         "name": "Wagner Seahawks",
-        "score": 34,
+        "score": 48,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
@@ -64,19 +64,19 @@
         "leaders": {
           "points": {
             "player": "Tajae Jones",
-            "value": "8"
+            "value": "13"
           },
           "rebounds": {
             "player": "Tajae Jones",
-            "value": "9"
+            "value": "11"
           },
           "assists": {
-            "player": "Cam Estevez",
-            "value": "1"
+            "player": "Taj Bryant",
+            "value": "2"
           },
           "rating": {
             "player": "Tajae Jones",
-            "value": "8 PTS, 9 REB"
+            "value": "13 PTS, 11 REB"
           }
         },
         "conf_id": "19",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-07T02:00Z",
       "short_name": "MTSU @ KU",
       "state": "in",
-      "status": "8:53 - 2nd",
+      "status": "2:54 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "8:53",
+      "clock": "2:54",
       "venue": "Allen Fieldhouse",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "2305",
         "abbr": "KU",
         "name": "Kansas Jayhawks",
-        "score": 69,
+        "score": 87,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -140,7 +140,7 @@
         "team_id": "2393",
         "abbr": "MTSU",
         "name": "Middle Tennessee Blue Raiders",
-        "score": 32,
+        "score": 42,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -174,14 +174,98 @@
       "p4": true
     },
     {
+      "game_id": "401922219",
+      "start_utc": "2026-11-07T03:30Z",
+      "short_name": "UNF @ UCLA",
+      "state": "in",
+      "status": "11:43 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "11:43",
+      "venue": "Pauley Pavilion",
+      "neutral_site": false,
+      "broadcasts": [
+        "BTN"
+      ],
+      "home": {
+        "team_id": "26",
+        "abbr": "UCLA",
+        "name": "UCLA Bruins",
+        "score": 14,
+        "winner": null,
+        "record": "1-0",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Trent Perry",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Trent Perry",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Trent Perry",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Nikola Kusturica",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 22,
+        "loc": "UCLA",
+        "nick": "Bruins"
+      },
+      "away": {
+        "team_id": "2454",
+        "abbr": "UNF",
+        "name": "North Florida Ospreys",
+        "score": 15,
+        "winner": null,
+        "record": "1-0",
+        "home_record": "0-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Kent Jackson",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "BJ Plummer",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Kent Jackson",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Kent Jackson",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "46",
+        "conf": null,
+        "rank": null,
+        "loc": "North Florida",
+        "nick": "Ospreys"
+      },
+      "espn_line": null,
+      "date": "2026-11-06",
+      "p4": true
+    },
+    {
       "game_id": "401921739",
       "start_utc": "2026-11-07T02:00Z",
       "short_name": "OMA @ BYU",
-      "state": "in",
-      "status": "5:27 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "5:27",
+      "clock": "0:00",
       "venue": "Marriott Center",
       "neutral_site": false,
       "broadcasts": [
@@ -191,10 +275,10 @@
         "team_id": "252",
         "abbr": "BYU",
         "name": "BYU Cougars",
-        "score": 93,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "0-0",
+        "score": 108,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -202,16 +286,16 @@
             "value": "19"
           },
           "rebounds": {
-            "player": "Jaxon Kohler",
-            "value": "7"
+            "player": "Khadim Mboup",
+            "value": "8"
           },
           "assists": {
             "player": "Collin Chandler",
             "value": "5"
           },
           "rating": {
-            "player": "Bruce Branch III",
-            "value": "17 PTS, 6 REB"
+            "player": "Collin Chandler",
+            "value": "18 PTS"
           }
         },
         "conf_id": "8",
@@ -224,27 +308,27 @@
         "team_id": "2437",
         "abbr": "OMA",
         "name": "Omaha Mavericks",
-        "score": 55,
-        "winner": null,
-        "record": "1-0",
+        "score": 67,
+        "winner": false,
+        "record": "1-1",
         "home_record": "1-0",
-        "away_record": "0-0",
+        "away_record": "0-1",
         "leaders": {
           "points": {
             "player": "Deke Thompson",
-            "value": "14"
+            "value": "17"
           },
           "rebounds": {
             "player": "Grant Stubblefield",
             "value": "5"
           },
           "assists": {
-            "player": "Cahmai Crosby",
-            "value": "3"
+            "player": "Jonny Jordan Jr.",
+            "value": "4"
           },
           "rating": {
-            "player": "Cahmai Crosby",
-            "value": "11 PTS"
+            "player": "Jonny Jordan Jr.",
+            "value": "10 PTS"
           }
         },
         "conf_id": "49",
@@ -261,11 +345,11 @@
       "game_id": "401921732",
       "start_utc": "2026-11-07T02:00Z",
       "short_name": "UNCO @ ASU",
-      "state": "in",
-      "status": "4:45 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "4:45",
+      "clock": "0:00",
       "venue": "Desert Financial Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -275,10 +359,10 @@
         "team_id": "9",
         "abbr": "ASU",
         "name": "Arizona State Sun Devils",
-        "score": 79,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "1-0",
+        "score": 90,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -287,7 +371,7 @@
           },
           "rebounds": {
             "player": "Dillan Shaw",
-            "value": "10"
+            "value": "12"
           },
           "assists": {
             "player": "Joel Foxwell",
@@ -308,15 +392,15 @@
         "team_id": "2458",
         "abbr": "UNCO",
         "name": "Northern Colorado Bears",
-        "score": 54,
-        "winner": null,
-        "record": "1-0",
+        "score": 63,
+        "winner": false,
+        "record": "1-1",
         "home_record": "1-0",
-        "away_record": "0-0",
+        "away_record": "0-1",
         "leaders": {
           "points": {
             "player": "Manning Shareef",
-            "value": "11"
+            "value": "13"
           },
           "rebounds": {
             "player": "Manning Shareef",
@@ -328,7 +412,7 @@
           },
           "rating": {
             "player": "Manning Shareef",
-            "value": "11 PTS"
+            "value": "13 PTS"
           }
         },
         "conf_id": "5",
@@ -345,11 +429,11 @@
       "game_id": "401919040",
       "start_utc": "2026-11-07T02:00Z",
       "short_name": "QUC @ OKST",
-      "state": "in",
-      "status": "6:25 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "6:25",
+      "clock": "0:00",
       "venue": "Gallagher-Iba Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -359,10 +443,10 @@
         "team_id": "197",
         "abbr": "OKST",
         "name": "Oklahoma State Cowboys",
-        "score": 101,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "1-0",
+        "score": 118,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -392,19 +476,19 @@
         "team_id": "2511",
         "abbr": "QUC",
         "name": "Queens University Royals",
-        "score": 56,
-        "winner": null,
-        "record": "2-0",
+        "score": 68,
+        "winner": false,
+        "record": "2-1",
         "home_record": "0-0",
-        "away_record": "1-0",
+        "away_record": "1-1",
         "leaders": {
           "points": {
             "player": "Avantae Parker",
             "value": "15"
           },
           "rebounds": {
-            "player": "Caleb Jones",
-            "value": "6"
+            "player": "Dante Kearse",
+            "value": "7"
           },
           "assists": {
             "player": "Jordan Watford",
@@ -430,10 +514,10 @@
       "start_utc": "2026-11-07T02:00Z",
       "short_name": "CSUN @ KSU",
       "state": "in",
-      "status": "8:33 - 2nd",
+      "status": "3:53 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "8:33",
+      "clock": "3:53",
       "venue": "Bramlage Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -443,7 +527,7 @@
         "team_id": "2306",
         "abbr": "KSU",
         "name": "Kansas State Wildcats",
-        "score": 72,
+        "score": 86,
         "winner": null,
         "record": "0-1",
         "home_record": "0-1",
@@ -454,12 +538,12 @@
             "value": "21"
           },
           "rebounds": {
-            "player": "JT Rock",
+            "player": "Jaden Schutt",
             "value": "5"
           },
           "assists": {
             "player": "Brandon Rechsteiner",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Brandon Rechsteiner",
@@ -476,7 +560,7 @@
         "team_id": "2463",
         "abbr": "CSUN",
         "name": "Cal State Northridge Matadors",
-        "score": 54,
+        "score": 70,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
@@ -484,7 +568,7 @@
         "leaders": {
           "points": {
             "player": "Mikah Ballew",
-            "value": "12"
+            "value": "18"
           },
           "rebounds": {
             "player": "Brooklyn Hicks",
@@ -492,11 +576,11 @@
           },
           "assists": {
             "player": "Josiah Davis",
-            "value": "3"
+            "value": "5"
           },
           "rating": {
-            "player": "Brooklyn Hicks",
-            "value": "11 PTS, 7 REB"
+            "player": "Mikah Ballew",
+            "value": "18 PTS"
           }
         },
         "conf_id": "9",
@@ -514,10 +598,10 @@
       "start_utc": "2026-11-07T03:00Z",
       "short_name": "OAK @ STAN",
       "state": "in",
-      "status": "0:41 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "0:41",
+      "clock": "0:00",
       "venue": "Maples Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -560,7 +644,7 @@
         "team_id": "2473",
         "abbr": "OAK",
         "name": "Oakland Golden Grizzlies",
-        "score": 31,
+        "score": 33,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
@@ -3024,90 +3108,6 @@
         "rank": null,
         "loc": "Central Arkansas",
         "nick": "Bears"
-      },
-      "espn_line": null,
-      "date": "2026-11-06",
-      "p4": true
-    },
-    {
-      "game_id": "401922219",
-      "start_utc": "2026-11-07T03:30Z",
-      "short_name": "UNF @ UCLA",
-      "state": "in",
-      "status": "17:20 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "17:20",
-      "venue": "Pauley Pavilion",
-      "neutral_site": false,
-      "broadcasts": [
-        "BTN"
-      ],
-      "home": {
-        "team_id": "26",
-        "abbr": "UCLA",
-        "name": "UCLA Bruins",
-        "score": 7,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Nikola Kusturica",
-            "value": "5"
-          },
-          "rebounds": {
-            "player": "Eric Dailey Jr.",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Eric Dailey Jr.",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Nikola Kusturica",
-            "value": "5 PTS"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 22,
-        "loc": "UCLA",
-        "nick": "Bruins"
-      },
-      "away": {
-        "team_id": "2454",
-        "abbr": "UNF",
-        "name": "North Florida Ospreys",
-        "score": 3,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "0-0",
-        "away_record": "1-0",
-        "leaders": {
-          "points": {
-            "player": "Mason Watkins",
-            "value": "3"
-          },
-          "rebounds": {
-            "player": "Mason Lee",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Mason Lee",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Mason Watkins",
-            "value": "3 PTS"
-          }
-        },
-        "conf_id": "46",
-        "conf": null,
-        "rank": null,
-        "loc": "North Florida",
-        "nick": "Ospreys"
       },
       "espn_line": null,
       "date": "2026-11-06",
