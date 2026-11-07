@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-07T19:45:19+00:00",
+  "finished_at": "2026-11-07T20:00:23+00:00",
   "game_date": "2026-11-07",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -31,14 +31,33 @@
       "ODDS_API_KEY_2": 254,
       "ODDS_API_KEY_20K": 15992
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Colorado Buffaloes @ San Diego St Aztecs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Providence Friars @ Nebraska Cornhuskers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Maryland Terrapins @ Georgetown Hoyas",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 61,
-    "p4_events": 7,
+    "events": 65,
+    "p4_events": 8,
     "unmatched": [
       "Tenn-Martin Skyhawks @ IUPUI Jaguars"
     ],
-    "due": 0,
+    "due": 3,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",
