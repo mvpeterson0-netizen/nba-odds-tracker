@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-07T05:30:22+00:00",
+  "fetched_at": "2026-11-07T05:45:22+00:00",
   "source": "espn",
   "count": 37,
   "game_date": "2026-11-06",
@@ -9,11 +9,11 @@
       "game_id": "401922219",
       "start_utc": "2026-11-07T03:30Z",
       "short_name": "UNF @ UCLA",
-      "state": "in",
-      "status": "4:55 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "4:55",
+      "clock": "0:00",
       "venue": "Pauley Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -23,10 +23,10 @@
         "team_id": "26",
         "abbr": "UCLA",
         "name": "UCLA Bruins",
-        "score": 109,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "0-0",
+        "score": 114,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -56,18 +56,18 @@
         "team_id": "2454",
         "abbr": "UNF",
         "name": "North Florida Ospreys",
-        "score": 52,
-        "winner": null,
-        "record": "1-0",
+        "score": 63,
+        "winner": false,
+        "record": "1-1",
         "home_record": "0-0",
-        "away_record": "1-0",
+        "away_record": "1-1",
         "leaders": {
           "points": {
             "player": "Kent Jackson",
             "value": "11"
           },
           "rebounds": {
-            "player": "Mason Watkins",
+            "player": "BJ Plummer",
             "value": "6"
           },
           "assists": {
@@ -76,7 +76,7 @@
           },
           "rating": {
             "player": "BJ Plummer",
-            "value": "8 PTS"
+            "value": "10 PTS, 6 REB"
           }
         },
         "conf_id": "46",
