@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-07T22:30:16+00:00",
+  "fetched_at": "2026-11-07T22:45:13+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-07",
@@ -9,10 +9,10 @@
       "start_utc": "2026-11-07T22:00Z",
       "short_name": "DEN VS IND",
       "state": "in",
-      "status": "4:06 - 1st",
+      "status": "End of 1st",
       "completed": false,
       "period": 1,
-      "clock": "4:06",
+      "clock": "0.1",
       "venue": "Arena CDMX",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers",
-        "score": 13,
+        "score": 19,
         "winner": null,
         "record": "3-6",
         "home_record": "0-4",
@@ -31,19 +31,19 @@
         "leaders": {
           "points": {
             "player": "Ivica Zubac",
-            "value": "4"
+            "value": "6"
           },
           "rebounds": {
             "player": "Ivica Zubac",
-            "value": "2"
+            "value": "6"
           },
           "assists": {
             "player": "Ivica Zubac",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
             "player": "Ivica Zubac",
-            "value": "4 PTS"
+            "value": "6 PTS, 6 REB"
           }
         }
       },
@@ -51,7 +51,7 @@
         "team_id": "7",
         "abbr": "DEN",
         "name": "Denver Nuggets",
-        "score": 18,
+        "score": 27,
         "winner": null,
         "record": "4-3",
         "home_record": "2-2",
@@ -59,19 +59,19 @@
         "leaders": {
           "points": {
             "player": "Nikola Jokic",
-            "value": "6"
+            "value": "10"
           },
           "rebounds": {
             "player": "Nikola Jokic",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Nikola Jokic",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Nikola Jokic",
-            "value": "6 PTS"
+            "value": "10 PTS, 6 REB"
           }
         }
       },
@@ -106,16 +106,16 @@
             "value": "22.3"
           },
           "reboundsPerGame": {
-            "player": "Onyeka Okongwu",
-            "value": "8.6"
+            "player": "Jalen Johnson",
+            "value": "9.0"
           },
           "assistsPerGame": {
-            "player": "Dyson Daniels",
-            "value": "5.4"
+            "player": "Jalen Johnson",
+            "value": "7.9"
           },
           "rating": {
-            "player": "Nickeil Alexander-Walker",
-            "value": "22.3 PPG, 3.2 RPG, 2.6 APG, 1.5 SPG, 0.2 BPG"
+            "player": "Jalen Johnson",
+            "value": "18.3 PPG, 9.0 RPG, 7.9 APG, 0.9 SPG, 0.7 BPG"
           }
         }
       },
@@ -148,7 +148,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ATL -6.5",
         "spread": -6.5,
         "over_under": 226.5
@@ -226,10 +226,10 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NY -4.5",
         "spread": 4.5,
-        "over_under": 223.5
+        "over_under": 224.5
       }
     },
     {
@@ -305,7 +305,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "OKC -11.5",
         "spread": -11.5,
         "over_under": 223.5
@@ -380,7 +380,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "GS -7.5",
         "spread": -7.5,
         "over_under": 219.5
@@ -458,7 +458,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "HOU -6.5",
         "spread": 6.5,
         "over_under": 224.5
@@ -537,7 +537,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SA -5.5",
         "spread": 5.5,
         "over_under": 229.5
