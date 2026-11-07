@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-07T21:00:22+00:00",
+  "fetched_at": "2026-11-07T21:15:21+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-07",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-07T20:30Z",
       "short_name": "SDSU VS COLO",
       "state": "in",
-      "status": "11:45 - 1st",
+      "status": "7:51 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "11:45",
+      "clock": "7:51",
       "venue": "Pechanga Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "38",
         "abbr": "COLO",
         "name": "Colorado Buffaloes",
-        "score": 5,
+        "score": 10,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -31,15 +31,19 @@
         "leaders": {
           "points": {
             "player": "Barrington Hargress",
-            "value": "3"
+            "value": "5"
           },
           "rebounds": {
-            "player": "Noah Feddersen",
+            "player": "Josiah Sanders",
             "value": "2"
+          },
+          "assists": {
+            "player": "Ian Inman",
+            "value": "1"
           },
           "rating": {
             "player": "Barrington Hargress",
-            "value": "3 PTS"
+            "value": "5 PTS"
           }
         },
         "conf_id": "8",
@@ -52,18 +56,18 @@
         "team_id": "21",
         "abbr": "SDSU",
         "name": "San Diego State Aztecs",
-        "score": 15,
+        "score": 20,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Isaiah Sy",
-            "value": "3"
+            "player": "Chance Gladden",
+            "value": "6"
           },
           "rebounds": {
-            "player": "Luca Vincini",
+            "player": "Luka Skoric",
             "value": "3"
           },
           "assists": {
@@ -71,8 +75,8 @@
             "value": "1"
           },
           "rating": {
-            "player": "Isaiah Sy",
-            "value": "3 PTS"
+            "player": "Chance Gladden",
+            "value": "6 PTS"
           }
         },
         "conf_id": "21",
@@ -242,7 +246,7 @@
         "nick": "Friars"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "NEB -2.5",
         "spread": -2.5,
         "over_under": 158.5
@@ -323,7 +327,7 @@
         "nick": "Terrapins"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MD -3.5",
         "spread": 3.5,
         "over_under": 146.5

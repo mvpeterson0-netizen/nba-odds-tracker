@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-07T21:00:22+00:00",
+  "finished_at": "2026-11-07T21:15:20+00:00",
   "game_date": "2026-11-07",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -30,19 +30,11 @@
       "ODDS_API_KEY_2": 250,
       "ODDS_API_KEY_20K": 15888
     },
-    "pulled": [
-      {
-        "matchup": "Denver Nuggets @ Indiana Pacers",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 168,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
