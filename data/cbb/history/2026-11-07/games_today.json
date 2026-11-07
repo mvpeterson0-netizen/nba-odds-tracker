@@ -1,10 +1,90 @@
 {
-  "fetched_at": "2026-11-07T20:45:17+00:00",
+  "fetched_at": "2026-11-07T21:00:22+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-07",
   "division_i_games": 61,
   "rows": [
+    {
+      "game_id": "401909760",
+      "start_utc": "2026-11-07T20:30Z",
+      "short_name": "SDSU VS COLO",
+      "state": "in",
+      "status": "11:45 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "11:45",
+      "venue": "Pechanga Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "USA Net"
+      ],
+      "home": {
+        "team_id": "38",
+        "abbr": "COLO",
+        "name": "Colorado Buffaloes",
+        "score": 5,
+        "winner": null,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Barrington Hargress",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Noah Feddersen",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Barrington Hargress",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Colorado",
+        "nick": "Buffaloes"
+      },
+      "away": {
+        "team_id": "21",
+        "abbr": "SDSU",
+        "name": "San Diego State Aztecs",
+        "score": 15,
+        "winner": null,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Isaiah Sy",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Luca Vincini",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Elzie Harrington",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Isaiah Sy",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "21",
+        "conf": null,
+        "rank": null,
+        "loc": "San Diego State",
+        "nick": "Aztecs"
+      },
+      "espn_line": null,
+      "date": "2026-11-07",
+      "p4": true
+    },
     {
       "game_id": "401918948",
       "start_utc": "2026-11-07T17:00Z",
@@ -84,86 +164,6 @@
         "rank": null,
         "loc": "Morehead State",
         "nick": "Eagles"
-      },
-      "espn_line": null,
-      "date": "2026-11-07",
-      "p4": true
-    },
-    {
-      "game_id": "401909760",
-      "start_utc": "2026-11-07T20:30Z",
-      "short_name": "SDSU VS COLO",
-      "state": "in",
-      "status": "17:35 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "17:35",
-      "venue": "Pechanga Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "USA Net"
-      ],
-      "home": {
-        "team_id": "38",
-        "abbr": "COLO",
-        "name": "Colorado Buffaloes",
-        "score": 2,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Josiah Sanders",
-            "value": "2"
-          },
-          "rebounds": {
-            "player": "Justin Neely",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Josiah Sanders",
-            "value": "2 PTS"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Colorado",
-        "nick": "Buffaloes"
-      },
-      "away": {
-        "team_id": "21",
-        "abbr": "SDSU",
-        "name": "San Diego State Aztecs",
-        "score": 6,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Latrell Davis",
-            "value": "3"
-          },
-          "rebounds": {
-            "player": "Elzie Harrington",
-            "value": "2"
-          },
-          "assists": {
-            "player": "Elzie Harrington",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Elzie Harrington",
-            "value": "2 PTS"
-          }
-        },
-        "conf_id": "21",
-        "conf": null,
-        "rank": null,
-        "loc": "San Diego State",
-        "nick": "Aztecs"
       },
       "espn_line": null,
       "date": "2026-11-07",
