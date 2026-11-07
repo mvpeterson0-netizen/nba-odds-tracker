@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-07T23:15:17+00:00",
+  "finished_at": "2026-11-07T23:30:17+00:00",
   "game_date": "2026-11-07",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -26,15 +26,23 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 253,
+      "ODDS_API_KEY": 249,
       "ODDS_API_KEY_2": 250,
       "ODDS_API_KEY_20K": 15885
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Brooklyn Nets @ Atlanta Hawks",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 174,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
