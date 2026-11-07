@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-07T17:00:20+00:00",
+  "fetched_at": "2026-11-07T17:15:20+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-07",
@@ -9,11 +9,11 @@
       "game_id": "401918948",
       "start_utc": "2026-11-07T17:00Z",
       "short_name": "MORE @ LOU",
-      "state": "pre",
-      "status": "11/7 - 12:00 PM EST",
+      "state": "in",
+      "status": "14:39 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "14:39",
       "venue": "KFC Yum! Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "97",
         "abbr": "LOU",
         "name": "Louisville Cardinals",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Flory Bidunga",
-            "value": "16.0"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Karter Knox",
-            "value": "11.0"
+            "value": "5"
           },
-          "assistsPerGame": {
-            "player": "Seth Trimble",
-            "value": "5.0"
+          "rebounds": {
+            "player": "Karter Knox",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Jackson Shelstad",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Karter Knox",
+            "value": "5 PTS"
           }
         },
         "conf_id": "2",
@@ -52,23 +56,27 @@
         "team_id": "2413",
         "abbr": "MORE",
         "name": "Morehead State Eagles",
-        "score": 0,
+        "score": 12,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Clayton Parker",
-            "value": "18.0"
+            "value": "6"
           },
-          "reboundsPerGame": {
-            "player": "Tayvion Tangiora",
-            "value": "8.5"
+          "rebounds": {
+            "player": "Clayton Parker",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Jarvis Wright",
-            "value": "4.5"
+          "assists": {
+            "player": "Dalman Alexander",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Clayton Parker",
+            "value": "6 PTS"
           }
         },
         "conf_id": "20",
@@ -77,12 +85,7 @@
         "loc": "Morehead State",
         "nick": "Eagles"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "LOU -36.5",
-        "spread": -36.5,
-        "over_under": 151.5
-      },
+      "espn_line": null,
       "date": "2026-11-07",
       "p4": true
     },
