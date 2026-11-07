@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-07T02:00:22+00:00",
+  "finished_at": "2026-11-07T02:15:17+00:00",
   "game_date": "2026-11-06",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -26,30 +26,15 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 274,
+      "ODDS_API_KEY": 272,
       "ODDS_API_KEY_2": 274,
-      "ODDS_API_KEY_20K": 16088
+      "ODDS_API_KEY_20K": 16085
     },
-    "pulled": [
-      {
-        "matchup": "Portland Trail Blazers @ Los Angeles Lakers",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 188,
-        "markets": 4
-      },
-      {
-        "matchup": "San Antonio Spurs @ Sacramento Kings",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 180,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 2,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
