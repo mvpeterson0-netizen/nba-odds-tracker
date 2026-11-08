@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-08T05:30:16+00:00",
+  "fetched_at": "2026-11-08T05:45:16+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-07",
@@ -443,11 +443,11 @@
       "game_id": "401909944",
       "start_utc": "2026-11-08T03:00Z",
       "short_name": "SA @ POR",
-      "state": "in",
-      "status": "1:54 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "1:54",
+      "clock": "12:00",
       "venue": "Moda Center",
       "neutral_site": false,
       "broadcasts": [
@@ -459,10 +459,10 @@
         "team_id": "22",
         "abbr": "POR",
         "name": "Portland Trail Blazers",
-        "score": 99,
-        "winner": null,
-        "record": "6-2",
-        "home_record": "1-1",
+        "score": 103,
+        "winner": false,
+        "record": "6-3",
+        "home_record": "1-2",
         "away_record": "5-1",
         "leaders": {
           "points": {
@@ -471,15 +471,15 @@
           },
           "rebounds": {
             "player": "Yang Hansen",
-            "value": "9"
+            "value": "10"
           },
           "assists": {
             "player": "Damian Lillard",
             "value": "7"
           },
           "rating": {
-            "player": "Damian Lillard",
-            "value": "12 PTS, 7 AST"
+            "player": "Yang Hansen",
+            "value": "12 PTS, 10 REB"
           }
         }
       },
@@ -487,11 +487,11 @@
         "team_id": "24",
         "abbr": "SA",
         "name": "San Antonio Spurs",
-        "score": 123,
-        "winner": null,
-        "record": "7-2",
+        "score": 125,
+        "winner": true,
+        "record": "8-2",
         "home_record": "4-2",
-        "away_record": "3-0",
+        "away_record": "4-0",
         "leaders": {
           "points": {
             "player": "Victor Wembanyama",
