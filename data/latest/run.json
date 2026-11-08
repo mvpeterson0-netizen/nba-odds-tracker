@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-08T21:45:16+00:00",
+  "finished_at": "2026-11-08T22:00:20+00:00",
   "game_date": "2026-11-08",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -27,14 +27,22 @@
     "keys": 3,
     "credits": {
       "ODDS_API_KEY": 218,
-      "ODDS_API_KEY_2": 222,
+      "ODDS_API_KEY_2": 218,
       "ODDS_API_KEY_20K": 15280
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Los Angeles Lakers @ Detroit Pistons",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 184,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
