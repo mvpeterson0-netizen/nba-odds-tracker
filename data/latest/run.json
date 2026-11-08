@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-08T12:59:04+00:00",
+  "finished_at": "2026-11-08T13:00:24+00:00",
   "game_date": "2026-11-08",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "not_due",
+    "odds": "ok",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -26,14 +26,64 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 241,
-      "ODDS_API_KEY_2": 238,
+      "ODDS_API_KEY": 225,
+      "ODDS_API_KEY_2": 226,
       "ODDS_API_KEY_20K": 15749
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Philadelphia 76ers @ Chicago Bulls",
+        "type": "morning",
+        "status": "ok",
+        "rows": 182,
+        "markets": 4
+      },
+      {
+        "matchup": "Los Angeles Lakers @ Detroit Pistons",
+        "type": "morning",
+        "status": "ok",
+        "rows": 158,
+        "markets": 4
+      },
+      {
+        "matchup": "Utah Jazz @ Minnesota Timberwolves",
+        "type": "morning",
+        "status": "ok",
+        "rows": 158,
+        "markets": 4
+      },
+      {
+        "matchup": "Brooklyn Nets @ Dallas Mavericks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 148,
+        "markets": 4
+      },
+      {
+        "matchup": "Boston Celtics @ Milwaukee Bucks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 170,
+        "markets": 4
+      },
+      {
+        "matchup": "New Orleans Pelicans @ Los Angeles Clippers",
+        "type": "morning",
+        "status": "ok",
+        "rows": 164,
+        "markets": 4
+      },
+      {
+        "matchup": "Miami Heat @ Sacramento Kings",
+        "type": "morning",
+        "status": "ok",
+        "rows": 182,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
+    "due": 7,
     "pregame_pulled": false,
     "status": "ok"
   }
