@@ -42,14 +42,14 @@ def envelope(source: str, rows: list, **extra) -> dict:
 
 
 # Game lines (moneyline/spread/total for every game, one 3-credit call) are pulled once a
-# day, at the first run at or after 8:00 AM Central. Not shown on the site yet; kept in
+# day, at the first run at or after 7:00 AM Central. Not shown on the site yet; kept in
 # data/latest/odds.json and the monthly odds_log CSV.
 CENTRAL = ZoneInfo("America/Chicago")
 
 
 def lines_due(now: datetime, last: datetime | None) -> bool:
     local = now.astimezone(CENTRAL)
-    eight = local.replace(hour=8, minute=0, second=0, microsecond=0)
+    eight = local.replace(hour=7, minute=0, second=0, microsecond=0)
     return local >= eight and (last is None or last < eight)
 
 

@@ -1,7 +1,7 @@
 """NBA player prop capture from The Odds API (v4), spread across several keys.
 
 Two captures per game:
-  morning  — the first run at or after 8:00 AM Central on game day (retried each run
+  morning  — the first run at or after 7:00 AM Central on game day (retried each run
              until the books have posted props, as long as tip is more than ~70 min away)
   pregame  — the first run within PREGAME_WINDOW (~1 hour) of tip; if no run lands in
              the window, the next run before tip takes it. This is the graded line.
@@ -43,7 +43,8 @@ EXTRA = ["player_points_rebounds_assists", "player_points_rebounds", "player_poi
 GAMES_PER_DAY_EST = 7.5   # rough NBA average (1,230 games over ~165 days); used only for the guard
 BOOKS = ["draftkings", "fanduel"]
 CENTRAL = ZoneInfo("America/Chicago")
-MORNING_AT = time(8, 0)                         # morning pull: 8:00 AM Central on game day
+NBA_MORNING_AT = time(7, 0)                     # NBA morning pull: 7:00 AM Central on game day
+MORNING_AT = time(8, 0)                         # college (cbb_tracker) morning pull: 8:00 AM Central
 PREGAME_WINDOW = timedelta(minutes=70)          # pregame pull: first run within ~1 h of tip
 PULLS_PER_GAME = 2
 RESERVE = 0                                    # credits to leave untouched on each key
@@ -164,7 +165,7 @@ def done_pulls(data_dir: Path) -> tuple[set, set]:
 def plan(events: list[dict], done: set, now: datetime) -> list[tuple[dict, str]]:
     """Games due this run, as (event, pull_type)."""
     local = now.astimezone(CENTRAL)
-    morning_open = local.time() >= MORNING_AT
+    morning_open = local.time() >= NBA_MORNING_AT
     out = []
     for ev in events:
         try:

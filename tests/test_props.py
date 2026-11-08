@@ -81,9 +81,9 @@ def test_plan_morning_and_pregame():
     ev = lambda i, t: {"id": i, "commence_time": t, "home_team": "H", "away_team": "A"}
     events = [ev("tonight", "2026-10-23T23:00:00Z"), ev("late", "2026-10-24T02:00:00Z"),
               ev("tomorrow", "2026-10-24T23:00:00Z")]
-    early = datetime(2026, 10, 23, 12, 30, tzinfo=timezone.utc)     # 7:30 AM CDT
+    early = datetime(2026, 10, 23, 11, 30, tzinfo=timezone.utc)     # 6:30 AM CDT
     assert props.plan(events, set(), early) == []
-    eight = datetime(2026, 10, 23, 13, 0, tzinfo=timezone.utc)      # 8:00 AM CDT
+    eight = datetime(2026, 10, 23, 12, 0, tzinfo=timezone.utc)      # 7:00 AM CDT
     got = [(e["id"], t) for e, t in props.plan(events, set(), eight)]
     assert got == [("tonight", "morning"), ("late", "morning")]      # 9 PM CDT tip is still today
     assert props.plan(events, {("tonight", "morning"), ("late", "morning")}, eight) == []
@@ -99,10 +99,10 @@ def test_lines_due():
     from datetime import datetime, timezone
     from nba_tracker.__main__ import lines_due
     t = lambda s: datetime.fromisoformat(s).replace(tzinfo=timezone.utc)
-    assert not lines_due(t("2026-10-23T12:30"), t("2026-10-22T23:00"))           # 7:30 AM CDT
-    assert lines_due(t("2026-10-23T13:05"), t("2026-10-22T23:00"))               # 8:05 AM CDT
-    assert not lines_due(t("2026-10-23T15:00"), t("2026-10-23T13:05"))
-    assert not lines_due(t("2026-10-23T22:00"), t("2026-10-23T13:05"))           # once a day only
+    assert not lines_due(t("2026-10-23T11:30"), t("2026-10-22T23:00"))           # 6:30 AM CDT
+    assert lines_due(t("2026-10-23T12:05"), t("2026-10-22T23:00"))               # 7:05 AM CDT
+    assert not lines_due(t("2026-10-23T15:00"), t("2026-10-23T12:05"))
+    assert not lines_due(t("2026-10-23T22:00"), t("2026-10-23T12:05"))           # once a day only
 
 
 def test_empty_logged_once(tmp_path, monkeypatch):

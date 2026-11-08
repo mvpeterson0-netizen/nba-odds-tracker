@@ -63,8 +63,9 @@ function resHtml(l) {
 }
 const lineOdds = (l) => `${l.op != null ? am(l.op) : "—"}/${l.up != null ? am(l.up) : "—"}`;
 const bookShort = (b) => ({ draftkings: "DK", fanduel: "FD" }[b] || b);
+const AM = () => (MODE === "cbb" ? "8 AM" : "7 AM");   // morning-pull label: college 8 AM, NBA 7 AM
 const ONE_PULL = () => MODE === "cbb";      // college props are pulled once (8 AM), so there is no "updates before tip" step
-const lineKind = (l) => (ONE_PULL() ? "Line (8 AM)" : l.pt === "morning" ? "8 AM line" : "Pre-game line");
+const lineKind = (l) => (ONE_PULL() ? "Line (8 AM)" : l.pt === "morning" ? `${AM()} line` : "Pre-game line");
 function lineTip(l) {
   if (l.est) {
     const parts = Object.entries(l.from || {}).map(([k, v]) => `${mkById(k).short} ${n1(v)}`).join(" + ");
@@ -74,16 +75,16 @@ function lineTip(l) {
   const alt = Object.entries(l.alt || {}).map(([b, x]) => `${bookShort(b)} ${n1(x.line)} (${lineOdds(x)})`).join(", ");
   const kind = lineKind(l);
   return `${kind}: ${bookShort(l.book)} ${n1(l.line)} ${lineOdds(l)}, captured ${fmtTime(l.cap)} (${l.mb} min before tip)` +
-    (l.am ? `. 8 AM: ${n1(l.am.line)} (${lineOdds(l.am)})` : "") +
+    (l.am ? `. ${AM()}: ${n1(l.am.line)} (${lineOdds(l.am)})` : "") +
     (l.pt === "morning" && !ONE_PULL() ? ". Updates about 1 hour before tip." : "") + (alt ? `. Also: ${alt}` : "");
 }
 // Line with its context: "8 AM" chip until the pre-game pull lands; movement since 8 AM after.
 function lineCell(l) {
   let h = `<b>${n1(l.line)}</b>`;
-  if (l.pt === "morning" && !ONE_PULL()) h += ` <span class="chip amchip">8 AM</span>`;
+  if (l.pt === "morning" && !ONE_PULL()) h += ` <span class="chip amchip">${AM()}</span>`;
   else if (l.am && l.am.line != null && l.am.line !== l.line) {
     const d = l.line - l.am.line;
-    h += ` <span class="mv ${d > 0 ? "up" : "down"}" title="Moved from ${n1(l.am.line)} at 8 AM">${d > 0 ? "▲" : "▼"}${n1(Math.abs(d))}</span>`;
+    h += ` <span class="mv ${d > 0 ? "up" : "down"}" title="Moved from ${n1(l.am.line)} at ${AM()}">${d > 0 ? "▲" : "▼"}${n1(Math.abs(d))}</span>`;
   }
   return h;
 }
@@ -113,7 +114,7 @@ function linesDueText(gid) {
   if (g.final || g.state === "in") return "No lines were captured for this game.";
   const pre = new Date(new Date(g.start).getTime() - 3600000);
   if (ONE_PULL()) return "Player points are pulled once, at 8:00 AM Central on game day (re-checked about hourly until the books post them).";
-  return `Lines are pulled at 8:00 AM Central (once the books post them) and again about 1 hour before tip (~${fmtClock(pre.toISOString())}).`;
+  return `Lines are pulled at 7:00 AM Central (once the books post them) and again about 1 hour before tip (~${fmtClock(pre.toISOString())}).`;
 }
 function todayET() { return new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" }); }
 function dayET(offset) {   // NBA game date (US Eastern) offset from today
@@ -157,7 +158,7 @@ function viewBoard() {
 
   const phoneView = !!(window.matchMedia && window.matchMedia("(max-width: 760px)").matches);
   if (phoneView) h += `<div class="bgrid-top"><div class="seg">${[["core", "Core"], ["combo", "Combos"]].map(([k, l]) => `<button data-bset="${k}" class="${P.bset === k ? "on" : ""}">${l}</button>`).join("")}</div>
-    ${P.day < 0 || ONE_PULL() ? "" : `<span class="muted small"><span class="amdot">•</span> = 8 AM line</span>`}</div>`;
+    ${P.day < 0 || ONE_PULL() ? "" : `<span class="muted small"><span class="amdot">•</span> = ${AM()} line</span>`}</div>`;
   // group: game -> player -> markets
   const byGame = new Map();
   for (const r of rows) {
@@ -630,7 +631,7 @@ function defTrendPanel(aid, mk) {
 // ---------- Guide ----------
 function viewGuide() {
   return `<div class="panel"><h3>How the player board works</h3><div class="body guide">
-    <p><b>Lines.</b> DraftKings and FanDuel player props are pulled from The Odds API twice per game: at <b>8:00 AM Central</b> on game day (retried until the books post them) and again about <b>1 hour before tip</b>. Until the 1-hour pull lands, the board shows the 8 AM line with an <span class="chip amchip">8 AM</span> chip; after it, ▲/▼ shows how far the line moved since 8 AM. The 1-hour line is the one graded. Only the core markets (points, rebounds, assists, threes) are pulled. PRA and the two-stat combos are built from those lines (two-stat combos: sum + 0.5; PRA: the sum, matching how DraftKings and FanDuel have most often set them in this season's captures), priced at -110/-110 and graded like any other line. Steals and blocks are no longer pulled; earlier captures still show. Their opponent-defense chart uses the player's own average over his earlier games (at least ${AVG_MIN}) in place of a line, and the defense is credited with actual minus that average. Nothing is pulled after tip. DraftKings is the line shown and graded; FanDuel is used when DraftKings has no line for that player and stat. Hover or tap a line to see both books.</p>
+    <p><b>Lines.</b> DraftKings and FanDuel player props are pulled from The Odds API twice per game: at <b>7:00 AM Central</b> on game day (retried until the books post them) and again about <b>1 hour before tip</b>. Until the 1-hour pull lands, the board shows the 7 AM line with an <span class="chip amchip">7 AM</span> chip; after it, ▲/▼ shows how far the line moved since 7 AM. The 1-hour line is the one graded. Only the core markets (points, rebounds, assists, threes) are pulled. PRA and the two-stat combos are built from those lines (two-stat combos: sum + 0.5; PRA: the sum, matching how DraftKings and FanDuel have most often set them in this season's captures), priced at -110/-110 and graded like any other line. Steals and blocks are no longer pulled; earlier captures still show. Their opponent-defense chart uses the player's own average over his earlier games (at least ${AVG_MIN}) in place of a line, and the defense is credited with actual minus that average. Nothing is pulled after tip. DraftKings is the line shown and graded; FanDuel is used when DraftKings has no line for that player and stat. Hover or tap a line to see both books.</p>
     <p><b>Grading.</b> Once the game is final, the actual stat from ESPN's box score is compared with the line: over, under or push. A player who had a line but didn't play is <i>void</i>, with ESPN's reason when it gives one.</p>
     <p><b>Results filters.</b> The Results tab has one filter, Market (points, rebounds, assists, threes made, steals, blocks). The page is season to date: one row per player with an over–under record for that market (and the average of actual − line). The market summary above it always shows every market.</p>
     <p><b>Defense.</b> For every graded player-game, the opponent's defense is credited with actual minus line. Each team's average of that, by position and market, ranks all 30 defenses: 30 = worst (gives up the most over the books' lines), 1 = toughest. A team's average is pulled toward zero as if it had ${DEF_K} extra games at exactly the line, so a defense with few games can't jump to the extremes and one with none sits in the middle. That is why every game on a player's chart gets a rank, even early on or for centers (few graded games per team). On player pages the rank is frozen: a snapshot is saved for each game date (using only earlier games) and never rewritten, so a game keeps the rank it had on the day it was played even as defenses change; snapshots for dates before this feature existed were rebuilt from the data afterward, and a game on a future date shows a preview until its date arrives. Hollow markers (*) on the player chart mean fewer than ${DEF_THIN_N} earlier games at that position, so treat them as a rough lean. Greyed rows on the Defense tab have fewer than ${DEF_MIN_N} graded player-games. Early in the season these samples are small.</p>

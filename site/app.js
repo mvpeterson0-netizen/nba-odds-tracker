@@ -96,7 +96,7 @@ function viewLog() {
       <tr><td data-label="Data">Player updates (notes icon)</td><td data-label="Source">ESPN injury + news feeds, ESPN box scores and rosters</td><td class="note">Unofficial, undocumented endpoints (no key, no SLA); may change or be blocked at any time. Disney's Terms of Use limit use to personal, noncommercial use and bar automated access. One extra request per run (league news).</td></tr>
       <tr><td data-label="Data">Sportsbook odds</td><td data-label="Source"><a href="https://the-odds-api.com/liveapi/guides/v4/">The Odds API v4</a></td><td class="note">US books; moneyline, spread, total in American odds. Each pull costs API credits. No-vig % = each book's two moneyline prices normalized to 100%, averaged across books.</td></tr>
     </tbody></table>
-    <p class="muted small">Lines are pulled at 8:00 AM Central (NBA also about 1 hour before each tip); ESPN data refreshes on every run. Code and raw data: <a href="https://github.com/${esc(repo())}">github.com/${esc(repo())}</a></p>
+    <p class="muted small">Lines are pulled at 7:00 AM Central for the NBA (and about 1 hour before each tip) and 8:00 AM Central for college; ESPN data refreshes on every run. Code and raw data: <a href="https://github.com/${esc(repo())}">github.com/${esc(repo())}</a></p>
   </div></div>`;
   return h;
 }
@@ -108,7 +108,7 @@ function propsLog(px = D.props) {
   if (!pulls.length) h += `<tr><td colspan="7" class="muted">No prop pulls yet.</td></tr>`;
   for (const p of pulls) {
     const cls = p.status === "ok" ? "ok" : p.status === "empty" ? "other" : "out";
-    h += `<tr><td data-label="When">${fmtTime(p.at)}</td><td data-label="Game">${esc(p.matchup)}</td><td data-label="Pull">${p.pull_type === "morning" ? "8 AM" : "1 h pre-game"}</td><td class="num" data-label="Min before tip">${esc(p.minutes_before)}</td>
+    h += `<tr><td data-label="When">${fmtTime(p.at)}</td><td data-label="Game">${esc(p.matchup)}</td><td data-label="Pull">${p.pull_type === "morning" ? (MODE === "cbb" ? "8 AM" : "7 AM") : "1 h pre-game"}</td><td class="num" data-label="Min before tip">${esc(p.minutes_before)}</td>
       <td data-label="Status"><span class="st ${cls}" title="${esc(p.note || "")}">${esc(p.status)}</span></td><td class="num" data-label="Prices">${esc(p.rows)}</td><td class="num" data-label="Credits">${esc(p.credits_last || "—")} / ${esc(p.credits_remaining || "—")}</td></tr>`;
   }
   h += `</tbody></table></div>`;

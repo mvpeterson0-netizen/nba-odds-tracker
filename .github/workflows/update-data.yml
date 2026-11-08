@@ -4,11 +4,12 @@ on:
   schedule:
     # GitHub runs these on a best-effort basis (often hours late); an external trigger
     # calling "Run workflow" every 30 minutes keeps the timing reliable.
-    # Each run: ESPN data; props at 8:00 AM Central (morning) and ~1 h before each tip (pre-game);
+    # Each run: ESPN data; NBA props at 7:00 AM Central (morning; college stays at 8:00) and ~1 h before each tip (pre-game);
     # game lines with the morning pull and with each pre-game pull. The code decides what's due.
     - cron: "8,23,38,53 * * * *"
-    - cron: "1 13 * * *"   # 8:01 AM CDT
-    - cron: "1 14 * * *"   # 8:01 AM CST (after Nov 1)
+    - cron: "1 12 * * *"   # 7:01 AM CDT
+    - cron: "1 13 * * *"   # 7:01 AM CST (also 8:01 AM CDT, college morning pull)
+    - cron: "1 14 * * *"   # 8:01 AM CST (college morning pull)
   workflow_dispatch: {}
   push:
     branches: [main]
