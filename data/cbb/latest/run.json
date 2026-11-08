@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-08T22:49:53+00:00",
+  "finished_at": "2026-11-08T23:00:24+00:00",
   "game_date": "2026-11-08",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -27,16 +27,35 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 218,
+      "ODDS_API_KEY": 214,
       "ODDS_API_KEY_2": 218,
       "ODDS_API_KEY_20K": 15273
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Pittsburgh Panthers @ Penn State Nittany Lions",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Houston Cougars @ California Golden Bears",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Wichita St Shockers @ USC Trojans",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 32,
     "p4_events": 16,
     "unmatched": [],
-    "due": 0,
+    "due": 3,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",

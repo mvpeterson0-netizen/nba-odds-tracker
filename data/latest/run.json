@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-08T22:49:52+00:00",
+  "finished_at": "2026-11-08T23:00:23+00:00",
   "game_date": "2026-11-08",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -16,25 +16,33 @@
     "defense_ranks": "ok"
   },
   "boxscores": {
-    "new_games": 1,
-    "player_rows": 25,
+    "new_games": 0,
+    "player_rows": 0,
     "unparsed": [],
-    "queued": 1,
+    "queued": 0,
     "errors": [],
     "rosters_fetched": 0
   },
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 218,
+      "ODDS_API_KEY": 214,
       "ODDS_API_KEY_2": 218,
       "ODDS_API_KEY_20K": 15273
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Utah Jazz @ Minnesota Timberwolves",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 156,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
