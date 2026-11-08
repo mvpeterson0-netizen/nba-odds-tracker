@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-08T23:15:21+00:00",
+  "fetched_at": "2026-11-08T23:30:20+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-08",
@@ -246,7 +246,7 @@
         "nick": "Panthers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "PITT -2.5",
         "spread": 2.5,
         "over_under": 153.5
@@ -257,7 +257,7 @@
     {
       "game_id": "401918053",
       "start_utc": "2026-11-09T01:30Z",
-      "short_name": "HOU VS CAL",
+      "short_name": "CAL VS HOU",
       "state": "pre",
       "status": "11/8 - 8:30 PM EST",
       "completed": false,
@@ -269,35 +269,6 @@
         "CW"
       ],
       "home": {
-        "team_id": "25",
-        "abbr": "CAL",
-        "name": "California Golden Bears",
-        "score": 0,
-        "winner": null,
-        "record": "2-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Nojus Indrusaitis",
-            "value": "25.0"
-          },
-          "reboundsPerGame": {
-            "player": "Jake Wilkins",
-            "value": "6.5"
-          },
-          "assistsPerGame": {
-            "player": "Jordan Ross",
-            "value": "8.0"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "California",
-        "nick": "Golden Bears"
-      },
-      "away": {
         "team_id": "248",
         "abbr": "HOU",
         "name": "Houston Cougars",
@@ -326,8 +297,37 @@
         "loc": "Houston",
         "nick": "Cougars"
       },
+      "away": {
+        "team_id": "25",
+        "abbr": "CAL",
+        "name": "California Golden Bears",
+        "score": 0,
+        "winner": null,
+        "record": "2-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Nojus Indrusaitis",
+            "value": "25.0"
+          },
+          "reboundsPerGame": {
+            "player": "Jake Wilkins",
+            "value": "6.5"
+          },
+          "assistsPerGame": {
+            "player": "Jordan Ross",
+            "value": "8.0"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "California",
+        "nick": "Golden Bears"
+      },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "HOU -19.5",
         "spread": 19.5,
         "over_under": 142.5
@@ -338,7 +338,7 @@
     {
       "game_id": "401919029",
       "start_utc": "2026-11-09T04:00Z",
-      "short_name": "USC VS WICH",
+      "short_name": "WICH VS USC",
       "state": "pre",
       "status": "11/8 - 11:00 PM EST",
       "completed": false,
@@ -350,35 +350,6 @@
         "CW"
       ],
       "home": {
-        "team_id": "2724",
-        "abbr": "WICH",
-        "name": "Wichita State Shockers",
-        "score": 0,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "William Berg",
-            "value": "26.0"
-          },
-          "reboundsPerGame": {
-            "player": "William Berg",
-            "value": "16.0"
-          },
-          "assistsPerGame": {
-            "player": "Kenyon Giles",
-            "value": "8.0"
-          }
-        },
-        "conf_id": "62",
-        "conf": null,
-        "rank": null,
-        "loc": "Wichita State",
-        "nick": "Shockers"
-      },
-      "away": {
         "team_id": "30",
         "abbr": "USC",
         "name": "USC Trojans",
@@ -407,8 +378,37 @@
         "loc": "USC",
         "nick": "Trojans"
       },
+      "away": {
+        "team_id": "2724",
+        "abbr": "WICH",
+        "name": "Wichita State Shockers",
+        "score": 0,
+        "winner": null,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "William Berg",
+            "value": "26.0"
+          },
+          "reboundsPerGame": {
+            "player": "William Berg",
+            "value": "16.0"
+          },
+          "assistsPerGame": {
+            "player": "Kenyon Giles",
+            "value": "8.0"
+          }
+        },
+        "conf_id": "62",
+        "conf": null,
+        "rank": null,
+        "loc": "Wichita State",
+        "nick": "Shockers"
+      },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "USC -6.5",
         "spread": 6.5,
         "over_under": 155.5
