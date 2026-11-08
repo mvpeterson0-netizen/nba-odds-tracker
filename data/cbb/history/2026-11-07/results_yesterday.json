@@ -1,10 +1,94 @@
 {
-  "fetched_at": "2026-11-08T04:00:21+00:00",
+  "fetched_at": "2026-11-08T04:15:22+00:00",
   "source": "espn",
-  "count": 34,
+  "count": 37,
   "game_date": "2026-11-06",
   "division_i_games": 72,
   "rows": [
+    {
+      "game_id": "401920685",
+      "start_utc": "2026-11-07T01:00Z",
+      "short_name": "CONN VS MICH",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "TD Garden",
+      "neutral_site": true,
+      "broadcasts": [
+        "TNT"
+      ],
+      "home": {
+        "team_id": "130",
+        "abbr": "MICH",
+        "name": "Michigan Wolverines",
+        "score": 77,
+        "winner": false,
+        "record": "1-1",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Trey McKenney",
+            "value": "22"
+          },
+          "rebounds": {
+            "player": "J.P. Estrella",
+            "value": "9"
+          },
+          "assists": {
+            "player": "J.P. Estrella",
+            "value": "3"
+          },
+          "rating": {
+            "player": "J.P. Estrella",
+            "value": "19 PTS, 9 REB"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 16,
+        "loc": "Michigan",
+        "nick": "Wolverines"
+      },
+      "away": {
+        "team_id": "41",
+        "abbr": "CONN",
+        "name": "UConn Huskies",
+        "score": 85,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Braylon Mullins",
+            "value": "23"
+          },
+          "rebounds": {
+            "player": "Colben Landrew",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Silas Demary Jr.",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Silas Demary Jr.",
+            "value": "21 PTS, 7 REB"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": 4,
+        "loc": "UConn",
+        "nick": "Huskies"
+      },
+      "espn_line": null,
+      "date": "2026-11-06",
+      "p4": true
+    },
     {
       "game_id": "401920423",
       "start_utc": "2026-11-06T22:00Z",
@@ -930,6 +1014,90 @@
       "p4": true
     },
     {
+      "game_id": "401926131",
+      "start_utc": "2026-11-06T23:30Z",
+      "short_name": "VAL @ PUR",
+      "state": "post",
+      "status": "Final/2OT",
+      "completed": true,
+      "period": 4,
+      "clock": "0:00",
+      "venue": "Mackey Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "BTN"
+      ],
+      "home": {
+        "team_id": "2509",
+        "abbr": "PUR",
+        "name": "Purdue Boilermakers",
+        "score": 80,
+        "winner": false,
+        "record": "0-2",
+        "home_record": "0-1",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Daniel Jacobsen",
+            "value": "28"
+          },
+          "rebounds": {
+            "player": "C.J. Cox",
+            "value": "12"
+          },
+          "assists": {
+            "player": "Omer Mayer",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Daniel Jacobsen",
+            "value": "28 PTS, 10 REB"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Purdue",
+        "nick": "Boilermakers"
+      },
+      "away": {
+        "team_id": "2674",
+        "abbr": "VAL",
+        "name": "Valparaiso Beacons",
+        "score": 83,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "1-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Rakim Chaney",
+            "value": "35"
+          },
+          "rebounds": {
+            "player": "Rakim Chaney",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Rakim Chaney",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Rakim Chaney",
+            "value": "35 PTS, 8 REB, 6 AST"
+          }
+        },
+        "conf_id": "18",
+        "conf": null,
+        "rank": null,
+        "loc": "Valparaiso",
+        "nick": "Beacons"
+      },
+      "espn_line": null,
+      "date": "2026-11-06",
+      "p4": true
+    },
+    {
       "game_id": "401916314",
       "start_utc": "2026-11-06T23:30Z",
       "short_name": "YSU @ OSU",
@@ -1591,7 +1759,7 @@
             "value": "23 PTS"
           }
         },
-        "conf_id": null,
+        "conf_id": "22",
         "conf": null,
         "rank": null,
         "loc": "American University",
@@ -1927,7 +2095,7 @@
             "value": "26 PTS"
           }
         },
-        "conf_id": null,
+        "conf_id": "11",
         "conf": null,
         "rank": null,
         "loc": "Delaware",
@@ -2436,6 +2604,90 @@
         "rank": null,
         "loc": "Mississippi Valley State",
         "nick": "Delta Devils"
+      },
+      "espn_line": null,
+      "date": "2026-11-06",
+      "p4": true
+    },
+    {
+      "game_id": "401920726",
+      "start_utc": "2026-11-07T01:30Z",
+      "short_name": "EIU @ IOWA",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Carver-Hawkeye Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "BTN"
+      ],
+      "home": {
+        "team_id": "2294",
+        "abbr": "IOWA",
+        "name": "Iowa Hawkeyes",
+        "score": 91,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Peyton McCollum",
+            "value": "14"
+          },
+          "rebounds": {
+            "player": "Trevin Jirak",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Trevin Jirak",
+            "value": "8"
+          },
+          "rating": {
+            "player": "Ty'Reek Coleman",
+            "value": "13 PTS, 6 AST"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Iowa",
+        "nick": "Hawkeyes"
+      },
+      "away": {
+        "team_id": "2197",
+        "abbr": "EIU",
+        "name": "Eastern Illinois Panthers",
+        "score": 47,
+        "winner": false,
+        "record": "0-2",
+        "home_record": "0-0",
+        "away_record": "0-2",
+        "leaders": {
+          "points": {
+            "player": "Tanner Vogel",
+            "value": "11"
+          },
+          "rebounds": {
+            "player": "Tanner Vogel",
+            "value": "11"
+          },
+          "assists": {
+            "player": "Jaden Miller",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Tanner Vogel",
+            "value": "11 PTS, 11 REB"
+          }
+        },
+        "conf_id": "20",
+        "conf": null,
+        "rank": null,
+        "loc": "Eastern Illinois",
+        "nick": "Panthers"
       },
       "espn_line": null,
       "date": "2026-11-06",

@@ -1,10 +1,94 @@
 {
-  "fetched_at": "2026-11-08T04:00:21+00:00",
+  "fetched_at": "2026-11-08T04:15:22+00:00",
   "source": "espn",
-  "count": 2,
+  "count": 4,
   "game_date": "2026-11-07",
   "division_i_games": 61,
   "rows": [
+    {
+      "game_id": "401918948",
+      "start_utc": "2026-11-07T17:00Z",
+      "short_name": "MORE @ LOU",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "KFC Yum! Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACCNX"
+      ],
+      "home": {
+        "team_id": "97",
+        "abbr": "LOU",
+        "name": "Louisville Cardinals",
+        "score": 107,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Obinna Ekezie Jr.",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Obinna Ekezie Jr.",
+            "value": "13"
+          },
+          "assists": {
+            "player": "Alvaro Folgueiras",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Obinna Ekezie Jr.",
+            "value": "20 PTS, 13 REB"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": 11,
+        "loc": "Louisville",
+        "nick": "Cardinals"
+      },
+      "away": {
+        "team_id": "2413",
+        "abbr": "MORE",
+        "name": "Morehead State Eagles",
+        "score": 57,
+        "winner": false,
+        "record": "1-2",
+        "home_record": "1-0",
+        "away_record": "0-2",
+        "leaders": {
+          "points": {
+            "player": "Clayton Parker",
+            "value": "19"
+          },
+          "rebounds": {
+            "player": "Kyrell Shaw",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Izaiah Day",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Clayton Parker",
+            "value": "19 PTS"
+          }
+        },
+        "conf_id": "20",
+        "conf": null,
+        "rank": null,
+        "loc": "Morehead State",
+        "nick": "Eagles"
+      },
+      "espn_line": null,
+      "date": "2026-11-07",
+      "p4": true
+    },
     {
       "game_id": "401909760",
       "start_utc": "2026-11-07T20:30Z",
@@ -168,6 +252,90 @@
         "rank": null,
         "loc": "Providence",
         "nick": "Friars"
+      },
+      "espn_line": null,
+      "date": "2026-11-07",
+      "p4": true
+    },
+    {
+      "game_id": "401909513",
+      "start_utc": "2026-11-08T00:30Z",
+      "short_name": "MD @ GTWN",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Capital One Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "Peacock"
+      ],
+      "home": {
+        "team_id": "46",
+        "abbr": "GTWN",
+        "name": "Georgetown Hoyas",
+        "score": 86,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Jaland Lowe",
+            "value": "22"
+          },
+          "rebounds": {
+            "player": "Jaland Lowe",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Jaland Lowe",
+            "value": "8"
+          },
+          "rating": {
+            "player": "Jaland Lowe",
+            "value": "22 PTS, 8 AST"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Georgetown",
+        "nick": "Hoyas"
+      },
+      "away": {
+        "team_id": "120",
+        "abbr": "MD",
+        "name": "Maryland Terrapins",
+        "score": 74,
+        "winner": false,
+        "record": "1-1",
+        "home_record": "1-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Pharrel Payne",
+            "value": "28"
+          },
+          "rebounds": {
+            "player": "Tomislav Buljan",
+            "value": "10"
+          },
+          "assists": {
+            "player": "DJ Wagner",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Pharrel Payne",
+            "value": "28 PTS, 8 REB"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Maryland",
+        "nick": "Terrapins"
       },
       "espn_line": null,
       "date": "2026-11-07",
