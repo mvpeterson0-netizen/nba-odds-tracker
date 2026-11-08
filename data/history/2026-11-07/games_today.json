@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-08T01:00:19+00:00",
+  "fetched_at": "2026-11-08T01:15:15+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-07",
@@ -82,10 +82,10 @@
       "start_utc": "2026-11-08T00:30Z",
       "short_name": "BKN @ ATL",
       "state": "in",
-      "status": "3:12 - 1st",
+      "status": "10:07 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "3:12",
+      "period": 2,
+      "clock": "10:07",
       "venue": "State Farm Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -95,27 +95,27 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 17,
+        "score": 30,
         "winner": null,
         "record": "6-4",
         "home_record": "2-2",
         "away_record": "4-2",
         "leaders": {
           "points": {
-            "player": "Nickeil Alexander-Walker",
-            "value": "6"
+            "player": "Aaron Wiggins",
+            "value": "8"
           },
           "rebounds": {
-            "player": "Jalen Johnson",
-            "value": "2"
+            "player": "Dyson Daniels",
+            "value": "4"
           },
           "assists": {
-            "player": "Jalen Johnson",
-            "value": "1"
+            "player": "Onyeka Okongwu",
+            "value": "2"
           },
           "rating": {
-            "player": "Jalen Johnson",
-            "value": "4 PTS"
+            "player": "Aaron Wiggins",
+            "value": "8 PTS"
           }
         }
       },
@@ -123,7 +123,7 @@
         "team_id": "17",
         "abbr": "BKN",
         "name": "Brooklyn Nets",
-        "score": 31,
+        "score": 42,
         "winner": null,
         "record": "2-6",
         "home_record": "1-3",
@@ -138,7 +138,7 @@
             "value": "7"
           },
           "assists": {
-            "player": "Day'Ron Sharpe",
+            "player": "Julius Randle",
             "value": "3"
           },
           "rating": {
@@ -153,11 +153,11 @@
       "game_id": "401909940",
       "start_utc": "2026-11-08T01:00Z",
       "short_name": "NY @ CLE",
-      "state": "pre",
-      "status": "11/7 - 8:00 PM EST",
+      "state": "in",
+      "status": "10:57 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:57",
       "venue": "Rocket Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -168,27 +168,19 @@
         "team_id": "5",
         "abbr": "CLE",
         "name": "Cleveland Cavaliers",
-        "score": 0,
+        "score": 1,
         "winner": null,
         "record": "5-4",
         "home_record": "4-1",
         "away_record": "1-3",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Donovan Mitchell",
-            "value": "22.6"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Evan Mobley",
-            "value": "8.0"
-          },
-          "assistsPerGame": {
-            "player": "James Harden",
-            "value": "5.9"
+            "value": "1"
           },
           "rating": {
-            "player": "Donovan Mitchell",
-            "value": "22.6 PPG, 5.2 RPG, 5.8 APG, 1.2 SPG, 0.4 BPG"
+            "player": "Evan Mobley",
+            "value": "1 PTS"
           }
         }
       },
@@ -196,46 +188,37 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 0,
+        "score": 3,
         "winner": null,
         "record": "4-4",
         "home_record": "3-2",
         "away_record": "1-2",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Jalen Brunson",
-            "value": "25.6"
+            "value": "2"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Karl-Anthony Towns",
-            "value": "13.6"
-          },
-          "assistsPerGame": {
-            "player": "Tyler Kolek",
-            "value": "5.2"
+            "value": "1"
           },
           "rating": {
-            "player": "Karl-Anthony Towns",
-            "value": "19.9 PPG, 13.6 RPG, 3.1 APG, 0.5 SPG, 0.5 BPG"
+            "player": "Jalen Brunson",
+            "value": "2 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "NY -4.5",
-        "spread": 4.5,
-        "over_under": 222.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909941",
       "start_utc": "2026-11-08T01:00Z",
       "short_name": "WSH @ OKC",
-      "state": "pre",
-      "status": "11/7 - 8:00 PM EST",
+      "state": "in",
+      "status": "10:59 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:59",
       "venue": "Paycom Center",
       "neutral_site": false,
       "broadcasts": [
@@ -247,27 +230,27 @@
         "team_id": "25",
         "abbr": "OKC",
         "name": "Oklahoma City Thunder",
-        "score": 0,
+        "score": 4,
         "winner": null,
         "record": "7-2",
         "home_record": "4-0",
         "away_record": "3-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "29.9"
+          "points": {
+            "player": "Aday Mara",
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Isaiah Hartenstein",
-            "value": "9.7"
+          "rebounds": {
+            "player": "Aday Mara",
+            "value": "1"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Shai Gilgeous-Alexander",
-            "value": "4.4"
+            "value": "1"
           },
           "rating": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "29.9 PPG, 4.1 RPG, 4.4 APG, 1.1 SPG, 1.1 BPG"
+            "player": "Aday Mara",
+            "value": "2 PTS"
           }
         }
       },
@@ -281,30 +264,13 @@
         "home_record": "2-2",
         "away_record": "2-3",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Trae Young",
-            "value": "20.0"
-          },
-          "reboundsPerGame": {
-            "player": "Alex Sarr",
-            "value": "6.2"
-          },
-          "assistsPerGame": {
-            "player": "Trae Young",
-            "value": "9.6"
-          },
           "rating": {
-            "player": "Trae Young",
-            "value": "20.0 PPG, 3.2 RPG, 9.6 APG, 1.1 SPG, 0.2 BPG"
+            "player": "Alex Sarr",
+            "value": "1 BLK"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "OKC -12.5",
-        "spread": -12.5,
-        "over_under": 223.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909942",
@@ -375,7 +341,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "GS -7.5",
         "spread": -7.5,
         "over_under": 220.5
@@ -453,7 +419,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "HOU -6.5",
         "spread": 6.5,
         "over_under": 223.5
@@ -532,7 +498,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SA -5.5",
         "spread": 5.5,
         "over_under": 229.5
