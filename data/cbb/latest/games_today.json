@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-08T20:00:20+00:00",
+  "fetched_at": "2026-11-08T20:15:19+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-08",
@@ -9,11 +9,11 @@
       "game_id": "401920424",
       "start_utc": "2026-11-08T18:00Z",
       "short_name": "ARK VS UVA",
-      "state": "in",
-      "status": "4:35 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "4:35",
+      "clock": "0:00",
       "venue": "Capital One Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,9 +23,9 @@
         "team_id": "258",
         "abbr": "UVA",
         "name": "Virginia Cavaliers",
-        "score": 81,
-        "winner": null,
-        "record": "2-0",
+        "score": 91,
+        "winner": true,
+        "record": "3-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
@@ -35,7 +35,7 @@
           },
           "rebounds": {
             "player": "Thijs De Ridder",
-            "value": "8"
+            "value": "10"
           },
           "assists": {
             "player": "Chance Mallory",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Thijs De Ridder",
-            "value": "16 PTS, 8 REB"
+            "value": "16 PTS, 10 REB"
           }
         },
         "conf_id": "2",
@@ -56,9 +56,9 @@
         "team_id": "8",
         "abbr": "ARK",
         "name": "Arkansas Razorbacks",
-        "score": 63,
-        "winner": null,
-        "record": "1-0",
+        "score": 72,
+        "winner": false,
+        "record": "1-1",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
@@ -67,12 +67,12 @@
             "value": "19"
           },
           "rebounds": {
-            "player": "Cooper Bowser",
+            "player": "Billy Richmond III",
             "value": "7"
           },
           "assists": {
-            "player": "Jordan Smith Jr.",
-            "value": "3"
+            "player": "Billy Richmond III",
+            "value": "4"
           },
           "rating": {
             "player": "Jordan Smith Jr.",
@@ -93,11 +93,11 @@
       "game_id": "401921820",
       "start_utc": "2026-11-08T18:00Z",
       "short_name": "SEMO @ SC",
-      "state": "in",
-      "status": "1:54 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "1:54",
+      "clock": "0:00",
       "venue": "Colonial Life Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -107,19 +107,19 @@
         "team_id": "2579",
         "abbr": "SC",
         "name": "South Carolina Gamecocks",
-        "score": 74,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "1-0",
+        "score": 78,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Juan Fernandez",
-            "value": "18"
+            "player": "Kory Mincy",
+            "value": "19"
           },
           "rebounds": {
-            "player": "Jakub Necas",
-            "value": "6"
+            "player": "Juan Fernandez",
+            "value": "7"
           },
           "assists": {
             "player": "Jakub Necas",
@@ -127,7 +127,7 @@
           },
           "rating": {
             "player": "Kory Mincy",
-            "value": "17 PTS, 3 STL"
+            "value": "19 PTS, 3 STL"
           }
         },
         "conf_id": "23",
@@ -140,15 +140,15 @@
         "team_id": "2546",
         "abbr": "SEMO",
         "name": "Southeast Missouri State Redhawks",
-        "score": 64,
-        "winner": null,
-        "record": "2-0",
+        "score": 68,
+        "winner": false,
+        "record": "2-1",
         "home_record": "2-0",
-        "away_record": "0-0",
+        "away_record": "0-1",
         "leaders": {
           "points": {
             "player": "Fontaine Williams Jr.",
-            "value": "16"
+            "value": "18"
           },
           "rebounds": {
             "player": "Fontaine Williams Jr.",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "Fontaine Williams Jr.",
-            "value": "16 PTS"
+            "value": "18 PTS"
           }
         },
         "conf_id": "20",
