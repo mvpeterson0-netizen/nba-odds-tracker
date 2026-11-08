@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-08T18:00:20+00:00",
+  "fetched_at": "2026-11-08T18:15:19+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-08",
@@ -9,11 +9,11 @@
       "game_id": "401920424",
       "start_utc": "2026-11-08T18:00Z",
       "short_name": "ARK VS UVA",
-      "state": "pre",
-      "status": "11/8 - 1:00 PM EST",
+      "state": "in",
+      "status": "15:53 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:53",
       "venue": "Capital One Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,23 +23,23 @@
         "team_id": "258",
         "abbr": "UVA",
         "name": "Virginia Cavaliers",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
+            "player": "Kalu Anya",
+            "value": "3"
+          },
+          "rebounds": {
             "player": "Sam Lewis",
-            "value": "20.0"
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Thijs De Ridder",
-            "value": "7.5"
-          },
-          "assistsPerGame": {
-            "player": "Chance Mallory",
-            "value": "4.0"
+          "rating": {
+            "player": "Kalu Anya",
+            "value": "3 PTS"
           }
         },
         "conf_id": "2",
@@ -52,23 +52,23 @@
         "team_id": "8",
         "abbr": "ARK",
         "name": "Arkansas Razorbacks",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jeremiah Wilkinson",
-            "value": "23.0"
+          "points": {
+            "player": "Miikka Muurinen",
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "Maper Maker",
-            "value": "8.0"
+          "rebounds": {
+            "player": "Miikka Muurinen",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Davion Thompson",
-            "value": "4.0"
+          "rating": {
+            "player": "Miikka Muurinen",
+            "value": "4 PTS"
           }
         },
         "conf_id": "23",
@@ -77,12 +77,7 @@
         "loc": "Arkansas",
         "nick": "Razorbacks"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "UVA -4.5",
-        "spread": -4.5,
-        "over_under": 162.5
-      },
+      "espn_line": null,
       "date": "2026-11-08",
       "p4": true
     },
@@ -90,11 +85,11 @@
       "game_id": "401921820",
       "start_utc": "2026-11-08T18:00Z",
       "short_name": "SEMO @ SC",
-      "state": "pre",
-      "status": "11/8 - 1:00 PM EST",
+      "state": "in",
+      "status": "13:20 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "13:20",
       "venue": "Colonial Life Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -104,23 +99,23 @@
         "team_id": "2579",
         "abbr": "SC",
         "name": "South Carolina Gamecocks",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Juan Fernandez",
-            "value": "20.0"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Davion Hannah",
-            "value": "9.0"
+            "value": "4"
           },
-          "assistsPerGame": {
-            "player": "Kory Mincy",
-            "value": "5.0"
+          "rebounds": {
+            "player": "Davion Hannah",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Davion Hannah",
+            "value": "4 PTS"
           }
         },
         "conf_id": "23",
@@ -133,23 +128,23 @@
         "team_id": "2546",
         "abbr": "SEMO",
         "name": "Southeast Missouri State Redhawks",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Marqueas Bell",
-            "value": "13.0"
-          },
-          "reboundsPerGame": {
-            "player": "Clayton Jewell",
-            "value": "8.5"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Fontaine Williams Jr.",
-            "value": "5.5"
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Fontaine Williams Jr.",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Fontaine Williams Jr.",
+            "value": "5 PTS"
           }
         },
         "conf_id": "20",
@@ -158,12 +153,7 @@
         "loc": "Southeast Missouri State",
         "nick": "Redhawks"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "SC -17.5",
-        "spread": -17.5,
-        "over_under": 144.5
-      },
+      "espn_line": null,
       "date": "2026-11-08",
       "p4": true
     },
@@ -240,7 +230,7 @@
         "nick": "Panthers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "PITT -2.5",
         "spread": 2.5,
         "over_under": 153.5
@@ -321,7 +311,7 @@
         "nick": "Cougars"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "HOU -19.5",
         "spread": 19.5,
         "over_under": 143.5
@@ -402,7 +392,7 @@
         "nick": "Trojans"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "USC -6.5",
         "spread": 6.5,
         "over_under": 155.5
