@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-08T19:30:19+00:00",
+  "finished_at": "2026-11-08T19:45:22+00:00",
   "game_date": "2026-11-08",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -30,19 +30,11 @@
       "ODDS_API_KEY_2": 222,
       "ODDS_API_KEY_20K": 15364
     },
-    "pulled": [
-      {
-        "matchup": "Philadelphia 76ers @ Chicago Bulls",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 174,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
