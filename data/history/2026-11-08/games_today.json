@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-08T20:30:18+00:00",
+  "fetched_at": "2026-11-08T20:45:13+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-08",
@@ -8,11 +8,11 @@
       "game_id": "401909945",
       "start_utc": "2026-11-08T20:30Z",
       "short_name": "PHI @ CHI",
-      "state": "pre",
-      "status": "11/8 - 3:30 PM EST",
+      "state": "in",
+      "status": "8:30 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "8:30",
       "venue": "United Center",
       "neutral_site": false,
       "broadcasts": null,
@@ -20,27 +20,27 @@
         "team_id": "4",
         "abbr": "CHI",
         "name": "Chicago Bulls",
-        "score": 0,
+        "score": 13,
         "winner": null,
         "record": "1-7",
         "home_record": "0-2",
         "away_record": "1-5",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Caleb Wilson",
-            "value": "19.5"
+          "points": {
+            "player": "Isaac Okoro",
+            "value": "4"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Jalen Smith",
-            "value": "7.8"
+            "value": "2"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Josh Giddey",
-            "value": "7.6"
+            "value": "3"
           },
           "rating": {
-            "player": "Caleb Wilson",
-            "value": "19.5 PPG, 6.5 RPG, 2.4 APG, 1.9 SPG, 1.1 BPG"
+            "player": "Isaac Okoro",
+            "value": "4 PTS"
           }
         }
       },
@@ -48,36 +48,31 @@
         "team_id": "20",
         "abbr": "PHI",
         "name": "Philadelphia 76ers",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "8-2",
         "home_record": "4-1",
         "away_record": "4-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tyrese Maxey",
-            "value": "26.9"
-          },
-          "reboundsPerGame": {
-            "player": "Joel Embiid",
-            "value": "9.6"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "LeBron James",
-            "value": "6.9"
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "LeBron James",
+            "value": "1"
+          },
+          "assists": {
+            "player": "LeBron James",
+            "value": "2"
           },
           "rating": {
-            "player": "Tyrese Maxey",
-            "value": "26.9 PPG, 3.7 RPG, 5.3 APG, 1.5 SPG, 0.7 BPG"
+            "player": "LeBron James",
+            "value": "3 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "PHI -9.5",
-        "spread": 9.5,
-        "over_under": 238.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909946",
@@ -152,7 +147,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "DET -7.5",
         "spread": -7.5,
         "over_under": 217.5
@@ -231,10 +226,10 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
-        "details": "MIN -11.5",
-        "spread": -11.5,
-        "over_under": 222.5
+        "provider": "DraftKings",
+        "details": "MIN -12.5",
+        "spread": -12.5,
+        "over_under": 221.5
       }
     },
     {
@@ -310,7 +305,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "DAL -7.5",
         "spread": -7.5,
         "over_under": 222.5
@@ -388,7 +383,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "BOS -12.5",
         "spread": 12.5,
         "over_under": 221.5
@@ -467,7 +462,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NO -1.5",
         "spread": 1.5,
         "over_under": 226.5
@@ -542,7 +537,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MIA -10.5",
         "spread": 10.5,
         "over_under": 237.5
