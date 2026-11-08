@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-08T18:15:55+00:00",
+  "fetched_at": "2026-11-08T18:30:22+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-08",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-08T18:00Z",
       "short_name": "ARK VS UVA",
       "state": "in",
-      "status": "15:53 - 1st",
+      "status": "10:33 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "15:53",
+      "clock": "10:33",
       "venue": "Capital One Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "258",
         "abbr": "UVA",
         "name": "Virginia Cavaliers",
-        "score": 5,
+        "score": 12,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Kalu Anya",
-            "value": "3"
+            "player": "Johann Grunloh",
+            "value": "4"
           },
           "rebounds": {
             "player": "Sam Lewis",
             "value": "3"
           },
+          "assists": {
+            "player": "Chance Mallory",
+            "value": "2"
+          },
           "rating": {
-            "player": "Kalu Anya",
-            "value": "3 PTS"
+            "player": "Johann Grunloh",
+            "value": "4 PTS"
           }
         },
         "conf_id": "2",
@@ -52,22 +56,26 @@
         "team_id": "8",
         "abbr": "ARK",
         "name": "Arkansas Razorbacks",
-        "score": 6,
+        "score": 13,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Miikka Muurinen",
+            "player": "Davion Thompson",
             "value": "4"
           },
           "rebounds": {
-            "player": "Miikka Muurinen",
+            "player": "Cooper Bowser",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Davion Thompson",
             "value": "1"
           },
           "rating": {
-            "player": "Miikka Muurinen",
+            "player": "Davion Thompson",
             "value": "4 PTS"
           }
         },
@@ -86,10 +94,10 @@
       "start_utc": "2026-11-08T18:00Z",
       "short_name": "SEMO @ SC",
       "state": "in",
-      "status": "13:20 - 1st",
+      "status": "7:18 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "13:20",
+      "clock": "7:18",
       "venue": "Colonial Life Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -99,7 +107,7 @@
         "team_id": "2579",
         "abbr": "SC",
         "name": "South Carolina Gamecocks",
-        "score": 10,
+        "score": 16,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -107,15 +115,19 @@
         "leaders": {
           "points": {
             "player": "Davion Hannah",
-            "value": "4"
+            "value": "5"
           },
           "rebounds": {
             "player": "Davion Hannah",
-            "value": "2"
+            "value": "3"
+          },
+          "assists": {
+            "player": "Davion Hannah",
+            "value": "1"
           },
           "rating": {
             "player": "Davion Hannah",
-            "value": "4 PTS"
+            "value": "5 PTS"
           }
         },
         "conf_id": "23",
@@ -128,7 +140,7 @@
         "team_id": "2546",
         "abbr": "SEMO",
         "name": "Southeast Missouri State Redhawks",
-        "score": 5,
+        "score": 17,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -136,15 +148,19 @@
         "leaders": {
           "points": {
             "player": "Fontaine Williams Jr.",
-            "value": "5"
+            "value": "11"
           },
           "rebounds": {
-            "player": "Fontaine Williams Jr.",
-            "value": "1"
+            "player": "Clayton Jewell",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Alonzo Clawson-Smith",
+            "value": "2"
           },
           "rating": {
             "player": "Fontaine Williams Jr.",
-            "value": "5 PTS"
+            "value": "11 PTS"
           }
         },
         "conf_id": "20",
@@ -230,7 +246,7 @@
         "nick": "Panthers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "PITT -2.5",
         "spread": 2.5,
         "over_under": 153.5
@@ -311,7 +327,7 @@
         "nick": "Cougars"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "HOU -19.5",
         "spread": 19.5,
         "over_under": 143.5
@@ -392,7 +408,7 @@
         "nick": "Trojans"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "USC -6.5",
         "spread": 6.5,
         "over_under": 155.5
