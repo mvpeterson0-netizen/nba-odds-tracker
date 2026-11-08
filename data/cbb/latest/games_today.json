@@ -1,8 +1,177 @@
 {
-  "fetched_at": "2026-11-08T03:45:23+00:00",
+  "fetched_at": "2026-11-08T04:00:21+00:00",
   "source": "espn",
-  "count": 0,
+  "count": 2,
   "game_date": "2026-11-07",
   "division_i_games": 61,
-  "rows": []
+  "rows": [
+    {
+      "game_id": "401909760",
+      "start_utc": "2026-11-07T20:30Z",
+      "short_name": "SDSU VS COLO",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Pechanga Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "USA Net"
+      ],
+      "home": {
+        "team_id": "38",
+        "abbr": "COLO",
+        "name": "Colorado Buffaloes",
+        "score": 66,
+        "winner": false,
+        "record": "1-1",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Barrington Hargress",
+            "value": "33"
+          },
+          "rebounds": {
+            "player": "Alex Dickeson",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Barrington Hargress",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Barrington Hargress",
+            "value": "33 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Colorado",
+        "nick": "Buffaloes"
+      },
+      "away": {
+        "team_id": "21",
+        "abbr": "SDSU",
+        "name": "San Diego State Aztecs",
+        "score": 77,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Chance Gladden",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Luca Vincini",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Chance Gladden",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Chance Gladden",
+            "value": "20 PTS, 3 STL"
+          }
+        },
+        "conf_id": "21",
+        "conf": null,
+        "rank": null,
+        "loc": "San Diego State",
+        "nick": "Aztecs"
+      },
+      "espn_line": null,
+      "date": "2026-11-07",
+      "p4": true
+    },
+    {
+      "game_id": "401909532",
+      "start_utc": "2026-11-08T00:00Z",
+      "short_name": "PROV VS NEB",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Mohegan Sun Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "FS1"
+      ],
+      "home": {
+        "team_id": "158",
+        "abbr": "NEB",
+        "name": "Nebraska Cornhuskers",
+        "score": 67,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Pryce Sandfort",
+            "value": "25"
+          },
+          "rebounds": {
+            "player": "Damon Wilkinson",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Taj DeGourville",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Pryce Sandfort",
+            "value": "25 PTS, 3 STL"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Nebraska",
+        "nick": "Cornhuskers"
+      },
+      "away": {
+        "team_id": "2507",
+        "abbr": "PROV",
+        "name": "Providence Friars",
+        "score": 58,
+        "winner": false,
+        "record": "1-1",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Leonardo Marangon",
+            "value": "12"
+          },
+          "rebounds": {
+            "player": "Ryan Mela",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Devin Vanterpool",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Devin Vanterpool",
+            "value": "11 PTS, 6 REB"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Providence",
+        "nick": "Friars"
+      },
+      "espn_line": null,
+      "date": "2026-11-07",
+      "p4": true
+    }
+  ]
 }
