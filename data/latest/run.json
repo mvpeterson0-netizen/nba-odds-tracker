@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-07T23:45:18+00:00",
+  "finished_at": "2026-11-08T00:00:23+00:00",
   "game_date": "2026-11-07",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -26,15 +26,30 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 249,
-      "ODDS_API_KEY_2": 250,
+      "ODDS_API_KEY": 245,
+      "ODDS_API_KEY_2": 246,
       "ODDS_API_KEY_20K": 15864
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "New York Knicks @ Cleveland Cavaliers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 194,
+        "markets": 4
+      },
+      {
+        "matchup": "Washington Wizards @ Oklahoma City Thunder",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 192,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 2,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
