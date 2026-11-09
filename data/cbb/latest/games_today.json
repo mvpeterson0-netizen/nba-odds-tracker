@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-09T02:15:23+00:00",
+  "fetched_at": "2026-11-09T02:30:22+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-08",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-09T01:30Z",
       "short_name": "CAL VS HOU",
       "state": "in",
-      "status": "4:48 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "4:48",
+      "clock": "0:00",
       "venue": "Tahoe Blue Event Center",
       "neutral_site": true,
       "broadcasts": [
@@ -23,27 +23,27 @@
         "team_id": "248",
         "abbr": "HOU",
         "name": "Houston Cougars",
-        "score": 35,
+        "score": 43,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Chase McCarty",
-            "value": "9"
+            "player": "Joseph Tugler",
+            "value": "10"
           },
           "rebounds": {
-            "player": "Chendall Weaver",
+            "player": "Braden East",
             "value": "4"
           },
           "assists": {
             "player": "Dedan Thomas Jr.",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Joseph Tugler",
-            "value": "8 PTS, 3 BLK"
+            "value": "10 PTS, 3 BLK"
           }
         },
         "conf_id": "8",
@@ -56,7 +56,7 @@
         "team_id": "25",
         "abbr": "CAL",
         "name": "California Golden Bears",
-        "score": 28,
+        "score": 32,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -68,7 +68,7 @@
           },
           "rebounds": {
             "player": "Semetri Carr",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "Jordan Ross",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-09T01:00Z",
       "short_name": "PITT VS PSU",
       "state": "in",
-      "status": "Halftime",
+      "status": "15:42 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "15:42",
       "venue": "The Palestra",
       "neutral_site": true,
       "broadcasts": [
@@ -107,18 +107,18 @@
         "team_id": "213",
         "abbr": "PSU",
         "name": "Penn State Nittany Lions",
-        "score": 38,
+        "score": 47,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Josh Reed",
-            "value": "7"
+            "player": "Dasonte Bowen",
+            "value": "11"
           },
           "rebounds": {
-            "player": "Josh Reed",
+            "player": "Roko Prkacin",
             "value": "4"
           },
           "assists": {
@@ -126,8 +126,8 @@
             "value": "2"
           },
           "rating": {
-            "player": "Roko Prkacin",
-            "value": "7 PTS"
+            "player": "Dasonte Bowen",
+            "value": "11 PTS"
           }
         },
         "conf_id": "7",
@@ -140,19 +140,19 @@
         "team_id": "221",
         "abbr": "PITT",
         "name": "Pittsburgh Panthers",
-        "score": 42,
+        "score": 48,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Jonathan Powell",
-            "value": "8"
+            "player": "A'lahn Sumler",
+            "value": "14"
           },
           "rebounds": {
             "player": "Baye Ndongo",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Baye Ndongo",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "Baye Ndongo",
-            "value": "7 PTS, 6 REB"
+            "value": "7 PTS, 7 REB"
           }
         },
         "conf_id": "2",
@@ -414,7 +414,7 @@
         "nick": "Shockers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "USC -6.5",
         "spread": -6.5,
         "over_under": 155.5
