@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-09T23:00:23+00:00",
+  "fetched_at": "2026-11-09T23:15:21+00:00",
   "source": "espn",
   "count": 20,
   "game_date": "2026-11-09",
@@ -9,11 +9,11 @@
       "game_id": "401916315",
       "start_utc": "2026-11-09T23:00Z",
       "short_name": "MRSH @ OSU",
-      "state": "pre",
-      "status": "11/9 - 6:00 PM EST",
+      "state": "in",
+      "status": "13:25 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "13:25",
       "venue": "Schottenstein Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "194",
         "abbr": "OSU",
         "name": "Ohio State Buckeyes",
-        "score": 0,
+        "score": 19,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "John Mobley Jr.",
-            "value": "19.5"
+            "value": "6"
           },
-          "reboundsPerGame": {
-            "player": "Andrija Jelavic",
-            "value": "9.0"
+          "rebounds": {
+            "player": "Anthony Thompson",
+            "value": "2"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "John Mobley Jr.",
-            "value": "5.5"
+            "value": "2"
+          },
+          "rating": {
+            "player": "John Mobley Jr.",
+            "value": "6 PTS"
           }
         },
         "conf_id": "7",
@@ -52,23 +56,23 @@
         "team_id": "276",
         "abbr": "MRSH",
         "name": "Marshall Thundering Herd",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "1-1",
         "home_record": "1-1",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Bryce Slay",
-            "value": "21.0"
-          },
-          "reboundsPerGame": {
-            "player": "Khaman Maker",
-            "value": "8.5"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Noah Otshudi",
-            "value": "5.0"
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Noah Otshudi",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Noah Otshudi",
+            "value": "6 PTS"
           }
         },
         "conf_id": "27",
@@ -77,12 +81,7 @@
         "loc": "Marshall",
         "nick": "Thundering Herd"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "OSU -25.5",
-        "spread": -25.5,
-        "over_under": 162.5
-      },
+      "espn_line": null,
       "date": "2026-11-09",
       "p4": true
     },
@@ -159,7 +158,7 @@
         "nick": "Orange"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "IU -5.5",
         "spread": -5.5,
         "over_under": 146.5
@@ -240,7 +239,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TEX -37.5",
         "spread": -37.5,
         "over_under": 155.5
@@ -321,7 +320,7 @@
         "nick": "Highlanders"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TENN -29.5",
         "spread": -29.5,
         "over_under": 153.5
@@ -402,7 +401,7 @@
         "nick": "Ospreys"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MIA -35.5",
         "spread": -35.5,
         "over_under": 165.5
@@ -483,9 +482,9 @@
         "nick": "Panthers"
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "ND -28.5",
-        "spread": -28.5,
+        "provider": "Draft Kings",
+        "details": "ND -27.5",
+        "spread": -27.5,
         "over_under": 140.5
       },
       "date": "2026-11-09",
@@ -564,9 +563,9 @@
         "nick": "Fighting Hawks"
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "CLEM -23.5",
-        "spread": -23.5,
+        "provider": "Draft Kings",
+        "details": "CLEM -24.5",
+        "spread": -24.5,
         "over_under": 154.5
       },
       "date": "2026-11-09",
@@ -645,7 +644,7 @@
         "nick": "Golden Gophers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CIN -7.5",
         "spread": -7.5,
         "over_under": 144.5
@@ -726,7 +725,7 @@
         "nick": "Eagles"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "UGA -22.5",
         "spread": -22.5,
         "over_under": 163.5
@@ -807,7 +806,7 @@
         "nick": "Golden Grizzlies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ALA -32.5",
         "spread": -32.5,
         "over_under": 170.5
@@ -888,7 +887,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MSST -24.5",
         "spread": -24.5,
         "over_under": 153.5
@@ -969,7 +968,7 @@
         "nick": "Cougars"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MIZ -29.5",
         "spread": -29.5,
         "over_under": 149.5
@@ -1050,7 +1049,7 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "LSU -29.5",
         "spread": -29.5,
         "over_under": 148.5
@@ -1131,7 +1130,7 @@
         "nick": "Terriers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "NU -13.5",
         "spread": -13.5,
         "over_under": 143.5
@@ -1212,7 +1211,7 @@
         "nick": "Warhawks"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TA&M -36.5",
         "spread": -36.5,
         "over_under": 169.5
@@ -1293,10 +1292,10 @@
         "nick": "Lions"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "OU -28.5",
         "spread": -28.5,
-        "over_under": 146.5
+        "over_under": 147.5
       },
       "date": "2026-11-09",
       "p4": true
@@ -1374,7 +1373,7 @@
         "nick": "Redbirds"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "PUR -15.5",
         "spread": -15.5,
         "over_under": 143.5
@@ -1455,7 +1454,7 @@
         "nick": "Mountaineers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "AUB -23.5",
         "spread": -23.5,
         "over_under": 143.5
@@ -1536,7 +1535,7 @@
         "nick": "Delta Devils"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "WASH -32.5",
         "spread": -32.5,
         "over_under": 153.5
@@ -1617,7 +1616,7 @@
         "nick": "Owls"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "STAN -18.5",
         "spread": -18.5,
         "over_under": 145.5
