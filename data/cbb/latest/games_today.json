@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-09T04:00:22+00:00",
+  "fetched_at": "2026-11-09T04:15:23+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-08",
@@ -345,11 +345,11 @@
       "game_id": "401919029",
       "start_utc": "2026-11-09T04:00Z",
       "short_name": "WICH VS USC",
-      "state": "pre",
-      "status": "11/8 - 11:00 PM EST",
+      "state": "in",
+      "status": "15:21 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:21",
       "venue": "Tahoe Blue Event Center",
       "neutral_site": true,
       "broadcasts": [
@@ -359,23 +359,27 @@
         "team_id": "30",
         "abbr": "USC",
         "name": "USC Trojans",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Adonis Ratliff",
-            "value": "25.0"
-          },
-          "reboundsPerGame": {
-            "player": "Alijah Arenas",
-            "value": "8.0"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Rodney Rice",
-            "value": "9.0"
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Rodney Rice",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Rodney Rice",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Rodney Rice",
+            "value": "5 PTS"
           }
         },
         "conf_id": "7",
@@ -388,23 +392,27 @@
         "team_id": "2724",
         "abbr": "WICH",
         "name": "Wichita State Shockers",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "William Berg",
-            "value": "26.0"
+            "value": "3"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "William Berg",
-            "value": "16.0"
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Kenyon Giles",
-            "value": "8.0"
+          "assists": {
+            "player": "William Berg",
+            "value": "1"
+          },
+          "rating": {
+            "player": "William Berg",
+            "value": "3 PTS"
           }
         },
         "conf_id": "62",
@@ -413,12 +421,7 @@
         "loc": "Wichita State",
         "nick": "Shockers"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "USC -6.5",
-        "spread": -6.5,
-        "over_under": 156.5
-      },
+      "espn_line": null,
       "date": "2026-11-08",
       "p4": true
     }
