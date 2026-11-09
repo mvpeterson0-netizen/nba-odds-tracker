@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-09T03:30:24+00:00",
+  "fetched_at": "2026-11-09T03:45:20+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-08",
@@ -9,11 +9,11 @@
       "game_id": "401918053",
       "start_utc": "2026-11-09T01:30Z",
       "short_name": "CAL VS HOU",
-      "state": "in",
-      "status": "3:02 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "3:02",
+      "clock": "0:00",
       "venue": "Tahoe Blue Event Center",
       "neutral_site": true,
       "broadcasts": [
@@ -23,19 +23,19 @@
         "team_id": "248",
         "abbr": "HOU",
         "name": "Houston Cougars",
-        "score": 82,
-        "winner": null,
-        "record": "1-0",
+        "score": 86,
+        "winner": true,
+        "record": "2-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "Dedan Thomas Jr.",
-            "value": "18"
+            "value": "20"
           },
           "rebounds": {
             "player": "Delrecco Gillespie",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Dedan Thomas Jr.",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Dedan Thomas Jr.",
-            "value": "18 PTS, 8 AST"
+            "value": "20 PTS, 8 AST"
           }
         },
         "conf_id": "8",
@@ -56,9 +56,9 @@
         "team_id": "25",
         "abbr": "CAL",
         "name": "California Golden Bears",
-        "score": 64,
-        "winner": null,
-        "record": "2-0",
+        "score": 68,
+        "winner": false,
+        "record": "2-1",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
@@ -72,7 +72,7 @@
           },
           "assists": {
             "player": "Jordan Ross",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Michael Cooper",
@@ -84,90 +84,6 @@
         "rank": null,
         "loc": "California",
         "nick": "Golden Bears"
-      },
-      "espn_line": null,
-      "date": "2026-11-08",
-      "p4": true
-    },
-    {
-      "game_id": "401909707",
-      "start_utc": "2026-11-09T01:00Z",
-      "short_name": "PITT VS PSU",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "The Palestra",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "213",
-        "abbr": "PSU",
-        "name": "Penn State Nittany Lions",
-        "score": 76,
-        "winner": false,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Dasonte Bowen",
-            "value": "17"
-          },
-          "rebounds": {
-            "player": "Ivan Juric",
-            "value": "13"
-          },
-          "assists": {
-            "player": "Dasonte Bowen",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Ivan Juric",
-            "value": "16 PTS, 13 REB"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Penn State",
-        "nick": "Nittany Lions"
-      },
-      "away": {
-        "team_id": "221",
-        "abbr": "PITT",
-        "name": "Pittsburgh Panthers",
-        "score": 82,
-        "winner": true,
-        "record": "3-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "A'lahn Sumler",
-            "value": "26"
-          },
-          "rebounds": {
-            "player": "Baye Ndongo",
-            "value": "8"
-          },
-          "assists": {
-            "player": "A'lahn Sumler",
-            "value": "4"
-          },
-          "rating": {
-            "player": "A'lahn Sumler",
-            "value": "26 PTS"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Pittsburgh",
-        "nick": "Panthers"
       },
       "espn_line": null,
       "date": "2026-11-08",
@@ -336,6 +252,90 @@
         "rank": null,
         "loc": "Southeast Missouri State",
         "nick": "Redhawks"
+      },
+      "espn_line": null,
+      "date": "2026-11-08",
+      "p4": true
+    },
+    {
+      "game_id": "401909707",
+      "start_utc": "2026-11-09T01:00Z",
+      "short_name": "PITT VS PSU",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "The Palestra",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "213",
+        "abbr": "PSU",
+        "name": "Penn State Nittany Lions",
+        "score": 76,
+        "winner": false,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Dasonte Bowen",
+            "value": "17"
+          },
+          "rebounds": {
+            "player": "Ivan Juric",
+            "value": "13"
+          },
+          "assists": {
+            "player": "Dasonte Bowen",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Ivan Juric",
+            "value": "16 PTS, 13 REB"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Penn State",
+        "nick": "Nittany Lions"
+      },
+      "away": {
+        "team_id": "221",
+        "abbr": "PITT",
+        "name": "Pittsburgh Panthers",
+        "score": 82,
+        "winner": true,
+        "record": "3-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "A'lahn Sumler",
+            "value": "26"
+          },
+          "rebounds": {
+            "player": "Baye Ndongo",
+            "value": "8"
+          },
+          "assists": {
+            "player": "A'lahn Sumler",
+            "value": "4"
+          },
+          "rating": {
+            "player": "A'lahn Sumler",
+            "value": "26 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Pittsburgh",
+        "nick": "Panthers"
       },
       "espn_line": null,
       "date": "2026-11-08",
