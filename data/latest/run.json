@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-08T23:45:17+00:00",
+  "finished_at": "2026-11-09T00:00:25+00:00",
   "game_date": "2026-11-08",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -26,15 +26,23 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 214,
+      "ODDS_API_KEY": 210,
       "ODDS_API_KEY_2": 214,
       "ODDS_API_KEY_20K": 15266
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Boston Celtics @ Milwaukee Bucks",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 180,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
