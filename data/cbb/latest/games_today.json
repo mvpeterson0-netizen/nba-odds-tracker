@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-09T03:15:21+00:00",
+  "fetched_at": "2026-11-09T03:30:24+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-08",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-09T01:30Z",
       "short_name": "CAL VS HOU",
       "state": "in",
-      "status": "7:33 - 2nd",
+      "status": "3:02 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "7:33",
+      "clock": "3:02",
       "venue": "Tahoe Blue Event Center",
       "neutral_site": true,
       "broadcasts": [
@@ -23,27 +23,27 @@
         "team_id": "248",
         "abbr": "HOU",
         "name": "Houston Cougars",
-        "score": 73,
+        "score": 82,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Joseph Tugler",
-            "value": "14"
+            "player": "Dedan Thomas Jr.",
+            "value": "18"
           },
           "rebounds": {
             "player": "Delrecco Gillespie",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Dedan Thomas Jr.",
-            "value": "6"
+            "value": "8"
           },
           "rating": {
-            "player": "Joseph Tugler",
-            "value": "14 PTS, 3 BLK"
+            "player": "Dedan Thomas Jr.",
+            "value": "18 PTS, 8 AST"
           }
         },
         "conf_id": "8",
@@ -56,7 +56,7 @@
         "team_id": "25",
         "abbr": "CAL",
         "name": "California Golden Bears",
-        "score": 58,
+        "score": 64,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -93,11 +93,11 @@
       "game_id": "401909707",
       "start_utc": "2026-11-09T01:00Z",
       "short_name": "PITT VS PSU",
-      "state": "in",
-      "status": "1:37 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "1:37",
+      "clock": "0:00",
       "venue": "The Palestra",
       "neutral_site": true,
       "broadcasts": [
@@ -107,27 +107,27 @@
         "team_id": "213",
         "abbr": "PSU",
         "name": "Penn State Nittany Lions",
-        "score": 69,
-        "winner": null,
-        "record": "2-0",
+        "score": 76,
+        "winner": false,
+        "record": "2-1",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "Dasonte Bowen",
-            "value": "15"
+            "value": "17"
           },
           "rebounds": {
             "player": "Ivan Juric",
-            "value": "12"
+            "value": "13"
           },
           "assists": {
-            "player": "Roko Prkacin",
+            "player": "Dasonte Bowen",
             "value": "2"
           },
           "rating": {
             "player": "Ivan Juric",
-            "value": "13 PTS, 12 REB"
+            "value": "16 PTS, 13 REB"
           }
         },
         "conf_id": "7",
@@ -140,15 +140,15 @@
         "team_id": "221",
         "abbr": "PITT",
         "name": "Pittsburgh Panthers",
-        "score": 77,
-        "winner": null,
-        "record": "2-0",
+        "score": 82,
+        "winner": true,
+        "record": "3-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "A'lahn Sumler",
-            "value": "24"
+            "value": "26"
           },
           "rebounds": {
             "player": "Baye Ndongo",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "A'lahn Sumler",
-            "value": "24 PTS"
+            "value": "26 PTS"
           }
         },
         "conf_id": "2",
@@ -417,7 +417,7 @@
         "provider": "DraftKings",
         "details": "USC -6.5",
         "spread": -6.5,
-        "over_under": 155.5
+        "over_under": 156.5
       },
       "date": "2026-11-08",
       "p4": true
