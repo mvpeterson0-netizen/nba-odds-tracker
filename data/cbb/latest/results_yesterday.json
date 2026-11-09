@@ -1,94 +1,10 @@
 {
-  "fetched_at": "2026-11-09T06:30:20+00:00",
+  "fetched_at": "2026-11-09T06:45:15+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-08",
   "division_i_games": 36,
   "rows": [
-    {
-      "game_id": "401919029",
-      "start_utc": "2026-11-09T04:00Z",
-      "short_name": "WICH VS USC",
-      "state": "in",
-      "status": "End of 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Tahoe Blue Event Center",
-      "neutral_site": true,
-      "broadcasts": [
-        "CW"
-      ],
-      "home": {
-        "team_id": "30",
-        "abbr": "USC",
-        "name": "USC Trojans",
-        "score": 93,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Rodney Rice",
-            "value": "32"
-          },
-          "rebounds": {
-            "player": "Adonis Ratliff",
-            "value": "13"
-          },
-          "assists": {
-            "player": "Rodney Rice",
-            "value": "9"
-          },
-          "rating": {
-            "player": "Rodney Rice",
-            "value": "32 PTS, 9 AST"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 21,
-        "loc": "USC",
-        "nick": "Trojans"
-      },
-      "away": {
-        "team_id": "2724",
-        "abbr": "WICH",
-        "name": "Wichita State Shockers",
-        "score": 86,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Michael Gray Jr.",
-            "value": "18"
-          },
-          "rebounds": {
-            "player": "William Berg",
-            "value": "11"
-          },
-          "assists": {
-            "player": "Jordan Frison",
-            "value": "6"
-          },
-          "rating": {
-            "player": "William Berg",
-            "value": "17 PTS, 11 REB"
-          }
-        },
-        "conf_id": "62",
-        "conf": null,
-        "rank": null,
-        "loc": "Wichita State",
-        "nick": "Shockers"
-      },
-      "espn_line": null,
-      "date": "2026-11-08",
-      "p4": true
-    },
     {
       "game_id": "401920424",
       "start_utc": "2026-11-08T18:00Z",
@@ -252,6 +168,90 @@
         "rank": null,
         "loc": "California",
         "nick": "Golden Bears"
+      },
+      "espn_line": null,
+      "date": "2026-11-08",
+      "p4": true
+    },
+    {
+      "game_id": "401919029",
+      "start_utc": "2026-11-09T04:00Z",
+      "short_name": "WICH VS USC",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Tahoe Blue Event Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "CW"
+      ],
+      "home": {
+        "team_id": "30",
+        "abbr": "USC",
+        "name": "USC Trojans",
+        "score": 93,
+        "winner": true,
+        "record": "2-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Rodney Rice",
+            "value": "32"
+          },
+          "rebounds": {
+            "player": "Adonis Ratliff",
+            "value": "13"
+          },
+          "assists": {
+            "player": "Rodney Rice",
+            "value": "9"
+          },
+          "rating": {
+            "player": "Rodney Rice",
+            "value": "32 PTS, 9 AST"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 21,
+        "loc": "USC",
+        "nick": "Trojans"
+      },
+      "away": {
+        "team_id": "2724",
+        "abbr": "WICH",
+        "name": "Wichita State Shockers",
+        "score": 86,
+        "winner": false,
+        "record": "1-1",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Michael Gray Jr.",
+            "value": "18"
+          },
+          "rebounds": {
+            "player": "William Berg",
+            "value": "11"
+          },
+          "assists": {
+            "player": "Jordan Frison",
+            "value": "6"
+          },
+          "rating": {
+            "player": "William Berg",
+            "value": "17 PTS, 11 REB"
+          }
+        },
+        "conf_id": "62",
+        "conf": null,
+        "rank": null,
+        "loc": "Wichita State",
+        "nick": "Shockers"
       },
       "espn_line": null,
       "date": "2026-11-08",
