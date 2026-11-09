@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-09T13:45:19+00:00",
+  "finished_at": "2026-11-09T14:00:24+00:00",
   "game_date": "2026-11-09",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -28,20 +28,144 @@
     "keys": 3,
     "credits": {
       "ODDS_API_KEY": 185,
-      "ODDS_API_KEY_2": 190,
+      "ODDS_API_KEY_2": 188,
       "ODDS_API_KEY_20K": 15245
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Marshall Thundering Herd @ Ohio State Buckeyes",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Syracuse Orange @ Indiana Hoosiers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Minnesota Golden Gophers @ Cincinnati Bearcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "North Dakota Fighting Hawks @ Clemson Tigers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Eastern Illinois Panthers @ Notre Dame Fighting Irish",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Florida Gulf Coast Eagles @ Georgia Bulldogs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Grambling St Tigers @ Texas Longhorns",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "North Florida Ospreys @ Miami Hurricanes",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Radford Highlanders @ Tennessee Volunteers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Oakland Golden Grizzlies @ Alabama Crimson Tide",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Jackson St Tigers @ Mississippi St Bulldogs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Boston Univ. Terriers @ Northwestern Wildcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Louisiana Tech Bulldogs @ LSU Tigers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "SIU-Edwardsville Cougars @ Missouri Tigers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "North Alabama Lions @ Oklahoma Sooners",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "UL Monroe Warhawks @ Texas A&M Aggies",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Illinois St Redbirds @ Purdue Boilermakers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Appalachian St Mountaineers @ Auburn Tigers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Miss Valley St Delta Devils @ Washington Huskies",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Rice Owls @ Stanford Cardinal",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 37,
     "p4_events": 23,
     "unmatched": [],
-    "due": 0,
+    "due": 20,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
-      "morning_due": false,
-      "pregame_due": 0
+      "status": "ok",
+      "morning_due": true,
+      "pregame_due": 0,
+      "pull_type": "morning",
+      "rows": 172,
+      "credits_last": 2
     },
     "status": "ok"
   }
