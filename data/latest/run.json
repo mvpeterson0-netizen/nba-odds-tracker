@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-09T12:45:17+00:00",
+  "finished_at": "2026-11-09T13:00:25+00:00",
   "game_date": "2026-11-09",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "not_due",
+    "odds": "ok",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -26,14 +26,71 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 204,
-      "ODDS_API_KEY_2": 206,
+      "ODDS_API_KEY": 188,
+      "ODDS_API_KEY_2": 190,
       "ODDS_API_KEY_20K": 15245
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Los Angeles Lakers @ Atlanta Hawks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 194,
+        "markets": 4
+      },
+      {
+        "matchup": "Cleveland Cavaliers @ Charlotte Hornets",
+        "type": "morning",
+        "status": "ok",
+        "rows": 156,
+        "markets": 4
+      },
+      {
+        "matchup": "Washington Wizards @ Detroit Pistons",
+        "type": "morning",
+        "status": "ok",
+        "rows": 164,
+        "markets": 4
+      },
+      {
+        "matchup": "Memphis Grizzlies @ Toronto Raptors",
+        "type": "morning",
+        "status": "ok",
+        "rows": 170,
+        "markets": 4
+      },
+      {
+        "matchup": "Indiana Pacers @ Dallas Mavericks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 124,
+        "markets": 4
+      },
+      {
+        "matchup": "Denver Nuggets @ Houston Rockets",
+        "type": "morning",
+        "status": "ok",
+        "rows": 124,
+        "markets": 4
+      },
+      {
+        "matchup": "San Antonio Spurs @ Phoenix Suns",
+        "type": "morning",
+        "status": "ok",
+        "rows": 188,
+        "markets": 4
+      },
+      {
+        "matchup": "New Orleans Pelicans @ Golden State Warriors",
+        "type": "morning",
+        "status": "ok",
+        "rows": 180,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
+    "due": 8,
     "pregame_pulled": false,
     "status": "ok"
   }
