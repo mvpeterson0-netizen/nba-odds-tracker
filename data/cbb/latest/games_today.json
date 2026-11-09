@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-09T01:30:24+00:00",
+  "fetched_at": "2026-11-09T01:45:17+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-08",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-09T01:00Z",
       "short_name": "PITT VS PSU",
       "state": "in",
-      "status": "11:09 - 1st",
+      "status": "7:18 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "11:09",
+      "clock": "7:18",
       "venue": "The Palestra",
       "neutral_site": true,
       "broadcasts": [
@@ -23,27 +23,27 @@
         "team_id": "213",
         "abbr": "PSU",
         "name": "Penn State Nittany Lions",
-        "score": 18,
+        "score": 27,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Dasonte Bowen",
-            "value": "5"
+            "player": "Roko Prkacin",
+            "value": "7"
           },
           "rebounds": {
-            "player": "Ivan Juric",
-            "value": "1"
+            "player": "Francois Wibaut",
+            "value": "2"
           },
           "assists": {
-            "player": "Dasonte Bowen",
+            "player": "Roko Prkacin",
             "value": "1"
           },
           "rating": {
-            "player": "Dasonte Bowen",
-            "value": "5 PTS"
+            "player": "Roko Prkacin",
+            "value": "7 PTS"
           }
         },
         "conf_id": "7",
@@ -56,7 +56,7 @@
         "team_id": "221",
         "abbr": "PITT",
         "name": "Pittsburgh Panthers",
-        "score": 18,
+        "score": 28,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -68,7 +68,7 @@
           },
           "rebounds": {
             "player": "Baye Ndongo",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "Baye Ndongo",
@@ -261,11 +261,11 @@
       "game_id": "401918053",
       "start_utc": "2026-11-09T01:30Z",
       "short_name": "CAL VS HOU",
-      "state": "pre",
-      "status": "11/8 - 8:30 PM EST",
+      "state": "in",
+      "status": "15:53 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:53",
       "venue": "Tahoe Blue Event Center",
       "neutral_site": true,
       "broadcasts": [
@@ -275,23 +275,27 @@
         "team_id": "248",
         "abbr": "HOU",
         "name": "Houston Cougars",
-        "score": 0,
+        "score": 14,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
+            "player": "Joseph Tugler",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Joseph Tugler",
+            "value": "1"
+          },
+          "assists": {
             "player": "Dedan Thomas Jr.",
-            "value": "16.0"
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Mercy Miller",
-            "value": "7.0"
-          },
-          "assistsPerGame": {
-            "player": "Mercy Miller",
-            "value": "5.0"
+          "rating": {
+            "player": "Joseph Tugler",
+            "value": "6 PTS, 3 BLK"
           }
         },
         "conf_id": "8",
@@ -304,23 +308,27 @@
         "team_id": "25",
         "abbr": "CAL",
         "name": "California Golden Bears",
-        "score": 0,
+        "score": 10,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Nojus Indrusaitis",
-            "value": "25.0"
-          },
-          "reboundsPerGame": {
-            "player": "Jake Wilkins",
-            "value": "6.5"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Jordan Ross",
-            "value": "8.0"
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Nojus Indrusaitis",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Jordan Ross",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Jordan Ross",
+            "value": "4 PTS"
           }
         },
         "conf_id": "2",
@@ -329,12 +337,7 @@
         "loc": "California",
         "nick": "Golden Bears"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "HOU -19.5",
-        "spread": -19.5,
-        "over_under": 143.5
-      },
+      "espn_line": null,
       "date": "2026-11-08",
       "p4": true
     },
