@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-09T01:00:25+00:00",
+  "fetched_at": "2026-11-09T01:15:17+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-08",
@@ -177,11 +177,11 @@
       "game_id": "401909707",
       "start_utc": "2026-11-09T01:00Z",
       "short_name": "PITT VS PSU",
-      "state": "pre",
-      "status": "11/8 - 8:00 PM EST",
+      "state": "in",
+      "status": "16:10 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "16:10",
       "venue": "The Palestra",
       "neutral_site": true,
       "broadcasts": [
@@ -191,23 +191,23 @@
         "team_id": "213",
         "abbr": "PSU",
         "name": "Penn State Nittany Lions",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Roko Prkacin",
-            "value": "20.5"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Ivan Juric",
-            "value": "12.5"
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Brant Byers",
-            "value": "3.5"
+          "rebounds": {
+            "player": "Ivan Juric",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Roko Prkacin",
+            "value": "2 PTS"
           }
         },
         "conf_id": "7",
@@ -220,23 +220,27 @@
         "team_id": "221",
         "abbr": "PITT",
         "name": "Pittsburgh Panthers",
-        "score": 0,
+        "score": 10,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Chase Foster",
-            "value": "21.5"
+          "points": {
+            "player": "Akir Souare",
+            "value": "6"
           },
-          "reboundsPerGame": {
+          "rebounds": {
+            "player": "Akir Souare",
+            "value": "1"
+          },
+          "assists": {
             "player": "Baye Ndongo",
-            "value": "13.5"
+            "value": "3"
           },
-          "assistsPerGame": {
-            "player": "Naithan George",
-            "value": "7.5"
+          "rating": {
+            "player": "Akir Souare",
+            "value": "6 PTS"
           }
         },
         "conf_id": "2",
@@ -245,12 +249,7 @@
         "loc": "Pittsburgh",
         "nick": "Panthers"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "PITT -2.5",
-        "spread": 2.5,
-        "over_under": 153.5
-      },
+      "espn_line": null,
       "date": "2026-11-08",
       "p4": true
     },
@@ -327,7 +326,7 @@
         "nick": "Golden Bears"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "HOU -19.5",
         "spread": -19.5,
         "over_under": 143.5
@@ -408,7 +407,7 @@
         "nick": "Shockers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "USC -6.5",
         "spread": -6.5,
         "over_under": 155.5
