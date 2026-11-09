@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-09T02:45:19+00:00",
+  "finished_at": "2026-11-09T03:00:21+00:00",
   "game_date": "2026-11-08",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -27,21 +27,31 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 206,
+      "ODDS_API_KEY": 204,
       "ODDS_API_KEY_2": 206,
       "ODDS_API_KEY_20K": 15245
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Wichita St Shockers @ USC Trojans",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 41,
     "p4_events": 21,
     "unmatched": [],
-    "due": 0,
+    "due": 1,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 1,
+      "pull_type": "pregame",
+      "rows": 8,
+      "credits_last": 2
     },
     "status": "ok"
   }
