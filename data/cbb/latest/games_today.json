@@ -1,19 +1,103 @@
 {
-  "fetched_at": "2026-11-09T01:45:17+00:00",
+  "fetched_at": "2026-11-09T02:00:22+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-08",
   "division_i_games": 36,
   "rows": [
     {
+      "game_id": "401918053",
+      "start_utc": "2026-11-09T01:30Z",
+      "short_name": "CAL VS HOU",
+      "state": "in",
+      "status": "9:07 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "9:07",
+      "venue": "Tahoe Blue Event Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "CW"
+      ],
+      "home": {
+        "team_id": "248",
+        "abbr": "HOU",
+        "name": "Houston Cougars",
+        "score": 32,
+        "winner": null,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Chase McCarty",
+            "value": "9"
+          },
+          "rebounds": {
+            "player": "Chendall Weaver",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Dedan Thomas Jr.",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Joseph Tugler",
+            "value": "8 PTS, 3 BLK"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 10,
+        "loc": "Houston",
+        "nick": "Cougars"
+      },
+      "away": {
+        "team_id": "25",
+        "abbr": "CAL",
+        "name": "California Golden Bears",
+        "score": 16,
+        "winner": null,
+        "record": "2-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Nojus Indrusaitis",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Semetri Carr",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Jordan Ross",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Jordan Ross",
+            "value": "4 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "California",
+        "nick": "Golden Bears"
+      },
+      "espn_line": null,
+      "date": "2026-11-08",
+      "p4": true
+    },
+    {
       "game_id": "401909707",
       "start_utc": "2026-11-09T01:00Z",
       "short_name": "PITT VS PSU",
       "state": "in",
-      "status": "7:18 - 1st",
+      "status": "1:46 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "7:18",
+      "clock": "1:46",
       "venue": "The Palestra",
       "neutral_site": true,
       "broadcasts": [
@@ -23,23 +107,23 @@
         "team_id": "213",
         "abbr": "PSU",
         "name": "Penn State Nittany Lions",
-        "score": 27,
+        "score": 38,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Roko Prkacin",
+            "player": "Josh Reed",
             "value": "7"
           },
           "rebounds": {
-            "player": "Francois Wibaut",
-            "value": "2"
+            "player": "Josh Reed",
+            "value": "4"
           },
           "assists": {
             "player": "Roko Prkacin",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
             "player": "Roko Prkacin",
@@ -56,7 +140,7 @@
         "team_id": "221",
         "abbr": "PITT",
         "name": "Pittsburgh Panthers",
-        "score": 28,
+        "score": 37,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -64,19 +148,19 @@
         "leaders": {
           "points": {
             "player": "Baye Ndongo",
-            "value": "6"
+            "value": "7"
           },
           "rebounds": {
             "player": "Baye Ndongo",
-            "value": "4"
+            "value": "6"
           },
           "assists": {
             "player": "Baye Ndongo",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Baye Ndongo",
-            "value": "6 PTS"
+            "value": "7 PTS, 6 REB"
           }
         },
         "conf_id": "2",
@@ -258,90 +342,6 @@
       "p4": true
     },
     {
-      "game_id": "401918053",
-      "start_utc": "2026-11-09T01:30Z",
-      "short_name": "CAL VS HOU",
-      "state": "in",
-      "status": "15:53 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "15:53",
-      "venue": "Tahoe Blue Event Center",
-      "neutral_site": true,
-      "broadcasts": [
-        "CW"
-      ],
-      "home": {
-        "team_id": "248",
-        "abbr": "HOU",
-        "name": "Houston Cougars",
-        "score": 14,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Joseph Tugler",
-            "value": "6"
-          },
-          "rebounds": {
-            "player": "Joseph Tugler",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Dedan Thomas Jr.",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Joseph Tugler",
-            "value": "6 PTS, 3 BLK"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 10,
-        "loc": "Houston",
-        "nick": "Cougars"
-      },
-      "away": {
-        "team_id": "25",
-        "abbr": "CAL",
-        "name": "California Golden Bears",
-        "score": 10,
-        "winner": null,
-        "record": "2-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Jordan Ross",
-            "value": "4"
-          },
-          "rebounds": {
-            "player": "Nojus Indrusaitis",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Jordan Ross",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Jordan Ross",
-            "value": "4 PTS"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "California",
-        "nick": "Golden Bears"
-      },
-      "espn_line": null,
-      "date": "2026-11-08",
-      "p4": true
-    },
-    {
       "game_id": "401919029",
       "start_utc": "2026-11-09T04:00Z",
       "short_name": "WICH VS USC",
@@ -414,7 +414,7 @@
         "nick": "Shockers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "USC -6.5",
         "spread": -6.5,
         "over_under": 155.5
