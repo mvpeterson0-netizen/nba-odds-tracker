@@ -1,103 +1,19 @@
 {
-  "fetched_at": "2026-11-10T03:15:17+00:00",
+  "fetched_at": "2026-11-10T03:30:24+00:00",
   "source": "espn",
   "count": 20,
   "game_date": "2026-11-09",
   "division_i_games": 50,
   "rows": [
     {
-      "game_id": "401917978",
-      "start_utc": "2026-11-10T01:00Z",
-      "short_name": "ULM @ TA&M",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Reed Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "245",
-        "abbr": "TA&M",
-        "name": "Texas A&M Aggies",
-        "score": 108,
-        "winner": true,
-        "record": "3-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "PJ Haggerty",
-            "value": "22"
-          },
-          "rebounds": {
-            "player": "Jalen Shelley",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Jalen Shelley",
-            "value": "4"
-          },
-          "rating": {
-            "player": "PJ Haggerty",
-            "value": "22 PTS"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Texas A&M",
-        "nick": "Aggies"
-      },
-      "away": {
-        "team_id": "2433",
-        "abbr": "ULM",
-        "name": "UL Monroe Warhawks",
-        "score": 67,
-        "winner": false,
-        "record": "1-2",
-        "home_record": "1-1",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Quaran McPherson",
-            "value": "16"
-          },
-          "rebounds": {
-            "player": "Dayjaun Anderson",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Mike White",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Quaran McPherson",
-            "value": "16 PTS"
-          }
-        },
-        "conf_id": "27",
-        "conf": null,
-        "rank": null,
-        "loc": "UL Monroe",
-        "nick": "Warhawks"
-      },
-      "espn_line": null,
-      "date": "2026-11-09",
-      "p4": true
-    },
-    {
       "game_id": "401926132",
       "start_utc": "2026-11-10T01:30Z",
       "short_name": "ILST @ PUR",
       "state": "in",
-      "status": "9:17 - 2nd",
+      "status": "3:11 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:17",
+      "clock": "3:11",
       "venue": "Mackey Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +23,7 @@
         "team_id": "2509",
         "abbr": "PUR",
         "name": "Purdue Boilermakers",
-        "score": 50,
+        "score": 69,
         "winner": null,
         "record": "0-2",
         "home_record": "0-1",
@@ -115,19 +31,19 @@
         "leaders": {
           "points": {
             "player": "Daniel Jacobsen",
-            "value": "12"
+            "value": "18"
           },
           "rebounds": {
-            "player": "Caden Pierce",
-            "value": "5"
+            "player": "Daniel Jacobsen",
+            "value": "7"
           },
           "assists": {
             "player": "Daniel Jacobsen",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Daniel Jacobsen",
-            "value": "12 PTS"
+            "value": "18 PTS, 7 REB"
           }
         },
         "conf_id": "7",
@@ -140,7 +56,7 @@
         "team_id": "2287",
         "abbr": "ILST",
         "name": "Illinois State Redbirds",
-        "score": 46,
+        "score": 50,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
@@ -159,8 +75,8 @@
             "value": "4"
           },
           "rating": {
-            "player": "Johnny Kinziger",
-            "value": "12 PTS"
+            "player": "Noah Cleveland",
+            "value": "10 PTS"
           }
         },
         "conf_id": "18",
@@ -178,10 +94,10 @@
       "start_utc": "2026-11-10T02:00Z",
       "short_name": "APP @ AUB",
       "state": "in",
-      "status": "17:48 - 2nd",
+      "status": "12:12 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "17:48",
+      "clock": "12:12",
       "venue": "Neville Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -191,7 +107,7 @@
         "team_id": "2",
         "abbr": "AUB",
         "name": "Auburn Tigers",
-        "score": 39,
+        "score": 50,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
@@ -199,19 +115,19 @@
         "leaders": {
           "points": {
             "player": "Tahaad Pettiford",
-            "value": "12"
+            "value": "20"
           },
           "rebounds": {
             "player": "Narcisse Ngoy",
-            "value": "9"
+            "value": "10"
           },
           "assists": {
-            "player": "George Kimble III",
+            "player": "Tahaad Pettiford",
             "value": "1"
           },
           "rating": {
-            "player": "Kolby King",
-            "value": "9 PTS"
+            "player": "Tahaad Pettiford",
+            "value": "20 PTS"
           }
         },
         "conf_id": "23",
@@ -224,7 +140,7 @@
         "team_id": "2026",
         "abbr": "APP",
         "name": "App State Mountaineers",
-        "score": 37,
+        "score": 41,
         "winner": null,
         "record": "2-0",
         "home_record": "1-0",
@@ -232,11 +148,11 @@
         "leaders": {
           "points": {
             "player": "Eren Banks",
-            "value": "14"
+            "value": "16"
           },
           "rebounds": {
             "player": "Jaylen Colon",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Eren Banks",
@@ -244,7 +160,7 @@
           },
           "rating": {
             "player": "Eren Banks",
-            "value": "14 PTS"
+            "value": "16 PTS"
           }
         },
         "conf_id": "27",
@@ -262,10 +178,10 @@
       "start_utc": "2026-11-10T03:00Z",
       "short_name": "MVSU @ WASH",
       "state": "in",
-      "status": "15:51 - 1st",
+      "status": "7:50 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "15:51",
+      "clock": "7:50",
       "venue": "Alaska Airlines Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -275,27 +191,27 @@
         "team_id": "264",
         "abbr": "WASH",
         "name": "Washington Huskies",
-        "score": 12,
+        "score": 27,
         "winner": null,
         "record": "1-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Steele Venters",
-            "value": "6"
+            "player": "Parker Friedrichsen",
+            "value": "9"
           },
           "rebounds": {
-            "player": "Nikola Dzepina",
-            "value": "2"
+            "player": "LeJuan Watts",
+            "value": "3"
           },
           "assists": {
-            "player": "LeJuan Watts",
-            "value": "1"
+            "player": "Ryan Beasley",
+            "value": "3"
           },
           "rating": {
-            "player": "Steele Venters",
-            "value": "6 PTS"
+            "player": "Parker Friedrichsen",
+            "value": "9 PTS"
           }
         },
         "conf_id": "7",
@@ -308,27 +224,27 @@
         "team_id": "2400",
         "abbr": "MVSU",
         "name": "Mississippi Valley State Delta Devils",
-        "score": 8,
+        "score": 21,
         "winner": null,
         "record": "0-1",
         "home_record": "0-0",
         "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "Matt Anglo",
-            "value": "5"
+            "player": "Gabriel Martinez",
+            "value": "6"
           },
           "rebounds": {
             "player": "Tymias Williams",
-            "value": "1"
+            "value": "2"
           },
           "assists": {
-            "player": "Matt Anglo",
-            "value": "1"
+            "player": "Eli Pippins",
+            "value": "2"
           },
           "rating": {
-            "player": "Matt Anglo",
-            "value": "5 PTS"
+            "player": "Gabriel Martinez",
+            "value": "6 PTS"
           }
         },
         "conf_id": "26",
@@ -346,10 +262,10 @@
       "start_utc": "2026-11-10T03:00Z",
       "short_name": "RICE @ STAN",
       "state": "in",
-      "status": "14:12 - 1st",
+      "status": "6:55 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "14:12",
+      "clock": "6:55",
       "venue": "Maples Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -359,7 +275,7 @@
         "team_id": "24",
         "abbr": "STAN",
         "name": "Stanford Cardinal",
-        "score": 13,
+        "score": 30,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -367,19 +283,19 @@
         "leaders": {
           "points": {
             "player": "Nick Townsend",
-            "value": "7"
+            "value": "13"
           },
           "rebounds": {
-            "player": "Nick Townsend",
-            "value": "1"
+            "player": "Austin Maurer",
+            "value": "4"
           },
           "assists": {
             "player": "Nick Townsend",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
             "player": "Nick Townsend",
-            "value": "7 PTS"
+            "value": "13 PTS"
           }
         },
         "conf_id": "2",
@@ -392,23 +308,27 @@
         "team_id": "242",
         "abbr": "RICE",
         "name": "Rice Owls",
-        "score": 9,
+        "score": 20,
         "winner": null,
         "record": "1-1",
         "home_record": "1-1",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Carmelo Adkins",
-            "value": "4"
+            "player": "Jaxson Thompson",
+            "value": "5"
           },
           "rebounds": {
-            "player": "Dallas Hobbs",
-            "value": "2"
+            "player": "Jacob Dar",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Bodey Howell",
+            "value": "1"
           },
           "rating": {
-            "player": "Carmelo Adkins",
-            "value": "4 PTS"
+            "player": "Jaxson Thompson",
+            "value": "5 PTS"
           }
         },
         "conf_id": "62",
@@ -1592,6 +1512,90 @@
         "rank": null,
         "loc": "Boston University",
         "nick": "Terriers"
+      },
+      "espn_line": null,
+      "date": "2026-11-09",
+      "p4": true
+    },
+    {
+      "game_id": "401917978",
+      "start_utc": "2026-11-10T01:00Z",
+      "short_name": "ULM @ TA&M",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Reed Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "245",
+        "abbr": "TA&M",
+        "name": "Texas A&M Aggies",
+        "score": 108,
+        "winner": true,
+        "record": "3-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "PJ Haggerty",
+            "value": "22"
+          },
+          "rebounds": {
+            "player": "Jalen Shelley",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Jalen Shelley",
+            "value": "4"
+          },
+          "rating": {
+            "player": "PJ Haggerty",
+            "value": "22 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Texas A&M",
+        "nick": "Aggies"
+      },
+      "away": {
+        "team_id": "2433",
+        "abbr": "ULM",
+        "name": "UL Monroe Warhawks",
+        "score": 67,
+        "winner": false,
+        "record": "1-2",
+        "home_record": "1-1",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Quaran McPherson",
+            "value": "16"
+          },
+          "rebounds": {
+            "player": "Dayjaun Anderson",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Mike White",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Quaran McPherson",
+            "value": "16 PTS"
+          }
+        },
+        "conf_id": "27",
+        "conf": null,
+        "rank": null,
+        "loc": "UL Monroe",
+        "nick": "Warhawks"
       },
       "espn_line": null,
       "date": "2026-11-09",
