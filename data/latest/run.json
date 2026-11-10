@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-10T01:00:23+00:00",
+  "finished_at": "2026-11-10T01:15:20+00:00",
   "game_date": "2026-11-09",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -26,23 +26,15 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 167,
+      "ODDS_API_KEY": 165,
       "ODDS_API_KEY_2": 165,
-      "ODDS_API_KEY_20K": 15175
+      "ODDS_API_KEY_20K": 15168
     },
-    "pulled": [
-      {
-        "matchup": "San Antonio Spurs @ Phoenix Suns",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 176,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
