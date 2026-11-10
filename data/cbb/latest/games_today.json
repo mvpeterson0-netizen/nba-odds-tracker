@@ -1,19 +1,271 @@
 {
-  "fetched_at": "2026-11-10T00:00:26+00:00",
+  "fetched_at": "2026-11-10T00:15:19+00:00",
   "source": "espn",
   "count": 20,
   "game_date": "2026-11-09",
   "division_i_games": 50,
   "rows": [
     {
+      "game_id": "401906865",
+      "start_utc": "2026-11-10T00:00Z",
+      "short_name": "GRAM @ TEX",
+      "state": "in",
+      "status": "15:39 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "15:39",
+      "venue": "Moody Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "SEC Network"
+      ],
+      "home": {
+        "team_id": "251",
+        "abbr": "TEX",
+        "name": "Texas Longhorns",
+        "score": 10,
+        "winner": null,
+        "record": "2-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Matas Vokietaitis",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Matas Vokietaitis",
+            "value": "2"
+          },
+          "assists": {
+            "player": "David Punch",
+            "value": "1"
+          },
+          "rating": {
+            "player": "David Punch",
+            "value": "3 STL"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 7,
+        "loc": "Texas",
+        "nick": "Longhorns"
+      },
+      "away": {
+        "team_id": "2755",
+        "abbr": "GRAM",
+        "name": "Grambling Tigers",
+        "score": 3,
+        "winner": null,
+        "record": "1-0",
+        "home_record": "0-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Mekhi Fitts",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Mekhi Fitts",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Brandon Hardy",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Mekhi Fitts",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "26",
+        "conf": null,
+        "rank": null,
+        "loc": "Grambling",
+        "nick": "Tigers"
+      },
+      "espn_line": null,
+      "date": "2026-11-09",
+      "p4": true
+    },
+    {
+      "game_id": "401906849",
+      "start_utc": "2026-11-10T00:00Z",
+      "short_name": "RAD @ TENN",
+      "state": "in",
+      "status": "14:13 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "14:13",
+      "venue": "Food City Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "2633",
+        "abbr": "TENN",
+        "name": "Tennessee Volunteers",
+        "score": 6,
+        "winner": null,
+        "record": "1-0",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Tyler Lundblade",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Braedan Lue",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Tyler Lundblade",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Tyler Lundblade",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 11,
+        "loc": "Tennessee",
+        "nick": "Volunteers"
+      },
+      "away": {
+        "team_id": "2515",
+        "abbr": "RAD",
+        "name": "Radford Highlanders",
+        "score": 6,
+        "winner": null,
+        "record": "0-2",
+        "home_record": "0-0",
+        "away_record": "0-2",
+        "leaders": {
+          "points": {
+            "player": "Tristan Gross",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Gabriel Ferreira",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Mathieu Grujicic",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Tristan Gross",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "6",
+        "conf": null,
+        "rank": null,
+        "loc": "Radford",
+        "nick": "Highlanders"
+      },
+      "espn_line": null,
+      "date": "2026-11-09",
+      "p4": true
+    },
+    {
+      "game_id": "401921720",
+      "start_utc": "2026-11-10T00:00Z",
+      "short_name": "UNF @ MIA",
+      "state": "in",
+      "status": "13:14 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "13:14",
+      "venue": "Watsco Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACC Network"
+      ],
+      "home": {
+        "team_id": "2390",
+        "abbr": "MIA",
+        "name": "Miami Hurricanes",
+        "score": 12,
+        "winner": null,
+        "record": "1-1",
+        "home_record": "1-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Malik Reneau",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Somto Cyril",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Shelton Henderson",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Malik Reneau",
+            "value": "8 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": 17,
+        "loc": "Miami",
+        "nick": "Hurricanes"
+      },
+      "away": {
+        "team_id": "2454",
+        "abbr": "UNF",
+        "name": "North Florida Ospreys",
+        "score": 8,
+        "winner": null,
+        "record": "1-1",
+        "home_record": "0-0",
+        "away_record": "1-1",
+        "leaders": {
+          "points": {
+            "player": "JR Bartelus",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Mason Watkins",
+            "value": "4"
+          },
+          "assists": {
+            "player": "JR Bartelus",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Kent Jackson",
+            "value": "2 PTS"
+          }
+        },
+        "conf_id": "46",
+        "conf": null,
+        "rank": null,
+        "loc": "North Florida",
+        "nick": "Ospreys"
+      },
+      "espn_line": null,
+      "date": "2026-11-09",
+      "p4": true
+    },
+    {
       "game_id": "401916315",
       "start_utc": "2026-11-09T23:00Z",
       "short_name": "MRSH @ OSU",
       "state": "in",
-      "status": "Halftime",
+      "status": "16:42 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "16:42",
       "venue": "Schottenstein Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +275,7 @@
         "team_id": "194",
         "abbr": "OSU",
         "name": "Ohio State Buckeyes",
-        "score": 45,
+        "score": 48,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
@@ -38,7 +290,7 @@
             "value": "4"
           },
           "assists": {
-            "player": "Amare Bynum",
+            "player": "John Mobley Jr.",
             "value": "3"
           },
           "rating": {
@@ -56,7 +308,7 @@
         "team_id": "276",
         "abbr": "MRSH",
         "name": "Marshall Thundering Herd",
-        "score": 27,
+        "score": 36,
         "winner": null,
         "record": "1-1",
         "home_record": "1-1",
@@ -64,11 +316,11 @@
         "leaders": {
           "points": {
             "player": "Noah Otshudi",
-            "value": "15"
+            "value": "21"
           },
           "rebounds": {
             "player": "Noah Otshudi",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "Noah Otshudi",
@@ -76,7 +328,7 @@
           },
           "rating": {
             "player": "Noah Otshudi",
-            "value": "15 PTS"
+            "value": "21 PTS"
           }
         },
         "conf_id": "27",
@@ -94,10 +346,10 @@
       "start_utc": "2026-11-09T23:30Z",
       "short_name": "SYR VS IU",
       "state": "in",
-      "status": "8:08 - 1st",
+      "status": "3:06 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "8:08",
+      "clock": "3:06",
       "venue": "Gainbridge Fieldhouse",
       "neutral_site": true,
       "broadcasts": [
@@ -107,22 +359,22 @@
         "team_id": "84",
         "abbr": "IU",
         "name": "Indiana Hoosiers",
-        "score": 22,
+        "score": 34,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Markus Burton",
+            "player": "Jaeden Mustaf",
             "value": "9"
           },
           "rebounds": {
-            "player": "Samet Yigitoglu",
-            "value": "3"
+            "player": "Jaeden Mustaf",
+            "value": "4"
           },
           "assists": {
-            "player": "Samet Yigitoglu",
+            "player": "Markus Burton",
             "value": "2"
           },
           "rating": {
@@ -140,15 +392,15 @@
         "team_id": "183",
         "abbr": "SYR",
         "name": "Syracuse Orange",
-        "score": 22,
+        "score": 33,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Mark Morano",
-            "value": "5"
+            "player": "Sadiq White Jr.",
+            "value": "6"
           },
           "rebounds": {
             "player": "Gavin Doty",
@@ -156,11 +408,11 @@
           },
           "assists": {
             "player": "Ryan Moesch",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
-            "player": "Ryan Moesch",
-            "value": "3 PTS"
+            "player": "Sadiq White Jr.",
+            "value": "6 PTS"
           }
         },
         "conf_id": "2",
@@ -174,257 +426,14 @@
       "p4": true
     },
     {
-      "game_id": "401906865",
-      "start_utc": "2026-11-10T00:00Z",
-      "short_name": "GRAM @ TEX",
-      "state": "pre",
-      "status": "11/9 - 7:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Moody Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "SEC Network"
-      ],
-      "home": {
-        "team_id": "251",
-        "abbr": "TEX",
-        "name": "Texas Longhorns",
-        "score": 0,
-        "winner": null,
-        "record": "2-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Matas Vokietaitis",
-            "value": "19.0"
-          },
-          "reboundsPerGame": {
-            "player": "Matas Vokietaitis",
-            "value": "6.5"
-          },
-          "assistsPerGame": {
-            "player": "Austin Goosby",
-            "value": "5.5"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 7,
-        "loc": "Texas",
-        "nick": "Longhorns"
-      },
-      "away": {
-        "team_id": "2755",
-        "abbr": "GRAM",
-        "name": "Grambling Tigers",
-        "score": 0,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "0-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Isaiah Miranda",
-            "value": "29.0"
-          },
-          "reboundsPerGame": {
-            "player": "Isaiah Miranda",
-            "value": "8.0"
-          },
-          "assistsPerGame": {
-            "player": "Dwayne Pierce",
-            "value": "8.0"
-          }
-        },
-        "conf_id": "26",
-        "conf": null,
-        "rank": null,
-        "loc": "Grambling",
-        "nick": "Tigers"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "TEX -37.5",
-        "spread": -37.5,
-        "over_under": 155.5
-      },
-      "date": "2026-11-09",
-      "p4": true
-    },
-    {
-      "game_id": "401906849",
-      "start_utc": "2026-11-10T00:00Z",
-      "short_name": "RAD @ TENN",
-      "state": "pre",
-      "status": "11/9 - 7:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Food City Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "2633",
-        "abbr": "TENN",
-        "name": "Tennessee Volunteers",
-        "score": 0,
-        "winner": null,
-        "record": "1-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Terrence Hill Jr.",
-            "value": "17.0"
-          },
-          "reboundsPerGame": {
-            "player": "DeWayne Brown II",
-            "value": "17.0"
-          },
-          "assistsPerGame": {
-            "player": "Terrence Hill Jr.",
-            "value": "3.0"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 11,
-        "loc": "Tennessee",
-        "nick": "Volunteers"
-      },
-      "away": {
-        "team_id": "2515",
-        "abbr": "RAD",
-        "name": "Radford Highlanders",
-        "score": 0,
-        "winner": null,
-        "record": "0-2",
-        "home_record": "0-0",
-        "away_record": "0-2",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Frederik Erichsen",
-            "value": "14.0"
-          },
-          "reboundsPerGame": {
-            "player": "Frederik Erichsen",
-            "value": "7.5"
-          },
-          "assistsPerGame": {
-            "player": "Ja'Corey Robinson",
-            "value": "5.0"
-          }
-        },
-        "conf_id": "6",
-        "conf": null,
-        "rank": null,
-        "loc": "Radford",
-        "nick": "Highlanders"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "TENN -29.5",
-        "spread": -29.5,
-        "over_under": 153.5
-      },
-      "date": "2026-11-09",
-      "p4": true
-    },
-    {
-      "game_id": "401921720",
-      "start_utc": "2026-11-10T00:00Z",
-      "short_name": "UNF @ MIA",
-      "state": "pre",
-      "status": "11/9 - 7:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Watsco Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACC Network"
-      ],
-      "home": {
-        "team_id": "2390",
-        "abbr": "MIA",
-        "name": "Miami Hurricanes",
-        "score": 0,
-        "winner": null,
-        "record": "1-1",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Acaden Lewis",
-            "value": "14.5"
-          },
-          "reboundsPerGame": {
-            "player": "Shelton Henderson",
-            "value": "6.0"
-          },
-          "assistsPerGame": {
-            "player": "Dante Allen",
-            "value": "4.0"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": 17,
-        "loc": "Miami",
-        "nick": "Hurricanes"
-      },
-      "away": {
-        "team_id": "2454",
-        "abbr": "UNF",
-        "name": "North Florida Ospreys",
-        "score": 0,
-        "winner": null,
-        "record": "1-1",
-        "home_record": "0-0",
-        "away_record": "1-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Kent Jackson",
-            "value": "13.0"
-          },
-          "reboundsPerGame": {
-            "player": "Mason Watkins",
-            "value": "6.5"
-          },
-          "assistsPerGame": {
-            "player": "Elijah Elliott",
-            "value": "2.5"
-          }
-        },
-        "conf_id": "46",
-        "conf": null,
-        "rank": null,
-        "loc": "North Florida",
-        "nick": "Ospreys"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "MIA -35.5",
-        "spread": -35.5,
-        "over_under": 165.5
-      },
-      "date": "2026-11-09",
-      "p4": true
-    },
-    {
       "game_id": "401925681",
       "start_utc": "2026-11-10T00:00Z",
       "short_name": "EIU @ ND",
-      "state": "pre",
-      "status": "11/9 - 7:00 PM EST",
+      "state": "in",
+      "status": "15:06 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:06",
       "venue": "Purcell Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -434,23 +443,27 @@
         "team_id": "87",
         "abbr": "ND",
         "name": "Notre Dame Fighting Irish",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "2-0",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Brady Koehler",
-            "value": "16.5"
+          "points": {
+            "player": "Logan Duncomb",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Brady Koehler",
-            "value": "7.0"
-          },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "Braeden Smith",
-            "value": "6.5"
+            "value": "2"
+          },
+          "assists": {
+            "player": "Braeden Smith",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Braeden Smith",
+            "value": "2 PTS"
           }
         },
         "conf_id": "2",
@@ -463,23 +476,23 @@
         "team_id": "2197",
         "abbr": "EIU",
         "name": "Eastern Illinois Panthers",
-        "score": 0,
+        "score": 11,
         "winner": null,
         "record": "0-2",
         "home_record": "0-0",
         "away_record": "0-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tanner Vogel",
-            "value": "9.5"
+          "points": {
+            "player": "Gavin Welch",
+            "value": "9"
           },
-          "reboundsPerGame": {
-            "player": "Tanner Vogel",
-            "value": "9.0"
-          },
-          "assistsPerGame": {
+          "assists": {
             "player": "Jaden Miller",
-            "value": "3.0"
+            "value": "2"
+          },
+          "rating": {
+            "player": "Gavin Welch",
+            "value": "9 PTS"
           }
         },
         "conf_id": "20",
@@ -488,12 +501,7 @@
         "loc": "Eastern Illinois",
         "nick": "Panthers"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ND -28.5",
-        "spread": -28.5,
-        "over_under": 139.5
-      },
+      "espn_line": null,
       "date": "2026-11-09",
       "p4": true
     },
@@ -501,11 +509,11 @@
       "game_id": "401918074",
       "start_utc": "2026-11-10T00:00Z",
       "short_name": "UND @ CLEM",
-      "state": "pre",
-      "status": "11/9 - 7:00 PM EST",
+      "state": "in",
+      "status": "11:46 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "11:46",
       "venue": "Littlejohn Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -515,23 +523,27 @@
         "team_id": "228",
         "abbr": "CLEM",
         "name": "Clemson Tigers",
-        "score": 0,
+        "score": 15,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Ace Buckner",
-            "value": "23.0"
+          "points": {
+            "player": "Chase Thompson",
+            "value": "5"
           },
-          "reboundsPerGame": {
-            "player": "Dylan Faulkner",
-            "value": "8.5"
-          },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "Ace Buckner",
-            "value": "5.0"
+            "value": "3"
+          },
+          "assists": {
+            "player": "Cole Certa",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Chase Thompson",
+            "value": "5 PTS"
           }
         },
         "conf_id": "2",
@@ -544,23 +556,27 @@
         "team_id": "155",
         "abbr": "UND",
         "name": "North Dakota Fighting Hawks",
-        "score": 0,
+        "score": 18,
         "winner": null,
         "record": "1-1",
         "home_record": "0-0",
         "away_record": "1-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Samuel Hincapie",
-            "value": "14.5"
+          "points": {
+            "player": "Zach Kraft",
+            "value": "6"
           },
-          "reboundsPerGame": {
-            "player": "Samuel Hincapie",
-            "value": "5.5"
+          "rebounds": {
+            "player": "Jayden Thomas",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Luke Winkel",
-            "value": "4.0"
+          "assists": {
+            "player": "Samuel Hincapie",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Carter Evanson",
+            "value": "6 PTS"
           }
         },
         "conf_id": "49",
@@ -569,12 +585,7 @@
         "loc": "North Dakota",
         "nick": "Fighting Hawks"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "CLEM -24.5",
-        "spread": -24.5,
-        "over_under": 154.5
-      },
+      "espn_line": null,
       "date": "2026-11-09",
       "p4": true
     },
@@ -582,11 +593,11 @@
       "game_id": "401916305",
       "start_utc": "2026-11-10T00:00Z",
       "short_name": "MINN @ CIN",
-      "state": "pre",
-      "status": "11/9 - 7:00 PM EST",
+      "state": "in",
+      "status": "14:22 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "14:22",
       "venue": "Fifth Third Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -596,25 +607,12 @@
         "team_id": "2132",
         "abbr": "CIN",
         "name": "Cincinnati Bearcats",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Myles Colvin",
-            "value": "15.5"
-          },
-          "reboundsPerGame": {
-            "player": "Myles Colvin",
-            "value": "6.5"
-          },
-          "assistsPerGame": {
-            "player": "Tylen Riley",
-            "value": "4.0"
-          }
-        },
+        "leaders": null,
         "conf_id": "8",
         "conf": "Big 12",
         "rank": null,
@@ -625,37 +623,19 @@
         "team_id": "135",
         "abbr": "MINN",
         "name": "Minnesota Golden Gophers",
-        "score": 0,
+        "score": 14,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Isaac Asuma",
-            "value": "16.5"
-          },
-          "reboundsPerGame": {
-            "player": "Jaylen Crocker-Johnson",
-            "value": "7.0"
-          },
-          "assistsPerGame": {
-            "player": "Grayson Grove",
-            "value": "4.5"
-          }
-        },
+        "leaders": null,
         "conf_id": "7",
         "conf": "Big Ten",
         "rank": null,
         "loc": "Minnesota",
         "nick": "Golden Gophers"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "CIN -7.5",
-        "spread": -7.5,
-        "over_under": 144.5
-      },
+      "espn_line": null,
       "date": "2026-11-09",
       "p4": true
     },
@@ -663,11 +643,11 @@
       "game_id": "401906781",
       "start_utc": "2026-11-10T00:00Z",
       "short_name": "FGCU @ UGA",
-      "state": "pre",
-      "status": "11/9 - 7:00 PM EST",
+      "state": "in",
+      "status": "15:32 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:32",
       "venue": "Stegeman Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -677,23 +657,23 @@
         "team_id": "61",
         "abbr": "UGA",
         "name": "Georgia Bulldogs",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Blue Cain",
-            "value": "17.5"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "James Scott",
-            "value": "6.5"
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Freddie Dilione V",
-            "value": "3.5"
+          "rebounds": {
+            "player": "James Scott",
+            "value": "1"
+          },
+          "rating": {
+            "player": "James Scott",
+            "value": "2 PTS"
           }
         },
         "conf_id": "23",
@@ -706,23 +686,27 @@
         "team_id": "526",
         "abbr": "FGCU",
         "name": "Florida Gulf Coast Eagles",
-        "score": 0,
+        "score": 11,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Bryson Lucas",
-            "value": "18.5"
+          "points": {
+            "player": "Chase Konieczny",
+            "value": "5"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Bryson Lucas",
-            "value": "8.5"
+            "value": "3"
           },
-          "assistsPerGame": {
-            "player": "Turk Brown III",
-            "value": "7.0"
+          "assists": {
+            "player": "Elijah Brooks",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Chase Konieczny",
+            "value": "5 PTS"
           }
         },
         "conf_id": "46",
@@ -731,12 +715,7 @@
         "loc": "Florida Gulf Coast",
         "nick": "Eagles"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "UGA -22.5",
-        "spread": -22.5,
-        "over_under": 163.5
-      },
+      "espn_line": null,
       "date": "2026-11-09",
       "p4": true
     },

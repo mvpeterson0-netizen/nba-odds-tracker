@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-10T00:00:42+00:00",
+  "finished_at": "2026-11-10T00:15:20+00:00",
   "game_date": "2026-11-09",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -31,87 +31,17 @@
       "ODDS_API_KEY_2": 171,
       "ODDS_API_KEY_20K": 15182
     },
-    "pulled": [
-      {
-        "matchup": "Oakland Golden Grizzlies @ Alabama Crimson Tide",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Jackson St Tigers @ Mississippi St Bulldogs",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Boston Univ. Terriers @ Northwestern Wildcats",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Louisiana Tech Bulldogs @ LSU Tigers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "SIU-Edwardsville Cougars @ Missouri Tigers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "North Alabama Lions @ Oklahoma Sooners",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "UL Monroe Warhawks @ Texas A&M Aggies",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Illinois St Redbirds @ Purdue Boilermakers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Appalachian St Mountaineers @ Auburn Tigers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Miss Valley St Delta Devils @ Washington Huskies",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Rice Owls @ Stanford Cardinal",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "events": 74,
     "p4_events": 29,
     "unmatched": [],
-    "due": 11,
+    "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "not_due",
       "morning_due": false,
-      "pregame_due": 5,
-      "pull_type": "pregame",
-      "rows": 40,
-      "credits_last": 2
+      "pregame_due": 0
     },
     "status": "ok"
   }
