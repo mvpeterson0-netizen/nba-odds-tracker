@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-10T02:45:17+00:00",
+  "fetched_at": "2026-11-10T02:56:09+00:00",
   "source": "espn",
   "count": 8,
   "game_date": "2026-11-09",
@@ -225,11 +225,11 @@
       "game_id": "401909955",
       "start_utc": "2026-11-10T00:30Z",
       "short_name": "MEM @ TOR",
-      "state": "in",
-      "status": "4:26 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "4:26",
+      "clock": "0.0",
       "venue": "Scotiabank Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -239,10 +239,10 @@
         "team_id": "28",
         "abbr": "TOR",
         "name": "Toronto Raptors",
-        "score": 97,
-        "winner": null,
-        "record": "5-4",
-        "home_record": "2-1",
+        "score": 102,
+        "winner": false,
+        "record": "5-5",
+        "home_record": "2-2",
         "away_record": "3-3",
         "leaders": {
           "points": {
@@ -255,7 +255,7 @@
           },
           "assists": {
             "player": "Jamal Shead",
-            "value": "9"
+            "value": "11"
           },
           "rating": {
             "player": "Jakob Poeltl",
@@ -267,11 +267,11 @@
         "team_id": "29",
         "abbr": "MEM",
         "name": "Memphis Grizzlies",
-        "score": 111,
-        "winner": null,
-        "record": "6-3",
+        "score": 118,
+        "winner": true,
+        "record": "7-3",
         "home_record": "2-3",
-        "away_record": "4-0",
+        "away_record": "5-0",
         "leaders": {
           "points": {
             "player": "Ty Jerome",
@@ -283,11 +283,11 @@
           },
           "assists": {
             "player": "Cameron Boozer",
-            "value": "7"
+            "value": "8"
           },
           "rating": {
-            "player": "Ty Jerome",
-            "value": "27 PTS"
+            "player": "Cameron Boozer",
+            "value": "22 PTS, 8 REB, 8 AST"
           }
         }
       },
@@ -298,10 +298,10 @@
       "start_utc": "2026-11-10T01:00Z",
       "short_name": "IND @ DAL",
       "state": "in",
-      "status": "3:50 - 3rd",
+      "status": "End of 3rd",
       "completed": false,
       "period": 3,
-      "clock": "3:50",
+      "clock": "0.0",
       "venue": "American Airlines Center",
       "neutral_site": false,
       "broadcasts": [
@@ -313,19 +313,19 @@
         "team_id": "6",
         "abbr": "DAL",
         "name": "Dallas Mavericks",
-        "score": 82,
+        "score": 90,
         "winner": null,
         "record": "6-4",
         "home_record": "4-2",
         "away_record": "2-2",
         "leaders": {
           "points": {
-            "player": "Kyrie Irving",
-            "value": "23"
+            "player": "Cooper Flagg",
+            "value": "27"
           },
           "rebounds": {
             "player": "Cooper Flagg",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Cooper Flagg",
@@ -333,7 +333,7 @@
           },
           "rating": {
             "player": "Cooper Flagg",
-            "value": "21 PTS, 7 REB, 3 STL"
+            "value": "27 PTS, 8 REB, 3 STL"
           }
         }
       },
@@ -341,7 +341,7 @@
         "team_id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers",
-        "score": 84,
+        "score": 93,
         "winner": null,
         "record": "3-7",
         "home_record": "0-4",
@@ -349,19 +349,19 @@
         "leaders": {
           "points": {
             "player": "Pascal Siakam",
-            "value": "26"
+            "value": "27"
           },
           "rebounds": {
             "player": "Pascal Siakam",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Andrew Nembhard",
-            "value": "7"
+            "value": "9"
           },
           "rating": {
             "player": "Pascal Siakam",
-            "value": "26 PTS, 6 REB"
+            "value": "27 PTS, 7 REB"
           }
         }
       },
@@ -372,10 +372,10 @@
       "start_utc": "2026-11-10T01:30Z",
       "short_name": "DEN @ HOU",
       "state": "in",
-      "status": "Halftime",
+      "status": "9:19 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "9:19",
       "venue": "Toyota Center (Houston)",
       "neutral_site": false,
       "broadcasts": [
@@ -386,7 +386,7 @@
         "team_id": "10",
         "abbr": "HOU",
         "name": "Houston Rockets",
-        "score": 54,
+        "score": 58,
         "winner": null,
         "record": "7-3",
         "home_record": "4-1",
@@ -398,7 +398,7 @@
           },
           "rebounds": {
             "player": "Kevin Durant",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Kevin Durant",
@@ -406,7 +406,7 @@
           },
           "rating": {
             "player": "Kevin Durant",
-            "value": "13 PTS, 6 REB"
+            "value": "13 PTS, 7 REB"
           }
         }
       },
@@ -414,19 +414,19 @@
         "team_id": "7",
         "abbr": "DEN",
         "name": "Denver Nuggets",
-        "score": 40,
+        "score": 48,
         "winner": null,
         "record": "5-3",
         "home_record": "2-2",
         "away_record": "2-1",
         "leaders": {
           "points": {
-            "player": "Jamal Murray",
+            "player": "Nikola Jokic",
             "value": "15"
           },
           "rebounds": {
             "player": "Nikola Jokic",
-            "value": "6"
+            "value": "10"
           },
           "assists": {
             "player": "Nikola Jokic",
@@ -434,7 +434,7 @@
           },
           "rating": {
             "player": "Nikola Jokic",
-            "value": "12 PTS, 6 REB"
+            "value": "15 PTS, 10 REB"
           }
         }
       },
@@ -445,10 +445,10 @@
       "start_utc": "2026-11-10T02:00Z",
       "short_name": "SA @ PHX",
       "state": "in",
-      "status": "9:23 - 2nd",
+      "status": "5:13 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:23",
+      "clock": "5:13",
       "venue": "Mortgage Matchup Center",
       "neutral_site": false,
       "broadcasts": [
@@ -460,7 +460,7 @@
         "team_id": "21",
         "abbr": "PHX",
         "name": "Phoenix Suns",
-        "score": 27,
+        "score": 33,
         "winner": null,
         "record": "3-5",
         "home_record": "3-2",
@@ -468,19 +468,19 @@
         "leaders": {
           "points": {
             "player": "Devin Booker",
-            "value": "15"
+            "value": "17"
           },
           "rebounds": {
-            "player": "Khaman Maluach",
-            "value": "2"
+            "player": "Oso Ighodaro",
+            "value": "4"
           },
           "assists": {
-            "player": "Khaman Maluach",
-            "value": "2"
+            "player": "Jalen Green",
+            "value": "3"
           },
           "rating": {
             "player": "Devin Booker",
-            "value": "15 PTS"
+            "value": "17 PTS"
           }
         }
       },
@@ -488,7 +488,7 @@
         "team_id": "24",
         "abbr": "SA",
         "name": "San Antonio Spurs",
-        "score": 41,
+        "score": 53,
         "winner": null,
         "record": "8-2",
         "home_record": "4-2",
@@ -496,19 +496,19 @@
         "leaders": {
           "points": {
             "player": "Victor Wembanyama",
-            "value": "18"
+            "value": "22"
           },
           "rebounds": {
-            "player": "De'Aaron Fox",
-            "value": "5"
+            "player": "Victor Wembanyama",
+            "value": "6"
           },
           "assists": {
-            "player": "Keldon Johnson",
-            "value": "3"
+            "player": "Victor Wembanyama",
+            "value": "2"
           },
           "rating": {
             "player": "Victor Wembanyama",
-            "value": "18 PTS"
+            "value": "22 PTS, 6 REB, 4 BLK"
           }
         }
       },
@@ -588,8 +588,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "GS -11.5",
-        "spread": -11.5,
+        "details": "GS -10.5",
+        "spread": -10.5,
         "over_under": 228.5
       }
     }
