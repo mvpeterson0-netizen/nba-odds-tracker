@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-10T00:45:22+00:00",
+  "finished_at": "2026-11-10T01:00:25+00:00",
   "game_date": "2026-11-09",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -27,21 +27,49 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 167,
-      "ODDS_API_KEY_2": 169,
+      "ODDS_API_KEY": 165,
+      "ODDS_API_KEY_2": 165,
       "ODDS_API_KEY_20K": 15175
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Illinois St Redbirds @ Purdue Boilermakers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Appalachian St Mountaineers @ Auburn Tigers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Miss Valley St Delta Devils @ Washington Huskies",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Rice Owls @ Stanford Cardinal",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 87,
-    "p4_events": 35,
+    "events": 89,
+    "p4_events": 30,
     "unmatched": [],
-    "due": 0,
+    "due": 4,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 1,
+      "pull_type": "pregame",
+      "rows": 8,
+      "credits_last": 2
     },
     "status": "ok"
   }
