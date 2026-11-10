@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-10T05:15:16+00:00",
+  "fetched_at": "2026-11-10T05:30:16+00:00",
   "source": "espn",
   "count": 8,
   "game_date": "2026-11-09",
@@ -518,11 +518,11 @@
       "game_id": "401909959",
       "start_utc": "2026-11-10T03:00Z",
       "short_name": "NO @ GS",
-      "state": "in",
-      "status": "3:04 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "3:04",
+      "clock": "0.0",
       "venue": "Chase Center",
       "neutral_site": false,
       "broadcasts": [
@@ -534,10 +534,10 @@
         "team_id": "9",
         "abbr": "GS",
         "name": "Golden State Warriors",
-        "score": 133,
-        "winner": null,
-        "record": "7-3",
-        "home_record": "5-1",
+        "score": 138,
+        "winner": true,
+        "record": "8-3",
+        "home_record": "6-1",
         "away_record": "2-2",
         "leaders": {
           "points": {
@@ -546,7 +546,7 @@
           },
           "rebounds": {
             "player": "Charles Bassey",
-            "value": "8"
+            "value": "10"
           },
           "assists": {
             "player": "Al Horford",
@@ -562,11 +562,11 @@
         "team_id": "3",
         "abbr": "NO",
         "name": "New Orleans Pelicans",
-        "score": 83,
-        "winner": null,
-        "record": "4-6",
+        "score": 87,
+        "winner": false,
+        "record": "4-7",
         "home_record": "3-3",
-        "away_record": "1-3",
+        "away_record": "1-4",
         "leaders": {
           "points": {
             "player": "Derik Queen",
