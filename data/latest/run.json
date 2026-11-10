@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-10T12:45:24+00:00",
+  "finished_at": "2026-11-10T13:00:31+00:00",
   "game_date": "2026-11-10",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "not_due",
+    "odds": "ok",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -26,14 +26,57 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 161,
-      "ODDS_API_KEY_2": 163,
+      "ODDS_API_KEY": 149,
+      "ODDS_API_KEY_2": 151,
       "ODDS_API_KEY_20K": 15144
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Milwaukee Bucks @ New York Knicks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 158,
+        "markets": 4
+      },
+      {
+        "matchup": "Boston Celtics @ Philadelphia 76ers",
+        "type": "morning",
+        "status": "ok",
+        "rows": 176,
+        "markets": 4
+      },
+      {
+        "matchup": "Los Angeles Clippers @ Phoenix Suns",
+        "type": "morning",
+        "status": "ok",
+        "rows": 180,
+        "markets": 4
+      },
+      {
+        "matchup": "Miami Heat @ Utah Jazz",
+        "type": "morning",
+        "status": "ok",
+        "rows": 176,
+        "markets": 4
+      },
+      {
+        "matchup": "Orlando Magic @ Sacramento Kings",
+        "type": "morning",
+        "status": "ok",
+        "rows": 168,
+        "markets": 4
+      },
+      {
+        "matchup": "Oklahoma City Thunder @ Portland Trail Blazers",
+        "type": "morning",
+        "status": "ok",
+        "rows": 194,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
+    "due": 6,
     "pregame_pulled": false,
     "status": "ok"
   }
