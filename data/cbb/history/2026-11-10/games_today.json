@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-11T04:15:21+00:00",
+  "fetched_at": "2026-11-11T04:30:20+00:00",
   "source": "espn",
   "count": 26,
   "game_date": "2026-11-10",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-11T02:58Z",
       "short_name": "KU VS UK",
       "state": "in",
-      "status": "16:24 - 2nd",
+      "status": "11:24 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "16:24",
+      "clock": "11:24",
       "venue": "United Center",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "96",
         "abbr": "UK",
         "name": "Kentucky Wildcats",
-        "score": 41,
+        "score": 49,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -31,11 +31,11 @@
         "leaders": {
           "points": {
             "player": "Zoom Diallo",
-            "value": "18"
+            "value": "24"
           },
           "rebounds": {
             "player": "Milan Momcilovic",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Malachi Moreno",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Zoom Diallo",
-            "value": "18 PTS"
+            "value": "24 PTS"
           }
         },
         "conf_id": "23",
@@ -56,7 +56,7 @@
         "team_id": "2305",
         "abbr": "KU",
         "name": "Kansas Jayhawks",
-        "score": 58,
+        "score": 65,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -68,15 +68,15 @@
           },
           "rebounds": {
             "player": "Tyran Stokes",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Taylen Kinney",
-            "value": "6"
+            "value": "7"
           },
           "rating": {
             "player": "Tyran Stokes",
-            "value": "19 PTS"
+            "value": "19 PTS, 6 REB"
           }
         },
         "conf_id": "8",
@@ -94,9 +94,9 @@
       "start_utc": "2026-11-11T02:00Z",
       "short_name": "ULM @ TCU",
       "state": "in",
-      "status": "0:00 - 2nd",
+      "status": "End of OT",
       "completed": false,
-      "period": 2,
+      "period": 3,
       "clock": "0:00",
       "venue": "Schollmaier Arena",
       "neutral_site": false,
@@ -107,7 +107,7 @@
         "team_id": "2628",
         "abbr": "TCU",
         "name": "TCU Horned Frogs",
-        "score": 83,
+        "score": 87,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -115,11 +115,11 @@
         "leaders": {
           "points": {
             "player": "Micah Robinson",
-            "value": "21"
+            "value": "25"
           },
           "rebounds": {
             "player": "Xavier Edmonds",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Brock Harding",
@@ -127,7 +127,7 @@
           },
           "rating": {
             "player": "Micah Robinson",
-            "value": "21 PTS"
+            "value": "25 PTS"
           }
         },
         "conf_id": "8",
@@ -140,7 +140,7 @@
         "team_id": "2433",
         "abbr": "ULM",
         "name": "UL Monroe Warhawks",
-        "score": 83,
+        "score": 87,
         "winner": null,
         "record": "1-2",
         "home_record": "1-1",
@@ -148,11 +148,11 @@
         "leaders": {
           "points": {
             "player": "Dayjaun Anderson",
-            "value": "18"
+            "value": "20"
           },
           "rebounds": {
-            "player": "Lance Carr",
-            "value": "9"
+            "player": "Dayjaun Anderson",
+            "value": "13"
           },
           "assists": {
             "player": "Dayjaun Anderson",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "Dayjaun Anderson",
-            "value": "18 PTS, 8 REB"
+            "value": "20 PTS, 13 REB"
           }
         },
         "conf_id": "27",
@@ -177,11 +177,11 @@
       "game_id": "401909492",
       "start_utc": "2026-11-11T02:00Z",
       "short_name": "CREI @ KSU",
-      "state": "in",
-      "status": "2:24 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "2:24",
+      "clock": "0:00",
       "venue": "Bramlage Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -191,10 +191,10 @@
         "team_id": "2306",
         "abbr": "KSU",
         "name": "Kansas State Wildcats",
-        "score": 84,
-        "winner": null,
-        "record": "1-1",
-        "home_record": "1-1",
+        "score": 89,
+        "winner": true,
+        "record": "2-1",
+        "home_record": "2-1",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -203,7 +203,7 @@
           },
           "rebounds": {
             "player": "Isaiah Abraham",
-            "value": "8"
+            "value": "9"
           },
           "assists": {
             "player": "Brock Vice",
@@ -224,11 +224,11 @@
         "team_id": "156",
         "abbr": "CREI",
         "name": "Creighton Bluejays",
-        "score": 77,
-        "winner": null,
-        "record": "2-0",
+        "score": 82,
+        "winner": false,
+        "record": "2-1",
         "home_record": "2-0",
-        "away_record": "0-0",
+        "away_record": "0-1",
         "leaders": {
           "points": {
             "player": "BJ Davis",
