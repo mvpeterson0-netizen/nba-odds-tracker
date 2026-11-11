@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-11T02:15:18+00:00",
+  "fetched_at": "2026-11-11T02:30:21+00:00",
   "source": "espn",
   "count": 26,
   "game_date": "2026-11-10",
@@ -9,11 +9,11 @@
       "game_id": "401909564",
       "start_utc": "2026-11-11T00:00Z",
       "short_name": "MSU VS DUKE",
-      "state": "in",
-      "status": "1:24 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "1:24",
+      "clock": "0:00",
       "venue": "United Center",
       "neutral_site": true,
       "broadcasts": [
@@ -23,15 +23,15 @@
         "team_id": "150",
         "abbr": "DUKE",
         "name": "Duke Blue Devils",
-        "score": 68,
-        "winner": null,
-        "record": "2-0",
+        "score": 73,
+        "winner": false,
+        "record": "2-1",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "John Blackwell",
-            "value": "14"
+            "value": "17"
           },
           "rebounds": {
             "player": "Patrick Ngongba II",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Patrick Ngongba II",
-            "value": "9 PTS, 7 REB, 6 AST, 4 BLK"
+            "value": "11 PTS, 7 REB, 6 AST, 4 BLK"
           }
         },
         "conf_id": "2",
@@ -56,15 +56,15 @@
         "team_id": "127",
         "abbr": "MSU",
         "name": "Michigan State Spartans",
-        "score": 75,
-        "winner": null,
-        "record": "2-0",
+        "score": 79,
+        "winner": true,
+        "record": "3-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "Jeremy Fears Jr.",
-            "value": "14"
+            "value": "18"
           },
           "rebounds": {
             "player": "Jordan Scott",
@@ -76,7 +76,7 @@
           },
           "rating": {
             "player": "Jeremy Fears Jr.",
-            "value": "14 PTS, 6 REB, 11 AST"
+            "value": "18 PTS, 7 REB, 11 AST"
           }
         },
         "conf_id": "7",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-11T01:00Z",
       "short_name": "ILL @ TTU",
       "state": "in",
-      "status": "16:52 - 2nd",
+      "status": "11:04 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "16:52",
+      "clock": "11:04",
       "venue": "United Supermarkets Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "2641",
         "abbr": "TTU",
         "name": "Texas Tech Red Raiders",
-        "score": 54,
+        "score": 61,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -119,11 +119,11 @@
           },
           "rebounds": {
             "player": "Jamichael Stillwell",
-            "value": "7"
+            "value": "9"
           },
           "assists": {
             "player": "Cruz Davis",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Cruz Davis",
@@ -140,7 +140,7 @@
         "team_id": "356",
         "abbr": "ILL",
         "name": "Illinois Fighting Illini",
-        "score": 38,
+        "score": 51,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -148,11 +148,11 @@
         "leaders": {
           "points": {
             "player": "Tomislav Ivisic",
-            "value": "9"
+            "value": "11"
           },
           "rebounds": {
             "player": "Tomislav Ivisic",
-            "value": "3"
+            "value": "6"
           },
           "assists": {
             "player": "Tomislav Ivisic",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "Tomislav Ivisic",
-            "value": "9 PTS"
+            "value": "11 PTS, 6 REB"
           }
         },
         "conf_id": "7",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-11T02:00Z",
       "short_name": "BUCK @ UVA",
       "state": "in",
-      "status": "14:29 - 1st",
+      "status": "9:23 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "14:29",
+      "clock": "9:23",
       "venue": "John Paul Jones Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -191,7 +191,7 @@
         "team_id": "258",
         "abbr": "UVA",
         "name": "Virginia Cavaliers",
-        "score": 14,
+        "score": 28,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
@@ -199,11 +199,11 @@
         "leaders": {
           "points": {
             "player": "Thijs De Ridder",
-            "value": "5"
+            "value": "9"
           },
           "rebounds": {
             "player": "Johann Grunloh",
-            "value": "2"
+            "value": "4"
           },
           "assists": {
             "player": "Thijs De Ridder",
@@ -211,7 +211,7 @@
           },
           "rating": {
             "player": "Thijs De Ridder",
-            "value": "5 PTS"
+            "value": "9 PTS, 4 STL"
           }
         },
         "conf_id": "2",
@@ -224,7 +224,7 @@
         "team_id": "2083",
         "abbr": "BUCK",
         "name": "Bucknell Bison",
-        "score": 3,
+        "score": 5,
         "winner": null,
         "record": "0-2",
         "home_record": "0-1",
@@ -262,10 +262,10 @@
       "start_utc": "2026-11-11T02:00Z",
       "short_name": "NAU @ ARIZ",
       "state": "in",
-      "status": "13:06 - 1st",
+      "status": "5:53 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "13:06",
+      "clock": "5:53",
       "venue": "McKale Center at ALKEME Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -275,27 +275,27 @@
         "team_id": "12",
         "abbr": "ARIZ",
         "name": "Arizona Wildcats",
-        "score": 17,
+        "score": 35,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Ivan Kharchenkov",
-            "value": "6"
+            "player": "Derek Dixon",
+            "value": "10"
           },
           "rebounds": {
             "player": "Motiejus Krivas",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
-            "player": "Ivan Kharchenkov",
+            "player": "JJ Mandaquit",
             "value": "2"
           },
           "rating": {
-            "player": "Ivan Kharchenkov",
-            "value": "6 PTS"
+            "player": "Derek Dixon",
+            "value": "10 PTS"
           }
         },
         "conf_id": "8",
@@ -308,27 +308,27 @@
         "team_id": "2464",
         "abbr": "NAU",
         "name": "Northern Arizona Lumberjacks",
-        "score": 6,
+        "score": 17,
         "winner": null,
         "record": "0-2",
         "home_record": "0-0",
         "away_record": "0-2",
         "leaders": {
           "points": {
-            "player": "Lucas Toukam",
-            "value": "2"
+            "player": "Ryan Abelman",
+            "value": "6"
           },
           "rebounds": {
-            "player": "Lucas Toukam",
-            "value": "1"
+            "player": "Max Majerle",
+            "value": "3"
           },
           "assists": {
             "player": "Chris Komin",
-            "value": "1"
+            "value": "3"
           },
           "rating": {
-            "player": "Chris Komin",
-            "value": "2 PTS"
+            "player": "Ryan Abelman",
+            "value": "6 PTS"
           }
         },
         "conf_id": "5",
@@ -346,10 +346,10 @@
       "start_utc": "2026-11-11T00:15Z",
       "short_name": "MEM @ VAN",
       "state": "in",
-      "status": "4:54 - 2nd",
+      "status": "0:36 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "4:54",
+      "clock": "0:36",
       "venue": "Memorial Gymnasium (TN)",
       "neutral_site": false,
       "broadcasts": [
@@ -359,7 +359,7 @@
         "team_id": "238",
         "abbr": "VAN",
         "name": "Vanderbilt Commodores",
-        "score": 87,
+        "score": 102,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -375,7 +375,7 @@
         "team_id": "235",
         "abbr": "MEM",
         "name": "Memphis Tigers",
-        "score": 70,
+        "score": 78,
         "winner": null,
         "record": "2-0",
         "home_record": "1-0",
@@ -396,10 +396,10 @@
       "start_utc": "2026-11-11T02:00Z",
       "short_name": "QUC @ BYU",
       "state": "in",
-      "status": "12:37 - 1st",
+      "status": "6:51 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "12:37",
+      "clock": "6:51",
       "venue": "Marriott Center",
       "neutral_site": false,
       "broadcasts": [
@@ -409,7 +409,7 @@
         "team_id": "252",
         "abbr": "BYU",
         "name": "BYU Cougars",
-        "score": 22,
+        "score": 37,
         "winner": null,
         "record": "2-0",
         "home_record": "1-0",
@@ -420,12 +420,12 @@
             "value": "8"
           },
           "rebounds": {
-            "player": "Bruce Branch III",
-            "value": "2"
+            "player": "Jaxon Kohler",
+            "value": "5"
           },
           "assists": {
             "player": "Robert Wright III",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Bruce Branch III",
@@ -442,27 +442,27 @@
         "team_id": "2511",
         "abbr": "QUC",
         "name": "Queens University Royals",
-        "score": 16,
+        "score": 24,
         "winner": null,
         "record": "2-1",
         "home_record": "0-0",
         "away_record": "1-1",
         "leaders": {
           "points": {
-            "player": "Nicholas McLean",
-            "value": "5"
+            "player": "Caleb Jones",
+            "value": "8"
           },
           "rebounds": {
             "player": "Avantae Parker",
-            "value": "2"
+            "value": "4"
           },
           "assists": {
             "player": "Nasir Mann",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Avantae Parker",
-            "value": "4 PTS"
+            "value": "3 STL"
           }
         },
         "conf_id": "46",
@@ -480,10 +480,10 @@
       "start_utc": "2026-11-11T00:00Z",
       "short_name": "VT VS IOWA",
       "state": "in",
-      "status": "0:06 - 2nd",
+      "status": "1:00 - OT",
       "completed": false,
-      "period": 2,
-      "clock": "0:06",
+      "period": 3,
+      "clock": "1:00",
       "venue": "Tyson Events Center",
       "neutral_site": true,
       "broadcasts": [
@@ -493,7 +493,7 @@
         "team_id": "2294",
         "abbr": "IOWA",
         "name": "Iowa Hawkeyes",
-        "score": 78,
+        "score": 81,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -509,7 +509,7 @@
         "team_id": "259",
         "abbr": "VT",
         "name": "Virginia Tech Hokies",
-        "score": 79,
+        "score": 84,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -526,98 +526,14 @@
       "p4": true
     },
     {
-      "game_id": "401920306",
-      "start_utc": "2026-11-11T00:00Z",
-      "short_name": "EKU @ GT",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "McCamish Pavilion",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACCNX"
-      ],
-      "home": {
-        "team_id": "59",
-        "abbr": "GT",
-        "name": "Georgia Tech Yellow Jackets",
-        "score": 85,
-        "winner": true,
-        "record": "3-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Tylis Jordan",
-            "value": "27"
-          },
-          "rebounds": {
-            "player": "Jackson Fields",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Victor Valdes",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Tylis Jordan",
-            "value": "27 PTS, 6 REB"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Georgia Tech",
-        "nick": "Yellow Jackets"
-      },
-      "away": {
-        "team_id": "2198",
-        "abbr": "EKU",
-        "name": "Eastern Kentucky Colonels",
-        "score": 71,
-        "winner": false,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Justin McCarter",
-            "value": "20"
-          },
-          "rebounds": {
-            "player": "Shadrak Lasu",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Omer Hamama",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Justin McCarter",
-            "value": "20 PTS"
-          }
-        },
-        "conf_id": "30",
-        "conf": null,
-        "rank": null,
-        "loc": "Eastern Kentucky",
-        "nick": "Colonels"
-      },
-      "espn_line": null,
-      "date": "2026-11-10",
-      "p4": true
-    },
-    {
       "game_id": "401918969",
       "start_utc": "2026-11-11T01:00Z",
       "short_name": "PV @ SMU",
       "state": "in",
-      "status": "15:57 - 2nd",
+      "status": "11:53 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "15:57",
+      "clock": "11:53",
       "venue": "Moody Coliseum (Dallas)",
       "neutral_site": false,
       "broadcasts": [
@@ -627,7 +543,7 @@
         "team_id": "2567",
         "abbr": "SMU",
         "name": "SMU Mustangs",
-        "score": 59,
+        "score": 66,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -643,7 +559,7 @@
           },
           "assists": {
             "player": "David Terrell Jr.",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Jaden Toombs",
@@ -660,7 +576,7 @@
         "team_id": "2504",
         "abbr": "PV",
         "name": "Prairie View A&M Panthers",
-        "score": 36,
+        "score": 39,
         "winner": null,
         "record": "2-1",
         "home_record": "2-0",
@@ -668,11 +584,11 @@
         "leaders": {
           "points": {
             "player": "Anthony Gause",
-            "value": "16"
+            "value": "19"
           },
           "rebounds": {
-            "player": "Elijah Mitchell",
-            "value": "4"
+            "player": "Jaelyn Lee",
+            "value": "5"
           },
           "assists": {
             "player": "Anthony Gause",
@@ -680,7 +596,7 @@
           },
           "rating": {
             "player": "Anthony Gause",
-            "value": "16 PTS, 3 BLK"
+            "value": "19 PTS, 4 BLK"
           }
         },
         "conf_id": "26",
@@ -698,10 +614,10 @@
       "start_utc": "2026-11-11T01:00Z",
       "short_name": "SOU @ ISU",
       "state": "in",
-      "status": "15:01 - 2nd",
+      "status": "10:30 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "15:01",
+      "clock": "10:30",
       "venue": "Hilton Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -711,27 +627,27 @@
         "team_id": "66",
         "abbr": "ISU",
         "name": "Iowa State Cyclones",
-        "score": 50,
+        "score": 61,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Jamarion Batemon",
-            "value": "13"
+            "player": "Tre Singleton",
+            "value": "15"
           },
           "rebounds": {
-            "player": "Jamarion Batemon",
-            "value": "7"
+            "player": "Blake Buchanan",
+            "value": "9"
           },
           "assists": {
             "player": "Jamarion Batemon",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Jamarion Batemon",
-            "value": "13 PTS, 7 REB, 3 STL"
+            "value": "13 PTS, 8 REB, 3 STL"
           }
         },
         "conf_id": "8",
@@ -744,7 +660,7 @@
         "team_id": "2582",
         "abbr": "SOU",
         "name": "Southern Jaguars",
-        "score": 24,
+        "score": 28,
         "winner": null,
         "record": "0-3",
         "home_record": "0-0",
@@ -752,7 +668,7 @@
         "leaders": {
           "points": {
             "player": "R'Chaun King",
-            "value": "5"
+            "value": "7"
           },
           "rebounds": {
             "player": "R'Chaun King",
@@ -760,11 +676,11 @@
           },
           "assists": {
             "player": "Daniel Dormu",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "R'Chaun King",
-            "value": "7 REB"
+            "value": "7 PTS, 7 REB"
           }
         },
         "conf_id": "26",
@@ -782,10 +698,10 @@
       "start_utc": "2026-11-11T01:00Z",
       "short_name": "YALE @ BAY",
       "state": "in",
-      "status": "15:39 - 2nd",
+      "status": "11:29 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "15:39",
+      "clock": "11:29",
       "venue": "Foster Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -795,7 +711,7 @@
         "team_id": "239",
         "abbr": "BAY",
         "name": "Baylor Bears",
-        "score": 47,
+        "score": 58,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -810,7 +726,7 @@
             "value": "5"
           },
           "assists": {
-            "player": "Isaac Celiscar",
+            "player": "Isaac Williams IV",
             "value": "3"
           },
           "rating": {
@@ -828,7 +744,7 @@
         "team_id": "43",
         "abbr": "YALE",
         "name": "Yale Bulldogs",
-        "score": 39,
+        "score": 44,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
@@ -866,10 +782,10 @@
       "start_utc": "2026-11-11T01:30Z",
       "short_name": "FAIR @ WIS",
       "state": "in",
-      "status": "3:53 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "3:53",
+      "clock": "0:00",
       "venue": "Kohl Center",
       "neutral_site": false,
       "broadcasts": [
@@ -879,7 +795,7 @@
         "team_id": "275",
         "abbr": "WIS",
         "name": "Wisconsin Badgers",
-        "score": 43,
+        "score": 52,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -887,7 +803,7 @@
         "leaders": {
           "points": {
             "player": "Eian Elmer",
-            "value": "9"
+            "value": "12"
           },
           "rebounds": {
             "player": "Austin Rapp",
@@ -899,7 +815,7 @@
           },
           "rating": {
             "player": "Eian Elmer",
-            "value": "9 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "7",
@@ -912,27 +828,27 @@
         "team_id": "2217",
         "abbr": "FAIR",
         "name": "Fairfield Stags",
-        "score": 15,
+        "score": 20,
         "winner": null,
         "record": "1-1",
         "home_record": "0-1",
         "away_record": "1-0",
         "leaders": {
           "points": {
-            "player": "Halon Rawlins",
-            "value": "4"
+            "player": "Jaden Brown",
+            "value": "5"
           },
           "rebounds": {
-            "player": "Peyton Smith",
-            "value": "4"
+            "player": "Declan Wucherpfennig",
+            "value": "5"
           },
           "assists": {
             "player": "Jaden Brown",
             "value": "1"
           },
           "rating": {
-            "player": "Declan Wucherpfennig",
-            "value": "3 PTS"
+            "player": "Jaden Brown",
+            "value": "5 PTS"
           }
         },
         "conf_id": "13",
@@ -950,10 +866,10 @@
       "start_utc": "2026-11-11T01:30Z",
       "short_name": "SELA @ MISS",
       "state": "in",
-      "status": "3:42 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "3:42",
+      "clock": "0:00",
       "venue": "The Sandy and John Black Pavilion at Ole Miss",
       "neutral_site": false,
       "broadcasts": [
@@ -963,7 +879,7 @@
         "team_id": "145",
         "abbr": "MISS",
         "name": "Ole Miss Rebels",
-        "score": 38,
+        "score": 49,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -974,16 +890,16 @@
             "value": "10"
           },
           "rebounds": {
-            "player": "Roman Siulepa",
+            "player": "Santiago Trouet",
             "value": "3"
           },
           "assists": {
             "player": "Ilias Kamardine",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
             "player": "Corey Stephenson",
-            "value": "8 PTS, 3 STL"
+            "value": "10 PTS, 3 STL"
           }
         },
         "conf_id": "23",
@@ -996,7 +912,7 @@
         "team_id": "2545",
         "abbr": "SELA",
         "name": "SE Louisiana Lions",
-        "score": 14,
+        "score": 20,
         "winner": null,
         "record": "1-1",
         "home_record": "0-0",
@@ -1004,11 +920,11 @@
         "leaders": {
           "points": {
             "player": "Tyler Rolison",
-            "value": "5"
+            "value": "7"
           },
           "rebounds": {
-            "player": "Jackson Furman",
-            "value": "2"
+            "player": "Ashley Sims II",
+            "value": "3"
           },
           "assists": {
             "player": "Logan Suber",
@@ -1034,10 +950,10 @@
       "start_utc": "2026-11-11T02:00Z",
       "short_name": "HOF @ ASU",
       "state": "in",
-      "status": "14:15 - 1st",
+      "status": "7:21 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "14:15",
+      "clock": "7:21",
       "venue": "Desert Financial Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -1047,7 +963,7 @@
         "team_id": "9",
         "abbr": "ASU",
         "name": "Arizona State Sun Devils",
-        "score": 12,
+        "score": 24,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -1058,8 +974,8 @@
             "value": "8"
           },
           "rebounds": {
-            "player": "Joel Foxwell",
-            "value": "2"
+            "player": "Dillan Shaw",
+            "value": "5"
           },
           "assists": {
             "player": "Dillan Shaw",
@@ -1080,27 +996,27 @@
         "team_id": "2275",
         "abbr": "HOF",
         "name": "Hofstra Pride",
-        "score": 8,
+        "score": 19,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
         "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "Spence Wewe",
-            "value": "2"
+            "player": "Imanuel Zorgvol",
+            "value": "5"
           },
           "rebounds": {
-            "player": "Spence Wewe",
+            "player": "Deywilk Tavarez",
             "value": "2"
           },
           "assists": {
-            "player": "Justin Moore",
-            "value": "1"
+            "player": "Nick Jefferson",
+            "value": "3"
           },
           "rating": {
-            "player": "Spence Wewe",
-            "value": "2 PTS"
+            "player": "Imanuel Zorgvol",
+            "value": "5 PTS"
           }
         },
         "conf_id": "10",
@@ -1118,10 +1034,10 @@
       "start_utc": "2026-11-11T02:00Z",
       "short_name": "WEB @ UTAH",
       "state": "in",
-      "status": "11:47 - 1st",
+      "status": "6:27 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "11:47",
+      "clock": "6:27",
       "venue": "Jon M. Huntsman Center",
       "neutral_site": false,
       "broadcasts": [
@@ -1131,7 +1047,7 @@
         "team_id": "254",
         "abbr": "UTAH",
         "name": "Utah Utes",
-        "score": 17,
+        "score": 19,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -1164,7 +1080,7 @@
         "team_id": "2692",
         "abbr": "WEB",
         "name": "Weber State Wildcats",
-        "score": 15,
+        "score": 19,
         "winner": null,
         "record": "0-2",
         "home_record": "0-1",
@@ -1175,12 +1091,12 @@
             "value": "8"
           },
           "rebounds": {
-            "player": "Augustine Ekwe",
-            "value": "2"
+            "player": "Dylan Warlick",
+            "value": "3"
           },
           "assists": {
             "player": "Gavin Lowe",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Dylan Warlick",
@@ -1202,10 +1118,10 @@
       "start_utc": "2026-11-11T02:00Z",
       "short_name": "ULM @ TCU",
       "state": "in",
-      "status": "11:30 - 1st",
+      "status": "7:03 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "11:30",
+      "clock": "7:03",
       "venue": "Schollmaier Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -1215,23 +1131,23 @@
         "team_id": "2628",
         "abbr": "TCU",
         "name": "TCU Horned Frogs",
-        "score": 14,
+        "score": 22,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "DJ Thomas",
+            "player": "Xavier Edmonds",
             "value": "5"
           },
           "rebounds": {
-            "player": "Micah Robinson",
+            "player": "Xavier Edmonds",
             "value": "2"
           },
           "assists": {
-            "player": "Xavier Edmonds",
-            "value": "2"
+            "player": "Brock Harding",
+            "value": "3"
           },
           "rating": {
             "player": "DJ Thomas",
@@ -1248,7 +1164,7 @@
         "team_id": "2433",
         "abbr": "ULM",
         "name": "UL Monroe Warhawks",
-        "score": 15,
+        "score": 21,
         "winner": null,
         "record": "1-2",
         "home_record": "1-1",
@@ -1259,12 +1175,12 @@
             "value": "8"
           },
           "rebounds": {
-            "player": "Lance Carr",
+            "player": "Dayjaun Anderson",
             "value": "3"
           },
           "assists": {
             "player": "Dayjaun Anderson",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
             "player": "Quaran McPherson",
@@ -1286,10 +1202,10 @@
       "start_utc": "2026-11-11T02:00Z",
       "short_name": "USD @ COLO",
       "state": "in",
-      "status": "13:23 - 1st",
+      "status": "7:36 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "13:23",
+      "clock": "7:36",
       "venue": "CU Events Center",
       "neutral_site": false,
       "broadcasts": [
@@ -1299,27 +1215,27 @@
         "team_id": "38",
         "abbr": "COLO",
         "name": "Colorado Buffaloes",
-        "score": 10,
+        "score": 17,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Barrington Hargress",
-            "value": "4"
+            "player": "Josiah Sanders",
+            "value": "5"
           },
           "rebounds": {
-            "player": "Barrington Hargress",
-            "value": "1"
+            "player": "Josiah Sanders",
+            "value": "2"
           },
           "assists": {
-            "player": "Josiah Sanders",
-            "value": "1"
+            "player": "Barrington Hargress",
+            "value": "2"
           },
           "rating": {
-            "player": "Barrington Hargress",
-            "value": "4 PTS"
+            "player": "Josiah Sanders",
+            "value": "5 PTS"
           }
         },
         "conf_id": "8",
@@ -1332,7 +1248,7 @@
         "team_id": "301",
         "abbr": "USD",
         "name": "San Diego Toreros",
-        "score": 13,
+        "score": 22,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -1340,19 +1256,19 @@
         "leaders": {
           "points": {
             "player": "Davion Hill",
-            "value": "4"
+            "value": "6"
           },
           "rebounds": {
             "player": "Dusty Stromer",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
             "player": "Marqui Worthy Jr.",
             "value": "1"
           },
           "rating": {
-            "player": "Jevon Hill",
-            "value": "3 PTS"
+            "player": "Dusty Stromer",
+            "value": "5 PTS"
           }
         },
         "conf_id": "29",
@@ -1360,6 +1276,90 @@
         "rank": null,
         "loc": "San Diego",
         "nick": "Toreros"
+      },
+      "espn_line": null,
+      "date": "2026-11-10",
+      "p4": true
+    },
+    {
+      "game_id": "401909492",
+      "start_utc": "2026-11-11T02:00Z",
+      "short_name": "CREI @ KSU",
+      "state": "in",
+      "status": "13:56 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "13:56",
+      "venue": "Bramlage Coliseum",
+      "neutral_site": false,
+      "broadcasts": [
+        "FS1"
+      ],
+      "home": {
+        "team_id": "2306",
+        "abbr": "KSU",
+        "name": "Kansas State Wildcats",
+        "score": 14,
+        "winner": null,
+        "record": "1-1",
+        "home_record": "1-1",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Jaden Schutt",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Isaiah Abraham",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Brock Vice",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Jaden Schutt",
+            "value": "8 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Kansas State",
+        "nick": "Wildcats"
+      },
+      "away": {
+        "team_id": "156",
+        "abbr": "CREI",
+        "name": "Creighton Bluejays",
+        "score": 12,
+        "winner": null,
+        "record": "2-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "BJ Davis",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Oswin Erhunmwunse",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Austin Swartz",
+            "value": "1"
+          },
+          "rating": {
+            "player": "BJ Davis",
+            "value": "6 PTS"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Creighton",
+        "nick": "Bluejays"
       },
       "espn_line": null,
       "date": "2026-11-10",
@@ -1612,6 +1612,90 @@
         "rank": null,
         "loc": "South Alabama",
         "nick": "Jaguars"
+      },
+      "espn_line": null,
+      "date": "2026-11-10",
+      "p4": true
+    },
+    {
+      "game_id": "401920306",
+      "start_utc": "2026-11-11T00:00Z",
+      "short_name": "EKU @ GT",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "McCamish Pavilion",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACCNX"
+      ],
+      "home": {
+        "team_id": "59",
+        "abbr": "GT",
+        "name": "Georgia Tech Yellow Jackets",
+        "score": 85,
+        "winner": true,
+        "record": "3-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Tylis Jordan",
+            "value": "27"
+          },
+          "rebounds": {
+            "player": "Jackson Fields",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Victor Valdes",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Tylis Jordan",
+            "value": "27 PTS, 6 REB"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Georgia Tech",
+        "nick": "Yellow Jackets"
+      },
+      "away": {
+        "team_id": "2198",
+        "abbr": "EKU",
+        "name": "Eastern Kentucky Colonels",
+        "score": 71,
+        "winner": false,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Justin McCarter",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Shadrak Lasu",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Omer Hamama",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Justin McCarter",
+            "value": "20 PTS"
+          }
+        },
+        "conf_id": "30",
+        "conf": null,
+        "rank": null,
+        "loc": "Eastern Kentucky",
+        "nick": "Colonels"
       },
       "espn_line": null,
       "date": "2026-11-10",
@@ -1954,87 +2038,11 @@
       "p4": true
     },
     {
-      "game_id": "401909492",
-      "start_utc": "2026-11-11T02:00Z",
-      "short_name": "CREI @ KSU",
-      "state": "pre",
-      "status": "11/10 - 9:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Bramlage Coliseum",
-      "neutral_site": false,
-      "broadcasts": [
-        "FS1"
-      ],
-      "home": {
-        "team_id": "2306",
-        "abbr": "KSU",
-        "name": "Kansas State Wildcats",
-        "score": 0,
-        "winner": null,
-        "record": "1-1",
-        "home_record": "1-1",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Brandon Rechsteiner",
-            "value": "21.0"
-          },
-          "reboundsPerGame": {
-            "player": "Pape N'Diaye",
-            "value": "6.0"
-          },
-          "assistsPerGame": {
-            "player": "Brandon Rechsteiner",
-            "value": "4.0"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Kansas State",
-        "nick": "Wildcats"
-      },
-      "away": {
-        "team_id": "156",
-        "abbr": "CREI",
-        "name": "Creighton Bluejays",
-        "score": 0,
-        "winner": null,
-        "record": "2-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Wes Enis",
-            "value": "20.5"
-          },
-          "reboundsPerGame": {
-            "player": "Jackson McAndrew",
-            "value": "6.0"
-          },
-          "assistsPerGame": {
-            "player": "Katrelle Harmon",
-            "value": "5.5"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": null,
-        "loc": "Creighton",
-        "nick": "Bluejays"
-      },
-      "espn_line": null,
-      "date": "2026-11-10",
-      "p4": true
-    },
-    {
       "game_id": "401909786",
-      "start_utc": "2026-11-11T02:30Z",
+      "start_utc": "2026-11-11T02:55Z",
       "short_name": "KU VS UK",
       "state": "pre",
-      "status": "11/10 - 9:30 PM EST",
+      "status": "11/10 - 9:55 PM EST",
       "completed": false,
       "period": 0,
       "clock": "0:00",
