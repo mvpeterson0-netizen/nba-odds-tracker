@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-11T00:45:18+00:00",
+  "finished_at": "2026-11-11T01:00:22+00:00",
   "game_date": "2026-11-10",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -26,15 +26,30 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 135,
-      "ODDS_API_KEY_2": 136,
+      "ODDS_API_KEY": 131,
+      "ODDS_API_KEY_2": 132,
       "ODDS_API_KEY_20K": 15059
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Los Angeles Clippers @ Phoenix Suns",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 188,
+        "markets": 4
+      },
+      {
+        "matchup": "Miami Heat @ Utah Jazz",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 128,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 2,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
