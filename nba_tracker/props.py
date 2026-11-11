@@ -52,6 +52,12 @@ GUARD_RESERVE = 20                             # extra cushion kept for core mar
 
 CAPTURE_FIELDS = ["captured_at", "event_id", "commence_utc", "minutes_before", "home_team", "away_team",
                   "book", "market", "player", "side", "point", "price", "market_updated", "pull_type"]
+# Bet-slip links (FanDuel only, as in the NFL tracker): The Odds API returns a per-outcome link with includeLinks.
+# Only the latest pull of each game is kept, and only until tip. Never changes captures, grading or credit use.
+LINKS_ENABLED = True
+LINK_BOOKS = ["fanduel"]
+LINK_FIELDS = ["event_id", "commence_utc", "pull_type", "captured_at", "book", "market", "player", "side",
+               "point", "price", "outcome_link"]
 PULL_FIELDS = ["at", "event_id", "matchup", "commence_utc", "minutes_before", "status", "markets",
                "rows", "credits_last", "credits_remaining", "key", "note", "pull_type"]
 
@@ -208,6 +214,46 @@ def parse_event_props(body: dict, captured_at: str, minutes_before: int, pull_ty
     return rows
 
 
+def parse_event_links(body: dict, captured_at: str, pull_type: str = "pregame") -> list[dict]:
+    """One row per FanDuel outcome that came back with a bet-slip link."""
+    rows = []
+    for bk in (body or {}).get("bookmakers") or []:
+        if bk.get("key") not in LINK_BOOKS:
+            continue
+        for m in bk.get("markets") or []:
+            for o in m.get("outcomes") or []:
+                if not o.get("link"):
+                    continue
+                rows.append({"event_id": body.get("id"), "commence_utc": body.get("commence_time"),
+                             "pull_type": pull_type, "captured_at": captured_at, "book": bk.get("key"),
+                             "market": m.get("key"), "player": o.get("description"), "side": o.get("name"),
+                             "point": o.get("point"), "price": o.get("price"), "outcome_link": o.get("link")})
+    return rows
+
+
+def save_links(data_dir: Path, event_id: str, rows: list[dict], now: datetime) -> None:
+    """Replace this game's links with the latest pull's and drop games that have already tipped.
+    The file is rewritten, never appended to. A pull that returns no links leaves the old ones alone."""
+    if not rows:
+        return
+    path = data_dir / "prop_links.csv"
+    keep = []
+    for r in _read_csv(path):
+        try:
+            started = parse_iso(r["commence_utc"]) <= now
+        except (KeyError, ValueError):
+            started = True
+        if r.get("event_id") != event_id and not started:
+            keep.append(r)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".tmp")
+    with tmp.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=LINK_FIELDS, extrasaction="ignore")
+        w.writeheader()
+        w.writerows(keep + rows)
+    tmp.replace(path)
+
+
 PROBE_EVERY = timedelta(days=7)
 
 
@@ -323,15 +369,26 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
             tried.add(lab)
             key = dict(keys)[lab]
             captured = iso(utcnow())
-            code, body, h = _get(f"{BASE}/events/{ev['id']}/odds", {
-                "apiKey": key, "bookmakers": ",".join(BOOKS), "markets": ",".join(markets),
-                "oddsFormat": "american", "dateFormat": "iso"})
+            params = {"apiKey": key, "bookmakers": ",".join(BOOKS), "markets": ",".join(markets),
+                      "oddsFormat": "american", "dateFormat": "iso"}
+            if LINKS_ENABLED:
+                params["includeLinks"] = "true"
+            code, body, h = _get(f"{BASE}/events/{ev['id']}/odds", params)
+            if LINKS_ENABLED and code not in (200, 401, 429):
+                # The link option must never cost us a line: if the request fails with it, ask again without.
+                params.pop("includeLinks", None)
+                code, body, h = _get(f"{BASE}/events/{ev['id']}/odds", params)
             last, rem_after = _credits(h)
             if rem_after is not None:
                 remaining[lab] = rem_after
             used = lab
             if code == 200:
                 rows = parse_event_props(body, captured, mins, ptype)
+                if LINKS_ENABLED and rows:
+                    try:   # links are optional: any problem here is ignored
+                        save_links(data_dir, ev["id"], parse_event_links(body, captured, ptype), now)
+                    except Exception as e:
+                        summary["errors"].append(f"links: {type(e).__name__}")
                 status = "ok" if rows else "empty"
                 note = "" if rows else "no props posted yet"
                 break

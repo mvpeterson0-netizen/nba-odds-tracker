@@ -137,3 +137,29 @@ def test_load_keys_deduplicates_and_keeps_paid_last():
     assert props.load_keys({'ODDS_API_KEY': ' paid ', 'ODDS_API_KEY_2': 'free',
                             'ODDS_API_KEY_3': 'free', 'ODDS_API_KEY_20K': 'paid'}) == [
         ('ODDS_API_KEY_2', 'free'), ('ODDS_API_KEY_20K', 'paid')]
+
+
+def test_fanduel_links_requested_and_saved_latest_only(tmp_path, monkeypatch):
+    import csv
+    odds = {**EVENT_ODDS, "bookmakers": EVENT_ODDS["bookmakers"] + [{"key": "fanduel", "markets": [
+        {"key": "player_points", "last_update": "x", "outcomes": [
+            {"name": "Over", "description": "Nikola Jokic", "price": -110, "point": 27.5,
+             "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=1&selectionId=2"},
+            {"name": "Under", "description": "Nikola Jokic", "price": -110, "point": 27.5}]}]}]}
+    seen = []
+
+    def fake_get(url, params, timeout=25.0):
+        if url.endswith("/events"):
+            return 200, EVENTS, {"x-requests-remaining": "400", "x-requests-last": "0"}
+        if url.endswith("/markets"):
+            return 200, {"bookmakers": []}, {"x-requests-remaining": "400", "x-requests-last": "1"}
+        seen.append(params.get("includeLinks"))
+        return 200, odds, {"x-requests-remaining": "396", "x-requests-last": "1"}
+    monkeypatch.setattr(props, "_get", fake_get)
+    props.run(tmp_path, [("ODDS_API_KEY", "k")], NOW)
+    assert seen == ["true"]
+    rows = list(csv.DictReader((tmp_path / "prop_links.csv").open()))
+    assert len(rows) == 1 and rows[0]["book"] == "fanduel" and rows[0]["side"] == "Over"   # only linked FanDuel outcomes
+    # a later pull for the same game replaces its rows; a game that has tipped is dropped
+    props.save_links(tmp_path, "soon", props.parse_event_links(odds, "t2", "pregame"), NOW)
+    assert len(list(csv.DictReader((tmp_path / "prop_links.csv").open()))) == 1

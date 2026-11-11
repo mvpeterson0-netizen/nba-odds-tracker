@@ -95,3 +95,23 @@ def test_estimated_combo_carries_8am_line():
     assert e["line"] == 28.5 and e["am"]["line"] == 27.5
     p["player_rebounds"].pop("am")
     assert "am" not in estimate_combo("player_points_rebounds", p)
+
+
+def link_row(side, point, price, url=None, book="fanduel", commence="2026-10-23T01:40:00Z"):
+    return {"event_id": "e1", "commence_utc": commence, "pull_type": "pregame", "captured_at": "2026-10-22T22:50:00Z",
+            "book": book, "market": "player_points", "player": "Nikola Jokić", "side": side, "point": point,
+            "price": price, "outcome_link": url or f"https://sportsbook.fanduel.com/addToBetslip?marketId=1&selectionId={side}"}
+
+
+def test_fanduel_links_before_tip_only(tmp_path):
+    from datetime import datetime, timezone
+    setup(tmp_path, [cap("draftkings", "Over", 27.5, -115)], [box("31")])
+    w(tmp_path / "prop_links.csv", [link_row("Over", 27.5, -112), link_row("Under", 27.5, -108),
+                                    link_row("Over", 29.5, 140), link_row("Over", 27.5, -110, book="draftkings"),
+                                    link_row("Under", 27.5, -110, url="https://evil.example/x")])
+    before = datetime(2026, 10, 22, 23, 0, tzinfo=timezone.utc)
+    fd = build.build(tmp_path, before)["links"]["3112335"]["player_points"]["fanduel"]
+    assert fd["point"] == 27.5 and fd["gid"] == "g1"          # the point with both sides, closest to even money
+    assert fd["o"]["price"] == -112 and fd["u"]["price"] == -108 and "selectionId=Over" in fd["o"]["url"]
+    after = datetime(2026, 10, 23, 2, 0, tzinfo=timezone.utc)
+    assert build.build(tmp_path, after)["links"] == {}          # game has tipped: no links

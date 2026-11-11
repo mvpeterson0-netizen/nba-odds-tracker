@@ -40,3 +40,7 @@ main { padding: 10px 12px 32px; }
 .rfilters { grid-template-columns: 1fr 1fr 1fr; }
 .rfilters select { min-width: 0; font-size: 14px; padding: 8px 4px; }
 .defgrid td, .deftbl td { padding: 5px 5px; }
+
+/* Bet on FanDuel: label on top, Over / Under side by side */
+.betlbl { flex-basis: 100%; }
+.betbtn { flex: 1; justify-content: center; }
