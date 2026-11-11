@@ -1,94 +1,10 @@
 {
-  "fetched_at": "2026-11-11T05:00:32+00:00",
+  "fetched_at": "2026-11-11T05:15:19+00:00",
   "source": "espn",
   "count": 26,
   "game_date": "2026-11-10",
   "division_i_games": 69,
   "rows": [
-    {
-      "game_id": "401909786",
-      "start_utc": "2026-11-11T02:58Z",
-      "short_name": "KU VS UK",
-      "state": "in",
-      "status": "0:59 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "0:59",
-      "venue": "United Center",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN"
-      ],
-      "home": {
-        "team_id": "96",
-        "abbr": "UK",
-        "name": "Kentucky Wildcats",
-        "score": 66,
-        "winner": null,
-        "record": "2-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Zoom Diallo",
-            "value": "24"
-          },
-          "rebounds": {
-            "player": "Malachi Moreno",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Malachi Moreno",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Malachi Moreno",
-            "value": "16 PTS, 8 REB"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 24,
-        "loc": "Kentucky",
-        "nick": "Wildcats"
-      },
-      "away": {
-        "team_id": "2305",
-        "abbr": "KU",
-        "name": "Kansas Jayhawks",
-        "score": 84,
-        "winner": null,
-        "record": "2-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Tre White",
-            "value": "27"
-          },
-          "rebounds": {
-            "player": "Tyran Stokes",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Taylen Kinney",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Tre White",
-            "value": "27 PTS, 6 REB"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 15,
-        "loc": "Kansas",
-        "nick": "Jayhawks"
-      },
-      "espn_line": null,
-      "date": "2026-11-10",
-      "p4": true
-    },
     {
       "game_id": "401906771",
       "start_utc": "2026-11-10T23:00Z",
@@ -504,6 +420,90 @@
         "rank": null,
         "loc": "Northern Arizona",
         "nick": "Lumberjacks"
+      },
+      "espn_line": null,
+      "date": "2026-11-10",
+      "p4": true
+    },
+    {
+      "game_id": "401909786",
+      "start_utc": "2026-11-11T02:58Z",
+      "short_name": "KU VS UK",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "United Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "96",
+        "abbr": "UK",
+        "name": "Kentucky Wildcats",
+        "score": 69,
+        "winner": false,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Zoom Diallo",
+            "value": "24"
+          },
+          "rebounds": {
+            "player": "Malachi Moreno",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Malachi Moreno",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Malachi Moreno",
+            "value": "19 PTS, 10 REB"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 24,
+        "loc": "Kentucky",
+        "nick": "Wildcats"
+      },
+      "away": {
+        "team_id": "2305",
+        "abbr": "KU",
+        "name": "Kansas Jayhawks",
+        "score": 89,
+        "winner": true,
+        "record": "3-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Tre White",
+            "value": "30"
+          },
+          "rebounds": {
+            "player": "Tyran Stokes",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Taylen Kinney",
+            "value": "8"
+          },
+          "rating": {
+            "player": "Tre White",
+            "value": "30 PTS, 6 REB"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 15,
+        "loc": "Kansas",
+        "nick": "Jayhawks"
       },
       "espn_line": null,
       "date": "2026-11-10",
