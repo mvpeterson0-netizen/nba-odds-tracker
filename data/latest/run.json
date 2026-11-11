@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-11T13:00:23+00:00",
+  "finished_at": "2026-11-11T13:15:28+00:00",
   "game_date": "2026-11-11",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "ok",
+    "odds": "not_due",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -26,85 +26,14 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 105,
+      "ODDS_API_KEY": 102,
       "ODDS_API_KEY_2": 106,
-      "ODDS_API_KEY_20K": 14915
+      "ODDS_API_KEY_20K": 14908
     },
-    "pulled": [
-      {
-        "matchup": "Boston Celtics @ Toronto Raptors",
-        "type": "morning",
-        "status": "ok",
-        "rows": 140,
-        "markets": 4
-      },
-      {
-        "matchup": "Cleveland Cavaliers @ New York Knicks",
-        "type": "morning",
-        "status": "ok",
-        "rows": 180,
-        "markets": 4
-      },
-      {
-        "matchup": "Washington Wizards @ Indiana Pacers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 168,
-        "markets": 4
-      },
-      {
-        "matchup": "Brooklyn Nets @ New Orleans Pelicans",
-        "type": "morning",
-        "status": "ok",
-        "rows": 192,
-        "markets": 4
-      },
-      {
-        "matchup": "San Antonio Spurs @ Chicago Bulls",
-        "type": "morning",
-        "status": "ok",
-        "rows": 162,
-        "markets": 4
-      },
-      {
-        "matchup": "Denver Nuggets @ Memphis Grizzlies",
-        "type": "morning",
-        "status": "ok",
-        "rows": 180,
-        "markets": 4
-      },
-      {
-        "matchup": "Los Angeles Lakers @ Milwaukee Bucks",
-        "type": "morning",
-        "status": "ok",
-        "rows": 158,
-        "markets": 4
-      },
-      {
-        "matchup": "Orlando Magic @ Utah Jazz",
-        "type": "morning",
-        "status": "ok",
-        "rows": 52,
-        "markets": 4
-      },
-      {
-        "matchup": "Golden State Warriors @ Houston Rockets",
-        "type": "morning",
-        "status": "ok",
-        "rows": 182,
-        "markets": 4
-      },
-      {
-        "matchup": "Oklahoma City Thunder @ Portland Trail Blazers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 132,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 10,
+    "due": 0,
     "pregame_pulled": false,
     "status": "ok"
   }
