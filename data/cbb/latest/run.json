@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-11T13:45:22+00:00",
+  "finished_at": "2026-11-11T14:00:26+00:00",
   "game_date": "2026-11-11",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -28,20 +28,78 @@
     "keys": 3,
     "credits": {
       "ODDS_API_KEY": 102,
-      "ODDS_API_KEY_2": 106,
+      "ODDS_API_KEY_2": 104,
       "ODDS_API_KEY_20K": 14901
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Marquette Golden Eagles @ Michigan Wolverines",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "South Carolina St Bulldogs @ Notre Dame Fighting Irish",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Saint Peter's Peacocks @ South Carolina Gamecocks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Robert Morris Colonials @ Arkansas Razorbacks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Jacksonville St Gamecocks @ Houston Cougars",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Arkansas-Pine Bluff Golden Lions @ UCLA Bruins",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Lindenwood Lions @ Nebraska Cornhuskers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Miss Valley St Delta Devils @ Oregon Ducks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "USC Trojans @ California Golden Bears",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 48,
     "p4_events": 9,
     "unmatched": [],
-    "due": 0,
+    "due": 9,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
-      "morning_due": false,
-      "pregame_due": 0
+      "status": "ok",
+      "morning_due": true,
+      "pregame_due": 0,
+      "pull_type": "morning",
+      "rows": 72,
+      "credits_last": 2
     },
     "status": "ok"
   }
