@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-11T03:00:30+00:00",
+  "finished_at": "2026-11-11T03:15:18+00:00",
   "game_date": "2026-11-10",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -30,19 +30,11 @@
       "ODDS_API_KEY_2": 126,
       "ODDS_API_KEY_20K": 14971
     },
-    "pulled": [
-      {
-        "matchup": "Oklahoma City Thunder @ Portland Trail Blazers",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 192,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
