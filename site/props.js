@@ -311,6 +311,25 @@ function chartSVG(aid, mk) {
     if (p) text += `<text x="${p.x}" y="${p.y}" stroke="var(--panel)" stroke-width="4" paint-order="stroke" stroke-linejoin="round" font-size="${fs}" text-anchor="middle" fill="var(--muted)"${r.pend ? ' font-style="italic"' : ""}>${n1(l.line)}</text>`; });
   return s + marks + text + `</svg>`;
 }
+// "Bet on FanDuel": Over / Under buttons that open FanDuel with that bet on the slip (addToBetslip?marketId=…&selectionId=…,
+// from the latest FanDuel pull; built in nba_tracker/build.py from data/prop_links.csv). Ported from the NFL tracker (Stix).
+// Shown before tip when FanDuel had the player's line in that pull (core markets only: pts, reb, ast, 3PM; combos are
+// estimated here, so they have no link). FanDuel's link names the market and side, not a number, so the buttons show the
+// line and odds FanDuel had at the last pull; FanDuel's slip shows whatever it is posting now.
+const FD_SLIP = /^https:\/\/sportsbook\.fanduel\.com\/addToBetslip\?/;
+function betBox(aid, mk) {
+  if (MODE !== "nba") return "";
+  const e = ((((PX().links || {})[aid] || {})[mk]) || {}).fanduel;
+  if (!e) return "";
+  const o = e.o && FD_SLIP.test(e.o.url || "") ? e.o : null, u = e.u && FD_SLIP.test(e.u.url || "") ? e.u : null;
+  if (!o && !u) return "";
+  const g = gameOf(e.gid);
+  if (!g.start || new Date(g.start) <= new Date() || g.final) return "";
+  const a = (side, x) => x ? `<a class="betbtn" href="${esc(x.url)}" target="_blank" rel="noopener" title="Opens FanDuel with this bet on the slip">${side} ${n1(e.point)} <span class="muted">${x.price == null ? "" : am(x.price)}</span> ↗</a>` : "";
+  return `<div class="betbox"><span class="betlbl">Bet on FanDuel</span>${a("Over", o)}${a("Under", u)}
+    <span class="betnote muted small">As of ${esc(fmtTime(e.cap))}. FanDuel's slip shows its current line.</span></div>`;
+}
+
 function viewPlayer(aid, sub) {
   aid = decodeURIComponent(aid || "");
   // #/player/<id>/<market> opens with that market selected (applied once per visit, so tabs still work).
@@ -333,6 +352,7 @@ function viewPlayer(aid, sub) {
       <div><span>HIT</span>${hitHtml(f)}<small>over line</small></div>
       <div><span>TREND</span>${trendHtml(f, true)}</div>
     </div>
+    ${betBox(aid, mk)}
   `;
   // NBA: the line-vs-opponent-defense chart replaces the plain "by game" chart; fall back to the plain one when it can't be drawn
   const defPanel = MODE === "nba" ? defTrendPanel(aid, mk) : "";

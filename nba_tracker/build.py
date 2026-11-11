@@ -2,6 +2,8 @@
 
     python -m nba_tracker.build [data_dir] [out_dir]
 
+Also writes "links": FanDuel bet-slip links from data/prop_links.csv for games that haven't tipped.
+
 Grading (same rules as the NFL tracker):
   - Line: the last pre-game capture for the game. DraftKings is primary; FanDuel when
     DraftKings has no line for that player and market. Both books are kept.
@@ -108,7 +110,53 @@ def _json(path: Path, default):
         return default
 
 
-def build(data_dir: Path) -> dict:
+FD_SLIP = re.compile(r"^https://sportsbook\.fanduel\.com/addToBetslip\?")
+
+
+def bet_links(rows: list[dict], resolve, now: datetime) -> dict:
+    """FanDuel bet-slip links for games that haven't tipped: {aid: {market: {"fanduel": {point, cap, gid, o, u}}}}.
+    resolve(event_id, home, away, commence, player) -> (gid, aid) or None. Latest pull per game (data/prop_links.csv);
+    one point per player/market (the one with both sides and prices closest to even money). Only FanDuel slip links
+    are kept. The link names the market and side, not a number, so the button shows the line FanDuel had in that pull."""
+    grouped: dict[tuple, dict] = defaultdict(lambda: defaultdict(dict))   # (gid, aid, mk) -> point -> side -> row
+    for r in rows:
+        side = (r.get("side") or "").lower()
+        if r.get("book") != "fanduel" or side not in ("over", "under") or not FD_SLIP.match(r.get("outcome_link") or ""):
+            continue
+        try:
+            if datetime.fromisoformat(r["commence_utc"].replace("Z", "+00:00")) <= now:
+                continue
+        except (KeyError, ValueError, AttributeError):
+            continue
+        hit = resolve(r["event_id"], r["commence_utc"], r.get("player"))
+        if not hit:
+            continue
+        gid, aid = hit
+        grouped[(gid, aid, r["market"])][r.get("point", "")][side] = r
+    out: dict = {}
+    for (gid, aid, mk), points in grouped.items():
+        both = {pt: v for pt, v in points.items() if "over" in v and "under" in v}
+
+        def balance(item):
+            v = item[1]
+            o, u = _f(v.get("over", {}).get("price")), _f(v.get("under", {}).get("price"))
+            if o is None or u is None:
+                return 1.0
+            pr = lambda a: 100 / (a + 100) if a > 0 else -a / (-a + 100)
+            return abs(pr(o) / (pr(o) + pr(u)) - 0.5)
+
+        pt, sides = sorted((both or points).items(), key=balance)[0]
+        any_row = sides.get("over") or sides.get("under")
+        entry = {"point": _f(pt), "cap": any_row["captured_at"], "gid": gid}
+        for side, key in (("over", "o"), ("under", "u")):
+            if side in sides:
+                entry[key] = {"url": sides[side]["outcome_link"], "price": _f(sides[side].get("price"))}
+        out.setdefault(aid, {}).setdefault(mk, {})["fanduel"] = entry
+    return out
+
+
+def build(data_dir: Path, now: datetime | None = None) -> dict:
+    now = now or datetime.now(timezone.utc)
     caps = _read(data_dir / "prop_captures.csv")
     box = _read(data_dir / "player_games.csv")
     games = _json(data_dir / "games.json", {})
@@ -269,6 +317,27 @@ def build(data_dir: Path) -> dict:
                     grade(est, aid, gid, mk)
                     ms[mk] = est
 
+    # ---- FanDuel bet-slip links (optional: a problem here must never stop the build)
+    try:
+        def resolve(ev, commence, pl):
+            if ev not in ev_game:
+                ca = next((c for c in caps if c["event_id"] == ev), None)
+                ev_game[ev] = game_for(ca["home_team"], ca["away_team"], commence) if ca else None
+            gid = ev_game[ev]
+            if not gid:
+                return None
+            nn = norm_name(pl)
+            aid = by_game_name.get((gid, nn))
+            if not aid:
+                g = games.get(gid, {})
+                cands = [a for a in name_idx.get(nn, ()) if players[a]["team"] in (g.get("home"), g.get("away"))]
+                cands = cands or list(name_idx.get(nn, ()))
+                aid = cands[0] if len(cands) == 1 else "n:" + nn if "n:" + nn in players else None
+            return (gid, aid) if aid else None
+        links = bet_links(_read(data_dir / "prop_links.csv"), resolve, now)
+    except Exception:
+        links = {}
+
     pull_log = _read(data_dir / "pull_log.csv")
     return {
         "generated_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -277,6 +346,7 @@ def build(data_dir: Path) -> dict:
         "players": players,
         "logs": logs,
         "lines": lines,
+        "links": links,
         "pulls": pull_log[-60:],
         "unmatched": {"games": sorted(unmatched_games), "players": sorted(unmatched_players)},
     }

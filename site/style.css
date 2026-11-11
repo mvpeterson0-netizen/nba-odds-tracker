@@ -276,3 +276,10 @@ ul.nolines .gline { margin-left: 4px; }
 .rseason td.rc.even { background: transparent; }
 .rseason td.rc small { display: block; }
 .rseason .rname .nm { font-weight: 600; }
+
+/* Bet on FanDuel (bet-slip links, player pages) */
+.betbox { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 10px 0; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+.betlbl { font-weight: 600; font-size: 14px; }
+.betbtn { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 4px 12px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); font-weight: 600; white-space: nowrap; }
+.betbtn:hover { text-decoration: none; background: var(--hover); }
+.betnote { flex-basis: 100%; }
