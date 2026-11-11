@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-11T01:00:18+00:00",
+  "fetched_at": "2026-11-11T01:15:17+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-10",
@@ -9,10 +9,10 @@
       "start_utc": "2026-11-11T00:30Z",
       "short_name": "MIL @ NY",
       "state": "in",
-      "status": "2:23 - 1st",
+      "status": "8:22 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "2:23",
+      "period": 2,
+      "clock": "8:22",
       "venue": "Madison Square Garden",
       "neutral_site": false,
       "broadcasts": [
@@ -23,19 +23,19 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 23,
+        "score": 36,
         "winner": null,
         "record": "5-4",
         "home_record": "3-2",
         "away_record": "2-2",
         "leaders": {
           "points": {
-            "player": "Landry Shamet",
-            "value": "6"
+            "player": "OG Anunoby",
+            "value": "7"
           },
           "rebounds": {
             "player": "Karl-Anthony Towns",
-            "value": "5"
+            "value": "7"
           },
           "assists": {
             "player": "Landry Shamet",
@@ -51,7 +51,7 @@
         "team_id": "15",
         "abbr": "MIL",
         "name": "Milwaukee Bucks",
-        "score": 16,
+        "score": 23,
         "winner": null,
         "record": "1-9",
         "home_record": "1-5",
@@ -81,11 +81,11 @@
       "game_id": "401909961",
       "start_utc": "2026-11-11T01:00Z",
       "short_name": "BOS @ PHI",
-      "state": "pre",
-      "status": "11/10 - 8:00 PM EST",
+      "state": "in",
+      "status": "10:56 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:56",
       "venue": "Xfinity Mobile Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -101,21 +101,13 @@
         "home_record": "4-1",
         "away_record": "5-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tyrese Maxey",
-            "value": "26.9"
-          },
-          "reboundsPerGame": {
-            "player": "Joel Embiid",
-            "value": "9.7"
-          },
-          "assistsPerGame": {
-            "player": "LeBron James",
-            "value": "6.7"
+          "rebounds": {
+            "player": "VJ Edgecombe",
+            "value": "1"
           },
           "rating": {
-            "player": "Tyrese Maxey",
-            "value": "26.9 PPG, 3.7 RPG, 5.5 APG, 1.4 SPG, 0.6 BPG"
+            "player": "VJ Edgecombe",
+            "value": "1 REB"
           }
         }
       },
@@ -123,36 +115,27 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "8-2",
         "home_record": "5-0",
         "away_record": "3-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jayson Tatum",
-            "value": "27.1"
+          "points": {
+            "player": "Paul George",
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Neemias Queta",
-            "value": "6.2"
-          },
-          "assistsPerGame": {
-            "player": "Jayson Tatum",
-            "value": "7.8"
+          "rebounds": {
+            "player": "Jordan Walsh",
+            "value": "1"
           },
           "rating": {
-            "player": "Jayson Tatum",
-            "value": "27.1 PPG, 6.0 RPG, 7.8 APG, 0.8 SPG, 0.6 BPG"
+            "player": "Paul George",
+            "value": "2 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "BOS -1.5",
-        "spread": 1.5,
-        "over_under": 216.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909962",
@@ -306,9 +289,9 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "MIA -6.5",
-        "spread": 6.5,
-        "over_under": 226.5
+        "details": "MIA -8.5",
+        "spread": 8.5,
+        "over_under": 227.5
       }
     },
     {
