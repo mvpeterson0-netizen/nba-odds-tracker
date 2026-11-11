@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-11T05:15:15+00:00",
+  "fetched_at": "2026-11-11T05:30:17+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-10",
@@ -300,11 +300,11 @@
       "game_id": "401909964",
       "start_utc": "2026-11-11T03:00Z",
       "short_name": "ORL @ SAC",
-      "state": "in",
-      "status": "3:08 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "3:08",
+      "clock": "0.0",
       "venue": "Golden 1 Center",
       "neutral_site": false,
       "broadcasts": null,
@@ -312,27 +312,27 @@
         "team_id": "23",
         "abbr": "SAC",
         "name": "Sacramento Kings",
-        "score": 90,
-        "winner": null,
-        "record": "1-9",
-        "home_record": "0-5",
+        "score": 100,
+        "winner": false,
+        "record": "1-10",
+        "home_record": "0-6",
         "away_record": "1-4",
         "leaders": {
           "points": {
-            "player": "Darius Acuff Jr.",
-            "value": "29"
+            "player": "Zach LaVine",
+            "value": "31"
           },
           "rebounds": {
             "player": "Dylan Cardwell",
-            "value": "11"
+            "value": "12"
           },
           "assists": {
             "player": "Darius Acuff Jr.",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
-            "player": "Darius Acuff Jr.",
-            "value": "29 PTS"
+            "player": "Zach LaVine",
+            "value": "31 PTS"
           }
         }
       },
@@ -340,15 +340,15 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 101,
-        "winner": null,
-        "record": "2-7",
+        "score": 107,
+        "winner": true,
+        "record": "3-7",
         "home_record": "0-4",
-        "away_record": "2-3",
+        "away_record": "3-3",
         "leaders": {
           "points": {
             "player": "Franz Wagner",
-            "value": "31"
+            "value": "33"
           },
           "rebounds": {
             "player": "Wendell Carter Jr.",
@@ -356,11 +356,11 @@
           },
           "assists": {
             "player": "Franz Wagner",
-            "value": "6"
+            "value": "7"
           },
           "rating": {
             "player": "Franz Wagner",
-            "value": "31 PTS, 6 REB, 6 AST"
+            "value": "33 PTS, 7 REB, 7 AST"
           }
         }
       },
@@ -371,9 +371,9 @@
       "start_utc": "2026-11-11T04:00Z",
       "short_name": "OKC @ POR",
       "state": "in",
-      "status": "Halftime",
+      "status": "0.0 - 3rd",
       "completed": false,
-      "period": 2,
+      "period": 3,
       "clock": "0.0",
       "venue": "Moda Center",
       "neutral_site": false,
@@ -386,7 +386,7 @@
         "team_id": "22",
         "abbr": "POR",
         "name": "Portland Trail Blazers",
-        "score": 59,
+        "score": 62,
         "winner": null,
         "record": "6-3",
         "home_record": "1-2",
