@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-11T22:15:16+00:00",
+  "fetched_at": "2026-11-11T22:30:17+00:00",
   "source": "espn",
-  "count": 99,
+  "count": 101,
   "rows": [
     {
       "team_id": "1",
@@ -259,6 +259,20 @@
       "team_id": "6",
       "team": "Dallas Mavericks",
       "team_abbr": "DAL",
+      "player_id": "4683688",
+      "player": "Dereck Lively II",
+      "position": "C",
+      "status": "Out",
+      "injury": "Foot",
+      "return_date": "2026-11-18",
+      "comment": "Lively (foot) is listed as out for Thursday's game in Minnesota.",
+      "updated": "2026-11-11T22:13Z",
+      "url": "https://www.espn.com/nba/player/news/_/id/4683688/dereck-lively-ii"
+    },
+    {
+      "team_id": "6",
+      "team": "Dallas Mavericks",
+      "team_abbr": "DAL",
       "player_id": "5148538",
       "player": "Tarik Biberovic",
       "position": "F",
@@ -296,20 +310,6 @@
       "comment": "Johnson (shin) is listed as probable for Thursday's game against Minnesota.",
       "updated": "2026-11-11T22:08Z",
       "url": "https://www.espn.com/nba/player/news/_/id/4873153/morez-johnson-jr"
-    },
-    {
-      "team_id": "6",
-      "team": "Dallas Mavericks",
-      "team_abbr": "DAL",
-      "player_id": "4683688",
-      "player": "Dereck Lively II",
-      "position": "C",
-      "status": "Out",
-      "injury": "Foot",
-      "return_date": "2026-11-18",
-      "comment": "Lively (foot) is listed as out for Monday's game against the Kings.",
-      "updated": "2026-11-01T22:57Z",
-      "url": "https://www.espn.com/nba/player/news/_/id/4683688/dereck-lively-ii"
     },
     {
       "team_id": "7",
@@ -1007,9 +1007,37 @@
       "status": "Out",
       "injury": "Back",
       "return_date": "2026-11-18",
-      "comment": "Bona (back) is out for Tuesday's game against the Celtics.",
-      "updated": "2026-11-09T22:03Z",
+      "comment": "Bona (back) is out for Thursday's game against the Raptors, Kyle Neubeck of AllPHLY.com reports.",
+      "updated": "2026-11-11T22:10Z",
       "url": "https://www.espn.com/nba/player/news/_/id/5105637/adem-bona"
+    },
+    {
+      "team_id": "20",
+      "team": "Philadelphia 76ers",
+      "team_abbr": "PHI",
+      "player_id": "3059318",
+      "player": "Joel Embiid",
+      "position": "C",
+      "status": "Day-To-Day",
+      "injury": "Foot",
+      "return_date": "2026-11-12",
+      "comment": "Embiid (foot) is listed as questionable for Thursday's game against Toronto, Adam Aaronson of PhillyVoice.com reports.",
+      "updated": "2026-11-11T22:06Z",
+      "url": "https://www.espn.com/nba/player/news/_/id/3059318/joel-embiid"
+    },
+    {
+      "team_id": "20",
+      "team": "Philadelphia 76ers",
+      "team_abbr": "PHI",
+      "player_id": "1966",
+      "player": "LeBron James",
+      "position": "F",
+      "status": "Day-To-Day",
+      "injury": "Back",
+      "return_date": "2026-11-12",
+      "comment": "James (back) is questionable for Thursday's game against the Raptors, Kyle Neubeck of AllPHLY.com reports.",
+      "updated": "2026-11-11T22:06Z",
+      "url": "https://www.espn.com/nba/player/news/_/id/1966/lebron-james"
     },
     {
       "team_id": "20",
@@ -1215,8 +1243,8 @@
       "player": "Collin Murray-Boyles",
       "position": "F",
       "status": "Day-To-Day",
-      "injury": "Illness",
-      "return_date": "2026-11-11",
+      "injury": "INJURY_STATUS_DAYTODAY",
+      "return_date": null,
       "comment": "Murray-Boyles (illness) is questionable for Wednesday's game against the Celtics.",
       "updated": "2026-11-10T21:51Z",
       "url": "https://www.espn.com/nba/player/news/_/id/5093267/collin-murray-boyles"
@@ -1229,8 +1257,8 @@
       "player": "Immanuel Quickley",
       "position": "G",
       "status": "Day-To-Day",
-      "injury": "Hamstring",
-      "return_date": "2026-11-11",
+      "injury": "INJURY_STATUS_DAYTODAY",
+      "return_date": null,
       "comment": "Quickley (hamstring) is questionable for Wednesday's game against Boston.",
       "updated": "2026-11-10T21:49Z",
       "url": "https://www.espn.com/nba/player/news/_/id/4395724/immanuel-quickley"
