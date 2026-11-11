@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-11T03:15:13+00:00",
+  "fetched_at": "2026-11-11T03:30:16+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-10",
@@ -81,11 +81,11 @@
       "game_id": "401909961",
       "start_utc": "2026-11-11T01:00Z",
       "short_name": "BOS @ PHI",
-      "state": "in",
-      "status": "5:35 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "5:35",
+      "clock": "12:00",
       "venue": "Xfinity Mobile Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -95,10 +95,10 @@
         "team_id": "20",
         "abbr": "PHI",
         "name": "Philadelphia 76ers",
-        "score": 87,
-        "winner": null,
-        "record": "9-2",
-        "home_record": "4-1",
+        "score": 101,
+        "winner": false,
+        "record": "9-3",
+        "home_record": "4-2",
         "away_record": "5-1",
         "leaders": {
           "points": {
@@ -123,11 +123,11 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 111,
-        "winner": null,
-        "record": "8-2",
+        "score": 123,
+        "winner": true,
+        "record": "9-2",
         "home_record": "5-0",
-        "away_record": "3-2",
+        "away_record": "4-2",
         "leaders": {
           "points": {
             "player": "Paul George",
@@ -154,10 +154,10 @@
       "start_utc": "2026-11-11T02:00Z",
       "short_name": "LAC @ PHX",
       "state": "in",
-      "status": "Halftime",
+      "status": "8:19 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.1",
+      "period": 3,
+      "clock": "8:19",
       "venue": "Mortgage Matchup Center",
       "neutral_site": false,
       "broadcasts": [
@@ -169,7 +169,7 @@
         "team_id": "21",
         "abbr": "PHX",
         "name": "Phoenix Suns",
-        "score": 64,
+        "score": 78,
         "winner": null,
         "record": "3-6",
         "home_record": "3-3",
@@ -184,7 +184,7 @@
             "value": "6"
           },
           "assists": {
-            "player": "Collin Gillespie",
+            "player": "Devin Booker",
             "value": "4"
           },
           "rating": {
@@ -197,15 +197,15 @@
         "team_id": "12",
         "abbr": "LAC",
         "name": "LA Clippers",
-        "score": 47,
+        "score": 56,
         "winner": null,
         "record": "2-7",
         "home_record": "2-3",
         "away_record": "0-4",
         "leaders": {
           "points": {
-            "player": "Darius Garland",
-            "value": "11"
+            "player": "Rui Hachimura",
+            "value": "13"
           },
           "rebounds": {
             "player": "Rui Hachimura",
@@ -213,11 +213,11 @@
           },
           "assists": {
             "player": "Darius Garland",
-            "value": "4"
+            "value": "6"
           },
           "rating": {
             "player": "Darius Garland",
-            "value": "11 PTS"
+            "value": "13 PTS, 6 AST"
           }
         }
       },
@@ -228,10 +228,10 @@
       "start_utc": "2026-11-11T02:00Z",
       "short_name": "MIA @ UTAH",
       "state": "in",
-      "status": "2:01 - 2nd",
+      "status": "Halftime",
       "completed": false,
       "period": 2,
-      "clock": "2:01",
+      "clock": "0.0",
       "venue": "Delta Center",
       "neutral_site": false,
       "broadcasts": [
@@ -242,7 +242,7 @@
         "team_id": "26",
         "abbr": "UTAH",
         "name": "Utah Jazz",
-        "score": 45,
+        "score": 54,
         "winner": null,
         "record": "1-9",
         "home_record": "1-4",
@@ -250,7 +250,7 @@
         "leaders": {
           "points": {
             "player": "Darryn Peterson",
-            "value": "12"
+            "value": "14"
           },
           "rebounds": {
             "player": "Mo Bamba",
@@ -262,7 +262,7 @@
           },
           "rating": {
             "player": "Darryn Peterson",
-            "value": "12 PTS"
+            "value": "14 PTS"
           }
         }
       },
@@ -270,7 +270,7 @@
         "team_id": "14",
         "abbr": "MIA",
         "name": "Miami Heat",
-        "score": 58,
+        "score": 64,
         "winner": null,
         "record": "4-6",
         "home_record": "1-3",
@@ -286,7 +286,7 @@
           },
           "assists": {
             "player": "Davion Mitchell",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Giannis Antetokounmpo",
@@ -301,10 +301,10 @@
       "start_utc": "2026-11-11T03:00Z",
       "short_name": "ORL @ SAC",
       "state": "in",
-      "status": "8:15 - 1st",
+      "status": "2:46 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "8:15",
+      "clock": "2:46",
       "venue": "Golden 1 Center",
       "neutral_site": false,
       "broadcasts": null,
@@ -312,27 +312,27 @@
         "team_id": "23",
         "abbr": "SAC",
         "name": "Sacramento Kings",
-        "score": 9,
+        "score": 18,
         "winner": null,
         "record": "1-9",
         "home_record": "0-5",
         "away_record": "1-4",
         "leaders": {
           "points": {
-            "player": "Darius Acuff Jr.",
-            "value": "4"
+            "player": "De'Andre Hunter",
+            "value": "7"
           },
           "rebounds": {
-            "player": "Precious Achiuwa",
+            "player": "Darius Acuff Jr.",
             "value": "1"
           },
           "assists": {
-            "player": "De'Andre Hunter",
-            "value": "1"
+            "player": "Domantas Sabonis",
+            "value": "2"
           },
           "rating": {
-            "player": "Darius Acuff Jr.",
-            "value": "4 PTS"
+            "player": "De'Andre Hunter",
+            "value": "7 PTS"
           }
         }
       },
@@ -340,27 +340,27 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 10,
+        "score": 26,
         "winner": null,
         "record": "2-7",
         "home_record": "0-4",
         "away_record": "2-3",
         "leaders": {
           "points": {
-            "player": "Jamal Cain",
-            "value": "3"
+            "player": "Anthony Black",
+            "value": "12"
           },
           "rebounds": {
-            "player": "Jamal Cain",
-            "value": "1"
+            "player": "Wendell Carter Jr.",
+            "value": "2"
           },
           "assists": {
-            "player": "Anthony Black",
-            "value": "1"
+            "player": "Franz Wagner",
+            "value": "3"
           },
           "rating": {
-            "player": "Jamal Cain",
-            "value": "3 PTS"
+            "player": "Anthony Black",
+            "value": "12 PTS"
           }
         }
       },
