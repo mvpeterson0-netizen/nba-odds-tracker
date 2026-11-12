@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-12T22:45:26+00:00",
+  "finished_at": "2026-11-12T23:00:29+00:00",
   "game_date": "2026-11-12",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -26,15 +26,30 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 65,
-      "ODDS_API_KEY_2": 65,
-      "ODDS_API_KEY_20K": 14275
+      "ODDS_API_KEY": 61,
+      "ODDS_API_KEY_2": 61,
+      "ODDS_API_KEY_20K": 14268
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Detroit Pistons @ Washington Wizards",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 180,
+        "markets": 4
+      },
+      {
+        "matchup": "Toronto Raptors @ Philadelphia 76ers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 168,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 2,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
