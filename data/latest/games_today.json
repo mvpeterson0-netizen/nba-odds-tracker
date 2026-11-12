@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-12T03:45:17+00:00",
+  "fetched_at": "2026-11-12T04:00:18+00:00",
   "source": "espn",
   "count": 10,
   "game_date": "2026-11-11",
@@ -430,7 +430,7 @@
           },
           "rating": {
             "player": "Luka Doncic",
-            "value": "32 PTS, 3 STL"
+            "value": "32 PTS"
           }
         }
       },
@@ -515,10 +515,10 @@
       "start_utc": "2026-11-12T02:00Z",
       "short_name": "ORL @ UTAH",
       "state": "in",
-      "status": "4:11 - 3rd",
+      "status": "End of 3rd",
       "completed": false,
       "period": 3,
-      "clock": "4:11",
+      "clock": "0.0",
       "venue": "Delta Center",
       "neutral_site": false,
       "broadcasts": [
@@ -529,7 +529,7 @@
         "team_id": "26",
         "abbr": "UTAH",
         "name": "Utah Jazz",
-        "score": 79,
+        "score": 85,
         "winner": null,
         "record": "1-10",
         "home_record": "1-5",
@@ -540,7 +540,7 @@
             "value": "18"
           },
           "rebounds": {
-            "player": "Keyonte George",
+            "player": "Ace Bailey",
             "value": "7"
           },
           "assists": {
@@ -549,7 +549,7 @@
           },
           "rating": {
             "player": "Ace Bailey",
-            "value": "18 PTS, 6 REB, 3 BLK"
+            "value": "18 PTS, 7 REB, 4 BLK"
           }
         }
       },
@@ -557,7 +557,7 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 82,
+        "score": 85,
         "winner": null,
         "record": "3-7",
         "home_record": "0-4",
@@ -573,7 +573,7 @@
           },
           "assists": {
             "player": "Anthony Black",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
             "player": "Franz Wagner",
@@ -588,10 +588,10 @@
       "start_utc": "2026-11-12T02:30Z",
       "short_name": "GS @ HOU",
       "state": "in",
-      "status": "Halftime",
+      "status": "10:26 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "10:26",
       "venue": "Toyota Center (Houston)",
       "neutral_site": false,
       "broadcasts": [
@@ -601,12 +601,29 @@
         "team_id": "10",
         "abbr": "HOU",
         "name": "Houston Rockets",
-        "score": 56,
+        "score": 60,
         "winner": null,
         "record": "8-3",
         "home_record": "5-1",
         "away_record": "3-2",
-        "leaders": null
+        "leaders": {
+          "points": {
+            "player": "Alperen Sengun",
+            "value": "17"
+          },
+          "rebounds": {
+            "player": "Alperen Sengun",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Alperen Sengun",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Alperen Sengun",
+            "value": "17 PTS, 7 REB"
+          }
+        }
       },
       "away": {
         "team_id": "9",
@@ -617,7 +634,24 @@
         "record": "8-3",
         "home_record": "6-1",
         "away_record": "2-2",
-        "leaders": null
+        "leaders": {
+          "points": {
+            "player": "Yaxel Lendeborg",
+            "value": "18"
+          },
+          "rebounds": {
+            "player": "Yaxel Lendeborg",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Draymond Green",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Yaxel Lendeborg",
+            "value": "18 PTS, 8 REB"
+          }
+        }
       },
       "espn_line": null
     },
@@ -626,10 +660,10 @@
       "start_utc": "2026-11-12T03:00Z",
       "short_name": "OKC @ POR",
       "state": "in",
-      "status": "7:36 - 2nd",
+      "status": "3:00 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "7:36",
+      "clock": "3:00",
       "venue": "Moda Center",
       "neutral_site": false,
       "broadcasts": [
@@ -642,7 +676,7 @@
         "team_id": "22",
         "abbr": "POR",
         "name": "Portland Trail Blazers",
-        "score": 36,
+        "score": 44,
         "winner": null,
         "record": "7-3",
         "home_record": "2-2",
@@ -650,19 +684,19 @@
         "leaders": {
           "points": {
             "player": "Deni Avdija",
-            "value": "9"
+            "value": "12"
           },
           "rebounds": {
-            "player": "Jrue Holiday",
-            "value": "3"
+            "player": "Donovan Clingan",
+            "value": "5"
           },
           "assists": {
             "player": "Deni Avdija",
             "value": "2"
           },
           "rating": {
-            "player": "Toumani Camara",
-            "value": "7 PTS"
+            "player": "Deni Avdija",
+            "value": "12 PTS"
           }
         }
       },
@@ -670,7 +704,7 @@
         "team_id": "25",
         "abbr": "OKC",
         "name": "Oklahoma City Thunder",
-        "score": 41,
+        "score": 45,
         "winner": null,
         "record": "8-3",
         "home_record": "5-0",
@@ -681,8 +715,8 @@
             "value": "12"
           },
           "rebounds": {
-            "player": "Alex Caruso",
-            "value": "3"
+            "player": "Isaiah Hartenstein",
+            "value": "4"
           },
           "assists": {
             "player": "Jared McCain",
