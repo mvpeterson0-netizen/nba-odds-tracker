@@ -1,103 +1,19 @@
 {
-  "fetched_at": "2026-11-12T03:00:23+00:00",
+  "fetched_at": "2026-11-12T03:15:19+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-11",
   "division_i_games": 67,
   "rows": [
     {
-      "game_id": "401925702",
-      "start_utc": "2026-11-12T01:00Z",
-      "short_name": "JXST @ HOU",
-      "state": "in",
-      "status": "5:12 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "5:12",
-      "venue": "Fertitta Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "home": {
-        "team_id": "248",
-        "abbr": "HOU",
-        "name": "Houston Cougars",
-        "score": 76,
-        "winner": null,
-        "record": "2-0",
-        "home_record": "1-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Dedan Thomas Jr.",
-            "value": "17"
-          },
-          "rebounds": {
-            "player": "Joseph Tugler",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Dedan Thomas Jr.",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Dedan Thomas Jr.",
-            "value": "17 PTS, 7 AST"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 8,
-        "loc": "Houston",
-        "nick": "Cougars"
-      },
-      "away": {
-        "team_id": "55",
-        "abbr": "JXST",
-        "name": "Jacksonville State Gamecocks",
-        "score": 41,
-        "winner": null,
-        "record": "1-1",
-        "home_record": "1-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Jordan Stiemke",
-            "value": "10"
-          },
-          "rebounds": {
-            "player": "Jordan Stiemke",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Leon Horner",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Jordan Stiemke",
-            "value": "10 PTS, 7 REB"
-          }
-        },
-        "conf_id": "11",
-        "conf": null,
-        "rank": null,
-        "loc": "Jacksonville State",
-        "nick": "Gamecocks"
-      },
-      "espn_line": null,
-      "date": "2026-11-11",
-      "p4": true
-    },
-    {
       "game_id": "401930177",
       "start_utc": "2026-11-12T02:00Z",
       "short_name": "UAPB @ UCLA",
       "state": "in",
-      "status": "0:59 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "0:59",
+      "clock": "0:00",
       "venue": "Pauley Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +23,7 @@
         "team_id": "26",
         "abbr": "UCLA",
         "name": "UCLA Bruins",
-        "score": 48,
+        "score": 51,
         "winner": null,
         "record": "2-0",
         "home_record": "1-0",
@@ -123,7 +39,7 @@
           },
           "assists": {
             "player": "Trent Perry",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Trent Perry",
@@ -178,10 +94,10 @@
       "start_utc": "2026-11-12T02:00Z",
       "short_name": "LIN @ NEB",
       "state": "in",
-      "status": "Halftime",
+      "status": "18:01 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "18:01",
       "venue": "Pinnacle Bank Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -191,7 +107,7 @@
         "team_id": "158",
         "abbr": "NEB",
         "name": "Nebraska Cornhuskers",
-        "score": 61,
+        "score": 63,
         "winner": null,
         "record": "2-0",
         "home_record": "1-0",
@@ -224,18 +140,18 @@
         "team_id": "2815",
         "abbr": "LIN",
         "name": "Lindenwood Lions",
-        "score": 32,
+        "score": 34,
         "winner": null,
         "record": "2-1",
         "home_record": "2-0",
         "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "Malek Archie",
+            "player": "Makhan Diouf",
             "value": "7"
           },
           "rebounds": {
-            "player": "Shamiere Green",
+            "player": "Makhan Diouf",
             "value": "3"
           },
           "assists": {
@@ -243,8 +159,8 @@
             "value": "2"
           },
           "rating": {
-            "player": "Shamiere Green",
-            "value": "4 PTS"
+            "player": "Makhan Diouf",
+            "value": "7 PTS"
           }
         },
         "conf_id": "20",
@@ -252,6 +168,170 @@
         "rank": null,
         "loc": "Lindenwood",
         "nick": "Lions"
+      },
+      "espn_line": null,
+      "date": "2026-11-11",
+      "p4": true
+    },
+    {
+      "game_id": "401925738",
+      "start_utc": "2026-11-12T03:00Z",
+      "short_name": "MVSU @ ORE",
+      "state": "in",
+      "status": "14:28 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "14:28",
+      "venue": "Matthew Knight Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "B1G+"
+      ],
+      "home": {
+        "team_id": "2483",
+        "abbr": "ORE",
+        "name": "Oregon Ducks",
+        "score": 12,
+        "winner": null,
+        "record": "2-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Jasper Johnson",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Malique Ewin",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Fred Payne",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Jasper Johnson",
+            "value": "6 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Oregon",
+        "nick": "Ducks"
+      },
+      "away": {
+        "team_id": "2400",
+        "abbr": "MVSU",
+        "name": "Mississippi Valley State Delta Devils",
+        "score": 3,
+        "winner": null,
+        "record": "0-2",
+        "home_record": "0-0",
+        "away_record": "0-2",
+        "leaders": {
+          "points": {
+            "player": "Matt Anglo",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Tymias Williams",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Matt Anglo",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "26",
+        "conf": null,
+        "rank": null,
+        "loc": "Mississippi Valley State",
+        "nick": "Delta Devils"
+      },
+      "espn_line": null,
+      "date": "2026-11-11",
+      "p4": true
+    },
+    {
+      "game_id": "401925702",
+      "start_utc": "2026-11-12T01:00Z",
+      "short_name": "JXST @ HOU",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Fertitta Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "home": {
+        "team_id": "248",
+        "abbr": "HOU",
+        "name": "Houston Cougars",
+        "score": 92,
+        "winner": true,
+        "record": "3-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Dedan Thomas Jr.",
+            "value": "17"
+          },
+          "rebounds": {
+            "player": "Joseph Tugler",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Dedan Thomas Jr.",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Dedan Thomas Jr.",
+            "value": "17 PTS, 7 AST"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 8,
+        "loc": "Houston",
+        "nick": "Cougars"
+      },
+      "away": {
+        "team_id": "55",
+        "abbr": "JXST",
+        "name": "Jacksonville State Gamecocks",
+        "score": 46,
+        "winner": false,
+        "record": "1-2",
+        "home_record": "1-0",
+        "away_record": "0-2",
+        "leaders": {
+          "points": {
+            "player": "Naas Cunningham",
+            "value": "13"
+          },
+          "rebounds": {
+            "player": "Jordan Stiemke",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Leon Horner",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Jordan Stiemke",
+            "value": "10 PTS, 7 REB"
+          }
+        },
+        "conf_id": "11",
+        "conf": null,
+        "rank": null,
+        "loc": "Jacksonville State",
+        "nick": "Gamecocks"
       },
       "espn_line": null,
       "date": "2026-11-11",
@@ -594,87 +674,6 @@
       "p4": true
     },
     {
-      "game_id": "401925738",
-      "start_utc": "2026-11-12T03:00Z",
-      "short_name": "MVSU @ ORE",
-      "state": "pre",
-      "status": "11/11 - 10:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Matthew Knight Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "B1G+"
-      ],
-      "home": {
-        "team_id": "2483",
-        "abbr": "ORE",
-        "name": "Oregon Ducks",
-        "score": 0,
-        "winner": null,
-        "record": "2-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Wei Lin",
-            "value": "15.0"
-          },
-          "reboundsPerGame": {
-            "player": "Malique Ewin",
-            "value": "10.0"
-          },
-          "assistsPerGame": {
-            "player": "Malique Ewin",
-            "value": "4.5"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Oregon",
-        "nick": "Ducks"
-      },
-      "away": {
-        "team_id": "2400",
-        "abbr": "MVSU",
-        "name": "Mississippi Valley State Delta Devils",
-        "score": 0,
-        "winner": null,
-        "record": "0-2",
-        "home_record": "0-0",
-        "away_record": "0-2",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "AJ Abrams",
-            "value": "13.5"
-          },
-          "reboundsPerGame": {
-            "player": "Tymias Williams",
-            "value": "8.5"
-          },
-          "assistsPerGame": {
-            "player": "Eli Pippins",
-            "value": "2.5"
-          }
-        },
-        "conf_id": "26",
-        "conf": null,
-        "rank": null,
-        "loc": "Mississippi Valley State",
-        "nick": "Delta Devils"
-      },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "ORE -33.5",
-        "spread": -33.5,
-        "over_under": 150.5
-      },
-      "date": "2026-11-11",
-      "p4": true
-    },
-    {
       "game_id": "401918054",
       "start_utc": "2026-11-12T04:00Z",
       "short_name": "USC @ CAL",
@@ -747,7 +746,7 @@
         "nick": "Trojans"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "USC -8.5",
         "spread": 8.5,
         "over_under": 159.5
