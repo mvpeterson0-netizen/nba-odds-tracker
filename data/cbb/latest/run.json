@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-12T00:00:28+00:00",
+  "finished_at": "2026-11-12T00:15:20+00:00",
   "game_date": "2026-11-11",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -28,23 +28,57 @@
     "keys": 3,
     "credits": {
       "ODDS_API_KEY": 86,
-      "ODDS_API_KEY_2": 87,
+      "ODDS_API_KEY_2": 86,
       "ODDS_API_KEY_20K": 14697
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Robert Morris Colonials @ Arkansas Razorbacks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Jacksonville St Gamecocks @ Houston Cougars",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Arkansas-Pine Bluff Golden Lions @ UCLA Bruins",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Lindenwood Lions @ Nebraska Cornhuskers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Miss Valley St Delta Devils @ Oregon Ducks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "USC Trojans @ California Golden Bears",
+        "type": "morning",
+        "status": "ok",
+        "rows": 6
+      }
+    ],
     "errors": [],
-    "events": 65,
+    "events": 64,
     "p4_events": 12,
     "unmatched": [],
-    "due": 0,
+    "due": 6,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "not_due",
       "morning_due": false,
-      "pregame_due": 2,
-      "pull_type": "pregame",
-      "rows": 16,
-      "credits_last": 2
+      "pregame_due": 0
     },
     "status": "ok"
   }

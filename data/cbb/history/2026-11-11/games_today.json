@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-12T00:00:26+00:00",
+  "fetched_at": "2026-11-12T00:15:19+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-11",
@@ -9,11 +9,11 @@
       "game_id": "401909524",
       "start_utc": "2026-11-12T00:00Z",
       "short_name": "MARQ @ MICH",
-      "state": "pre",
-      "status": "11/11 - 7:00 PM EST",
+      "state": "in",
+      "status": "14:21 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "14:21",
       "venue": "Crisler Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,23 +23,23 @@
         "team_id": "130",
         "abbr": "MICH",
         "name": "Michigan Wolverines",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Trey McKenney",
-            "value": "19.5"
+          "points": {
+            "player": "Roddy Gayle Jr.",
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "J.P. Estrella",
-            "value": "10.5"
+          "rebounds": {
+            "player": "Moustapha Thiam",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Elliot Cadeau",
-            "value": "4.5"
+          "rating": {
+            "player": "Roddy Gayle Jr.",
+            "value": "4 PTS"
           }
         },
         "conf_id": "7",
@@ -52,23 +52,27 @@
         "team_id": "269",
         "abbr": "MARQ",
         "name": "Marquette Golden Eagles",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
+            "player": "Joshua Clark",
+            "value": "3"
+          },
+          "rebounds": {
             "player": "Royce Parham",
-            "value": "14.0"
+            "value": "1"
           },
-          "reboundsPerGame": {
-            "player": "Sananda Fru",
-            "value": "10.0"
+          "assists": {
+            "player": "Nolan Minessale",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Nigel James Jr.",
-            "value": "5.5"
+          "rating": {
+            "player": "Joshua Clark",
+            "value": "3 PTS"
           }
         },
         "conf_id": "4",
@@ -77,12 +81,7 @@
         "loc": "Marquette",
         "nick": "Golden Eagles"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "MICH -2.5",
-        "spread": -2.5,
-        "over_under": 157.5
-      },
+      "espn_line": null,
       "date": "2026-11-11",
       "p4": true
     },
@@ -90,11 +89,11 @@
       "game_id": "401925682",
       "start_utc": "2026-11-12T00:00Z",
       "short_name": "SCST @ ND",
-      "state": "pre",
-      "status": "11/11 - 7:00 PM EST",
+      "state": "in",
+      "status": "14:42 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "14:42",
       "venue": "Purcell Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -104,23 +103,27 @@
         "team_id": "87",
         "abbr": "ND",
         "name": "Notre Dame Fighting Irish",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Brady Koehler",
-            "value": "15.7"
+          "points": {
+            "player": "Ethan Roberts",
+            "value": "7"
           },
-          "reboundsPerGame": {
-            "player": "Brady Koehler",
-            "value": "6.7"
+          "rebounds": {
+            "player": "Ethan Roberts",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Braeden Smith",
-            "value": "7.0"
+          "assists": {
+            "player": "Brady Koehler",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Ethan Roberts",
+            "value": "7 PTS"
           }
         },
         "conf_id": "2",
@@ -133,23 +136,27 @@
         "team_id": "2569",
         "abbr": "SCST",
         "name": "South Carolina State Bulldogs",
-        "score": 0,
+        "score": 7,
         "winner": null,
         "record": "3-0",
         "home_record": "1-0",
         "away_record": "2-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Noah Treadwell",
-            "value": "15.7"
+          "points": {
+            "player": "Brian Harris",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Chris Parker",
-            "value": "7.0"
-          },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "DeShaun Jackson Jr.",
-            "value": "4.7"
+            "value": "2"
+          },
+          "assists": {
+            "player": "Chris Parker",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Brian Harris",
+            "value": "3 PTS"
           }
         },
         "conf_id": "16",
@@ -158,12 +165,7 @@
         "loc": "South Carolina State",
         "nick": "Bulldogs"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ND -27.5",
-        "spread": -27.5,
-        "over_under": 149.5
-      },
+      "espn_line": null,
       "date": "2026-11-11",
       "p4": true
     },
@@ -171,11 +173,11 @@
       "game_id": "401921821",
       "start_utc": "2026-11-12T00:00Z",
       "short_name": "SPU @ SC",
-      "state": "pre",
-      "status": "11/11 - 7:00 PM EST",
+      "state": "in",
+      "status": "13:30 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "13:30",
       "venue": "Colonial Life Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -185,23 +187,27 @@
         "team_id": "2579",
         "abbr": "SC",
         "name": "South Carolina Gamecocks",
-        "score": 0,
+        "score": 15,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Juan Fernandez",
-            "value": "19.0"
+          "points": {
+            "player": "Aleksas Bieliauskas",
+            "value": "9"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Juan Fernandez",
-            "value": "7.0"
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Kory Mincy",
-            "value": "3.5"
+          "assists": {
+            "player": "Marcus Johnson",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Aleksas Bieliauskas",
+            "value": "9 PTS"
           }
         },
         "conf_id": "23",
@@ -214,23 +220,27 @@
         "team_id": "2612",
         "abbr": "SPU",
         "name": "Saint Peter's Peacocks",
-        "score": 0,
+        "score": 7,
         "winner": null,
         "record": "0-3",
         "home_record": "0-1",
         "away_record": "0-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Bryce Eaton",
-            "value": "15.3"
+          "points": {
+            "player": "Xavier Thomas",
+            "value": "5"
           },
-          "reboundsPerGame": {
-            "player": "Trey Patterson",
-            "value": "5.7"
+          "rebounds": {
+            "player": "Bryson Wilson",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Bryce Eaton",
-            "value": "3.7"
+          "assists": {
+            "player": "Jonathan Noudjihidi",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Xavier Thomas",
+            "value": "5 PTS"
           }
         },
         "conf_id": "13",
@@ -239,12 +249,7 @@
         "loc": "Saint Peter's",
         "nick": "Peacocks"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "SC -21.5",
-        "spread": -21.5,
-        "over_under": 126.5
-      },
+      "espn_line": null,
       "date": "2026-11-11",
       "p4": true
     },
