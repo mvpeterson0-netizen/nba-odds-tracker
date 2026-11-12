@@ -1,8 +1,36 @@
 {
-  "fetched_at": "2026-11-12T23:15:26+00:00",
+  "fetched_at": "2026-11-12T23:30:18+00:00",
   "source": "espn",
-  "count": 103,
+  "count": 104,
   "rows": [
+    {
+      "team_id": "1",
+      "team": "Atlanta Hawks",
+      "team_abbr": "ATL",
+      "player_id": "4585618",
+      "player": "Keshon Gilbert",
+      "position": "G",
+      "status": "Out",
+      "injury": "Knee",
+      "return_date": "2026-11-20",
+      "comment": "Gilbert (knee) has been ruled out for Friday's game against the Bulls.",
+      "updated": "2026-11-12T23:10Z",
+      "url": "https://www.espn.com/nba/player/news/_/id/4585618/keshon-gilbert"
+    },
+    {
+      "team_id": "1",
+      "team": "Atlanta Hawks",
+      "team_abbr": "ATL",
+      "player_id": "4873201",
+      "player": "Asa Newell",
+      "position": "F",
+      "status": "Out",
+      "injury": "Toe",
+      "return_date": "2026-11-20",
+      "comment": "Newell (toe) has been ruled out for Friday's game against Chicago.",
+      "updated": "2026-11-12T23:08Z",
+      "url": "https://www.espn.com/nba/player/news/_/id/4873201/asa-newell"
+    },
     {
       "team_id": "1",
       "team": "Atlanta Hawks",
@@ -16,34 +44,6 @@
       "comment": "Flemings (back) is questionable for Friday's game against the Bulls.",
       "updated": "2026-11-12T23:04Z",
       "url": "https://www.espn.com/nba/player/news/_/id/5149077/kingston-flemings"
-    },
-    {
-      "team_id": "1",
-      "team": "Atlanta Hawks",
-      "team_abbr": "ATL",
-      "player_id": "4873201",
-      "player": "Asa Newell",
-      "position": "F",
-      "status": "Out",
-      "injury": "Toe",
-      "return_date": "2026-11-20",
-      "comment": "Newell (toe) has been ruled out for Monday's game against the Lakers.",
-      "updated": "2026-11-08T22:15Z",
-      "url": "https://www.espn.com/nba/player/news/_/id/4873201/asa-newell"
-    },
-    {
-      "team_id": "1",
-      "team": "Atlanta Hawks",
-      "team_abbr": "ATL",
-      "player_id": "4585618",
-      "player": "Keshon Gilbert",
-      "position": "G",
-      "status": "Out",
-      "injury": "Knee",
-      "return_date": "2026-11-13",
-      "comment": "Gilbert (knee) has been ruled out for Monday's game against the Lakers.",
-      "updated": "2026-11-08T22:13Z",
-      "url": "https://www.espn.com/nba/player/news/_/id/4585618/keshon-gilbert"
     },
     {
       "team_id": "1",
@@ -291,8 +291,8 @@
       "player": "Morez Johnson Jr.",
       "position": "F",
       "status": "Day-To-Day",
-      "injury": "Lower Leg",
-      "return_date": "2026-11-12",
+      "injury": "INJURY_STATUS_DAYTODAY",
+      "return_date": null,
       "comment": "Johnson (shin) is listed as probable for Thursday's game against Minnesota.",
       "updated": "2026-11-11T22:08Z",
       "url": "https://www.espn.com/nba/player/news/_/id/4873153/morez-johnson-jr"
@@ -489,8 +489,8 @@
       "status": "Day-To-Day",
       "injury": "Hamstring",
       "return_date": "2026-11-13",
-      "comment": "McConnell (hamstring) is available for Wednesday's game versus Washington.",
-      "updated": "2026-11-12T23:06Z",
+      "comment": "McConnell is probable for Friday's game against the Knicks due to a right hamstring strain.",
+      "updated": "2026-11-12T23:08Z",
       "url": "https://www.espn.com/nba/player/news/_/id/2530530/tj-mcconnell"
     },
     {
@@ -682,12 +682,26 @@
       "player_id": "4593016",
       "player": "Quinten Post",
       "position": "C",
-      "status": "Day-To-Day",
-      "injury": "Head",
-      "return_date": "2026-11-13",
+      "status": "Out",
+      "injury": "Concussion",
+      "return_date": "2026-11-14",
       "comment": "Post (concussion) has been ruled out for Wednesday's game against the Nuggets.",
-      "updated": "2026-11-12T15:00Z",
+      "updated": "2026-11-12T23:16Z",
       "url": "https://www.espn.com/nba/player/news/_/id/4593016/quinten-post"
+    },
+    {
+      "team_id": "29",
+      "team": "Memphis Grizzlies",
+      "team_abbr": "MEM",
+      "player_id": "4600663",
+      "player": "Zach Edey",
+      "position": "C",
+      "status": "Out",
+      "injury": "Ankle",
+      "return_date": "2026-11-14",
+      "comment": "Edey recorded eight points (2-3 FG, 4-4 FT), nine rebounds, one assist and one block over 23 minutes during Monday's 118-102 victory over the Raptors.",
+      "updated": "2026-11-12T23:14Z",
+      "url": "https://www.espn.com/nba/player/news/_/id/4600663/zach-edey"
     },
     {
       "team_id": "29",
