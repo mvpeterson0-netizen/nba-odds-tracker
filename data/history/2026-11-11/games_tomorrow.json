@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-12T02:30:17+00:00",
+  "fetched_at": "2026-11-12T02:45:15+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-12",
@@ -50,8 +50,8 @@
         "name": "Toronto Raptors",
         "score": 0,
         "winner": null,
-        "record": "5-5",
-        "home_record": "2-2",
+        "record": "5-6",
+        "home_record": "2-3",
         "away_record": "3-3",
         "leaders": {
           "pointsPerGame": {
@@ -144,7 +144,12 @@
           }
         }
       },
-      "espn_line": null
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "DET -9.5",
+        "spread": 9.5,
+        "over_under": 220.5
+      }
     },
     {
       "game_id": "401909978",
@@ -219,7 +224,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MIN -5.5",
         "spread": -5.5,
         "over_under": 226.5
@@ -297,7 +302,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "PHX -7.5",
         "spread": -7.5,
         "over_under": 213.5
