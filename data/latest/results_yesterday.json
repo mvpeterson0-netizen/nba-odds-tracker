@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-12T05:30:16+00:00",
+  "fetched_at": "2026-11-12T05:45:12+00:00",
   "source": "espn",
   "count": 10,
   "game_date": "2026-11-11",
@@ -299,7 +299,7 @@
       "status": "Final",
       "completed": true,
       "period": 4,
-      "clock": "0.0",
+      "clock": "12:00",
       "venue": "FedExForum",
       "neutral_site": false,
       "broadcasts": null,
@@ -444,7 +444,7 @@
       "status": "Final",
       "completed": true,
       "period": 4,
-      "clock": "0.0",
+      "clock": "12:00",
       "venue": "Smoothie King Center",
       "neutral_site": false,
       "broadcasts": [
@@ -659,11 +659,11 @@
       "game_id": "401909975",
       "start_utc": "2026-11-12T03:00Z",
       "short_name": "OKC @ POR",
-      "state": "in",
-      "status": "19.0 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "19.0",
+      "clock": "0.0",
       "venue": "Moda Center",
       "neutral_site": false,
       "broadcasts": [
@@ -677,9 +677,9 @@
         "abbr": "POR",
         "name": "Portland Trail Blazers",
         "score": 118,
-        "winner": null,
-        "record": "7-3",
-        "home_record": "2-2",
+        "winner": true,
+        "record": "8-3",
+        "home_record": "3-2",
         "away_record": "5-1",
         "leaders": {
           "points": {
@@ -705,10 +705,10 @@
         "abbr": "OKC",
         "name": "Oklahoma City Thunder",
         "score": 108,
-        "winner": null,
-        "record": "8-3",
+        "winner": false,
+        "record": "8-4",
         "home_record": "5-0",
-        "away_record": "3-3",
+        "away_record": "3-4",
         "leaders": {
           "points": {
             "player": "Shai Gilgeous-Alexander",
