@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-12T05:00:16+00:00",
+  "fetched_at": "2026-11-12T05:15:16+00:00",
   "source": "espn",
   "count": 10,
   "game_date": "2026-11-11",
@@ -587,11 +587,11 @@
       "game_id": "401909974",
       "start_utc": "2026-11-12T02:30Z",
       "short_name": "GS @ HOU",
-      "state": "in",
-      "status": "4:28 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "4:28",
+      "clock": "0.0",
       "venue": "Toyota Center (Houston)",
       "neutral_site": false,
       "broadcasts": [
@@ -601,19 +601,19 @@
         "team_id": "10",
         "abbr": "HOU",
         "name": "Houston Rockets",
-        "score": 107,
-        "winner": null,
-        "record": "8-3",
-        "home_record": "5-1",
+        "score": 115,
+        "winner": true,
+        "record": "9-3",
+        "home_record": "6-1",
         "away_record": "3-2",
         "leaders": {
           "points": {
-            "player": "Amen Thompson",
-            "value": "19"
+            "player": "Kevin Durant",
+            "value": "20"
           },
           "rebounds": {
             "player": "Alperen Sengun",
-            "value": "11"
+            "value": "13"
           },
           "assists": {
             "player": "Alperen Sengun",
@@ -621,7 +621,7 @@
           },
           "rating": {
             "player": "Alperen Sengun",
-            "value": "18 PTS, 11 REB, 9 AST"
+            "value": "19 PTS, 13 REB, 9 AST"
           }
         }
       },
@@ -629,11 +629,11 @@
         "team_id": "9",
         "abbr": "GS",
         "name": "Golden State Warriors",
-        "score": 93,
-        "winner": null,
-        "record": "8-3",
+        "score": 108,
+        "winner": false,
+        "record": "8-4",
         "home_record": "6-1",
-        "away_record": "2-2",
+        "away_record": "2-3",
         "leaders": {
           "points": {
             "player": "Yaxel Lendeborg",
@@ -648,8 +648,8 @@
             "value": "7"
           },
           "rating": {
-            "player": "Yaxel Lendeborg",
-            "value": "25 PTS, 10 REB"
+            "player": "Brandin Podziemski",
+            "value": "22 PTS, 6 REB"
           }
         }
       },
@@ -660,10 +660,10 @@
       "start_utc": "2026-11-12T03:00Z",
       "short_name": "OKC @ POR",
       "state": "in",
-      "status": "9:33 - 4th",
+      "status": "3:56 - 4th",
       "completed": false,
       "period": 4,
-      "clock": "9:33",
+      "clock": "3:56",
       "venue": "Moda Center",
       "neutral_site": false,
       "broadcasts": [
@@ -676,19 +676,19 @@
         "team_id": "22",
         "abbr": "POR",
         "name": "Portland Trail Blazers",
-        "score": 89,
+        "score": 100,
         "winner": null,
         "record": "7-3",
         "home_record": "2-2",
         "away_record": "5-1",
         "leaders": {
           "points": {
-            "player": "Jrue Holiday",
-            "value": "17"
+            "player": "Deni Avdija",
+            "value": "21"
           },
           "rebounds": {
             "player": "Donovan Clingan",
-            "value": "9"
+            "value": "13"
           },
           "assists": {
             "player": "Deni Avdija",
@@ -696,7 +696,7 @@
           },
           "rating": {
             "player": "Deni Avdija",
-            "value": "17 PTS, 6 AST"
+            "value": "21 PTS, 6 AST, 3 STL"
           }
         }
       },
@@ -704,7 +704,7 @@
         "team_id": "25",
         "abbr": "OKC",
         "name": "Oklahoma City Thunder",
-        "score": 92,
+        "score": 99,
         "winner": null,
         "record": "8-3",
         "home_record": "5-0",
@@ -712,11 +712,11 @@
         "leaders": {
           "points": {
             "player": "Shai Gilgeous-Alexander",
-            "value": "24"
+            "value": "28"
           },
           "rebounds": {
             "player": "Isaiah Hartenstein",
-            "value": "8"
+            "value": "9"
           },
           "assists": {
             "player": "Isaiah Hartenstein",
@@ -724,7 +724,7 @@
           },
           "rating": {
             "player": "Isaiah Hartenstein",
-            "value": "16 PTS, 8 REB, 6 AST"
+            "value": "18 PTS, 9 REB, 6 AST"
           }
         }
       },
