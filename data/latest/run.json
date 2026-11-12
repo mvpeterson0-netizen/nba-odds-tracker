@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-12T01:15:23+00:00",
+  "finished_at": "2026-11-12T01:30:25+00:00",
   "game_date": "2026-11-11",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -26,15 +26,23 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 84,
+      "ODDS_API_KEY": 80,
       "ODDS_API_KEY_2": 82,
-      "ODDS_API_KEY_20K": 14682
+      "ODDS_API_KEY_20K": 14675
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Golden State Warriors @ Houston Rockets",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 190,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
