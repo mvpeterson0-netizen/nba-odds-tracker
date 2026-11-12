@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-12T23:30:25+00:00",
+  "fetched_at": "2026-11-12T23:45:22+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-12",
@@ -9,11 +9,11 @@
       "game_id": "401917176",
       "start_utc": "2026-11-12T23:30Z",
       "short_name": "MERC @ PSU",
-      "state": "pre",
-      "status": "11/12 - 6:30 PM EST",
+      "state": "in",
+      "status": "13:19 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "13:19",
       "venue": "Bryce Jordan Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "213",
         "abbr": "PSU",
         "name": "Penn State Nittany Lions",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "2-1",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Roko Prkacin",
-            "value": "17.3"
+            "value": "4"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Ivan Juric",
-            "value": "12.7"
+            "value": "3"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Dasonte Bowen",
-            "value": "2.7"
+            "value": "1"
+          },
+          "rating": {
+            "player": "Ivan Juric",
+            "value": "2 PTS"
           }
         },
         "conf_id": "7",
@@ -52,23 +56,27 @@
         "team_id": "2385",
         "abbr": "MERC",
         "name": "Mercyhurst Lakers",
-        "score": 0,
+        "score": 7,
         "winner": null,
         "record": "1-2",
         "home_record": "1-0",
         "away_record": "0-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jake Lemelman",
-            "value": "15.7"
+          "points": {
+            "player": "Cameron Johnson",
+            "value": "5"
           },
-          "reboundsPerGame": {
-            "player": "Deraje Agbaosi",
-            "value": "7.3"
+          "rebounds": {
+            "player": "Hunter Te Ratana",
+            "value": "3"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Jake Lemelman",
-            "value": "6.0"
+            "value": "2"
+          },
+          "rating": {
+            "player": "Cameron Johnson",
+            "value": "5 PTS"
           }
         },
         "conf_id": "19",
@@ -77,12 +85,7 @@
         "loc": "Mercyhurst",
         "nick": "Lakers"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "PSU -20.5",
-        "spread": -20.5,
-        "over_under": 145.5
-      },
+      "espn_line": null,
       "date": "2026-11-12",
       "p4": true
     },
@@ -90,11 +93,11 @@
       "game_id": "401916288",
       "start_utc": "2026-11-12T23:30Z",
       "short_name": "TNTC @ IU",
-      "state": "pre",
-      "status": "11/12 - 6:30 PM EST",
+      "state": "in",
+      "status": "15:09 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:09",
       "venue": "Simon Skjodt Assembly Hall",
       "neutral_site": false,
       "broadcasts": [
@@ -104,23 +107,27 @@
         "team_id": "84",
         "abbr": "IU",
         "name": "Indiana Hoosiers",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Darren Harris",
-            "value": "16.7"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Samet Yigitoglu",
-            "value": "6.0"
+            "value": "6"
           },
-          "assistsPerGame": {
-            "player": "Markus Burton",
-            "value": "4.3"
+          "rebounds": {
+            "player": "Sam Alexis",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Jaeden Mustaf",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Samet Yigitoglu",
+            "value": "6 PTS"
           }
         },
         "conf_id": "7",
@@ -133,23 +140,23 @@
         "team_id": "2635",
         "abbr": "TNTC",
         "name": "Tennessee Tech Golden Eagles",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "2-1",
         "home_record": "2-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Caleb Sanders",
-            "value": "18.7"
+          "points": {
+            "player": "Kamai Samuels",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Caleb Sanders",
-            "value": "7.3"
+          "rebounds": {
+            "player": "De'Ante Green",
+            "value": "3"
           },
-          "assistsPerGame": {
-            "player": "Ty Owens",
-            "value": "5.7"
+          "rating": {
+            "player": "Davante Hackett",
+            "value": "2 PTS"
           }
         },
         "conf_id": "24",
@@ -158,12 +165,7 @@
         "loc": "Tennessee Tech",
         "nick": "Golden Eagles"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "IU -24.5",
-        "spread": -24.5,
-        "over_under": 168.5
-      },
+      "espn_line": null,
       "date": "2026-11-12",
       "p4": true
     },
