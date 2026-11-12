@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-12T01:00:24+00:00",
+  "finished_at": "2026-11-12T01:15:24+00:00",
   "game_date": "2026-11-11",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,14 +29,33 @@
     "credits": {
       "ODDS_API_KEY": 84,
       "ODDS_API_KEY_2": 82,
-      "ODDS_API_KEY_20K": 14696
+      "ODDS_API_KEY_20K": 14682
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Arkansas-Pine Bluff Golden Lions @ UCLA Bruins",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Lindenwood Lions @ Nebraska Cornhuskers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Miss Valley St Delta Devils @ Oregon Ducks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 64,
     "p4_events": 10,
     "unmatched": [],
-    "due": 0,
+    "due": 3,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",

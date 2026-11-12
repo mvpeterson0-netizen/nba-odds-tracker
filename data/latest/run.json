@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-12T01:00:23+00:00",
+  "finished_at": "2026-11-12T01:15:23+00:00",
   "game_date": "2026-11-11",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,21 +28,13 @@
     "credits": {
       "ODDS_API_KEY": 84,
       "ODDS_API_KEY_2": 82,
-      "ODDS_API_KEY_20K": 14696
+      "ODDS_API_KEY_20K": 14682
     },
-    "pulled": [
-      {
-        "matchup": "Orlando Magic @ Utah Jazz",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 144,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
