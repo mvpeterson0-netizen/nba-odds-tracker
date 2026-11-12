@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-12T22:30:35+00:00",
+  "fetched_at": "2026-11-12T22:45:26+00:00",
   "source": "espn",
   "count": 29,
   "game_date": "2026-11-13",
@@ -1217,7 +1217,12 @@
         "loc": "Ohio State",
         "nick": "Buckeyes"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "CONN -10.5",
+        "spread": -10.5,
+        "over_under": 147.5
+      },
       "date": "2026-11-13",
       "p4": true
     },
@@ -1369,7 +1374,12 @@
         "loc": "Virginia",
         "nick": "Cavaliers"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "UVA -6.5",
+        "spread": 6.5,
+        "over_under": 154.5
+      },
       "date": "2026-11-13",
       "p4": true
     },
