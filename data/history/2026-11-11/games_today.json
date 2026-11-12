@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-12T04:30:17+00:00",
+  "fetched_at": "2026-11-12T04:45:15+00:00",
   "source": "espn",
   "count": 10,
   "game_date": "2026-11-11",
@@ -514,11 +514,11 @@
       "game_id": "401909973",
       "start_utc": "2026-11-12T02:00Z",
       "short_name": "ORL @ UTAH",
-      "state": "in",
-      "status": "30.5 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "30.5",
+      "clock": "0.0",
       "venue": "Delta Center",
       "neutral_site": false,
       "broadcasts": [
@@ -529,15 +529,15 @@
         "team_id": "26",
         "abbr": "UTAH",
         "name": "Utah Jazz",
-        "score": 107,
-        "winner": null,
-        "record": "1-10",
-        "home_record": "1-5",
+        "score": 108,
+        "winner": false,
+        "record": "1-11",
+        "home_record": "1-6",
         "away_record": "0-5",
         "leaders": {
           "points": {
             "player": "Darryn Peterson",
-            "value": "19"
+            "value": "20"
           },
           "rebounds": {
             "player": "Jaxson Hayes",
@@ -558,10 +558,10 @@
         "abbr": "ORL",
         "name": "Orlando Magic",
         "score": 123,
-        "winner": null,
-        "record": "3-7",
+        "winner": true,
+        "record": "4-7",
         "home_record": "0-4",
-        "away_record": "3-3",
+        "away_record": "4-3",
         "leaders": {
           "points": {
             "player": "Franz Wagner",
@@ -588,10 +588,10 @@
       "start_utc": "2026-11-12T02:30Z",
       "short_name": "GS @ HOU",
       "state": "in",
-      "status": "21.0 - 3rd",
+      "status": "10:07 - 4th",
       "completed": false,
-      "period": 3,
-      "clock": "21.0",
+      "period": 4,
+      "clock": "10:07",
       "venue": "Toyota Center (Houston)",
       "neutral_site": false,
       "broadcasts": [
@@ -601,7 +601,7 @@
         "team_id": "10",
         "abbr": "HOU",
         "name": "Houston Rockets",
-        "score": 84,
+        "score": 88,
         "winner": null,
         "record": "8-3",
         "home_record": "5-1",
@@ -629,7 +629,7 @@
         "team_id": "9",
         "abbr": "GS",
         "name": "Golden State Warriors",
-        "score": 76,
+        "score": 85,
         "winner": null,
         "record": "8-3",
         "home_record": "6-1",
@@ -637,19 +637,19 @@
         "leaders": {
           "points": {
             "player": "Yaxel Lendeborg",
-            "value": "23"
+            "value": "25"
           },
           "rebounds": {
             "player": "Yaxel Lendeborg",
-            "value": "10"
+            "value": "9"
           },
           "assists": {
             "player": "Draymond Green",
-            "value": "5"
+            "value": "7"
           },
           "rating": {
             "player": "Yaxel Lendeborg",
-            "value": "23 PTS, 10 REB"
+            "value": "25 PTS, 9 REB"
           }
         }
       },
@@ -660,10 +660,10 @@
       "start_utc": "2026-11-12T03:00Z",
       "short_name": "OKC @ POR",
       "state": "in",
-      "status": "8:33 - 3rd",
+      "status": "1:30 - 3rd",
       "completed": false,
       "period": 3,
-      "clock": "8:33",
+      "clock": "1:30",
       "venue": "Moda Center",
       "neutral_site": false,
       "broadcasts": [
@@ -676,15 +676,15 @@
         "team_id": "22",
         "abbr": "POR",
         "name": "Portland Trail Blazers",
-        "score": 64,
+        "score": 85,
         "winner": null,
         "record": "7-3",
         "home_record": "2-2",
         "away_record": "5-1",
         "leaders": {
           "points": {
-            "player": "Deni Avdija",
-            "value": "15"
+            "player": "Jrue Holiday",
+            "value": "17"
           },
           "rebounds": {
             "player": "Donovan Clingan",
@@ -692,11 +692,11 @@
           },
           "assists": {
             "player": "Deni Avdija",
-            "value": "4"
+            "value": "6"
           },
           "rating": {
-            "player": "Deni Avdija",
-            "value": "15 PTS"
+            "player": "Jrue Holiday",
+            "value": "17 PTS"
           }
         }
       },
@@ -704,27 +704,27 @@
         "team_id": "25",
         "abbr": "OKC",
         "name": "Oklahoma City Thunder",
-        "score": 56,
+        "score": 78,
         "winner": null,
         "record": "8-3",
         "home_record": "5-0",
         "away_record": "3-3",
         "leaders": {
           "points": {
-            "player": "Isaiah Hartenstein",
-            "value": "12"
+            "player": "Shai Gilgeous-Alexander",
+            "value": "22"
           },
           "rebounds": {
             "player": "Isaiah Hartenstein",
-            "value": "5"
+            "value": "7"
           },
           "assists": {
             "player": "Isaiah Hartenstein",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Isaiah Hartenstein",
-            "value": "12 PTS"
+            "value": "16 PTS, 7 REB"
           }
         }
       },
