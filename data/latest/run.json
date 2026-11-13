@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-13T13:00:31+00:00",
+  "finished_at": "2026-11-13T13:15:22+00:00",
   "game_date": "2026-11-13",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "ok",
+    "odds": "not_due",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -26,78 +26,14 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 37,
+      "ODDS_API_KEY": 34,
       "ODDS_API_KEY_2": 34,
       "ODDS_API_KEY_20K": 14156
     },
-    "pulled": [
-      {
-        "matchup": "New York Knicks @ Indiana Pacers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 170,
-        "markets": 4
-      },
-      {
-        "matchup": "Milwaukee Bucks @ Orlando Magic",
-        "type": "morning",
-        "status": "ok",
-        "rows": 140,
-        "markets": 4
-      },
-      {
-        "matchup": "Atlanta Hawks @ Chicago Bulls",
-        "type": "morning",
-        "status": "ok",
-        "rows": 166,
-        "markets": 4
-      },
-      {
-        "matchup": "Cleveland Cavaliers @ Miami Heat",
-        "type": "morning",
-        "status": "ok",
-        "rows": 190,
-        "markets": 4
-      },
-      {
-        "matchup": "Memphis Grizzlies @ New Orleans Pelicans",
-        "type": "morning",
-        "status": "ok",
-        "rows": 176,
-        "markets": 4
-      },
-      {
-        "matchup": "Utah Jazz @ Houston Rockets",
-        "type": "morning",
-        "status": "ok",
-        "rows": 176,
-        "markets": 4
-      },
-      {
-        "matchup": "Golden State Warriors @ San Antonio Spurs",
-        "type": "morning",
-        "status": "ok",
-        "rows": 186,
-        "markets": 4
-      },
-      {
-        "matchup": "Portland Trail Blazers @ Sacramento Kings",
-        "type": "morning",
-        "status": "ok",
-        "rows": 190,
-        "markets": 4
-      },
-      {
-        "matchup": "Oklahoma City Thunder @ Los Angeles Clippers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 210,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 9,
+    "due": 0,
     "pregame_pulled": false,
     "status": "ok"
   }
