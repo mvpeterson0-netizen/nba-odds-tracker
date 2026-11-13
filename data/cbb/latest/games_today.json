@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-13T02:52:55+00:00",
+  "fetched_at": "2026-11-13T03:00:20+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-12",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-13T01:00Z",
       "short_name": "OKST @ TA&M",
       "state": "in",
-      "status": "9:53 - 2nd",
+      "status": "7:54 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:53",
+      "clock": "7:54",
       "venue": "Reed Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "245",
         "abbr": "TA&M",
         "name": "Texas A&M Aggies",
-        "score": 68,
+        "score": 74,
         "winner": null,
         "record": "3-0",
         "home_record": "3-0",
@@ -115,11 +115,11 @@
         "leaders": {
           "points": {
             "player": "PJ Haggerty",
-            "value": "15"
+            "value": "17"
           },
           "rebounds": {
             "player": "Josh Irving",
-            "value": "6"
+            "value": "10"
           },
           "assists": {
             "player": "Jordan Pope",
@@ -127,7 +127,7 @@
           },
           "rating": {
             "player": "Josh Irving",
-            "value": "14 PTS, 6 REB"
+            "value": "14 PTS, 10 REB"
           }
         },
         "conf_id": "23",
@@ -177,11 +177,11 @@
       "game_id": "401916306",
       "start_utc": "2026-11-13T01:00Z",
       "short_name": "SOU @ MINN",
-      "state": "in",
-      "status": "1:13 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "1:13",
+      "clock": "0:00",
       "venue": "The Barn by Blue Cross and Blue Shield of Minnesota",
       "neutral_site": false,
       "broadcasts": [
@@ -191,10 +191,10 @@
         "team_id": "135",
         "abbr": "MINN",
         "name": "Minnesota Golden Gophers",
-        "score": 85,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "2-0",
+        "score": 91,
+        "winner": true,
+        "record": "4-0",
+        "home_record": "3-0",
         "away_record": "1-0",
         "leaders": {
           "points": {
@@ -224,18 +224,18 @@
         "team_id": "2582",
         "abbr": "SOU",
         "name": "Southern Jaguars",
-        "score": 58,
-        "winner": null,
-        "record": "0-4",
+        "score": 61,
+        "winner": false,
+        "record": "0-5",
         "home_record": "0-0",
-        "away_record": "0-4",
+        "away_record": "0-5",
         "leaders": {
           "points": {
             "player": "Daniel Dormu",
             "value": "12"
           },
           "rebounds": {
-            "player": "Lionel Larvadain",
+            "player": "Daniel Dormu",
             "value": "2"
           },
           "assists": {
@@ -243,8 +243,8 @@
             "value": "4"
           },
           "rating": {
-            "player": "Lionel Larvadain",
-            "value": "10 PTS"
+            "player": "Justin Page",
+            "value": "12 PTS"
           }
         },
         "conf_id": "26",
