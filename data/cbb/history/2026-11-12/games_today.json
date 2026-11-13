@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-13T03:30:17+00:00",
+  "fetched_at": "2026-11-13T03:45:18+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-12",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-13T02:00Z",
       "short_name": "MTST @ BYU",
       "state": "in",
-      "status": "8:05 - 2nd",
+      "status": "3:58 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "8:05",
+      "clock": "3:58",
       "venue": "Marriott Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "252",
         "abbr": "BYU",
         "name": "BYU Cougars",
-        "score": 70,
+        "score": 81,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
@@ -31,7 +31,7 @@
         "leaders": {
           "points": {
             "player": "Robert Wright III",
-            "value": "17"
+            "value": "19"
           },
           "rebounds": {
             "player": "Jaxon Kohler",
@@ -39,11 +39,11 @@
           },
           "assists": {
             "player": "Robert Wright III",
-            "value": "5"
+            "value": "7"
           },
           "rating": {
             "player": "Robert Wright III",
-            "value": "17 PTS"
+            "value": "19 PTS, 7 AST"
           }
         },
         "conf_id": "8",
@@ -56,23 +56,23 @@
         "team_id": "147",
         "abbr": "MTST",
         "name": "Montana State Bobcats",
-        "score": 56,
+        "score": 63,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
         "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "Christian King",
-            "value": "12"
+            "player": "Jeremiah Davis",
+            "value": "14"
           },
           "rebounds": {
             "player": "Jed Miller",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
             "player": "Cavin Holden",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
             "player": "Christian King",
@@ -84,90 +84,6 @@
         "rank": null,
         "loc": "Montana State",
         "nick": "Bobcats"
-      },
-      "espn_line": null,
-      "date": "2026-11-12",
-      "p4": true
-    },
-    {
-      "game_id": "401919041",
-      "start_utc": "2026-11-13T01:00Z",
-      "short_name": "OKST @ TA&M",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Reed Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "245",
-        "abbr": "TA&M",
-        "name": "Texas A&M Aggies",
-        "score": 88,
-        "winner": true,
-        "record": "4-0",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "PJ Haggerty",
-            "value": "22"
-          },
-          "rebounds": {
-            "player": "Josh Irving",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Jordan Pope",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Josh Irving",
-            "value": "14 PTS, 10 REB"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Texas A&M",
-        "nick": "Aggies"
-      },
-      "away": {
-        "team_id": "197",
-        "abbr": "OKST",
-        "name": "Oklahoma State Cowboys",
-        "score": 69,
-        "winner": false,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Anthony Felesi",
-            "value": "14"
-          },
-          "rebounds": {
-            "player": "Anthony Felesi",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Jacob Walker",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Anthony Felesi",
-            "value": "14 PTS, 8 REB"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Oklahoma State",
-        "nick": "Cowboys"
       },
       "espn_line": null,
       "date": "2026-11-12",
@@ -420,6 +336,90 @@
         "rank": null,
         "loc": "Mercer",
         "nick": "Bears"
+      },
+      "espn_line": null,
+      "date": "2026-11-12",
+      "p4": true
+    },
+    {
+      "game_id": "401919041",
+      "start_utc": "2026-11-13T01:00Z",
+      "short_name": "OKST @ TA&M",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Reed Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "245",
+        "abbr": "TA&M",
+        "name": "Texas A&M Aggies",
+        "score": 88,
+        "winner": true,
+        "record": "4-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "PJ Haggerty",
+            "value": "22"
+          },
+          "rebounds": {
+            "player": "Josh Irving",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Jordan Pope",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Josh Irving",
+            "value": "14 PTS, 10 REB"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Texas A&M",
+        "nick": "Aggies"
+      },
+      "away": {
+        "team_id": "197",
+        "abbr": "OKST",
+        "name": "Oklahoma State Cowboys",
+        "score": 69,
+        "winner": false,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Anthony Felesi",
+            "value": "14"
+          },
+          "rebounds": {
+            "player": "Anthony Felesi",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Jacob Walker",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Anthony Felesi",
+            "value": "14 PTS, 8 REB"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Oklahoma State",
+        "nick": "Cowboys"
       },
       "espn_line": null,
       "date": "2026-11-12",
