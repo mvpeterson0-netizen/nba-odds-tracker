@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-13T03:00:20+00:00",
+  "fetched_at": "2026-11-13T03:15:23+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-12",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-13T02:00Z",
       "short_name": "MTST @ BYU",
       "state": "in",
-      "status": "Halftime",
+      "status": "13:08 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "13:08",
       "venue": "Marriott Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,27 +23,27 @@
         "team_id": "252",
         "abbr": "BYU",
         "name": "BYU Cougars",
-        "score": 43,
+        "score": 63,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Robert Wright III",
-            "value": "9"
+            "player": "Bruce Branch III",
+            "value": "15"
           },
           "rebounds": {
-            "player": "Jaxon Kohler",
-            "value": "4"
+            "player": "Tyler Betsey",
+            "value": "6"
           },
           "assists": {
             "player": "Robert Wright III",
-            "value": "3"
+            "value": "5"
           },
           "rating": {
-            "player": "Jaxon Kohler",
-            "value": "7 PTS"
+            "player": "Robert Wright III",
+            "value": "15 PTS"
           }
         },
         "conf_id": "8",
@@ -56,7 +56,7 @@
         "team_id": "147",
         "abbr": "MTST",
         "name": "Montana State Bobcats",
-        "score": 29,
+        "score": 46,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
@@ -64,7 +64,7 @@
         "leaders": {
           "points": {
             "player": "Christian King",
-            "value": "7"
+            "value": "12"
           },
           "rebounds": {
             "player": "Jed Miller",
@@ -72,11 +72,11 @@
           },
           "assists": {
             "player": "Christian King",
-            "value": "2"
+            "value": "4"
           },
           "rating": {
             "player": "Christian King",
-            "value": "7 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "5",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-13T01:00Z",
       "short_name": "OKST @ TA&M",
       "state": "in",
-      "status": "7:54 - 2nd",
+      "status": "3:13 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "7:54",
+      "clock": "3:13",
       "venue": "Reed Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "245",
         "abbr": "TA&M",
         "name": "Texas A&M Aggies",
-        "score": 74,
+        "score": 83,
         "winner": null,
         "record": "3-0",
         "home_record": "3-0",
@@ -115,7 +115,7 @@
         "leaders": {
           "points": {
             "player": "PJ Haggerty",
-            "value": "17"
+            "value": "19"
           },
           "rebounds": {
             "player": "Josh Irving",
@@ -123,7 +123,7 @@
           },
           "assists": {
             "player": "Jordan Pope",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
             "player": "Josh Irving",
@@ -140,19 +140,19 @@
         "team_id": "197",
         "abbr": "OKST",
         "name": "Oklahoma State Cowboys",
-        "score": 60,
+        "score": 67,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Kanye Clary",
+            "player": "Anthony Felesi",
             "value": "14"
           },
           "rebounds": {
             "player": "Anthony Felesi",
-            "value": "5"
+            "value": "7"
           },
           "assists": {
             "player": "Jacob Walker",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "Anthony Felesi",
-            "value": "10 PTS"
+            "value": "14 PTS, 7 REB"
           }
         },
         "conf_id": "8",
@@ -168,90 +168,6 @@
         "rank": null,
         "loc": "Oklahoma State",
         "nick": "Cowboys"
-      },
-      "espn_line": null,
-      "date": "2026-11-12",
-      "p4": true
-    },
-    {
-      "game_id": "401916306",
-      "start_utc": "2026-11-13T01:00Z",
-      "short_name": "SOU @ MINN",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "The Barn by Blue Cross and Blue Shield of Minnesota",
-      "neutral_site": false,
-      "broadcasts": [
-        "B1G+"
-      ],
-      "home": {
-        "team_id": "135",
-        "abbr": "MINN",
-        "name": "Minnesota Golden Gophers",
-        "score": 91,
-        "winner": true,
-        "record": "4-0",
-        "home_record": "3-0",
-        "away_record": "1-0",
-        "leaders": {
-          "points": {
-            "player": "Isaac Asuma",
-            "value": "23"
-          },
-          "rebounds": {
-            "player": "Grayson Grove",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Isaac Asuma",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Isaac Asuma",
-            "value": "23 PTS, 6 AST"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Minnesota",
-        "nick": "Golden Gophers"
-      },
-      "away": {
-        "team_id": "2582",
-        "abbr": "SOU",
-        "name": "Southern Jaguars",
-        "score": 61,
-        "winner": false,
-        "record": "0-5",
-        "home_record": "0-0",
-        "away_record": "0-5",
-        "leaders": {
-          "points": {
-            "player": "Daniel Dormu",
-            "value": "12"
-          },
-          "rebounds": {
-            "player": "Daniel Dormu",
-            "value": "2"
-          },
-          "assists": {
-            "player": "R'Chaun King",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Justin Page",
-            "value": "12 PTS"
-          }
-        },
-        "conf_id": "26",
-        "conf": null,
-        "rank": null,
-        "loc": "Southern",
-        "nick": "Jaguars"
       },
       "espn_line": null,
       "date": "2026-11-12",
@@ -504,6 +420,90 @@
         "rank": null,
         "loc": "Mercer",
         "nick": "Bears"
+      },
+      "espn_line": null,
+      "date": "2026-11-12",
+      "p4": true
+    },
+    {
+      "game_id": "401916306",
+      "start_utc": "2026-11-13T01:00Z",
+      "short_name": "SOU @ MINN",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "The Barn by Blue Cross and Blue Shield of Minnesota",
+      "neutral_site": false,
+      "broadcasts": [
+        "B1G+"
+      ],
+      "home": {
+        "team_id": "135",
+        "abbr": "MINN",
+        "name": "Minnesota Golden Gophers",
+        "score": 91,
+        "winner": true,
+        "record": "4-0",
+        "home_record": "3-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Isaac Asuma",
+            "value": "23"
+          },
+          "rebounds": {
+            "player": "Grayson Grove",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Isaac Asuma",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Isaac Asuma",
+            "value": "23 PTS, 6 AST"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Minnesota",
+        "nick": "Golden Gophers"
+      },
+      "away": {
+        "team_id": "2582",
+        "abbr": "SOU",
+        "name": "Southern Jaguars",
+        "score": 61,
+        "winner": false,
+        "record": "0-5",
+        "home_record": "0-0",
+        "away_record": "0-5",
+        "leaders": {
+          "points": {
+            "player": "Daniel Dormu",
+            "value": "12"
+          },
+          "rebounds": {
+            "player": "Daniel Dormu",
+            "value": "2"
+          },
+          "assists": {
+            "player": "R'Chaun King",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Justin Page",
+            "value": "12 PTS"
+          }
+        },
+        "conf_id": "26",
+        "conf": null,
+        "rank": null,
+        "loc": "Southern",
+        "nick": "Jaguars"
       },
       "espn_line": null,
       "date": "2026-11-12",
