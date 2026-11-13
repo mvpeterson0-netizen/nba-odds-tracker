@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-13T01:15:19+00:00",
+  "fetched_at": "2026-11-13T01:30:23+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-12",
@@ -9,11 +9,11 @@
       "game_id": "401917176",
       "start_utc": "2026-11-12T23:30Z",
       "short_name": "MERC @ PSU",
-      "state": "in",
-      "status": "3:52 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "3:52",
+      "clock": "0:00",
       "venue": "Bryce Jordan Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,15 +23,15 @@
         "team_id": "213",
         "abbr": "PSU",
         "name": "Penn State Nittany Lions",
-        "score": 63,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
+        "score": 72,
+        "winner": true,
+        "record": "3-1",
+        "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "Ivan Juric",
-            "value": "15"
+            "value": "20"
           },
           "rebounds": {
             "player": "Ivan Juric",
@@ -39,11 +39,11 @@
           },
           "assists": {
             "player": "Dasonte Bowen",
-            "value": "6"
+            "value": "7"
           },
           "rating": {
             "player": "Ivan Juric",
-            "value": "15 PTS, 15 REB"
+            "value": "20 PTS, 15 REB"
           }
         },
         "conf_id": "7",
@@ -56,27 +56,27 @@
         "team_id": "2385",
         "abbr": "MERC",
         "name": "Mercyhurst Lakers",
-        "score": 51,
-        "winner": null,
-        "record": "1-2",
+        "score": 57,
+        "winner": false,
+        "record": "1-3",
         "home_record": "1-0",
-        "away_record": "0-2",
+        "away_record": "0-3",
         "leaders": {
           "points": {
             "player": "Jake Lemelman",
-            "value": "17"
+            "value": "20"
           },
           "rebounds": {
             "player": "Cameron Johnson",
-            "value": "7"
+            "value": "9"
           },
           "assists": {
             "player": "Jake Lemelman",
             "value": "6"
           },
           "rating": {
-            "player": "Jake Lemelman",
-            "value": "17 PTS, 6 AST"
+            "player": "Cameron Johnson",
+            "value": "12 PTS, 9 REB"
           }
         },
         "conf_id": "19",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-12T23:30Z",
       "short_name": "TNTC @ IU",
       "state": "in",
-      "status": "11:51 - 2nd",
+      "status": "5:50 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "11:51",
+      "clock": "5:50",
       "venue": "Simon Skjodt Assembly Hall",
       "neutral_site": false,
       "broadcasts": [
@@ -107,27 +107,27 @@
         "team_id": "84",
         "abbr": "IU",
         "name": "Indiana Hoosiers",
-        "score": 63,
+        "score": 78,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Bryce Lindsay",
-            "value": "15"
+            "player": "Samet Yigitoglu",
+            "value": "16"
           },
           "rebounds": {
             "player": "Aiden Sherrell",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
-            "player": "Jaeden Mustaf",
-            "value": "3"
+            "player": "Markus Burton",
+            "value": "6"
           },
           "rating": {
             "player": "Samet Yigitoglu",
-            "value": "14 PTS, 6 REB"
+            "value": "16 PTS, 6 REB"
           }
         },
         "conf_id": "7",
@@ -140,7 +140,7 @@
         "team_id": "2635",
         "abbr": "TNTC",
         "name": "Tennessee Tech Golden Eagles",
-        "score": 46,
+        "score": 52,
         "winner": null,
         "record": "2-1",
         "home_record": "2-0",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-13T00:00Z",
       "short_name": "MER @ WVU",
       "state": "in",
-      "status": "19:11 - 2nd",
+      "status": "14:43 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "19:11",
+      "clock": "14:43",
       "venue": "Hope Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -191,7 +191,7 @@
         "team_id": "277",
         "abbr": "WVU",
         "name": "West Virginia Mountaineers",
-        "score": 33,
+        "score": 41,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -199,11 +199,11 @@
         "leaders": {
           "points": {
             "player": "Finley Bizjack",
-            "value": "8"
+            "value": "10"
           },
           "rebounds": {
             "player": "Finley Bizjack",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
             "player": "Finley Bizjack",
@@ -211,7 +211,7 @@
           },
           "rating": {
             "player": "Finley Bizjack",
-            "value": "8 PTS"
+            "value": "10 PTS"
           }
         },
         "conf_id": "8",
@@ -224,7 +224,7 @@
         "team_id": "2382",
         "abbr": "MER",
         "name": "Mercer Bears",
-        "score": 28,
+        "score": 31,
         "winner": null,
         "record": "2-2",
         "home_record": "1-0",
@@ -232,11 +232,11 @@
         "leaders": {
           "points": {
             "player": "Brady Shoulders",
-            "value": "8"
+            "value": "9"
           },
           "rebounds": {
             "player": "Makoi Mabor Makoi",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Quinton Perkins II",
@@ -244,7 +244,7 @@
           },
           "rating": {
             "player": "Brady Shoulders",
-            "value": "8 PTS"
+            "value": "9 PTS"
           }
         },
         "conf_id": "24",
@@ -262,10 +262,10 @@
       "start_utc": "2026-11-13T01:00Z",
       "short_name": "OKST @ TA&M",
       "state": "in",
-      "status": "14:48 - 1st",
+      "status": "10:57 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "14:48",
+      "clock": "10:57",
       "venue": "Reed Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -275,15 +275,15 @@
         "team_id": "245",
         "abbr": "TA&M",
         "name": "Texas A&M Aggies",
-        "score": 12,
+        "score": 22,
         "winner": null,
         "record": "3-0",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Jalen Shelley",
-            "value": "3"
+            "player": "PJ Haggerty",
+            "value": "6"
           },
           "rebounds": {
             "player": "Jalen Shelley",
@@ -294,8 +294,8 @@
             "value": "2"
           },
           "rating": {
-            "player": "Jalen Shelley",
-            "value": "3 PTS"
+            "player": "PJ Haggerty",
+            "value": "6 PTS"
           }
         },
         "conf_id": "23",
@@ -308,7 +308,7 @@
         "team_id": "197",
         "abbr": "OKST",
         "name": "Oklahoma State Cowboys",
-        "score": 12,
+        "score": 16,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
@@ -316,19 +316,19 @@
         "leaders": {
           "points": {
             "player": "Kashie Natt",
-            "value": "5"
+            "value": "6"
           },
           "rebounds": {
-            "player": "Kashie Natt",
-            "value": "1"
+            "player": "Julius Halaifonua",
+            "value": "2"
           },
           "assists": {
-            "player": "Jacob Walker",
+            "player": "Anthony Felesi",
             "value": "2"
           },
           "rating": {
             "player": "Kashie Natt",
-            "value": "5 PTS"
+            "value": "6 PTS"
           }
         },
         "conf_id": "8",
@@ -346,10 +346,10 @@
       "start_utc": "2026-11-13T01:00Z",
       "short_name": "SOU @ MINN",
       "state": "in",
-      "status": "12:58 - 1st",
+      "status": "7:10 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "12:58",
+      "clock": "7:10",
       "venue": "The Barn by Blue Cross and Blue Shield of Minnesota",
       "neutral_site": false,
       "broadcasts": [
@@ -359,7 +359,7 @@
         "team_id": "135",
         "abbr": "MINN",
         "name": "Minnesota Golden Gophers",
-        "score": 15,
+        "score": 27,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
@@ -367,19 +367,19 @@
         "leaders": {
           "points": {
             "player": "Isaac Asuma",
-            "value": "5"
+            "value": "9"
           },
           "rebounds": {
-            "player": "Jaylen Crocker-Johnson",
-            "value": "2"
+            "player": "Kyan Evans",
+            "value": "3"
           },
           "assists": {
-            "player": "Bobby Durkin",
+            "player": "Kyan Evans",
             "value": "2"
           },
           "rating": {
             "player": "Isaac Asuma",
-            "value": "5 PTS"
+            "value": "9 PTS"
           }
         },
         "conf_id": "7",
@@ -392,7 +392,7 @@
         "team_id": "2582",
         "abbr": "SOU",
         "name": "Southern Jaguars",
-        "score": 10,
+        "score": 14,
         "winner": null,
         "record": "0-4",
         "home_record": "0-0",
@@ -403,8 +403,8 @@
             "value": "4"
           },
           "rebounds": {
-            "player": "Daniel Dormu",
-            "value": "1"
+            "player": "Lionel Bell",
+            "value": "2"
           },
           "assists": {
             "player": "Daniel Dormu",
