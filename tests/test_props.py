@@ -163,3 +163,28 @@ def test_fanduel_links_requested_and_saved_latest_only(tmp_path, monkeypatch):
     # a later pull for the same game replaces its rows; a game that has tipped is dropped
     props.save_links(tmp_path, "soon", props.parse_event_links(odds, "t2", "pregame"), NOW)
     assert len(list(csv.DictReader((tmp_path / "prop_links.csv").open()))) == 1
+
+
+def test_link_backfill_runs_once_and_only_saves_links(tmp_path, monkeypatch):
+    import csv
+    odds = {**EVENT_ODDS, "bookmakers": [{"key": "fanduel", "markets": [{"key": "player_points", "last_update": "x", "outcomes": [
+        {"name": "Over", "description": "Nikola Jokic", "price": -110, "point": 27.5,
+         "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=1&selectionId=2"}]}]}]}
+    calls = []
+
+    def fake_get(url, params, timeout=25.0):
+        if url.endswith("/events"):
+            return 200, EVENTS, {"x-requests-remaining": "400", "x-requests-last": "0"}
+        if url.endswith("/markets"):
+            return 200, {"bookmakers": []}, {"x-requests-remaining": "400", "x-requests-last": "1"}
+        calls.append(url)
+        return 200, {**odds, "id": url.split("/events/")[1].split("/")[0]}, {"x-requests-remaining": "396", "x-requests-last": "1"}
+    monkeypatch.setattr(props, "_get", fake_get)
+    monkeypatch.setattr(props, "LINKS_BACKFILL", True)
+    now = datetime(2026, 10, 22, 3, 0, tzinfo=timezone.utc)       # the evening before: nothing due
+    s = props.run(tmp_path, [("ODDS_API_KEY", "k")], now)
+    assert len(calls) == 2 and len(s["links_backfill"]) == 2     # "started" (23:00) and "soon" (01:30) tip within 24 h
+    assert len(list(csv.DictReader((tmp_path / "prop_links.csv").open()))) == 2
+    assert not (tmp_path / "prop_captures.csv").exists() or "Jokic" not in (tmp_path / "prop_captures.csv").read_text()
+    props.run(tmp_path, [("ODDS_API_KEY", "k")], now)
+    assert len(calls) == 2                                       # tried once, never again

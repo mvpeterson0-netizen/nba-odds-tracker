@@ -56,6 +56,7 @@ CAPTURE_FIELDS = ["captured_at", "event_id", "commence_utc", "minutes_before", "
 # Only the latest pull of each game is kept, and only until tip. Never changes captures, grading or credit use.
 LINKS_ENABLED = True
 LINK_BOOKS = ["fanduel"]
+LINKS_BACKFILL = True   # one-time catch-up pull for games with no links yet (see backfill_links)
 LINK_FIELDS = ["event_id", "commence_utc", "pull_type", "captured_at", "book", "market", "player", "side",
                "point", "price", "outcome_link"]
 PULL_FIELDS = ["at", "event_id", "matchup", "commence_utc", "minutes_before", "status", "markets",
@@ -254,6 +255,47 @@ def save_links(data_dir: Path, event_id: str, rows: list[dict], now: datetime) -
     tmp.replace(path)
 
 
+BACKFILL_HOURS = 24
+
+
+def backfill_links(data_dir: Path, events: list[dict], remaining: dict, keys: list[tuple[str, str]], now: datetime) -> list[str]:
+    """One-time catch-up when link capture is first switched on: games tipping within 24 h that have no saved links get
+    one core-market pull (4 credits each) whose link rows are saved. Captures, the pull log and grading are untouched.
+    Each game is tried once (data/links_backfill.json), so this never repeats."""
+    marker = data_dir / "links_backfill.json"
+    try:
+        tried = set(json.loads(marker.read_text())["events"])
+    except Exception:
+        tried = set()
+    have = {r.get("event_id") for r in _read_csv(data_dir / "prop_links.csv")}
+    notes = []
+    for ev in sorted(events, key=lambda e: e["commence_time"]):
+        start = parse_iso(ev["commence_time"])
+        if not (now < start <= now + timedelta(hours=BACKFILL_HOURS)) or ev["id"] in have or ev["id"] in tried:
+            continue
+        lab = choose_key(remaining, len(CORE))
+        if lab is None:
+            notes.append("no credits")
+            break
+        code, body, h = _get(f"{BASE}/events/{ev['id']}/odds", {
+            "apiKey": dict(keys)[lab], "bookmakers": ",".join(LINK_BOOKS), "markets": ",".join(CORE),
+            "oddsFormat": "american", "dateFormat": "iso", "includeLinks": "true"})
+        _, rem = _credits(h)
+        if rem is not None:
+            remaining[lab] = rem
+        if code in (401, 429):
+            remaining[lab] = 0
+            continue
+        if code != 200:
+            continue
+        rows = parse_event_links(body, iso(utcnow()), "backfill")
+        save_links(data_dir, ev["id"], rows, now)
+        tried.add(ev["id"])
+        notes.append(f"{ev.get('away_team')} @ {ev.get('home_team')}: {len(rows)} links")
+    marker.write_text(json.dumps({"events": sorted(tried)}))
+    return notes
+
+
 PROBE_EVERY = timedelta(days=7)
 
 
@@ -414,6 +456,11 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
 
     _append_csv(data_dir / "prop_captures.csv", CAPTURE_FIELDS, cap_rows)
     _append_csv(data_dir / "pull_log.csv", PULL_FIELDS, log_rows)
+    if LINKS_ENABLED and LINKS_BACKFILL:
+        try:
+            summary["links_backfill"] = backfill_links(data_dir, events, remaining, keys, now)
+        except Exception as e:
+            summary["errors"].append(f"links backfill: {type(e).__name__}")
     summary["credits"] = remaining
     failed = [p for p in summary["pulled"] if p["status"] == "failed"]
     summary["status"] = "failed" if failed else "ok"
