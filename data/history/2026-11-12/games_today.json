@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-13T03:15:16+00:00",
+  "fetched_at": "2026-11-13T03:30:14+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-12",
@@ -78,11 +78,11 @@
       "game_id": "401909977",
       "start_utc": "2026-11-13T00:00Z",
       "short_name": "DET @ WSH",
-      "state": "in",
-      "status": "End of 2OT",
-      "completed": false,
+      "state": "post",
+      "status": "Final/2OT",
+      "completed": true,
       "period": 6,
-      "clock": "0.1",
+      "clock": "0.0",
       "venue": "Capital One Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -93,9 +93,9 @@
         "abbr": "WSH",
         "name": "Washington Wizards",
         "score": 140,
-        "winner": null,
-        "record": "4-8",
-        "home_record": "2-2",
+        "winner": false,
+        "record": "4-9",
+        "home_record": "2-3",
         "away_record": "2-6",
         "leaders": {
           "points": {
@@ -121,10 +121,10 @@
         "abbr": "DET",
         "name": "Detroit Pistons",
         "score": 144,
-        "winner": null,
-        "record": "7-3",
+        "winner": true,
+        "record": "8-3",
         "home_record": "3-2",
-        "away_record": "4-1",
+        "away_record": "5-1",
         "leaders": {
           "points": {
             "player": "Cade Cunningham",
@@ -150,11 +150,11 @@
       "game_id": "401909978",
       "start_utc": "2026-11-13T01:00Z",
       "short_name": "DAL @ MIN",
-      "state": "in",
-      "status": "58.2 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "58.2",
+      "clock": "0.0",
       "venue": "Target Center",
       "neutral_site": false,
       "broadcasts": [
@@ -166,10 +166,10 @@
         "team_id": "16",
         "abbr": "MIN",
         "name": "Minnesota Timberwolves",
-        "score": 131,
-        "winner": null,
-        "record": "8-3",
-        "home_record": "4-1",
+        "score": 133,
+        "winner": true,
+        "record": "9-3",
+        "home_record": "5-1",
         "away_record": "4-2",
         "leaders": {
           "points": {
@@ -195,10 +195,10 @@
         "abbr": "DAL",
         "name": "Dallas Mavericks",
         "score": 94,
-        "winner": null,
-        "record": "7-4",
+        "winner": false,
+        "record": "7-5",
         "home_record": "5-2",
-        "away_record": "2-2",
+        "away_record": "2-3",
         "leaders": {
           "points": {
             "player": "Zaccharie Risacher",
@@ -214,7 +214,7 @@
           },
           "rating": {
             "player": "Zaccharie Risacher",
-            "value": "22 PTS"
+            "value": "22 PTS, 6 REB"
           }
         }
       },
@@ -225,10 +225,10 @@
       "start_utc": "2026-11-13T02:00Z",
       "short_name": "CHA @ PHX",
       "state": "in",
-      "status": "Halftime",
+      "status": "8:22 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "8:22",
       "venue": "Mortgage Matchup Center",
       "neutral_site": false,
       "broadcasts": [
@@ -239,7 +239,7 @@
         "team_id": "21",
         "abbr": "PHX",
         "name": "Phoenix Suns",
-        "score": 55,
+        "score": 59,
         "winner": null,
         "record": "4-6",
         "home_record": "4-3",
@@ -247,19 +247,19 @@
         "leaders": {
           "points": {
             "player": "Devin Booker",
-            "value": "15"
+            "value": "17"
           },
           "rebounds": {
-            "player": "Jordan Goodwin",
+            "player": "Jalen Green",
             "value": "3"
           },
           "assists": {
             "player": "Devin Booker",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
             "player": "Devin Booker",
-            "value": "15 PTS"
+            "value": "17 PTS, 6 AST"
           }
         }
       },
@@ -267,7 +267,7 @@
         "team_id": "30",
         "abbr": "CHA",
         "name": "Charlotte Hornets",
-        "score": 50,
+        "score": 62,
         "winner": null,
         "record": "4-7",
         "home_record": "3-4",
@@ -275,19 +275,19 @@
         "leaders": {
           "points": {
             "player": "Coby White",
-            "value": "9"
+            "value": "14"
           },
           "rebounds": {
             "player": "Moussa Diabate",
-            "value": "6"
+            "value": "9"
           },
           "assists": {
             "player": "Sion James",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Coby White",
-            "value": "9 PTS"
+            "value": "14 PTS"
           }
         }
       },

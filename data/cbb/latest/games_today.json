@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-13T03:15:23+00:00",
+  "fetched_at": "2026-11-13T03:30:17+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-12",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-13T02:00Z",
       "short_name": "MTST @ BYU",
       "state": "in",
-      "status": "13:08 - 2nd",
+      "status": "8:05 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "13:08",
+      "clock": "8:05",
       "venue": "Marriott Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,18 +23,18 @@
         "team_id": "252",
         "abbr": "BYU",
         "name": "BYU Cougars",
-        "score": 63,
+        "score": 70,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Bruce Branch III",
-            "value": "15"
+            "player": "Robert Wright III",
+            "value": "17"
           },
           "rebounds": {
-            "player": "Tyler Betsey",
+            "player": "Jaxon Kohler",
             "value": "6"
           },
           "assists": {
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Robert Wright III",
-            "value": "15 PTS"
+            "value": "17 PTS"
           }
         },
         "conf_id": "8",
@@ -56,7 +56,7 @@
         "team_id": "147",
         "abbr": "MTST",
         "name": "Montana State Bobcats",
-        "score": 46,
+        "score": 56,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
@@ -71,8 +71,8 @@
             "value": "4"
           },
           "assists": {
-            "player": "Christian King",
-            "value": "4"
+            "player": "Cavin Holden",
+            "value": "5"
           },
           "rating": {
             "player": "Christian King",
@@ -93,11 +93,11 @@
       "game_id": "401919041",
       "start_utc": "2026-11-13T01:00Z",
       "short_name": "OKST @ TA&M",
-      "state": "in",
-      "status": "3:13 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "3:13",
+      "clock": "0:00",
       "venue": "Reed Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -107,15 +107,15 @@
         "team_id": "245",
         "abbr": "TA&M",
         "name": "Texas A&M Aggies",
-        "score": 83,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "3-0",
+        "score": 88,
+        "winner": true,
+        "record": "4-0",
+        "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "PJ Haggerty",
-            "value": "19"
+            "value": "22"
           },
           "rebounds": {
             "player": "Josh Irving",
@@ -140,11 +140,11 @@
         "team_id": "197",
         "abbr": "OKST",
         "name": "Oklahoma State Cowboys",
-        "score": 67,
-        "winner": null,
-        "record": "2-0",
+        "score": 69,
+        "winner": false,
+        "record": "2-1",
         "home_record": "2-0",
-        "away_record": "0-0",
+        "away_record": "0-1",
         "leaders": {
           "points": {
             "player": "Anthony Felesi",
@@ -152,7 +152,7 @@
           },
           "rebounds": {
             "player": "Anthony Felesi",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Jacob Walker",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "Anthony Felesi",
-            "value": "14 PTS, 7 REB"
+            "value": "14 PTS, 8 REB"
           }
         },
         "conf_id": "8",
