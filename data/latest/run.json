@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-13T00:45:21+00:00",
+  "finished_at": "2026-11-13T01:00:35+00:00",
   "game_date": "2026-11-12",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -26,15 +26,23 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 57,
+      "ODDS_API_KEY": 53,
       "ODDS_API_KEY_2": 56,
-      "ODDS_API_KEY_20K": 14254
+      "ODDS_API_KEY_20K": 14247
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Charlotte Hornets @ Phoenix Suns",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 198,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "status": "ok"
   }
 }
