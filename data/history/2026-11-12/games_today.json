@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-13T00:00:18+00:00",
+  "fetched_at": "2026-11-13T00:15:14+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-12",
@@ -8,11 +8,11 @@
       "game_id": "401909976",
       "start_utc": "2026-11-13T00:00Z",
       "short_name": "TOR @ PHI",
-      "state": "pre",
-      "status": "11/12 - 7:00 PM EST",
+      "state": "in",
+      "status": "9:59 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:59",
       "venue": "Xfinity Mobile Arena",
       "neutral_site": false,
       "broadcasts": null,
@@ -20,27 +20,23 @@
         "team_id": "20",
         "abbr": "PHI",
         "name": "Philadelphia 76ers",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "9-3",
         "home_record": "4-2",
         "away_record": "5-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tyrese Maxey",
-            "value": "26.7"
+          "points": {
+            "player": "Jaylen Brown",
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Joel Embiid",
-            "value": "9.3"
-          },
-          "assistsPerGame": {
-            "player": "Tyrese Maxey",
-            "value": "5.3"
+          "rebounds": {
+            "player": "VJ Edgecombe",
+            "value": "1"
           },
           "rating": {
-            "player": "Tyrese Maxey",
-            "value": "26.7 PPG, 3.5 RPG, 5.3 APG, 1.2 SPG, 0.6 BPG"
+            "player": "Jaylen Brown",
+            "value": "2 PTS"
           }
         }
       },
@@ -48,46 +44,41 @@
         "team_id": "28",
         "abbr": "TOR",
         "name": "Toronto Raptors",
-        "score": 0,
+        "score": 4,
         "winner": null,
         "record": "5-6",
         "home_record": "2-3",
         "away_record": "3-3",
         "leaders": {
-          "pointsPerGame": {
-            "player": "RJ Barrett",
-            "value": "20.5"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Jakob Poeltl",
-            "value": "6.8"
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Jamal Shead",
-            "value": "6.9"
+          "rebounds": {
+            "player": "Immanuel Quickley",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Immanuel Quickley",
+            "value": "1"
           },
           "rating": {
-            "player": "RJ Barrett",
-            "value": "20.5 PPG, 6.0 RPG, 4.0 APG, 0.5 SPG, 0.5 BPG"
+            "player": "Immanuel Quickley",
+            "value": "2 REB"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "PHI -7.5",
-        "spread": -7.5,
-        "over_under": 223.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909977",
       "start_utc": "2026-11-13T00:00Z",
       "short_name": "DET @ WSH",
-      "state": "pre",
-      "status": "11/12 - 7:00 PM EST",
+      "state": "in",
+      "status": "9:15 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:15",
       "venue": "Capital One Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -97,27 +88,27 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 0,
+        "score": 13,
         "winner": null,
         "record": "4-8",
         "home_record": "2-2",
         "away_record": "2-6",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Anthony Davis",
-            "value": "25.2"
+            "value": "4"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Anthony Davis",
-            "value": "10.0"
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Trae Young",
-            "value": "8.3"
+          "assists": {
+            "player": "Kyshawn George",
+            "value": "2"
           },
           "rating": {
-            "player": "Anthony Davis",
-            "value": "25.2 PPG, 10.0 RPG, 1.8 APG, 1.3 SPG, 1.1 BPG"
+            "player": "Kyshawn George",
+            "value": "3 PTS"
           }
         }
       },
@@ -125,36 +116,31 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "7-3",
         "home_record": "3-2",
         "away_record": "4-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Cade Cunningham",
-            "value": "22.3"
+          "points": {
+            "player": "Daniss Jenkins",
+            "value": "3"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Ausar Thompson",
-            "value": "8.4"
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Cade Cunningham",
-            "value": "7.6"
+          "assists": {
+            "player": "Ausar Thompson",
+            "value": "1"
           },
           "rating": {
-            "player": "Cade Cunningham",
-            "value": "22.3 PPG, 5.2 RPG, 7.6 APG, 1.6 SPG, 0.9 BPG"
+            "player": "Ausar Thompson",
+            "value": "2 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "DET -10.5",
-        "spread": 10.5,
-        "over_under": 223.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909978",

@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-13T00:00:25+00:00",
+  "finished_at": "2026-11-13T00:15:22+00:00",
   "game_date": "2026-11-12",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -26,23 +26,15 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 59,
+      "ODDS_API_KEY": 57,
       "ODDS_API_KEY_2": 56,
-      "ODDS_API_KEY_20K": 14268
+      "ODDS_API_KEY_20K": 14261
     },
-    "pulled": [
-      {
-        "matchup": "Dallas Mavericks @ Minnesota Timberwolves",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 208,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "status": "ok"
   }
 }
