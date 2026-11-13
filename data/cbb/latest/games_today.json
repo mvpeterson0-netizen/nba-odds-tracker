@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-13T23:00:24+00:00",
+  "fetched_at": "2026-11-13T23:15:23+00:00",
   "source": "espn",
   "count": 29,
   "game_date": "2026-11-13",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-13T22:00Z",
       "short_name": "UNA @ MIA",
       "state": "in",
-      "status": "Halftime",
+      "status": "16:16 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "16:16",
       "venue": "Watsco Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2390",
         "abbr": "MIA",
         "name": "Miami Hurricanes",
-        "score": 54,
+        "score": 61,
         "winner": null,
         "record": "2-1",
         "home_record": "2-0",
@@ -56,15 +56,15 @@
         "team_id": "2453",
         "abbr": "UNA",
         "name": "North Alabama Lions",
-        "score": 26,
+        "score": 30,
         "winner": null,
         "record": "2-1",
         "home_record": "1-0",
         "away_record": "1-1",
         "leaders": {
           "points": {
-            "player": "Damarien Yates",
-            "value": "5"
+            "player": "Cortez Graham-Howard",
+            "value": "7"
           },
           "rebounds": {
             "player": "Quan Lax",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-13T22:00Z",
       "short_name": "AMCC @ FSU",
       "state": "in",
-      "status": "0:44 - 1st",
+      "status": "20:00 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:44",
+      "period": 2,
+      "clock": "20:00",
       "venue": "Tucker Center",
       "neutral_site": false,
       "broadcasts": [
@@ -119,7 +119,7 @@
           },
           "rebounds": {
             "player": "Elisee Assui",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Anthony Robinson II",
@@ -177,11 +177,11 @@
       "game_id": "401923270",
       "start_utc": "2026-11-13T23:00Z",
       "short_name": "BRY @ RUTG",
-      "state": "pre",
-      "status": "11/13 - 6:00 PM EST",
+      "state": "in",
+      "status": "13:51 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "13:51",
       "venue": "Jersey Mike’s Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -191,23 +191,27 @@
         "team_id": "164",
         "abbr": "RUTG",
         "name": "Rutgers Scarlet Knights",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tariq Francis",
-            "value": "15.5"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Lino Mark",
-            "value": "5.5"
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Tariq Francis",
-            "value": "4.0"
+          "rebounds": {
+            "player": "Lino Mark",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Lino Mark",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Lino Mark",
+            "value": "2 PTS"
           }
         },
         "conf_id": "7",
@@ -220,23 +224,27 @@
         "team_id": "2803",
         "abbr": "BRY",
         "name": "Bryant Bulldogs",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "1-3",
         "home_record": "1-1",
         "away_record": "0-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Keegan Harvey",
-            "value": "12.0"
+          "points": {
+            "player": "Onyx Nnani",
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Andre Pasha",
-            "value": "7.2"
+          "rebounds": {
+            "player": "Roi Behar",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Ty Tabales",
-            "value": "3.5"
+          "assists": {
+            "player": "Roi Behar",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Onyx Nnani",
+            "value": "2 PTS"
           }
         },
         "conf_id": "1",
@@ -245,12 +253,7 @@
         "loc": "Bryant",
         "nick": "Bulldogs"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "RUTG -21.5",
-        "spread": -21.5,
-        "over_under": 148.5
-      },
+      "espn_line": null,
       "date": "2026-11-13",
       "p4": true
     },
@@ -258,11 +261,11 @@
       "game_id": "401909515",
       "start_utc": "2026-11-13T23:00Z",
       "short_name": "GTWN @ CLEM",
-      "state": "pre",
-      "status": "11/13 - 6:00 PM EST",
+      "state": "in",
+      "status": "13:18 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "13:18",
       "venue": "Littlejohn Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -272,23 +275,27 @@
         "team_id": "228",
         "abbr": "CLEM",
         "name": "Clemson Tigers",
-        "score": 0,
+        "score": 14,
         "winner": null,
         "record": "3-0",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Ace Buckner",
-            "value": "19.7"
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "Liutauras Lelevicius",
-            "value": "8.0"
+          "rebounds": {
+            "player": "David Fuchs",
+            "value": "1"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Ace Buckner",
-            "value": "5.3"
+            "value": "1"
+          },
+          "rating": {
+            "player": "Ace Buckner",
+            "value": "4 PTS"
           }
         },
         "conf_id": "2",
@@ -301,23 +308,27 @@
         "team_id": "46",
         "abbr": "GTWN",
         "name": "Georgetown Hoyas",
-        "score": 0,
+        "score": 17,
         "winner": null,
         "record": "3-0",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Vince Iwuchukwu",
-            "value": "20.3"
-          },
-          "reboundsPerGame": {
-            "player": "Vince Iwuchukwu",
-            "value": "8.7"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Jaland Lowe",
-            "value": "8.3"
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Jaland Lowe",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Jaland Lowe",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Jaland Lowe",
+            "value": "5 PTS"
           }
         },
         "conf_id": "4",
@@ -326,12 +337,7 @@
         "loc": "Georgetown",
         "nick": "Hoyas"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "CLEM -4.5",
-        "spread": -4.5,
-        "over_under": 147.5
-      },
+      "espn_line": null,
       "date": "2026-11-13",
       "p4": true
     },
@@ -976,8 +982,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "PUR -19.5",
-        "spread": -19.5,
+        "details": "PUR -18.5",
+        "spread": -18.5,
         "over_under": 149.5
       },
       "date": "2026-11-13",
