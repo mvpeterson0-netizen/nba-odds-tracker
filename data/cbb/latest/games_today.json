@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-13T03:45:18+00:00",
+  "fetched_at": "2026-11-13T04:00:25+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-12",
@@ -9,11 +9,11 @@
       "game_id": "401921741",
       "start_utc": "2026-11-13T02:00Z",
       "short_name": "MTST @ BYU",
-      "state": "in",
-      "status": "3:58 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "3:58",
+      "clock": "0:00",
       "venue": "Marriott Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,15 +23,15 @@
         "team_id": "252",
         "abbr": "BYU",
         "name": "BYU Cougars",
-        "score": 81,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "2-0",
+        "score": 86,
+        "winner": true,
+        "record": "4-0",
+        "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "Robert Wright III",
-            "value": "19"
+            "value": "22"
           },
           "rebounds": {
             "player": "Jaxon Kohler",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Robert Wright III",
-            "value": "19 PTS, 7 AST"
+            "value": "22 PTS, 7 AST, 5 STL"
           }
         },
         "conf_id": "8",
@@ -56,18 +56,18 @@
         "team_id": "147",
         "abbr": "MTST",
         "name": "Montana State Bobcats",
-        "score": 63,
-        "winner": null,
-        "record": "1-1",
+        "score": 71,
+        "winner": false,
+        "record": "1-2",
         "home_record": "1-0",
-        "away_record": "0-1",
+        "away_record": "0-2",
         "leaders": {
           "points": {
             "player": "Jeremiah Davis",
             "value": "14"
           },
           "rebounds": {
-            "player": "Jed Miller",
+            "player": "Darnez Slater",
             "value": "5"
           },
           "assists": {
@@ -75,8 +75,8 @@
             "value": "6"
           },
           "rating": {
-            "player": "Christian King",
-            "value": "12 PTS"
+            "player": "Jeremiah Davis",
+            "value": "14 PTS"
           }
         },
         "conf_id": "5",
