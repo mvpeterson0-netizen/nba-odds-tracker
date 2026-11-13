@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-12T23:45:23+00:00",
+  "finished_at": "2026-11-13T00:00:45+00:00",
   "game_date": "2026-11-12",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -27,21 +27,39 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 59,
-      "ODDS_API_KEY_2": 60,
-      "ODDS_API_KEY_20K": 14268
+      "ODDS_API_KEY": 57,
+      "ODDS_API_KEY_2": 56,
+      "ODDS_API_KEY_20K": null
     },
-    "pulled": [],
-    "errors": [],
+    "pulled": [
+      {
+        "matchup": "Southern Jaguars @ Minnesota Golden Gophers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Montana St Bobcats @ BYU Cougars",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
+    "errors": [
+      "ODDS_API_KEY_20K: events HTTP 502"
+    ],
     "events": 62,
-    "p4_events": 29,
+    "p4_events": 28,
     "unmatched": [],
-    "due": 0,
+    "due": 2,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 2,
+      "pull_type": "pregame",
+      "rows": 16,
+      "credits_last": 2
     },
     "status": "ok"
   }
