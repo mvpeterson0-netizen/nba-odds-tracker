@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-13T02:00:24+00:00",
+  "fetched_at": "2026-11-13T02:15:23+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-12",
@@ -9,11 +9,11 @@
       "game_id": "401921768",
       "start_utc": "2026-11-13T00:00Z",
       "short_name": "MER @ WVU",
-      "state": "in",
-      "status": "2:48 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "2:48",
+      "clock": "0:00",
       "venue": "Hope Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -23,10 +23,10 @@
         "team_id": "277",
         "abbr": "WVU",
         "name": "West Virginia Mountaineers",
-        "score": 70,
-        "winner": null,
-        "record": "2-0",
-        "home_record": "2-0",
+        "score": 75,
+        "winner": true,
+        "record": "3-0",
+        "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -34,7 +34,7 @@
             "value": "15"
           },
           "rebounds": {
-            "player": "Seydou Traore",
+            "player": "Finley Bizjack",
             "value": "6"
           },
           "assists": {
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Finley Bizjack",
-            "value": "15 PTS"
+            "value": "15 PTS, 6 REB"
           }
         },
         "conf_id": "8",
@@ -56,27 +56,27 @@
         "team_id": "2382",
         "abbr": "MER",
         "name": "Mercer Bears",
-        "score": 55,
-        "winner": null,
-        "record": "2-2",
+        "score": 61,
+        "winner": false,
+        "record": "2-3",
         "home_record": "1-0",
-        "away_record": "1-2",
+        "away_record": "1-3",
         "leaders": {
           "points": {
             "player": "Shane Cherry",
-            "value": "18"
+            "value": "20"
           },
           "rebounds": {
             "player": "Karon Boyd",
             "value": "8"
           },
           "assists": {
-            "player": "Quinton Perkins II",
+            "player": "Shane Cherry",
             "value": "4"
           },
           "rating": {
             "player": "Shane Cherry",
-            "value": "18 PTS"
+            "value": "20 PTS"
           }
         },
         "conf_id": "24",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-13T01:00Z",
       "short_name": "OKST @ TA&M",
       "state": "in",
-      "status": "0:33 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "0:33",
+      "clock": "0:00",
       "venue": "Reed Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "245",
         "abbr": "TA&M",
         "name": "Texas A&M Aggies",
-        "score": 49,
+        "score": 50,
         "winner": null,
         "record": "3-0",
         "home_record": "3-0",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-13T01:00Z",
       "short_name": "SOU @ MINN",
       "state": "in",
-      "status": "Halftime",
+      "status": "15:34 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "15:34",
       "venue": "The Barn by Blue Cross and Blue Shield of Minnesota",
       "neutral_site": false,
       "broadcasts": [
@@ -191,7 +191,7 @@
         "team_id": "135",
         "abbr": "MINN",
         "name": "Minnesota Golden Gophers",
-        "score": 46,
+        "score": 54,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
@@ -199,11 +199,11 @@
         "leaders": {
           "points": {
             "player": "Isaac Asuma",
-            "value": "14"
+            "value": "16"
           },
           "rebounds": {
-            "player": "Kyan Evans",
-            "value": "3"
+            "player": "Grayson Grove",
+            "value": "5"
           },
           "assists": {
             "player": "Isaac Asuma",
@@ -211,7 +211,7 @@
           },
           "rating": {
             "player": "Isaac Asuma",
-            "value": "14 PTS"
+            "value": "16 PTS"
           }
         },
         "conf_id": "7",
@@ -224,7 +224,7 @@
         "team_id": "2582",
         "abbr": "SOU",
         "name": "Southern Jaguars",
-        "score": 26,
+        "score": 32,
         "winner": null,
         "record": "0-4",
         "home_record": "0-0",
@@ -232,7 +232,7 @@
         "leaders": {
           "points": {
             "player": "Lionel Larvadain",
-            "value": "7"
+            "value": "10"
           },
           "rebounds": {
             "player": "Lionel Larvadain",
@@ -240,11 +240,11 @@
           },
           "assists": {
             "player": "R'Chaun King",
-            "value": "2"
+            "value": "4"
           },
           "rating": {
             "player": "Lionel Larvadain",
-            "value": "7 PTS"
+            "value": "10 PTS"
           }
         },
         "conf_id": "26",
@@ -429,11 +429,11 @@
       "game_id": "401921741",
       "start_utc": "2026-11-13T02:00Z",
       "short_name": "MTST @ BYU",
-      "state": "pre",
-      "status": "11/12 - 9:00 PM EST",
+      "state": "in",
+      "status": "11:46 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "11:46",
       "venue": "Marriott Center",
       "neutral_site": false,
       "broadcasts": [
@@ -443,23 +443,27 @@
         "team_id": "252",
         "abbr": "BYU",
         "name": "BYU Cougars",
-        "score": 0,
+        "score": 16,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Robert Wright III",
-            "value": "25.0"
+            "value": "7"
           },
-          "reboundsPerGame": {
+          "rebounds": {
+            "player": "Collin Chandler",
+            "value": "2"
+          },
+          "assists": {
             "player": "Jaxon Kohler",
-            "value": "7.3"
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Robert Wright III",
-            "value": "4.0"
+          "rating": {
+            "player": "Collin Chandler",
+            "value": "5 PTS"
           }
         },
         "conf_id": "8",
@@ -472,23 +476,27 @@
         "team_id": "147",
         "abbr": "MTST",
         "name": "Montana State Bobcats",
-        "score": 0,
+        "score": 11,
         "winner": null,
         "record": "1-1",
         "home_record": "1-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Jeremiah Davis",
-            "value": "17.0"
+            "value": "5"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Jeremiah Davis",
-            "value": "7.5"
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Cavin Holden",
-            "value": "2.5"
+          "assists": {
+            "player": "Christian King",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Jeremiah Davis",
+            "value": "5 PTS"
           }
         },
         "conf_id": "5",
@@ -497,12 +505,7 @@
         "loc": "Montana State",
         "nick": "Bobcats"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "BYU -21.5",
-        "spread": -21.5,
-        "over_under": 162.5
-      },
+      "espn_line": null,
       "date": "2026-11-12",
       "p4": true
     }
