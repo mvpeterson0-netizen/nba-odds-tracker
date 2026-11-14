@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-14T22:45:24+00:00",
+  "finished_at": "2026-11-14T23:00:21+00:00",
   "game_date": "2026-11-14",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,13 +28,21 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 13559
+      "ODDS_API_KEY_20K": 13555
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Denver Nuggets @ New Orleans Pelicans",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 164,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "links_backfill": [],
     "status": "ok"
   }
