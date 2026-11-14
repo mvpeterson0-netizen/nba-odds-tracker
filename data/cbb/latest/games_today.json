@@ -1,271 +1,19 @@
 {
-  "fetched_at": "2026-11-14T04:15:21+00:00",
+  "fetched_at": "2026-11-14T04:30:18+00:00",
   "source": "espn",
   "count": 29,
   "game_date": "2026-11-13",
   "division_i_games": 61,
   "rows": [
     {
-      "game_id": "401909741",
-      "start_utc": "2026-11-14T02:00Z",
-      "short_name": "ARIZ @ AUB",
-      "state": "in",
-      "status": "1:38 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "1:38",
-      "venue": "Neville Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "2",
-        "abbr": "AUB",
-        "name": "Auburn Tigers",
-        "score": 67,
-        "winner": null,
-        "record": "2-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Thomas Dowd",
-            "value": "15"
-          },
-          "rebounds": {
-            "player": "Thomas Dowd",
-            "value": "9"
-          },
-          "assists": {
-            "player": "George Kimble III",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Thomas Dowd",
-            "value": "15 PTS, 9 REB"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Auburn",
-        "nick": "Tigers"
-      },
-      "away": {
-        "team_id": "12",
-        "abbr": "ARIZ",
-        "name": "Arizona Wildcats",
-        "score": 74,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Caleb Holt",
-            "value": "24"
-          },
-          "rebounds": {
-            "player": "Motiejus Krivas",
-            "value": "11"
-          },
-          "assists": {
-            "player": "Motiejus Krivas",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Caleb Holt",
-            "value": "24 PTS, 9 REB, 4 STL"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 12,
-        "loc": "Arizona",
-        "nick": "Wildcats"
-      },
-      "espn_line": null,
-      "date": "2026-11-13",
-      "p4": true
-    },
-    {
-      "game_id": "401906760",
-      "start_utc": "2026-11-14T02:00Z",
-      "short_name": "HALL @ ALA",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Coleman Coliseum",
-      "neutral_site": false,
-      "broadcasts": [
-        "SEC Network"
-      ],
-      "home": {
-        "team_id": "333",
-        "abbr": "ALA",
-        "name": "Alabama Crimson Tide",
-        "score": 82,
-        "winner": true,
-        "record": "4-0",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Amari Allen",
-            "value": "24"
-          },
-          "rebounds": {
-            "player": "Brandon Garrison",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Amari Allen",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Amari Allen",
-            "value": "24 PTS"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 18,
-        "loc": "Alabama",
-        "nick": "Crimson Tide"
-      },
-      "away": {
-        "team_id": "2550",
-        "abbr": "HALL",
-        "name": "Seton Hall Pirates",
-        "score": 76,
-        "winner": false,
-        "record": "3-1",
-        "home_record": "2-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Ilay Dolinski",
-            "value": "15"
-          },
-          "rebounds": {
-            "player": "Devin Williams",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Trey Parker",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Ilay Dolinski",
-            "value": "15 PTS"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": null,
-        "loc": "Seton Hall",
-        "nick": "Pirates"
-      },
-      "espn_line": null,
-      "date": "2026-11-13",
-      "p4": true
-    },
-    {
-      "game_id": "401921728",
-      "start_utc": "2026-11-14T02:00Z",
-      "short_name": "STAN @ UNLV",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Thomas & Mack Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "CBSSN"
-      ],
-      "home": {
-        "team_id": "2439",
-        "abbr": "UNLV",
-        "name": "UNLV Rebels",
-        "score": 76,
-        "winner": true,
-        "record": "3-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Cam Miles",
-            "value": "17"
-          },
-          "rebounds": {
-            "player": "Tyrin Jones",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Sebastian Mack",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Tyrin Jones",
-            "value": "16 PTS, 6 REB"
-          }
-        },
-        "conf_id": "44",
-        "conf": null,
-        "rank": null,
-        "loc": "UNLV",
-        "nick": "Rebels"
-      },
-      "away": {
-        "team_id": "24",
-        "abbr": "STAN",
-        "name": "Stanford Cardinal",
-        "score": 68,
-        "winner": false,
-        "record": "3-1",
-        "home_record": "3-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Austin Maurer",
-            "value": "20"
-          },
-          "rebounds": {
-            "player": "Austin Maurer",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Christian Bliss",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Austin Maurer",
-            "value": "20 PTS, 9 REB, 3 STL"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Stanford",
-        "nick": "Cardinal"
-      },
-      "espn_line": null,
-      "date": "2026-11-13",
-      "p4": true
-    },
-    {
       "game_id": "401911014",
       "start_utc": "2026-11-14T02:00Z",
       "short_name": "BALL @ SMU",
-      "state": "in",
-      "status": "3:47 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "3:47",
+      "clock": "0:00",
       "venue": "Moody Coliseum (Dallas)",
       "neutral_site": false,
       "broadcasts": [
@@ -275,10 +23,10 @@
         "team_id": "2567",
         "abbr": "SMU",
         "name": "SMU Mustangs",
-        "score": 82,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "3-0",
+        "score": 90,
+        "winner": true,
+        "record": "4-0",
+        "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -287,7 +35,7 @@
           },
           "rebounds": {
             "player": "Jakub Szumert",
-            "value": "8"
+            "value": "9"
           },
           "assists": {
             "player": "David Terrell Jr.",
@@ -295,7 +43,7 @@
           },
           "rating": {
             "player": "Oziyah Sellers",
-            "value": "21 PTS"
+            "value": "21 PTS, 6 REB"
           }
         },
         "conf_id": "2",
@@ -308,15 +56,15 @@
         "team_id": "2050",
         "abbr": "BALL",
         "name": "Ball State Cardinals",
-        "score": 58,
-        "winner": null,
-        "record": "1-2",
+        "score": 65,
+        "winner": false,
+        "record": "1-3",
         "home_record": "1-1",
-        "away_record": "0-1",
+        "away_record": "0-2",
         "leaders": {
           "points": {
             "player": "Sean Blake",
-            "value": "17"
+            "value": "19"
           },
           "rebounds": {
             "player": "Jaden Smith",
@@ -328,7 +76,7 @@
           },
           "rating": {
             "player": "Sean Blake",
-            "value": "17 PTS, 7 AST"
+            "value": "19 PTS, 7 AST"
           }
         },
         "conf_id": "14",
@@ -345,11 +93,11 @@
       "game_id": "401906794",
       "start_utc": "2026-11-14T02:00Z",
       "short_name": "XAV VS MSST",
-      "state": "in",
-      "status": "3:19 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "3:19",
+      "clock": "0:00",
       "venue": "Colonial Hall",
       "neutral_site": true,
       "broadcasts": [
@@ -359,9 +107,9 @@
         "team_id": "344",
         "abbr": "MSST",
         "name": "Mississippi State Bulldogs",
-        "score": 57,
-        "winner": null,
-        "record": "3-0",
+        "score": 63,
+        "winner": false,
+        "record": "3-1",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
@@ -370,8 +118,8 @@
             "value": "12"
           },
           "rebounds": {
-            "player": "ND Okafor",
-            "value": "6"
+            "player": "Tristan Reed",
+            "value": "7"
           },
           "assists": {
             "player": "Josh Hubbard",
@@ -392,15 +140,15 @@
         "team_id": "2752",
         "abbr": "XAV",
         "name": "Xavier Musketeers",
-        "score": 74,
-        "winner": null,
-        "record": "3-0",
+        "score": 81,
+        "winner": true,
+        "record": "4-0",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "Tru Washington",
-            "value": "19"
+            "value": "21"
           },
           "rebounds": {
             "player": "Tru Washington",
@@ -412,7 +160,7 @@
           },
           "rating": {
             "player": "Tru Washington",
-            "value": "19 PTS, 8 REB, 3 STL"
+            "value": "21 PTS, 8 REB, 3 STL"
           }
         },
         "conf_id": "4",
@@ -1014,6 +762,90 @@
       "p4": true
     },
     {
+      "game_id": "401909741",
+      "start_utc": "2026-11-14T02:00Z",
+      "short_name": "ARIZ @ AUB",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Neville Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "2",
+        "abbr": "AUB",
+        "name": "Auburn Tigers",
+        "score": 69,
+        "winner": false,
+        "record": "2-1",
+        "home_record": "2-1",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Thomas Dowd",
+            "value": "15"
+          },
+          "rebounds": {
+            "player": "Thomas Dowd",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Tahaad Pettiford",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Thomas Dowd",
+            "value": "15 PTS, 9 REB"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Auburn",
+        "nick": "Tigers"
+      },
+      "away": {
+        "team_id": "12",
+        "abbr": "ARIZ",
+        "name": "Arizona Wildcats",
+        "score": 80,
+        "winner": true,
+        "record": "3-1",
+        "home_record": "2-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Caleb Holt",
+            "value": "24"
+          },
+          "rebounds": {
+            "player": "Motiejus Krivas",
+            "value": "12"
+          },
+          "assists": {
+            "player": "Motiejus Krivas",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Caleb Holt",
+            "value": "24 PTS, 9 REB, 5 STL"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 12,
+        "loc": "Arizona",
+        "nick": "Wildcats"
+      },
+      "espn_line": null,
+      "date": "2026-11-13",
+      "p4": true
+    },
+    {
       "game_id": "401921721",
       "start_utc": "2026-11-13T22:00Z",
       "short_name": "UNA @ MIA",
@@ -1092,6 +924,90 @@
         "rank": null,
         "loc": "North Alabama",
         "nick": "Lions"
+      },
+      "espn_line": null,
+      "date": "2026-11-13",
+      "p4": true
+    },
+    {
+      "game_id": "401906760",
+      "start_utc": "2026-11-14T02:00Z",
+      "short_name": "HALL @ ALA",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Coleman Coliseum",
+      "neutral_site": false,
+      "broadcasts": [
+        "SEC Network"
+      ],
+      "home": {
+        "team_id": "333",
+        "abbr": "ALA",
+        "name": "Alabama Crimson Tide",
+        "score": 82,
+        "winner": true,
+        "record": "4-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Amari Allen",
+            "value": "24"
+          },
+          "rebounds": {
+            "player": "Brandon Garrison",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Amari Allen",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Amari Allen",
+            "value": "24 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 18,
+        "loc": "Alabama",
+        "nick": "Crimson Tide"
+      },
+      "away": {
+        "team_id": "2550",
+        "abbr": "HALL",
+        "name": "Seton Hall Pirates",
+        "score": 76,
+        "winner": false,
+        "record": "3-1",
+        "home_record": "2-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Ilay Dolinski",
+            "value": "15"
+          },
+          "rebounds": {
+            "player": "Devin Williams",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Trey Parker",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Ilay Dolinski",
+            "value": "15 PTS"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Seton Hall",
+        "nick": "Pirates"
       },
       "espn_line": null,
       "date": "2026-11-13",
@@ -2268,6 +2184,90 @@
         "rank": null,
         "loc": "Fairleigh Dickinson",
         "nick": "Knights"
+      },
+      "espn_line": null,
+      "date": "2026-11-13",
+      "p4": true
+    },
+    {
+      "game_id": "401921728",
+      "start_utc": "2026-11-14T02:00Z",
+      "short_name": "STAN @ UNLV",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Thomas & Mack Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "CBSSN"
+      ],
+      "home": {
+        "team_id": "2439",
+        "abbr": "UNLV",
+        "name": "UNLV Rebels",
+        "score": 76,
+        "winner": true,
+        "record": "3-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Cam Miles",
+            "value": "17"
+          },
+          "rebounds": {
+            "player": "Tyrin Jones",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Sebastian Mack",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Tyrin Jones",
+            "value": "16 PTS, 6 REB"
+          }
+        },
+        "conf_id": "44",
+        "conf": null,
+        "rank": null,
+        "loc": "UNLV",
+        "nick": "Rebels"
+      },
+      "away": {
+        "team_id": "24",
+        "abbr": "STAN",
+        "name": "Stanford Cardinal",
+        "score": 68,
+        "winner": false,
+        "record": "3-1",
+        "home_record": "3-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Austin Maurer",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Austin Maurer",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Christian Bliss",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Austin Maurer",
+            "value": "20 PTS, 9 REB, 3 STL"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Stanford",
+        "nick": "Cardinal"
       },
       "espn_line": null,
       "date": "2026-11-13",
