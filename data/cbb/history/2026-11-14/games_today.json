@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-14T21:30:32+00:00",
+  "fetched_at": "2026-11-14T21:45:26+00:00",
   "source": "espn",
   "count": 8,
   "game_date": "2026-11-14",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-14T20:30Z",
       "short_name": "LSU @ GONZ",
       "state": "in",
-      "status": "Halftime",
+      "status": "19:11 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "19:11",
       "venue": "Spokane Numerica Veterans Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-14T21:00Z",
       "short_name": "UNCA @ GT",
       "state": "in",
-      "status": "6:41 - 1st",
+      "status": "2:22 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "6:41",
+      "clock": "2:22",
       "venue": "McCamish Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "59",
         "abbr": "GT",
         "name": "Georgia Tech Yellow Jackets",
-        "score": 17,
+        "score": 23,
         "winner": null,
         "record": "3-0",
         "home_record": "3-0",
@@ -115,19 +115,19 @@
         "leaders": {
           "points": {
             "player": "Jackson Fields",
-            "value": "9"
+            "value": "10"
           },
           "rebounds": {
             "player": "Jackson Fields",
-            "value": "6"
+            "value": "8"
           },
           "assists": {
-            "player": "Jackson Fields",
-            "value": "1"
+            "player": "Victor Valdes",
+            "value": "2"
           },
           "rating": {
             "player": "Jackson Fields",
-            "value": "9 PTS, 6 REB"
+            "value": "10 PTS, 8 REB"
           }
         },
         "conf_id": "2",
@@ -140,7 +140,7 @@
         "team_id": "2427",
         "abbr": "UNCA",
         "name": "UNC Asheville Bulldogs",
-        "score": 26,
+        "score": 29,
         "winner": null,
         "record": "2-2",
         "home_record": "1-1",
@@ -151,8 +151,8 @@
             "value": "10"
           },
           "rebounds": {
-            "player": "Khayri Dunn",
-            "value": "3"
+            "player": "Daniel Thomas",
+            "value": "4"
           },
           "assists": {
             "player": "Kelcy Phipps",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-14T21:00Z",
       "short_name": "SUU @ WAKE",
       "state": "in",
-      "status": "7:26 - 1st",
+      "status": "3:42 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "7:26",
+      "clock": "3:42",
       "venue": "LJVM Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -191,7 +191,7 @@
         "team_id": "154",
         "abbr": "WAKE",
         "name": "Wake Forest Demon Deacons",
-        "score": 32,
+        "score": 37,
         "winner": null,
         "record": "2-1",
         "home_record": "2-0",
@@ -211,7 +211,7 @@
           },
           "rating": {
             "player": "Isaac Carr",
-            "value": "7 PTS"
+            "value": "9 PTS"
           }
         },
         "conf_id": "2",
@@ -224,7 +224,7 @@
         "team_id": "253",
         "abbr": "SUU",
         "name": "Southern Utah Thunderbirds",
-        "score": 21,
+        "score": 25,
         "winner": null,
         "record": "3-1",
         "home_record": "3-0",
@@ -232,11 +232,11 @@
         "leaders": {
           "points": {
             "player": "JaJuan Nicholls",
-            "value": "7"
+            "value": "9"
           },
           "rebounds": {
             "player": "JaJuan Nicholls",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
             "player": "Rashaad Davis",
@@ -244,7 +244,7 @@
           },
           "rating": {
             "player": "Chase Degraffenried",
-            "value": "6 PTS"
+            "value": "7 PTS"
           }
         },
         "conf_id": "5",
@@ -498,7 +498,7 @@
         "nick": "Trailblazers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CAL -14.5",
         "spread": -14.5,
         "over_under": 160.5
@@ -579,7 +579,7 @@
         "nick": "Buffaloes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "PROV -11.5",
         "spread": -11.5,
         "over_under": 155.5
@@ -661,7 +661,7 @@
         "nick": "Bearcats"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CIN -6.5",
         "spread": 6.5,
         "over_under": 146.5
