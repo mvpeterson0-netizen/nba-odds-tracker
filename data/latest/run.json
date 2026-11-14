@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-13T23:45:18+00:00",
+  "finished_at": "2026-11-14T00:00:49+00:00",
   "game_date": "2026-11-13",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -27,13 +27,38 @@
     "keys": 3,
     "credits": {
       "ODDS_API_KEY": 2,
-      "ODDS_API_KEY_2": 4,
-      "ODDS_API_KEY_20K": 13968
+      "ODDS_API_KEY_2": null,
+      "ODDS_API_KEY_20K": null
     },
-    "pulled": [],
-    "errors": [],
+    "pulled": [
+      {
+        "matchup": "Atlanta Hawks @ Chicago Bulls",
+        "type": "pregame",
+        "status": "no_credits",
+        "rows": 0,
+        "markets": 0
+      },
+      {
+        "matchup": "Cleveland Cavaliers @ Miami Heat",
+        "type": "pregame",
+        "status": "no_credits",
+        "rows": 0,
+        "markets": 0
+      },
+      {
+        "matchup": "Memphis Grizzlies @ New Orleans Pelicans",
+        "type": "pregame",
+        "status": "no_credits",
+        "rows": 0,
+        "markets": 0
+      }
+    ],
+    "errors": [
+      "ODDS_API_KEY_2: events HTTP 502",
+      "ODDS_API_KEY_20K: events HTTP 502"
+    ],
     "markets_probe": "not_due",
-    "due": 0,
+    "due": 3,
     "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"

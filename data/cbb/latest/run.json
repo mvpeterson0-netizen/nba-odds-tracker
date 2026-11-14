@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-13T23:45:19+00:00",
+  "finished_at": "2026-11-14T00:00:51+00:00",
   "game_date": "2026-11-13",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -28,20 +28,78 @@
     "keys": 3,
     "credits": {
       "ODDS_API_KEY": 2,
-      "ODDS_API_KEY_2": 4,
+      "ODDS_API_KEY_2": 2,
       "ODDS_API_KEY_20K": 13968
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Central Arkansas Bears @ Arkansas Razorbacks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Fairleigh Dickinson Knights @ Oklahoma Sooners",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Georgia Southern Eagles @ UCF Knights",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Milwaukee Panthers @ TCU Horned Frogs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "UL Monroe Warhawks @ Arizona St Sun Devils",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Ball State Cardinals @ SMU Mustangs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "DePaul Blue Demons @ Northwestern Wildcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Xavier Musketeers @ Mississippi St Bulldogs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Stanford Cardinal @ UNLV Rebels",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 88,
-    "p4_events": 30,
+    "p4_events": 20,
     "unmatched": [],
-    "due": 0,
+    "due": 9,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 6,
+      "pull_type": "pregame",
+      "rows": 48,
+      "credits_last": 2
     },
     "status": "ok"
   }
