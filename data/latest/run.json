@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-14T02:15:20+00:00",
+  "finished_at": "2026-11-14T02:30:22+00:00",
   "game_date": "2026-11-13",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,13 +28,21 @@
     "credits": {
       "ODDS_API_KEY": 1,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 13847
+      "ODDS_API_KEY_20K": 13843
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Oklahoma City Thunder @ Los Angeles Clippers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 198,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "links_backfill": [],
     "status": "ok"
   }
