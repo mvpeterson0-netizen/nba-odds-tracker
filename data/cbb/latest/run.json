@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-14T23:15:19+00:00",
+  "finished_at": "2026-11-14T23:30:20+00:00",
   "game_date": "2026-11-14",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,10 +17,10 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 2,
-    "player_rows": 61,
+    "new_games": 0,
+    "player_rows": 0,
     "unparsed": [],
-    "queued": 2,
+    "queued": 0,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -29,19 +29,24 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 13546
+      "ODDS_API_KEY_20K": 13540
     },
     "pulled": [],
     "errors": [],
-    "events": 71,
-    "p4_events": 15,
-    "unmatched": [],
+    "events": 68,
+    "p4_events": 14,
+    "unmatched": [
+      "Washington Huskies @ Utah Utes"
+    ],
     "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 1,
+      "pull_type": "pregame",
+      "rows": 8,
+      "credits_last": 2
     },
     "status": "ok"
   }
