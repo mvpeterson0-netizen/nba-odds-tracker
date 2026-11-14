@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-14T16:48:40+00:00",
+  "finished_at": "2026-11-14T17:00:34+00:00",
   "game_date": "2026-11-14",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -27,16 +27,65 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 1,
+      "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
       "ODDS_API_KEY_20K": 13696
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Gardner-Webb Bulldogs @ South Carolina Gamecocks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Stonehill Skyhawks @ Texas Tech Red Raiders",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "LSU Tigers @ Gonzaga Bulldogs",
+        "type": "morning",
+        "status": "ok",
+        "rows": 4
+      },
+      {
+        "matchup": "UNC Asheville Bulldogs @ Georgia Tech Yellow Jackets",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Southern Utah Thunderbirds @ Wake Forest Demon Deacons",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Utah Tech Trailblazers @ California Golden Bears",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Colorado Buffaloes @ Providence Friars",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Cincinnati Bearcats @ Dayton Flyers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 59,
     "p4_events": 9,
     "unmatched": [],
-    "due": 0,
+    "due": 8,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",
