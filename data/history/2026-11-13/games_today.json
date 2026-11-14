@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-14T00:00:22+00:00",
+  "fetched_at": "2026-11-14T00:15:14+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-13",
@@ -8,11 +8,11 @@
       "game_id": "401909296",
       "start_utc": "2026-11-14T00:00Z",
       "short_name": "NY @ IND",
-      "state": "pre",
-      "status": "11/13 - 7:00 PM EST",
+      "state": "in",
+      "status": "11:02 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "11:02",
       "venue": "Gainbridge Fieldhouse",
       "neutral_site": false,
       "broadcasts": [
@@ -22,27 +22,19 @@
         "team_id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "4-8",
         "home_record": "1-4",
         "away_record": "3-3",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Pascal Siakam",
-            "value": "22.7"
-          },
-          "reboundsPerGame": {
-            "player": "Pascal Siakam",
-            "value": "6.9"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Andrew Nembhard",
-            "value": "7.8"
+            "value": "2"
           },
           "rating": {
-            "player": "Pascal Siakam",
-            "value": "22.7 PPG, 6.9 RPG, 4.4 APG, 1.0 SPG, 0.1 BPG"
+            "player": "Andrew Nembhard",
+            "value": "2 PTS"
           }
         }
       },
@@ -56,40 +48,27 @@
         "home_record": "4-3",
         "away_record": "2-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jalen Brunson",
-            "value": "26.0"
-          },
-          "reboundsPerGame": {
-            "player": "Karl-Anthony Towns",
-            "value": "13.5"
-          },
-          "assistsPerGame": {
-            "player": "Jalen Brunson",
-            "value": "5.2"
+          "rebounds": {
+            "player": "Josh Hart",
+            "value": "1"
           },
           "rating": {
-            "player": "Karl-Anthony Towns",
-            "value": "20.9 PPG, 13.5 RPG, 3.5 APG, 0.7 SPG, 0.5 BPG"
+            "player": "Josh Hart",
+            "value": "1 REB"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "NY -7.5",
-        "spread": 7.5,
-        "over_under": 219.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909297",
       "start_utc": "2026-11-14T00:00Z",
       "short_name": "MIL @ ORL",
-      "state": "pre",
-      "status": "11/13 - 7:00 PM EST",
+      "state": "in",
+      "status": "9:08 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:08",
       "venue": "Kia Center",
       "neutral_site": false,
       "broadcasts": [
@@ -100,27 +79,27 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 0,
+        "score": 4,
         "winner": null,
         "record": "4-7",
         "home_record": "0-4",
         "away_record": "4-3",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Franz Wagner",
-            "value": "23.5"
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Wendell Carter Jr.",
-            "value": "9.5"
-          },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "Franz Wagner",
-            "value": "7.9"
+            "value": "1"
+          },
+          "assists": {
+            "player": "Franz Wagner",
+            "value": "1"
           },
           "rating": {
             "player": "Franz Wagner",
-            "value": "23.5 PPG, 6.5 RPG, 7.9 APG, 1.4 SPG"
+            "value": "2 PTS"
           }
         }
       },
@@ -128,36 +107,31 @@
         "team_id": "15",
         "abbr": "MIL",
         "name": "Milwaukee Bucks",
-        "score": 0,
+        "score": 3,
         "winner": null,
         "record": "1-11",
         "home_record": "1-6",
         "away_record": "0-5",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tyler Herro",
-            "value": "21.9"
+          "points": {
+            "player": "Myles Turner",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Kel'el Ware",
-            "value": "6.5"
+          "rebounds": {
+            "player": "Myles Turner",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Tyler Herro",
-            "value": "4.5"
+          "assists": {
+            "player": "Brayden Burries",
+            "value": "1"
           },
           "rating": {
-            "player": "Tyler Herro",
-            "value": "21.9 PPG, 4.4 RPG, 4.5 APG, 0.8 SPG, 0.2 BPG"
+            "player": "Myles Turner",
+            "value": "3 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "ORL -9.5",
-        "spread": -9.5,
-        "over_under": 224.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909298",
@@ -465,7 +439,7 @@
         "provider": "Draft Kings",
         "details": "HOU -15.5",
         "spread": -15.5,
-        "over_under": 220.5
+        "over_under": 221.5
       }
     },
     {
@@ -542,7 +516,7 @@
         "provider": "Draft Kings",
         "details": "SA -12.5",
         "spread": -12.5,
-        "over_under": 217.5
+        "over_under": 216.5
       }
     },
     {
