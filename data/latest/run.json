@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-14T01:15:23+00:00",
+  "finished_at": "2026-11-14T01:30:21+00:00",
   "game_date": "2026-11-13",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,13 +28,21 @@
     "credits": {
       "ODDS_API_KEY": 1,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 13949
+      "ODDS_API_KEY_20K": 13945
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Golden State Warriors @ San Antonio Spurs",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 208,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "links_backfill": [],
     "status": "ok"
   }
