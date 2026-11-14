@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-14T23:00:21+00:00",
+  "fetched_at": "2026-11-14T23:15:18+00:00",
   "source": "espn",
   "count": 8,
   "game_date": "2026-11-14",
@@ -9,11 +9,11 @@
       "game_id": "401920307",
       "start_utc": "2026-11-14T21:00Z",
       "short_name": "UNCA @ GT",
-      "state": "in",
-      "status": "1:31 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "1:31",
+      "clock": "0:00",
       "venue": "McCamish Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -23,15 +23,15 @@
         "team_id": "59",
         "abbr": "GT",
         "name": "Georgia Tech Yellow Jackets",
-        "score": 65,
-        "winner": null,
+        "score": 75,
+        "winner": true,
         "record": "3-0",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Jackson Fields",
-            "value": "14"
+            "player": "Tylis Jordan",
+            "value": "17"
           },
           "rebounds": {
             "player": "Jackson Fields",
@@ -56,8 +56,8 @@
         "team_id": "2427",
         "abbr": "UNCA",
         "name": "UNC Asheville Bulldogs",
-        "score": 66,
-        "winner": null,
+        "score": 74,
+        "winner": false,
         "record": "2-2",
         "home_record": "1-1",
         "away_record": "1-1",
@@ -90,98 +90,14 @@
       "p4": true
     },
     {
-      "game_id": "401909728",
-      "start_utc": "2026-11-14T21:00Z",
-      "short_name": "SUU @ WAKE",
-      "state": "in",
-      "status": "1:50 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "1:50",
-      "venue": "LJVM Coliseum",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACCNX"
-      ],
-      "home": {
-        "team_id": "154",
-        "abbr": "WAKE",
-        "name": "Wake Forest Demon Deacons",
-        "score": 84,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Kevair Kennedy",
-            "value": "23"
-          },
-          "rebounds": {
-            "player": "Kevair Kennedy",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Kevair Kennedy",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Kevair Kennedy",
-            "value": "23 PTS, 10 REB, 7 AST"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Wake Forest",
-        "nick": "Demon Deacons"
-      },
-      "away": {
-        "team_id": "253",
-        "abbr": "SUU",
-        "name": "Southern Utah Thunderbirds",
-        "score": 49,
-        "winner": null,
-        "record": "3-1",
-        "home_record": "3-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "JaJuan Nicholls",
-            "value": "12"
-          },
-          "rebounds": {
-            "player": "JaJuan Nicholls",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Rashaad Davis",
-            "value": "4"
-          },
-          "rating": {
-            "player": "JaJuan Nicholls",
-            "value": "12 PTS, 10 REB"
-          }
-        },
-        "conf_id": "5",
-        "conf": null,
-        "rank": null,
-        "loc": "Southern Utah",
-        "nick": "Thunderbirds"
-      },
-      "espn_line": null,
-      "date": "2026-11-14",
-      "p4": true
-    },
-    {
       "game_id": "401918055",
       "start_utc": "2026-11-14T22:00Z",
       "short_name": "UTU @ CAL",
       "state": "in",
-      "status": "Halftime",
+      "status": "14:56 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "14:56",
       "venue": "Haas Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -191,27 +107,27 @@
         "team_id": "25",
         "abbr": "CAL",
         "name": "California Golden Bears",
-        "score": 32,
+        "score": 44,
         "winner": null,
         "record": "2-2",
         "home_record": "2-1",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Michael Cooper",
-            "value": "9"
+            "player": "Nojus Indrusaitis",
+            "value": "13"
           },
           "rebounds": {
             "player": "Michael Cooper",
             "value": "5"
           },
           "assists": {
-            "player": "Sammie Yeanay",
-            "value": "1"
+            "player": "Jordan Ross",
+            "value": "2"
           },
           "rating": {
-            "player": "Sammie Yeanay",
-            "value": "7 PTS"
+            "player": "Nojus Indrusaitis",
+            "value": "13 PTS"
           }
         },
         "conf_id": "2",
@@ -224,7 +140,7 @@
         "team_id": "3101",
         "abbr": "UTU",
         "name": "Utah Tech Trailblazers",
-        "score": 41,
+        "score": 55,
         "winner": null,
         "record": "1-2",
         "home_record": "1-0",
@@ -232,7 +148,7 @@
         "leaders": {
           "points": {
             "player": "Christian Gibson",
-            "value": "17"
+            "value": "20"
           },
           "rebounds": {
             "player": "Ethan Potter",
@@ -240,11 +156,11 @@
           },
           "assists": {
             "player": "Ethan Potter",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Christian Gibson",
-            "value": "17 PTS"
+            "value": "20 PTS"
           }
         },
         "conf_id": "5",
@@ -252,6 +168,90 @@
         "rank": null,
         "loc": "Utah Tech",
         "nick": "Trailblazers"
+      },
+      "espn_line": null,
+      "date": "2026-11-14",
+      "p4": true
+    },
+    {
+      "game_id": "401909534",
+      "start_utc": "2026-11-14T23:00Z",
+      "short_name": "COLO @ PROV",
+      "state": "in",
+      "status": "13:05 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "13:05",
+      "venue": "Amica Mutual Pavilion",
+      "neutral_site": false,
+      "broadcasts": [
+        "Peacock"
+      ],
+      "home": {
+        "team_id": "2507",
+        "abbr": "PROV",
+        "name": "Providence Friars",
+        "score": 12,
+        "winner": null,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Ryan Mela",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Jacob Bannarbie",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Ryan Mela",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Ryan Mela",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Providence",
+        "nick": "Friars"
+      },
+      "away": {
+        "team_id": "38",
+        "abbr": "COLO",
+        "name": "Colorado Buffaloes",
+        "score": 14,
+        "winner": null,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Barrington Hargress",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Noah Feddersen",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Barrington Hargress",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Barrington Hargress",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Colorado",
+        "nick": "Buffaloes"
       },
       "espn_line": null,
       "date": "2026-11-14",
@@ -510,83 +510,86 @@
       "p4": true
     },
     {
-      "game_id": "401909534",
-      "start_utc": "2026-11-14T23:00Z",
-      "short_name": "COLO @ PROV",
-      "state": "pre",
-      "status": "11/14 - 6:00 PM EST",
-      "completed": false,
-      "period": 0,
+      "game_id": "401909728",
+      "start_utc": "2026-11-14T21:00Z",
+      "short_name": "SUU @ WAKE",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
       "clock": "0:00",
-      "venue": "Amica Mutual Pavilion",
+      "venue": "LJVM Coliseum",
       "neutral_site": false,
       "broadcasts": [
-        "Peacock"
+        "ACCNX"
       ],
       "home": {
-        "team_id": "2507",
-        "abbr": "PROV",
-        "name": "Providence Friars",
-        "score": 0,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-0",
+        "team_id": "154",
+        "abbr": "WAKE",
+        "name": "Wake Forest Demon Deacons",
+        "score": 89,
+        "winner": true,
+        "record": "3-1",
+        "home_record": "3-0",
+        "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Malik Mack",
-            "value": "13.0"
+          "points": {
+            "player": "Kevair Kennedy",
+            "value": "23"
           },
-          "reboundsPerGame": {
-            "player": "Jacob Bannarbie",
-            "value": "7.0"
+          "rebounds": {
+            "player": "Kevair Kennedy",
+            "value": "10"
           },
-          "assistsPerGame": {
-            "player": "Gavin Hightower",
-            "value": "3.0"
+          "assists": {
+            "player": "Kevair Kennedy",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Kevair Kennedy",
+            "value": "23 PTS, 10 REB, 7 AST"
           }
         },
-        "conf_id": "4",
-        "conf": null,
+        "conf_id": "2",
+        "conf": "ACC",
         "rank": null,
-        "loc": "Providence",
-        "nick": "Friars"
+        "loc": "Wake Forest",
+        "nick": "Demon Deacons"
       },
       "away": {
-        "team_id": "38",
-        "abbr": "COLO",
-        "name": "Colorado Buffaloes",
-        "score": 0,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-0",
+        "team_id": "253",
+        "abbr": "SUU",
+        "name": "Southern Utah Thunderbirds",
+        "score": 51,
+        "winner": false,
+        "record": "3-2",
+        "home_record": "3-0",
+        "away_record": "0-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Barrington Hargress",
-            "value": "20.0"
+          "points": {
+            "player": "JaJuan Nicholls",
+            "value": "12"
           },
-          "reboundsPerGame": {
-            "player": "Alex Dickeson",
-            "value": "7.0"
+          "rebounds": {
+            "player": "JaJuan Nicholls",
+            "value": "10"
           },
-          "assistsPerGame": {
-            "player": "Barrington Hargress",
-            "value": "4.7"
+          "assists": {
+            "player": "Rashaad Davis",
+            "value": "4"
+          },
+          "rating": {
+            "player": "JaJuan Nicholls",
+            "value": "12 PTS, 10 REB"
           }
         },
-        "conf_id": "8",
-        "conf": "Big 12",
+        "conf_id": "5",
+        "conf": null,
         "rank": null,
-        "loc": "Colorado",
-        "nick": "Buffaloes"
+        "loc": "Southern Utah",
+        "nick": "Thunderbirds"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "PROV -11.5",
-        "spread": -11.5,
-        "over_under": 155.5
-      },
+      "espn_line": null,
       "date": "2026-11-14",
       "p4": true
     },
