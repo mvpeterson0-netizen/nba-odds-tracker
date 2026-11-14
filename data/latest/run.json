@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-14T12:45:19+00:00",
+  "finished_at": "2026-11-14T13:00:23+00:00",
   "game_date": "2026-11-14",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "not_due",
+    "odds": "ok",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -28,12 +28,48 @@
     "credits": {
       "ODDS_API_KEY": 1,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 13839
+      "ODDS_API_KEY_20K": 13819
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Denver Nuggets @ New Orleans Pelicans",
+        "type": "morning",
+        "status": "ok",
+        "rows": 142,
+        "markets": 4
+      },
+      {
+        "matchup": "Dallas Mavericks @ Cleveland Cavaliers",
+        "type": "morning",
+        "status": "ok",
+        "rows": 176,
+        "markets": 4
+      },
+      {
+        "matchup": "Brooklyn Nets @ Memphis Grizzlies",
+        "type": "morning",
+        "status": "ok",
+        "rows": 150,
+        "markets": 4
+      },
+      {
+        "matchup": "Chicago Bulls @ Minnesota Timberwolves",
+        "type": "morning",
+        "status": "ok",
+        "rows": 134,
+        "markets": 4
+      },
+      {
+        "matchup": "Detroit Pistons @ Miami Heat",
+        "type": "morning",
+        "status": "ok",
+        "rows": 124,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
+    "due": 5,
     "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"
