@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-14T21:45:27+00:00",
+  "finished_at": "2026-11-14T22:00:23+00:00",
   "game_date": "2026-11-14",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,19 +29,41 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 13564
+      "ODDS_API_KEY_20K": 13562
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Utah Tech Trailblazers @ California Golden Bears",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Colorado Buffaloes @ Providence Friars",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Cincinnati Bearcats @ Dayton Flyers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 80,
     "p4_events": 17,
     "unmatched": [],
-    "due": 0,
+    "due": 3,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 1,
+      "pull_type": "pregame",
+      "rows": 8,
+      "credits_last": 2
     },
     "status": "ok"
   }
