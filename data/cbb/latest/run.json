@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-14T00:45:18+00:00",
+  "finished_at": "2026-11-14T01:00:25+00:00",
   "game_date": "2026-11-13",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,31 +17,65 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
+    "new_games": 1,
+    "player_rows": 33,
     "unparsed": [],
-    "queued": 0,
+    "queued": 1,
     "errors": [],
     "rosters_fetched": 0
   },
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 2,
-      "ODDS_API_KEY_2": 2,
+      "ODDS_API_KEY": 1,
+      "ODDS_API_KEY_2": 0,
       "ODDS_API_KEY_20K": 13952
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "UL Monroe Warhawks @ Arizona St Sun Devils",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Ball State Cardinals @ SMU Mustangs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "DePaul Blue Demons @ Northwestern Wildcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Xavier Musketeers @ Mississippi St Bulldogs",
+        "type": "morning",
+        "status": "ok",
+        "rows": 6
+      },
+      {
+        "matchup": "Stanford Cardinal @ UNLV Rebels",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 86,
-    "p4_events": 19,
+    "p4_events": 13,
     "unmatched": [],
-    "due": 0,
+    "due": 5,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 7,
+      "pull_type": "pregame",
+      "rows": 56,
+      "credits_last": 2
     },
     "status": "ok"
   }
