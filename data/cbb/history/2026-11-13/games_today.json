@@ -1,178 +1,10 @@
 {
-  "fetched_at": "2026-11-14T04:30:18+00:00",
+  "fetched_at": "2026-11-14T04:45:20+00:00",
   "source": "espn",
   "count": 29,
   "game_date": "2026-11-13",
   "division_i_games": 61,
   "rows": [
-    {
-      "game_id": "401911014",
-      "start_utc": "2026-11-14T02:00Z",
-      "short_name": "BALL @ SMU",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Moody Coliseum (Dallas)",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACC Network"
-      ],
-      "home": {
-        "team_id": "2567",
-        "abbr": "SMU",
-        "name": "SMU Mustangs",
-        "score": 90,
-        "winner": true,
-        "record": "4-0",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Oziyah Sellers",
-            "value": "21"
-          },
-          "rebounds": {
-            "player": "Jakub Szumert",
-            "value": "9"
-          },
-          "assists": {
-            "player": "David Terrell Jr.",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Oziyah Sellers",
-            "value": "21 PTS, 6 REB"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "SMU",
-        "nick": "Mustangs"
-      },
-      "away": {
-        "team_id": "2050",
-        "abbr": "BALL",
-        "name": "Ball State Cardinals",
-        "score": 65,
-        "winner": false,
-        "record": "1-3",
-        "home_record": "1-1",
-        "away_record": "0-2",
-        "leaders": {
-          "points": {
-            "player": "Sean Blake",
-            "value": "19"
-          },
-          "rebounds": {
-            "player": "Jaden Smith",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Sean Blake",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Sean Blake",
-            "value": "19 PTS, 7 AST"
-          }
-        },
-        "conf_id": "14",
-        "conf": null,
-        "rank": null,
-        "loc": "Ball State",
-        "nick": "Cardinals"
-      },
-      "espn_line": null,
-      "date": "2026-11-13",
-      "p4": true
-    },
-    {
-      "game_id": "401906794",
-      "start_utc": "2026-11-14T02:00Z",
-      "short_name": "XAV VS MSST",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Colonial Hall",
-      "neutral_site": true,
-      "broadcasts": [
-        "FS1"
-      ],
-      "home": {
-        "team_id": "344",
-        "abbr": "MSST",
-        "name": "Mississippi State Bulldogs",
-        "score": 63,
-        "winner": false,
-        "record": "3-1",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Josh Hubbard",
-            "value": "12"
-          },
-          "rebounds": {
-            "player": "Tristan Reed",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Josh Hubbard",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Josh Hubbard",
-            "value": "12 PTS"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Mississippi State",
-        "nick": "Bulldogs"
-      },
-      "away": {
-        "team_id": "2752",
-        "abbr": "XAV",
-        "name": "Xavier Musketeers",
-        "score": 81,
-        "winner": true,
-        "record": "4-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Tru Washington",
-            "value": "21"
-          },
-          "rebounds": {
-            "player": "Tru Washington",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Tru Washington",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Tru Washington",
-            "value": "21 PTS, 8 REB, 3 STL"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": null,
-        "loc": "Xavier",
-        "nick": "Musketeers"
-      },
-      "espn_line": null,
-      "date": "2026-11-13",
-      "p4": true
-    },
     {
       "game_id": "401906772",
       "start_utc": "2026-11-14T00:00Z",
@@ -2358,6 +2190,90 @@
       "p4": true
     },
     {
+      "game_id": "401911014",
+      "start_utc": "2026-11-14T02:00Z",
+      "short_name": "BALL @ SMU",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Moody Coliseum (Dallas)",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACC Network"
+      ],
+      "home": {
+        "team_id": "2567",
+        "abbr": "SMU",
+        "name": "SMU Mustangs",
+        "score": 90,
+        "winner": true,
+        "record": "4-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Oziyah Sellers",
+            "value": "21"
+          },
+          "rebounds": {
+            "player": "Jakub Szumert",
+            "value": "9"
+          },
+          "assists": {
+            "player": "David Terrell Jr.",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Oziyah Sellers",
+            "value": "21 PTS, 6 REB"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "SMU",
+        "nick": "Mustangs"
+      },
+      "away": {
+        "team_id": "2050",
+        "abbr": "BALL",
+        "name": "Ball State Cardinals",
+        "score": 65,
+        "winner": false,
+        "record": "1-3",
+        "home_record": "1-1",
+        "away_record": "0-2",
+        "leaders": {
+          "points": {
+            "player": "Sean Blake",
+            "value": "19"
+          },
+          "rebounds": {
+            "player": "Jaden Smith",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Sean Blake",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Sean Blake",
+            "value": "19 PTS, 7 AST"
+          }
+        },
+        "conf_id": "14",
+        "conf": null,
+        "rank": null,
+        "loc": "Ball State",
+        "nick": "Cardinals"
+      },
+      "espn_line": null,
+      "date": "2026-11-13",
+      "p4": true
+    },
+    {
       "game_id": "401909503",
       "start_utc": "2026-11-14T02:00Z",
       "short_name": "DEP @ NU",
@@ -2436,6 +2352,90 @@
         "rank": null,
         "loc": "DePaul",
         "nick": "Blue Demons"
+      },
+      "espn_line": null,
+      "date": "2026-11-13",
+      "p4": true
+    },
+    {
+      "game_id": "401906794",
+      "start_utc": "2026-11-14T02:00Z",
+      "short_name": "XAV VS MSST",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Colonial Hall",
+      "neutral_site": true,
+      "broadcasts": [
+        "FS1"
+      ],
+      "home": {
+        "team_id": "344",
+        "abbr": "MSST",
+        "name": "Mississippi State Bulldogs",
+        "score": 63,
+        "winner": false,
+        "record": "3-1",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Josh Hubbard",
+            "value": "12"
+          },
+          "rebounds": {
+            "player": "Tristan Reed",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Josh Hubbard",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Josh Hubbard",
+            "value": "12 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Mississippi State",
+        "nick": "Bulldogs"
+      },
+      "away": {
+        "team_id": "2752",
+        "abbr": "XAV",
+        "name": "Xavier Musketeers",
+        "score": 81,
+        "winner": true,
+        "record": "4-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Tru Washington",
+            "value": "21"
+          },
+          "rebounds": {
+            "player": "Tru Washington",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Tru Washington",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Tru Washington",
+            "value": "21 PTS, 8 REB, 3 STL"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Xavier",
+        "nick": "Musketeers"
       },
       "espn_line": null,
       "date": "2026-11-13",
