@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-14T00:15:19+00:00",
+  "finished_at": "2026-11-14T00:30:19+00:00",
   "game_date": "2026-11-13",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,34 +28,20 @@
     "credits": {
       "ODDS_API_KEY": 2,
       "ODDS_API_KEY_2": 2,
-      "ODDS_API_KEY_20K": 13956
+      "ODDS_API_KEY_20K": 13952
     },
     "pulled": [
       {
-        "matchup": "Atlanta Hawks @ Chicago Bulls",
+        "matchup": "Utah Jazz @ Houston Rockets",
         "type": "pregame",
         "status": "ok",
-        "rows": 188,
-        "markets": 4
-      },
-      {
-        "matchup": "Cleveland Cavaliers @ Miami Heat",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 190,
-        "markets": 4
-      },
-      {
-        "matchup": "Memphis Grizzlies @ New Orleans Pelicans",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 194,
+        "rows": 180,
         "markets": 4
       }
     ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 3,
+    "due": 1,
     "pregame_pulled": true,
     "links_backfill": [],
     "status": "ok"

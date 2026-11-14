@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-14T00:15:14+00:00",
+  "fetched_at": "2026-11-14T00:30:15+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-13",
@@ -9,10 +9,10 @@
       "start_utc": "2026-11-14T00:00Z",
       "short_name": "NY @ IND",
       "state": "in",
-      "status": "11:02 - 1st",
+      "status": "2:12 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "11:02",
+      "clock": "2:12",
       "venue": "Gainbridge Fieldhouse",
       "neutral_site": false,
       "broadcasts": [
@@ -22,19 +22,27 @@
         "team_id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers",
-        "score": 2,
+        "score": 24,
         "winner": null,
         "record": "4-8",
         "home_record": "1-4",
         "away_record": "3-3",
         "leaders": {
           "points": {
-            "player": "Andrew Nembhard",
+            "player": "Jay Huff",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Obi Toppin",
+            "value": "2"
+          },
+          "assists": {
+            "player": "T.J. McConnell",
             "value": "2"
           },
           "rating": {
-            "player": "Andrew Nembhard",
-            "value": "2 PTS"
+            "player": "Jay Huff",
+            "value": "8 PTS"
           }
         }
       },
@@ -42,19 +50,27 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 0,
+        "score": 23,
         "winner": null,
         "record": "6-5",
         "home_record": "4-3",
         "away_record": "2-2",
         "leaders": {
+          "points": {
+            "player": "Karl-Anthony Towns",
+            "value": "9"
+          },
           "rebounds": {
             "player": "Josh Hart",
-            "value": "1"
+            "value": "4"
+          },
+          "assists": {
+            "player": "Jalen Brunson",
+            "value": "3"
           },
           "rating": {
-            "player": "Josh Hart",
-            "value": "1 REB"
+            "player": "Karl-Anthony Towns",
+            "value": "9 PTS"
           }
         }
       },
@@ -65,10 +81,10 @@
       "start_utc": "2026-11-14T00:00Z",
       "short_name": "MIL @ ORL",
       "state": "in",
-      "status": "9:08 - 1st",
+      "status": "3:17 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "9:08",
+      "clock": "3:17",
       "venue": "Kia Center",
       "neutral_site": false,
       "broadcasts": [
@@ -79,27 +95,27 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 4,
+        "score": 15,
         "winner": null,
         "record": "4-7",
         "home_record": "0-4",
         "away_record": "4-3",
         "leaders": {
           "points": {
-            "player": "Franz Wagner",
-            "value": "2"
+            "player": "Tristan da Silva",
+            "value": "6"
           },
           "rebounds": {
             "player": "Franz Wagner",
-            "value": "1"
+            "value": "2"
           },
           "assists": {
-            "player": "Franz Wagner",
-            "value": "1"
+            "player": "Anthony Black",
+            "value": "3"
           },
           "rating": {
-            "player": "Franz Wagner",
-            "value": "2 PTS"
+            "player": "Tristan da Silva",
+            "value": "6 PTS"
           }
         }
       },
@@ -107,27 +123,27 @@
         "team_id": "15",
         "abbr": "MIL",
         "name": "Milwaukee Bucks",
-        "score": 3,
+        "score": 11,
         "winner": null,
         "record": "1-11",
         "home_record": "1-6",
         "away_record": "0-5",
         "leaders": {
           "points": {
-            "player": "Myles Turner",
+            "player": "Nate Ament",
             "value": "3"
           },
           "rebounds": {
-            "player": "Myles Turner",
-            "value": "2"
+            "player": "Nate Ament",
+            "value": "3"
           },
           "assists": {
             "player": "Brayden Burries",
             "value": "1"
           },
           "rating": {
-            "player": "Myles Turner",
-            "value": "3 PTS"
+            "player": "Kel'el Ware",
+            "value": "2 PTS"
           }
         }
       },
