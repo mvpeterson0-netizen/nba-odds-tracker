@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-15T17:45:20+00:00",
+  "finished_at": "2026-11-15T18:00:24+00:00",
   "game_date": "2026-11-15",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,22 +29,61 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 13013
+      "ODDS_API_KEY_20K": 13011
     },
-    "pulled": [],
-    "errors": [],
-    "events": 38,
-    "p4_events": 13,
-    "unmatched": [
-      "Washington Huskies @ Utah Utes",
-      "Florida A&M Rattlers @ UTEP Miners"
+    "pulled": [
+      {
+        "matchup": "New Hampshire Wildcats @ Boston College Eagles",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "William & Mary Tribe @ Michigan Wolverines",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "New Haven Chargers @ Penn State Nittany Lions",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Pepperdine Waves @ Oregon Ducks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Arkansas-Pine Bluff Golden Lions @ USC Trojans",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Coastal Carolina Chanticleers @ Wisconsin Badgers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
     ],
-    "due": 0,
+    "errors": [],
+    "events": 37,
+    "p4_events": 10,
+    "unmatched": [
+      "Washington Huskies @ Utah Utes"
+    ],
+    "due": 6,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 1,
+      "pull_type": "pregame",
+      "rows": 8,
+      "credits_last": 2
     },
     "status": "ok"
   }
