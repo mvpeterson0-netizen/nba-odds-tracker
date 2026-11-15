@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-15T17:00:25+00:00",
+  "finished_at": "2026-11-15T17:15:19+00:00",
   "game_date": "2026-11-15",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,70 +29,9 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 13137
+      "ODDS_API_KEY_20K": 13085
     },
-    "pulled": [
-      {
-        "matchup": "Boise State Broncos @ Nebraska Cornhuskers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Niagara Purple Eagles @ Iowa State Cyclones",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "New Hampshire Wildcats @ Boston College Eagles",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "William & Mary Tribe @ Michigan Wolverines",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Missouri Tigers @ Marquette Golden Eagles",
-        "type": "morning",
-        "status": "ok",
-        "rows": 6
-      },
-      {
-        "matchup": "New Haven Chargers @ Penn State Nittany Lions",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Pepperdine Waves @ Oregon Ducks",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Arkansas-Pine Bluff Golden Lions @ USC Trojans",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Syracuse Orange @ St. John's Red Storm",
-        "type": "morning",
-        "status": "ok",
-        "rows": 12
-      },
-      {
-        "matchup": "Coastal Carolina Chanticleers @ Wisconsin Badgers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "events": 38,
     "p4_events": 13,
@@ -100,15 +39,12 @@
       "Washington Huskies @ Utah Utes",
       "Florida A&M Rattlers @ UTEP Miners"
     ],
-    "due": 10,
+    "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "not_due",
       "morning_due": false,
-      "pregame_due": 3,
-      "pull_type": "pregame",
-      "rows": 24,
-      "credits_last": 2
+      "pregame_due": 0
     },
     "status": "ok"
   }
