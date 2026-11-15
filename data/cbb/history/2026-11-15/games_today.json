@@ -1,10 +1,430 @@
 {
-  "fetched_at": "2026-11-15T20:15:19+00:00",
+  "fetched_at": "2026-11-15T20:21:11+00:00",
   "source": "espn",
   "count": 13,
   "game_date": "2026-11-15",
   "division_i_games": 44,
   "rows": [
+    {
+      "game_id": "401906866",
+      "start_utc": "2026-11-15T20:00Z",
+      "short_name": "BAY VS TEX",
+      "state": "in",
+      "status": "13:18 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "13:18",
+      "venue": "Frost Bank Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "251",
+        "abbr": "TEX",
+        "name": "Texas Longhorns",
+        "score": 11,
+        "winner": null,
+        "record": "3-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Matas Vokietaitis",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Matas Vokietaitis",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Isaiah Johnson",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Matas Vokietaitis",
+            "value": "6 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 7,
+        "loc": "Texas",
+        "nick": "Longhorns"
+      },
+      "away": {
+        "team_id": "239",
+        "abbr": "BAY",
+        "name": "Baylor Bears",
+        "score": 18,
+        "winner": null,
+        "record": "3-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Elijah Williams",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Elijah Williams",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Brett Decker Jr.",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Elijah Williams",
+            "value": "6 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Baylor",
+        "nick": "Bears"
+      },
+      "espn_line": null,
+      "date": "2026-11-15",
+      "p4": true
+    },
+    {
+      "game_id": "401918453",
+      "start_utc": "2026-11-15T19:00Z",
+      "short_name": "W&M @ MICH",
+      "state": "in",
+      "status": "15:54 - 2nd",
+      "completed": false,
+      "period": 2,
+      "clock": "15:54",
+      "venue": "Crisler Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "B1G+"
+      ],
+      "home": {
+        "team_id": "130",
+        "abbr": "MICH",
+        "name": "Michigan Wolverines",
+        "score": 67,
+        "winner": null,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Roddy Gayle Jr.",
+            "value": "11"
+          },
+          "rebounds": {
+            "player": "Roddy Gayle Jr.",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Elliot Cadeau",
+            "value": "8"
+          },
+          "rating": {
+            "player": "Roddy Gayle Jr.",
+            "value": "11 PTS, 6 REB"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 20,
+        "loc": "Michigan",
+        "nick": "Wolverines"
+      },
+      "away": {
+        "team_id": "2729",
+        "abbr": "W&M",
+        "name": "William & Mary Tribe",
+        "score": 53,
+        "winner": null,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Stas Sivka",
+            "value": "11"
+          },
+          "rebounds": {
+            "player": "Stas Sivka",
+            "value": "4"
+          },
+          "assists": {
+            "player": "ZZ Clark",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Stas Sivka",
+            "value": "11 PTS"
+          }
+        },
+        "conf_id": "10",
+        "conf": null,
+        "rank": null,
+        "loc": "William & Mary",
+        "nick": "Tribe"
+      },
+      "espn_line": null,
+      "date": "2026-11-15",
+      "p4": true
+    },
+    {
+      "game_id": "401909554",
+      "start_utc": "2026-11-15T18:30Z",
+      "short_name": "UNH @ BC",
+      "state": "in",
+      "status": "0:27 - 2nd",
+      "completed": false,
+      "period": 2,
+      "clock": "0:27",
+      "venue": "Conte Forum",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACCNX"
+      ],
+      "home": {
+        "team_id": "103",
+        "abbr": "BC",
+        "name": "Boston College Eagles",
+        "score": 67,
+        "winner": null,
+        "record": "3-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Ernest Shelton",
+            "value": "17"
+          },
+          "rebounds": {
+            "player": "Zak Smrekar",
+            "value": "11"
+          },
+          "assists": {
+            "player": "Armoni Zeigler",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Zak Smrekar",
+            "value": "15 PTS, 11 REB"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Boston College",
+        "nick": "Eagles"
+      },
+      "away": {
+        "team_id": "160",
+        "abbr": "UNH",
+        "name": "New Hampshire Wildcats",
+        "score": 54,
+        "winner": null,
+        "record": "3-1",
+        "home_record": "1-1",
+        "away_record": "2-0",
+        "leaders": {
+          "points": {
+            "player": "Drew McKenna",
+            "value": "17"
+          },
+          "rebounds": {
+            "player": "Drew McKenna",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Tyler Bike",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Drew McKenna",
+            "value": "17 PTS, 10 REB"
+          }
+        },
+        "conf_id": "1",
+        "conf": null,
+        "rank": null,
+        "loc": "New Hampshire",
+        "nick": "Wildcats"
+      },
+      "espn_line": null,
+      "date": "2026-11-15",
+      "p4": true
+    },
+    {
+      "game_id": "401909525",
+      "start_utc": "2026-11-15T19:30Z",
+      "short_name": "MARQ VS MIZ",
+      "state": "in",
+      "status": "Halftime",
+      "completed": false,
+      "period": 1,
+      "clock": "0:00",
+      "venue": "United Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "Peacock"
+      ],
+      "home": {
+        "team_id": "142",
+        "abbr": "MIZ",
+        "name": "Missouri Tigers",
+        "score": 30,
+        "winner": null,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Trent Pierce",
+            "value": "7"
+          },
+          "rebounds": {
+            "player": "Trent Pierce",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Jason Crowe Jr.",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Jamier Jones",
+            "value": "6 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Missouri",
+        "nick": "Tigers"
+      },
+      "away": {
+        "team_id": "269",
+        "abbr": "MARQ",
+        "name": "Marquette Golden Eagles",
+        "score": 38,
+        "winner": null,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Nigel James Jr.",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Royce Parham",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Nigel James Jr.",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Nigel James Jr.",
+            "value": "8 PTS, 6 AST, 3 STL"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Marquette",
+        "nick": "Golden Eagles"
+      },
+      "espn_line": null,
+      "date": "2026-11-15",
+      "p4": true
+    },
+    {
+      "game_id": "401909493",
+      "start_utc": "2026-11-15T20:00Z",
+      "short_name": "CREI VS IOWA",
+      "state": "in",
+      "status": "13:45 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "13:45",
+      "venue": "Casey's Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "FS1"
+      ],
+      "home": {
+        "team_id": "2294",
+        "abbr": "IOWA",
+        "name": "Iowa Hawkeyes",
+        "score": 5,
+        "winner": null,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Trevin Jirak",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Cooper Koch",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Kael Combs",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Trevin Jirak",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Iowa",
+        "nick": "Hawkeyes"
+      },
+      "away": {
+        "team_id": "156",
+        "abbr": "CREI",
+        "name": "Creighton Bluejays",
+        "score": 13,
+        "winner": null,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Wes Enis",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Wes Enis",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Katrelle Harmon",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Wes Enis",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Creighton",
+        "nick": "Bluejays"
+      },
+      "espn_line": null,
+      "date": "2026-11-15",
+      "p4": true
+    },
     {
       "game_id": "401918949",
       "start_utc": "2026-11-15T18:00Z",
@@ -84,90 +504,6 @@
         "rank": 10,
         "loc": "Louisville",
         "nick": "Cardinals"
-      },
-      "espn_line": null,
-      "date": "2026-11-15",
-      "p4": true
-    },
-    {
-      "game_id": "401918453",
-      "start_utc": "2026-11-15T19:00Z",
-      "short_name": "W&M @ MICH",
-      "state": "in",
-      "status": "16:53 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "16:53",
-      "venue": "Crisler Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "B1G+"
-      ],
-      "home": {
-        "team_id": "130",
-        "abbr": "MICH",
-        "name": "Michigan Wolverines",
-        "score": 63,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Roddy Gayle Jr.",
-            "value": "11"
-          },
-          "rebounds": {
-            "player": "Roddy Gayle Jr.",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Elliot Cadeau",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Roddy Gayle Jr.",
-            "value": "11 PTS, 6 REB"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 20,
-        "loc": "Michigan",
-        "nick": "Wolverines"
-      },
-      "away": {
-        "team_id": "2729",
-        "abbr": "W&M",
-        "name": "William & Mary Tribe",
-        "score": 50,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Stas Sivka",
-            "value": "11"
-          },
-          "rebounds": {
-            "player": "Stas Sivka",
-            "value": "4"
-          },
-          "assists": {
-            "player": "ZZ Clark",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Stas Sivka",
-            "value": "11 PTS"
-          }
-        },
-        "conf_id": "10",
-        "conf": null,
-        "rank": null,
-        "loc": "William & Mary",
-        "nick": "Tribe"
       },
       "espn_line": null,
       "date": "2026-11-15",
@@ -258,174 +594,6 @@
       "p4": true
     },
     {
-      "game_id": "401909554",
-      "start_utc": "2026-11-15T18:30Z",
-      "short_name": "UNH @ BC",
-      "state": "in",
-      "status": "3:52 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "3:52",
-      "venue": "Conte Forum",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACCNX"
-      ],
-      "home": {
-        "team_id": "103",
-        "abbr": "BC",
-        "name": "Boston College Eagles",
-        "score": 62,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Ernest Shelton",
-            "value": "17"
-          },
-          "rebounds": {
-            "player": "Zak Smrekar",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Armoni Zeigler",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Zak Smrekar",
-            "value": "12 PTS, 10 REB"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Boston College",
-        "nick": "Eagles"
-      },
-      "away": {
-        "team_id": "160",
-        "abbr": "UNH",
-        "name": "New Hampshire Wildcats",
-        "score": 52,
-        "winner": null,
-        "record": "3-1",
-        "home_record": "1-1",
-        "away_record": "2-0",
-        "leaders": {
-          "points": {
-            "player": "Drew McKenna",
-            "value": "17"
-          },
-          "rebounds": {
-            "player": "Drew McKenna",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Tyler Bike",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Drew McKenna",
-            "value": "17 PTS, 10 REB"
-          }
-        },
-        "conf_id": "1",
-        "conf": null,
-        "rank": null,
-        "loc": "New Hampshire",
-        "nick": "Wildcats"
-      },
-      "espn_line": null,
-      "date": "2026-11-15",
-      "p4": true
-    },
-    {
-      "game_id": "401909525",
-      "start_utc": "2026-11-15T19:30Z",
-      "short_name": "MARQ VS MIZ",
-      "state": "in",
-      "status": "3:48 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "3:48",
-      "venue": "United Center",
-      "neutral_site": true,
-      "broadcasts": [
-        "Peacock"
-      ],
-      "home": {
-        "team_id": "142",
-        "abbr": "MIZ",
-        "name": "Missouri Tigers",
-        "score": 24,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Trent Pierce",
-            "value": "7"
-          },
-          "rebounds": {
-            "player": "Trent Pierce",
-            "value": "3"
-          },
-          "assists": {
-            "player": "Jason Crowe Jr.",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Trent Pierce",
-            "value": "7 PTS"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Missouri",
-        "nick": "Tigers"
-      },
-      "away": {
-        "team_id": "269",
-        "abbr": "MARQ",
-        "name": "Marquette Golden Eagles",
-        "score": 24,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Nigel James Jr.",
-            "value": "4"
-          },
-          "rebounds": {
-            "player": "Nigel James Jr.",
-            "value": "4"
-          },
-          "assists": {
-            "player": "Nigel James Jr.",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Damarius Owens",
-            "value": "4 PTS"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": null,
-        "loc": "Marquette",
-        "nick": "Golden Eagles"
-      },
-      "espn_line": null,
-      "date": "2026-11-15",
-      "p4": true
-    },
-    {
       "game_id": "401909774",
       "start_utc": "2026-11-15T18:00Z",
       "short_name": "NIA @ ISU",
@@ -510,170 +678,6 @@
       "p4": true
     },
     {
-      "game_id": "401906866",
-      "start_utc": "2026-11-15T20:00Z",
-      "short_name": "BAY VS TEX",
-      "state": "in",
-      "status": "15:08 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "15:08",
-      "venue": "Frost Bank Center",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN"
-      ],
-      "home": {
-        "team_id": "251",
-        "abbr": "TEX",
-        "name": "Texas Longhorns",
-        "score": 9,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Isaiah Johnson",
-            "value": "5"
-          },
-          "rebounds": {
-            "player": "Isaiah Johnson",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Isaiah Johnson",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Isaiah Johnson",
-            "value": "5 PTS"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 7,
-        "loc": "Texas",
-        "nick": "Longhorns"
-      },
-      "away": {
-        "team_id": "239",
-        "abbr": "BAY",
-        "name": "Baylor Bears",
-        "score": 12,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Elijah Williams",
-            "value": "6"
-          },
-          "rebounds": {
-            "player": "Elijah Williams",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Brett Decker Jr.",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Elijah Williams",
-            "value": "6 PTS"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Baylor",
-        "nick": "Bears"
-      },
-      "espn_line": null,
-      "date": "2026-11-15",
-      "p4": true
-    },
-    {
-      "game_id": "401909493",
-      "start_utc": "2026-11-15T20:00Z",
-      "short_name": "CREI VS IOWA",
-      "state": "in",
-      "status": "15:22 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "15:22",
-      "venue": "Casey's Center",
-      "neutral_site": true,
-      "broadcasts": [
-        "FS1"
-      ],
-      "home": {
-        "team_id": "2294",
-        "abbr": "IOWA",
-        "name": "Iowa Hawkeyes",
-        "score": 2,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Cooper Koch",
-            "value": "2"
-          },
-          "rebounds": {
-            "player": "Isaia Howard",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Cooper Koch",
-            "value": "2 PTS"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Iowa",
-        "nick": "Hawkeyes"
-      },
-      "away": {
-        "team_id": "156",
-        "abbr": "CREI",
-        "name": "Creighton Bluejays",
-        "score": 10,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Wes Enis",
-            "value": "3"
-          },
-          "rebounds": {
-            "player": "Wes Enis",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Wes Enis",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Wes Enis",
-            "value": "3 PTS"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": null,
-        "loc": "Creighton",
-        "nick": "Bluejays"
-      },
-      "espn_line": null,
-      "date": "2026-11-15",
-      "p4": true
-    },
-    {
       "game_id": "401917175",
       "start_utc": "2026-11-15T21:30Z",
       "short_name": "NHVN @ PSU",
@@ -746,7 +750,7 @@
         "nick": "Chargers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "PSU -24.5",
         "spread": -24.5,
         "over_under": 142.5
@@ -827,7 +831,7 @@
         "nick": "Waves"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ORE -13.5",
         "spread": -13.5,
         "over_under": 154.5
@@ -908,7 +912,7 @@
         "nick": "Orange"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SJU -12.5",
         "spread": -12.5,
         "over_under": 149.5
@@ -989,7 +993,7 @@
         "nick": "Golden Lions"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "USC -46.5",
         "spread": -46.5,
         "over_under": 158.5
@@ -1070,7 +1074,7 @@
         "nick": "Chanticleers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "WIS -27.5",
         "spread": -27.5,
         "over_under": 148.5
