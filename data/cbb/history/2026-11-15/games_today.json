@@ -1,94 +1,10 @@
 {
-  "fetched_at": "2026-11-15T23:30:24+00:00",
+  "fetched_at": "2026-11-15T23:45:23+00:00",
   "source": "espn",
   "count": 13,
   "game_date": "2026-11-15",
   "division_i_games": 44,
   "rows": [
-    {
-      "game_id": "401917175",
-      "start_utc": "2026-11-15T21:30Z",
-      "short_name": "NHVN @ PSU",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Bryce Jordan Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "Peacock"
-      ],
-      "home": {
-        "team_id": "213",
-        "abbr": "PSU",
-        "name": "Penn State Nittany Lions",
-        "score": 86,
-        "winner": true,
-        "record": "4-1",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Josh Reed",
-            "value": "20"
-          },
-          "rebounds": {
-            "player": "Roko Prkacin",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Dasonte Bowen",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Roko Prkacin",
-            "value": "16 PTS, 10 REB"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Penn State",
-        "nick": "Nittany Lions"
-      },
-      "away": {
-        "team_id": "2441",
-        "abbr": "NHVN",
-        "name": "New Haven Chargers",
-        "score": 52,
-        "winner": false,
-        "record": "1-3",
-        "home_record": "1-0",
-        "away_record": "0-3",
-        "leaders": {
-          "points": {
-            "player": "Teshaun Steele",
-            "value": "11"
-          },
-          "rebounds": {
-            "player": "Zoumana Traore",
-            "value": "5"
-          },
-          "assists": {
-            "player": "Teshaun Steele",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Teshaun Steele",
-            "value": "11 PTS"
-          }
-        },
-        "conf_id": "19",
-        "conf": null,
-        "rank": null,
-        "loc": "New Haven",
-        "nick": "Chargers"
-      },
-      "espn_line": null,
-      "date": "2026-11-15",
-      "p4": true
-    },
     {
       "game_id": "401906866",
       "start_utc": "2026-11-15T20:00Z",
@@ -762,6 +678,90 @@
       "p4": true
     },
     {
+      "game_id": "401917175",
+      "start_utc": "2026-11-15T21:30Z",
+      "short_name": "NHVN @ PSU",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Bryce Jordan Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "Peacock"
+      ],
+      "home": {
+        "team_id": "213",
+        "abbr": "PSU",
+        "name": "Penn State Nittany Lions",
+        "score": 86,
+        "winner": true,
+        "record": "4-1",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Josh Reed",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Roko Prkacin",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Dasonte Bowen",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Roko Prkacin",
+            "value": "16 PTS, 10 REB"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Penn State",
+        "nick": "Nittany Lions"
+      },
+      "away": {
+        "team_id": "2441",
+        "abbr": "NHVN",
+        "name": "New Haven Chargers",
+        "score": 52,
+        "winner": false,
+        "record": "1-3",
+        "home_record": "1-0",
+        "away_record": "0-3",
+        "leaders": {
+          "points": {
+            "player": "Teshaun Steele",
+            "value": "11"
+          },
+          "rebounds": {
+            "player": "Zoumana Traore",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Teshaun Steele",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Teshaun Steele",
+            "value": "11 PTS"
+          }
+        },
+        "conf_id": "19",
+        "conf": null,
+        "rank": null,
+        "loc": "New Haven",
+        "nick": "Chargers"
+      },
+      "espn_line": null,
+      "date": "2026-11-15",
+      "p4": true
+    },
+    {
       "game_id": "401920681",
       "start_utc": "2026-11-16T00:00Z",
       "short_name": "SYR @ SJU",
@@ -834,7 +834,7 @@
         "nick": "Orange"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SJU -12.5",
         "spread": -12.5,
         "over_under": 148.5
@@ -915,7 +915,7 @@
         "nick": "Golden Lions"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "USC -46.5",
         "spread": -46.5,
         "over_under": 157.5
@@ -996,7 +996,7 @@
         "nick": "Chanticleers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "WIS -27.5",
         "spread": -27.5,
         "over_under": 148.5

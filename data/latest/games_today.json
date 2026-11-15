@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-15T23:30:22+00:00",
+  "fetched_at": "2026-11-15T23:45:19+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-15",
@@ -81,10 +81,10 @@
       "start_utc": "2026-11-15T21:00Z",
       "short_name": "LAL @ PHX",
       "state": "in",
-      "status": "3:11 - 4th",
+      "status": "End of 4th",
       "completed": false,
       "period": 4,
-      "clock": "3:11",
+      "clock": "0.1",
       "venue": "Mortgage Matchup Center",
       "neutral_site": false,
       "broadcasts": [
@@ -97,15 +97,15 @@
         "team_id": "21",
         "abbr": "PHX",
         "name": "Phoenix Suns",
-        "score": 114,
-        "winner": null,
+        "score": 123,
+        "winner": false,
         "record": "5-6",
         "home_record": "5-3",
         "away_record": "0-3",
         "leaders": {
           "points": {
             "player": "Collin Gillespie",
-            "value": "22"
+            "value": "26"
           },
           "rebounds": {
             "player": "Jordan Goodwin",
@@ -117,7 +117,7 @@
           },
           "rating": {
             "player": "Collin Gillespie",
-            "value": "22 PTS"
+            "value": "26 PTS"
           }
         }
       },
@@ -125,15 +125,15 @@
         "team_id": "13",
         "abbr": "LAL",
         "name": "Los Angeles Lakers",
-        "score": 122,
-        "winner": null,
+        "score": 131,
+        "winner": true,
         "record": "11-2",
         "home_record": "5-1",
         "away_record": "6-1",
         "leaders": {
           "points": {
             "player": "Luka Doncic",
-            "value": "39"
+            "value": "43"
           },
           "rebounds": {
             "player": "Walker Kessler",
@@ -141,11 +141,11 @@
           },
           "assists": {
             "player": "Luka Doncic",
-            "value": "8"
+            "value": "9"
           },
           "rating": {
             "player": "Luka Doncic",
-            "value": "39 PTS, 8 AST"
+            "value": "43 PTS, 9 AST"
           }
         }
       },
@@ -156,10 +156,10 @@
       "start_utc": "2026-11-15T21:30Z",
       "short_name": "CHA @ LAC",
       "state": "in",
-      "status": "11:23 - 4th",
+      "status": "4:49 - 4th",
       "completed": false,
       "period": 4,
-      "clock": "11:23",
+      "clock": "4:49",
       "venue": "Intuit Dome",
       "neutral_site": false,
       "broadcasts": [
@@ -169,7 +169,7 @@
         "team_id": "12",
         "abbr": "LAC",
         "name": "LA Clippers",
-        "score": 86,
+        "score": 108,
         "winner": null,
         "record": "3-8",
         "home_record": "3-3",
@@ -177,7 +177,7 @@
         "leaders": {
           "points": {
             "player": "Darius Garland",
-            "value": "22"
+            "value": "27"
           },
           "rebounds": {
             "player": "Darius Garland",
@@ -189,7 +189,7 @@
           },
           "rating": {
             "player": "Darius Garland",
-            "value": "22 PTS, 6 REB, 7 AST"
+            "value": "27 PTS, 6 REB, 7 AST"
           }
         }
       },
@@ -197,7 +197,7 @@
         "team_id": "30",
         "abbr": "CHA",
         "name": "Charlotte Hornets",
-        "score": 85,
+        "score": 92,
         "winner": null,
         "record": "4-8",
         "home_record": "3-4",
@@ -205,7 +205,7 @@
         "leaders": {
           "points": {
             "player": "Coby White",
-            "value": "16"
+            "value": "21"
           },
           "rebounds": {
             "player": "Moussa Diabate",
@@ -217,7 +217,7 @@
           },
           "rating": {
             "player": "Moussa Diabate",
-            "value": "10 PTS, 12 REB, 3 BLK"
+            "value": "12 PTS, 12 REB, 3 BLK"
           }
         }
       },
@@ -228,10 +228,10 @@
       "start_utc": "2026-11-15T22:00Z",
       "short_name": "SA @ UTAH",
       "state": "in",
-      "status": "6:34 - 3rd",
+      "status": "12.4 - 3rd",
       "completed": false,
       "period": 3,
-      "clock": "6:34",
+      "clock": "12.4",
       "venue": "Delta Center",
       "neutral_site": false,
       "broadcasts": [
@@ -243,7 +243,7 @@
         "team_id": "26",
         "abbr": "UTAH",
         "name": "Utah Jazz",
-        "score": 70,
+        "score": 81,
         "winner": null,
         "record": "1-12",
         "home_record": "1-6",
@@ -251,7 +251,7 @@
         "leaders": {
           "points": {
             "player": "Mo Bamba",
-            "value": "18"
+            "value": "21"
           },
           "rebounds": {
             "player": "Mo Bamba",
@@ -263,7 +263,7 @@
           },
           "rating": {
             "player": "Mo Bamba",
-            "value": "18 PTS"
+            "value": "21 PTS"
           }
         }
       },
@@ -271,7 +271,7 @@
         "team_id": "24",
         "abbr": "SA",
         "name": "San Antonio Spurs",
-        "score": 71,
+        "score": 81,
         "winner": null,
         "record": "11-2",
         "home_record": "5-2",
@@ -302,10 +302,10 @@
       "start_utc": "2026-11-15T23:00Z",
       "short_name": "DAL @ BOS",
       "state": "in",
-      "status": "2:06 - 1st",
+      "status": "6:48 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "2:06",
+      "period": 2,
+      "clock": "6:48",
       "venue": "TD Garden",
       "neutral_site": false,
       "broadcasts": [
@@ -316,7 +316,7 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 34,
+        "score": 53,
         "winner": null,
         "record": "10-2",
         "home_record": "5-0",
@@ -328,15 +328,15 @@
           },
           "rebounds": {
             "player": "Paul George",
-            "value": "5"
+            "value": "7"
           },
           "assists": {
             "player": "Jayson Tatum",
             "value": "4"
           },
           "rating": {
-            "player": "Derrick White",
-            "value": "11 PTS"
+            "player": "Jayson Tatum",
+            "value": "9 PTS"
           }
         }
       },
@@ -344,27 +344,27 @@
         "team_id": "6",
         "abbr": "DAL",
         "name": "Dallas Mavericks",
-        "score": 9,
+        "score": 23,
         "winner": null,
         "record": "7-6",
         "home_record": "5-2",
         "away_record": "2-4",
         "leaders": {
           "points": {
-            "player": "Zaccharie Risacher",
-            "value": "3"
+            "player": "Walter Clayton Jr.",
+            "value": "5"
           },
           "rebounds": {
-            "player": "Walter Clayton Jr.",
-            "value": "2"
+            "player": "Caleb Martin",
+            "value": "3"
           },
           "assists": {
-            "player": "Cooper Flagg",
-            "value": "1"
+            "player": "P.J. Washington",
+            "value": "3"
           },
           "rating": {
-            "player": "Walter Clayton Jr.",
-            "value": "2 PTS"
+            "player": "Caleb Martin",
+            "value": "3 PTS"
           }
         }
       },
@@ -375,10 +375,10 @@
       "start_utc": "2026-11-15T23:00Z",
       "short_name": "NY @ TOR",
       "state": "in",
-      "status": "4:46 - 1st",
+      "status": "9:53 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "4:46",
+      "period": 2,
+      "clock": "9:53",
       "venue": "Scotiabank Arena",
       "neutral_site": false,
       "broadcasts": null,
@@ -386,7 +386,7 @@
         "team_id": "28",
         "abbr": "TOR",
         "name": "Toronto Raptors",
-        "score": 13,
+        "score": 21,
         "winner": null,
         "record": "5-7",
         "home_record": "2-3",
@@ -397,8 +397,8 @@
             "value": "10"
           },
           "rebounds": {
-            "player": "Immanuel Quickley",
-            "value": "2"
+            "player": "Collin Murray-Boyles",
+            "value": "4"
           },
           "assists": {
             "player": "RJ Barrett",
@@ -414,27 +414,27 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 13,
+        "score": 26,
         "winner": null,
         "record": "6-6",
         "home_record": "4-3",
         "away_record": "2-3",
         "leaders": {
           "points": {
-            "player": "Landry Shamet",
-            "value": "5"
+            "player": "OG Anunoby",
+            "value": "8"
           },
           "rebounds": {
-            "player": "Jalen Brunson",
-            "value": "1"
+            "player": "OG Anunoby",
+            "value": "3"
           },
           "assists": {
             "player": "Jalen Brunson",
             "value": "3"
           },
           "rating": {
-            "player": "Landry Shamet",
-            "value": "5 PTS"
+            "player": "OG Anunoby",
+            "value": "8 PTS"
           }
         }
       },
@@ -511,9 +511,9 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "HOU -7.5",
-        "spread": 7.5,
+        "provider": "Draft Kings",
+        "details": "HOU -8.5",
+        "spread": 8.5,
         "over_under": 223.5
       }
     },
@@ -589,7 +589,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ATL -8.5",
         "spread": 8.5,
         "over_under": 233.5
@@ -667,7 +667,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "OKC -11.5",
         "spread": 11.5,
         "over_under": 223.5
