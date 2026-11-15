@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-15T00:30:14+00:00",
+  "fetched_at": "2026-11-15T00:45:14+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-14",
@@ -9,10 +9,10 @@
       "start_utc": "2026-11-15T00:00Z",
       "short_name": "DEN @ NO",
       "state": "in",
-      "status": "3:50 - 1st",
+      "status": "9:29 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "3:50",
+      "period": 2,
+      "clock": "9:29",
       "venue": "Smoothie King Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,22 +23,22 @@
         "team_id": "3",
         "abbr": "NO",
         "name": "New Orleans Pelicans",
-        "score": 13,
+        "score": 31,
         "winner": null,
         "record": "4-9",
         "home_record": "3-5",
         "away_record": "1-4",
         "leaders": {
           "points": {
-            "player": "Jeremiah Fears",
-            "value": "7"
+            "player": "Jordan Poole",
+            "value": "9"
           },
           "rebounds": {
             "player": "Zion Williamson",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
-            "player": "Zion Williamson",
+            "player": "Jeremiah Fears",
             "value": "2"
           },
           "rating": {
@@ -51,7 +51,7 @@
         "team_id": "7",
         "abbr": "DEN",
         "name": "Denver Nuggets",
-        "score": 19,
+        "score": 36,
         "winner": null,
         "record": "6-4",
         "home_record": "2-2",
@@ -81,11 +81,11 @@
       "game_id": "401909981",
       "start_utc": "2026-11-15T00:30Z",
       "short_name": "DAL @ CLE",
-      "state": "pre",
-      "status": "11/14 - 7:30 PM EST",
+      "state": "in",
+      "status": "9:09 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:09",
       "venue": "Rocket Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -96,27 +96,27 @@
         "team_id": "5",
         "abbr": "CLE",
         "name": "Cleveland Cavaliers",
-        "score": 0,
+        "score": 13,
         "winner": null,
         "record": "6-7",
         "home_record": "4-2",
         "away_record": "2-5",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Meleek Thomas",
-            "value": "13.0"
+            "value": "6"
           },
-          "reboundsPerGame": {
-            "player": "Mario Hezonja",
-            "value": "5.3"
-          },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "Tyrese Proctor",
-            "value": "2.2"
+            "value": "2"
+          },
+          "assists": {
+            "player": "Donovan Mitchell",
+            "value": "2"
           },
           "rating": {
             "player": "Meleek Thomas",
-            "value": "13.0 PPG, 2.5 RPG, 1.4 APG, 1.2 SPG, 0.3 BPG"
+            "value": "6 PTS"
           }
         }
       },
@@ -124,36 +124,31 @@
         "team_id": "6",
         "abbr": "DAL",
         "name": "Dallas Mavericks",
-        "score": 0,
+        "score": 7,
         "winner": null,
         "record": "7-5",
         "home_record": "5-2",
         "away_record": "2-3",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Cooper Flagg",
-            "value": "24.6"
+            "value": "5"
           },
-          "reboundsPerGame": {
-            "player": "P.J. Washington",
-            "value": "7.2"
+          "rebounds": {
+            "player": "Caleb Martin",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Cooper Flagg",
-            "value": "6.5"
+          "assists": {
+            "player": "Kyrie Irving",
+            "value": "1"
           },
           "rating": {
             "player": "Cooper Flagg",
-            "value": "24.6 PPG, 6.9 RPG, 6.5 APG, 2.2 SPG, 0.7 BPG"
+            "value": "5 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "DAL -8.5",
-        "spread": 8.5,
-        "over_under": 228.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909982",
@@ -226,7 +221,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "DET -4.5",
         "spread": 4.5,
         "over_under": 228.5
@@ -304,7 +299,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MEM -4.5",
         "spread": -4.5,
         "over_under": 223.5
@@ -381,7 +376,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MIN -16.5",
         "spread": -16.5,
         "over_under": 237.5
