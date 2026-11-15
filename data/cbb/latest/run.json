@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-15T22:45:19+00:00",
+  "finished_at": "2026-11-15T23:00:26+00:00",
   "game_date": "2026-11-15",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,9 +29,22 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 12850
+      "ODDS_API_KEY_20K": 12837
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Arkansas-Pine Bluff Golden Lions @ USC Trojans",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Coastal Carolina Chanticleers @ Wisconsin Badgers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 37,
     "p4_events": 15,
@@ -39,12 +52,15 @@
       "St. Thomas (MN) Tommies @ LIU Sharks",
       "SIU-Edwardsville Cougars @ North Dakota Fighting Hawks"
     ],
-    "due": 0,
+    "due": 2,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 2,
+      "pull_type": "pregame",
+      "rows": 16,
+      "credits_last": 2
     },
     "status": "ok"
   }
