@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-15T19:45:19+00:00",
+  "finished_at": "2026-11-15T20:00:26+00:00",
   "game_date": "2026-11-15",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,13 +28,21 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 12965
+      "ODDS_API_KEY_20K": 12961
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Los Angeles Lakers @ Phoenix Suns",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 184,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "links_backfill": [],
     "status": "ok"
   }
