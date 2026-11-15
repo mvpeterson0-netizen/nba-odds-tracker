@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-15T20:21:07+00:00",
+  "fetched_at": "2026-11-15T20:30:14+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-15",
@@ -8,11 +8,11 @@
       "game_id": "401909985",
       "start_utc": "2026-11-15T18:00Z",
       "short_name": "IND @ PHI",
-      "state": "in",
-      "status": "2:06 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "2:06",
+      "clock": "0.0",
       "venue": "Xfinity Mobile Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -22,15 +22,15 @@
         "team_id": "20",
         "abbr": "PHI",
         "name": "Philadelphia 76ers",
-        "score": 125,
-        "winner": null,
-        "record": "10-3",
-        "home_record": "5-2",
+        "score": 131,
+        "winner": true,
+        "record": "11-3",
+        "home_record": "6-2",
         "away_record": "5-1",
         "leaders": {
           "points": {
             "player": "Jaylen Brown",
-            "value": "29"
+            "value": "31"
           },
           "rebounds": {
             "player": "Dean Wade",
@@ -38,11 +38,11 @@
           },
           "assists": {
             "player": "LeBron James",
-            "value": "10"
+            "value": "11"
           },
           "rating": {
-            "player": "Jaylen Brown",
-            "value": "29 PTS"
+            "player": "Tyrese Maxey",
+            "value": "27 PTS, 6 AST"
           }
         }
       },
@@ -50,15 +50,15 @@
         "team_id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers",
-        "score": 117,
-        "winner": null,
-        "record": "5-8",
-        "home_record": "2-4",
-        "away_record": "3-3",
+        "score": 124,
+        "winner": false,
+        "record": "5-9",
+        "home_record": "2-5",
+        "away_record": "3-4",
         "leaders": {
           "points": {
             "player": "Pascal Siakam",
-            "value": "27"
+            "value": "31"
           },
           "rebounds": {
             "player": "Quenton Jackson",
@@ -66,11 +66,11 @@
           },
           "assists": {
             "player": "Quenton Jackson",
-            "value": "6"
+            "value": "8"
           },
           "rating": {
             "player": "Pascal Siakam",
-            "value": "27 PTS"
+            "value": "31 PTS"
           }
         }
       },
@@ -150,7 +150,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "LAL -3.5",
         "spread": 3.5,
         "over_under": 226.5
@@ -227,7 +227,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CHA -1.5",
         "spread": 1.5,
         "over_under": 213.5
@@ -306,7 +306,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SA -15.5",
         "spread": 15.5,
         "over_under": 224.5
@@ -384,7 +384,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "BOS -14.5",
         "spread": -14.5,
         "over_under": 218.5
@@ -459,7 +459,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NY -5.5",
         "spread": 5.5,
         "over_under": 217.5
@@ -536,7 +536,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "HOU -8.5",
         "spread": 8.5,
         "over_under": 223.5
@@ -614,7 +614,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ATL -8.5",
         "spread": 8.5,
         "over_under": 233.5
@@ -692,7 +692,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "OKC -10.5",
         "spread": 10.5,
         "over_under": 223.5
