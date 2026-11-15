@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-15T18:00:22+00:00",
+  "fetched_at": "2026-11-15T18:15:19+00:00",
   "source": "espn",
   "count": 13,
   "game_date": "2026-11-15",
@@ -9,11 +9,11 @@
       "game_id": "401918949",
       "start_utc": "2026-11-15T18:00Z",
       "short_name": "LOU @ MEM",
-      "state": "pre",
-      "status": "11/15 - 1:00 PM EST",
+      "state": "in",
+      "status": "14:07 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "14:07",
       "venue": "FedExForum",
       "neutral_site": false,
       "broadcasts": [
@@ -23,23 +23,23 @@
         "team_id": "235",
         "abbr": "MEM",
         "name": "Memphis Tigers",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "2-1",
         "home_record": "1-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Jayden Reid",
-            "value": "23.0"
+            "value": "6"
           },
-          "reboundsPerGame": {
-            "player": "Corneilous Williams",
-            "value": "6.0"
+          "rebounds": {
+            "player": "Rihards Vavers",
+            "value": "2"
           },
-          "assistsPerGame": {
+          "rating": {
             "player": "Jayden Reid",
-            "value": "3.3"
+            "value": "6 PTS"
           }
         },
         "conf_id": "62",
@@ -52,23 +52,27 @@
         "team_id": "97",
         "abbr": "LOU",
         "name": "Louisville Cardinals",
-        "score": 0,
+        "score": 20,
         "winner": null,
         "record": "2-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Adrian Wooley",
-            "value": "13.5"
-          },
-          "reboundsPerGame": {
-            "player": "Karter Knox",
-            "value": "8.5"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Alvaro Folgueiras",
-            "value": "4.5"
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Flory Bidunga",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Seth Trimble",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Alvaro Folgueiras",
+            "value": "8 PTS"
           }
         },
         "conf_id": "2",
@@ -77,93 +81,7 @@
         "loc": "Louisville",
         "nick": "Cardinals"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "LOU -9.5",
-        "spread": 9.5,
-        "over_under": 164.5
-      },
-      "date": "2026-11-15",
-      "p4": true
-    },
-    {
-      "game_id": "401926063",
-      "start_utc": "2026-11-15T18:00Z",
-      "short_name": "BOIS VS NEB",
-      "state": "pre",
-      "status": "11/15 - 1:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Sanford Pentagon",
-      "neutral_site": true,
-      "broadcasts": [
-        "BTN"
-      ],
-      "home": {
-        "team_id": "158",
-        "abbr": "NEB",
-        "name": "Nebraska Cornhuskers",
-        "score": 0,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Pryce Sandfort",
-            "value": "22.3"
-          },
-          "reboundsPerGame": {
-            "player": "Pryce Sandfort",
-            "value": "4.7"
-          },
-          "assistsPerGame": {
-            "player": "Taj DeGourville",
-            "value": "3.7"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 25,
-        "loc": "Nebraska",
-        "nick": "Cornhuskers"
-      },
-      "away": {
-        "team_id": "68",
-        "abbr": "BOIS",
-        "name": "Boise State Broncos",
-        "score": 0,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Aginaldo Neto",
-            "value": "20.0"
-          },
-          "reboundsPerGame": {
-            "player": "Dovydas Butka",
-            "value": "10.0"
-          },
-          "assistsPerGame": {
-            "player": "Aginaldo Neto",
-            "value": "6.0"
-          }
-        },
-        "conf_id": "21",
-        "conf": null,
-        "rank": null,
-        "loc": "Boise State",
-        "nick": "Broncos"
-      },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "NEB -9.5",
-        "spread": -9.5,
-        "over_under": 160.5
-      },
+      "espn_line": null,
       "date": "2026-11-15",
       "p4": true
     },
@@ -171,11 +89,11 @@
       "game_id": "401909774",
       "start_utc": "2026-11-15T18:00Z",
       "short_name": "NIA @ ISU",
-      "state": "pre",
-      "status": "11/15 - 1:00 PM EST",
+      "state": "in",
+      "status": "13:14 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "13:14",
       "venue": "Hilton Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -185,23 +103,27 @@
         "team_id": "66",
         "abbr": "ISU",
         "name": "Iowa State Cyclones",
-        "score": 0,
+        "score": 11,
         "winner": null,
         "record": "2-1",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tre Singleton",
-            "value": "19.3"
+          "points": {
+            "player": "Jamarion Batemon",
+            "value": "6"
           },
-          "reboundsPerGame": {
-            "player": "Tre Singleton",
-            "value": "7.7"
+          "rebounds": {
+            "player": "Dominykas Pleta",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Jaquan Johnson",
-            "value": "2.7"
+          "assists": {
+            "player": "Blake Buchanan",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Jamarion Batemon",
+            "value": "6 PTS"
           }
         },
         "conf_id": "8",
@@ -214,23 +136,27 @@
         "team_id": "315",
         "abbr": "NIA",
         "name": "Niagara Purple Eagles",
-        "score": 0,
+        "score": 11,
         "winner": null,
         "record": "0-3",
         "home_record": "0-1",
         "away_record": "0-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Logan Woods",
-            "value": "13.7"
+          "points": {
+            "player": "Cole Farrell",
+            "value": "6"
           },
-          "reboundsPerGame": {
-            "player": "Logan Woods",
-            "value": "5.0"
+          "rebounds": {
+            "player": "Cole Farrell",
+            "value": "1"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Bastien Rieber",
-            "value": "2.7"
+            "value": "2"
+          },
+          "rating": {
+            "player": "Cole Farrell",
+            "value": "6 PTS"
           }
         },
         "conf_id": "13",
@@ -239,12 +165,91 @@
         "loc": "Niagara",
         "nick": "Purple Eagles"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "ISU -39.5",
-        "spread": -39.5,
-        "over_under": 143.5
+      "espn_line": null,
+      "date": "2026-11-15",
+      "p4": true
+    },
+    {
+      "game_id": "401926063",
+      "start_utc": "2026-11-15T18:00Z",
+      "short_name": "BOIS VS NEB",
+      "state": "in",
+      "status": "13:47 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "13:47",
+      "venue": "Sanford Pentagon",
+      "neutral_site": true,
+      "broadcasts": [
+        "BTN"
+      ],
+      "home": {
+        "team_id": "158",
+        "abbr": "NEB",
+        "name": "Nebraska Cornhuskers",
+        "score": 18,
+        "winner": null,
+        "record": "3-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Braden Frager",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Cale Jacobsen",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Cale Jacobsen",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Cale Jacobsen",
+            "value": "4 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 25,
+        "loc": "Nebraska",
+        "nick": "Cornhuskers"
       },
+      "away": {
+        "team_id": "68",
+        "abbr": "BOIS",
+        "name": "Boise State Broncos",
+        "score": 12,
+        "winner": null,
+        "record": "3-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Spencer Ahrens",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Spencer Ahrens",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Aginaldo Neto",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Spencer Ahrens",
+            "value": "6 PTS"
+          }
+        },
+        "conf_id": "21",
+        "conf": null,
+        "rank": null,
+        "loc": "Boise State",
+        "nick": "Broncos"
+      },
+      "espn_line": null,
       "date": "2026-11-15",
       "p4": true
     },
@@ -321,7 +326,7 @@
         "nick": "Wildcats"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "BC -20.5",
         "spread": -20.5,
         "over_under": 132.5
@@ -402,7 +407,7 @@
         "nick": "Tribe"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MICH -26.5",
         "spread": -26.5,
         "over_under": 168.5
@@ -483,7 +488,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MARQ -2.5",
         "spread": -2.5,
         "over_under": 153.5
@@ -564,7 +569,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TEX -3.5",
         "spread": -3.5,
         "over_under": 159.5
@@ -645,7 +650,7 @@
         "nick": "Bluejays"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "IOWA -4.5",
         "spread": -4.5,
         "over_under": 146.5
@@ -726,7 +731,7 @@
         "nick": "Chargers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "PSU -24.5",
         "spread": -24.5,
         "over_under": 142.5
@@ -807,7 +812,7 @@
         "nick": "Waves"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ORE -13.5",
         "spread": -13.5,
         "over_under": 154.5
@@ -888,7 +893,7 @@
         "nick": "Orange"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SJU -12.5",
         "spread": -12.5,
         "over_under": 149.5
@@ -969,7 +974,7 @@
         "nick": "Golden Lions"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "USC -46.5",
         "spread": -46.5,
         "over_under": 157.5
@@ -1050,7 +1055,7 @@
         "nick": "Chanticleers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "WIS -27.5",
         "spread": -27.5,
         "over_under": 148.5
