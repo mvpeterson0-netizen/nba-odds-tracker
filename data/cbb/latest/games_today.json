@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-15T21:00:22+00:00",
+  "fetched_at": "2026-11-15T21:15:22+00:00",
   "source": "espn",
   "count": 13,
   "game_date": "2026-11-15",
@@ -93,11 +93,11 @@
       "game_id": "401918453",
       "start_utc": "2026-11-15T19:00Z",
       "short_name": "W&M @ MICH",
-      "state": "in",
-      "status": "0:02 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "0:02",
+      "clock": "0:00",
       "venue": "Crisler Center",
       "neutral_site": false,
       "broadcasts": [
@@ -108,9 +108,9 @@
         "abbr": "MICH",
         "name": "Michigan Wolverines",
         "score": 123,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
+        "winner": true,
+        "record": "3-1",
+        "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -140,11 +140,11 @@
         "team_id": "2729",
         "abbr": "W&M",
         "name": "William & Mary Tribe",
-        "score": 78,
-        "winner": null,
-        "record": "2-1",
+        "score": 79,
+        "winner": false,
+        "record": "2-2",
         "home_record": "2-0",
-        "away_record": "0-1",
+        "away_record": "0-2",
         "leaders": {
           "points": {
             "player": "Stas Sivka",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-15T19:30Z",
       "short_name": "MARQ VS MIZ",
       "state": "in",
-      "status": "11:29 - 2nd",
+      "status": "6:18 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "11:29",
+      "clock": "6:18",
       "venue": "United Center",
       "neutral_site": true,
       "broadcasts": [
@@ -191,27 +191,27 @@
         "team_id": "142",
         "abbr": "MIZ",
         "name": "Missouri Tigers",
-        "score": 39,
+        "score": 49,
         "winner": null,
         "record": "2-1",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Kennard Davis Jr.",
-            "value": "9"
+            "player": "Trent Pierce",
+            "value": "10"
           },
           "rebounds": {
-            "player": "Bryson Tiller",
-            "value": "4"
+            "player": "Trent Pierce",
+            "value": "6"
           },
           "assists": {
             "player": "Jason Crowe Jr.",
             "value": "5"
           },
           "rating": {
-            "player": "Toni Bryant",
-            "value": "9 PTS, 3 BLK"
+            "player": "Jamier Jones",
+            "value": "10 PTS"
           }
         },
         "conf_id": "23",
@@ -224,7 +224,7 @@
         "team_id": "269",
         "abbr": "MARQ",
         "name": "Marquette Golden Eagles",
-        "score": 46,
+        "score": 52,
         "winner": null,
         "record": "2-1",
         "home_record": "2-0",
@@ -240,11 +240,11 @@
           },
           "assists": {
             "player": "Nigel James Jr.",
-            "value": "7"
+            "value": "8"
           },
           "rating": {
             "player": "Nigel James Jr.",
-            "value": "10 PTS, 7 AST, 4 STL"
+            "value": "10 PTS, 8 AST, 5 STL"
           }
         },
         "conf_id": "4",
@@ -751,60 +751,10 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "PSU -24.5",
-        "spread": -24.5,
-        "over_under": 142.5
+        "details": "PSU -23.5",
+        "spread": -23.5,
+        "over_under": 141.5
       },
-      "date": "2026-11-15",
-      "p4": true
-    },
-    {
-      "game_id": "401926073",
-      "start_utc": "2026-11-15T22:00Z",
-      "short_name": "PEPP @ ORE",
-      "state": "post",
-      "status": "Postponed",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Matthew Knight Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "B1G+"
-      ],
-      "home": {
-        "team_id": "2483",
-        "abbr": "ORE",
-        "name": "Oregon Ducks",
-        "score": 0,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": null,
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Oregon",
-        "nick": "Ducks"
-      },
-      "away": {
-        "team_id": "2492",
-        "abbr": "PEPP",
-        "name": "Pepperdine Waves",
-        "score": 0,
-        "winner": null,
-        "record": "2-2",
-        "home_record": "2-0",
-        "away_record": "0-2",
-        "leaders": null,
-        "conf_id": "29",
-        "conf": null,
-        "rank": null,
-        "loc": "Pepperdine",
-        "nick": "Waves"
-      },
-      "espn_line": null,
       "date": "2026-11-15",
       "p4": true
     },
@@ -1048,6 +998,56 @@
         "spread": -27.5,
         "over_under": 148.5
       },
+      "date": "2026-11-15",
+      "p4": true
+    },
+    {
+      "game_id": "401926073",
+      "start_utc": "2026-11-15T22:00Z",
+      "short_name": "PEPP @ ORE",
+      "state": "post",
+      "status": "Postponed",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Matthew Knight Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "B1G+"
+      ],
+      "home": {
+        "team_id": "2483",
+        "abbr": "ORE",
+        "name": "Oregon Ducks",
+        "score": 0,
+        "winner": null,
+        "record": "3-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": null,
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Oregon",
+        "nick": "Ducks"
+      },
+      "away": {
+        "team_id": "2492",
+        "abbr": "PEPP",
+        "name": "Pepperdine Waves",
+        "score": 0,
+        "winner": null,
+        "record": "2-2",
+        "home_record": "2-0",
+        "away_record": "0-2",
+        "leaders": null,
+        "conf_id": "29",
+        "conf": null,
+        "rank": null,
+        "loc": "Pepperdine",
+        "nick": "Waves"
+      },
+      "espn_line": null,
       "date": "2026-11-15",
       "p4": true
     }
