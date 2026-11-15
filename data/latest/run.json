@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-15T16:45:20+00:00",
+  "finished_at": "2026-11-15T17:00:20+00:00",
   "game_date": "2026-11-15",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,13 +28,21 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 13145
+      "ODDS_API_KEY_20K": 13141
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Indiana Pacers @ Philadelphia 76ers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 116,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "links_backfill": [],
     "status": "ok"
   }
