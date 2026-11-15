@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-14T23:45:23+00:00",
+  "finished_at": "2026-11-15T00:00:24+00:00",
   "game_date": "2026-11-14",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,10 +17,10 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
+    "new_games": 1,
+    "player_rows": 33,
     "unparsed": [],
-    "queued": 0,
+    "queued": 1,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -29,16 +29,23 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 13528
+      "ODDS_API_KEY_20K": 13516
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Cincinnati Bearcats @ Dayton Flyers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 68,
+    "events": 67,
     "p4_events": 14,
     "unmatched": [
       "Washington Huskies @ Utah Utes"
     ],
-    "due": 0,
+    "due": 1,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",
