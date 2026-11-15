@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-15T22:00:19+00:00",
+  "finished_at": "2026-11-15T22:15:32+00:00",
   "game_date": "2026-11-15",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,28 +28,13 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 12857
+      "ODDS_API_KEY_20K": 12850
     },
-    "pulled": [
-      {
-        "matchup": "Dallas Mavericks @ Boston Celtics",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 166,
-        "markets": 4
-      },
-      {
-        "matchup": "New York Knicks @ Toronto Raptors",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 174,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 2,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"
   }
