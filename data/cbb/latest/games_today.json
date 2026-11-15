@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-15T19:00:22+00:00",
+  "fetched_at": "2026-11-15T19:15:21+00:00",
   "source": "espn",
   "count": 13,
   "game_date": "2026-11-15",
@@ -90,14 +90,98 @@
       "p4": true
     },
     {
+      "game_id": "401918453",
+      "start_utc": "2026-11-15T19:00Z",
+      "short_name": "W&M @ MICH",
+      "state": "in",
+      "status": "14:42 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "14:42",
+      "venue": "Crisler Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "B1G+"
+      ],
+      "home": {
+        "team_id": "130",
+        "abbr": "MICH",
+        "name": "Michigan Wolverines",
+        "score": 16,
+        "winner": null,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Roddy Gayle Jr.",
+            "value": "9"
+          },
+          "rebounds": {
+            "player": "Oscar Goodman",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Elliot Cadeau",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Roddy Gayle Jr.",
+            "value": "9 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 20,
+        "loc": "Michigan",
+        "nick": "Wolverines"
+      },
+      "away": {
+        "team_id": "2729",
+        "abbr": "W&M",
+        "name": "William & Mary Tribe",
+        "score": 12,
+        "winner": null,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "John Roland Jr.",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "John Roland Jr.",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Jesse McIntosh",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Gavin Ward",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "10",
+        "conf": null,
+        "rank": null,
+        "loc": "William & Mary",
+        "nick": "Tribe"
+      },
+      "espn_line": null,
+      "date": "2026-11-15",
+      "p4": true
+    },
+    {
       "game_id": "401926063",
       "start_utc": "2026-11-15T18:00Z",
       "short_name": "BOIS VS NEB",
       "state": "in",
-      "status": "End of 2nd",
+      "status": "15:23 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "20:00",
+      "clock": "15:23",
       "venue": "Sanford Pentagon",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +191,7 @@
         "team_id": "158",
         "abbr": "NEB",
         "name": "Nebraska Cornhuskers",
-        "score": 52,
+        "score": 63,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
@@ -115,10 +199,10 @@
         "leaders": {
           "points": {
             "player": "Braden Frager",
-            "value": "16"
+            "value": "22"
           },
           "rebounds": {
-            "player": "Cale Jacobsen",
+            "player": "Braden Frager",
             "value": "5"
           },
           "assists": {
@@ -126,8 +210,8 @@
             "value": "4"
           },
           "rating": {
-            "player": "Cale Jacobsen",
-            "value": "12 PTS"
+            "player": "Braden Frager",
+            "value": "22 PTS"
           }
         },
         "conf_id": "7",
@@ -140,27 +224,27 @@
         "team_id": "68",
         "abbr": "BOIS",
         "name": "Boise State Broncos",
-        "score": 34,
+        "score": 41,
         "winner": null,
         "record": "3-0",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Damari Wheeler-Thomas",
-            "value": "9"
+            "player": "Spencer Ahrens",
+            "value": "11"
           },
           "rebounds": {
-            "player": "Damari Wheeler-Thomas",
-            "value": "2"
+            "player": "Spencer Ahrens",
+            "value": "4"
           },
           "assists": {
             "player": "Damari Wheeler-Thomas",
             "value": "5"
           },
           "rating": {
-            "player": "Damari Wheeler-Thomas",
-            "value": "9 PTS"
+            "player": "Spencer Ahrens",
+            "value": "11 PTS"
           }
         },
         "conf_id": "21",
@@ -178,10 +262,10 @@
       "start_utc": "2026-11-15T18:00Z",
       "short_name": "NIA @ ISU",
       "state": "in",
-      "status": "End of 2nd",
+      "status": "14:53 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "20:00",
+      "clock": "14:53",
       "venue": "Hilton Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -191,7 +275,7 @@
         "team_id": "66",
         "abbr": "ISU",
         "name": "Iowa State Cyclones",
-        "score": 32,
+        "score": 38,
         "winner": null,
         "record": "2-1",
         "home_record": "2-0",
@@ -202,16 +286,16 @@
             "value": "9"
           },
           "rebounds": {
-            "player": "Dominykas Pleta",
+            "player": "Taj Manning",
             "value": "7"
           },
           "assists": {
             "player": "Tamin Lipsey",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Taj Manning",
-            "value": "9 PTS"
+            "value": "9 PTS, 7 REB"
           }
         },
         "conf_id": "8",
@@ -224,7 +308,7 @@
         "team_id": "315",
         "abbr": "NIA",
         "name": "Niagara Purple Eagles",
-        "score": 25,
+        "score": 32,
         "winner": null,
         "record": "0-3",
         "home_record": "0-1",
@@ -232,19 +316,19 @@
         "leaders": {
           "points": {
             "player": "Cole Farrell",
-            "value": "13"
+            "value": "16"
           },
           "rebounds": {
             "player": "Samuele Miccoli",
-            "value": "3"
+            "value": "6"
           },
           "assists": {
-            "player": "Samuele Miccoli",
+            "player": "Bastien Rieber",
             "value": "3"
           },
           "rating": {
             "player": "Cole Farrell",
-            "value": "13 PTS"
+            "value": "16 PTS"
           }
         },
         "conf_id": "13",
@@ -262,10 +346,10 @@
       "start_utc": "2026-11-15T18:30Z",
       "short_name": "UNH @ BC",
       "state": "in",
-      "status": "6:58 - 1st",
+      "status": "0:26 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "6:58",
+      "clock": "0:26",
       "venue": "Conte Forum",
       "neutral_site": false,
       "broadcasts": [
@@ -275,7 +359,7 @@
         "team_id": "103",
         "abbr": "BC",
         "name": "Boston College Eagles",
-        "score": 21,
+        "score": 31,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
@@ -283,19 +367,19 @@
         "leaders": {
           "points": {
             "player": "Ernest Shelton",
-            "value": "8"
+            "value": "14"
           },
           "rebounds": {
             "player": "Zak Smrekar",
-            "value": "6"
+            "value": "8"
           },
           "assists": {
             "player": "Armoni Zeigler",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
-            "player": "Armoni Zeigler",
-            "value": "6 PTS"
+            "player": "Ernest Shelton",
+            "value": "14 PTS"
           }
         },
         "conf_id": "2",
@@ -308,19 +392,19 @@
         "team_id": "160",
         "abbr": "UNH",
         "name": "New Hampshire Wildcats",
-        "score": 16,
+        "score": 25,
         "winner": null,
         "record": "3-1",
         "home_record": "1-1",
         "away_record": "2-0",
         "leaders": {
           "points": {
-            "player": "Tyler Bike",
-            "value": "5"
+            "player": "Drew McKenna",
+            "value": "8"
           },
           "rebounds": {
             "player": "Drew McKenna",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "Tyler Bike",
@@ -328,7 +412,7 @@
           },
           "rating": {
             "player": "Drew McKenna",
-            "value": "4 PTS"
+            "value": "8 PTS"
           }
         },
         "conf_id": "1",
@@ -338,87 +422,6 @@
         "nick": "Wildcats"
       },
       "espn_line": null,
-      "date": "2026-11-15",
-      "p4": true
-    },
-    {
-      "game_id": "401918453",
-      "start_utc": "2026-11-15T19:00Z",
-      "short_name": "W&M @ MICH",
-      "state": "pre",
-      "status": "11/15 - 2:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Crisler Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "B1G+"
-      ],
-      "home": {
-        "team_id": "130",
-        "abbr": "MICH",
-        "name": "Michigan Wolverines",
-        "score": 0,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Trey McKenney",
-            "value": "18.0"
-          },
-          "reboundsPerGame": {
-            "player": "J.P. Estrella",
-            "value": "9.7"
-          },
-          "assistsPerGame": {
-            "player": "Elliot Cadeau",
-            "value": "6.3"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 20,
-        "loc": "Michigan",
-        "nick": "Wolverines"
-      },
-      "away": {
-        "team_id": "2729",
-        "abbr": "W&M",
-        "name": "William & Mary Tribe",
-        "score": 0,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Brian Carter Jr.",
-            "value": "16.3"
-          },
-          "reboundsPerGame": {
-            "player": "Brian Carter Jr.",
-            "value": "5.0"
-          },
-          "assistsPerGame": {
-            "player": "Brian Carter Jr.",
-            "value": "6.0"
-          }
-        },
-        "conf_id": "10",
-        "conf": null,
-        "rank": null,
-        "loc": "William & Mary",
-        "nick": "Tribe"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "MICH -26.5",
-        "spread": -26.5,
-        "over_under": 169.5
-      },
       "date": "2026-11-15",
       "p4": true
     },

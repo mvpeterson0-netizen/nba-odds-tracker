@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-15T19:00:23+00:00",
+  "finished_at": "2026-11-15T19:15:21+00:00",
   "game_date": "2026-11-15",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -31,45 +31,17 @@
       "ODDS_API_KEY_2": 0,
       "ODDS_API_KEY_20K": 12965
     },
-    "pulled": [
-      {
-        "matchup": "New Haven Chargers @ Penn State Nittany Lions",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Pepperdine Waves @ Oregon Ducks",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Arkansas-Pine Bluff Golden Lions @ USC Trojans",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Coastal Carolina Chanticleers @ Wisconsin Badgers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "events": 36,
     "p4_events": 8,
     "unmatched": [],
-    "due": 4,
+    "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "not_due",
       "morning_due": false,
-      "pregame_due": 2,
-      "pull_type": "pregame",
-      "rows": 16,
-      "credits_last": 2
+      "pregame_due": 0
     },
     "status": "ok"
   }
