@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-15T03:45:13+00:00",
+  "fetched_at": "2026-11-15T04:00:15+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-14",
@@ -154,11 +154,11 @@
       "game_id": "401909982",
       "start_utc": "2026-11-15T01:00Z",
       "short_name": "DET @ MIA",
-      "state": "in",
-      "status": "0.1 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "0.1",
+      "clock": "0.0",
       "venue": "Kaseya Center",
       "neutral_site": false,
       "broadcasts": [
@@ -169,9 +169,9 @@
         "abbr": "MIA",
         "name": "Miami Heat",
         "score": 137,
-        "winner": null,
-        "record": "6-6",
-        "home_record": "2-3",
+        "winner": true,
+        "record": "7-6",
+        "home_record": "3-3",
         "away_record": "4-3",
         "leaders": {
           "points": {
@@ -197,10 +197,10 @@
         "abbr": "DET",
         "name": "Detroit Pistons",
         "score": 117,
-        "winner": null,
-        "record": "8-3",
+        "winner": false,
+        "record": "8-4",
         "home_record": "3-2",
-        "away_record": "5-1",
+        "away_record": "5-2",
         "leaders": {
           "points": {
             "player": "Cade Cunningham",
@@ -230,7 +230,7 @@
       "status": "Final",
       "completed": true,
       "period": 4,
-      "clock": "0.0",
+      "clock": "12:00",
       "venue": "FedExForum",
       "neutral_site": false,
       "broadcasts": [
