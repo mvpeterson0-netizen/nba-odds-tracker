@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-15T00:00:18+00:00",
+  "fetched_at": "2026-11-15T00:15:16+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-14",
@@ -8,11 +8,11 @@
       "game_id": "401909980",
       "start_utc": "2026-11-15T00:00Z",
       "short_name": "DEN @ NO",
-      "state": "pre",
-      "status": "11/14 - 7:00 PM EST",
+      "state": "in",
+      "status": "9:46 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:46",
       "venue": "Smoothie King Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,27 +23,27 @@
         "team_id": "3",
         "abbr": "NO",
         "name": "New Orleans Pelicans",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "4-9",
         "home_record": "3-5",
         "away_record": "1-4",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Zion Williamson",
-            "value": "21.8"
-          },
-          "reboundsPerGame": {
-            "player": "Derik Queen",
-            "value": "6.3"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Jeremiah Fears",
-            "value": "5.1"
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Jeremiah Fears",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Zion Williamson",
+            "value": "1"
           },
           "rating": {
-            "player": "Zion Williamson",
-            "value": "21.8 PPG, 5.2 RPG, 2.8 APG, 2.1 SPG, 0.6 BPG"
+            "player": "Jeremiah Fears",
+            "value": "5 PTS"
           }
         }
       },
@@ -51,36 +51,31 @@
         "team_id": "7",
         "abbr": "DEN",
         "name": "Denver Nuggets",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "6-4",
         "home_record": "2-2",
         "away_record": "3-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jamal Murray",
-            "value": "26.2"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Nikola Jokic",
-            "value": "10.8"
+            "value": "5"
           },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "Nikola Jokic",
-            "value": "9.0"
+            "value": "1"
+          },
+          "assists": {
+            "player": "Christian Braun",
+            "value": "1"
           },
           "rating": {
             "player": "Nikola Jokic",
-            "value": "23.5 PPG, 10.8 RPG, 9.0 APG, 1.8 SPG, 1.2 BPG"
+            "value": "5 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "DEN -12.5",
-        "spread": 12.5,
-        "over_under": 235.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909981",
@@ -154,10 +149,10 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "DAL -8.5",
         "spread": 8.5,
-        "over_under": 227.5
+        "over_under": 228.5
       }
     },
     {
@@ -231,7 +226,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "DET -4.5",
         "spread": 4.5,
         "over_under": 228.5
@@ -309,9 +304,9 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "MEM -3.5",
-        "spread": -3.5,
+        "provider": "Draft Kings",
+        "details": "MEM -4.5",
+        "spread": -4.5,
         "over_under": 224.5
       }
     },
@@ -386,7 +381,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MIN -16.5",
         "spread": -16.5,
         "over_under": 237.5
