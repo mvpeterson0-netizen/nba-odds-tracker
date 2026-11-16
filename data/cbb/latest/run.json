@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-16T21:45:19+00:00",
+  "finished_at": "2026-11-16T21:50:52+00:00",
   "game_date": "2026-11-16",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,21 +29,24 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 12727
+      "ODDS_API_KEY_20K": 12725
     },
     "pulled": [],
     "errors": [],
-    "events": 60,
-    "p4_events": 30,
+    "events": 61,
+    "p4_events": 31,
     "unmatched": [
       "St. Thomas (MN) Tommies @ LIU Sharks"
     ],
     "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 1,
+      "pull_type": "pregame",
+      "rows": 8,
+      "credits_last": 2
     },
     "status": "ok"
   }
