@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-16T00:04:13+00:00",
+  "fetched_at": "2026-11-16T00:15:19+00:00",
   "source": "espn",
   "count": 13,
   "game_date": "2026-11-15",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-16T00:00Z",
       "short_name": "SYR @ SJU",
       "state": "in",
-      "status": "18:18 - 1st",
+      "status": "12:52 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "18:18",
+      "clock": "12:52",
       "venue": "Madison Square Garden",
       "neutral_site": false,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "2599",
         "abbr": "SJU",
         "name": "St. John's Red Storm",
-        "score": 0,
+        "score": 16,
         "winner": null,
         "record": "3-0",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
+            "player": "Tounde Yessoufou",
+            "value": "7"
+          },
+          "rebounds": {
+            "player": "Tounde Yessoufou",
+            "value": "3"
+          },
+          "assists": {
             "player": "Quinn Ellis",
             "value": "2"
           },
-          "rebounds": {
-            "player": "Ruben Prey",
-            "value": "1"
-          },
           "rating": {
-            "player": "Ruben Prey",
-            "value": "1 REB"
+            "player": "Tounde Yessoufou",
+            "value": "7 PTS"
           }
         },
         "conf_id": "4",
@@ -52,7 +56,7 @@
         "team_id": "183",
         "abbr": "SYR",
         "name": "Syracuse Orange",
-        "score": 2,
+        "score": 10,
         "winner": null,
         "record": "2-1",
         "home_record": "2-0",
@@ -60,19 +64,19 @@
         "leaders": {
           "points": {
             "player": "Luke Wilson",
-            "value": "2"
+            "value": "4"
           },
           "rebounds": {
             "player": "Sadiq White Jr.",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
             "player": "Garwey Dual",
             "value": "1"
           },
           "rating": {
-            "player": "Luke Wilson",
-            "value": "2 PTS"
+            "player": "Garwey Dual",
+            "value": "3 PTS"
           }
         },
         "conf_id": "2",
@@ -845,11 +849,11 @@
       "game_id": "401926772",
       "start_utc": "2026-11-16T00:00Z",
       "short_name": "UAPB @ USC",
-      "state": "pre",
-      "status": "11/15 - 7:00 PM EST",
+      "state": "in",
+      "status": "14:30 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "14:30",
       "venue": "Galen Center",
       "neutral_site": false,
       "broadcasts": [
@@ -859,23 +863,27 @@
         "team_id": "30",
         "abbr": "USC",
         "name": "USC Trojans",
-        "score": 0,
+        "score": 19,
         "winner": null,
         "record": "3-0",
         "home_record": "1-0",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
+            "player": "Adonis Ratliff",
+            "value": "10"
+          },
+          "rebounds": {
+            "player": "Adonis Ratliff",
+            "value": "4"
+          },
+          "assists": {
             "player": "Alijah Arenas",
-            "value": "23.3"
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Jacob Cofie",
-            "value": "7.0"
-          },
-          "assistsPerGame": {
-            "player": "Rodney Rice",
-            "value": "7.0"
+          "rating": {
+            "player": "Adonis Ratliff",
+            "value": "10 PTS"
           }
         },
         "conf_id": "7",
@@ -888,23 +896,23 @@
         "team_id": "2029",
         "abbr": "UAPB",
         "name": "Arkansas-Pine Bluff Golden Lions",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "0-4",
         "home_record": "0-0",
         "away_record": "0-4",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Macaleab Rich",
-            "value": "15.3"
+          "points": {
+            "player": "Creed Williamson",
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Macaleab Rich",
-            "value": "6.0"
+          "assists": {
+            "player": "Jai'chaunn Hayes",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Jalen Tatum",
-            "value": "2.0"
+          "rating": {
+            "player": "Creed Williamson",
+            "value": "2 PTS"
           }
         },
         "conf_id": "26",
@@ -913,12 +921,7 @@
         "loc": "Arkansas-Pine Bluff",
         "nick": "Golden Lions"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "USC -46.5",
-        "spread": -46.5,
-        "over_under": 157.5
-      },
+      "espn_line": null,
       "date": "2026-11-15",
       "p4": true
     },
