@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-16T00:15:19+00:00",
+  "fetched_at": "2026-11-16T00:30:27+00:00",
   "source": "espn",
   "count": 13,
   "game_date": "2026-11-15",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-16T00:00Z",
       "short_name": "SYR @ SJU",
       "state": "in",
-      "status": "12:52 - 1st",
+      "status": "6:00 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "12:52",
+      "clock": "6:00",
       "venue": "Madison Square Garden",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2599",
         "abbr": "SJU",
         "name": "St. John's Red Storm",
-        "score": 16,
+        "score": 26,
         "winner": null,
         "record": "3-0",
         "home_record": "3-0",
@@ -31,19 +31,19 @@
         "leaders": {
           "points": {
             "player": "Tounde Yessoufou",
-            "value": "7"
+            "value": "11"
           },
           "rebounds": {
             "player": "Tounde Yessoufou",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
-            "player": "Quinn Ellis",
+            "player": "Keyshawn Hall",
             "value": "2"
           },
           "rating": {
             "player": "Tounde Yessoufou",
-            "value": "7 PTS"
+            "value": "11 PTS"
           }
         },
         "conf_id": "4",
@@ -56,19 +56,19 @@
         "team_id": "183",
         "abbr": "SYR",
         "name": "Syracuse Orange",
-        "score": 10,
+        "score": 20,
         "winner": null,
         "record": "2-1",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Luke Wilson",
-            "value": "4"
+            "player": "Garwey Dual",
+            "value": "5"
           },
           "rebounds": {
-            "player": "Sadiq White Jr.",
-            "value": "3"
+            "player": "Ryan Moesch",
+            "value": "4"
           },
           "assists": {
             "player": "Garwey Dual",
@@ -76,7 +76,7 @@
           },
           "rating": {
             "player": "Garwey Dual",
-            "value": "3 PTS"
+            "value": "5 PTS"
           }
         },
         "conf_id": "2",
@@ -84,6 +84,90 @@
         "rank": null,
         "loc": "Syracuse",
         "nick": "Orange"
+      },
+      "espn_line": null,
+      "date": "2026-11-15",
+      "p4": true
+    },
+    {
+      "game_id": "401926772",
+      "start_utc": "2026-11-16T00:00Z",
+      "short_name": "UAPB @ USC",
+      "state": "in",
+      "status": "8:38 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "8:38",
+      "venue": "Galen Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "B1G+"
+      ],
+      "home": {
+        "team_id": "30",
+        "abbr": "USC",
+        "name": "USC Trojans",
+        "score": 40,
+        "winner": null,
+        "record": "3-0",
+        "home_record": "1-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Adonis Ratliff",
+            "value": "13"
+          },
+          "rebounds": {
+            "player": "Adonis Ratliff",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Adonis Ratliff",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Adonis Ratliff",
+            "value": "13 PTS, 3 BLK"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 21,
+        "loc": "USC",
+        "nick": "Trojans"
+      },
+      "away": {
+        "team_id": "2029",
+        "abbr": "UAPB",
+        "name": "Arkansas-Pine Bluff Golden Lions",
+        "score": 12,
+        "winner": null,
+        "record": "0-4",
+        "home_record": "0-0",
+        "away_record": "0-4",
+        "leaders": {
+          "points": {
+            "player": "CJ Smith",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Creed Williamson",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Jai'chaunn Hayes",
+            "value": "1"
+          },
+          "rating": {
+            "player": "CJ Smith",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "26",
+        "conf": null,
+        "rank": null,
+        "loc": "Arkansas-Pine Bluff",
+        "nick": "Golden Lions"
       },
       "espn_line": null,
       "date": "2026-11-15",
@@ -840,86 +924,6 @@
         "rank": null,
         "loc": "New Haven",
         "nick": "Chargers"
-      },
-      "espn_line": null,
-      "date": "2026-11-15",
-      "p4": true
-    },
-    {
-      "game_id": "401926772",
-      "start_utc": "2026-11-16T00:00Z",
-      "short_name": "UAPB @ USC",
-      "state": "in",
-      "status": "14:30 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "14:30",
-      "venue": "Galen Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "B1G+"
-      ],
-      "home": {
-        "team_id": "30",
-        "abbr": "USC",
-        "name": "USC Trojans",
-        "score": 19,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "1-0",
-        "away_record": "1-0",
-        "leaders": {
-          "points": {
-            "player": "Adonis Ratliff",
-            "value": "10"
-          },
-          "rebounds": {
-            "player": "Adonis Ratliff",
-            "value": "4"
-          },
-          "assists": {
-            "player": "Alijah Arenas",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Adonis Ratliff",
-            "value": "10 PTS"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 21,
-        "loc": "USC",
-        "nick": "Trojans"
-      },
-      "away": {
-        "team_id": "2029",
-        "abbr": "UAPB",
-        "name": "Arkansas-Pine Bluff Golden Lions",
-        "score": 2,
-        "winner": null,
-        "record": "0-4",
-        "home_record": "0-0",
-        "away_record": "0-4",
-        "leaders": {
-          "points": {
-            "player": "Creed Williamson",
-            "value": "2"
-          },
-          "assists": {
-            "player": "Jai'chaunn Hayes",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Creed Williamson",
-            "value": "2 PTS"
-          }
-        },
-        "conf_id": "26",
-        "conf": null,
-        "rank": null,
-        "loc": "Arkansas-Pine Bluff",
-        "nick": "Golden Lions"
       },
       "espn_line": null,
       "date": "2026-11-15",

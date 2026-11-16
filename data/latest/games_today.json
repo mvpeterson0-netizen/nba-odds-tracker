@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-16T00:15:14+00:00",
+  "fetched_at": "2026-11-16T00:30:19+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-15",
@@ -227,11 +227,11 @@
       "game_id": "401909988",
       "start_utc": "2026-11-15T22:00Z",
       "short_name": "SA @ UTAH",
-      "state": "in",
-      "status": "2:30 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "2:30",
+      "clock": "0.0",
       "venue": "Delta Center",
       "neutral_site": false,
       "broadcasts": [
@@ -243,10 +243,10 @@
         "team_id": "26",
         "abbr": "UTAH",
         "name": "Utah Jazz",
-        "score": 100,
-        "winner": null,
-        "record": "1-12",
-        "home_record": "1-6",
+        "score": 102,
+        "winner": false,
+        "record": "1-13",
+        "home_record": "1-7",
         "away_record": "0-6",
         "leaders": {
           "points": {
@@ -255,7 +255,7 @@
           },
           "rebounds": {
             "player": "Ace Bailey",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Keyonte George",
@@ -271,15 +271,15 @@
         "team_id": "24",
         "abbr": "SA",
         "name": "San Antonio Spurs",
-        "score": 101,
-        "winner": null,
-        "record": "11-2",
+        "score": 110,
+        "winner": true,
+        "record": "12-2",
         "home_record": "5-2",
-        "away_record": "6-0",
+        "away_record": "7-0",
         "leaders": {
           "points": {
             "player": "Dylan Harper",
-            "value": "29"
+            "value": "31"
           },
           "rebounds": {
             "player": "Victor Wembanyama",
@@ -291,7 +291,7 @@
           },
           "rating": {
             "player": "Victor Wembanyama",
-            "value": "24 PTS, 10 REB, 6 AST, 4 BLK"
+            "value": "26 PTS, 10 REB, 6 AST, 5 BLK"
           }
         }
       },
@@ -302,10 +302,10 @@
       "start_utc": "2026-11-15T23:00Z",
       "short_name": "DAL @ BOS",
       "state": "in",
-      "status": "Halftime",
+      "status": "4:15 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "4:15",
       "venue": "TD Garden",
       "neutral_site": false,
       "broadcasts": [
@@ -316,27 +316,27 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 67,
+        "score": 91,
         "winner": null,
         "record": "10-2",
         "home_record": "5-0",
         "away_record": "5-2",
         "leaders": {
           "points": {
-            "player": "Derrick White",
-            "value": "13"
+            "player": "Jayson Tatum",
+            "value": "19"
           },
           "rebounds": {
             "player": "Paul George",
             "value": "7"
           },
           "assists": {
-            "player": "Payton Pritchard",
-            "value": "5"
+            "player": "Jayson Tatum",
+            "value": "6"
           },
           "rating": {
-            "player": "Derrick White",
-            "value": "13 PTS"
+            "player": "Jayson Tatum",
+            "value": "19 PTS, 6 AST"
           }
         }
       },
@@ -344,15 +344,15 @@
         "team_id": "6",
         "abbr": "DAL",
         "name": "Dallas Mavericks",
-        "score": 37,
+        "score": 57,
         "winner": null,
         "record": "7-6",
         "home_record": "5-2",
         "away_record": "2-4",
         "leaders": {
           "points": {
-            "player": "Zaccharie Risacher",
-            "value": "9"
+            "player": "Naji Marshall",
+            "value": "13"
           },
           "rebounds": {
             "player": "P.J. Washington",
@@ -363,8 +363,8 @@
             "value": "4"
           },
           "rating": {
-            "player": "Zaccharie Risacher",
-            "value": "9 PTS"
+            "player": "Naji Marshall",
+            "value": "13 PTS"
           }
         }
       },
@@ -375,10 +375,10 @@
       "start_utc": "2026-11-15T23:00Z",
       "short_name": "NY @ TOR",
       "state": "in",
-      "status": "Halftime",
+      "status": "11:16 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "11:16",
       "venue": "Scotiabank Arena",
       "neutral_site": false,
       "broadcasts": null,
@@ -386,7 +386,7 @@
         "team_id": "28",
         "abbr": "TOR",
         "name": "Toronto Raptors",
-        "score": 43,
+        "score": 46,
         "winner": null,
         "record": "5-7",
         "home_record": "2-3",
@@ -414,7 +414,7 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 47,
+        "score": 49,
         "winner": null,
         "record": "6-6",
         "home_record": "4-3",
@@ -445,10 +445,10 @@
       "start_utc": "2026-11-16T00:00Z",
       "short_name": "HOU @ WSH",
       "state": "in",
-      "status": "9:26 - 1st",
+      "status": "2:11 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "9:26",
+      "clock": "2:11",
       "venue": "Capital One Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -458,7 +458,7 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 4,
+        "score": 23,
         "winner": null,
         "record": "4-9",
         "home_record": "2-3",
@@ -466,19 +466,19 @@
         "leaders": {
           "points": {
             "player": "Alex Sarr",
-            "value": "4"
+            "value": "10"
           },
           "rebounds": {
             "player": "Kyshawn George",
-            "value": "1"
+            "value": "2"
           },
           "assists": {
             "player": "Kyshawn George",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
             "player": "Alex Sarr",
-            "value": "4 PTS"
+            "value": "10 PTS"
           }
         }
       },
@@ -486,27 +486,27 @@
         "team_id": "10",
         "abbr": "HOU",
         "name": "Houston Rockets",
-        "score": 7,
+        "score": 27,
         "winner": null,
         "record": "10-3",
         "home_record": "7-1",
         "away_record": "3-2",
         "leaders": {
           "points": {
-            "player": "Alperen Sengun",
-            "value": "2"
+            "player": "Amen Thompson",
+            "value": "7"
           },
           "rebounds": {
-            "player": "Alperen Sengun",
-            "value": "2"
+            "player": "Steven Adams",
+            "value": "3"
           },
           "assists": {
-            "player": "Alperen Sengun",
+            "player": "Amen Thompson",
             "value": "1"
           },
           "rating": {
-            "player": "Alperen Sengun",
-            "value": "2 PTS"
+            "player": "Amen Thompson",
+            "value": "7 PTS"
           }
         }
       },
