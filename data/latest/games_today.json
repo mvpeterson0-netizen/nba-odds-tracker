@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-16T01:45:20+00:00",
+  "fetched_at": "2026-11-16T02:00:18+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-15",
@@ -374,11 +374,11 @@
       "game_id": "401909990",
       "start_utc": "2026-11-15T23:00Z",
       "short_name": "NY @ TOR",
-      "state": "in",
-      "status": "1:03 - OT",
-      "completed": false,
+      "state": "post",
+      "status": "Final/OT",
+      "completed": true,
       "period": 5,
-      "clock": "1:03",
+      "clock": "0.0",
       "venue": "Scotiabank Arena",
       "neutral_site": false,
       "broadcasts": null,
@@ -386,10 +386,10 @@
         "team_id": "28",
         "abbr": "TOR",
         "name": "Toronto Raptors",
-        "score": 104,
-        "winner": null,
-        "record": "5-7",
-        "home_record": "2-3",
+        "score": 108,
+        "winner": false,
+        "record": "5-8",
+        "home_record": "2-4",
         "away_record": "3-4",
         "leaders": {
           "points": {
@@ -406,7 +406,7 @@
           },
           "rating": {
             "player": "Scottie Barnes",
-            "value": "30 PTS, 8 REB"
+            "value": "30 PTS, 9 REB"
           }
         }
       },
@@ -414,19 +414,19 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 106,
-        "winner": null,
-        "record": "6-6",
+        "score": 112,
+        "winner": true,
+        "record": "7-6",
         "home_record": "4-3",
-        "away_record": "2-3",
+        "away_record": "3-3",
         "leaders": {
           "points": {
             "player": "Karl-Anthony Towns",
-            "value": "27"
+            "value": "28"
           },
           "rebounds": {
             "player": "Karl-Anthony Towns",
-            "value": "16"
+            "value": "17"
           },
           "assists": {
             "player": "Jalen Brunson",
@@ -434,7 +434,7 @@
           },
           "rating": {
             "player": "Karl-Anthony Towns",
-            "value": "27 PTS, 16 REB"
+            "value": "28 PTS, 17 REB"
           }
         }
       },
@@ -445,10 +445,10 @@
       "start_utc": "2026-11-16T00:00Z",
       "short_name": "HOU @ WSH",
       "state": "in",
-      "status": "3:15 - 3rd",
+      "status": "3.2 - 3rd",
       "completed": false,
       "period": 3,
-      "clock": "3:15",
+      "clock": "3.2",
       "venue": "Capital One Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -458,7 +458,7 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 77,
+        "score": 86,
         "winner": null,
         "record": "4-9",
         "home_record": "2-3",
@@ -469,8 +469,8 @@
             "value": "18"
           },
           "rebounds": {
-            "player": "Alex Sarr",
-            "value": "6"
+            "player": "Anthony Davis",
+            "value": "7"
           },
           "assists": {
             "player": "Trae Young",
@@ -486,7 +486,7 @@
         "team_id": "10",
         "abbr": "HOU",
         "name": "Houston Rockets",
-        "score": 102,
+        "score": 119,
         "winner": null,
         "record": "10-3",
         "home_record": "7-1",
@@ -494,19 +494,19 @@
         "leaders": {
           "points": {
             "player": "Amen Thompson",
-            "value": "24"
+            "value": "26"
           },
           "rebounds": {
-            "player": "Amen Thompson",
-            "value": "7"
+            "player": "Alperen Sengun",
+            "value": "8"
           },
           "assists": {
             "player": "Alperen Sengun",
-            "value": "7"
+            "value": "8"
           },
           "rating": {
             "player": "Amen Thompson",
-            "value": "24 PTS, 7 REB, 6 AST"
+            "value": "26 PTS, 7 REB, 7 AST"
           }
         }
       },
@@ -517,10 +517,10 @@
       "start_utc": "2026-11-16T01:00Z",
       "short_name": "ATL @ MIL",
       "state": "in",
-      "status": "9:04 - 2nd",
+      "status": "1:54 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:04",
+      "clock": "1:54",
       "venue": "Fiserv Forum",
       "neutral_site": false,
       "broadcasts": [
@@ -531,7 +531,7 @@
         "team_id": "15",
         "abbr": "MIL",
         "name": "Milwaukee Bucks",
-        "score": 43,
+        "score": 51,
         "winner": null,
         "record": "1-12",
         "home_record": "1-6",
@@ -542,12 +542,12 @@
             "value": "12"
           },
           "rebounds": {
-            "player": "Kyle Kuzma",
-            "value": "3"
+            "player": "Tyler Herro",
+            "value": "5"
           },
           "assists": {
-            "player": "Kyle Kuzma",
-            "value": "2"
+            "player": "Brayden Burries",
+            "value": "3"
           },
           "rating": {
             "player": "Kyle Kuzma",
@@ -559,27 +559,27 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 28,
+        "score": 47,
         "winner": null,
         "record": "7-6",
         "home_record": "3-3",
         "away_record": "4-3",
         "leaders": {
           "points": {
-            "player": "Corey Kispert",
-            "value": "6"
+            "player": "Onyeka Okongwu",
+            "value": "10"
           },
           "rebounds": {
-            "player": "Dyson Daniels",
-            "value": "2"
+            "player": "Onyeka Okongwu",
+            "value": "5"
           },
           "assists": {
             "player": "Jalen Johnson",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
-            "player": "CJ McCollum",
-            "value": "6 PTS"
+            "player": "Onyeka Okongwu",
+            "value": "10 PTS"
           }
         }
       },
@@ -657,7 +657,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "OKC -12.5",
         "spread": 12.5,
         "over_under": 221.5
