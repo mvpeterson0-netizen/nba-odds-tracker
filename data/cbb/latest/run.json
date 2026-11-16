@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-16T00:00:28+00:00",
+  "finished_at": "2026-11-16T00:04:13+00:00",
   "game_date": "2026-11-15",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -31,14 +31,7 @@
       "ODDS_API_KEY_2": 0,
       "ODDS_API_KEY_20K": 12831
     },
-    "pulled": [
-      {
-        "matchup": "Coastal Carolina Chanticleers @ Wisconsin Badgers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "events": 30,
     "p4_events": 13,
@@ -46,15 +39,12 @@
       "St. Thomas (MN) Tommies @ LIU Sharks",
       "SIU-Edwardsville Cougars @ North Dakota Fighting Hawks"
     ],
-    "due": 1,
+    "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "not_due",
       "morning_due": false,
-      "pregame_due": 1,
-      "pull_type": "pregame",
-      "rows": 8,
-      "credits_last": 2
+      "pregame_due": 0
     },
     "status": "ok"
   }

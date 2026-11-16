@@ -1,10 +1,90 @@
 {
-  "fetched_at": "2026-11-16T00:00:27+00:00",
+  "fetched_at": "2026-11-16T00:04:13+00:00",
   "source": "espn",
   "count": 13,
   "game_date": "2026-11-15",
   "division_i_games": 44,
   "rows": [
+    {
+      "game_id": "401920681",
+      "start_utc": "2026-11-16T00:00Z",
+      "short_name": "SYR @ SJU",
+      "state": "in",
+      "status": "18:18 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "18:18",
+      "venue": "Madison Square Garden",
+      "neutral_site": false,
+      "broadcasts": [
+        "Peacock"
+      ],
+      "home": {
+        "team_id": "2599",
+        "abbr": "SJU",
+        "name": "St. John's Red Storm",
+        "score": 0,
+        "winner": null,
+        "record": "3-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Quinn Ellis",
+            "value": "2"
+          },
+          "rebounds": {
+            "player": "Ruben Prey",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Ruben Prey",
+            "value": "1 REB"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": 13,
+        "loc": "St. John's",
+        "nick": "Red Storm"
+      },
+      "away": {
+        "team_id": "183",
+        "abbr": "SYR",
+        "name": "Syracuse Orange",
+        "score": 2,
+        "winner": null,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Luke Wilson",
+            "value": "2"
+          },
+          "rebounds": {
+            "player": "Sadiq White Jr.",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Garwey Dual",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Luke Wilson",
+            "value": "2 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Syracuse",
+        "nick": "Orange"
+      },
+      "espn_line": null,
+      "date": "2026-11-15",
+      "p4": true
+    },
     {
       "game_id": "401906866",
       "start_utc": "2026-11-15T20:00Z",
@@ -758,87 +838,6 @@
         "nick": "Chargers"
       },
       "espn_line": null,
-      "date": "2026-11-15",
-      "p4": true
-    },
-    {
-      "game_id": "401920681",
-      "start_utc": "2026-11-16T00:00Z",
-      "short_name": "SYR @ SJU",
-      "state": "pre",
-      "status": "11/15 - 7:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Madison Square Garden",
-      "neutral_site": false,
-      "broadcasts": [
-        "Peacock"
-      ],
-      "home": {
-        "team_id": "2599",
-        "abbr": "SJU",
-        "name": "St. John's Red Storm",
-        "score": 0,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Keyshawn Hall",
-            "value": "18.7"
-          },
-          "reboundsPerGame": {
-            "player": "Ruben Prey",
-            "value": "5.7"
-          },
-          "assistsPerGame": {
-            "player": "Quinn Ellis",
-            "value": "9.0"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": 13,
-        "loc": "St. John's",
-        "nick": "Red Storm"
-      },
-      "away": {
-        "team_id": "183",
-        "abbr": "SYR",
-        "name": "Syracuse Orange",
-        "score": 0,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Kiyan Anthony",
-            "value": "15.7"
-          },
-          "reboundsPerGame": {
-            "player": "Gavin Doty",
-            "value": "8.3"
-          },
-          "assistsPerGame": {
-            "player": "Ryan Moesch",
-            "value": "6.0"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Syracuse",
-        "nick": "Orange"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "SJU -11.5",
-        "spread": -11.5,
-        "over_under": 147.5
-      },
       "date": "2026-11-15",
       "p4": true
     },
