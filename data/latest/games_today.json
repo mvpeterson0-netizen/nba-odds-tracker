@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-16T03:15:17+00:00",
+  "fetched_at": "2026-11-16T03:30:16+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-15",
@@ -516,11 +516,11 @@
       "game_id": "401909992",
       "start_utc": "2026-11-16T01:00Z",
       "short_name": "ATL @ MIL",
-      "state": "in",
-      "status": "3:50 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "3:50",
+      "clock": "0.0",
       "venue": "Fiserv Forum",
       "neutral_site": false,
       "broadcasts": [
@@ -531,19 +531,19 @@
         "team_id": "15",
         "abbr": "MIL",
         "name": "Milwaukee Bucks",
-        "score": 100,
-        "winner": null,
-        "record": "1-12",
-        "home_record": "1-6",
+        "score": 106,
+        "winner": false,
+        "record": "1-13",
+        "home_record": "1-7",
         "away_record": "0-6",
         "leaders": {
           "points": {
             "player": "Kasparas Jakucionis",
-            "value": "20"
+            "value": "25"
           },
           "rebounds": {
             "player": "Kel'el Ware",
-            "value": "10"
+            "value": "11"
           },
           "assists": {
             "player": "Kasparas Jakucionis",
@@ -551,7 +551,7 @@
           },
           "rating": {
             "player": "Kasparas Jakucionis",
-            "value": "20 PTS"
+            "value": "25 PTS, 3 STL"
           }
         }
       },
@@ -559,11 +559,11 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 106,
-        "winner": null,
-        "record": "7-6",
+        "score": 113,
+        "winner": true,
+        "record": "8-6",
         "home_record": "3-3",
-        "away_record": "4-3",
+        "away_record": "5-3",
         "leaders": {
           "points": {
             "player": "Nickeil Alexander-Walker",
@@ -578,8 +578,8 @@
             "value": "5"
           },
           "rating": {
-            "player": "Nickeil Alexander-Walker",
-            "value": "20 PTS"
+            "player": "CJ McCollum",
+            "value": "20 PTS, 4 STL"
           }
         }
       },
@@ -590,10 +590,10 @@
       "start_utc": "2026-11-16T02:00Z",
       "short_name": "OKC @ SAC",
       "state": "in",
-      "status": "Halftime",
+      "status": "9:06 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "9:06",
       "venue": "Golden 1 Center",
       "neutral_site": false,
       "broadcasts": [
@@ -604,7 +604,7 @@
         "team_id": "23",
         "abbr": "SAC",
         "name": "Sacramento Kings",
-        "score": 50,
+        "score": 60,
         "winner": null,
         "record": "1-11",
         "home_record": "0-7",
@@ -620,7 +620,7 @@
           },
           "assists": {
             "player": "Malik Monk",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Daeqwon Plowden",
@@ -632,7 +632,7 @@
         "team_id": "25",
         "abbr": "OKC",
         "name": "Oklahoma City Thunder",
-        "score": 62,
+        "score": 72,
         "winner": null,
         "record": "8-5",
         "home_record": "5-0",
@@ -640,7 +640,7 @@
         "leaders": {
           "points": {
             "player": "Shai Gilgeous-Alexander",
-            "value": "21"
+            "value": "25"
           },
           "rebounds": {
             "player": "Aday Mara",
@@ -652,7 +652,7 @@
           },
           "rating": {
             "player": "Shai Gilgeous-Alexander",
-            "value": "21 PTS"
+            "value": "25 PTS"
           }
         }
       },
