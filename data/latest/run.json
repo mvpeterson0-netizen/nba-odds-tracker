@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-16T12:45:21+00:00",
+  "finished_at": "2026-11-16T13:00:31+00:00",
   "game_date": "2026-11-16",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "not_due",
+    "odds": "ok",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -28,12 +28,69 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 12799
+      "ODDS_API_KEY_20K": 12767
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Orlando Magic @ Boston Celtics",
+        "type": "morning",
+        "status": "ok",
+        "rows": 178,
+        "markets": 4
+      },
+      {
+        "matchup": "Chicago Bulls @ Cleveland Cavaliers",
+        "type": "morning",
+        "status": "ok",
+        "rows": 154,
+        "markets": 4
+      },
+      {
+        "matchup": "Memphis Grizzlies @ Washington Wizards",
+        "type": "morning",
+        "status": "ok",
+        "rows": 164,
+        "markets": 4
+      },
+      {
+        "matchup": "Philadelphia 76ers @ Brooklyn Nets",
+        "type": "morning",
+        "status": "ok",
+        "rows": 172,
+        "markets": 4
+      },
+      {
+        "matchup": "Houston Rockets @ Miami Heat",
+        "type": "morning",
+        "status": "ok",
+        "rows": 184,
+        "markets": 4
+      },
+      {
+        "matchup": "Golden State Warriors @ New Orleans Pelicans",
+        "type": "morning",
+        "status": "ok",
+        "rows": 180,
+        "markets": 4
+      },
+      {
+        "matchup": "Portland Trail Blazers @ Minnesota Timberwolves",
+        "type": "morning",
+        "status": "ok",
+        "rows": 182,
+        "markets": 4
+      },
+      {
+        "matchup": "Phoenix Suns @ Denver Nuggets",
+        "type": "morning",
+        "status": "ok",
+        "rows": 196,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
+    "due": 8,
     "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"
