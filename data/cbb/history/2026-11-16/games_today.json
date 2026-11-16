@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-16T23:00:23+00:00",
+  "fetched_at": "2026-11-16T23:11:54+00:00",
   "source": "espn",
   "count": 12,
   "game_date": "2026-11-16",
@@ -9,11 +9,11 @@
       "game_id": "401916298",
       "start_utc": "2026-11-16T23:00Z",
       "short_name": "ALCN @ MD",
-      "state": "pre",
-      "status": "11/16 - 6:00 PM EST",
+      "state": "in",
+      "status": "14:51 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "14:51",
       "venue": "XFINITY Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "120",
         "abbr": "MD",
         "name": "Maryland Terrapins",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "1-2",
         "home_record": "1-1",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Pharrel Payne",
-            "value": "20.3"
+          "points": {
+            "player": "Austin Brown",
+            "value": "3"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Tomislav Buljan",
-            "value": "7.7"
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "DJ Wagner",
-            "value": "3.7"
+          "assists": {
+            "player": "Pharrel Payne",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Tomislav Buljan",
+            "value": "2 PTS"
           }
         },
         "conf_id": "7",
@@ -52,23 +56,23 @@
         "team_id": "2016",
         "abbr": "ALCN",
         "name": "Alcorn State Braves",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "0-4",
         "home_record": "0-1",
         "away_record": "0-3",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Trey Thomas",
-            "value": "21.0"
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Adam Tokpah",
-            "value": "5.2"
-          },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "Saxby Sunderland",
-            "value": "1.2"
+            "value": "3"
+          },
+          "rating": {
+            "player": "Trey Thomas",
+            "value": "2 PTS"
           }
         },
         "conf_id": "26",
@@ -77,12 +81,7 @@
         "loc": "Alcorn State",
         "nick": "Braves"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "MD -35.5",
-        "spread": -35.5,
-        "over_under": 154.5
-      },
+      "espn_line": null,
       "date": "2026-11-16",
       "p4": true
     },
@@ -159,7 +158,7 @@
         "nick": "Panthers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "OSU -32.5",
         "spread": -32.5,
         "over_under": 154.5
@@ -240,7 +239,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "UK -28.5",
         "spread": -28.5,
         "over_under": 152.5
@@ -321,7 +320,7 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CLEM -24.5",
         "spread": -24.5,
         "over_under": 142.5
@@ -402,7 +401,7 @@
         "nick": "Spiders"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "VT -12.5",
         "spread": -12.5,
         "over_under": 150.5
@@ -483,7 +482,7 @@
         "nick": "Dolphins"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "UGA -21.5",
         "spread": -21.5,
         "over_under": 153.5
@@ -564,7 +563,7 @@
         "nick": "Lions"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "NU -11.5",
         "spread": -11.5,
         "over_under": 140.5
@@ -645,7 +644,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "OKST -18.5",
         "spread": -18.5,
         "over_under": 162.5
@@ -726,7 +725,7 @@
         "nick": "Leathernecks"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MINN -33.5",
         "spread": -33.5,
         "over_under": 135.5
@@ -807,7 +806,7 @@
         "nick": "Grizzlies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "KSU -14.5",
         "spread": -14.5,
         "over_under": 154.5
@@ -888,7 +887,7 @@
         "nick": "Lions"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TA&M -33.5",
         "spread": -33.5,
         "over_under": 161.5
@@ -969,7 +968,7 @@
         "nick": "Beach"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "UCLA -29.5",
         "spread": -29.5,
         "over_under": 145.5
