@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-15T23:45:23+00:00",
+  "finished_at": "2026-11-16T00:00:26+00:00",
   "game_date": "2026-11-15",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -17,7 +17,7 @@
   },
   "boxscores": {
     "new_games": 1,
-    "player_rows": 29,
+    "player_rows": 25,
     "unparsed": [],
     "queued": 1,
     "errors": [],
@@ -28,13 +28,21 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 12837
+      "ODDS_API_KEY_20K": 12833
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Atlanta Hawks @ Milwaukee Bucks",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 194,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "links_backfill": [],
     "status": "ok"
   }
