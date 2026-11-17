@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-17T03:30:28+00:00",
+  "fetched_at": "2026-11-17T03:45:22+00:00",
   "source": "espn",
   "count": 12,
   "game_date": "2026-11-16",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-17T03:00Z",
       "short_name": "LBSU @ UCLA",
       "state": "in",
-      "status": "10:58 - 1st",
+      "status": "5:30 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "10:58",
+      "clock": "5:30",
       "venue": "Pauley Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "26",
         "abbr": "UCLA",
         "name": "UCLA Bruins",
-        "score": 19,
+        "score": 35,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
@@ -31,11 +31,11 @@
         "leaders": {
           "points": {
             "player": "Eric Dailey Jr.",
-            "value": "5"
+            "value": "12"
           },
           "rebounds": {
-            "player": "Eric Dailey Jr.",
-            "value": "2"
+            "player": "Azavier Robinson",
+            "value": "3"
           },
           "assists": {
             "player": "Brandon Williams",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Eric Dailey Jr.",
-            "value": "5 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "7",
@@ -56,19 +56,19 @@
         "team_id": "299",
         "abbr": "LBSU",
         "name": "Long Beach State Beach",
-        "score": 7,
+        "score": 14,
         "winner": null,
         "record": "1-2",
         "home_record": "1-0",
         "away_record": "0-2",
         "leaders": {
           "points": {
-            "player": "Jack Payne",
-            "value": "3"
+            "player": "Noah Amenhauser",
+            "value": "6"
           },
           "rebounds": {
             "player": "Noah Amenhauser",
-            "value": "2"
+            "value": "4"
           },
           "assists": {
             "player": "Noah Amenhauser",
@@ -76,7 +76,7 @@
           },
           "rating": {
             "player": "Noah Amenhauser",
-            "value": "2 PTS"
+            "value": "6 PTS"
           }
         },
         "conf_id": "9",
@@ -84,90 +84,6 @@
         "rank": null,
         "loc": "Long Beach State",
         "nick": "Beach"
-      },
-      "espn_line": null,
-      "date": "2026-11-16",
-      "p4": true
-    },
-    {
-      "game_id": "401920808",
-      "start_utc": "2026-11-17T01:30Z",
-      "short_name": "SELA @ TA&M",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Reed Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "245",
-        "abbr": "TA&M",
-        "name": "Texas A&M Aggies",
-        "score": 101,
-        "winner": true,
-        "record": "5-0",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "PJ Haggerty",
-            "value": "19"
-          },
-          "rebounds": {
-            "player": "Mackenzie Mgbako",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Jalen Shelley",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Jalen Shelley",
-            "value": "18 PTS, 6 REB"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Texas A&M",
-        "nick": "Aggies"
-      },
-      "away": {
-        "team_id": "2545",
-        "abbr": "SELA",
-        "name": "SE Louisiana Lions",
-        "score": 69,
-        "winner": false,
-        "record": "1-3",
-        "home_record": "0-0",
-        "away_record": "1-3",
-        "leaders": {
-          "points": {
-            "player": "Tyler Rolison",
-            "value": "27"
-          },
-          "rebounds": {
-            "player": "Quincy Allen",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Tyler Rolison",
-            "value": "8"
-          },
-          "rating": {
-            "player": "Tyler Rolison",
-            "value": "27 PTS, 8 AST, 3 STL"
-          }
-        },
-        "conf_id": "25",
-        "conf": null,
-        "rank": null,
-        "loc": "SE Louisiana",
-        "nick": "Lions"
       },
       "espn_line": null,
       "date": "2026-11-16",
@@ -1008,6 +924,90 @@
         "rank": null,
         "loc": "Montana",
         "nick": "Grizzlies"
+      },
+      "espn_line": null,
+      "date": "2026-11-16",
+      "p4": true
+    },
+    {
+      "game_id": "401920808",
+      "start_utc": "2026-11-17T01:30Z",
+      "short_name": "SELA @ TA&M",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Reed Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "245",
+        "abbr": "TA&M",
+        "name": "Texas A&M Aggies",
+        "score": 101,
+        "winner": true,
+        "record": "5-0",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "PJ Haggerty",
+            "value": "19"
+          },
+          "rebounds": {
+            "player": "Mackenzie Mgbako",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Jalen Shelley",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Jalen Shelley",
+            "value": "18 PTS, 6 REB"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Texas A&M",
+        "nick": "Aggies"
+      },
+      "away": {
+        "team_id": "2545",
+        "abbr": "SELA",
+        "name": "SE Louisiana Lions",
+        "score": 69,
+        "winner": false,
+        "record": "1-3",
+        "home_record": "0-0",
+        "away_record": "1-3",
+        "leaders": {
+          "points": {
+            "player": "Tyler Rolison",
+            "value": "27"
+          },
+          "rebounds": {
+            "player": "Quincy Allen",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Tyler Rolison",
+            "value": "8"
+          },
+          "rating": {
+            "player": "Tyler Rolison",
+            "value": "27 PTS, 8 AST, 3 STL"
+          }
+        },
+        "conf_id": "25",
+        "conf": null,
+        "rank": null,
+        "loc": "SE Louisiana",
+        "nick": "Lions"
       },
       "espn_line": null,
       "date": "2026-11-16",
