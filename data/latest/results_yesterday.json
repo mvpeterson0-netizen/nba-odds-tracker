@@ -1,449 +1,157 @@
 {
-  "fetched_at": "2026-11-17T04:45:25+00:00",
+  "fetched_at": "2026-11-17T05:00:28+00:00",
   "source": "espn",
-  "count": 9,
-  "game_date": "2026-11-15",
+  "count": 8,
+  "game_date": "2026-11-16",
   "rows": [
     {
-      "game_id": "401909985",
-      "start_utc": "2026-11-15T18:00Z",
-      "short_name": "IND @ PHI",
+      "game_id": "401909994",
+      "start_utc": "2026-11-17T00:00Z",
+      "short_name": "ORL @ BOS",
       "state": "post",
       "status": "Final",
       "completed": true,
       "period": 4,
-      "clock": "0.0",
-      "venue": "Xfinity Mobile Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "DAZN IND"
-      ],
-      "home": {
-        "team_id": "20",
-        "abbr": "PHI",
-        "name": "Philadelphia 76ers",
-        "score": 131,
-        "winner": true,
-        "record": "11-3",
-        "home_record": "6-2",
-        "away_record": "5-1",
-        "leaders": {
-          "points": {
-            "player": "Jaylen Brown",
-            "value": "31"
-          },
-          "rebounds": {
-            "player": "LeBron James",
-            "value": "7"
-          },
-          "assists": {
-            "player": "LeBron James",
-            "value": "11"
-          },
-          "rating": {
-            "player": "Tyrese Maxey",
-            "value": "27 PTS, 6 AST"
-          }
-        }
-      },
-      "away": {
-        "team_id": "11",
-        "abbr": "IND",
-        "name": "Indiana Pacers",
-        "score": 124,
-        "winner": false,
-        "record": "5-9",
-        "home_record": "2-5",
-        "away_record": "3-4",
-        "leaders": {
-          "points": {
-            "player": "Pascal Siakam",
-            "value": "31"
-          },
-          "rebounds": {
-            "player": "Quenton Jackson",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Quenton Jackson",
-            "value": "8"
-          },
-          "rating": {
-            "player": "Pascal Siakam",
-            "value": "31 PTS"
-          }
-        }
-      },
-      "espn_line": null
-    },
-    {
-      "game_id": "401909986",
-      "start_utc": "2026-11-15T21:00Z",
-      "short_name": "LAL @ PHX",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 4,
-      "clock": "0.0",
-      "venue": "Mortgage Matchup Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "Spectrum Sports Net",
-        "Spectrum Sports Net +",
-        "Arizona's Family 3TV",
-        "Suns Live"
-      ],
-      "home": {
-        "team_id": "21",
-        "abbr": "PHX",
-        "name": "Phoenix Suns",
-        "score": 123,
-        "winner": false,
-        "record": "5-7",
-        "home_record": "5-4",
-        "away_record": "0-3",
-        "leaders": {
-          "points": {
-            "player": "Collin Gillespie",
-            "value": "26"
-          },
-          "rebounds": {
-            "player": "Jordan Goodwin",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Devin Booker",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Collin Gillespie",
-            "value": "26 PTS"
-          }
-        }
-      },
-      "away": {
-        "team_id": "13",
-        "abbr": "LAL",
-        "name": "Los Angeles Lakers",
-        "score": 131,
-        "winner": true,
-        "record": "12-2",
-        "home_record": "5-1",
-        "away_record": "7-1",
-        "leaders": {
-          "points": {
-            "player": "Luka Doncic",
-            "value": "43"
-          },
-          "rebounds": {
-            "player": "Walker Kessler",
-            "value": "12"
-          },
-          "assists": {
-            "player": "Luka Doncic",
-            "value": "9"
-          },
-          "rating": {
-            "player": "Luka Doncic",
-            "value": "43 PTS, 9 AST"
-          }
-        }
-      },
-      "espn_line": null
-    },
-    {
-      "game_id": "401909987",
-      "start_utc": "2026-11-15T21:30Z",
-      "short_name": "CHA @ LAC",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 4,
-      "clock": "0.0",
-      "venue": "Intuit Dome",
-      "neutral_site": false,
-      "broadcasts": [
-        "ClipperVision"
-      ],
-      "home": {
-        "team_id": "12",
-        "abbr": "LAC",
-        "name": "LA Clippers",
-        "score": 113,
-        "winner": true,
-        "record": "4-8",
-        "home_record": "4-3",
-        "away_record": "0-5",
-        "leaders": {
-          "points": {
-            "player": "Darius Garland",
-            "value": "27"
-          },
-          "rebounds": {
-            "player": "Darius Garland",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Brook Lopez",
-            "value": "8"
-          },
-          "rating": {
-            "player": "Darius Garland",
-            "value": "27 PTS, 6 REB, 7 AST"
-          }
-        }
-      },
-      "away": {
-        "team_id": "30",
-        "abbr": "CHA",
-        "name": "Charlotte Hornets",
-        "score": 105,
-        "winner": false,
-        "record": "4-9",
-        "home_record": "3-4",
-        "away_record": "1-5",
-        "leaders": {
-          "points": {
-            "player": "Coby White",
-            "value": "21"
-          },
-          "rebounds": {
-            "player": "Moussa Diabate",
-            "value": "12"
-          },
-          "assists": {
-            "player": "Grayson Allen",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Moussa Diabate",
-            "value": "12 PTS, 12 REB, 3 BLK"
-          }
-        }
-      },
-      "espn_line": null
-    },
-    {
-      "game_id": "401909988",
-      "start_utc": "2026-11-15T22:00Z",
-      "short_name": "SA @ UTAH",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 4,
-      "clock": "0.0",
-      "venue": "Delta Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "KJZZ-TV",
-        "Jazz+",
-        "DAZN SAS"
-      ],
-      "home": {
-        "team_id": "26",
-        "abbr": "UTAH",
-        "name": "Utah Jazz",
-        "score": 102,
-        "winner": false,
-        "record": "1-13",
-        "home_record": "1-7",
-        "away_record": "0-6",
-        "leaders": {
-          "points": {
-            "player": "Mo Bamba",
-            "value": "26"
-          },
-          "rebounds": {
-            "player": "Ace Bailey",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Keyonte George",
-            "value": "8"
-          },
-          "rating": {
-            "player": "Mo Bamba",
-            "value": "26 PTS"
-          }
-        }
-      },
-      "away": {
-        "team_id": "24",
-        "abbr": "SA",
-        "name": "San Antonio Spurs",
-        "score": 110,
-        "winner": true,
-        "record": "12-2",
-        "home_record": "5-2",
-        "away_record": "7-0",
-        "leaders": {
-          "points": {
-            "player": "Dylan Harper",
-            "value": "31"
-          },
-          "rebounds": {
-            "player": "Victor Wembanyama",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Stephon Castle",
-            "value": "9"
-          },
-          "rating": {
-            "player": "Victor Wembanyama",
-            "value": "26 PTS, 10 REB, 6 AST, 5 BLK"
-          }
-        }
-      },
-      "espn_line": null
-    },
-    {
-      "game_id": "401909989",
-      "start_utc": "2026-11-15T23:00Z",
-      "short_name": "DAL @ BOS",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 4,
-      "clock": "0.0",
+      "clock": "12:00",
       "venue": "TD Garden",
       "neutral_site": false,
       "broadcasts": [
-        "KFAA-TV",
-        "MavsTV"
+        "NBCSN"
       ],
       "home": {
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 131,
-        "winner": true,
-        "record": "11-2",
-        "home_record": "6-0",
+        "score": 105,
+        "winner": false,
+        "record": "11-3",
+        "home_record": "6-1",
         "away_record": "5-2",
         "leaders": {
           "points": {
             "player": "Jayson Tatum",
-            "value": "32"
+            "value": "24"
           },
           "rebounds": {
-            "player": "Paul George",
-            "value": "7"
+            "player": "Jayson Tatum",
+            "value": "12"
           },
           "assists": {
-            "player": "Jayson Tatum",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Jayson Tatum",
-            "value": "32 PTS, 6 REB, 6 AST"
-          }
-        }
-      },
-      "away": {
-        "team_id": "6",
-        "abbr": "DAL",
-        "name": "Dallas Mavericks",
-        "score": 94,
-        "winner": false,
-        "record": "7-7",
-        "home_record": "5-2",
-        "away_record": "2-5",
-        "leaders": {
-          "points": {
-            "player": "Zaccharie Risacher",
-            "value": "18"
-          },
-          "rebounds": {
-            "player": "Morez Johnson Jr.",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Caleb Martin",
+            "player": "Payton Pritchard",
             "value": "5"
           },
           "rating": {
-            "player": "Zaccharie Risacher",
-            "value": "18 PTS"
-          }
-        }
-      },
-      "espn_line": null
-    },
-    {
-      "game_id": "401909990",
-      "start_utc": "2026-11-15T23:00Z",
-      "short_name": "NY @ TOR",
-      "state": "post",
-      "status": "Final/OT",
-      "completed": true,
-      "period": 5,
-      "clock": "5:00",
-      "venue": "Scotiabank Arena",
-      "neutral_site": false,
-      "broadcasts": null,
-      "home": {
-        "team_id": "28",
-        "abbr": "TOR",
-        "name": "Toronto Raptors",
-        "score": 108,
-        "winner": false,
-        "record": "5-8",
-        "home_record": "2-4",
-        "away_record": "3-4",
-        "leaders": {
-          "points": {
-            "player": "Scottie Barnes",
-            "value": "30"
-          },
-          "rebounds": {
-            "player": "Collin Murray-Boyles",
-            "value": "13"
-          },
-          "assists": {
-            "player": "Immanuel Quickley",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Scottie Barnes",
-            "value": "30 PTS, 9 REB"
+            "player": "Jayson Tatum",
+            "value": "24 PTS, 12 REB"
           }
         }
       },
       "away": {
-        "team_id": "18",
-        "abbr": "NY",
-        "name": "New York Knicks",
-        "score": 112,
+        "team_id": "19",
+        "abbr": "ORL",
+        "name": "Orlando Magic",
+        "score": 115,
         "winner": true,
-        "record": "7-6",
-        "home_record": "4-3",
-        "away_record": "3-3",
+        "record": "6-7",
+        "home_record": "1-4",
+        "away_record": "5-3",
         "leaders": {
           "points": {
-            "player": "Karl-Anthony Towns",
-            "value": "28"
+            "player": "Desmond Bane",
+            "value": "24"
           },
           "rebounds": {
-            "player": "Karl-Anthony Towns",
-            "value": "17"
+            "player": "Desmond Bane",
+            "value": "8"
           },
           "assists": {
-            "player": "Jalen Brunson",
+            "player": "Franz Wagner",
             "value": "9"
           },
           "rating": {
-            "player": "Karl-Anthony Towns",
-            "value": "28 PTS, 17 REB"
+            "player": "Desmond Bane",
+            "value": "24 PTS, 8 REB"
           }
         }
       },
       "espn_line": null
     },
     {
-      "game_id": "401909991",
-      "start_utc": "2026-11-16T00:00Z",
-      "short_name": "HOU @ WSH",
+      "game_id": "401909995",
+      "start_utc": "2026-11-17T00:00Z",
+      "short_name": "CHI @ CLE",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 4,
+      "clock": "12:00",
+      "venue": "Rocket Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "DAZN CLE"
+      ],
+      "home": {
+        "team_id": "5",
+        "abbr": "CLE",
+        "name": "Cleveland Cavaliers",
+        "score": 126,
+        "winner": true,
+        "record": "8-7",
+        "home_record": "6-2",
+        "away_record": "2-5",
+        "leaders": {
+          "points": {
+            "player": "Donovan Mitchell",
+            "value": "39"
+          },
+          "rebounds": {
+            "player": "Jarrett Allen",
+            "value": "14"
+          },
+          "assists": {
+            "player": "James Harden",
+            "value": "10"
+          },
+          "rating": {
+            "player": "Donovan Mitchell",
+            "value": "39 PTS, 3 STL"
+          }
+        }
+      },
+      "away": {
+        "team_id": "4",
+        "abbr": "CHI",
+        "name": "Chicago Bulls",
+        "score": 115,
+        "winner": false,
+        "record": "3-10",
+        "home_record": "1-4",
+        "away_record": "2-6",
+        "leaders": {
+          "points": {
+            "player": "Norman Powell",
+            "value": "27"
+          },
+          "rebounds": {
+            "player": "Jalen Smith",
+            "value": "11"
+          },
+          "assists": {
+            "player": "Josh Giddey",
+            "value": "8"
+          },
+          "rating": {
+            "player": "Jalen Smith",
+            "value": "17 PTS, 11 REB"
+          }
+        }
+      },
+      "espn_line": null
+    },
+    {
+      "game_id": "401909996",
+      "start_utc": "2026-11-17T00:00Z",
+      "short_name": "MEM @ WSH",
       "state": "post",
       "status": "Final",
       "completed": true,
@@ -458,27 +166,169 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 119,
+        "score": 120,
         "winner": false,
-        "record": "4-10",
-        "home_record": "2-4",
+        "record": "4-11",
+        "home_record": "2-5",
         "away_record": "2-6",
         "leaders": {
           "points": {
-            "player": "Alex Sarr",
-            "value": "25"
+            "player": "Anthony Davis",
+            "value": "23"
           },
           "rebounds": {
-            "player": "Alex Sarr",
-            "value": "9"
+            "player": "Kyshawn George",
+            "value": "6"
           },
           "assists": {
             "player": "Trae Young",
-            "value": "8"
+            "value": "12"
           },
           "rating": {
-            "player": "Alex Sarr",
-            "value": "25 PTS, 9 REB, 3 BLK"
+            "player": "Anthony Davis",
+            "value": "23 PTS"
+          }
+        }
+      },
+      "away": {
+        "team_id": "29",
+        "abbr": "MEM",
+        "name": "Memphis Grizzlies",
+        "score": 136,
+        "winner": true,
+        "record": "10-4",
+        "home_record": "3-4",
+        "away_record": "7-0",
+        "leaders": {
+          "points": {
+            "player": "Cameron Boozer",
+            "value": "29"
+          },
+          "rebounds": {
+            "player": "Zach Edey",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Javon Small",
+            "value": "12"
+          },
+          "rating": {
+            "player": "Cameron Boozer",
+            "value": "29 PTS, 7 REB, 7 AST"
+          }
+        }
+      },
+      "espn_line": null
+    },
+    {
+      "game_id": "401909997",
+      "start_utc": "2026-11-17T00:30Z",
+      "short_name": "PHI @ BKN",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 4,
+      "clock": "12:00",
+      "venue": "Barclays Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "DAZN (YES)"
+      ],
+      "home": {
+        "team_id": "17",
+        "abbr": "BKN",
+        "name": "Brooklyn Nets",
+        "score": 123,
+        "winner": false,
+        "record": "3-10",
+        "home_record": "1-4",
+        "away_record": "2-6",
+        "leaders": {
+          "points": {
+            "player": "Julius Randle",
+            "value": "33"
+          },
+          "rebounds": {
+            "player": "Day'Ron Sharpe",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Day'Ron Sharpe",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Julius Randle",
+            "value": "33 PTS, 6 REB"
+          }
+        }
+      },
+      "away": {
+        "team_id": "20",
+        "abbr": "PHI",
+        "name": "Philadelphia 76ers",
+        "score": 135,
+        "winner": true,
+        "record": "12-3",
+        "home_record": "6-2",
+        "away_record": "6-1",
+        "leaders": {
+          "points": {
+            "player": "Joel Embiid",
+            "value": "37"
+          },
+          "rebounds": {
+            "player": "Jaylen Brown",
+            "value": "13"
+          },
+          "assists": {
+            "player": "Tyrese Maxey",
+            "value": "9"
+          },
+          "rating": {
+            "player": "Jaylen Brown",
+            "value": "31 PTS, 13 REB"
+          }
+        }
+      },
+      "espn_line": null
+    },
+    {
+      "game_id": "401909998",
+      "start_utc": "2026-11-17T00:30Z",
+      "short_name": "HOU @ MIA",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 4,
+      "clock": "12:00",
+      "venue": "Kaseya Center",
+      "neutral_site": false,
+      "broadcasts": null,
+      "home": {
+        "team_id": "14",
+        "abbr": "MIA",
+        "name": "Miami Heat",
+        "score": 128,
+        "winner": true,
+        "record": "8-6",
+        "home_record": "4-3",
+        "away_record": "4-3",
+        "leaders": {
+          "points": {
+            "player": "Giannis Antetokounmpo",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Giannis Antetokounmpo",
+            "value": "13"
+          },
+          "assists": {
+            "player": "Davion Mitchell",
+            "value": "10"
+          },
+          "rating": {
+            "player": "Giannis Antetokounmpo",
+            "value": "20 PTS, 13 REB, 6 AST, 3 BLK"
           }
         }
       },
@@ -486,173 +336,247 @@
         "team_id": "10",
         "abbr": "HOU",
         "name": "Houston Rockets",
-        "score": 147,
-        "winner": true,
-        "record": "11-3",
+        "score": 110,
+        "winner": false,
+        "record": "11-4",
         "home_record": "7-1",
+        "away_record": "4-3",
+        "leaders": {
+          "points": {
+            "player": "Alperen Sengun",
+            "value": "23"
+          },
+          "rebounds": {
+            "player": "Jabari Smith Jr.",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Fred VanVleet",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Alperen Sengun",
+            "value": "23 PTS, 7 REB"
+          }
+        }
+      },
+      "espn_line": null
+    },
+    {
+      "game_id": "401909999",
+      "start_utc": "2026-11-17T01:00Z",
+      "short_name": "POR @ MIN",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 4,
+      "clock": "12:00",
+      "venue": "Target Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "KUNP 16",
+        "BlazerVision",
+        "DAZN MIN"
+      ],
+      "home": {
+        "team_id": "16",
+        "abbr": "MIN",
+        "name": "Minnesota Timberwolves",
+        "score": 106,
+        "winner": true,
+        "record": "10-4",
+        "home_record": "6-2",
         "away_record": "4-2",
         "leaders": {
           "points": {
-            "player": "Amen Thompson",
-            "value": "26"
+            "player": "Terrence Shannon Jr.",
+            "value": "34"
           },
           "rebounds": {
-            "player": "Oscar Tshiebwe",
-            "value": "9"
+            "player": "Rudy Gobert",
+            "value": "15"
           },
           "assists": {
-            "player": "Alperen Sengun",
-            "value": "8"
+            "player": "Terrence Shannon Jr.",
+            "value": "6"
           },
           "rating": {
-            "player": "Amen Thompson",
-            "value": "26 PTS, 7 REB, 7 AST"
-          }
-        }
-      },
-      "espn_line": null
-    },
-    {
-      "game_id": "401909992",
-      "start_utc": "2026-11-16T01:00Z",
-      "short_name": "ATL @ MIL",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 4,
-      "clock": "12:00",
-      "venue": "Fiserv Forum",
-      "neutral_site": false,
-      "broadcasts": [
-        "MyMi",
-        "Bucks App"
-      ],
-      "home": {
-        "team_id": "15",
-        "abbr": "MIL",
-        "name": "Milwaukee Bucks",
-        "score": 106,
-        "winner": false,
-        "record": "1-13",
-        "home_record": "1-7",
-        "away_record": "0-6",
-        "leaders": {
-          "points": {
-            "player": "Kasparas Jakucionis",
-            "value": "25"
-          },
-          "rebounds": {
-            "player": "Kel'el Ware",
-            "value": "11"
-          },
-          "assists": {
-            "player": "Kasparas Jakucionis",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Kasparas Jakucionis",
-            "value": "25 PTS, 3 STL"
+            "player": "Terrence Shannon Jr.",
+            "value": "34 PTS, 6 AST"
           }
         }
       },
       "away": {
-        "team_id": "1",
-        "abbr": "ATL",
-        "name": "Atlanta Hawks",
-        "score": 113,
-        "winner": true,
-        "record": "8-6",
-        "home_record": "3-3",
-        "away_record": "5-3",
+        "team_id": "22",
+        "abbr": "POR",
+        "name": "Portland Trail Blazers",
+        "score": 98,
+        "winner": false,
+        "record": "9-4",
+        "home_record": "3-2",
+        "away_record": "6-2",
         "leaders": {
           "points": {
-            "player": "Nickeil Alexander-Walker",
-            "value": "20"
+            "player": "Deni Avdija",
+            "value": "27"
           },
           "rebounds": {
-            "player": "Onyeka Okongwu",
-            "value": "11"
+            "player": "Donovan Clingan",
+            "value": "10"
           },
           "assists": {
-            "player": "Jalen Johnson",
-            "value": "5"
+            "player": "Deni Avdija",
+            "value": "4"
           },
           "rating": {
-            "player": "CJ McCollum",
-            "value": "20 PTS, 4 STL"
+            "player": "Deni Avdija",
+            "value": "27 PTS, 8 REB"
           }
         }
       },
       "espn_line": null
     },
     {
-      "game_id": "401909993",
-      "start_utc": "2026-11-16T02:00Z",
-      "short_name": "OKC @ SAC",
+      "game_id": "401910000",
+      "start_utc": "2026-11-17T01:00Z",
+      "short_name": "GS @ NO",
       "state": "post",
       "status": "Final",
       "completed": true,
       "period": 4,
       "clock": "12:00",
-      "venue": "Golden 1 Center",
+      "venue": "Smoothie King Center",
       "neutral_site": false,
       "broadcasts": [
-        "KSBI",
-        "Thunder App"
+        "GCSEN",
+        "Pelicans.com"
       ],
       "home": {
-        "team_id": "23",
-        "abbr": "SAC",
-        "name": "Sacramento Kings",
-        "score": 103,
-        "winner": false,
-        "record": "1-12",
-        "home_record": "0-8",
+        "team_id": "3",
+        "abbr": "NO",
+        "name": "New Orleans Pelicans",
+        "score": 115,
+        "winner": true,
+        "record": "5-10",
+        "home_record": "4-6",
         "away_record": "1-4",
         "leaders": {
           "points": {
-            "player": "Darius Acuff Jr.",
-            "value": "26"
+            "player": "Saddiq Bey",
+            "value": "23"
           },
           "rebounds": {
-            "player": "Domantas Sabonis",
-            "value": "13"
+            "player": "Yves Missi",
+            "value": "14"
           },
           "assists": {
-            "player": "Malik Monk",
+            "player": "Jeremiah Fears",
             "value": "10"
           },
           "rating": {
-            "player": "Leaky Black",
-            "value": "12 PTS, 9 REB, 4 STL"
+            "player": "Jeremiah Fears",
+            "value": "19 PTS, 10 REB, 10 AST"
           }
         }
       },
       "away": {
-        "team_id": "25",
-        "abbr": "OKC",
-        "name": "Oklahoma City Thunder",
-        "score": 125,
-        "winner": true,
-        "record": "9-5",
-        "home_record": "5-0",
-        "away_record": "4-5",
+        "team_id": "9",
+        "abbr": "GS",
+        "name": "Golden State Warriors",
+        "score": 94,
+        "winner": false,
+        "record": "8-6",
+        "home_record": "6-1",
+        "away_record": "2-5",
         "leaders": {
           "points": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "37"
+            "player": "Yaxel Lendeborg",
+            "value": "28"
           },
           "rebounds": {
-            "player": "Aday Mara",
-            "value": "13"
+            "player": "Yaxel Lendeborg",
+            "value": "8"
           },
           "assists": {
-            "player": "Ajay Mitchell",
+            "player": "Draymond Green",
             "value": "5"
           },
           "rating": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "37 PTS"
+            "player": "Yaxel Lendeborg",
+            "value": "28 PTS, 8 REB"
+          }
+        }
+      },
+      "espn_line": null
+    },
+    {
+      "game_id": "401910001",
+      "start_utc": "2026-11-17T02:00Z",
+      "short_name": "PHX @ DEN",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 4,
+      "clock": "12:00",
+      "venue": "Ball Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "Suns Live",
+        "Arizona's Family 3TV"
+      ],
+      "home": {
+        "team_id": "7",
+        "abbr": "DEN",
+        "name": "Denver Nuggets",
+        "score": 105,
+        "winner": false,
+        "record": "7-5",
+        "home_record": "2-3",
+        "away_record": "5-2",
+        "leaders": {
+          "points": {
+            "player": "Nikola Jokic",
+            "value": "28"
+          },
+          "rebounds": {
+            "player": "Nikola Jokic",
+            "value": "15"
+          },
+          "assists": {
+            "player": "Nikola Jokic",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Nikola Jokic",
+            "value": "28 PTS, 15 REB, 7 AST"
+          }
+        }
+      },
+      "away": {
+        "team_id": "21",
+        "abbr": "PHX",
+        "name": "Phoenix Suns",
+        "score": 117,
+        "winner": true,
+        "record": "6-7",
+        "home_record": "5-4",
+        "away_record": "1-3",
+        "leaders": {
+          "points": {
+            "player": "Devin Booker",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Oso Ighodaro",
+            "value": "11"
+          },
+          "assists": {
+            "player": "Devin Booker",
+            "value": "8"
+          },
+          "rating": {
+            "player": "Devin Booker",
+            "value": "20 PTS, 8 AST"
           }
         }
       },
