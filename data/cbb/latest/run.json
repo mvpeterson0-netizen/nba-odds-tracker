@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-17T22:45:25+00:00",
+  "finished_at": "2026-11-17T23:00:40+00:00",
   "game_date": "2026-11-17",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,19 +29,107 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 12411
+      "ODDS_API_KEY_20K": 12409
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Lipscomb Bisons @ Purdue Boilermakers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Ball State Cardinals @ Florida St Seminoles",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Norfolk St Spartans @ Georgia Tech Yellow Jackets",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Rider Broncs @ Miami Hurricanes",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Mississippi St Bulldogs @ UCF Knights",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Monmouth Hawks @ Wake Forest Demon Deacons",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Kennesaw St Owls @ Alabama Crimson Tide",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Eastern Illinois Panthers @ Vanderbilt Commodores",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Oral Roberts Golden Eagles @ SMU Mustangs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Eastern Washington Eagles @ Utah Utes",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Nicholls St Colonels @ Ole Miss Rebels",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Old Dominion Monarchs @ Virginia Cavaliers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "UNLV Rebels @ Kansas Jayhawks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "UC Irvine Anteaters @ Stanford Cardinal",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 80,
     "p4_events": 32,
     "unmatched": [],
-    "due": 0,
+    "due": 14,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 7,
+      "pull_type": "pregame",
+      "rows": 56,
+      "credits_last": 2
     },
     "status": "ok"
   }
