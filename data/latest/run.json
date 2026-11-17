@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-17T01:00:25+00:00",
+  "finished_at": "2026-11-17T01:15:20+00:00",
   "game_date": "2026-11-16",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -30,20 +30,14 @@
       "ODDS_API_KEY_2": 0,
       "ODDS_API_KEY_20K": 12645
     },
-    "pulled": [
-      {
-        "matchup": "Phoenix Suns @ Denver Nuggets",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 194,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
-    "links_backfill": [],
+    "due": 0,
+    "pregame_pulled": false,
+    "links_backfill": [
+      "Detroit Pistons @ San Antonio Spurs: 0 links"
+    ],
     "status": "ok"
   }
 }
