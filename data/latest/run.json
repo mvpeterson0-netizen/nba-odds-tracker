@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-17T00:00:28+00:00",
+  "finished_at": "2026-11-17T00:12:59+00:00",
   "game_date": "2026-11-16",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,28 +28,13 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 12674
+      "ODDS_API_KEY_20K": 12665
     },
-    "pulled": [
-      {
-        "matchup": "Golden State Warriors @ New Orleans Pelicans",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 182,
-        "markets": 4
-      },
-      {
-        "matchup": "Portland Trail Blazers @ Minnesota Timberwolves",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 202,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 2,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"
   }

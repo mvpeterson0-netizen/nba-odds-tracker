@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-17T00:00:22+00:00",
+  "fetched_at": "2026-11-17T00:12:52+00:00",
   "source": "espn",
   "count": 8,
   "game_date": "2026-11-16",
@@ -8,11 +8,11 @@
       "game_id": "401909994",
       "start_utc": "2026-11-17T00:00Z",
       "short_name": "ORL @ BOS",
-      "state": "pre",
-      "status": "11/16 - 7:00 PM EST",
+      "state": "in",
+      "status": "10:33 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:33",
       "venue": "TD Garden",
       "neutral_site": false,
       "broadcasts": [
@@ -22,27 +22,27 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "11-2",
         "home_record": "6-0",
         "away_record": "5-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jayson Tatum",
-            "value": "26.8"
+          "points": {
+            "player": "Paul George",
+            "value": "5"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Jayson Tatum",
-            "value": "6.1"
+            "value": "1"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Jayson Tatum",
-            "value": "7.3"
+            "value": "1"
           },
           "rating": {
-            "player": "Jayson Tatum",
-            "value": "26.8 PPG, 6.1 RPG, 7.3 APG, 0.6 SPG, 0.8 BPG"
+            "player": "Paul George",
+            "value": "5 PTS"
           }
         }
       },
@@ -55,41 +55,19 @@
         "record": "5-7",
         "home_record": "1-4",
         "away_record": "4-3",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Franz Wagner",
-            "value": "24.4"
-          },
-          "reboundsPerGame": {
-            "player": "Wendell Carter Jr.",
-            "value": "9.3"
-          },
-          "assistsPerGame": {
-            "player": "Franz Wagner",
-            "value": "8.2"
-          },
-          "rating": {
-            "player": "Franz Wagner",
-            "value": "24.4 PPG, 6.8 RPG, 8.2 APG, 1.3 SPG, 0.1 BPG"
-          }
-        }
+        "leaders": null
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "BOS -8.5",
-        "spread": -8.5,
-        "over_under": 212.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909995",
       "start_utc": "2026-11-17T00:00Z",
       "short_name": "CHI @ CLE",
-      "state": "pre",
-      "status": "11/16 - 7:00 PM EST",
+      "state": "in",
+      "status": "10:32 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:32",
       "venue": "Rocket Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -99,27 +77,27 @@
         "team_id": "5",
         "abbr": "CLE",
         "name": "Cleveland Cavaliers",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "7-7",
         "home_record": "5-2",
         "away_record": "2-5",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Donovan Mitchell",
-            "value": "23.0"
+            "value": "3"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Jarrett Allen",
-            "value": "8.3"
+            "value": "1"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "James Harden",
-            "value": "5.8"
+            "value": "1"
           },
           "rating": {
-            "player": "Donovan Mitchell",
-            "value": "23.0 PPG, 4.9 RPG, 5.6 APG, 1.2 SPG, 0.5 BPG"
+            "player": "Jarrett Allen",
+            "value": "2 PTS"
           }
         }
       },
@@ -127,46 +105,37 @@
         "team_id": "4",
         "abbr": "CHI",
         "name": "Chicago Bulls",
-        "score": 0,
+        "score": 7,
         "winner": null,
         "record": "3-9",
         "home_record": "1-4",
         "away_record": "2-5",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Norman Powell",
-            "value": "21.1"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Jalen Smith",
-            "value": "7.8"
+            "value": "3"
           },
-          "assistsPerGame": {
-            "player": "Josh Giddey",
-            "value": "8.5"
+          "assists": {
+            "player": "Jalen Smith",
+            "value": "1"
           },
           "rating": {
-            "player": "Norman Powell",
-            "value": "21.1 PPG, 3.0 RPG, 1.8 APG, 1.5 SPG, 0.2 BPG"
+            "player": "Jalen Smith",
+            "value": "3 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "CLE -8.5",
-        "spread": -8.5,
-        "over_under": 241.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909996",
       "start_utc": "2026-11-17T00:00Z",
       "short_name": "MEM @ WSH",
-      "state": "pre",
-      "status": "11/16 - 7:00 PM EST",
+      "state": "in",
+      "status": "10:45 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:45",
       "venue": "Capital One Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -182,21 +151,13 @@
         "home_record": "2-4",
         "away_record": "2-6",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Anthony Davis",
-            "value": "24.7"
-          },
-          "reboundsPerGame": {
-            "player": "Anthony Davis",
-            "value": "10.2"
-          },
-          "assistsPerGame": {
-            "player": "Trae Young",
-            "value": "8.7"
+          "rebounds": {
+            "player": "Kyshawn George",
+            "value": "1"
           },
           "rating": {
-            "player": "Anthony Davis",
-            "value": "24.7 PPG, 10.2 RPG, 2.2 APG, 1.2 SPG, 1.1 BPG"
+            "player": "Kyshawn George",
+            "value": "1 REB"
           }
         }
       },
@@ -210,30 +171,17 @@
         "home_record": "3-4",
         "away_record": "6-0",
         "leaders": {
-          "pointsPerGame": {
+          "rebounds": {
             "player": "Cameron Boozer",
-            "value": "15.5"
-          },
-          "reboundsPerGame": {
-            "player": "Cameron Boozer",
-            "value": "9.7"
-          },
-          "assistsPerGame": {
-            "player": "Cameron Boozer",
-            "value": "5.2"
+            "value": "1"
           },
           "rating": {
-            "player": "Cameron Boozer",
-            "value": "15.5 PPG, 9.7 RPG, 5.2 APG, 0.7 SPG, 0.7 BPG"
+            "player": "Zach Edey",
+            "value": "1 REB"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "MEM -3.5",
-        "spread": 3.5,
-        "over_under": 231.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909997",
@@ -306,7 +254,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "PHI -5.5",
         "spread": 5.5,
         "over_under": 226.5
@@ -381,7 +329,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "HOU -1.5",
         "spread": 1.5,
         "over_under": 233.5
@@ -460,7 +408,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MIN -2.5",
         "spread": -2.5,
         "over_under": 227.5
@@ -538,7 +486,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "GS -3.5",
         "spread": 3.5,
         "over_under": 223.5
@@ -616,7 +564,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "DEN -9.5",
         "spread": -9.5,
         "over_under": 229.5
