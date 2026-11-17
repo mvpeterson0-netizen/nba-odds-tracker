@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-17T23:30:24+00:00",
+  "fetched_at": "2026-11-17T23:45:34+00:00",
   "source": "espn",
   "count": 22,
   "game_date": "2026-11-17",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-17T21:51Z",
       "short_name": "ND VS FLA",
       "state": "in",
-      "status": "7:43 - 2nd",
+      "status": "3:58 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "7:43",
+      "clock": "3:58",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "57",
         "abbr": "FLA",
         "name": "Florida Gators",
-        "score": 68,
+        "score": 76,
         "winner": null,
         "record": "4-0",
         "home_record": "2-0",
@@ -31,19 +31,19 @@
         "leaders": {
           "points": {
             "player": "Urban Klavzar",
-            "value": "17"
+            "value": "20"
           },
           "rebounds": {
             "player": "Alex Condon",
-            "value": "8"
+            "value": "9"
           },
           "assists": {
             "player": "Alex Condon",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
-            "player": "Alex Condon",
-            "value": "15 PTS, 8 REB"
+            "player": "Thomas Haugh",
+            "value": "14 PTS, 9 REB"
           }
         },
         "conf_id": "23",
@@ -56,27 +56,27 @@
         "team_id": "87",
         "abbr": "ND",
         "name": "Notre Dame Fighting Irish",
-        "score": 60,
+        "score": 70,
         "winner": null,
         "record": "4-0",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Brady Koehler",
-            "value": "14"
+            "player": "Braeden Shrewsberry",
+            "value": "20"
           },
           "rebounds": {
-            "player": "Bryce Ruglass Dortch",
+            "player": "Braeden Shrewsberry",
             "value": "4"
           },
           "assists": {
             "player": "Braeden Smith",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Braeden Shrewsberry",
-            "value": "13 PTS"
+            "value": "20 PTS"
           }
         },
         "conf_id": "2",
@@ -84,6 +84,90 @@
         "rank": null,
         "loc": "Notre Dame",
         "nick": "Fighting Irish"
+      },
+      "espn_line": null,
+      "date": "2026-11-17",
+      "p4": true
+    },
+    {
+      "game_id": "401920706",
+      "start_utc": "2026-11-17T23:30Z",
+      "short_name": "LIP @ PUR",
+      "state": "in",
+      "status": "12:31 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "12:31",
+      "venue": "Mackey Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "BTN"
+      ],
+      "home": {
+        "team_id": "2509",
+        "abbr": "PUR",
+        "name": "Purdue Boilermakers",
+        "score": 22,
+        "winner": null,
+        "record": "2-2",
+        "home_record": "2-1",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Antione West Jr",
+            "value": "10"
+          },
+          "rebounds": {
+            "player": "Daniel Jacobsen",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Daniel Jacobsen",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Antione West Jr",
+            "value": "10 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Purdue",
+        "nick": "Boilermakers"
+      },
+      "away": {
+        "team_id": "288",
+        "abbr": "LIP",
+        "name": "Lipscomb Bisons",
+        "score": 10,
+        "winner": null,
+        "record": "3-2",
+        "home_record": "2-0",
+        "away_record": "1-2",
+        "leaders": {
+          "points": {
+            "player": "Truman Byrne",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Mateo Esmeraldo",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Mateo Esmeraldo",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Mateo Esmeraldo",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "46",
+        "conf": null,
+        "rank": null,
+        "loc": "Lipscomb",
+        "nick": "Bisons"
       },
       "espn_line": null,
       "date": "2026-11-17",
@@ -174,87 +258,6 @@
       "p4": true
     },
     {
-      "game_id": "401920706",
-      "start_utc": "2026-11-17T23:30Z",
-      "short_name": "LIP @ PUR",
-      "state": "pre",
-      "status": "11/17 - 6:30 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Mackey Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "BTN"
-      ],
-      "home": {
-        "team_id": "2509",
-        "abbr": "PUR",
-        "name": "Purdue Boilermakers",
-        "score": 0,
-        "winner": null,
-        "record": "2-2",
-        "home_record": "2-1",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Daniel Jacobsen",
-            "value": "19.8"
-          },
-          "reboundsPerGame": {
-            "player": "Daniel Jacobsen",
-            "value": "8.0"
-          },
-          "assistsPerGame": {
-            "player": "Omer Mayer",
-            "value": "3.2"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Purdue",
-        "nick": "Boilermakers"
-      },
-      "away": {
-        "team_id": "288",
-        "abbr": "LIP",
-        "name": "Lipscomb Bisons",
-        "score": 0,
-        "winner": null,
-        "record": "3-2",
-        "home_record": "2-0",
-        "away_record": "1-2",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Takai Simpkins",
-            "value": "17.0"
-          },
-          "reboundsPerGame": {
-            "player": "Devyn Martin",
-            "value": "8.2"
-          },
-          "assistsPerGame": {
-            "player": "Mateo Esmeraldo",
-            "value": "3.8"
-          }
-        },
-        "conf_id": "46",
-        "conf": null,
-        "rank": null,
-        "loc": "Lipscomb",
-        "nick": "Bisons"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "PUR -22.5",
-        "spread": -22.5,
-        "over_under": 148.5
-      },
-      "date": "2026-11-17",
-      "p4": true
-    },
-    {
       "game_id": "401909566",
       "start_utc": "2026-11-18T00:00Z",
       "short_name": "ILL @ DUKE",
@@ -327,7 +330,7 @@
         "nick": "Fighting Illini"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "DUKE -8.5",
         "spread": -8.5,
         "over_under": 167.5
@@ -408,7 +411,7 @@
         "nick": "Broncs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MIA -41.5",
         "spread": -41.5,
         "over_under": 149.5
@@ -489,7 +492,7 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "UCF -1.5",
         "spread": -1.5,
         "over_under": 155.5
@@ -570,10 +573,10 @@
         "nick": "Spartans"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GT -20.5",
         "spread": -20.5,
-        "over_under": 148.5
+        "over_under": 147.5
       },
       "date": "2026-11-17",
       "p4": true
@@ -651,9 +654,9 @@
         "nick": "Hawks"
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "WAKE -14.5",
-        "spread": -14.5,
+        "provider": "Draft Kings",
+        "details": "WAKE -15.5",
+        "spread": -15.5,
         "over_under": 144.5
       },
       "date": "2026-11-17",
@@ -732,7 +735,7 @@
         "nick": "Wildcats"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "VILL -1.5",
         "spread": 1.5,
         "over_under": 148.5
@@ -813,7 +816,7 @@
         "nick": "Cardinals"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "FSU -25.5",
         "spread": -25.5,
         "over_under": 151.5
@@ -894,7 +897,7 @@
         "nick": "Owls"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ALA -25.5",
         "spread": -25.5,
         "over_under": 179.5
@@ -975,7 +978,7 @@
         "nick": "Razorbacks"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "IU -1.5",
         "spread": -1.5,
         "over_under": 153.5
@@ -1056,7 +1059,7 @@
         "nick": "Panthers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "VAN -40.5",
         "spread": -40.5,
         "over_under": 147.5
@@ -1137,7 +1140,7 @@
         "nick": "Golden Eagles"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SMU -22.5",
         "spread": -22.5,
         "over_under": 155.5
@@ -1218,7 +1221,7 @@
         "nick": "Colonels"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MISS -27.5",
         "spread": -27.5,
         "over_under": 142.5
@@ -1299,7 +1302,7 @@
         "nick": "Eagles"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "UTAH -12.5",
         "spread": -12.5,
         "over_under": 145.5
@@ -1380,7 +1383,7 @@
         "nick": "Spartans"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MSU -2.5",
         "spread": 2.5,
         "over_under": 149.5
@@ -1461,7 +1464,7 @@
         "nick": "Monarchs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "UVA -26.5",
         "spread": -26.5,
         "over_under": 144.5
@@ -1542,7 +1545,7 @@
         "nick": "Rebels"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "KU -16.5",
         "spread": -16.5,
         "over_under": 158.5
@@ -1686,7 +1689,7 @@
         "nick": "Anteaters"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "STAN -6.5",
         "spread": -6.5,
         "over_under": 142.5
@@ -1767,7 +1770,7 @@
         "nick": "Mountaineers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "WVU -1.5",
         "spread": 1.5,
         "over_under": 143.5
