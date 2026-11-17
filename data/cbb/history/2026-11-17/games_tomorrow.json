@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-17T21:15:32+00:00",
+  "fetched_at": "2026-11-17T21:30:21+00:00",
   "source": "espn",
-  "count": 16,
+  "count": 18,
   "game_date": "2026-11-18",
   "division_i_games": 71,
   "rows": [
@@ -76,6 +76,132 @@
         "rank": null,
         "loc": "Jackson State",
         "nick": "Tigers"
+      },
+      "espn_line": null,
+      "date": "2026-11-18",
+      "p4": true
+    },
+    {
+      "game_id": "401920513",
+      "start_utc": "2026-11-18T19:00Z",
+      "short_name": "RUTG VS TBD",
+      "state": "pre",
+      "status": "11/18 - 2:00 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "-1",
+        "abbr": "TBD",
+        "name": "TBD",
+        "score": 0,
+        "winner": null,
+        "record": null,
+        "home_record": null,
+        "away_record": null,
+        "leaders": null,
+        "conf_id": null,
+        "conf": null,
+        "rank": null,
+        "loc": "TBD",
+        "nick": "TBD"
+      },
+      "away": {
+        "team_id": "164",
+        "abbr": "RUTG",
+        "name": "Rutgers Scarlet Knights",
+        "score": 0,
+        "winner": null,
+        "record": "3-1",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Christian Gurdak",
+            "value": "14.7"
+          },
+          "reboundsPerGame": {
+            "player": "Christian Gurdak",
+            "value": "7.3"
+          },
+          "assistsPerGame": {
+            "player": "Tariq Francis",
+            "value": "2.7"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Rutgers",
+        "nick": "Scarlet Knights"
+      },
+      "espn_line": null,
+      "date": "2026-11-18",
+      "p4": true
+    },
+    {
+      "game_id": "401920514",
+      "start_utc": "2026-11-18T21:30Z",
+      "short_name": "HOU VS TBD",
+      "state": "pre",
+      "status": "11/18 - 4:30 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "-1",
+        "abbr": "TBD",
+        "name": "TBD",
+        "score": 0,
+        "winner": null,
+        "record": null,
+        "home_record": null,
+        "away_record": null,
+        "leaders": null,
+        "conf_id": null,
+        "conf": null,
+        "rank": null,
+        "loc": "TBD",
+        "nick": "TBD"
+      },
+      "away": {
+        "team_id": "248",
+        "abbr": "HOU",
+        "name": "Houston Cougars",
+        "score": 0,
+        "winner": null,
+        "record": "4-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Dedan Thomas Jr.",
+            "value": "17.7"
+          },
+          "reboundsPerGame": {
+            "player": "Delrecco Gillespie",
+            "value": "6.3"
+          },
+          "assistsPerGame": {
+            "player": "Dedan Thomas Jr.",
+            "value": "6.7"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 8,
+        "loc": "Houston",
+        "nick": "Cougars"
       },
       "espn_line": null,
       "date": "2026-11-18",
@@ -838,7 +964,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ARIZ -3.5",
         "spread": -3.5,
         "over_under": 148.5
