@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-17T02:45:24+00:00",
+  "finished_at": "2026-11-17T03:00:46+00:00",
   "game_date": "2026-11-16",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,10 +17,10 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
+    "new_games": 3,
+    "player_rows": 89,
     "unparsed": [],
-    "queued": 0,
+    "queued": 3,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -31,12 +31,19 @@
       "ODDS_API_KEY_2": 0,
       "ODDS_API_KEY_20K": 12623
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Long Beach St 49ers @ UCLA Bruins",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 66,
+    "events": 64,
     "p4_events": 22,
     "unmatched": [],
-    "due": 0,
+    "due": 1,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",
