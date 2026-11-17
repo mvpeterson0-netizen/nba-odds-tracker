@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-17T12:45:20+00:00",
+  "finished_at": "2026-11-17T13:00:28+00:00",
   "game_date": "2026-11-17",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "not_due",
+    "odds": "ok",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -28,12 +28,48 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 12605
+      "ODDS_API_KEY_20K": 12585
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "New York Knicks @ Toronto Raptors",
+        "type": "morning",
+        "status": "ok",
+        "rows": 174,
+        "markets": 4
+      },
+      {
+        "matchup": "Detroit Pistons @ San Antonio Spurs",
+        "type": "morning",
+        "status": "ok",
+        "rows": 184,
+        "markets": 4
+      },
+      {
+        "matchup": "Portland Trail Blazers @ Minnesota Timberwolves",
+        "type": "morning",
+        "status": "ok",
+        "rows": 174,
+        "markets": 4
+      },
+      {
+        "matchup": "Utah Jazz @ Los Angeles Clippers",
+        "type": "morning",
+        "status": "ok",
+        "rows": 148,
+        "markets": 4
+      },
+      {
+        "matchup": "Charlotte Hornets @ Los Angeles Lakers",
+        "type": "morning",
+        "status": "ok",
+        "rows": 172,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
+    "due": 5,
     "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"
