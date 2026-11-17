@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-17T00:45:28+00:00",
+  "finished_at": "2026-11-17T01:00:27+00:00",
   "game_date": "2026-11-16",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,14 +29,27 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 12656
+      "ODDS_API_KEY_20K": 12645
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "SE Louisiana Lions @ Texas A&M Aggies",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Long Beach St 49ers @ UCLA Bruins",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 64,
-    "p4_events": 26,
+    "p4_events": 22,
     "unmatched": [],
-    "due": 0,
+    "due": 2,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",
