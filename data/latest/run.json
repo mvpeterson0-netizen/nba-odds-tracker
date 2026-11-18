@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-17T23:45:34+00:00",
+  "finished_at": "2026-11-18T00:00:35+00:00",
   "game_date": "2026-11-17",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,13 +28,28 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 12388
+      "ODDS_API_KEY_20K": 12380
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Detroit Pistons @ San Antonio Spurs",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 190,
+        "markets": 4
+      },
+      {
+        "matchup": "Portland Trail Blazers @ Minnesota Timberwolves",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 198,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 2,
+    "pregame_pulled": true,
     "links_backfill": [],
     "status": "ok"
   }

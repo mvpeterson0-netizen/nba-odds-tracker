@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-17T23:45:35+00:00",
+  "finished_at": "2026-11-18T00:00:39+00:00",
   "game_date": "2026-11-17",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,19 +29,71 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 12388
+      "ODDS_API_KEY_20K": 12378
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Kennesaw St Owls @ Alabama Crimson Tide",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Eastern Illinois Panthers @ Vanderbilt Commodores",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Oral Roberts Golden Eagles @ SMU Mustangs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Eastern Washington Eagles @ Utah Utes",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Nicholls St Colonels @ Ole Miss Rebels",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Old Dominion Monarchs @ Virginia Cavaliers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "UNLV Rebels @ Kansas Jayhawks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "UC Irvine Anteaters @ Stanford Cardinal",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 80,
-    "p4_events": 31,
+    "p4_events": 24,
     "unmatched": [],
-    "due": 0,
+    "due": 8,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 2,
+      "pull_type": "pregame",
+      "rows": 16,
+      "credits_last": 2
     },
     "status": "ok"
   }
