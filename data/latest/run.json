@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-18T03:00:26+00:00",
+  "finished_at": "2026-11-18T03:15:22+00:00",
   "game_date": "2026-11-17",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -16,10 +16,10 @@
     "defense_ranks": "ok"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
+    "new_games": 1,
+    "player_rows": 27,
     "unparsed": [],
-    "queued": 0,
+    "queued": 1,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -28,23 +28,15 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 12261
+      "ODDS_API_KEY_20K": 12260
     },
-    "pulled": [
-      {
-        "matchup": "Charlotte Hornets @ Los Angeles Lakers",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 164,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "links_backfill": [
-      "Washington Wizards @ Toronto Raptors: 0 links"
+      "Phoenix Suns @ Sacramento Kings: 0 links"
     ],
     "status": "ok"
   }
