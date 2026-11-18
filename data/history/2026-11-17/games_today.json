@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-18T00:30:17+00:00",
+  "fetched_at": "2026-11-18T00:45:15+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-17",
@@ -8,11 +8,11 @@
       "game_id": "401910002",
       "start_utc": "2026-11-18T00:30Z",
       "short_name": "NY @ TOR",
-      "state": "pre",
-      "status": "11/17 - 7:30 PM EST",
+      "state": "in",
+      "status": "8:59 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "8:59",
       "venue": "Scotiabank Arena",
       "neutral_site": false,
       "broadcasts": null,
@@ -20,27 +20,27 @@
         "team_id": "28",
         "abbr": "TOR",
         "name": "Toronto Raptors",
-        "score": 0,
+        "score": 7,
         "winner": null,
         "record": "5-8",
         "home_record": "2-4",
         "away_record": "3-4",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Scottie Barnes",
-            "value": "24.2"
+          "points": {
+            "player": "Immanuel Quickley",
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Scottie Barnes",
-            "value": "7.8"
+          "rebounds": {
+            "player": "RJ Barrett",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Jamal Shead",
-            "value": "6.5"
+          "assists": {
+            "player": "Immanuel Quickley",
+            "value": "1"
           },
           "rating": {
-            "player": "Scottie Barnes",
-            "value": "24.2 PPG, 7.8 RPG, 5.0 APG, 2.1 SPG, 0.8 BPG"
+            "player": "Immanuel Quickley",
+            "value": "2 PTS"
           }
         }
       },
@@ -48,36 +48,27 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "7-6",
         "home_record": "4-3",
         "away_record": "3-3",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jalen Brunson",
-            "value": "26.7"
+          "points": {
+            "player": "Mikal Bridges",
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Karl-Anthony Towns",
-            "value": "13.9"
-          },
-          "assistsPerGame": {
-            "player": "Jalen Brunson",
-            "value": "5.9"
+          "rebounds": {
+            "player": "Mikal Bridges",
+            "value": "1"
           },
           "rating": {
             "player": "Karl-Anthony Towns",
-            "value": "21.6 PPG, 13.9 RPG, 3.6 APG, 0.9 SPG, 0.5 BPG"
+            "value": "2 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "NY -2.5",
-        "spread": 2.5,
-        "over_under": 215.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401910003",
