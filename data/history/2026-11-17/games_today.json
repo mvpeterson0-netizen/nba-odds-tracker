@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-18T04:00:23+00:00",
+  "fetched_at": "2026-11-18T04:15:13+00:00",
   "source": "espn",
   "count": 5,
   "game_date": "2026-11-17",
@@ -224,10 +224,10 @@
       "start_utc": "2026-11-18T03:30Z",
       "short_name": "UTAH @ LAC",
       "state": "in",
-      "status": "1:58 - 1st",
+      "status": "9:42 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "1:58",
+      "period": 2,
+      "clock": "9:42",
       "venue": "Intuit Dome",
       "neutral_site": false,
       "broadcasts": [
@@ -239,7 +239,7 @@
         "team_id": "12",
         "abbr": "LAC",
         "name": "LA Clippers",
-        "score": 24,
+        "score": 33,
         "winner": null,
         "record": "4-8",
         "home_record": "4-3",
@@ -250,11 +250,11 @@
             "value": "13"
           },
           "rebounds": {
-            "player": "Brook Lopez",
+            "player": "Isaiah Jackson",
             "value": "3"
           },
           "assists": {
-            "player": "Brook Lopez",
+            "player": "Darius Garland",
             "value": "2"
           },
           "rating": {
@@ -267,27 +267,27 @@
         "team_id": "26",
         "abbr": "UTAH",
         "name": "Utah Jazz",
-        "score": 28,
+        "score": 41,
         "winner": null,
         "record": "1-13",
         "home_record": "1-7",
         "away_record": "0-6",
         "leaders": {
           "points": {
-            "player": "Keyonte George",
-            "value": "8"
+            "player": "Brice Sensabaugh",
+            "value": "12"
           },
           "rebounds": {
-            "player": "Mo Bamba",
-            "value": "3"
+            "player": "Brice Sensabaugh",
+            "value": "5"
           },
           "assists": {
             "player": "Keyonte George",
-            "value": "3"
+            "value": "5"
           },
           "rating": {
-            "player": "Keyonte George",
-            "value": "8 PTS"
+            "player": "Brice Sensabaugh",
+            "value": "12 PTS"
           }
         }
       },
@@ -297,11 +297,11 @@
       "game_id": "401910005",
       "start_utc": "2026-11-18T04:00Z",
       "short_name": "CHA @ LAL",
-      "state": "pre",
-      "status": "11/17 - 11:00 PM EST",
+      "state": "in",
+      "status": "11:02 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "11:02",
       "venue": "crypto.com Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -319,21 +319,13 @@
         "home_record": "5-1",
         "away_record": "7-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Luka Doncic",
-            "value": "39.0"
-          },
-          "reboundsPerGame": {
-            "player": "Luka Doncic",
-            "value": "7.2"
-          },
-          "assistsPerGame": {
-            "player": "Luka Doncic",
-            "value": "7.8"
+          "rebounds": {
+            "player": "Kevon Looney",
+            "value": "3"
           },
           "rating": {
-            "player": "Luka Doncic",
-            "value": "39.0 PPG, 7.2 RPG, 7.8 APG, 1.9 SPG, 0.7 BPG"
+            "player": "Kevon Looney",
+            "value": "3 REB"
           }
         }
       },
@@ -347,30 +339,17 @@
         "home_record": "3-4",
         "away_record": "1-5",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Brandon Miller",
-            "value": "19.2"
-          },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Moussa Diabate",
-            "value": "9.7"
-          },
-          "assistsPerGame": {
-            "player": "Sion James",
-            "value": "3.0"
+            "value": "1"
           },
           "rating": {
-            "player": "Naz Reid",
-            "value": "17.2 PPG, 8.2 RPG, 2.2 APG, 0.8 SPG, 0.5 BPG"
+            "player": "Moussa Diabate",
+            "value": "1 REB"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "LAL -7.5",
-        "spread": -7.5,
-        "over_under": 221.5
-      }
+      "espn_line": null
     }
   ]
 }
