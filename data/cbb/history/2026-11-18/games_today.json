@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-18T17:00:27+00:00",
+  "fetched_at": "2026-11-18T17:15:21+00:00",
   "source": "espn",
   "count": 20,
   "game_date": "2026-11-18",
@@ -9,11 +9,11 @@
       "game_id": "401909753",
       "start_utc": "2026-11-18T17:00Z",
       "short_name": "JKST @ BAY",
-      "state": "pre",
-      "status": "11/18 - 12:00 PM EST",
+      "state": "in",
+      "status": "15:11 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:11",
       "venue": "Foster Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "239",
         "abbr": "BAY",
         "name": "Baylor Bears",
-        "score": 0,
+        "score": 16,
         "winner": null,
         "record": "3-1",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
+            "player": "Brett Decker Jr.",
+            "value": "14"
+          },
+          "rebounds": {
+            "player": "Isaac Celiscar",
+            "value": "2"
+          },
+          "assists": {
             "player": "Kayden Mingo",
-            "value": "17.0"
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Dylan Mingo",
-            "value": "5.8"
-          },
-          "assistsPerGame": {
-            "player": "Isaac Williams IV",
-            "value": "4.2"
+          "rating": {
+            "player": "Brett Decker Jr.",
+            "value": "14 PTS"
           }
         },
         "conf_id": "8",
@@ -52,23 +56,23 @@
         "team_id": "2296",
         "abbr": "JKST",
         "name": "Jackson State Tigers",
-        "score": 0,
+        "score": 4,
         "winner": null,
         "record": "2-3",
         "home_record": "0-0",
         "away_record": "2-3",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Mike Williams",
-            "value": "18.4"
+          "points": {
+            "player": "Jayden Williams",
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Dorian McMillian",
-            "value": "4.2"
+          "rebounds": {
+            "player": "Jayden Williams",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Mike Williams",
-            "value": "2.2"
+          "rating": {
+            "player": "Jayden Williams",
+            "value": "2 PTS"
           }
         },
         "conf_id": "26",
@@ -77,12 +81,7 @@
         "loc": "Jackson State",
         "nick": "Tigers"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "BAY -34.5",
-        "spread": -34.5,
-        "over_under": 156.5
-      },
+      "espn_line": null,
       "date": "2026-11-18",
       "p4": true
     },
@@ -1051,8 +1050,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "NEB -32.5",
-        "spread": -32.5,
+        "details": "NEB -33.5",
+        "spread": -33.5,
         "over_under": 155.5
       },
       "date": "2026-11-18",
@@ -1539,7 +1538,7 @@
         "provider": "Draft Kings",
         "details": "AUB -8.5",
         "spread": -8.5,
-        "over_under": 160.5
+        "over_under": 159.5
       },
       "date": "2026-11-18",
       "p4": true
