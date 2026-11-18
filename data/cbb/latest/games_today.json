@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-18T04:30:22+00:00",
+  "fetched_at": "2026-11-18T04:45:21+00:00",
   "source": "espn",
   "count": 22,
   "game_date": "2026-11-17",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-18T02:30Z",
       "short_name": "UNLV VS KU",
       "state": "in",
-      "status": "10:11 - 2nd",
+      "status": "5:40 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "10:11",
+      "clock": "5:40",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2305",
         "abbr": "KU",
         "name": "Kansas Jayhawks",
-        "score": 86,
+        "score": 98,
         "winner": null,
         "record": "3-0",
         "home_record": "2-0",
@@ -31,7 +31,7 @@
         "leaders": {
           "points": {
             "player": "Leroy Blyden Jr.",
-            "value": "18"
+            "value": "23"
           },
           "rebounds": {
             "player": "Tyran Stokes",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Leroy Blyden Jr.",
-            "value": "18 PTS, 6 AST"
+            "value": "23 PTS, 6 AST"
           }
         },
         "conf_id": "8",
@@ -56,7 +56,7 @@
         "team_id": "2439",
         "abbr": "UNLV",
         "name": "UNLV Rebels",
-        "score": 56,
+        "score": 65,
         "winner": null,
         "record": "3-0",
         "home_record": "3-0",
@@ -64,19 +64,19 @@
         "leaders": {
           "points": {
             "player": "Dontrez Williams",
-            "value": "12"
+            "value": "17"
           },
           "rebounds": {
-            "player": "MJ Thomas",
-            "value": "4"
+            "player": "Dontrez Williams",
+            "value": "6"
           },
           "assists": {
             "player": "Cam Miles",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Dontrez Williams",
-            "value": "12 PTS"
+            "value": "17 PTS, 6 REB"
           }
         },
         "conf_id": "44",
@@ -93,11 +93,11 @@
       "game_id": "401934595",
       "start_utc": "2026-11-18T03:00Z",
       "short_name": "SFRU @ WASH",
-      "state": "in",
-      "status": "4:21 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "4:21",
+      "clock": "0:00",
       "venue": "Alaska Airlines Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -107,10 +107,10 @@
         "team_id": "264",
         "abbr": "WASH",
         "name": "Washington Huskies",
-        "score": 83,
-        "winner": null,
-        "record": "2-0",
-        "home_record": "2-0",
+        "score": 96,
+        "winner": true,
+        "record": "3-0",
+        "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -118,11 +118,11 @@
             "value": "17"
           },
           "rebounds": {
-            "player": "Nikola Dzepina",
-            "value": "8"
+            "player": "Wini Braga",
+            "value": "11"
           },
           "assists": {
-            "player": "Nikola Dzepina",
+            "player": "Wini Braga",
             "value": "5"
           },
           "rating": {
@@ -140,8 +140,8 @@
         "team_id": "2829",
         "abbr": "SFRU",
         "name": "Simon Fraser Red Leafs",
-        "score": 54,
-        "winner": null,
+        "score": 59,
+        "winner": false,
         "record": null,
         "home_record": null,
         "away_record": null,
@@ -152,7 +152,7 @@
           },
           "rebounds": {
             "player": "Chris Lee",
-            "value": "4"
+            "value": "6"
           },
           "assists": {
             "player": "Mikyle Malabuyoc",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "Chris Lee",
-            "value": "14 PTS"
+            "value": "14 PTS, 6 REB"
           }
         },
         "conf_id": null,
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-18T03:00Z",
       "short_name": "UCI @ STAN",
       "state": "in",
-      "status": "11:12 - 2nd",
+      "status": "6:15 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "11:12",
+      "clock": "6:15",
       "venue": "Maples Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -191,7 +191,7 @@
         "team_id": "24",
         "abbr": "STAN",
         "name": "Stanford Cardinal",
-        "score": 41,
+        "score": 47,
         "winner": null,
         "record": "3-1",
         "home_record": "3-0",
@@ -203,15 +203,15 @@
           },
           "rebounds": {
             "player": "Nick Townsend",
-            "value": "7"
+            "value": "9"
           },
           "assists": {
-            "player": "Austin Maurer",
-            "value": "3"
+            "player": "Christian Bliss",
+            "value": "4"
           },
           "rating": {
-            "player": "Austin Maurer",
-            "value": "13 PTS"
+            "player": "Julius Price",
+            "value": "12 PTS"
           }
         },
         "conf_id": "2",
@@ -224,7 +224,7 @@
         "team_id": "300",
         "abbr": "UCI",
         "name": "UC Irvine Anteaters",
-        "score": 49,
+        "score": 53,
         "winner": null,
         "record": "3-0",
         "home_record": "3-0",
@@ -232,11 +232,11 @@
         "leaders": {
           "points": {
             "player": "Jovan Jester Jr.",
-            "value": "12"
+            "value": "14"
           },
           "rebounds": {
             "player": "Olivier Rioux",
-            "value": "5"
+            "value": "7"
           },
           "assists": {
             "player": "Tama Isaac",
@@ -244,7 +244,7 @@
           },
           "rating": {
             "player": "Jovan Jester Jr.",
-            "value": "12 PTS"
+            "value": "14 PTS"
           }
         },
         "conf_id": "9",
@@ -1842,9 +1842,9 @@
         "nick": "Mountaineers"
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "AUB -1.5",
-        "spread": -1.5,
+        "provider": "Draft Kings",
+        "details": "WVU -1.5",
+        "spread": 1.5,
         "over_under": 144.5
       },
       "date": "2026-11-17",
