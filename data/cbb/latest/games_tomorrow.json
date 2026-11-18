@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-18T00:45:20+00:00",
+  "fetched_at": "2026-11-18T01:00:29+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-18",
@@ -84,7 +84,7 @@
     {
       "game_id": "401920513",
       "start_utc": "2026-11-18T19:00Z",
-      "short_name": "RUTG VS TBD",
+      "short_name": "RUTG VS ND",
       "state": "pre",
       "status": "11/18 - 2:00 PM EST",
       "completed": false,
@@ -96,20 +96,33 @@
         "ESPN"
       ],
       "home": {
-        "team_id": "-1",
-        "abbr": "TBD",
-        "name": "TBD",
+        "team_id": "87",
+        "abbr": "ND",
+        "name": "Notre Dame Fighting Irish",
         "score": 0,
         "winner": null,
-        "record": null,
-        "home_record": null,
-        "away_record": null,
-        "leaders": null,
-        "conf_id": null,
-        "conf": null,
+        "record": "4-1",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Ethan Roberts",
+            "value": "19.8"
+          },
+          "reboundsPerGame": {
+            "player": "Brady Koehler",
+            "value": "6.8"
+          },
+          "assistsPerGame": {
+            "player": "Braeden Smith",
+            "value": "7.2"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
         "rank": null,
-        "loc": "TBD",
-        "nick": "TBD"
+        "loc": "Notre Dame",
+        "nick": "Fighting Irish"
       },
       "away": {
         "team_id": "164",
@@ -140,14 +153,19 @@
         "loc": "Rutgers",
         "nick": "Scarlet Knights"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "ND -2.5",
+        "spread": -2.5,
+        "over_under": 153.5
+      },
       "date": "2026-11-18",
       "p4": true
     },
     {
       "game_id": "401920514",
       "start_utc": "2026-11-18T21:30Z",
-      "short_name": "HOU VS TBD",
+      "short_name": "HOU VS FLA",
       "state": "pre",
       "status": "11/18 - 4:30 PM EST",
       "completed": false,
@@ -159,20 +177,33 @@
         "ESPN"
       ],
       "home": {
-        "team_id": "-1",
-        "abbr": "TBD",
-        "name": "TBD",
+        "team_id": "57",
+        "abbr": "FLA",
+        "name": "Florida Gators",
         "score": 0,
         "winner": null,
-        "record": null,
-        "home_record": null,
-        "away_record": null,
-        "leaders": null,
-        "conf_id": null,
-        "conf": null,
-        "rank": null,
-        "loc": "TBD",
-        "nick": "TBD"
+        "record": "5-0",
+        "home_record": "2-0",
+        "away_record": "1-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Thomas Haugh",
+            "value": "17.2"
+          },
+          "reboundsPerGame": {
+            "player": "Alex Condon",
+            "value": "8.8"
+          },
+          "assistsPerGame": {
+            "player": "Alex Condon",
+            "value": "4.2"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 1,
+        "loc": "Florida",
+        "nick": "Gators"
       },
       "away": {
         "team_id": "248",
@@ -203,7 +234,12 @@
         "loc": "Houston",
         "nick": "Cougars"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "FLA -1.5",
+        "spread": -1.5,
+        "over_under": 151.5
+      },
       "date": "2026-11-18",
       "p4": true
     },
@@ -279,7 +315,12 @@
         "loc": "IU Indianapolis",
         "nick": "Jaguars"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "PSU -18.5",
+        "spread": -18.5,
+        "over_under": 169.5
+      },
       "date": "2026-11-18",
       "p4": true
     },
@@ -355,7 +396,12 @@
         "loc": "Elon",
         "nick": "Phoenix"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "SC -16.5",
+        "spread": -16.5,
+        "over_under": 138.5
+      },
       "date": "2026-11-18",
       "p4": true
     },
@@ -507,7 +553,12 @@
         "loc": "Youngstown State",
         "nick": "Penguins"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "CIN -27.5",
+        "spread": -27.5,
+        "over_under": 153.5
+      },
       "date": "2026-11-18",
       "p4": true
     },
@@ -583,7 +634,12 @@
         "loc": "UL Monroe",
         "nick": "Warhawks"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "LSU -36.5",
+        "spread": -36.5,
+        "over_under": 158.5
+      },
       "date": "2026-11-18",
       "p4": true
     },
@@ -659,7 +715,12 @@
         "loc": "Cornell",
         "nick": "Big Red"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "SYR -22.5",
+        "spread": -22.5,
+        "over_under": 156.5
+      },
       "date": "2026-11-18",
       "p4": true
     },
@@ -735,7 +796,12 @@
         "loc": "Boston College",
         "nick": "Eagles"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "BC -4.5",
+        "spread": 4.5,
+        "over_under": 128.5
+      },
       "date": "2026-11-18",
       "p4": true
     },
@@ -811,7 +877,12 @@
         "loc": "Campbell",
         "nick": "Fighting Camels"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "OU -24.5",
+        "spread": -24.5,
+        "over_under": 147.5
+      },
       "date": "2026-11-18",
       "p4": true
     },
@@ -887,7 +958,12 @@
         "loc": "South Dakota",
         "nick": "Coyotes"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "NEB -34.5",
+        "spread": -34.5,
+        "over_under": 163.5
+      },
       "date": "2026-11-18",
       "p4": true
     },
@@ -1044,7 +1120,12 @@
         "loc": "Northern Colorado",
         "nick": "Bears"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "BYU -29.5",
+        "spread": -29.5,
+        "over_under": 162.5
+      },
       "date": "2026-11-18",
       "p4": true
     },
@@ -1196,7 +1277,12 @@
         "loc": "Oakland",
         "nick": "Golden Grizzlies"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "ASU -25.5",
+        "spread": -25.5,
+        "over_under": 150.5
+      },
       "date": "2026-11-18",
       "p4": true
     },
@@ -1272,7 +1358,12 @@
         "loc": "Portland",
         "nick": "Pilots"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "COLO -15.5",
+        "spread": -15.5,
+        "over_under": 153.5
+      },
       "date": "2026-11-18",
       "p4": true
     },
@@ -1348,7 +1439,12 @@
         "loc": "Cal State Fullerton",
         "nick": "Titans"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "UCLA -34.5",
+        "spread": -34.5,
+        "over_under": 160.5
+      },
       "date": "2026-11-18",
       "p4": true
     }
