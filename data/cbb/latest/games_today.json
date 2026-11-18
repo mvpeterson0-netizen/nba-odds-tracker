@@ -1,10 +1,90 @@
 {
-  "fetched_at": "2026-11-18T21:45:22+00:00",
+  "fetched_at": "2026-11-18T22:00:27+00:00",
   "source": "espn",
   "count": 20,
   "game_date": "2026-11-18",
   "division_i_games": 71,
   "rows": [
+    {
+      "game_id": "401920514",
+      "start_utc": "2026-11-18T21:48Z",
+      "short_name": "HOU VS FLA",
+      "state": "in",
+      "status": "15:37 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "15:37",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "57",
+        "abbr": "FLA",
+        "name": "Florida Gators",
+        "score": 8,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "2-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Denzel Aberdeen",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Rueben Chinyelu",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Boogie Fland",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Boogie Fland",
+            "value": "2 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 1,
+        "loc": "Florida",
+        "nick": "Gators"
+      },
+      "away": {
+        "team_id": "248",
+        "abbr": "HOU",
+        "name": "Houston Cougars",
+        "score": 8,
+        "winner": null,
+        "record": "4-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Dedan Thomas Jr.",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Joseph Tugler",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Dedan Thomas Jr.",
+            "value": "6 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 8,
+        "loc": "Houston",
+        "nick": "Cougars"
+      },
+      "espn_line": null,
+      "date": "2026-11-18",
+      "p4": true
+    },
     {
       "game_id": "401909753",
       "start_utc": "2026-11-18T17:00Z",
@@ -170,87 +250,6 @@
         "nick": "Scarlet Knights"
       },
       "espn_line": null,
-      "date": "2026-11-18",
-      "p4": true
-    },
-    {
-      "game_id": "401920514",
-      "start_utc": "2026-11-18T21:48Z",
-      "short_name": "HOU VS FLA",
-      "state": "pre",
-      "status": "11/18 - 4:48 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Michelob ULTRA Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN"
-      ],
-      "home": {
-        "team_id": "57",
-        "abbr": "FLA",
-        "name": "Florida Gators",
-        "score": 0,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "2-0",
-        "away_record": "1-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Thomas Haugh",
-            "value": "16.6"
-          },
-          "reboundsPerGame": {
-            "player": "Alex Condon",
-            "value": "9.0"
-          },
-          "assistsPerGame": {
-            "player": "Alex Condon",
-            "value": "4.4"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 1,
-        "loc": "Florida",
-        "nick": "Gators"
-      },
-      "away": {
-        "team_id": "248",
-        "abbr": "HOU",
-        "name": "Houston Cougars",
-        "score": 0,
-        "winner": null,
-        "record": "4-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Dedan Thomas Jr.",
-            "value": "18.5"
-          },
-          "reboundsPerGame": {
-            "player": "Delrecco Gillespie",
-            "value": "6.2"
-          },
-          "assistsPerGame": {
-            "player": "Dedan Thomas Jr.",
-            "value": "6.0"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 8,
-        "loc": "Houston",
-        "nick": "Cougars"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "FLA -1.5",
-        "spread": -1.5,
-        "over_under": 145.5
-      },
       "date": "2026-11-18",
       "p4": true
     },
@@ -652,8 +651,8 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "CIN -28.5",
-        "spread": -28.5,
+        "details": "CIN -27.5",
+        "spread": -27.5,
         "over_under": 153.5
       },
       "date": "2026-11-18",
