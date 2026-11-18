@@ -1,94 +1,10 @@
 {
-  "fetched_at": "2026-11-18T07:30:19+00:00",
+  "fetched_at": "2026-11-18T07:45:20+00:00",
   "source": "espn",
   "count": 22,
   "game_date": "2026-11-17",
   "division_i_games": 68,
   "rows": [
-    {
-      "game_id": "401920512",
-      "start_utc": "2026-11-18T04:59Z",
-      "short_name": "WVU VS AUB",
-      "state": "in",
-      "status": "0:12 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "0:12",
-      "venue": "Michelob ULTRA Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN"
-      ],
-      "home": {
-        "team_id": "2",
-        "abbr": "AUB",
-        "name": "Auburn Tigers",
-        "score": 69,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-1",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Tahaad Pettiford",
-            "value": "20"
-          },
-          "rebounds": {
-            "player": "Narcisse Ngoy",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Tahaad Pettiford",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Tahaad Pettiford",
-            "value": "20 PTS, 3 STL"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Auburn",
-        "nick": "Tigers"
-      },
-      "away": {
-        "team_id": "277",
-        "abbr": "WVU",
-        "name": "West Virginia Mountaineers",
-        "score": 76,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Brenen Lorient",
-            "value": "19"
-          },
-          "rebounds": {
-            "player": "Amadou Seini",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Miles Sadler",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Brenen Lorient",
-            "value": "19 PTS, 3 STL"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "West Virginia",
-        "nick": "Mountaineers"
-      },
-      "espn_line": null,
-      "date": "2026-11-17",
-      "p4": true
-    },
     {
       "game_id": "401906773",
       "start_utc": "2026-11-17T21:51Z",
@@ -1848,6 +1764,90 @@
         "rank": null,
         "loc": "UC Irvine",
         "nick": "Anteaters"
+      },
+      "espn_line": null,
+      "date": "2026-11-17",
+      "p4": true
+    },
+    {
+      "game_id": "401920512",
+      "start_utc": "2026-11-18T04:59Z",
+      "short_name": "WVU VS AUB",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "2",
+        "abbr": "AUB",
+        "name": "Auburn Tigers",
+        "score": 70,
+        "winner": false,
+        "record": "2-2",
+        "home_record": "2-1",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Tahaad Pettiford",
+            "value": "21"
+          },
+          "rebounds": {
+            "player": "Thomas Dowd",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Tahaad Pettiford",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Tahaad Pettiford",
+            "value": "21 PTS, 3 STL"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Auburn",
+        "nick": "Tigers"
+      },
+      "away": {
+        "team_id": "277",
+        "abbr": "WVU",
+        "name": "West Virginia Mountaineers",
+        "score": 76,
+        "winner": true,
+        "record": "4-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Brenen Lorient",
+            "value": "19"
+          },
+          "rebounds": {
+            "player": "Amadou Seini",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Miles Sadler",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Brenen Lorient",
+            "value": "19 PTS, 3 STL"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "West Virginia",
+        "nick": "Mountaineers"
       },
       "espn_line": null,
       "date": "2026-11-17",
