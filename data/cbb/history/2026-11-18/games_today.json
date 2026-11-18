@@ -1,17 +1,101 @@
 {
-  "fetched_at": "2026-11-18T19:00:25+00:00",
+  "fetched_at": "2026-11-18T19:15:21+00:00",
   "source": "espn",
   "count": 20,
   "game_date": "2026-11-18",
   "division_i_games": 71,
   "rows": [
     {
+      "game_id": "401920513",
+      "start_utc": "2026-11-18T19:00Z",
+      "short_name": "RUTG VS ND",
+      "state": "in",
+      "status": "13:13 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "13:13",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "87",
+        "abbr": "ND",
+        "name": "Notre Dame Fighting Irish",
+        "score": 11,
+        "winner": null,
+        "record": "4-1",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Brady Koehler",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Brady Koehler",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Brady Koehler",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Brady Koehler",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Notre Dame",
+        "nick": "Fighting Irish"
+      },
+      "away": {
+        "team_id": "164",
+        "abbr": "RUTG",
+        "name": "Rutgers Scarlet Knights",
+        "score": 10,
+        "winner": null,
+        "record": "3-1",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Lino Mark",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Lino Mark",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Lino Mark",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Lino Mark",
+            "value": "4 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Rutgers",
+        "nick": "Scarlet Knights"
+      },
+      "espn_line": null,
+      "date": "2026-11-18",
+      "p4": true
+    },
+    {
       "game_id": "401909753",
       "start_utc": "2026-11-18T17:00Z",
       "short_name": "JKST @ BAY",
-      "state": "in",
-      "status": "End of 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
       "clock": "0:00",
       "venue": "Foster Pavilion",
@@ -24,9 +108,9 @@
         "abbr": "BAY",
         "name": "Baylor Bears",
         "score": 104,
-        "winner": null,
-        "record": "3-1",
-        "home_record": "3-0",
+        "winner": true,
+        "record": "4-1",
+        "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -57,10 +141,10 @@
         "abbr": "JKST",
         "name": "Jackson State Tigers",
         "score": 55,
-        "winner": null,
-        "record": "2-3",
+        "winner": false,
+        "record": "2-4",
         "home_record": "0-0",
-        "away_record": "2-3",
+        "away_record": "2-4",
         "leaders": {
           "points": {
             "player": "DJ Davis",
@@ -86,87 +170,6 @@
         "nick": "Tigers"
       },
       "espn_line": null,
-      "date": "2026-11-18",
-      "p4": true
-    },
-    {
-      "game_id": "401920513",
-      "start_utc": "2026-11-18T19:00Z",
-      "short_name": "RUTG VS ND",
-      "state": "pre",
-      "status": "11/18 - 2:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Michelob ULTRA Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN"
-      ],
-      "home": {
-        "team_id": "87",
-        "abbr": "ND",
-        "name": "Notre Dame Fighting Irish",
-        "score": 0,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Ethan Roberts",
-            "value": "17.8"
-          },
-          "reboundsPerGame": {
-            "player": "Brady Koehler",
-            "value": "6.4"
-          },
-          "assistsPerGame": {
-            "player": "Braeden Smith",
-            "value": "6.8"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Notre Dame",
-        "nick": "Fighting Irish"
-      },
-      "away": {
-        "team_id": "164",
-        "abbr": "RUTG",
-        "name": "Rutgers Scarlet Knights",
-        "score": 0,
-        "winner": null,
-        "record": "3-1",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Christian Gurdak",
-            "value": "16.0"
-          },
-          "reboundsPerGame": {
-            "player": "Christian Gurdak",
-            "value": "7.2"
-          },
-          "assistsPerGame": {
-            "player": "Lino Mark",
-            "value": "2.8"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Rutgers",
-        "nick": "Scarlet Knights"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ND -2.5",
-        "spread": -2.5,
-        "over_under": 150.5
-      },
       "date": "2026-11-18",
       "p4": true
     },
@@ -243,7 +246,7 @@
         "nick": "Cougars"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "FLA -1.5",
         "spread": -1.5,
         "over_under": 145.5
@@ -324,7 +327,7 @@
         "nick": "Jaguars"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "PSU -17.5",
         "spread": -17.5,
         "over_under": 169.5
@@ -405,7 +408,7 @@
         "nick": "Phoenix"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SC -15.5",
         "spread": -15.5,
         "over_under": 136.5
@@ -486,7 +489,7 @@
         "nick": "Privateers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TTU -35.5",
         "spread": -35.5,
         "over_under": 157.5
@@ -567,7 +570,7 @@
         "nick": "Jayhawks"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "KU -8.5",
         "spread": 8.5,
         "over_under": 150.5
@@ -648,7 +651,7 @@
         "nick": "Penguins"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CIN -28.5",
         "spread": -28.5,
         "over_under": 153.5
@@ -729,7 +732,7 @@
         "nick": "Warhawks"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "LSU -37.5",
         "spread": -37.5,
         "over_under": 159.5
@@ -810,7 +813,7 @@
         "nick": "Big Red"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SYR -18.5",
         "spread": -18.5,
         "over_under": 156.5
@@ -891,7 +894,7 @@
         "nick": "Eagles"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "BC -3.5",
         "spread": 3.5,
         "over_under": 128.5
@@ -972,7 +975,7 @@
         "nick": "Fighting Camels"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "OU -20.5",
         "spread": -20.5,
         "over_under": 147.5
@@ -1053,7 +1056,7 @@
         "nick": "Coyotes"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "NEB -32.5",
         "spread": -32.5,
         "over_under": 155.5
@@ -1134,7 +1137,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ARIZ -3.5",
         "spread": -3.5,
         "over_under": 147.5
@@ -1215,7 +1218,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "BYU -28.5",
         "spread": -28.5,
         "over_under": 163.5
@@ -1296,9 +1299,9 @@
         "nick": "Braves"
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "MIZ -42.5",
-        "spread": -42.5,
+        "provider": "Draft Kings",
+        "details": "MIZ -41.5",
+        "spread": -41.5,
         "over_under": 153.5
       },
       "date": "2026-11-18",
@@ -1377,7 +1380,7 @@
         "nick": "Golden Grizzlies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ASU -22.5",
         "spread": -22.5,
         "over_under": 147.5
@@ -1458,7 +1461,7 @@
         "nick": "Pilots"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "COLO -14.5",
         "spread": -14.5,
         "over_under": 155.5
@@ -1539,7 +1542,7 @@
         "nick": "Rebels"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "AUB -9.5",
         "spread": -9.5,
         "over_under": 158.5
@@ -1620,7 +1623,7 @@
         "nick": "Titans"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "UCLA -31.5",
         "spread": -31.5,
         "over_under": 166.5
