@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-19T13:00:23+00:00",
+  "finished_at": "2026-11-19T13:15:22+00:00",
   "game_date": "2026-11-19",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "ok",
+    "odds": "not_due",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -28,41 +28,12 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 11697
+      "ODDS_API_KEY_20K": 11694
     },
-    "pulled": [
-      {
-        "matchup": "Golden State Warriors @ Memphis Grizzlies",
-        "type": "morning",
-        "status": "ok",
-        "rows": 126,
-        "markets": 4
-      },
-      {
-        "matchup": "Los Angeles Clippers @ San Antonio Spurs",
-        "type": "morning",
-        "status": "ok",
-        "rows": 166,
-        "markets": 4
-      },
-      {
-        "matchup": "Portland Trail Blazers @ Milwaukee Bucks",
-        "type": "morning",
-        "status": "ok",
-        "rows": 180,
-        "markets": 4
-      },
-      {
-        "matchup": "New York Knicks @ Minnesota Timberwolves",
-        "type": "morning",
-        "status": "ok",
-        "rows": 178,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 4,
+    "due": 0,
     "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"
