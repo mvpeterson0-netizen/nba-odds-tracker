@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-19T00:15:24+00:00",
+  "fetched_at": "2026-11-19T00:30:22+00:00",
   "source": "espn",
   "count": 20,
   "game_date": "2026-11-18",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-18T23:30Z",
       "short_name": "IUIN @ PSU",
       "state": "in",
-      "status": "2:53 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "2:53",
+      "clock": "0:00",
       "venue": "Bryce Jordan Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "213",
         "abbr": "PSU",
         "name": "Penn State Nittany Lions",
-        "score": 36,
+        "score": 40,
         "winner": null,
         "record": "4-1",
         "home_record": "4-0",
@@ -35,10 +35,10 @@
           },
           "rebounds": {
             "player": "Ivan Juric",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
-            "player": "Dasonte Bowen",
+            "player": "Ivan Juric",
             "value": "3"
           },
           "rating": {
@@ -56,7 +56,7 @@
         "team_id": "85",
         "abbr": "IUIN",
         "name": "IU Indianapolis Jaguars",
-        "score": 37,
+        "score": 41,
         "winner": null,
         "record": "3-1",
         "home_record": "3-0",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-19T00:00Z",
       "short_name": "ELON @ SC",
       "state": "in",
-      "status": "12:44 - 1st",
+      "status": "7:03 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "12:44",
+      "clock": "7:03",
       "venue": "Colonial Life Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -107,27 +107,27 @@
         "team_id": "2579",
         "abbr": "SC",
         "name": "South Carolina Gamecocks",
-        "score": 16,
+        "score": 36,
         "winner": null,
         "record": "4-0",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Kory Mincy",
-            "value": "6"
+            "player": "Jakub Necas",
+            "value": "7"
           },
           "rebounds": {
-            "player": "Aleksas Bieliauskas",
-            "value": "2"
+            "player": "Jakub Necas",
+            "value": "3"
           },
           "assists": {
             "player": "Aleksas Bieliauskas",
             "value": "3"
           },
           "rating": {
-            "player": "Kory Mincy",
-            "value": "6 PTS"
+            "player": "Jakub Necas",
+            "value": "7 PTS"
           }
         },
         "conf_id": "23",
@@ -140,7 +140,7 @@
         "team_id": "2210",
         "abbr": "ELON",
         "name": "Elon Phoenix",
-        "score": 11,
+        "score": 20,
         "winner": null,
         "record": "2-2",
         "home_record": "1-1",
@@ -152,10 +152,10 @@
           },
           "rebounds": {
             "player": "Raúl Villar",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
-            "player": "Raúl Villar",
+            "player": "Bryson Cokley",
             "value": "2"
           },
           "rating": {
@@ -498,7 +498,7 @@
         "nick": "Privateers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TTU -36.5",
         "spread": -36.5,
         "over_under": 157.5
@@ -579,9 +579,9 @@
         "nick": "Jayhawks"
       },
       "espn_line": {
-        "provider": "Draft Kings",
-        "details": "KU -7.5",
-        "spread": 7.5,
+        "provider": "DraftKings",
+        "details": "KU -6.5",
+        "spread": 6.5,
         "over_under": 150.5
       },
       "date": "2026-11-18",
@@ -660,7 +660,7 @@
         "nick": "Penguins"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CIN -29.5",
         "spread": -29.5,
         "over_under": 153.5
@@ -741,7 +741,7 @@
         "nick": "Warhawks"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "LSU -37.5",
         "spread": -37.5,
         "over_under": 159.5
@@ -822,7 +822,7 @@
         "nick": "Big Red"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SYR -18.5",
         "spread": -18.5,
         "over_under": 155.5
@@ -903,7 +903,7 @@
         "nick": "Eagles"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "BC -3.5",
         "spread": 3.5,
         "over_under": 127.5
@@ -984,7 +984,7 @@
         "nick": "Fighting Camels"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "OU -20.5",
         "spread": -20.5,
         "over_under": 147.5
@@ -1065,7 +1065,7 @@
         "nick": "Coyotes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NEB -32.5",
         "spread": -32.5,
         "over_under": 155.5
@@ -1146,7 +1146,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ARIZ -3.5",
         "spread": -3.5,
         "over_under": 147.5
@@ -1227,7 +1227,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "BYU -28.5",
         "spread": -28.5,
         "over_under": 163.5
@@ -1308,7 +1308,7 @@
         "nick": "Braves"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MIZ -40.5",
         "spread": -40.5,
         "over_under": 153.5
@@ -1389,7 +1389,7 @@
         "nick": "Golden Grizzlies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ASU -22.5",
         "spread": -22.5,
         "over_under": 147.5
@@ -1470,7 +1470,7 @@
         "nick": "Pilots"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "COLO -14.5",
         "spread": -14.5,
         "over_under": 156.5
@@ -1551,7 +1551,7 @@
         "nick": "Rebels"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "AUB -9.5",
         "spread": -9.5,
         "over_under": 157.5
@@ -1632,7 +1632,7 @@
         "nick": "Titans"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UCLA -31.5",
         "spread": -31.5,
         "over_under": 166.5
