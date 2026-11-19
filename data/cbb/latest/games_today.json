@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-19T05:15:19+00:00",
+  "fetched_at": "2026-11-19T05:30:21+00:00",
   "source": "espn",
   "count": 15,
   "game_date": "2026-11-19",
@@ -932,12 +932,7 @@
         "loc": "Sacramento State",
         "nick": "Hornets"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "STAN -17.5",
-        "spread": -17.5,
-        "over_under": 155.5
-      },
+      "espn_line": null,
       "date": "2026-11-19",
       "p4": true
     },
@@ -1094,7 +1089,12 @@
         "loc": "Houston",
         "nick": "Cougars"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "HOU -2.5",
+        "spread": 2.5,
+        "over_under": 149.5
+      },
       "date": "2026-11-19",
       "p4": true
     },
