@@ -1,10 +1,73 @@
 {
-  "fetched_at": "2026-11-19T00:45:30+00:00",
+  "fetched_at": "2026-11-19T01:00:24+00:00",
   "source": "espn",
-  "count": 13,
+  "count": 15,
   "game_date": "2026-11-19",
   "division_i_games": 36,
   "rows": [
+    {
+      "game_id": "401920517",
+      "start_utc": "2026-11-19T19:30Z",
+      "short_name": "FLA VS TBD",
+      "state": "pre",
+      "status": "11/19 - 2:30 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "-1",
+        "abbr": "TBD",
+        "name": "TBD",
+        "score": 0,
+        "winner": null,
+        "record": null,
+        "home_record": null,
+        "away_record": null,
+        "leaders": null,
+        "conf_id": null,
+        "conf": null,
+        "rank": null,
+        "loc": "TBD",
+        "nick": "TBD"
+      },
+      "away": {
+        "team_id": "57",
+        "abbr": "FLA",
+        "name": "Florida Gators",
+        "score": 0,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "2-0",
+        "away_record": "1-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Thomas Haugh",
+            "value": "16.6"
+          },
+          "reboundsPerGame": {
+            "player": "Alex Condon",
+            "value": "9.0"
+          },
+          "assistsPerGame": {
+            "player": "Alex Condon",
+            "value": "4.4"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 1,
+        "loc": "Florida",
+        "nick": "Gators"
+      },
+      "espn_line": null,
+      "date": "2026-11-19",
+      "p4": true
+    },
     {
       "game_id": "401920519",
       "start_utc": "2026-11-19T22:00Z",
@@ -845,7 +908,7 @@
         "provider": "DraftKings",
         "details": "STAN -16.5",
         "spread": -16.5,
-        "over_under": 150.5
+        "over_under": 151.5
       },
       "date": "2026-11-19",
       "p4": true
@@ -1004,6 +1067,69 @@
         "spread": -27.5,
         "over_under": 157.5
       },
+      "date": "2026-11-19",
+      "p4": true
+    },
+    {
+      "game_id": "401920518",
+      "start_utc": "2026-11-20T04:00Z",
+      "short_name": "HOU VS TBD",
+      "state": "pre",
+      "status": "11/19 - 11:00 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "-1",
+        "abbr": "TBD",
+        "name": "TBD",
+        "score": 0,
+        "winner": null,
+        "record": null,
+        "home_record": null,
+        "away_record": null,
+        "leaders": null,
+        "conf_id": null,
+        "conf": null,
+        "rank": null,
+        "loc": "TBD",
+        "nick": "TBD"
+      },
+      "away": {
+        "team_id": "248",
+        "abbr": "HOU",
+        "name": "Houston Cougars",
+        "score": 0,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Dedan Thomas Jr.",
+            "value": "18.5"
+          },
+          "reboundsPerGame": {
+            "player": "Delrecco Gillespie",
+            "value": "6.2"
+          },
+          "assistsPerGame": {
+            "player": "Dedan Thomas Jr.",
+            "value": "6.0"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 8,
+        "loc": "Houston",
+        "nick": "Cougars"
+      },
+      "espn_line": null,
       "date": "2026-11-19",
       "p4": true
     }
