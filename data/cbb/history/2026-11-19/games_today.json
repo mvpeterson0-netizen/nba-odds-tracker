@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-19T19:30:20+00:00",
+  "fetched_at": "2026-11-19T19:45:17+00:00",
   "source": "espn",
   "count": 15,
   "game_date": "2026-11-19",
@@ -9,11 +9,11 @@
       "game_id": "401920517",
       "start_utc": "2026-11-19T19:30Z",
       "short_name": "FLA VS WVU",
-      "state": "pre",
-      "status": "11/19 - 2:30 PM EST",
+      "state": "in",
+      "status": "14:32 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "14:32",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "277",
         "abbr": "WVU",
         "name": "West Virginia Mountaineers",
-        "score": 0,
+        "score": 3,
         "winner": null,
         "record": "4-1",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Miles Sadler",
-            "value": "21.0"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Amadou Seini",
-            "value": "6.2"
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Miles Sadler",
-            "value": "6.0"
+          "rebounds": {
+            "player": "Amadou Seini",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Brenen Lorient",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Amadou Seini",
+            "value": "2 PTS"
           }
         },
         "conf_id": "8",
@@ -52,23 +56,27 @@
         "team_id": "57",
         "abbr": "FLA",
         "name": "Florida Gators",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "5-1",
         "home_record": "2-0",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Thomas Haugh",
-            "value": "16.8"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Alex Condon",
-            "value": "8.3"
+            "value": "4"
           },
-          "assistsPerGame": {
+          "rebounds": {
+            "player": "Rueben Chinyelu",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Rueben Chinyelu",
+            "value": "1"
+          },
+          "rating": {
             "player": "Alex Condon",
-            "value": "4.3"
+            "value": "4 PTS"
           }
         },
         "conf_id": "23",
@@ -77,12 +85,7 @@
         "loc": "Florida",
         "nick": "Gators"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "FLA -7.5",
-        "spread": 7.5,
-        "over_under": 147.5
-      },
+      "espn_line": null,
       "date": "2026-11-19",
       "p4": true
     },
