@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-19T03:45:22+00:00",
+  "fetched_at": "2026-11-19T04:00:26+00:00",
   "source": "espn",
   "count": 20,
   "game_date": "2026-11-18",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-19T02:00Z",
       "short_name": "CONN @ ARIZ",
       "state": "in",
-      "status": "13:40 - 2nd",
+      "status": "8:51 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "13:40",
+      "clock": "8:51",
       "venue": "McKale Center at ALKEME Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "12",
         "abbr": "ARIZ",
         "name": "Arizona Wildcats",
-        "score": 60,
+        "score": 62,
         "winner": null,
         "record": "3-1",
         "home_record": "2-0",
@@ -31,7 +31,7 @@
         "leaders": {
           "points": {
             "player": "Ivan Kharchenkov",
-            "value": "18"
+            "value": "20"
           },
           "rebounds": {
             "player": "Motiejus Krivas",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Ivan Kharchenkov",
-            "value": "18 PTS, 6 AST"
+            "value": "20 PTS, 6 AST"
           }
         },
         "conf_id": "8",
@@ -56,7 +56,7 @@
         "team_id": "41",
         "abbr": "CONN",
         "name": "UConn Huskies",
-        "score": 43,
+        "score": 54,
         "winner": null,
         "record": "4-0",
         "home_record": "3-0",
@@ -64,19 +64,19 @@
         "leaders": {
           "points": {
             "player": "Braylon Mullins",
-            "value": "19"
+            "value": "22"
           },
           "rebounds": {
-            "player": "Braylon Mullins",
-            "value": "5"
+            "player": "Colben Landrew",
+            "value": "7"
           },
           "assists": {
             "player": "Silas Demary Jr.",
-            "value": "2"
+            "value": "4"
           },
           "rating": {
             "player": "Braylon Mullins",
-            "value": "19 PTS"
+            "value": "22 PTS"
           }
         },
         "conf_id": "4",
@@ -90,14 +90,98 @@
       "p4": true
     },
     {
+      "game_id": "401920158",
+      "start_utc": "2026-11-19T03:30Z",
+      "short_name": "CSUF @ UCLA",
+      "state": "in",
+      "status": "10:35 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "10:35",
+      "venue": "Pauley Pavilion",
+      "neutral_site": false,
+      "broadcasts": [
+        "BTN"
+      ],
+      "home": {
+        "team_id": "26",
+        "abbr": "UCLA",
+        "name": "UCLA Bruins",
+        "score": 13,
+        "winner": null,
+        "record": "4-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Trent Perry",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Eric Dailey Jr.",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Nikola Kusturica",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Eric Dailey Jr.",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 7,
+        "loc": "UCLA",
+        "nick": "Bruins"
+      },
+      "away": {
+        "team_id": "2239",
+        "abbr": "CSUF",
+        "name": "Cal State Fullerton Titans",
+        "score": 16,
+        "winner": null,
+        "record": "2-1",
+        "home_record": "1-0",
+        "away_record": "1-1",
+        "leaders": {
+          "points": {
+            "player": "Christian Williams",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Matthew Willenborg",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Matthew Willenborg",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Christian Williams",
+            "value": "6 PTS"
+          }
+        },
+        "conf_id": "9",
+        "conf": null,
+        "rank": null,
+        "loc": "Cal State Fullerton",
+        "nick": "Titans"
+      },
+      "espn_line": null,
+      "date": "2026-11-18",
+      "p4": true
+    },
+    {
       "game_id": "401921742",
       "start_utc": "2026-11-19T02:00Z",
       "short_name": "UNCO @ BYU",
       "state": "in",
-      "status": "5:25 - 2nd",
+      "status": "End of 2nd",
       "completed": false,
       "period": 2,
-      "clock": "5:25",
+      "clock": "0:00",
       "venue": "Marriott Center",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +191,7 @@
         "team_id": "252",
         "abbr": "BYU",
         "name": "BYU Cougars",
-        "score": 88,
+        "score": 98,
         "winner": null,
         "record": "4-0",
         "home_record": "3-0",
@@ -115,11 +199,11 @@
         "leaders": {
           "points": {
             "player": "Collin Chandler",
-            "value": "18"
+            "value": "20"
           },
           "rebounds": {
             "player": "Khadim Mboup",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Bruce Branch III",
@@ -127,7 +211,7 @@
           },
           "rating": {
             "player": "Collin Chandler",
-            "value": "18 PTS"
+            "value": "20 PTS"
           }
         },
         "conf_id": "8",
@@ -140,7 +224,7 @@
         "team_id": "2458",
         "abbr": "UNCO",
         "name": "Northern Colorado Bears",
-        "score": 50,
+        "score": 54,
         "winner": null,
         "record": "2-2",
         "home_record": "2-0",
@@ -152,15 +236,15 @@
           },
           "rebounds": {
             "player": "Andrew Crawford",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
-            "player": "Jeremiah Hammond",
+            "player": "Langston Reynolds",
             "value": "3"
           },
           "rating": {
-            "player": "Campbell Blogg",
-            "value": "8 PTS"
+            "player": "Langston Reynolds",
+            "value": "9 PTS, 3 STL"
           }
         },
         "conf_id": "5",
@@ -178,10 +262,10 @@
       "start_utc": "2026-11-19T02:00Z",
       "short_name": "ALCN @ MIZ",
       "state": "in",
-      "status": "8:04 - 2nd",
+      "status": "3:55 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "8:04",
+      "clock": "3:55",
       "venue": "Mizzou Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -191,7 +275,7 @@
         "team_id": "142",
         "abbr": "MIZ",
         "name": "Missouri Tigers",
-        "score": 78,
+        "score": 91,
         "winner": null,
         "record": "3-1",
         "home_record": "2-0",
@@ -199,19 +283,19 @@
         "leaders": {
           "points": {
             "player": "Bryson Tiller",
-            "value": "16"
+            "value": "21"
           },
           "rebounds": {
-            "player": "Toni Bryant",
+            "player": "Bryson Tiller",
             "value": "8"
           },
           "assists": {
-            "player": "Trent Pierce",
+            "player": "Mark Mitchell Jr.",
             "value": "3"
           },
           "rating": {
             "player": "Bryson Tiller",
-            "value": "16 PTS, 7 REB, 3 BLK"
+            "value": "21 PTS, 8 REB, 3 BLK"
           }
         },
         "conf_id": "23",
@@ -224,15 +308,15 @@
         "team_id": "2016",
         "abbr": "ALCN",
         "name": "Alcorn State Braves",
-        "score": 32,
+        "score": 35,
         "winner": null,
         "record": "0-5",
         "home_record": "0-1",
         "away_record": "0-4",
         "leaders": {
           "points": {
-            "player": "Calvin Sirmans III",
-            "value": "8"
+            "player": "Saxby Sunderland",
+            "value": "9"
           },
           "rebounds": {
             "player": "Christian Richardson",
@@ -244,7 +328,7 @@
           },
           "rating": {
             "player": "Saxby Sunderland",
-            "value": "7 PTS"
+            "value": "9 PTS"
           }
         },
         "conf_id": "26",
@@ -262,10 +346,10 @@
       "start_utc": "2026-11-19T02:00Z",
       "short_name": "OAK @ ASU",
       "state": "in",
-      "status": "7:41 - 2nd",
+      "status": "2:40 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "7:41",
+      "clock": "2:40",
       "venue": "Desert Financial Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -275,7 +359,7 @@
         "team_id": "9",
         "abbr": "ASU",
         "name": "Arizona State Sun Devils",
-        "score": 48,
+        "score": 58,
         "winner": null,
         "record": "4-0",
         "home_record": "4-0",
@@ -283,14 +367,14 @@
         "leaders": {
           "points": {
             "player": "Paulius Murauskas",
-            "value": "16"
+            "value": "17"
           },
           "rebounds": {
             "player": "Dillan Shaw",
             "value": "12"
           },
           "assists": {
-            "player": "Joel Foxwell",
+            "player": "Paulius Murauskas",
             "value": "4"
           },
           "rating": {
@@ -308,7 +392,7 @@
         "team_id": "2473",
         "abbr": "OAK",
         "name": "Oakland Golden Grizzlies",
-        "score": 54,
+        "score": 57,
         "winner": null,
         "record": "1-5",
         "home_record": "1-0",
@@ -316,19 +400,19 @@
         "leaders": {
           "points": {
             "player": "Chris Fields Jr.",
-            "value": "16"
+            "value": "17"
           },
           "rebounds": {
             "player": "Chris Fields Jr.",
-            "value": "9"
+            "value": "11"
           },
           "assists": {
             "player": "Ryder Bradley",
             "value": "3"
           },
           "rating": {
-            "player": "Ryder Bradley",
-            "value": "15 PTS"
+            "player": "Chris Fields Jr.",
+            "value": "17 PTS, 11 REB"
           }
         },
         "conf_id": "45",
@@ -346,10 +430,10 @@
       "start_utc": "2026-11-19T02:00Z",
       "short_name": "PORT @ COLO",
       "state": "in",
-      "status": "3:12 - 2nd",
+      "status": "0:38 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "3:12",
+      "clock": "0:38",
       "venue": "CU Events Center",
       "neutral_site": false,
       "broadcasts": [
@@ -359,7 +443,7 @@
         "team_id": "38",
         "abbr": "COLO",
         "name": "Colorado Buffaloes",
-        "score": 63,
+        "score": 69,
         "winner": null,
         "record": "2-2",
         "home_record": "2-0",
@@ -367,11 +451,11 @@
         "leaders": {
           "points": {
             "player": "Justin Neely",
-            "value": "23"
+            "value": "27"
           },
           "rebounds": {
             "player": "Justin Neely",
-            "value": "7"
+            "value": "9"
           },
           "assists": {
             "player": "Alex Dickeson",
@@ -379,7 +463,7 @@
           },
           "rating": {
             "player": "Justin Neely",
-            "value": "23 PTS, 7 REB"
+            "value": "27 PTS, 9 REB"
           }
         },
         "conf_id": "8",
@@ -392,7 +476,7 @@
         "team_id": "2501",
         "abbr": "PORT",
         "name": "Portland Pilots",
-        "score": 69,
+        "score": 75,
         "winner": null,
         "record": "3-2",
         "home_record": "1-1",
@@ -400,15 +484,15 @@
         "leaders": {
           "points": {
             "player": "Jaxon Olvera",
-            "value": "20"
+            "value": "22"
           },
           "rebounds": {
-            "player": "Hunter Adam",
-            "value": "5"
+            "player": "Riley Parker",
+            "value": "6"
           },
           "assists": {
             "player": "RJ Nance Jr.",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "RJ Nance Jr.",
@@ -430,10 +514,10 @@
       "start_utc": "2026-11-19T03:30Z",
       "short_name": "UNLV VS AUB",
       "state": "in",
-      "status": "12:07 - 1st",
+      "status": "7:38 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "12:07",
+      "clock": "7:38",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -443,7 +527,7 @@
         "team_id": "2",
         "abbr": "AUB",
         "name": "Auburn Tigers",
-        "score": 14,
+        "score": 22,
         "winner": null,
         "record": "2-2",
         "home_record": "2-1",
@@ -451,7 +535,7 @@
         "leaders": {
           "points": {
             "player": "Tahaad Pettiford",
-            "value": "6"
+            "value": "10"
           },
           "rebounds": {
             "player": "Thomas Dowd",
@@ -463,7 +547,7 @@
           },
           "rating": {
             "player": "Tahaad Pettiford",
-            "value": "6 PTS"
+            "value": "10 PTS"
           }
         },
         "conf_id": "23",
@@ -476,19 +560,19 @@
         "team_id": "2439",
         "abbr": "UNLV",
         "name": "UNLV Rebels",
-        "score": 13,
+        "score": 19,
         "winner": null,
         "record": "3-1",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Dontrez Williams",
-            "value": "5"
+            "player": "Cam Miles",
+            "value": "7"
           },
           "rebounds": {
             "player": "Sebastian Mack",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
             "player": "Cam Miles",
@@ -496,7 +580,7 @@
           },
           "rating": {
             "player": "Dontrez Williams",
-            "value": "5 PTS"
+            "value": "7 PTS"
           }
         },
         "conf_id": "44",
@@ -1596,86 +1680,6 @@
         "rank": null,
         "loc": "Campbell",
         "nick": "Fighting Camels"
-      },
-      "espn_line": null,
-      "date": "2026-11-18",
-      "p4": true
-    },
-    {
-      "game_id": "401920158",
-      "start_utc": "2026-11-19T03:30Z",
-      "short_name": "CSUF @ UCLA",
-      "state": "in",
-      "status": "15:42 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "15:42",
-      "venue": "Pauley Pavilion",
-      "neutral_site": false,
-      "broadcasts": [
-        "BTN"
-      ],
-      "home": {
-        "team_id": "26",
-        "abbr": "UCLA",
-        "name": "UCLA Bruins",
-        "score": 11,
-        "winner": null,
-        "record": "4-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Trent Perry",
-            "value": "6"
-          },
-          "rebounds": {
-            "player": "Eric Dailey Jr.",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Nikola Kusturica",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Trent Perry",
-            "value": "6 PTS"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 7,
-        "loc": "UCLA",
-        "nick": "Bruins"
-      },
-      "away": {
-        "team_id": "2239",
-        "abbr": "CSUF",
-        "name": "Cal State Fullerton Titans",
-        "score": 8,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "1-0",
-        "away_record": "1-1",
-        "leaders": {
-          "points": {
-            "player": "Matthew Willenborg",
-            "value": "3"
-          },
-          "assists": {
-            "player": "Matthew Willenborg",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Matthew Willenborg",
-            "value": "3 PTS"
-          }
-        },
-        "conf_id": "9",
-        "conf": null,
-        "rank": null,
-        "loc": "Cal State Fullerton",
-        "nick": "Titans"
       },
       "espn_line": null,
       "date": "2026-11-18",
