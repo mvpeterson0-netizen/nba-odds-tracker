@@ -1,19 +1,103 @@
 {
-  "fetched_at": "2026-11-19T00:30:22+00:00",
+  "fetched_at": "2026-11-19T00:45:30+00:00",
   "source": "espn",
   "count": 20,
   "game_date": "2026-11-18",
   "division_i_games": 71,
   "rows": [
     {
+      "game_id": "401921134",
+      "start_utc": "2026-11-19T00:30Z",
+      "short_name": "NOLA @ TTU",
+      "state": "in",
+      "status": "13:01 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "13:01",
+      "venue": "United Supermarkets Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "home": {
+        "team_id": "2641",
+        "abbr": "TTU",
+        "name": "Texas Tech Red Raiders",
+        "score": 20,
+        "winner": null,
+        "record": "4-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Cruz Davis",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Cruz Davis",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Cruz Davis",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Cruz Davis",
+            "value": "8 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 9,
+        "loc": "Texas Tech",
+        "nick": "Red Raiders"
+      },
+      "away": {
+        "team_id": "2443",
+        "abbr": "NOLA",
+        "name": "LSU New Orleans Privateers",
+        "score": 5,
+        "winner": null,
+        "record": "2-1",
+        "home_record": "2-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Kedrick Osby",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Cham Okey",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Cham Okey",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Kedrick Osby",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "25",
+        "conf": null,
+        "rank": null,
+        "loc": "LSU New Orleans",
+        "nick": "Privateers"
+      },
+      "espn_line": null,
+      "date": "2026-11-18",
+      "p4": true
+    },
+    {
       "game_id": "401917181",
       "start_utc": "2026-11-18T23:30Z",
       "short_name": "IUIN @ PSU",
       "state": "in",
-      "status": "Halftime",
+      "status": "16:20 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "16:20",
       "venue": "Bryce Jordan Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +107,7 @@
         "team_id": "213",
         "abbr": "PSU",
         "name": "Penn State Nittany Lions",
-        "score": 40,
+        "score": 45,
         "winner": null,
         "record": "4-1",
         "home_record": "4-0",
@@ -35,15 +119,15 @@
           },
           "rebounds": {
             "player": "Ivan Juric",
-            "value": "5"
+            "value": "7"
           },
           "assists": {
             "player": "Ivan Juric",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Ivan Juric",
-            "value": "10 PTS"
+            "value": "10 PTS, 7 REB"
           }
         },
         "conf_id": "7",
@@ -56,7 +140,7 @@
         "team_id": "85",
         "abbr": "IUIN",
         "name": "IU Indianapolis Jaguars",
-        "score": 41,
+        "score": 46,
         "winner": null,
         "record": "3-1",
         "home_record": "3-0",
@@ -94,10 +178,10 @@
       "start_utc": "2026-11-19T00:00Z",
       "short_name": "ELON @ SC",
       "state": "in",
-      "status": "7:03 - 1st",
+      "status": "1:00 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "7:03",
+      "clock": "1:00",
       "venue": "Colonial Life Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +191,7 @@
         "team_id": "2579",
         "abbr": "SC",
         "name": "South Carolina Gamecocks",
-        "score": 36,
+        "score": 53,
         "winner": null,
         "record": "4-0",
         "home_record": "4-0",
@@ -115,11 +199,11 @@
         "leaders": {
           "points": {
             "player": "Jakub Necas",
-            "value": "7"
+            "value": "13"
           },
           "rebounds": {
             "player": "Jakub Necas",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "Aleksas Bieliauskas",
@@ -127,7 +211,7 @@
           },
           "rating": {
             "player": "Jakub Necas",
-            "value": "7 PTS"
+            "value": "13 PTS"
           }
         },
         "conf_id": "23",
@@ -140,7 +224,7 @@
         "team_id": "2210",
         "abbr": "ELON",
         "name": "Elon Phoenix",
-        "score": 20,
+        "score": 33,
         "winner": null,
         "record": "2-2",
         "home_record": "1-1",
@@ -148,19 +232,19 @@
         "leaders": {
           "points": {
             "player": "Josh Dalton",
-            "value": "5"
+            "value": "7"
           },
           "rebounds": {
             "player": "Raúl Villar",
             "value": "3"
           },
           "assists": {
-            "player": "Bryson Cokley",
-            "value": "2"
+            "player": "Isaiah Mbeng",
+            "value": "3"
           },
           "rating": {
             "player": "Josh Dalton",
-            "value": "5 PTS"
+            "value": "7 PTS"
           }
         },
         "conf_id": "10",
@@ -168,6 +252,90 @@
         "rank": null,
         "loc": "Elon",
         "nick": "Phoenix"
+      },
+      "espn_line": null,
+      "date": "2026-11-18",
+      "p4": true
+    },
+    {
+      "game_id": "401920751",
+      "start_utc": "2026-11-19T00:30Z",
+      "short_name": "YSU @ CIN",
+      "state": "in",
+      "status": "13:46 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "13:46",
+      "venue": "Fifth Third Arena (OH)",
+      "neutral_site": false,
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "home": {
+        "team_id": "2132",
+        "abbr": "CIN",
+        "name": "Cincinnati Bearcats",
+        "score": 16,
+        "winner": null,
+        "record": "3-1",
+        "home_record": "2-1",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Riley Allenspach",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Riley Allenspach",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Elijah Perryman",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Riley Allenspach",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Cincinnati",
+        "nick": "Bearcats"
+      },
+      "away": {
+        "team_id": "2754",
+        "abbr": "YSU",
+        "name": "Youngstown State Penguins",
+        "score": 9,
+        "winner": null,
+        "record": "2-2",
+        "home_record": "1-0",
+        "away_record": "1-2",
+        "leaders": {
+          "points": {
+            "player": "Jermaine Coleman",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Jaiden Haynes",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Kelvin Amoako",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Jaiden Haynes",
+            "value": "4 PTS"
+          }
+        },
+        "conf_id": "45",
+        "conf": null,
+        "rank": null,
+        "loc": "Youngstown State",
+        "nick": "Penguins"
       },
       "espn_line": null,
       "date": "2026-11-18",
@@ -426,95 +594,14 @@
       "p4": true
     },
     {
-      "game_id": "401921134",
-      "start_utc": "2026-11-19T00:30Z",
-      "short_name": "NOLA @ TTU",
-      "state": "pre",
-      "status": "11/18 - 7:30 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "United Supermarkets Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "home": {
-        "team_id": "2641",
-        "abbr": "TTU",
-        "name": "Texas Tech Red Raiders",
-        "score": 0,
-        "winner": null,
-        "record": "4-0",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Cruz Davis",
-            "value": "15.5"
-          },
-          "reboundsPerGame": {
-            "player": "Josiah Moseley",
-            "value": "5.8"
-          },
-          "assistsPerGame": {
-            "player": "Cruz Davis",
-            "value": "5.2"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 9,
-        "loc": "Texas Tech",
-        "nick": "Red Raiders"
-      },
-      "away": {
-        "team_id": "2443",
-        "abbr": "NOLA",
-        "name": "LSU New Orleans Privateers",
-        "score": 0,
-        "winner": null,
-        "record": "2-1",
-        "home_record": "2-0",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Kahlil Singleton",
-            "value": "19.7"
-          },
-          "reboundsPerGame": {
-            "player": "Enzo Boudouma",
-            "value": "7.3"
-          },
-          "assistsPerGame": {
-            "player": "Cham Okey",
-            "value": "2.7"
-          }
-        },
-        "conf_id": "25",
-        "conf": null,
-        "rank": null,
-        "loc": "LSU New Orleans",
-        "nick": "Privateers"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "TTU -36.5",
-        "spread": -36.5,
-        "over_under": 157.5
-      },
-      "date": "2026-11-18",
-      "p4": true
-    },
-    {
       "game_id": "401920515",
       "start_utc": "2026-11-19T00:30Z",
       "short_name": "KU VS WVU",
-      "state": "pre",
-      "status": "11/18 - 7:30 PM EST",
+      "state": "in",
+      "status": "15:00 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:00",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -524,23 +611,27 @@
         "team_id": "277",
         "abbr": "WVU",
         "name": "West Virginia Mountaineers",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "4-0",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Miles Sadler",
-            "value": "17.8"
+          "points": {
+            "player": "Mouhamed Sylla",
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "Amadou Seini",
-            "value": "6.2"
+          "rebounds": {
+            "player": "Mouhamed Sylla",
+            "value": "1"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Miles Sadler",
-            "value": "6.8"
+            "value": "1"
+          },
+          "rating": {
+            "player": "Mouhamed Sylla",
+            "value": "4 PTS"
           }
         },
         "conf_id": "8",
@@ -553,23 +644,27 @@
         "team_id": "2305",
         "abbr": "KU",
         "name": "Kansas Jayhawks",
-        "score": 0,
+        "score": 13,
         "winner": null,
         "record": "4-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tre White",
-            "value": "19.0"
+          "points": {
+            "player": "Trey Kaufman-Renn",
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "Tyran Stokes",
-            "value": "8.0"
+          "rebounds": {
+            "player": "Trey Kaufman-Renn",
+            "value": "2"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Taylen Kinney",
-            "value": "3.8"
+            "value": "2"
+          },
+          "rating": {
+            "player": "Keanu Dawes",
+            "value": "4 PTS"
           }
         },
         "conf_id": "8",
@@ -578,93 +673,7 @@
         "loc": "Kansas",
         "nick": "Jayhawks"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "KU -6.5",
-        "spread": 6.5,
-        "over_under": 150.5
-      },
-      "date": "2026-11-18",
-      "p4": true
-    },
-    {
-      "game_id": "401920751",
-      "start_utc": "2026-11-19T00:30Z",
-      "short_name": "YSU @ CIN",
-      "state": "pre",
-      "status": "11/18 - 7:30 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Fifth Third Arena (OH)",
-      "neutral_site": false,
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "home": {
-        "team_id": "2132",
-        "abbr": "CIN",
-        "name": "Cincinnati Bearcats",
-        "score": 0,
-        "winner": null,
-        "record": "3-1",
-        "home_record": "2-1",
-        "away_record": "1-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Tylen Riley",
-            "value": "11.2"
-          },
-          "reboundsPerGame": {
-            "player": "Myles Colvin",
-            "value": "5.5"
-          },
-          "assistsPerGame": {
-            "player": "Tylen Riley",
-            "value": "3.2"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Cincinnati",
-        "nick": "Bearcats"
-      },
-      "away": {
-        "team_id": "2754",
-        "abbr": "YSU",
-        "name": "Youngstown State Penguins",
-        "score": 0,
-        "winner": null,
-        "record": "2-2",
-        "home_record": "1-0",
-        "away_record": "1-2",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Linus Holmstrom",
-            "value": "14.3"
-          },
-          "reboundsPerGame": {
-            "player": "Kelvin Amoako",
-            "value": "7.5"
-          },
-          "assistsPerGame": {
-            "player": "Dom Aekins",
-            "value": "5.0"
-          }
-        },
-        "conf_id": "45",
-        "conf": null,
-        "rank": null,
-        "loc": "Youngstown State",
-        "nick": "Penguins"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "CIN -29.5",
-        "spread": -29.5,
-        "over_under": 153.5
-      },
+      "espn_line": null,
       "date": "2026-11-18",
       "p4": true
     },
@@ -1311,7 +1320,7 @@
         "provider": "DraftKings",
         "details": "MIZ -40.5",
         "spread": -40.5,
-        "over_under": 153.5
+        "over_under": 154.5
       },
       "date": "2026-11-18",
       "p4": true
