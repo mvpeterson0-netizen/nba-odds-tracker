@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-19T23:00:21+00:00",
+  "fetched_at": "2026-11-19T23:15:23+00:00",
   "source": "espn",
   "count": 15,
   "game_date": "2026-11-19",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-19T22:00Z",
       "short_name": "ND VS AUB",
       "state": "in",
-      "status": "Halftime",
+      "status": "19:46 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "19:46",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -84,6 +84,82 @@
         "rank": null,
         "loc": "Notre Dame",
         "nick": "Fighting Irish"
+      },
+      "espn_line": null,
+      "date": "2026-11-19",
+      "p4": true
+    },
+    {
+      "game_id": "401918959",
+      "start_utc": "2026-11-19T23:00Z",
+      "short_name": "MUR VS NCSU",
+      "state": "in",
+      "status": "15:50 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "15:50",
+      "venue": "Baha Mar Convention Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "CBSSN"
+      ],
+      "home": {
+        "team_id": "152",
+        "abbr": "NCSU",
+        "name": "NC State Wolfpack",
+        "score": 2,
+        "winner": null,
+        "record": "4-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Preston Edmead",
+            "value": "2"
+          },
+          "rebounds": {
+            "player": "Kyle Evans",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Preston Edmead",
+            "value": "2 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "NC State",
+        "nick": "Wolfpack"
+      },
+      "away": {
+        "team_id": "93",
+        "abbr": "MUR",
+        "name": "Murray State Racers",
+        "score": 3,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Talis Soulhac",
+            "value": "2"
+          },
+          "rebounds": {
+            "player": "Talis Soulhac",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Talis Soulhac",
+            "value": "2 PTS"
+          }
+        },
+        "conf_id": "18",
+        "conf": null,
+        "rank": null,
+        "loc": "Murray State",
+        "nick": "Racers"
       },
       "espn_line": null,
       "date": "2026-11-19",
@@ -170,87 +246,6 @@
         "nick": "Gators"
       },
       "espn_line": null,
-      "date": "2026-11-19",
-      "p4": true
-    },
-    {
-      "game_id": "401918959",
-      "start_utc": "2026-11-19T23:00Z",
-      "short_name": "MUR VS NCSU",
-      "state": "pre",
-      "status": "11/19 - 6:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Baha Mar Convention Center",
-      "neutral_site": true,
-      "broadcasts": [
-        "CBSSN"
-      ],
-      "home": {
-        "team_id": "152",
-        "abbr": "NCSU",
-        "name": "NC State Wolfpack",
-        "score": 0,
-        "winner": null,
-        "record": "4-0",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Ven-Allen Lubin",
-            "value": "15.2"
-          },
-          "reboundsPerGame": {
-            "player": "Ven-Allen Lubin",
-            "value": "9.2"
-          },
-          "assistsPerGame": {
-            "player": "Preston Edmead",
-            "value": "6.5"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "NC State",
-        "nick": "Wolfpack"
-      },
-      "away": {
-        "team_id": "93",
-        "abbr": "MUR",
-        "name": "Murray State Racers",
-        "score": 0,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Roman Domon",
-            "value": "22.4"
-          },
-          "reboundsPerGame": {
-            "player": "Brigham Rogers",
-            "value": "7.6"
-          },
-          "assistsPerGame": {
-            "player": "Christian Jones",
-            "value": "4.0"
-          }
-        },
-        "conf_id": "18",
-        "conf": null,
-        "rank": null,
-        "loc": "Murray State",
-        "nick": "Racers"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "NCSU -3.5",
-        "spread": 3.5,
-        "over_under": 164.5
-      },
       "date": "2026-11-19",
       "p4": true
     },
