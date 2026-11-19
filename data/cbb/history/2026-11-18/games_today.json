@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-19T04:30:21+00:00",
+  "fetched_at": "2026-11-19T04:45:20+00:00",
   "source": "espn",
   "count": 20,
   "game_date": "2026-11-18",
@@ -9,11 +9,11 @@
       "game_id": "401909742",
       "start_utc": "2026-11-19T02:00Z",
       "short_name": "CONN @ ARIZ",
-      "state": "in",
-      "status": "1:14 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "1:14",
+      "clock": "0:00",
       "venue": "McKale Center at ALKEME Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,10 +23,10 @@
         "team_id": "12",
         "abbr": "ARIZ",
         "name": "Arizona Wildcats",
-        "score": 79,
-        "winner": null,
-        "record": "3-1",
-        "home_record": "2-0",
+        "score": 85,
+        "winner": true,
+        "record": "4-1",
+        "home_record": "3-0",
         "away_record": "1-0",
         "leaders": {
           "points": {
@@ -39,11 +39,11 @@
           },
           "assists": {
             "player": "Ivan Kharchenkov",
-            "value": "6"
+            "value": "7"
           },
           "rating": {
             "player": "Motiejus Krivas",
-            "value": "14 PTS, 12 REB, 4 BLK"
+            "value": "18 PTS, 12 REB, 4 BLK"
           }
         },
         "conf_id": "8",
@@ -56,19 +56,19 @@
         "team_id": "41",
         "abbr": "CONN",
         "name": "UConn Huskies",
-        "score": 72,
-        "winner": null,
-        "record": "4-0",
+        "score": 79,
+        "winner": false,
+        "record": "4-1",
         "home_record": "3-0",
-        "away_record": "0-0",
+        "away_record": "0-1",
         "leaders": {
           "points": {
             "player": "Braylon Mullins",
-            "value": "27"
+            "value": "29"
           },
           "rebounds": {
-            "player": "Na'jai Hines",
-            "value": "9"
+            "player": "Colben Landrew",
+            "value": "10"
           },
           "assists": {
             "player": "Silas Demary Jr.",
@@ -76,7 +76,7 @@
           },
           "rating": {
             "player": "Braylon Mullins",
-            "value": "27 PTS"
+            "value": "29 PTS"
           }
         },
         "conf_id": "4",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-19T03:30Z",
       "short_name": "CSUF @ UCLA",
       "state": "in",
-      "status": "Halftime",
+      "status": "19:04 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "19:04",
       "venue": "Pauley Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "26",
         "abbr": "UCLA",
         "name": "UCLA Bruins",
-        "score": 40,
+        "score": 41,
         "winner": null,
         "record": "4-0",
         "home_record": "3-0",
@@ -140,7 +140,7 @@
         "team_id": "2239",
         "abbr": "CSUF",
         "name": "Cal State Fullerton Titans",
-        "score": 35,
+        "score": 37,
         "winner": null,
         "record": "2-1",
         "home_record": "1-0",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "Joshua Ward",
-            "value": "8 PTS"
+            "value": "10 PTS"
           }
         },
         "conf_id": "9",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-19T03:30Z",
       "short_name": "UNLV VS AUB",
       "state": "in",
-      "status": "Halftime",
+      "status": "18:03 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "18:03",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -191,27 +191,27 @@
         "team_id": "2",
         "abbr": "AUB",
         "name": "Auburn Tigers",
-        "score": 37,
+        "score": 40,
         "winner": null,
         "record": "2-2",
         "home_record": "2-1",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Adam Olsen",
-            "value": "12"
+            "player": "Tahaad Pettiford",
+            "value": "13"
           },
           "rebounds": {
             "player": "Thomas Dowd",
-            "value": "8"
+            "value": "9"
           },
           "assists": {
             "player": "George Kimble III",
             "value": "4"
           },
           "rating": {
-            "player": "Owen Freeman",
-            "value": "10 PTS"
+            "player": "Tahaad Pettiford",
+            "value": "13 PTS"
           }
         },
         "conf_id": "23",
@@ -224,15 +224,15 @@
         "team_id": "2439",
         "abbr": "UNLV",
         "name": "UNLV Rebels",
-        "score": 29,
+        "score": 33,
         "winner": null,
         "record": "3-1",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Dontrez Williams",
-            "value": "8"
+            "player": "Cam Miles",
+            "value": "9"
           },
           "rebounds": {
             "player": "Sebastian Mack",
@@ -240,7 +240,7 @@
           },
           "assists": {
             "player": "Cam Miles",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Dontrez Williams",
