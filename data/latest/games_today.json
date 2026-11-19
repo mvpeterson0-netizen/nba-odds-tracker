@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-19T03:15:15+00:00",
+  "fetched_at": "2026-11-19T03:30:16+00:00",
   "source": "espn",
   "count": 12,
   "game_date": "2026-11-18",
@@ -231,7 +231,7 @@
       "status": "Final",
       "completed": true,
       "period": 4,
-      "clock": "0.0",
+      "clock": "12:00",
       "venue": "Kia Center",
       "neutral_site": false,
       "broadcasts": null,
@@ -442,10 +442,10 @@
       "start_utc": "2026-11-19T01:00Z",
       "short_name": "DET @ NO",
       "state": "in",
-      "status": "5:56 - 4th",
+      "status": "29.3 - 4th",
       "completed": false,
       "period": 4,
-      "clock": "5:56",
+      "clock": "29.3",
       "venue": "Smoothie King Center",
       "neutral_site": false,
       "broadcasts": [
@@ -456,7 +456,7 @@
         "team_id": "3",
         "abbr": "NO",
         "name": "New Orleans Pelicans",
-        "score": 96,
+        "score": 109,
         "winner": null,
         "record": "5-10",
         "home_record": "4-6",
@@ -464,19 +464,19 @@
         "leaders": {
           "points": {
             "player": "Zion Williamson",
-            "value": "20"
+            "value": "24"
           },
           "rebounds": {
-            "player": "Zion Williamson",
-            "value": "6"
+            "player": "Saddiq Bey",
+            "value": "8"
           },
           "assists": {
             "player": "Saddiq Bey",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
-            "player": "Zion Williamson",
-            "value": "20 PTS, 6 REB"
+            "player": "Jordan Poole",
+            "value": "22 PTS"
           }
         }
       },
@@ -484,18 +484,18 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 111,
+        "score": 122,
         "winner": null,
         "record": "9-4",
         "home_record": "3-2",
         "away_record": "6-2",
         "leaders": {
           "points": {
-            "player": "Javonte Green",
-            "value": "18"
+            "player": "John Collins",
+            "value": "20"
           },
           "rebounds": {
-            "player": "Javonte Green",
+            "player": "John Collins",
             "value": "7"
           },
           "assists": {
@@ -503,8 +503,8 @@
             "value": "9"
           },
           "rating": {
-            "player": "Javonte Green",
-            "value": "18 PTS, 7 REB"
+            "player": "John Collins",
+            "value": "20 PTS, 7 REB"
           }
         }
       },
@@ -514,11 +514,11 @@
       "game_id": "401910014",
       "start_utc": "2026-11-19T01:00Z",
       "short_name": "ATL @ OKC",
-      "state": "in",
-      "status": "3.3 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "3.3",
+      "clock": "0.0",
       "venue": "Paycom Center",
       "neutral_site": false,
       "broadcasts": [
@@ -530,9 +530,9 @@
         "abbr": "OKC",
         "name": "Oklahoma City Thunder",
         "score": 112,
-        "winner": null,
-        "record": "9-5",
-        "home_record": "5-0",
+        "winner": false,
+        "record": "9-6",
+        "home_record": "5-1",
         "away_record": "4-5",
         "leaders": {
           "points": {
@@ -557,15 +557,15 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 116,
-        "winner": null,
-        "record": "8-6",
+        "score": 117,
+        "winner": true,
+        "record": "9-6",
         "home_record": "3-3",
-        "away_record": "5-3",
+        "away_record": "6-3",
         "leaders": {
           "points": {
             "player": "Onyeka Okongwu",
-            "value": "27"
+            "value": "28"
           },
           "rebounds": {
             "player": "Jalen Johnson",
@@ -576,8 +576,8 @@
             "value": "11"
           },
           "rating": {
-            "player": "Jalen Johnson",
-            "value": "16 PTS, 12 REB, 11 AST"
+            "player": "Onyeka Okongwu",
+            "value": "28 PTS, 9 REB"
           }
         }
       },
@@ -587,11 +587,11 @@
       "game_id": "401910016",
       "start_utc": "2026-11-19T01:00Z",
       "short_name": "GS @ DAL",
-      "state": "in",
-      "status": "3:59 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "3:59",
+      "clock": "0.0",
       "venue": "American Airlines Center",
       "neutral_site": false,
       "broadcasts": [
@@ -602,10 +602,10 @@
         "team_id": "6",
         "abbr": "DAL",
         "name": "Dallas Mavericks",
-        "score": 109,
-        "winner": null,
-        "record": "7-7",
-        "home_record": "5-2",
+        "score": 116,
+        "winner": true,
+        "record": "8-7",
+        "home_record": "6-2",
         "away_record": "2-5",
         "leaders": {
           "points": {
@@ -630,15 +630,15 @@
         "team_id": "9",
         "abbr": "GS",
         "name": "Golden State Warriors",
-        "score": 86,
-        "winner": null,
-        "record": "8-6",
+        "score": 94,
+        "winner": false,
+        "record": "8-7",
         "home_record": "6-1",
-        "away_record": "2-5",
+        "away_record": "2-6",
         "leaders": {
           "points": {
             "player": "Will Richard",
-            "value": "14"
+            "value": "20"
           },
           "rebounds": {
             "player": "Charles Bassey",
@@ -649,8 +649,8 @@
             "value": "6"
           },
           "rating": {
-            "player": "Yaxel Lendeborg",
-            "value": "13 PTS"
+            "player": "Will Richard",
+            "value": "20 PTS, 4 STL"
           }
         }
       },
@@ -661,10 +661,10 @@
       "start_utc": "2026-11-19T02:30Z",
       "short_name": "BOS @ DEN",
       "state": "in",
-      "status": "49.8 - 1st",
+      "status": "8:42 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "49.8",
+      "period": 2,
+      "clock": "8:42",
       "venue": "Ball Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -674,7 +674,7 @@
         "team_id": "7",
         "abbr": "DEN",
         "name": "Denver Nuggets",
-        "score": 22,
+        "score": 28,
         "winner": null,
         "record": "7-5",
         "home_record": "2-3",
@@ -686,7 +686,7 @@
           },
           "rebounds": {
             "player": "Trevon Brazile",
-            "value": "3"
+            "value": "5"
           },
           "assists": {
             "player": "Nikola Jokic",
@@ -702,7 +702,7 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 27,
+        "score": 38,
         "winner": null,
         "record": "11-3",
         "home_record": "6-1",
@@ -718,7 +718,7 @@
           },
           "assists": {
             "player": "Derrick White",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Jayson Tatum",
@@ -733,10 +733,10 @@
       "start_utc": "2026-11-19T03:00Z",
       "short_name": "UTAH @ LAL",
       "state": "in",
-      "status": "9:58 - 1st",
+      "status": "3:23 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "9:58",
+      "clock": "3:23",
       "venue": "crypto.com Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -749,7 +749,7 @@
         "team_id": "13",
         "abbr": "LAL",
         "name": "Los Angeles Lakers",
-        "score": 6,
+        "score": 20,
         "winner": null,
         "record": "13-2",
         "home_record": "6-1",
@@ -757,15 +757,19 @@
         "leaders": {
           "points": {
             "player": "Luka Doncic",
-            "value": "4"
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Quentin Grimes",
+            "value": "2"
           },
           "assists": {
-            "player": "Walker Kessler",
-            "value": "1"
+            "player": "Luka Doncic",
+            "value": "2"
           },
           "rating": {
             "player": "Luka Doncic",
-            "value": "4 PTS"
+            "value": "6 PTS"
           }
         }
       },
@@ -773,7 +777,7 @@
         "team_id": "26",
         "abbr": "UTAH",
         "name": "Utah Jazz",
-        "score": 9,
+        "score": 23,
         "winner": null,
         "record": "2-13",
         "home_record": "1-7",
@@ -781,19 +785,19 @@
         "leaders": {
           "points": {
             "player": "Ace Bailey",
-            "value": "3"
+            "value": "5"
           },
           "rebounds": {
-            "player": "Ace Bailey",
-            "value": "1"
+            "player": "Mo Bamba",
+            "value": "3"
           },
           "assists": {
-            "player": "Ace Bailey",
-            "value": "1"
+            "player": "Keyonte George",
+            "value": "4"
           },
           "rating": {
             "player": "Keyonte George",
-            "value": "3 PTS"
+            "value": "5 PTS"
           }
         }
       },
@@ -804,10 +808,10 @@
       "start_utc": "2026-11-19T03:00Z",
       "short_name": "PHX @ SAC",
       "state": "in",
-      "status": "8:38 - 1st",
+      "status": "2:43 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "8:38",
+      "clock": "2:43",
       "venue": "Golden 1 Center",
       "neutral_site": false,
       "broadcasts": [
@@ -818,7 +822,7 @@
         "team_id": "23",
         "abbr": "SAC",
         "name": "Sacramento Kings",
-        "score": 8,
+        "score": 26,
         "winner": null,
         "record": "1-12",
         "home_record": "0-8",
@@ -826,19 +830,19 @@
         "leaders": {
           "points": {
             "player": "Darius Acuff Jr.",
-            "value": "4"
+            "value": "10"
           },
           "rebounds": {
             "player": "Domantas Sabonis",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
-            "player": "Domantas Sabonis",
-            "value": "1"
+            "player": "Darius Acuff Jr.",
+            "value": "2"
           },
           "rating": {
-            "player": "Domantas Sabonis",
-            "value": "2 PTS"
+            "player": "Darius Acuff Jr.",
+            "value": "10 PTS"
           }
         }
       },
@@ -846,27 +850,27 @@
         "team_id": "21",
         "abbr": "PHX",
         "name": "Phoenix Suns",
-        "score": 9,
+        "score": 25,
         "winner": null,
         "record": "6-7",
         "home_record": "5-4",
         "away_record": "1-3",
         "leaders": {
           "points": {
-            "player": "Dillon Brooks",
-            "value": "5"
+            "player": "Miles Bridges",
+            "value": "6"
           },
           "rebounds": {
             "player": "Miles Bridges",
-            "value": "1"
+            "value": "2"
           },
           "assists": {
             "player": "Dillon Brooks",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
-            "player": "Dillon Brooks",
-            "value": "5 PTS"
+            "player": "Miles Bridges",
+            "value": "6 PTS"
           }
         }
       },
