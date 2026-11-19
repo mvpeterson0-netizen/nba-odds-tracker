@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-19T03:00:25+00:00",
+  "finished_at": "2026-11-19T03:15:20+00:00",
   "game_date": "2026-11-18",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,10 +17,10 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
+    "new_games": 4,
+    "player_rows": 127,
     "unparsed": [],
-    "queued": 0,
+    "queued": 4,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -31,12 +31,19 @@
       "ODDS_API_KEY_2": 0,
       "ODDS_API_KEY_20K": 11752
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "CSU Fullerton Titans @ UCLA Bruins",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 54,
+    "events": 49,
     "p4_events": 13,
     "unmatched": [],
-    "due": 0,
+    "due": 1,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",
