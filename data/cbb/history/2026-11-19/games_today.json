@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-19T05:45:25+00:00",
+  "fetched_at": "2026-11-19T06:00:29+00:00",
   "source": "espn",
   "count": 15,
   "game_date": "2026-11-19",
@@ -78,7 +78,7 @@
         "nick": "Gators"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "FLA -9.5",
         "spread": 9.5,
         "over_under": 149.5
@@ -89,7 +89,7 @@
     {
       "game_id": "401920519",
       "start_utc": "2026-11-19T22:00Z",
-      "short_name": "ND VS TBD",
+      "short_name": "ND VS AUB",
       "state": "pre",
       "status": "11/19 - 5:00 PM EST",
       "completed": false,
@@ -101,20 +101,33 @@
         "ESPN"
       ],
       "home": {
-        "team_id": "-1",
-        "abbr": "TBD",
-        "name": "TBD",
+        "team_id": "2",
+        "abbr": "AUB",
+        "name": "Auburn Tigers",
         "score": 0,
         "winner": null,
-        "record": null,
-        "home_record": null,
-        "away_record": null,
-        "leaders": null,
-        "conf_id": null,
-        "conf": null,
+        "record": "3-2",
+        "home_record": "2-1",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Tahaad Pettiford",
+            "value": "18.5"
+          },
+          "reboundsPerGame": {
+            "player": "Narcisse Ngoy",
+            "value": "8.8"
+          },
+          "assistsPerGame": {
+            "player": "Tahaad Pettiford",
+            "value": "3.2"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
         "rank": null,
-        "loc": "TBD",
-        "nick": "TBD"
+        "loc": "Auburn",
+        "nick": "Tigers"
       },
       "away": {
         "team_id": "87",
@@ -222,7 +235,7 @@
         "nick": "Wolfpack"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "NCSU -4.5",
         "spread": 4.5,
         "over_under": 161.5
@@ -303,10 +316,10 @@
         "nick": "Retrievers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "OSU -32.5",
         "spread": -32.5,
-        "over_under": 158.5
+        "over_under": 159.5
       },
       "date": "2026-11-19",
       "p4": true
@@ -384,7 +397,7 @@
         "nick": "Thunderbirds"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TEX -38.5",
         "spread": -38.5,
         "over_under": 157.5
@@ -465,7 +478,7 @@
         "nick": "Hatters"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "LOU -35.5",
         "spread": -35.5,
         "over_under": 153.5
@@ -546,7 +559,7 @@
         "nick": "Aggies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TCU -1.5",
         "spread": -1.5,
         "over_under": 162.5
@@ -627,7 +640,7 @@
         "nick": "Pirates"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "WIS -4.5",
         "spread": -4.5,
         "over_under": 139.5
@@ -638,7 +651,7 @@
     {
       "game_id": "401920520",
       "start_utc": "2026-11-20T01:30Z",
-      "short_name": "RUTG VS TBD",
+      "short_name": "RUTG VS UNLV",
       "state": "pre",
       "status": "11/19 - 8:30 PM EST",
       "completed": false,
@@ -650,20 +663,33 @@
         "ESPN2"
       ],
       "home": {
-        "team_id": "-1",
-        "abbr": "TBD",
-        "name": "TBD",
+        "team_id": "2439",
+        "abbr": "UNLV",
+        "name": "UNLV Rebels",
         "score": 0,
         "winner": null,
-        "record": null,
-        "home_record": null,
-        "away_record": null,
-        "leaders": null,
-        "conf_id": null,
+        "record": "3-2",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Sebastian Mack",
+            "value": "18.5"
+          },
+          "reboundsPerGame": {
+            "player": "Tyrin Jones",
+            "value": "5.5"
+          },
+          "assistsPerGame": {
+            "player": "Cam Miles",
+            "value": "3.0"
+          }
+        },
+        "conf_id": "44",
         "conf": null,
         "rank": null,
-        "loc": "TBD",
-        "nick": "TBD"
+        "loc": "UNLV",
+        "nick": "Rebels"
       },
       "away": {
         "team_id": "164",
@@ -771,7 +797,7 @@
         "nick": "Beavers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ORE -1.5",
         "spread": -1.5,
         "over_under": 162.5
@@ -852,9 +878,9 @@
         "nick": "Trailblazers"
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "WASH -17.5",
-        "spread": -17.5,
+        "provider": "Draft Kings",
+        "details": "WASH -18.5",
+        "spread": -18.5,
         "over_under": 159.5
       },
       "date": "2026-11-19",
@@ -933,7 +959,7 @@
         "nick": "Hornets"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "STAN -16.5",
         "spread": -16.5,
         "over_under": 154.5
@@ -1014,7 +1040,7 @@
         "nick": "Lions"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CAL -13.5",
         "spread": -13.5,
         "over_under": 145.5
@@ -1095,7 +1121,7 @@
         "nick": "Cougars"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "HOU -2.5",
         "spread": 2.5,
         "over_under": 149.5
@@ -1176,7 +1202,7 @@
         "nick": "Texans"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "USC -26.5",
         "spread": -26.5,
         "over_under": 159.5
