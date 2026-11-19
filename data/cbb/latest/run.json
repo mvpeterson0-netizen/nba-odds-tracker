@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-19T01:00:25+00:00",
+  "finished_at": "2026-11-19T01:15:25+00:00",
   "game_date": "2026-11-18",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -31,20 +31,54 @@
       "ODDS_API_KEY_2": 0,
       "ODDS_API_KEY_20K": 11853
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "South Dakota Coyotes @ Nebraska Cornhuskers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Alcorn St Braves @ Missouri Tigers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Oakland Golden Grizzlies @ Arizona St Sun Devils",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "N Colorado Bears @ BYU Cougars",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Portland Pilots @ Colorado Buffaloes",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "CSU Fullerton Titans @ UCLA Bruins",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 75,
     "p4_events": 16,
     "unmatched": [],
-    "due": 0,
+    "due": 6,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "not_due",
       "morning_due": false,
-      "pregame_due": 5,
-      "pull_type": "pregame",
-      "rows": 40,
-      "credits_last": 2
+      "pregame_due": 0
     },
     "status": "ok"
   }
