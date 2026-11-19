@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-19T00:00:34+00:00",
+  "finished_at": "2026-11-19T00:15:27+00:00",
   "game_date": "2026-11-18",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,10 +17,10 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 1,
-    "player_rows": 29,
+    "new_games": 0,
+    "player_rows": 0,
     "unparsed": [],
-    "queued": 1,
+    "queued": 0,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -29,21 +29,100 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 11877
+      "ODDS_API_KEY_20K": 11861
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Youngstown St Penguins @ Cincinnati Bearcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "LSU Tigers @ Texas Tech Red Raiders",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "New Orleans Privateers @ Texas Tech Red Raiders",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Boston College Eagles @ Harvard Crimson",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Campbell Fighting Camels @ Oklahoma Sooners",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Cornell Big Red @ Syracuse Orange",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "UL Monroe Warhawks @ LSU Tigers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "South Dakota Coyotes @ Nebraska Cornhuskers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Alcorn St Braves @ Missouri Tigers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Oakland Golden Grizzlies @ Arizona St Sun Devils",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "N Colorado Bears @ BYU Cougars",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Portland Pilots @ Colorado Buffaloes",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "CSU Fullerton Titans @ UCLA Bruins",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 77,
+    "events": 76,
     "p4_events": 24,
     "unmatched": [],
-    "due": 0,
+    "due": 13,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "empty",
       "morning_due": false,
-      "pregame_due": 5,
+      "pregame_due": 1,
       "pull_type": "pregame",
-      "rows": 32,
+      "rows": 0,
       "credits_last": 2
     },
     "status": "ok"
