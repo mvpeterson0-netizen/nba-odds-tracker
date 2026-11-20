@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-20T03:15:13+00:00",
+  "fetched_at": "2026-11-20T03:30:15+00:00",
   "source": "espn",
   "count": 4,
   "game_date": "2026-11-19",
@@ -8,11 +8,11 @@
       "game_id": "401910019",
       "start_utc": "2026-11-20T01:00Z",
       "short_name": "GS @ MEM",
-      "state": "in",
-      "status": "4:13 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "4:13",
+      "clock": "0.0",
       "venue": "FedExForum",
       "neutral_site": false,
       "broadcasts": [
@@ -22,10 +22,10 @@
         "team_id": "29",
         "abbr": "MEM",
         "name": "Memphis Grizzlies",
-        "score": 115,
-        "winner": null,
-        "record": "11-4",
-        "home_record": "3-4",
+        "score": 126,
+        "winner": true,
+        "record": "12-4",
+        "home_record": "4-4",
         "away_record": "8-0",
         "leaders": {
           "points": {
@@ -50,15 +50,15 @@
         "team_id": "9",
         "abbr": "GS",
         "name": "Golden State Warriors",
-        "score": 85,
-        "winner": null,
-        "record": "8-7",
+        "score": 98,
+        "winner": false,
+        "record": "8-8",
         "home_record": "6-1",
-        "away_record": "2-6",
+        "away_record": "2-7",
         "leaders": {
           "points": {
-            "player": "Brandin Podziemski",
-            "value": "15"
+            "player": "Charles Bassey",
+            "value": "16"
           },
           "rebounds": {
             "player": "Charles Bassey",
@@ -70,7 +70,7 @@
           },
           "rating": {
             "player": "Charles Bassey",
-            "value": "14 PTS, 13 REB"
+            "value": "16 PTS, 13 REB"
           }
         }
       },
@@ -80,11 +80,11 @@
       "game_id": "401910020",
       "start_utc": "2026-11-20T01:00Z",
       "short_name": "POR @ MIL",
-      "state": "in",
-      "status": "6:25 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "6:25",
+      "clock": "0.0",
       "venue": "Fiserv Forum",
       "neutral_site": false,
       "broadcasts": [
@@ -97,27 +97,27 @@
         "team_id": "15",
         "abbr": "MIL",
         "name": "Milwaukee Bucks",
-        "score": 103,
-        "winner": null,
-        "record": "1-14",
-        "home_record": "1-7",
+        "score": 114,
+        "winner": false,
+        "record": "1-15",
+        "home_record": "1-8",
         "away_record": "0-7",
         "leaders": {
           "points": {
-            "player": "Kasparas Jakucionis",
-            "value": "18"
+            "player": "Tyler Herro",
+            "value": "19"
           },
           "rebounds": {
             "player": "Nate Ament",
-            "value": "8"
+            "value": "9"
           },
           "assists": {
             "player": "Ryan Rollins",
             "value": "6"
           },
           "rating": {
-            "player": "Ryan Rollins",
-            "value": "15 PTS, 6 AST, 4 STL"
+            "player": "Nate Ament",
+            "value": "18 PTS, 9 REB"
           }
         }
       },
@@ -125,19 +125,19 @@
         "team_id": "22",
         "abbr": "POR",
         "name": "Portland Trail Blazers",
-        "score": 106,
-        "winner": null,
-        "record": "9-5",
+        "score": 124,
+        "winner": true,
+        "record": "10-5",
         "home_record": "3-2",
-        "away_record": "6-3",
+        "away_record": "7-3",
         "leaders": {
           "points": {
             "player": "Damian Lillard",
-            "value": "28"
+            "value": "33"
           },
           "rebounds": {
             "player": "Donovan Clingan",
-            "value": "12"
+            "value": "13"
           },
           "assists": {
             "player": "Jrue Holiday",
@@ -145,7 +145,7 @@
           },
           "rating": {
             "player": "Scoot Henderson",
-            "value": "27 PTS"
+            "value": "27 PTS, 7 REB"
           }
         }
       },
@@ -155,11 +155,11 @@
       "game_id": "401910021",
       "start_utc": "2026-11-20T01:00Z",
       "short_name": "NY @ MIN",
-      "state": "in",
-      "status": "3:18 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "3:18",
+      "clock": "0.0",
       "venue": "Target Center",
       "neutral_site": false,
       "broadcasts": [
@@ -170,10 +170,10 @@
         "team_id": "16",
         "abbr": "MIN",
         "name": "Minnesota Timberwolves",
-        "score": 93,
-        "winner": null,
-        "record": "11-4",
-        "home_record": "7-2",
+        "score": 99,
+        "winner": false,
+        "record": "11-5",
+        "home_record": "7-3",
         "away_record": "4-2",
         "leaders": {
           "points": {
@@ -186,7 +186,7 @@
           },
           "assists": {
             "player": "LaMelo Ball",
-            "value": "7"
+            "value": "8"
           },
           "rating": {
             "player": "Jonathan Kuminga",
@@ -199,10 +199,10 @@
         "abbr": "NY",
         "name": "New York Knicks",
         "score": 102,
-        "winner": null,
-        "record": "8-6",
+        "winner": true,
+        "record": "9-6",
         "home_record": "4-3",
-        "away_record": "4-3",
+        "away_record": "5-3",
         "leaders": {
           "points": {
             "player": "Karl-Anthony Towns",
@@ -228,11 +228,11 @@
       "game_id": "401910022",
       "start_utc": "2026-11-20T01:00Z",
       "short_name": "LAC @ SA",
-      "state": "in",
-      "status": "5:12 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "5:12",
+      "clock": "0.0",
       "venue": "Frost Bank Center",
       "neutral_site": false,
       "broadcasts": [
@@ -244,27 +244,27 @@
         "team_id": "24",
         "abbr": "SA",
         "name": "San Antonio Spurs",
-        "score": 111,
-        "winner": null,
-        "record": "12-3",
-        "home_record": "5-3",
+        "score": 124,
+        "winner": true,
+        "record": "13-3",
+        "home_record": "6-3",
         "away_record": "7-0",
         "leaders": {
           "points": {
             "player": "Victor Wembanyama",
-            "value": "26"
+            "value": "32"
           },
           "rebounds": {
             "player": "Victor Wembanyama",
-            "value": "10"
+            "value": "11"
           },
           "assists": {
             "player": "Stephon Castle",
-            "value": "9"
+            "value": "12"
           },
           "rating": {
             "player": "Victor Wembanyama",
-            "value": "26 PTS, 10 REB"
+            "value": "32 PTS, 11 REB"
           }
         }
       },
@@ -272,14 +272,14 @@
         "team_id": "12",
         "abbr": "LAC",
         "name": "LA Clippers",
-        "score": 103,
-        "winner": null,
-        "record": "4-9",
+        "score": 112,
+        "winner": false,
+        "record": "4-10",
         "home_record": "4-4",
-        "away_record": "0-5",
+        "away_record": "0-6",
         "leaders": {
           "points": {
-            "player": "Darius Garland",
+            "player": "Brook Lopez",
             "value": "23"
           },
           "rebounds": {
@@ -288,10 +288,10 @@
           },
           "assists": {
             "player": "Darius Garland",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
-            "player": "Darius Garland",
+            "player": "Brook Lopez",
             "value": "23 PTS"
           }
         }
