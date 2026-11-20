@@ -1,19 +1,103 @@
 {
-  "fetched_at": "2026-11-20T04:15:40+00:00",
+  "fetched_at": "2026-11-20T04:30:22+00:00",
   "source": "espn",
   "count": 15,
   "game_date": "2026-11-19",
   "division_i_games": 36,
   "rows": [
     {
+      "game_id": "401920518",
+      "start_utc": "2026-11-20T04:00Z",
+      "short_name": "HOU VS KU",
+      "state": "in",
+      "status": "11:01 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "11:01",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "2305",
+        "abbr": "KU",
+        "name": "Kansas Jayhawks",
+        "score": 10,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Taylen Kinney",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Keanu Dawes",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Taylen Kinney",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Taylen Kinney",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 11,
+        "loc": "Kansas",
+        "nick": "Jayhawks"
+      },
+      "away": {
+        "team_id": "248",
+        "abbr": "HOU",
+        "name": "Houston Cougars",
+        "score": 26,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Mercy Miller",
+            "value": "9"
+          },
+          "rebounds": {
+            "player": "Mercy Miller",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Dedan Thomas Jr.",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Mercy Miller",
+            "value": "9 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 8,
+        "loc": "Houston",
+        "nick": "Cougars"
+      },
+      "espn_line": null,
+      "date": "2026-11-19",
+      "p4": true
+    },
+    {
       "game_id": "401926773",
       "start_utc": "2026-11-20T04:00Z",
       "short_name": "TAR @ USC",
       "state": "in",
-      "status": "14:25 - 1st",
+      "status": "10:10 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "14:25",
+      "clock": "10:10",
       "venue": "Galen Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,27 +107,27 @@
         "team_id": "30",
         "abbr": "USC",
         "name": "USC Trojans",
-        "score": 10,
+        "score": 25,
         "winner": null,
         "record": "4-0",
         "home_record": "2-0",
         "away_record": "1-0",
         "leaders": {
           "points": {
-            "player": "Darius Ratliff",
-            "value": "3"
+            "player": "Alijah Arenas",
+            "value": "10"
           },
           "rebounds": {
             "player": "Darius Ratliff",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
             "player": "Rodney Rice",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
-            "player": "Darius Ratliff",
-            "value": "3 PTS"
+            "player": "Alijah Arenas",
+            "value": "10 PTS"
           }
         },
         "conf_id": "7",
@@ -56,7 +140,7 @@
         "team_id": "2627",
         "abbr": "TAR",
         "name": "Tarleton State Texans",
-        "score": 7,
+        "score": 11,
         "winner": null,
         "record": "4-1",
         "home_record": "3-0",
@@ -68,10 +152,10 @@
           },
           "rebounds": {
             "player": "Leroy Kelly IV",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
-            "player": "Adrian Shackleton",
+            "player": "Franck Emmou",
             "value": "1"
           },
           "rating": {
@@ -90,98 +174,14 @@
       "p4": true
     },
     {
-      "game_id": "401930884",
-      "start_utc": "2026-11-20T02:00Z",
-      "short_name": "ORST VS ORE",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Moda Center",
-      "neutral_site": true,
-      "broadcasts": [
-        "BTN"
-      ],
-      "home": {
-        "team_id": "2483",
-        "abbr": "ORE",
-        "name": "Oregon Ducks",
-        "score": 71,
-        "winner": false,
-        "record": "3-1",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Jasper Johnson",
-            "value": "18"
-          },
-          "rebounds": {
-            "player": "Malique Ewin",
-            "value": "14"
-          },
-          "assists": {
-            "player": "Malique Ewin",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Malique Ewin",
-            "value": "15 PTS, 14 REB, 7 AST"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Oregon",
-        "nick": "Ducks"
-      },
-      "away": {
-        "team_id": "204",
-        "abbr": "ORST",
-        "name": "Oregon State Beavers",
-        "score": 82,
-        "winner": true,
-        "record": "6-0",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Legend Smiley",
-            "value": "21"
-          },
-          "rebounds": {
-            "player": "Xavion Staton",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Josiah Lake II",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Legend Smiley",
-            "value": "21 PTS, 6 REB"
-          }
-        },
-        "conf_id": "21",
-        "conf": null,
-        "rank": null,
-        "loc": "Oregon State",
-        "nick": "Beavers"
-      },
-      "espn_line": null,
-      "date": "2026-11-19",
-      "p4": true
-    },
-    {
       "game_id": "401920349",
       "start_utc": "2026-11-20T03:00Z",
       "short_name": "SAC @ STAN",
       "state": "in",
-      "status": "16:55 - 2nd",
+      "status": "11:13 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "16:55",
+      "clock": "11:13",
       "venue": "Maples Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -191,7 +191,7 @@
         "team_id": "24",
         "abbr": "STAN",
         "name": "Stanford Cardinal",
-        "score": 40,
+        "score": 54,
         "winner": null,
         "record": "4-1",
         "home_record": "4-0",
@@ -199,19 +199,19 @@
         "leaders": {
           "points": {
             "player": "Julius Price",
-            "value": "13"
+            "value": "15"
           },
           "rebounds": {
-            "player": "Aziz Olajuwon",
-            "value": "3"
+            "player": "Julius Price",
+            "value": "5"
           },
           "assists": {
-            "player": "Nick Townsend",
-            "value": "1"
+            "player": "Christian Bliss",
+            "value": "2"
           },
           "rating": {
             "player": "Austin Maurer",
-            "value": "8 PTS, 3 BLK"
+            "value": "10 PTS, 4 BLK"
           }
         },
         "conf_id": "2",
@@ -224,7 +224,7 @@
         "team_id": "16",
         "abbr": "SAC",
         "name": "Sacramento State Hornets",
-        "score": 38,
+        "score": 49,
         "winner": null,
         "record": "1-2",
         "home_record": "1-1",
@@ -232,19 +232,19 @@
         "leaders": {
           "points": {
             "player": "Larry Hughes II",
-            "value": "12"
+            "value": "15"
           },
           "rebounds": {
             "player": "Sasa Ciani",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
-            "player": "Mikey Williams",
+            "player": "Marcus Wilson",
             "value": "3"
           },
           "rating": {
             "player": "Sasa Ciani",
-            "value": "11 PTS, 7 REB"
+            "value": "14 PTS, 8 REB"
           }
         },
         "conf_id": "9",
@@ -262,10 +262,10 @@
       "start_utc": "2026-11-20T03:00Z",
       "short_name": "ETAM @ CAL",
       "state": "in",
-      "status": "14:40 - 2nd",
+      "status": "8:59 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "14:40",
+      "clock": "8:59",
       "venue": "Haas Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -275,7 +275,7 @@
         "team_id": "25",
         "abbr": "CAL",
         "name": "California Golden Bears",
-        "score": 52,
+        "score": 66,
         "winner": null,
         "record": "3-2",
         "home_record": "3-1",
@@ -283,11 +283,11 @@
         "leaders": {
           "points": {
             "player": "Nojus Indrusaitis",
-            "value": "15"
+            "value": "18"
           },
           "rebounds": {
             "player": "Dominykas Daubaris",
-            "value": "5"
+            "value": "7"
           },
           "assists": {
             "player": "Jordan Ross",
@@ -295,7 +295,7 @@
           },
           "rating": {
             "player": "Dominykas Daubaris",
-            "value": "7 PTS, 4 BLK"
+            "value": "7 PTS, 7 REB, 3 STL, 4 BLK"
           }
         },
         "conf_id": "2",
@@ -308,7 +308,7 @@
         "team_id": "2837",
         "abbr": "ETAM",
         "name": "East Texas A&M Lions",
-        "score": 37,
+        "score": 47,
         "winner": null,
         "record": "3-2",
         "home_record": "0-1",
@@ -1064,6 +1064,90 @@
       "p4": true
     },
     {
+      "game_id": "401930884",
+      "start_utc": "2026-11-20T02:00Z",
+      "short_name": "ORST VS ORE",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Moda Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "BTN"
+      ],
+      "home": {
+        "team_id": "2483",
+        "abbr": "ORE",
+        "name": "Oregon Ducks",
+        "score": 71,
+        "winner": false,
+        "record": "3-1",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Jasper Johnson",
+            "value": "18"
+          },
+          "rebounds": {
+            "player": "Malique Ewin",
+            "value": "14"
+          },
+          "assists": {
+            "player": "Malique Ewin",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Malique Ewin",
+            "value": "15 PTS, 14 REB, 7 AST"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Oregon",
+        "nick": "Ducks"
+      },
+      "away": {
+        "team_id": "204",
+        "abbr": "ORST",
+        "name": "Oregon State Beavers",
+        "score": 82,
+        "winner": true,
+        "record": "6-0",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Legend Smiley",
+            "value": "21"
+          },
+          "rebounds": {
+            "player": "Xavion Staton",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Josiah Lake II",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Legend Smiley",
+            "value": "21 PTS, 6 REB"
+          }
+        },
+        "conf_id": "21",
+        "conf": null,
+        "rank": null,
+        "loc": "Oregon State",
+        "nick": "Beavers"
+      },
+      "espn_line": null,
+      "date": "2026-11-19",
+      "p4": true
+    },
+    {
       "game_id": "401925941",
       "start_utc": "2026-11-20T02:00Z",
       "short_name": "UTU @ WASH",
@@ -1142,90 +1226,6 @@
         "rank": null,
         "loc": "Utah Tech",
         "nick": "Trailblazers"
-      },
-      "espn_line": null,
-      "date": "2026-11-19",
-      "p4": true
-    },
-    {
-      "game_id": "401920518",
-      "start_utc": "2026-11-20T04:00Z",
-      "short_name": "HOU VS KU",
-      "state": "in",
-      "status": "17:41 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "17:41",
-      "venue": "Michelob ULTRA Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN"
-      ],
-      "home": {
-        "team_id": "2305",
-        "abbr": "KU",
-        "name": "Kansas Jayhawks",
-        "score": 3,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Taylen Kinney",
-            "value": "3"
-          },
-          "rebounds": {
-            "player": "Taylen Kinney",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Tre White",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Taylen Kinney",
-            "value": "3 PTS"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 11,
-        "loc": "Kansas",
-        "nick": "Jayhawks"
-      },
-      "away": {
-        "team_id": "248",
-        "abbr": "HOU",
-        "name": "Houston Cougars",
-        "score": 4,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Delrecco Gillespie",
-            "value": "2"
-          },
-          "rebounds": {
-            "player": "Delrecco Gillespie",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Joseph Tugler",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Dedan Thomas Jr.",
-            "value": "2 PTS"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 8,
-        "loc": "Houston",
-        "nick": "Cougars"
       },
       "espn_line": null,
       "date": "2026-11-19",
