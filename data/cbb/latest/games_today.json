@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-20T02:00:26+00:00",
+  "fetched_at": "2026-11-20T02:15:21+00:00",
   "source": "espn",
   "count": 15,
   "game_date": "2026-11-19",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-20T01:00Z",
       "short_name": "SUU @ TEX",
       "state": "in",
-      "status": "Halftime",
+      "status": "15:28 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "15:28",
       "venue": "Moody Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "251",
         "abbr": "TEX",
         "name": "Texas Longhorns",
-        "score": 40,
+        "score": 48,
         "winner": null,
         "record": "4-0",
         "home_record": "3-0",
@@ -35,15 +35,15 @@
           },
           "rebounds": {
             "player": "Matas Vokietaitis",
-            "value": "7"
+            "value": "9"
           },
           "assists": {
             "player": "David Punch",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
-            "player": "Matas Vokietaitis",
-            "value": "15 PTS, 7 REB"
+            "player": "David Punch",
+            "value": "12 PTS"
           }
         },
         "conf_id": "23",
@@ -56,27 +56,27 @@
         "team_id": "253",
         "abbr": "SUU",
         "name": "Southern Utah Thunderbirds",
-        "score": 37,
+        "score": 45,
         "winner": null,
         "record": "3-2",
         "home_record": "3-0",
         "away_record": "0-2",
         "leaders": {
           "points": {
-            "player": "Jaiden Feroah",
-            "value": "8"
+            "player": "Dylan Sanders",
+            "value": "11"
           },
           "rebounds": {
             "player": "Jaiden Feroah",
-            "value": "5"
+            "value": "9"
           },
           "assists": {
-            "player": "Rashaad Davis",
+            "player": "Dylan Sanders",
             "value": "3"
           },
           "rating": {
             "player": "JaJuan Nicholls",
-            "value": "8 PTS"
+            "value": "10 PTS"
           }
         },
         "conf_id": "5",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-20T01:00Z",
       "short_name": "TA&M @ TCU",
       "state": "in",
-      "status": "Halftime",
+      "status": "19:01 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "19:01",
       "venue": "Schollmaier Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -262,10 +262,10 @@
       "start_utc": "2026-11-20T01:30Z",
       "short_name": "HALL VS WIS",
       "state": "in",
-      "status": "15:00 - 1st",
+      "status": "9:35 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "15:00",
+      "clock": "9:35",
       "venue": "Baha Mar Convention Center",
       "neutral_site": true,
       "broadcasts": [
@@ -275,7 +275,7 @@
         "team_id": "275",
         "abbr": "WIS",
         "name": "Wisconsin Badgers",
-        "score": 5,
+        "score": 11,
         "winner": null,
         "record": "4-0",
         "home_record": "4-0",
@@ -287,7 +287,11 @@
           },
           "rebounds": {
             "player": "Owen Foxwell",
-            "value": "3"
+            "value": "4"
+          },
+          "assists": {
+            "player": "Austin Rapp",
+            "value": "1"
           },
           "rating": {
             "player": "Owen Foxwell",
@@ -304,27 +308,27 @@
         "team_id": "2550",
         "abbr": "HALL",
         "name": "Seton Hall Pirates",
-        "score": 10,
+        "score": 23,
         "winner": null,
         "record": "3-1",
         "home_record": "2-0",
         "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "Simeon Wilcher",
-            "value": "3"
+            "player": "Elijah Fisher",
+            "value": "6"
           },
           "rebounds": {
-            "player": "Simeon Wilcher",
+            "player": "Elijah Fisher",
             "value": "1"
           },
           "assists": {
             "player": "Simeon Wilcher",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
-            "player": "Simeon Wilcher",
-            "value": "3 PTS"
+            "player": "Elijah Fisher",
+            "value": "6 PTS"
           }
         },
         "conf_id": "4",
@@ -342,10 +346,10 @@
       "start_utc": "2026-11-20T01:30Z",
       "short_name": "RUTG VS UNLV",
       "state": "in",
-      "status": "9:04 - 1st",
+      "status": "4:07 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "9:04",
+      "clock": "4:07",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -355,7 +359,7 @@
         "team_id": "2439",
         "abbr": "UNLV",
         "name": "UNLV Rebels",
-        "score": 15,
+        "score": 23,
         "winner": null,
         "record": "3-2",
         "home_record": "3-0",
@@ -363,11 +367,11 @@
         "leaders": {
           "points": {
             "player": "Tyrin Jones",
-            "value": "8"
+            "value": "11"
           },
           "rebounds": {
             "player": "Dontrez Williams",
-            "value": "2"
+            "value": "4"
           },
           "assists": {
             "player": "Cam Miles",
@@ -375,7 +379,7 @@
           },
           "rating": {
             "player": "Tyrin Jones",
-            "value": "8 PTS"
+            "value": "11 PTS"
           }
         },
         "conf_id": "44",
@@ -388,7 +392,7 @@
         "team_id": "164",
         "abbr": "RUTG",
         "name": "Rutgers Scarlet Knights",
-        "score": 35,
+        "score": 47,
         "winner": null,
         "record": "3-2",
         "home_record": "3-0",
@@ -396,11 +400,11 @@
         "leaders": {
           "points": {
             "player": "Darin Smith Jr.",
-            "value": "8"
+            "value": "13"
           },
           "rebounds": {
-            "player": "Mervedi Miteo",
-            "value": "2"
+            "player": "Christian Gurdak",
+            "value": "3"
           },
           "assists": {
             "player": "Jamichael Davis",
@@ -408,7 +412,7 @@
           },
           "rating": {
             "player": "Darin Smith Jr.",
-            "value": "8 PTS"
+            "value": "13 PTS"
           }
         },
         "conf_id": "7",
@@ -416,6 +420,174 @@
         "rank": null,
         "loc": "Rutgers",
         "nick": "Scarlet Knights"
+      },
+      "espn_line": null,
+      "date": "2026-11-19",
+      "p4": true
+    },
+    {
+      "game_id": "401930884",
+      "start_utc": "2026-11-20T02:00Z",
+      "short_name": "ORST VS ORE",
+      "state": "in",
+      "status": "15:36 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "15:36",
+      "venue": "Moda Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "BTN"
+      ],
+      "home": {
+        "team_id": "2483",
+        "abbr": "ORE",
+        "name": "Oregon Ducks",
+        "score": 4,
+        "winner": null,
+        "record": "3-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Malique Ewin",
+            "value": "2"
+          },
+          "rebounds": {
+            "player": "Malique Ewin",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Malique Ewin",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Malique Ewin",
+            "value": "2 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Oregon",
+        "nick": "Ducks"
+      },
+      "away": {
+        "team_id": "204",
+        "abbr": "ORST",
+        "name": "Oregon State Beavers",
+        "score": 8,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Josiah Lake II",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Peteris Pinnis",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Josiah Lake II",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Josiah Lake II",
+            "value": "4 PTS"
+          }
+        },
+        "conf_id": "21",
+        "conf": null,
+        "rank": null,
+        "loc": "Oregon State",
+        "nick": "Beavers"
+      },
+      "espn_line": null,
+      "date": "2026-11-19",
+      "p4": true
+    },
+    {
+      "game_id": "401925941",
+      "start_utc": "2026-11-20T02:00Z",
+      "short_name": "UTU @ WASH",
+      "state": "in",
+      "status": "11:40 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "11:40",
+      "venue": "Alaska Airlines Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "B1G+"
+      ],
+      "home": {
+        "team_id": "264",
+        "abbr": "WASH",
+        "name": "Washington Huskies",
+        "score": 19,
+        "winner": null,
+        "record": "3-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Nikola Dzepina",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Nikola Dzepina",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Nikola Dzepina",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Nikola Dzepina",
+            "value": "8 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Washington",
+        "nick": "Huskies"
+      },
+      "away": {
+        "team_id": "3101",
+        "abbr": "UTU",
+        "name": "Utah Tech Trailblazers",
+        "score": 17,
+        "winner": null,
+        "record": "1-3",
+        "home_record": "1-0",
+        "away_record": "0-3",
+        "leaders": {
+          "points": {
+            "player": "Christian Gibson",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Owen Mackay",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Owen Mackay",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Christian Gibson",
+            "value": "8 PTS"
+          }
+        },
+        "conf_id": "5",
+        "conf": null,
+        "rank": null,
+        "loc": "Utah Tech",
+        "nick": "Trailblazers"
       },
       "espn_line": null,
       "date": "2026-11-19",
@@ -758,168 +930,6 @@
       "p4": true
     },
     {
-      "game_id": "401930884",
-      "start_utc": "2026-11-20T02:00Z",
-      "short_name": "ORST VS ORE",
-      "state": "pre",
-      "status": "11/19 - 9:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Moda Center",
-      "neutral_site": true,
-      "broadcasts": [
-        "BTN"
-      ],
-      "home": {
-        "team_id": "2483",
-        "abbr": "ORE",
-        "name": "Oregon Ducks",
-        "score": 0,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Wei Lin",
-            "value": "12.7"
-          },
-          "reboundsPerGame": {
-            "player": "Malique Ewin",
-            "value": "11.0"
-          },
-          "assistsPerGame": {
-            "player": "Wei Lin",
-            "value": "4.3"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Oregon",
-        "nick": "Ducks"
-      },
-      "away": {
-        "team_id": "204",
-        "abbr": "ORST",
-        "name": "Oregon State Beavers",
-        "score": 0,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Daniel Freitag",
-            "value": "18.6"
-          },
-          "reboundsPerGame": {
-            "player": "Xavion Staton",
-            "value": "7.2"
-          },
-          "assistsPerGame": {
-            "player": "Josiah Lake II",
-            "value": "4.6"
-          }
-        },
-        "conf_id": "21",
-        "conf": null,
-        "rank": null,
-        "loc": "Oregon State",
-        "nick": "Beavers"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ORE -1.5",
-        "spread": -1.5,
-        "over_under": 160.5
-      },
-      "date": "2026-11-19",
-      "p4": true
-    },
-    {
-      "game_id": "401925941",
-      "start_utc": "2026-11-20T02:00Z",
-      "short_name": "UTU @ WASH",
-      "state": "pre",
-      "status": "11/19 - 9:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Alaska Airlines Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "B1G+"
-      ],
-      "home": {
-        "team_id": "264",
-        "abbr": "WASH",
-        "name": "Washington Huskies",
-        "score": 0,
-        "winner": null,
-        "record": "3-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "LeJuan Watts",
-            "value": "15.3"
-          },
-          "reboundsPerGame": {
-            "player": "Nikola Dzepina",
-            "value": "6.7"
-          },
-          "assistsPerGame": {
-            "player": "LeJuan Watts",
-            "value": "3.7"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Washington",
-        "nick": "Huskies"
-      },
-      "away": {
-        "team_id": "3101",
-        "abbr": "UTU",
-        "name": "Utah Tech Trailblazers",
-        "score": 0,
-        "winner": null,
-        "record": "1-3",
-        "home_record": "1-0",
-        "away_record": "0-3",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Christian Gibson",
-            "value": "19.8"
-          },
-          "reboundsPerGame": {
-            "player": "Ethan Potter",
-            "value": "9.0"
-          },
-          "assistsPerGame": {
-            "player": "Mark Brown Jr.",
-            "value": "3.0"
-          }
-        },
-        "conf_id": "5",
-        "conf": null,
-        "rank": null,
-        "loc": "Utah Tech",
-        "nick": "Trailblazers"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "WASH -17.5",
-        "spread": -17.5,
-        "over_under": 155.5
-      },
-      "date": "2026-11-19",
-      "p4": true
-    },
-    {
       "game_id": "401920349",
       "start_utc": "2026-11-20T03:00Z",
       "short_name": "SAC @ STAN",
@@ -995,7 +1005,7 @@
         "provider": "DraftKings",
         "details": "STAN -16.5",
         "spread": -16.5,
-        "over_under": 154.5
+        "over_under": 153.5
       },
       "date": "2026-11-19",
       "p4": true
@@ -1076,7 +1086,7 @@
         "provider": "DraftKings",
         "details": "CAL -14.5",
         "spread": -14.5,
-        "over_under": 145.5
+        "over_under": 146.5
       },
       "date": "2026-11-19",
       "p4": true
