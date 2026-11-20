@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-20T19:15:24+00:00",
+  "fetched_at": "2026-11-20T19:30:40+00:00",
   "source": "espn",
   "count": 23,
   "game_date": "2026-11-20",
@@ -9,11 +9,11 @@
       "game_id": "401909698",
       "start_utc": "2026-11-20T17:00Z",
       "short_name": "GB @ FSU",
-      "state": "in",
-      "status": "1:17 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "1:17",
+      "clock": "0:00",
       "venue": "Donald L. Tucker Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,10 +23,10 @@
         "team_id": "52",
         "abbr": "FSU",
         "name": "Florida State Seminoles",
-        "score": 84,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "3-1",
+        "score": 87,
+        "winner": true,
+        "record": "5-1",
+        "home_record": "4-1",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -56,11 +56,11 @@
         "team_id": "2739",
         "abbr": "GB",
         "name": "Green Bay Phoenix",
-        "score": 61,
-        "winner": null,
-        "record": "3-3",
+        "score": 63,
+        "winner": false,
+        "record": "3-4",
         "home_record": "2-0",
-        "away_record": "1-3",
+        "away_record": "1-4",
         "leaders": {
           "points": {
             "player": "Ahmere Carson",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-20T17:30Z",
       "short_name": "OKST VS MINN",
       "state": "in",
-      "status": "7:50 - 2nd",
+      "status": "3:04 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "7:50",
+      "clock": "3:04",
       "venue": "TD Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "135",
         "abbr": "MINN",
         "name": "Minnesota Golden Gophers",
-        "score": 71,
+        "score": 76,
         "winner": null,
         "record": "5-0",
         "home_record": "4-0",
@@ -115,7 +115,7 @@
         "leaders": {
           "points": {
             "player": "Isaac Asuma",
-            "value": "16"
+            "value": "17"
           },
           "rebounds": {
             "player": "Jaylen Crocker-Johnson",
@@ -127,7 +127,7 @@
           },
           "rating": {
             "player": "Isaac Asuma",
-            "value": "16 PTS"
+            "value": "17 PTS"
           }
         },
         "conf_id": "7",
@@ -140,7 +140,7 @@
         "team_id": "197",
         "abbr": "OKST",
         "name": "Oklahoma State Cowboys",
-        "score": 56,
+        "score": 66,
         "winner": null,
         "record": "3-1",
         "home_record": "3-0",
@@ -148,11 +148,11 @@
         "leaders": {
           "points": {
             "player": "Kashie Natt",
-            "value": "18"
+            "value": "22"
           },
           "rebounds": {
             "player": "Kashie Natt",
-            "value": "5"
+            "value": "8"
           },
           "assists": {
             "player": "Jacob Walker",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "Kashie Natt",
-            "value": "18 PTS"
+            "value": "22 PTS, 8 REB, 3 STL"
           }
         },
         "conf_id": "8",
@@ -411,7 +411,7 @@
         "provider": "Draft Kings",
         "details": "UTAH -1.5",
         "spread": -1.5,
-        "over_under": 139.5
+        "over_under": 138.5
       },
       "date": "2026-11-20",
       "p4": true
@@ -1624,8 +1624,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "UGA -7.5",
-        "spread": 7.5,
+        "details": "UGA -8.5",
+        "spread": 8.5,
         "over_under": 166.5
       },
       "date": "2026-11-20",
