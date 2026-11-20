@@ -1,10 +1,94 @@
 {
-  "fetched_at": "2026-11-20T22:15:26+00:00",
+  "fetched_at": "2026-11-20T22:30:34+00:00",
   "source": "espn",
   "count": 23,
   "game_date": "2026-11-20",
   "division_i_games": 59,
   "rows": [
+    {
+      "game_id": "401921723",
+      "start_utc": "2026-11-20T22:00Z",
+      "short_name": "MAN @ MIA",
+      "state": "in",
+      "status": "11:22 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "11:22",
+      "venue": "Watsco Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACC Network"
+      ],
+      "home": {
+        "team_id": "2390",
+        "abbr": "MIA",
+        "name": "Miami Hurricanes",
+        "score": 15,
+        "winner": null,
+        "record": "4-1",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Shelton Henderson",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Shelton Henderson",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Acaden Lewis",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Shelton Henderson",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": 17,
+        "loc": "Miami",
+        "nick": "Hurricanes"
+      },
+      "away": {
+        "team_id": "2363",
+        "abbr": "MAN",
+        "name": "Manhattan Jaspers",
+        "score": 12,
+        "winner": null,
+        "record": "1-4",
+        "home_record": "0-2",
+        "away_record": "1-2",
+        "leaders": {
+          "points": {
+            "player": "Liam McChesney",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Novak Manojlovic",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Liam McChesney",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Liam McChesney",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "13",
+        "conf": null,
+        "rank": null,
+        "loc": "Manhattan",
+        "nick": "Jaspers"
+      },
+      "espn_line": null,
+      "date": "2026-11-20",
+      "p4": true
+    },
     {
       "game_id": "401909698",
       "start_utc": "2026-11-20T17:00Z",
@@ -258,86 +342,6 @@
       "p4": true
     },
     {
-      "game_id": "401921723",
-      "start_utc": "2026-11-20T22:00Z",
-      "short_name": "MAN @ MIA",
-      "state": "in",
-      "status": "14:43 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "14:43",
-      "venue": "Watsco Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACC Network"
-      ],
-      "home": {
-        "team_id": "2390",
-        "abbr": "MIA",
-        "name": "Miami Hurricanes",
-        "score": 10,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Shelton Henderson",
-            "value": "5"
-          },
-          "rebounds": {
-            "player": "Caleb Gaskins",
-            "value": "2"
-          },
-          "assists": {
-            "player": "Acaden Lewis",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Acaden Lewis",
-            "value": "4 PTS"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": 17,
-        "loc": "Miami",
-        "nick": "Hurricanes"
-      },
-      "away": {
-        "team_id": "2363",
-        "abbr": "MAN",
-        "name": "Manhattan Jaspers",
-        "score": 6,
-        "winner": null,
-        "record": "1-4",
-        "home_record": "0-2",
-        "away_record": "1-2",
-        "leaders": {
-          "points": {
-            "player": "Liam McChesney",
-            "value": "2"
-          },
-          "rebounds": {
-            "player": "Ben Tweedy",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Ognjen Stankovic",
-            "value": "2 PTS"
-          }
-        },
-        "conf_id": "13",
-        "conf": null,
-        "rank": null,
-        "loc": "Manhattan",
-        "nick": "Jaspers"
-      },
-      "espn_line": null,
-      "date": "2026-11-20",
-      "p4": true
-    },
-    {
       "game_id": "401921419",
       "start_utc": "2026-11-20T22:30Z",
       "short_name": "DAY VS UTAH",
@@ -410,7 +414,7 @@
         "nick": "Flyers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UTAH -1.5",
         "spread": -1.5,
         "over_under": 139.5
@@ -491,7 +495,7 @@
         "nick": "Greyhounds"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UVA -41.5",
         "spread": -41.5,
         "over_under": 150.5
@@ -572,7 +576,7 @@
         "nick": "Chanticleers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TENN -26.5",
         "spread": -26.5,
         "over_under": 146.5
@@ -653,7 +657,7 @@
         "nick": "Golden Grizzlies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "PUR -21.5",
         "spread": -21.5,
         "over_under": 147.5
@@ -734,7 +738,7 @@
         "nick": "Badgers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "WIS -3.5",
         "spread": 3.5,
         "over_under": 160.5
@@ -815,7 +819,7 @@
         "nick": "Seahawks"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MD -33.5",
         "spread": -33.5,
         "over_under": 147.5
@@ -896,7 +900,7 @@
         "nick": "Chippewas"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "PITT -21.5",
         "spread": -21.5,
         "over_under": 144.5
@@ -977,7 +981,7 @@
         "nick": "Golden Hurricane"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MSST -6.5",
         "spread": -6.5,
         "over_under": 153.5
@@ -1058,7 +1062,7 @@
         "nick": "Hawkeyes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "XAV -3.5",
         "spread": -3.5,
         "over_under": 145.5
@@ -1139,7 +1143,7 @@
         "nick": "Knights"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "VAN -16.5",
         "spread": -16.5,
         "over_under": 156.5
@@ -1220,7 +1224,7 @@
         "nick": "Delta Devils"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ARK -37.5",
         "spread": -37.5,
         "over_under": 152.5
@@ -1301,7 +1305,7 @@
         "nick": "Jaguars"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SMU -15.5",
         "spread": -15.5,
         "over_under": 147.5
@@ -1382,7 +1386,7 @@
         "nick": "Dolphins"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MIZ -34.5",
         "spread": -34.5,
         "over_under": 154.5
@@ -1463,7 +1467,7 @@
         "nick": "Wildcats"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "IU -3.5",
         "spread": -3.5,
         "over_under": 153.5
@@ -1544,7 +1548,7 @@
         "nick": "Fighting Camels"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "KSU -16.5",
         "spread": -16.5,
         "over_under": 154.5
@@ -1602,7 +1606,7 @@
         "score": 0,
         "winner": null,
         "record": "5-0",
-        "home_record": "4-0",
+        "home_record": "3-0",
         "away_record": "1-0",
         "leaders": {
           "pointsPerGame": {
@@ -1625,7 +1629,7 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UGA -8.5",
         "spread": 8.5,
         "over_under": 166.5
@@ -1706,7 +1710,7 @@
         "nick": "Panthers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ILL -47.5",
         "spread": -47.5,
         "over_under": 165.5
@@ -1787,7 +1791,7 @@
         "nick": "Thundering Herd"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UNC -18.5",
         "spread": -18.5,
         "over_under": 157.5
@@ -1868,7 +1872,7 @@
         "nick": "Pirates"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NCSU -3.5",
         "spread": -3.5,
         "over_under": 140.5
