@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-20T23:15:25+00:00",
+  "finished_at": "2026-11-20T23:30:33+00:00",
   "game_date": "2026-11-20",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,28 +29,24 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 11075
+      "ODDS_API_KEY_20K": 11061
     },
-    "pulled": [
-      {
-        "matchup": "Central Michigan Chippewas @ Pittsburgh Panthers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      }
-    ],
+    "pulled": [],
     "errors": [],
-    "events": 75,
+    "events": 74,
     "p4_events": 23,
     "unmatched": [
       "Middle Tennessee Blue Raiders @ Indiana St Sycamores"
     ],
-    "due": 1,
+    "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 2,
+      "pull_type": "pregame",
+      "rows": 16,
+      "credits_last": 2
     },
     "status": "ok"
   }
