@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-20T22:30:34+00:00",
+  "fetched_at": "2026-11-20T22:45:24+00:00",
   "source": "espn",
   "count": 23,
   "game_date": "2026-11-20",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-20T22:00Z",
       "short_name": "MAN @ MIA",
       "state": "in",
-      "status": "11:22 - 1st",
+      "status": "6:46 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "11:22",
+      "clock": "6:46",
       "venue": "Watsco Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2390",
         "abbr": "MIA",
         "name": "Miami Hurricanes",
-        "score": 15,
+        "score": 32,
         "winner": null,
         "record": "4-1",
         "home_record": "4-0",
@@ -31,19 +31,19 @@
         "leaders": {
           "points": {
             "player": "Shelton Henderson",
-            "value": "5"
+            "value": "12"
           },
           "rebounds": {
-            "player": "Shelton Henderson",
-            "value": "2"
+            "player": "Caleb Gaskins",
+            "value": "6"
           },
           "assists": {
-            "player": "Acaden Lewis",
-            "value": "1"
+            "player": "Caleb Gaskins",
+            "value": "2"
           },
           "rating": {
             "player": "Shelton Henderson",
-            "value": "5 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "2",
@@ -56,7 +56,7 @@
         "team_id": "2363",
         "abbr": "MAN",
         "name": "Manhattan Jaspers",
-        "score": 12,
+        "score": 18,
         "winner": null,
         "record": "1-4",
         "home_record": "0-2",
@@ -345,11 +345,11 @@
       "game_id": "401921419",
       "start_utc": "2026-11-20T22:30Z",
       "short_name": "DAY VS UTAH",
-      "state": "pre",
-      "status": "11/20 - 5:30 PM EST",
+      "state": "in",
+      "status": "15:47 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:47",
       "venue": "TD Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -359,23 +359,27 @@
         "team_id": "254",
         "abbr": "UTAH",
         "name": "Utah Utes",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "3-1",
         "home_record": "3-1",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Alec Anigbata",
-            "value": "15.0"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Jackson Holcombe",
-            "value": "6.2"
+            "value": "3"
           },
-          "assistsPerGame": {
-            "player": "Trey Campbell",
-            "value": "6.8"
+          "rebounds": {
+            "player": "Jackson Holcombe",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Malek Gomma",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Jackson Holcombe",
+            "value": "3 PTS"
           }
         },
         "conf_id": "8",
@@ -388,23 +392,23 @@
         "team_id": "2168",
         "abbr": "DAY",
         "name": "Dayton Flyers",
-        "score": 0,
+        "score": 7,
         "winner": null,
         "record": "2-3",
         "home_record": "2-3",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Aiden Derkack",
-            "value": "18.4"
+          "points": {
+            "player": "Tristian Ford",
+            "value": "4"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Aiden Derkack",
-            "value": "8.2"
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Landen Joseph",
-            "value": "3.8"
+          "rating": {
+            "player": "Aiden Derkack",
+            "value": "3 PTS"
           }
         },
         "conf_id": "3",
@@ -413,12 +417,7 @@
         "loc": "Dayton",
         "nick": "Flyers"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "UTAH -1.5",
-        "spread": -1.5,
-        "over_under": 139.5
-      },
+      "espn_line": null,
       "date": "2026-11-20",
       "p4": true
     },
