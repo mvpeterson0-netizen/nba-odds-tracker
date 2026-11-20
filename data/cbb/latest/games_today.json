@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-20T17:00:29+00:00",
+  "fetched_at": "2026-11-20T17:15:22+00:00",
   "source": "espn",
   "count": 23,
   "game_date": "2026-11-20",
@@ -9,11 +9,11 @@
       "game_id": "401909698",
       "start_utc": "2026-11-20T17:00Z",
       "short_name": "GB @ FSU",
-      "state": "pre",
-      "status": "11/20 - 12:00 PM EST",
+      "state": "in",
+      "status": "12:42 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "12:42",
       "venue": "Donald L. Tucker Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "52",
         "abbr": "FSU",
         "name": "Florida State Seminoles",
-        "score": 0,
+        "score": 13,
         "winner": null,
         "record": "4-1",
         "home_record": "3-1",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Sebastian Rancik",
-            "value": "20.2"
-          },
-          "reboundsPerGame": {
-            "player": "Marcis Ponder",
-            "value": "9.8"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Shon Abaev",
-            "value": "3.8"
+            "value": "9"
+          },
+          "rebounds": {
+            "player": "Anthony Robinson II",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Sebastian Rancik",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Shon Abaev",
+            "value": "9 PTS"
           }
         },
         "conf_id": "2",
@@ -52,23 +56,27 @@
         "team_id": "2739",
         "abbr": "GB",
         "name": "Green Bay Phoenix",
-        "score": 0,
+        "score": 16,
         "winner": null,
         "record": "3-3",
         "home_record": "2-0",
         "away_record": "1-3",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Marcus Hall",
-            "value": "12.3"
-          },
-          "reboundsPerGame": {
-            "player": "Clarence Payia",
-            "value": "3.5"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Orlando Lovejoy",
-            "value": "3.0"
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Ahmere Carson",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Ahmere Carson",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Orlando Lovejoy",
+            "value": "8 PTS"
           }
         },
         "conf_id": "45",
@@ -77,12 +85,7 @@
         "loc": "Green Bay",
         "nick": "Phoenix"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "FSU -22.5",
-        "spread": -22.5,
-        "over_under": 156.5
-      },
+      "espn_line": null,
       "date": "2026-11-20",
       "p4": true
     },
@@ -565,8 +568,8 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "TENN -27.5",
-        "spread": -27.5,
+        "details": "TENN -26.5",
+        "spread": -26.5,
         "over_under": 147.5
       },
       "date": "2026-11-20",
