@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-20T20:45:22+00:00",
+  "fetched_at": "2026-11-20T20:58:06+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-21",
@@ -77,7 +77,12 @@
         "loc": "Detroit Mercy",
         "nick": "Titans"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "Draft Kings",
+        "details": "MSU -41.5",
+        "spread": -41.5,
+        "over_under": 150.5
+      },
       "date": "2026-11-21",
       "p4": true
     },
@@ -381,7 +386,12 @@
         "loc": "Michigan",
         "nick": "Wolverines"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "Draft Kings",
+        "details": "MICH -3.5",
+        "spread": 3.5,
+        "over_under": 160.5
+      },
       "date": "2026-11-21",
       "p4": true
     },
