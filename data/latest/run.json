@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-20T12:45:25+00:00",
+  "finished_at": "2026-11-20T13:00:36+00:00",
   "game_date": "2026-11-20",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "not_due",
+    "odds": "ok",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -28,12 +28,76 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 11304
+      "ODDS_API_KEY_20K": 11268
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Charlotte Hornets @ Atlanta Hawks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 184,
+        "markets": 4
+      },
+      {
+        "matchup": "Orlando Magic @ Brooklyn Nets",
+        "type": "morning",
+        "status": "ok",
+        "rows": 174,
+        "markets": 4
+      },
+      {
+        "matchup": "Indiana Pacers @ Cleveland Cavaliers",
+        "type": "morning",
+        "status": "ok",
+        "rows": 138,
+        "markets": 4
+      },
+      {
+        "matchup": "Toronto Raptors @ Detroit Pistons",
+        "type": "morning",
+        "status": "ok",
+        "rows": 168,
+        "markets": 4
+      },
+      {
+        "matchup": "Washington Wizards @ Chicago Bulls",
+        "type": "morning",
+        "status": "ok",
+        "rows": 178,
+        "markets": 4
+      },
+      {
+        "matchup": "New Orleans Pelicans @ Oklahoma City Thunder",
+        "type": "morning",
+        "status": "ok",
+        "rows": 168,
+        "markets": 4
+      },
+      {
+        "matchup": "Phoenix Suns @ Utah Jazz",
+        "type": "morning",
+        "status": "ok",
+        "rows": 162,
+        "markets": 4
+      },
+      {
+        "matchup": "Houston Rockets @ Denver Nuggets",
+        "type": "morning",
+        "status": "ok",
+        "rows": 174,
+        "markets": 4
+      },
+      {
+        "matchup": "Sacramento Kings @ Los Angeles Lakers",
+        "type": "morning",
+        "status": "ok",
+        "rows": 172,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
+    "due": 9,
     "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"
