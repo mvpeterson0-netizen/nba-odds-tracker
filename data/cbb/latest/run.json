@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-19T23:45:25+00:00",
+  "finished_at": "2026-11-20T00:01:02+00:00",
   "game_date": "2026-11-19",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -27,21 +27,81 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 0,
+      "ODDS_API_KEY": null,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 11453
+      "ODDS_API_KEY_20K": 11428
     },
-    "pulled": [],
-    "errors": [],
+    "pulled": [
+      {
+        "matchup": "Stetson Hatters @ Louisville Cardinals",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Southern Utah Thunderbirds @ Texas Longhorns",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "UNLV Rebels @ Rutgers Scarlet Knights",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Wisconsin Badgers @ Seton Hall Pirates",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Oregon St Beavers @ Oregon Ducks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Utah Tech Trailblazers @ Washington Huskies",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "East Texas A&M Lions @ California Golden Bears",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Sacramento St Hornets @ Stanford Cardinal",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Tarleton State Texans @ USC Trojans",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
+    "errors": [
+      "ODDS_API_KEY: events HTTP 502"
+    ],
     "events": 64,
-    "p4_events": 29,
+    "p4_events": 28,
     "unmatched": [],
-    "due": 0,
+    "due": 9,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 3,
+      "pull_type": "pregame",
+      "rows": 24,
+      "credits_last": 2
     },
     "status": "ok"
   }
