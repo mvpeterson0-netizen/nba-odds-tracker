@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-20T05:00:26+00:00",
+  "fetched_at": "2026-11-20T05:15:17+00:00",
   "source": "espn",
   "count": 15,
   "game_date": "2026-11-19",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-20T04:00Z",
       "short_name": "HOU VS KU",
       "state": "in",
-      "status": "0:54 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "0:54",
+      "clock": "0:00",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2305",
         "abbr": "KU",
         "name": "Kansas Jayhawks",
-        "score": 30,
+        "score": 34,
         "winner": null,
         "record": "5-0",
         "home_record": "2-0",
@@ -34,8 +34,8 @@
             "value": "9"
           },
           "rebounds": {
-            "player": "Tyran Stokes",
-            "value": "3"
+            "player": "Keanu Dawes",
+            "value": "4"
           },
           "assists": {
             "player": "Taylen Kinney",
@@ -56,7 +56,7 @@
         "team_id": "248",
         "abbr": "HOU",
         "name": "Houston Cougars",
-        "score": 51,
+        "score": 54,
         "winner": null,
         "record": "5-0",
         "home_record": "2-0",
@@ -71,8 +71,8 @@
             "value": "6"
           },
           "assists": {
-            "player": "Mercy Miller",
-            "value": "3"
+            "player": "Joseph Tugler",
+            "value": "4"
           },
           "rating": {
             "player": "Mercy Miller",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-20T04:00Z",
       "short_name": "TAR @ USC",
       "state": "in",
-      "status": "Halftime",
+      "status": "18:08 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "18:08",
       "venue": "Galen Center",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "30",
         "abbr": "USC",
         "name": "USC Trojans",
-        "score": 55,
+        "score": 60,
         "winner": null,
         "record": "4-0",
         "home_record": "2-0",
@@ -123,7 +123,7 @@
           },
           "assists": {
             "player": "Rodney Rice",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Alijah Arenas",
@@ -140,7 +140,7 @@
         "team_id": "2627",
         "abbr": "TAR",
         "name": "Tarleton State Texans",
-        "score": 21,
+        "score": 24,
         "winner": null,
         "record": "4-1",
         "home_record": "3-0",
@@ -151,12 +151,12 @@
             "value": "9"
           },
           "rebounds": {
-            "player": "Leroy Kelly IV",
-            "value": "3"
+            "player": "Josh Hayes",
+            "value": "4"
           },
           "assists": {
             "player": "Franck Emmou",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Franck Emmou",
@@ -168,174 +168,6 @@
         "rank": null,
         "loc": "Tarleton State",
         "nick": "Texans"
-      },
-      "espn_line": null,
-      "date": "2026-11-19",
-      "p4": true
-    },
-    {
-      "game_id": "401920349",
-      "start_utc": "2026-11-20T03:00Z",
-      "short_name": "SAC @ STAN",
-      "state": "in",
-      "status": "0:44 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "0:44",
-      "venue": "Maples Pavilion",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACCNX"
-      ],
-      "home": {
-        "team_id": "24",
-        "abbr": "STAN",
-        "name": "Stanford Cardinal",
-        "score": 78,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "4-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Julius Price",
-            "value": "22"
-          },
-          "rebounds": {
-            "player": "Nick Townsend",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Christian Bliss",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Julius Price",
-            "value": "22 PTS, 6 REB"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Stanford",
-        "nick": "Cardinal"
-      },
-      "away": {
-        "team_id": "16",
-        "abbr": "SAC",
-        "name": "Sacramento State Hornets",
-        "score": 65,
-        "winner": null,
-        "record": "1-2",
-        "home_record": "1-1",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Larry Hughes II",
-            "value": "20"
-          },
-          "rebounds": {
-            "player": "Sasa Ciani",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Marcus Wilson",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Larry Hughes II",
-            "value": "20 PTS"
-          }
-        },
-        "conf_id": "9",
-        "conf": null,
-        "rank": null,
-        "loc": "Sacramento State",
-        "nick": "Hornets"
-      },
-      "espn_line": null,
-      "date": "2026-11-19",
-      "p4": true
-    },
-    {
-      "game_id": "401918056",
-      "start_utc": "2026-11-20T03:00Z",
-      "short_name": "ETAM @ CAL",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Haas Pavilion",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACCNX"
-      ],
-      "home": {
-        "team_id": "25",
-        "abbr": "CAL",
-        "name": "California Golden Bears",
-        "score": 86,
-        "winner": true,
-        "record": "4-2",
-        "home_record": "4-1",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Nojus Indrusaitis",
-            "value": "23"
-          },
-          "rebounds": {
-            "player": "Dominykas Daubaris",
-            "value": "11"
-          },
-          "assists": {
-            "player": "Jordan Ross",
-            "value": "10"
-          },
-          "rating": {
-            "player": "Nojus Indrusaitis",
-            "value": "23 PTS"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "California",
-        "nick": "Golden Bears"
-      },
-      "away": {
-        "team_id": "2837",
-        "abbr": "ETAM",
-        "name": "East Texas A&M Lions",
-        "score": 54,
-        "winner": false,
-        "record": "3-3",
-        "home_record": "0-1",
-        "away_record": "3-2",
-        "leaders": {
-          "points": {
-            "player": "Mohamed Diakite",
-            "value": "18"
-          },
-          "rebounds": {
-            "player": "Jaxson Ford",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Alonzo Dodd",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Mohamed Diakite",
-            "value": "18 PTS"
-          }
-        },
-        "conf_id": "25",
-        "conf": null,
-        "rank": null,
-        "loc": "East Texas A&M",
-        "nick": "Lions"
       },
       "espn_line": null,
       "date": "2026-11-19",
@@ -1226,6 +1058,174 @@
         "rank": null,
         "loc": "Utah Tech",
         "nick": "Trailblazers"
+      },
+      "espn_line": null,
+      "date": "2026-11-19",
+      "p4": true
+    },
+    {
+      "game_id": "401920349",
+      "start_utc": "2026-11-20T03:00Z",
+      "short_name": "SAC @ STAN",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Maples Pavilion",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACCNX"
+      ],
+      "home": {
+        "team_id": "24",
+        "abbr": "STAN",
+        "name": "Stanford Cardinal",
+        "score": 78,
+        "winner": true,
+        "record": "5-1",
+        "home_record": "5-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Julius Price",
+            "value": "22"
+          },
+          "rebounds": {
+            "player": "Nick Townsend",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Christian Bliss",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Julius Price",
+            "value": "22 PTS, 6 REB"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Stanford",
+        "nick": "Cardinal"
+      },
+      "away": {
+        "team_id": "16",
+        "abbr": "SAC",
+        "name": "Sacramento State Hornets",
+        "score": 65,
+        "winner": false,
+        "record": "1-3",
+        "home_record": "1-1",
+        "away_record": "0-2",
+        "leaders": {
+          "points": {
+            "player": "Larry Hughes II",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Sasa Ciani",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Marcus Wilson",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Larry Hughes II",
+            "value": "20 PTS"
+          }
+        },
+        "conf_id": "9",
+        "conf": null,
+        "rank": null,
+        "loc": "Sacramento State",
+        "nick": "Hornets"
+      },
+      "espn_line": null,
+      "date": "2026-11-19",
+      "p4": true
+    },
+    {
+      "game_id": "401918056",
+      "start_utc": "2026-11-20T03:00Z",
+      "short_name": "ETAM @ CAL",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Haas Pavilion",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACCNX"
+      ],
+      "home": {
+        "team_id": "25",
+        "abbr": "CAL",
+        "name": "California Golden Bears",
+        "score": 86,
+        "winner": true,
+        "record": "4-2",
+        "home_record": "4-1",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Nojus Indrusaitis",
+            "value": "23"
+          },
+          "rebounds": {
+            "player": "Dominykas Daubaris",
+            "value": "11"
+          },
+          "assists": {
+            "player": "Jordan Ross",
+            "value": "10"
+          },
+          "rating": {
+            "player": "Nojus Indrusaitis",
+            "value": "23 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "California",
+        "nick": "Golden Bears"
+      },
+      "away": {
+        "team_id": "2837",
+        "abbr": "ETAM",
+        "name": "East Texas A&M Lions",
+        "score": 54,
+        "winner": false,
+        "record": "3-3",
+        "home_record": "0-1",
+        "away_record": "3-2",
+        "leaders": {
+          "points": {
+            "player": "Mohamed Diakite",
+            "value": "18"
+          },
+          "rebounds": {
+            "player": "Jaxson Ford",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Alonzo Dodd",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Mohamed Diakite",
+            "value": "18 PTS"
+          }
+        },
+        "conf_id": "25",
+        "conf": null,
+        "rank": null,
+        "loc": "East Texas A&M",
+        "nick": "Lions"
       },
       "espn_line": null,
       "date": "2026-11-19",
