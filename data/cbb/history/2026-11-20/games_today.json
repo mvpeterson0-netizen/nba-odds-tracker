@@ -1,10 +1,90 @@
 {
-  "fetched_at": "2026-11-20T20:00:23+00:00",
+  "fetched_at": "2026-11-20T20:15:22+00:00",
   "source": "espn",
   "count": 23,
   "game_date": "2026-11-20",
   "division_i_games": 59,
   "rows": [
+    {
+      "game_id": "401920380",
+      "start_utc": "2026-11-20T20:00Z",
+      "short_name": "NU VS VT",
+      "state": "in",
+      "status": "15:05 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "15:05",
+      "venue": "TD Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "259",
+        "abbr": "VT",
+        "name": "Virginia Tech Hokies",
+        "score": 12,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Jaylen Curry",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Jaylen Curry",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Jaylen Curry",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Jaylen Curry",
+            "value": "4 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Virginia Tech",
+        "nick": "Hokies"
+      },
+      "away": {
+        "team_id": "77",
+        "abbr": "NU",
+        "name": "Northwestern Wildcats",
+        "score": 2,
+        "winner": null,
+        "record": "3-2",
+        "home_record": "3-2",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Okku Federiko",
+            "value": "2"
+          },
+          "rebounds": {
+            "player": "Jake West",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Okku Federiko",
+            "value": "2 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Northwestern",
+        "nick": "Wildcats"
+      },
+      "espn_line": null,
+      "date": "2026-11-20",
+      "p4": true
+    },
     {
       "game_id": "401909698",
       "start_utc": "2026-11-20T17:00Z",
@@ -170,87 +250,6 @@
         "nick": "Cowboys"
       },
       "espn_line": null,
-      "date": "2026-11-20",
-      "p4": true
-    },
-    {
-      "game_id": "401920380",
-      "start_utc": "2026-11-20T20:00Z",
-      "short_name": "NU VS VT",
-      "state": "pre",
-      "status": "11/20 - 3:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "TD Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "259",
-        "abbr": "VT",
-        "name": "Virginia Tech Hokies",
-        "score": 0,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Ben Hammond",
-            "value": "20.2"
-          },
-          "reboundsPerGame": {
-            "player": "Tyler Johnson",
-            "value": "8.0"
-          },
-          "assistsPerGame": {
-            "player": "Ben Hammond",
-            "value": "6.2"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Virginia Tech",
-        "nick": "Hokies"
-      },
-      "away": {
-        "team_id": "77",
-        "abbr": "NU",
-        "name": "Northwestern Wildcats",
-        "score": 0,
-        "winner": null,
-        "record": "3-2",
-        "home_record": "3-2",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Jake West",
-            "value": "18.6"
-          },
-          "reboundsPerGame": {
-            "player": "Angelo Ciaravino",
-            "value": "7.2"
-          },
-          "assistsPerGame": {
-            "player": "Jake West",
-            "value": "6.2"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Northwestern",
-        "nick": "Wildcats"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "VT -11.5",
-        "spread": -11.5,
-        "over_under": 142.5
-      },
       "date": "2026-11-20",
       "p4": true
     },
@@ -735,7 +734,7 @@
         "provider": "DraftKings",
         "details": "WIS -3.5",
         "spread": 3.5,
-        "over_under": 162.5
+        "over_under": 160.5
       },
       "date": "2026-11-20",
       "p4": true
