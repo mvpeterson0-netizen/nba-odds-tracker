@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-20T02:15:21+00:00",
+  "fetched_at": "2026-11-20T02:30:21+00:00",
   "source": "espn",
-  "count": 21,
+  "count": 22,
   "game_date": "2026-11-20",
   "division_i_games": 59,
   "rows": [
@@ -562,7 +562,7 @@
         "provider": "DraftKings",
         "details": "TENN -29.5",
         "spread": -29.5,
-        "over_under": 143.5
+        "over_under": 144.5
       },
       "date": "2026-11-20",
       "p4": true
@@ -1679,10 +1679,73 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "UNC -20.5",
-        "spread": -20.5,
-        "over_under": 154.5
+        "details": "UNC -21.5",
+        "spread": -21.5,
+        "over_under": 156.5
       },
+      "date": "2026-11-20",
+      "p4": true
+    },
+    {
+      "game_id": "401921691",
+      "start_utc": "2026-11-21T02:30Z",
+      "short_name": "TBD VS NCSU",
+      "state": "pre",
+      "status": "11/20 - 9:30 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Baha Mar Convention Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "CBSSN"
+      ],
+      "home": {
+        "team_id": "152",
+        "abbr": "NCSU",
+        "name": "NC State Wolfpack",
+        "score": 0,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Ven-Allen Lubin",
+            "value": "15.2"
+          },
+          "reboundsPerGame": {
+            "player": "Ven-Allen Lubin",
+            "value": "9.2"
+          },
+          "assistsPerGame": {
+            "player": "Preston Edmead",
+            "value": "6.5"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "NC State",
+        "nick": "Wolfpack"
+      },
+      "away": {
+        "team_id": "-2",
+        "abbr": "TBD",
+        "name": "TBD",
+        "score": 0,
+        "winner": null,
+        "record": null,
+        "home_record": null,
+        "away_record": null,
+        "leaders": null,
+        "conf_id": null,
+        "conf": null,
+        "rank": null,
+        "loc": "TBD",
+        "nick": "TBD"
+      },
+      "espn_line": null,
       "date": "2026-11-20",
       "p4": true
     }
