@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-20T06:00:25+00:00",
+  "fetched_at": "2026-11-20T06:15:19+00:00",
   "source": "espn",
   "count": 15,
   "game_date": "2026-11-19",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-20T04:00Z",
       "short_name": "HOU VS KU",
       "state": "in",
-      "status": "8:35 - 2nd",
+      "status": "3:42 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "8:35",
+      "clock": "3:42",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,27 +23,27 @@
         "team_id": "2305",
         "abbr": "KU",
         "name": "Kansas Jayhawks",
-        "score": 63,
+        "score": 70,
         "winner": null,
         "record": "5-0",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Dennis Parker Jr.",
-            "value": "18"
+            "player": "Tyran Stokes",
+            "value": "22"
           },
           "rebounds": {
             "player": "Tyran Stokes",
-            "value": "7"
+            "value": "11"
           },
           "assists": {
             "player": "Taylen Kinney",
             "value": "4"
           },
           "rating": {
-            "player": "Dennis Parker Jr.",
-            "value": "18 PTS"
+            "player": "Tyran Stokes",
+            "value": "22 PTS, 11 REB"
           }
         },
         "conf_id": "8",
@@ -56,7 +56,7 @@
         "team_id": "248",
         "abbr": "HOU",
         "name": "Houston Cougars",
-        "score": 70,
+        "score": 81,
         "winner": null,
         "record": "5-0",
         "home_record": "2-0",
@@ -72,7 +72,7 @@
           },
           "assists": {
             "player": "Dedan Thomas Jr.",
-            "value": "6"
+            "value": "7"
           },
           "rating": {
             "player": "Mercy Miller",
@@ -84,90 +84,6 @@
         "rank": 8,
         "loc": "Houston",
         "nick": "Cougars"
-      },
-      "espn_line": null,
-      "date": "2026-11-19",
-      "p4": true
-    },
-    {
-      "game_id": "401926773",
-      "start_utc": "2026-11-20T04:00Z",
-      "short_name": "TAR @ USC",
-      "state": "in",
-      "status": "2:23 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "2:23",
-      "venue": "Galen Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "BTN"
-      ],
-      "home": {
-        "team_id": "30",
-        "abbr": "USC",
-        "name": "USC Trojans",
-        "score": 90,
-        "winner": null,
-        "record": "4-0",
-        "home_record": "2-0",
-        "away_record": "1-0",
-        "leaders": {
-          "points": {
-            "player": "Rodney Rice",
-            "value": "24"
-          },
-          "rebounds": {
-            "player": "Darius Ratliff",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Rodney Rice",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Rodney Rice",
-            "value": "24 PTS, 7 AST"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 18,
-        "loc": "USC",
-        "nick": "Trojans"
-      },
-      "away": {
-        "team_id": "2627",
-        "abbr": "TAR",
-        "name": "Tarleton State Texans",
-        "score": 47,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "3-0",
-        "away_record": "1-1",
-        "leaders": {
-          "points": {
-            "player": "Franck Emmou",
-            "value": "14"
-          },
-          "rebounds": {
-            "player": "Josh Hayes",
-            "value": "5"
-          },
-          "assists": {
-            "player": "Franck Emmou",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Franck Emmou",
-            "value": "14 PTS"
-          }
-        },
-        "conf_id": "30",
-        "conf": null,
-        "rank": null,
-        "loc": "Tarleton State",
-        "nick": "Texans"
       },
       "espn_line": null,
       "date": "2026-11-19",
@@ -336,6 +252,90 @@
         "rank": null,
         "loc": "Southern Utah",
         "nick": "Thunderbirds"
+      },
+      "espn_line": null,
+      "date": "2026-11-19",
+      "p4": true
+    },
+    {
+      "game_id": "401926773",
+      "start_utc": "2026-11-20T04:00Z",
+      "short_name": "TAR @ USC",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Galen Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "BTN"
+      ],
+      "home": {
+        "team_id": "30",
+        "abbr": "USC",
+        "name": "USC Trojans",
+        "score": 96,
+        "winner": true,
+        "record": "5-0",
+        "home_record": "3-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Rodney Rice",
+            "value": "24"
+          },
+          "rebounds": {
+            "player": "Darius Ratliff",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Rodney Rice",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Rodney Rice",
+            "value": "24 PTS, 7 AST"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 18,
+        "loc": "USC",
+        "nick": "Trojans"
+      },
+      "away": {
+        "team_id": "2627",
+        "abbr": "TAR",
+        "name": "Tarleton State Texans",
+        "score": 51,
+        "winner": false,
+        "record": "4-2",
+        "home_record": "3-0",
+        "away_record": "1-2",
+        "leaders": {
+          "points": {
+            "player": "Franck Emmou",
+            "value": "14"
+          },
+          "rebounds": {
+            "player": "Josh Hayes",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Franck Emmou",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Franck Emmou",
+            "value": "14 PTS"
+          }
+        },
+        "conf_id": "30",
+        "conf": null,
+        "rank": null,
+        "loc": "Tarleton State",
+        "nick": "Texans"
       },
       "espn_line": null,
       "date": "2026-11-19",
