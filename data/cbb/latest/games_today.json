@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-21T03:45:22+00:00",
+  "fetched_at": "2026-11-21T04:00:24+00:00",
   "source": "espn",
   "count": 23,
   "game_date": "2026-11-20",
@@ -9,11 +9,11 @@
       "game_id": "401913529",
       "start_utc": "2026-11-21T02:00Z",
       "short_name": "EIU @ ILL",
-      "state": "in",
-      "status": "5:30 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "5:30",
+      "clock": "0:00",
       "venue": "State Farm Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,10 +23,10 @@
         "team_id": "356",
         "abbr": "ILL",
         "name": "Illinois Fighting Illini",
-        "score": 103,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "3-0",
+        "score": 114,
+        "winner": true,
+        "record": "5-1",
+        "home_record": "4-0",
         "away_record": "1-1",
         "leaders": {
           "points": {
@@ -42,8 +42,8 @@
             "value": "9"
           },
           "rating": {
-            "player": "Ethan Brown",
-            "value": "26 PTS, 3 STL"
+            "player": "Stefan Vaaks",
+            "value": "20 PTS, 11 REB, 9 AST"
           }
         },
         "conf_id": "7",
@@ -56,15 +56,15 @@
         "team_id": "2197",
         "abbr": "EIU",
         "name": "Eastern Illinois Panthers",
-        "score": 40,
-        "winner": null,
-        "record": "1-5",
+        "score": 52,
+        "winner": false,
+        "record": "1-6",
         "home_record": "1-1",
-        "away_record": "0-4",
+        "away_record": "0-5",
         "leaders": {
           "points": {
             "player": "Jalen Calloway",
-            "value": "15"
+            "value": "17"
           },
           "rebounds": {
             "player": "Tanner Vogel",
@@ -72,11 +72,11 @@
           },
           "assists": {
             "player": "Jalen Calloway",
-            "value": "2"
+            "value": "5"
           },
           "rating": {
             "player": "Jalen Calloway",
-            "value": "15 PTS"
+            "value": "17 PTS"
           }
         },
         "conf_id": "20",
@@ -93,11 +93,11 @@
       "game_id": "401912710",
       "start_utc": "2026-11-21T02:00Z",
       "short_name": "MRSH @ UNC",
-      "state": "in",
-      "status": "5:34 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "5:34",
+      "clock": "0:00",
       "venue": "Dean E. Smith Center",
       "neutral_site": false,
       "broadcasts": [
@@ -107,27 +107,27 @@
         "team_id": "153",
         "abbr": "UNC",
         "name": "North Carolina Tar Heels",
-        "score": 78,
-        "winner": null,
-        "record": "3-1",
-        "home_record": "3-1",
+        "score": 88,
+        "winner": true,
+        "record": "4-1",
+        "home_record": "4-1",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "Matt Able",
-            "value": "18"
+            "value": "23"
           },
           "rebounds": {
             "player": "Cameron Fens",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Terrence Brown",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
-            "player": "Matt Able",
-            "value": "18 PTS"
+            "player": "Terrence Brown",
+            "value": "20 PTS, 6 REB"
           }
         },
         "conf_id": "2",
@@ -140,27 +140,27 @@
         "team_id": "276",
         "abbr": "MRSH",
         "name": "Marshall Thundering Herd",
-        "score": 65,
-        "winner": null,
-        "record": "2-3",
+        "score": 72,
+        "winner": false,
+        "record": "2-4",
         "home_record": "2-1",
-        "away_record": "0-2",
+        "away_record": "0-3",
         "leaders": {
           "points": {
             "player": "Noah Otshudi",
-            "value": "16"
+            "value": "18"
           },
           "rebounds": {
             "player": "Erich Harding",
-            "value": "8"
+            "value": "9"
           },
           "assists": {
-            "player": "Noah Otshudi",
-            "value": "3"
+            "player": "Bryce Slay",
+            "value": "4"
           },
           "rating": {
             "player": "Erich Harding",
-            "value": "8 PTS, 8 REB"
+            "value": "9 PTS, 9 REB"
           }
         },
         "conf_id": "27",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-21T02:30Z",
       "short_name": "HALL VS NCSU",
       "state": "in",
-      "status": "Halftime",
+      "status": "14:01 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "14:01",
       "venue": "Baha Mar Convention Center",
       "neutral_site": true,
       "broadcasts": [
@@ -191,7 +191,7 @@
         "team_id": "152",
         "abbr": "NCSU",
         "name": "NC State Wolfpack",
-        "score": 29,
+        "score": 44,
         "winner": null,
         "record": "5-0",
         "home_record": "4-0",
@@ -199,7 +199,7 @@
         "leaders": {
           "points": {
             "player": "Christian Hammond",
-            "value": "9"
+            "value": "11"
           },
           "rebounds": {
             "player": "Darius Adams",
@@ -211,7 +211,7 @@
           },
           "rating": {
             "player": "Christian Hammond",
-            "value": "9 PTS"
+            "value": "11 PTS"
           }
         },
         "conf_id": "2",
@@ -224,15 +224,15 @@
         "team_id": "2550",
         "abbr": "HALL",
         "name": "Seton Hall Pirates",
-        "score": 30,
+        "score": 46,
         "winner": null,
         "record": "4-1",
         "home_record": "2-0",
         "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "Terry Copeland Jr.",
-            "value": "11"
+            "player": "Rodney Brown Jr.",
+            "value": "15"
           },
           "rebounds": {
             "player": "Terry Copeland Jr.",
@@ -240,11 +240,11 @@
           },
           "assists": {
             "player": "Roddie Anderson",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
-            "player": "Terry Copeland Jr.",
-            "value": "11 PTS"
+            "player": "Rodney Brown Jr.",
+            "value": "15 PTS"
           }
         },
         "conf_id": "4",
