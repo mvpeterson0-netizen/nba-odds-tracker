@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-21T12:45:26+00:00",
+  "finished_at": "2026-11-21T13:00:25+00:00",
   "game_date": "2026-11-21",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "not_due",
+    "odds": "ok",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -28,12 +28,55 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 10933
+      "ODDS_API_KEY_20K": 10909
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Milwaukee Bucks @ Philadelphia 76ers",
+        "type": "morning",
+        "status": "ok",
+        "rows": 174,
+        "markets": 4
+      },
+      {
+        "matchup": "Portland Trail Blazers @ New York Knicks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 168,
+        "markets": 4
+      },
+      {
+        "matchup": "Los Angeles Clippers @ Dallas Mavericks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 158,
+        "markets": 4
+      },
+      {
+        "matchup": "Memphis Grizzlies @ Minnesota Timberwolves",
+        "type": "morning",
+        "status": "ok",
+        "rows": 182,
+        "markets": 4
+      },
+      {
+        "matchup": "New Orleans Pelicans @ San Antonio Spurs",
+        "type": "morning",
+        "status": "ok",
+        "rows": 114,
+        "markets": 4
+      },
+      {
+        "matchup": "Boston Celtics @ Sacramento Kings",
+        "type": "morning",
+        "status": "ok",
+        "rows": 104,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
+    "due": 6,
     "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"
