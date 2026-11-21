@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-21T05:30:28+00:00",
+  "fetched_at": "2026-11-21T05:45:27+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-20",
@@ -445,7 +445,7 @@
       "status": "Final",
       "completed": true,
       "period": 4,
-      "clock": "0.0",
+      "clock": "12:00",
       "venue": "Delta Center",
       "neutral_site": false,
       "broadcasts": [
@@ -516,11 +516,11 @@
       "game_id": "401909312",
       "start_utc": "2026-11-21T03:00Z",
       "short_name": "HOU @ DEN",
-      "state": "in",
-      "status": "1:33 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "1:33",
+      "clock": "0.0",
       "venue": "Ball Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -530,27 +530,27 @@
         "team_id": "7",
         "abbr": "DEN",
         "name": "Denver Nuggets",
-        "score": 124,
-        "winner": null,
-        "record": "8-5",
-        "home_record": "3-3",
-        "away_record": "4-2",
+        "score": 133,
+        "winner": true,
+        "record": "9-5",
+        "home_record": "4-3",
+        "away_record": "5-2",
         "leaders": {
           "points": {
             "player": "Nikola Jokic",
-            "value": "24"
+            "value": "26"
           },
           "rebounds": {
-            "player": "Marvin Bagley III",
-            "value": "6"
+            "player": "Nikola Jokic",
+            "value": "7"
           },
           "assists": {
             "player": "Nikola Jokic",
-            "value": "10"
+            "value": "11"
           },
           "rating": {
             "player": "Nikola Jokic",
-            "value": "24 PTS, 10 AST"
+            "value": "26 PTS, 7 REB, 11 AST"
           }
         }
       },
@@ -558,11 +558,11 @@
         "team_id": "10",
         "abbr": "HOU",
         "name": "Houston Rockets",
-        "score": 119,
-        "winner": null,
-        "record": "12-4",
+        "score": 124,
+        "winner": false,
+        "record": "12-5",
         "home_record": "7-1",
-        "away_record": "5-3",
+        "away_record": "5-4",
         "leaders": {
           "points": {
             "player": "Alperen Sengun",
