@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-21T23:30:23+00:00",
+  "finished_at": "2026-11-21T23:45:24+00:00",
   "game_date": "2026-11-21",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,21 +28,13 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 10648
+      "ODDS_API_KEY_20K": 10633
     },
-    "pulled": [
-      {
-        "matchup": "Portland Trail Blazers @ New York Knicks",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 178,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"
   }
