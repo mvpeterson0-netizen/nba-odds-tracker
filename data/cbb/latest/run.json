@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-21T16:45:20+00:00",
+  "finished_at": "2026-11-21T17:01:03+00:00",
   "game_date": "2026-11-21",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,19 +29,35 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 10788
+      "ODDS_API_KEY_20K": 10779
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Queens University Royals @ LSU Tigers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Washington St Cougars @ Duke Blue Devils",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 51,
-    "p4_events": 6,
+    "p4_events": 5,
     "unmatched": [],
-    "due": 0,
+    "due": 2,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 1,
+      "pull_type": "pregame",
+      "rows": 8,
+      "credits_last": 2
     },
     "status": "ok"
   }

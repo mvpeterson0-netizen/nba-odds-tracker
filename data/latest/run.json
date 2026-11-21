@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-21T16:45:20+00:00",
+  "finished_at": "2026-11-21T17:01:00+00:00",
   "game_date": "2026-11-21",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -26,15 +26,26 @@
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": 0,
-      "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 10788
+      "ODDS_API_KEY": null,
+      "ODDS_API_KEY_2": null,
+      "ODDS_API_KEY_20K": 10781
     },
-    "pulled": [],
-    "errors": [],
+    "pulled": [
+      {
+        "matchup": "Milwaukee Bucks @ Philadelphia 76ers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 180,
+        "markets": 4
+      }
+    ],
+    "errors": [
+      "ODDS_API_KEY: events HTTP 502",
+      "ODDS_API_KEY_2: events HTTP 502"
+    ],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "links_backfill": [],
     "status": "ok"
   }
