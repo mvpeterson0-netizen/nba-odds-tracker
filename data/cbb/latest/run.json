@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-20T23:45:24+00:00",
+  "finished_at": "2026-11-21T00:00:44+00:00",
   "game_date": "2026-11-20",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,21 +29,91 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 11058
+      "ODDS_API_KEY_20K": 11045
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Iowa Hawkeyes @ Xavier Musketeers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Tulsa Golden Hurricane @ Mississippi St Bulldogs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Miss Valley St Delta Devils @ Arkansas Razorbacks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Campbell Fighting Camels @ Kansas St Wildcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Georgia Bulldogs @ Georgia Tech Yellow Jackets",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Le Moyne Dolphins @ Missouri Tigers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "South Alabama Jaguars @ SMU Mustangs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "UCF Knights @ Vanderbilt Commodores",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Eastern Illinois Panthers @ Illinois Fighting Illini",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Marshall Thundering Herd @ North Carolina Tar Heels",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "NC State Wolfpack @ Seton Hall Pirates",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 74,
-    "p4_events": 23,
+    "events": 73,
+    "p4_events": 17,
     "unmatched": [
       "Middle Tennessee Blue Raiders @ Indiana St Sycamores"
     ],
-    "due": 0,
+    "due": 11,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 7,
+      "pull_type": "pregame",
+      "rows": 56,
+      "credits_last": 2
     },
     "status": "ok"
   }
