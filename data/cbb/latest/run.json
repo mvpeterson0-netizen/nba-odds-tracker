@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-21T18:00:35+00:00",
+  "finished_at": "2026-11-21T18:15:21+00:00",
   "game_date": "2026-11-21",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,29 +29,32 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 10777
+      "ODDS_API_KEY_20K": 10774
     },
     "pulled": [
       {
-        "matchup": "Washington St Cougars @ Duke Blue Devils",
+        "matchup": "Lafayette Leopards @ Syracuse Orange",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Western Carolina Catamounts @ Wake Forest Demon Deacons",
         "type": "morning",
         "status": "empty",
         "rows": 0
       }
     ],
     "errors": [],
-    "events": 51,
+    "events": 50,
     "p4_events": 4,
     "unmatched": [],
-    "due": 1,
+    "due": 2,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "not_due",
       "morning_due": false,
-      "pregame_due": 2,
-      "pull_type": "pregame",
-      "rows": 16,
-      "credits_last": 2
+      "pregame_due": 0
     },
     "status": "ok"
   }
