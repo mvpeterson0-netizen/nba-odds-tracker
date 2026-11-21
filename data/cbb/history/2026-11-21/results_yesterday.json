@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-21T05:00:25+00:00",
+  "fetched_at": "2026-11-21T05:15:25+00:00",
   "source": "espn",
   "count": 23,
   "game_date": "2026-11-20",
@@ -9,11 +9,11 @@
       "game_id": "401921691",
       "start_utc": "2026-11-21T02:30Z",
       "short_name": "HALL VS NCSU",
-      "state": "in",
-      "status": "1:30 - OT",
-      "completed": false,
+      "state": "post",
+      "status": "Final/OT",
+      "completed": true,
       "period": 3,
-      "clock": "1:30",
+      "clock": "0:00",
       "venue": "Baha Mar Convention Center",
       "neutral_site": true,
       "broadcasts": [
@@ -23,9 +23,9 @@
         "team_id": "152",
         "abbr": "NCSU",
         "name": "NC State Wolfpack",
-        "score": 79,
-        "winner": null,
-        "record": "5-0",
+        "score": 81,
+        "winner": false,
+        "record": "5-1",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
@@ -56,15 +56,15 @@
         "team_id": "2550",
         "abbr": "HALL",
         "name": "Seton Hall Pirates",
-        "score": 83,
-        "winner": null,
-        "record": "4-1",
+        "score": 87,
+        "winner": true,
+        "record": "5-1",
         "home_record": "2-0",
         "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "Terry Copeland Jr.",
-            "value": "22"
+            "player": "Rodney Brown Jr.",
+            "value": "24"
           },
           "rebounds": {
             "player": "Terry Copeland Jr.",
