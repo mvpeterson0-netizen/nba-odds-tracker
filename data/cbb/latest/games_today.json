@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-21T03:30:24+00:00",
+  "fetched_at": "2026-11-21T03:45:22+00:00",
   "source": "espn",
   "count": 23,
   "game_date": "2026-11-20",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-21T02:00Z",
       "short_name": "EIU @ ILL",
       "state": "in",
-      "status": "11:11 - 2nd",
+      "status": "5:30 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "11:11",
+      "clock": "5:30",
       "venue": "State Farm Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "356",
         "abbr": "ILL",
         "name": "Illinois Fighting Illini",
-        "score": 86,
+        "score": 103,
         "winner": null,
         "record": "4-1",
         "home_record": "3-0",
@@ -31,19 +31,19 @@
         "leaders": {
           "points": {
             "player": "Ethan Brown",
-            "value": "21"
+            "value": "26"
           },
           "rebounds": {
             "player": "Stefan Vaaks",
-            "value": "9"
+            "value": "11"
           },
           "assists": {
             "player": "Stefan Vaaks",
-            "value": "6"
+            "value": "9"
           },
           "rating": {
             "player": "Ethan Brown",
-            "value": "21 PTS"
+            "value": "26 PTS, 3 STL"
           }
         },
         "conf_id": "7",
@@ -56,7 +56,7 @@
         "team_id": "2197",
         "abbr": "EIU",
         "name": "Eastern Illinois Panthers",
-        "score": 32,
+        "score": 40,
         "winner": null,
         "record": "1-5",
         "home_record": "1-1",
@@ -64,11 +64,11 @@
         "leaders": {
           "points": {
             "player": "Jalen Calloway",
-            "value": "10"
+            "value": "15"
           },
           "rebounds": {
             "player": "Tanner Vogel",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Jalen Calloway",
@@ -76,7 +76,7 @@
           },
           "rating": {
             "player": "Jalen Calloway",
-            "value": "10 PTS"
+            "value": "15 PTS"
           }
         },
         "conf_id": "20",
@@ -90,182 +90,14 @@
       "p4": true
     },
     {
-      "game_id": "401921757",
-      "start_utc": "2026-11-21T01:00Z",
-      "short_name": "UCF @ VAN",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Memorial Gymnasium (TN)",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "238",
-        "abbr": "VAN",
-        "name": "Vanderbilt Commodores",
-        "score": 82,
-        "winner": true,
-        "record": "6-0",
-        "home_record": "6-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Tyler Tanner",
-            "value": "23"
-          },
-          "rebounds": {
-            "player": "Berke Buyuktuncel",
-            "value": "13"
-          },
-          "assists": {
-            "player": "Tyler Tanner",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Tyler Tanner",
-            "value": "23 PTS, 11 REB"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 15,
-        "loc": "Vanderbilt",
-        "nick": "Commodores"
-      },
-      "away": {
-        "team_id": "2116",
-        "abbr": "UCF",
-        "name": "UCF Knights",
-        "score": 74,
-        "winner": false,
-        "record": "4-2",
-        "home_record": "4-1",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Dior Johnson",
-            "value": "30"
-          },
-          "rebounds": {
-            "player": "Dior Johnson",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Arturo Dean",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Dior Johnson",
-            "value": "30 PTS, 7 REB"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "UCF",
-        "nick": "Knights"
-      },
-      "espn_line": null,
-      "date": "2026-11-20",
-      "p4": true
-    },
-    {
-      "game_id": "401906784",
-      "start_utc": "2026-11-21T01:00Z",
-      "short_name": "UGA @ GT",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "McCamish Pavilion",
-      "neutral_site": false,
-      "broadcasts": [
-        "ESPNU"
-      ],
-      "home": {
-        "team_id": "59",
-        "abbr": "GT",
-        "name": "Georgia Tech Yellow Jackets",
-        "score": 82,
-        "winner": false,
-        "record": "5-1",
-        "home_record": "5-1",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Tylis Jordan",
-            "value": "19"
-          },
-          "rebounds": {
-            "player": "Tylis Jordan",
-            "value": "5"
-          },
-          "assists": {
-            "player": "Colby Garland",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Colby Garland",
-            "value": "19 PTS"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Georgia Tech",
-        "nick": "Yellow Jackets"
-      },
-      "away": {
-        "team_id": "61",
-        "abbr": "UGA",
-        "name": "Georgia Bulldogs",
-        "score": 88,
-        "winner": true,
-        "record": "6-0",
-        "home_record": "4-0",
-        "away_record": "2-0",
-        "leaders": {
-          "points": {
-            "player": "Kanon Catchings",
-            "value": "19"
-          },
-          "rebounds": {
-            "player": "Kanon Catchings",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Marcus Millender",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Kanon Catchings",
-            "value": "19 PTS, 9 REB, 3 STL"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Georgia",
-        "nick": "Bulldogs"
-      },
-      "espn_line": null,
-      "date": "2026-11-20",
-      "p4": true
-    },
-    {
       "game_id": "401912710",
       "start_utc": "2026-11-21T02:00Z",
       "short_name": "MRSH @ UNC",
       "state": "in",
-      "status": "11:32 - 2nd",
+      "status": "5:34 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "11:32",
+      "clock": "5:34",
       "venue": "Dean E. Smith Center",
       "neutral_site": false,
       "broadcasts": [
@@ -275,15 +107,15 @@
         "team_id": "153",
         "abbr": "UNC",
         "name": "North Carolina Tar Heels",
-        "score": 67,
+        "score": 78,
         "winner": null,
         "record": "3-1",
         "home_record": "3-1",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Terrence Brown",
-            "value": "17"
+            "player": "Matt Able",
+            "value": "18"
           },
           "rebounds": {
             "player": "Cameron Fens",
@@ -294,8 +126,8 @@
             "value": "4"
           },
           "rating": {
-            "player": "Terrence Brown",
-            "value": "17 PTS"
+            "player": "Matt Able",
+            "value": "18 PTS"
           }
         },
         "conf_id": "2",
@@ -308,7 +140,7 @@
         "team_id": "276",
         "abbr": "MRSH",
         "name": "Marshall Thundering Herd",
-        "score": 56,
+        "score": 65,
         "winner": null,
         "record": "2-3",
         "home_record": "2-1",
@@ -320,15 +152,15 @@
           },
           "rebounds": {
             "player": "Erich Harding",
-            "value": "6"
+            "value": "8"
           },
           "assists": {
             "player": "Noah Otshudi",
             "value": "3"
           },
           "rating": {
-            "player": "Noah Otshudi",
-            "value": "16 PTS"
+            "player": "Erich Harding",
+            "value": "8 PTS, 8 REB"
           }
         },
         "conf_id": "27",
@@ -367,7 +199,7 @@
         "leaders": {
           "points": {
             "player": "Christian Hammond",
-            "value": "7"
+            "value": "9"
           },
           "rebounds": {
             "player": "Darius Adams",
@@ -379,7 +211,7 @@
           },
           "rating": {
             "player": "Christian Hammond",
-            "value": "7 PTS"
+            "value": "9 PTS"
           }
         },
         "conf_id": "2",
@@ -588,6 +420,90 @@
         "rank": null,
         "loc": "Coastal Carolina",
         "nick": "Chanticleers"
+      },
+      "espn_line": null,
+      "date": "2026-11-20",
+      "p4": true
+    },
+    {
+      "game_id": "401921757",
+      "start_utc": "2026-11-21T01:00Z",
+      "short_name": "UCF @ VAN",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Memorial Gymnasium (TN)",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "238",
+        "abbr": "VAN",
+        "name": "Vanderbilt Commodores",
+        "score": 82,
+        "winner": true,
+        "record": "6-0",
+        "home_record": "6-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Tyler Tanner",
+            "value": "23"
+          },
+          "rebounds": {
+            "player": "Berke Buyuktuncel",
+            "value": "13"
+          },
+          "assists": {
+            "player": "Tyler Tanner",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Tyler Tanner",
+            "value": "23 PTS, 11 REB"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 15,
+        "loc": "Vanderbilt",
+        "nick": "Commodores"
+      },
+      "away": {
+        "team_id": "2116",
+        "abbr": "UCF",
+        "name": "UCF Knights",
+        "score": 74,
+        "winner": false,
+        "record": "4-2",
+        "home_record": "4-1",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Dior Johnson",
+            "value": "30"
+          },
+          "rebounds": {
+            "player": "Dior Johnson",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Arturo Dean",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Dior Johnson",
+            "value": "30 PTS, 7 REB"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "UCF",
+        "nick": "Knights"
       },
       "espn_line": null,
       "date": "2026-11-20",
@@ -1932,6 +1848,90 @@
         "rank": null,
         "loc": "Campbell",
         "nick": "Fighting Camels"
+      },
+      "espn_line": null,
+      "date": "2026-11-20",
+      "p4": true
+    },
+    {
+      "game_id": "401906784",
+      "start_utc": "2026-11-21T01:00Z",
+      "short_name": "UGA @ GT",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "McCamish Pavilion",
+      "neutral_site": false,
+      "broadcasts": [
+        "ESPNU"
+      ],
+      "home": {
+        "team_id": "59",
+        "abbr": "GT",
+        "name": "Georgia Tech Yellow Jackets",
+        "score": 82,
+        "winner": false,
+        "record": "5-1",
+        "home_record": "5-1",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Tylis Jordan",
+            "value": "19"
+          },
+          "rebounds": {
+            "player": "Tylis Jordan",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Colby Garland",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Colby Garland",
+            "value": "19 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Georgia Tech",
+        "nick": "Yellow Jackets"
+      },
+      "away": {
+        "team_id": "61",
+        "abbr": "UGA",
+        "name": "Georgia Bulldogs",
+        "score": 88,
+        "winner": true,
+        "record": "6-0",
+        "home_record": "4-0",
+        "away_record": "2-0",
+        "leaders": {
+          "points": {
+            "player": "Kanon Catchings",
+            "value": "19"
+          },
+          "rebounds": {
+            "player": "Kanon Catchings",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Marcus Millender",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Kanon Catchings",
+            "value": "19 PTS, 9 REB, 3 STL"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Georgia",
+        "nick": "Bulldogs"
       },
       "espn_line": null,
       "date": "2026-11-20",
