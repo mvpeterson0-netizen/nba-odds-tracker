@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-21T19:00:34+00:00",
+  "fetched_at": "2026-11-21T19:15:20+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-21",
@@ -9,11 +9,11 @@
       "game_id": "401925756",
       "start_utc": "2026-11-21T17:00Z",
       "short_name": "DETM @ MSU",
-      "state": "in",
-      "status": "2:27 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "2:27",
+      "clock": "0:00",
       "venue": "Breslin Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,10 +23,10 @@
         "team_id": "127",
         "abbr": "MSU",
         "name": "Michigan State Spartans",
-        "score": 82,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "3-0",
+        "score": 91,
+        "winner": true,
+        "record": "5-1",
+        "home_record": "4-0",
         "away_record": "0-1",
         "leaders": {
           "points": {
@@ -39,11 +39,11 @@
           },
           "assists": {
             "player": "Jeremy Fears Jr.",
-            "value": "13"
+            "value": "14"
           },
           "rating": {
-            "player": "Kur Teng",
-            "value": "24 PTS"
+            "player": "Jeremy Fears Jr.",
+            "value": "17 PTS, 14 AST"
           }
         },
         "conf_id": "7",
@@ -56,11 +56,11 @@
         "team_id": "2174",
         "abbr": "DETM",
         "name": "Detroit Mercy Titans",
-        "score": 66,
-        "winner": null,
-        "record": "0-4",
+        "score": 70,
+        "winner": false,
+        "record": "0-5",
         "home_record": "0-1",
-        "away_record": "0-3",
+        "away_record": "0-4",
         "leaders": {
           "points": {
             "player": "Lance Stone",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-21T18:00Z",
       "short_name": "QUC @ LSU",
       "state": "in",
-      "status": "Halftime",
+      "status": "17:02 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "17:02",
       "venue": "Pete Maravich Assembly Center",
       "neutral_site": false,
       "broadcasts": [
@@ -107,15 +107,15 @@
         "team_id": "99",
         "abbr": "LSU",
         "name": "LSU Tigers",
-        "score": 52,
+        "score": 56,
         "winner": null,
         "record": "5-0",
         "home_record": "4-0",
         "away_record": "1-0",
         "leaders": {
           "points": {
-            "player": "Michael Ruzic",
-            "value": "11"
+            "player": "Donovan Dent",
+            "value": "13"
           },
           "rebounds": {
             "player": "Michael Ruzic",
@@ -140,7 +140,7 @@
         "team_id": "2511",
         "abbr": "QUC",
         "name": "Queens University Royals",
-        "score": 40,
+        "score": 45,
         "winner": null,
         "record": "3-2",
         "home_record": "1-0",
@@ -148,19 +148,19 @@
         "leaders": {
           "points": {
             "player": "Nasir Mann",
-            "value": "16"
+            "value": "19"
           },
           "rebounds": {
             "player": "Nasir Mann",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
-            "player": "Jordan Watford",
+            "player": "Avantae Parker",
             "value": "3"
           },
           "rating": {
             "player": "Nasir Mann",
-            "value": "16 PTS"
+            "value": "19 PTS"
           }
         },
         "conf_id": "46",
@@ -177,11 +177,11 @@
       "game_id": "401909730",
       "start_utc": "2026-11-21T19:00Z",
       "short_name": "WCU @ WAKE",
-      "state": "pre",
-      "status": "11/21 - 2:00 PM EST",
+      "state": "in",
+      "status": "13:42 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "13:42",
       "venue": "LJVM Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -191,23 +191,27 @@
         "team_id": "154",
         "abbr": "WAKE",
         "name": "Wake Forest Demon Deacons",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "4-1",
         "home_record": "4-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Kevair Kennedy",
-            "value": "19.0"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Gavin Placide",
-            "value": "8.0"
+            "value": "4"
           },
-          "assistsPerGame": {
-            "player": "Kevair Kennedy",
-            "value": "3.8"
+          "rebounds": {
+            "player": "Gavin Placide",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Gavin Placide",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Gavin Placide",
+            "value": "4 PTS"
           }
         },
         "conf_id": "2",
@@ -220,23 +224,27 @@
         "team_id": "2717",
         "abbr": "WCU",
         "name": "Western Carolina Catamounts",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "2-3",
         "home_record": "1-1",
         "away_record": "1-2",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Jaeden Roberts",
-            "value": "15.4"
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Samuel Dada",
-            "value": "6.8"
+          "rebounds": {
+            "player": "Donovan Raymond",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Jacob Zhu",
-            "value": "3.2"
+          "assists": {
+            "player": "Malachi Brown",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Malachi Brown",
+            "value": "2 PTS"
           }
         },
         "conf_id": "24",
@@ -245,12 +253,7 @@
         "loc": "Western Carolina",
         "nick": "Catamounts"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "WAKE -14.5",
-        "spread": -14.5,
-        "over_under": 147.5
-      },
+      "espn_line": null,
       "date": "2026-11-21",
       "p4": true
     },
@@ -258,11 +261,11 @@
       "game_id": "401909719",
       "start_utc": "2026-11-21T19:00Z",
       "short_name": "LAF @ SYR",
-      "state": "pre",
-      "status": "11/21 - 2:00 PM EST",
+      "state": "in",
+      "status": "13:13 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "13:13",
       "venue": "JMA Wireless Dome",
       "neutral_site": false,
       "broadcasts": [
@@ -272,23 +275,27 @@
         "team_id": "183",
         "abbr": "SYR",
         "name": "Syracuse Orange",
-        "score": 0,
+        "score": 10,
         "winner": null,
         "record": "3-2",
         "home_record": "3-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Kiyan Anthony",
-            "value": "13.6"
+          "points": {
+            "player": "Garwey Dual",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Sadiq White Jr.",
-            "value": "7.6"
+          "rebounds": {
+            "player": "Luke Wilson",
+            "value": "3"
           },
-          "assistsPerGame": {
-            "player": "Ryan Moesch",
-            "value": "5.2"
+          "assists": {
+            "player": "Gavin Doty",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Luke Wilson",
+            "value": "3 REB"
           }
         },
         "conf_id": "2",
@@ -301,23 +308,23 @@
         "team_id": "322",
         "abbr": "LAF",
         "name": "Lafayette Leopards",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "3-3",
         "home_record": "3-0",
         "away_record": "0-3",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Beckett Currie",
-            "value": "14.2"
-          },
-          "reboundsPerGame": {
-            "player": "Jasraj Gill",
-            "value": "7.5"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Cooper Kesler",
-            "value": "3.0"
+            "value": "7"
+          },
+          "rebounds": {
+            "player": "Shareef Jackson",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Cooper Kesler",
+            "value": "7 PTS"
           }
         },
         "conf_id": "22",
@@ -326,12 +333,7 @@
         "loc": "Lafayette",
         "nick": "Leopards"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "SYR -24.5",
-        "spread": -24.5,
-        "over_under": 140.5
-      },
+      "espn_line": null,
       "date": "2026-11-21",
       "p4": true
     },
@@ -408,7 +410,7 @@
         "nick": "Wolverines"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MICH -4.5",
         "spread": 4.5,
         "over_under": 160.5
@@ -489,7 +491,7 @@
         "nick": "Cougars"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "DUKE -25.5",
         "spread": -25.5,
         "over_under": 149.5
