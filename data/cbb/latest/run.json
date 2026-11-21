@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-21T23:00:27+00:00",
+  "finished_at": "2026-11-21T23:15:22+00:00",
   "game_date": "2026-11-21",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,29 +29,19 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 10658
+      "ODDS_API_KEY_20K": 10652
     },
-    "pulled": [
-      {
-        "matchup": "Washington St Cougars @ Duke Blue Devils",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      }
-    ],
+    "pulled": [],
     "errors": [],
-    "events": 66,
+    "events": 64,
     "p4_events": 11,
     "unmatched": [],
-    "due": 1,
+    "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "not_due",
       "morning_due": false,
-      "pregame_due": 1,
-      "pull_type": "pregame",
-      "rows": 8,
-      "credits_last": 2
+      "pregame_due": 0
     },
     "status": "ok"
   }
