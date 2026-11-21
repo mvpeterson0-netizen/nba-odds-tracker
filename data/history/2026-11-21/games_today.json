@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-21T20:30:19+00:00",
+  "fetched_at": "2026-11-21T20:45:15+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-21",
@@ -8,11 +8,11 @@
       "game_id": "401910023",
       "start_utc": "2026-11-21T18:00Z",
       "short_name": "MIL @ PHI",
-      "state": "in",
-      "status": "4.8 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "4.8",
+      "clock": "0.0",
       "venue": "Xfinity Mobile Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,15 +23,15 @@
         "team_id": "20",
         "abbr": "PHI",
         "name": "Philadelphia 76ers",
-        "score": 130,
-        "winner": null,
-        "record": "13-3",
-        "home_record": "6-2",
+        "score": 132,
+        "winner": true,
+        "record": "14-3",
+        "home_record": "7-2",
         "away_record": "7-1",
         "leaders": {
           "points": {
             "player": "Joel Embiid",
-            "value": "24"
+            "value": "26"
           },
           "rebounds": {
             "player": "Joel Embiid",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Joel Embiid",
-            "value": "24 PTS, 17 REB, 9 AST"
+            "value": "26 PTS, 17 REB, 9 AST"
           }
         }
       },
@@ -52,10 +52,10 @@
         "abbr": "MIL",
         "name": "Milwaukee Bucks",
         "score": 129,
-        "winner": null,
-        "record": "1-15",
+        "winner": false,
+        "record": "1-16",
         "home_record": "1-8",
-        "away_record": "0-7",
+        "away_record": "0-8",
         "leaders": {
           "points": {
             "player": "Tyler Herro",
