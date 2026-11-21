@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-21T01:15:28+00:00",
+  "finished_at": "2026-11-21T01:30:37+00:00",
   "game_date": "2026-11-20",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,18 +28,22 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 11031
+      "ODDS_API_KEY_20K": 11027
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Phoenix Suns @ Utah Jazz",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 170,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
-    "links_backfill": [
-      "Los Angeles Clippers @ Dallas Mavericks: 40 links",
-      "Memphis Grizzlies @ Minnesota Timberwolves: 50 links",
-      "New Orleans Pelicans @ San Antonio Spurs: 0 links"
-    ],
+    "due": 1,
+    "pregame_pulled": true,
+    "links_backfill": [],
     "status": "ok"
   }
 }

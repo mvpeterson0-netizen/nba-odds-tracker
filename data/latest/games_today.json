@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-21T01:15:20+00:00",
+  "fetched_at": "2026-11-21T01:30:29+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-20",
@@ -9,10 +9,10 @@
       "start_utc": "2026-11-21T00:00Z",
       "short_name": "CHA @ ATL",
       "state": "in",
-      "status": "Halftime",
+      "status": "6:24 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "6:24",
       "venue": "State Farm Arena",
       "neutral_site": false,
       "broadcasts": null,
@@ -20,7 +20,7 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 56,
+        "score": 63,
         "winner": null,
         "record": "9-6",
         "home_record": "3-3",
@@ -32,15 +32,15 @@
           },
           "rebounds": {
             "player": "Dyson Daniels",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
-            "player": "Dyson Daniels",
+            "player": "Jalen Johnson",
             "value": "6"
           },
           "rating": {
             "player": "Jalen Johnson",
-            "value": "14 PTS"
+            "value": "14 PTS, 6 AST, 3 STL"
           }
         }
       },
@@ -48,27 +48,27 @@
         "team_id": "30",
         "abbr": "CHA",
         "name": "Charlotte Hornets",
-        "score": 57,
+        "score": 62,
         "winner": null,
         "record": "4-10",
         "home_record": "3-4",
         "away_record": "1-6",
         "leaders": {
           "points": {
-            "player": "Brandon Miller",
-            "value": "9"
+            "player": "Moussa Diabate",
+            "value": "11"
           },
           "rebounds": {
             "player": "Moussa Diabate",
-            "value": "8"
+            "value": "10"
           },
           "assists": {
-            "player": "Brandon Miller",
-            "value": "3"
+            "player": "Coby White",
+            "value": "4"
           },
           "rating": {
             "player": "Moussa Diabate",
-            "value": "8 PTS, 8 REB"
+            "value": "11 PTS, 10 REB"
           }
         }
       },
@@ -79,10 +79,10 @@
       "start_utc": "2026-11-21T00:30Z",
       "short_name": "ORL @ BKN",
       "state": "in",
-      "status": "9:20 - 2nd",
+      "status": "5:55 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:20",
+      "clock": "5:55",
       "venue": "Barclays Center",
       "neutral_site": false,
       "broadcasts": [
@@ -92,7 +92,7 @@
         "team_id": "17",
         "abbr": "BKN",
         "name": "Brooklyn Nets",
-        "score": 34,
+        "score": 42,
         "winner": null,
         "record": "3-11",
         "home_record": "1-5",
@@ -100,7 +100,7 @@
         "leaders": {
           "points": {
             "player": "Michael Porter Jr.",
-            "value": "11"
+            "value": "13"
           },
           "rebounds": {
             "player": "Julius Randle",
@@ -112,7 +112,7 @@
           },
           "rating": {
             "player": "Julius Randle",
-            "value": "9 PTS"
+            "value": "12 PTS, 3 STL"
           }
         }
       },
@@ -120,7 +120,7 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 42,
+        "score": 44,
         "winner": null,
         "record": "6-8",
         "home_record": "1-5",
@@ -131,8 +131,8 @@
             "value": "11"
           },
           "rebounds": {
-            "player": "Nikola Vucevic",
-            "value": "3"
+            "player": "Anthony Black",
+            "value": "4"
           },
           "assists": {
             "player": "Anthony Black",
@@ -151,10 +151,10 @@
       "start_utc": "2026-11-21T00:30Z",
       "short_name": "IND @ CLE",
       "state": "in",
-      "status": "9:11 - 2nd",
+      "status": "2:57 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:11",
+      "clock": "2:57",
       "venue": "Rocket Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -164,7 +164,7 @@
         "team_id": "5",
         "abbr": "CLE",
         "name": "Cleveland Cavaliers",
-        "score": 36,
+        "score": 55,
         "winner": null,
         "record": "8-8",
         "home_record": "6-3",
@@ -172,19 +172,19 @@
         "leaders": {
           "points": {
             "player": "James Harden",
-            "value": "15"
+            "value": "24"
           },
           "rebounds": {
-            "player": "Jarrett Allen",
+            "player": "Peyton Watson",
             "value": "4"
           },
           "assists": {
             "player": "James Harden",
-            "value": "2"
+            "value": "4"
           },
           "rating": {
             "player": "James Harden",
-            "value": "15 PTS"
+            "value": "24 PTS"
           }
         }
       },
@@ -192,27 +192,27 @@
         "team_id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers",
-        "score": 42,
+        "score": 56,
         "winner": null,
         "record": "5-10",
         "home_record": "2-5",
         "away_record": "3-4",
         "leaders": {
           "points": {
-            "player": "Obi Toppin",
-            "value": "7"
+            "player": "Kelly Oubre Jr.",
+            "value": "13"
           },
           "rebounds": {
-            "player": "Aaron Nesmith",
-            "value": "3"
+            "player": "Pascal Siakam",
+            "value": "5"
           },
           "assists": {
             "player": "Aaron Nesmith",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
-            "player": "Obi Toppin",
-            "value": "7 PTS"
+            "player": "Kelly Oubre Jr.",
+            "value": "13 PTS"
           }
         }
       },
@@ -223,10 +223,10 @@
       "start_utc": "2026-11-21T00:30Z",
       "short_name": "TOR @ DET",
       "state": "in",
-      "status": "9:26 - 2nd",
+      "status": "2:46 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:26",
+      "clock": "2:46",
       "venue": "Little Caesars Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -236,7 +236,7 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 28,
+        "score": 42,
         "winner": null,
         "record": "10-4",
         "home_record": "3-2",
@@ -244,7 +244,7 @@
         "leaders": {
           "points": {
             "player": "Cade Cunningham",
-            "value": "9"
+            "value": "13"
           },
           "rebounds": {
             "player": "John Collins",
@@ -252,11 +252,11 @@
           },
           "assists": {
             "player": "Cade Cunningham",
-            "value": "1"
+            "value": "4"
           },
           "rating": {
             "player": "Cade Cunningham",
-            "value": "9 PTS"
+            "value": "13 PTS"
           }
         }
       },
@@ -264,7 +264,7 @@
         "team_id": "28",
         "abbr": "TOR",
         "name": "Toronto Raptors",
-        "score": 33,
+        "score": 49,
         "winner": null,
         "record": "5-10",
         "home_record": "2-6",
@@ -276,11 +276,11 @@
           },
           "rebounds": {
             "player": "Allen Graves",
-            "value": "3"
+            "value": "5"
           },
           "assists": {
-            "player": "Ja'Kobe Walter",
-            "value": "3"
+            "player": "Immanuel Quickley",
+            "value": "6"
           },
           "rating": {
             "player": "Scottie Barnes",
@@ -295,10 +295,10 @@
       "start_utc": "2026-11-21T01:00Z",
       "short_name": "WSH @ CHI",
       "state": "in",
-      "status": "8:37 - 1st",
+      "status": "3:18 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "8:37",
+      "clock": "3:18",
       "venue": "United Center",
       "neutral_site": false,
       "broadcasts": [
@@ -308,27 +308,27 @@
         "team_id": "4",
         "abbr": "CHI",
         "name": "Chicago Bulls",
-        "score": 7,
+        "score": 19,
         "winner": null,
         "record": "4-10",
         "home_record": "1-4",
         "away_record": "3-6",
         "leaders": {
           "points": {
-            "player": "Isaac Okoro",
+            "player": "Buddy Hield",
             "value": "3"
           },
           "rebounds": {
             "player": "Nic Claxton",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Josh Giddey",
             "value": "2"
           },
+          "assists": {
+            "player": "Tre Jones",
+            "value": "3"
+          },
           "rating": {
-            "player": "Isaac Okoro",
-            "value": "3 PTS"
+            "player": "Tre Jones",
+            "value": "2 PTS"
           }
         }
       },
@@ -336,27 +336,27 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 7,
+        "score": 18,
         "winner": null,
         "record": "5-11",
         "home_record": "2-5",
         "away_record": "3-6",
         "leaders": {
           "points": {
-            "player": "Trae Young",
-            "value": "3"
+            "player": "Anthony Davis",
+            "value": "6"
           },
           "rebounds": {
             "player": "Kyshawn George",
-            "value": "1"
+            "value": "3"
           },
           "assists": {
             "player": "Trae Young",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
-            "player": "Trae Young",
-            "value": "3 PTS"
+            "player": "Kyshawn George",
+            "value": "4 PTS"
           }
         }
       },
@@ -367,10 +367,10 @@
       "start_utc": "2026-11-21T01:00Z",
       "short_name": "NO @ OKC",
       "state": "in",
-      "status": "9:50 - 1st",
+      "status": "3:21 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "9:50",
+      "clock": "3:21",
       "venue": "Paycom Center",
       "neutral_site": false,
       "broadcasts": [
@@ -383,27 +383,27 @@
         "team_id": "25",
         "abbr": "OKC",
         "name": "Oklahoma City Thunder",
-        "score": 11,
+        "score": 22,
         "winner": null,
         "record": "9-6",
         "home_record": "5-1",
         "away_record": "4-5",
         "leaders": {
           "points": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "4"
+            "player": "Aday Mara",
+            "value": "8"
           },
           "rebounds": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "1"
+            "player": "Aday Mara",
+            "value": "4"
           },
           "assists": {
             "player": "Isaiah Hartenstein",
             "value": "2"
           },
           "rating": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "4 PTS"
+            "player": "Aday Mara",
+            "value": "8 PTS"
           }
         }
       },
@@ -411,12 +411,29 @@
         "team_id": "3",
         "abbr": "NO",
         "name": "New Orleans Pelicans",
-        "score": 0,
+        "score": 29,
         "winner": null,
         "record": "5-11",
         "home_record": "4-7",
         "away_record": "1-4",
-        "leaders": null
+        "leaders": {
+          "points": {
+            "player": "Zion Williamson",
+            "value": "10"
+          },
+          "rebounds": {
+            "player": "Zion Williamson",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Jeremiah Fears",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Zion Williamson",
+            "value": "10 PTS"
+          }
+        }
       },
       "espn_line": null
     },
