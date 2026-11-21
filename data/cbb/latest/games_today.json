@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-21T00:45:39+00:00",
+  "fetched_at": "2026-11-21T01:00:39+00:00",
   "source": "espn",
   "count": 23,
   "game_date": "2026-11-20",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-21T00:00Z",
       "short_name": "L-MD @ UVA",
       "state": "in",
-      "status": "3:16 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "3:16",
+      "clock": "0:00",
       "venue": "John Paul Jones Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "258",
         "abbr": "UVA",
         "name": "Virginia Cavaliers",
-        "score": 44,
+        "score": 50,
         "winner": null,
         "record": "6-0",
         "home_record": "4-0",
@@ -31,11 +31,11 @@
         "leaders": {
           "points": {
             "player": "Sam Lewis",
-            "value": "14"
+            "value": "16"
           },
           "rebounds": {
-            "player": "Martin Carrere",
-            "value": "3"
+            "player": "Johann Grunloh",
+            "value": "5"
           },
           "assists": {
             "player": "Chance Mallory",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Sam Lewis",
-            "value": "14 PTS"
+            "value": "16 PTS"
           }
         },
         "conf_id": "2",
@@ -140,7 +140,7 @@
         "team_id": "324",
         "abbr": "CCU",
         "name": "Coastal Carolina Chanticleers",
-        "score": 30,
+        "score": 29,
         "winner": null,
         "record": "2-3",
         "home_record": "2-1",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "Darius Washington III",
-            "value": "7 PTS"
+            "value": "6 PTS"
           }
         },
         "conf_id": "27",
@@ -174,182 +174,14 @@
       "p4": true
     },
     {
-      "game_id": "401921723",
-      "start_utc": "2026-11-20T22:00Z",
-      "short_name": "MAN @ MIA",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Watsco Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACC Network"
-      ],
-      "home": {
-        "team_id": "2390",
-        "abbr": "MIA",
-        "name": "Miami Hurricanes",
-        "score": 106,
-        "winner": true,
-        "record": "5-1",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Shelton Henderson",
-            "value": "22"
-          },
-          "rebounds": {
-            "player": "Shelton Henderson",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Acaden Lewis",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Shelton Henderson",
-            "value": "22 PTS, 8 REB"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": 17,
-        "loc": "Miami",
-        "nick": "Hurricanes"
-      },
-      "away": {
-        "team_id": "2363",
-        "abbr": "MAN",
-        "name": "Manhattan Jaspers",
-        "score": 54,
-        "winner": false,
-        "record": "1-5",
-        "home_record": "0-2",
-        "away_record": "1-3",
-        "leaders": {
-          "points": {
-            "player": "Quron Elliott",
-            "value": "9"
-          },
-          "rebounds": {
-            "player": "Novak Manojlovic",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Quron Elliott",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Josiah Sabino",
-            "value": "7 PTS"
-          }
-        },
-        "conf_id": "13",
-        "conf": null,
-        "rank": null,
-        "loc": "Manhattan",
-        "nick": "Jaspers"
-      },
-      "espn_line": null,
-      "date": "2026-11-20",
-      "p4": true
-    },
-    {
-      "game_id": "401921419",
-      "start_utc": "2026-11-20T22:30Z",
-      "short_name": "DAY VS UTAH",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "TD Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "254",
-        "abbr": "UTAH",
-        "name": "Utah Utes",
-        "score": 46,
-        "winner": false,
-        "record": "3-2",
-        "home_record": "3-1",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Trey Campbell",
-            "value": "16"
-          },
-          "rebounds": {
-            "player": "TJ Burch",
-            "value": "5"
-          },
-          "assists": {
-            "player": "Malek Gomma",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Trey Campbell",
-            "value": "16 PTS"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Utah",
-        "nick": "Utes"
-      },
-      "away": {
-        "team_id": "2168",
-        "abbr": "DAY",
-        "name": "Dayton Flyers",
-        "score": 63,
-        "winner": true,
-        "record": "3-3",
-        "home_record": "2-3",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Aiden Derkack",
-            "value": "14"
-          },
-          "rebounds": {
-            "player": "Aiden Derkack",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Aiden Derkack",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Aiden Derkack",
-            "value": "14 PTS, 9 REB"
-          }
-        },
-        "conf_id": "3",
-        "conf": null,
-        "rank": null,
-        "loc": "Dayton",
-        "nick": "Flyers"
-      },
-      "espn_line": null,
-      "date": "2026-11-20",
-      "p4": true
-    },
-    {
       "game_id": "401926134",
       "start_utc": "2026-11-21T00:00Z",
       "short_name": "OAK @ PUR",
       "state": "in",
-      "status": "5:45 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "5:45",
+      "clock": "0:00",
       "venue": "Mackey Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -359,7 +191,7 @@
         "team_id": "2509",
         "abbr": "PUR",
         "name": "Purdue Boilermakers",
-        "score": 30,
+        "score": 47,
         "winner": null,
         "record": "3-2",
         "home_record": "3-1",
@@ -367,19 +199,19 @@
         "leaders": {
           "points": {
             "player": "Luke Ertel",
-            "value": "9"
+            "value": "12"
           },
           "rebounds": {
             "player": "Daniel Jacobsen",
-            "value": "3"
+            "value": "8"
           },
           "assists": {
-            "player": "Jack Benter",
+            "player": "Luke Ertel",
             "value": "4"
           },
           "rating": {
-            "player": "Luke Ertel",
-            "value": "9 PTS"
+            "player": "Daniel Jacobsen",
+            "value": "10 PTS, 8 REB, 3 BLK"
           }
         },
         "conf_id": "7",
@@ -392,18 +224,18 @@
         "team_id": "2473",
         "abbr": "OAK",
         "name": "Oakland Golden Grizzlies",
-        "score": 11,
+        "score": 17,
         "winner": null,
         "record": "1-6",
         "home_record": "1-0",
         "away_record": "0-6",
         "leaders": {
           "points": {
-            "player": "Warren Marshall IV",
-            "value": "5"
+            "player": "Chris Fields Jr.",
+            "value": "6"
           },
           "rebounds": {
-            "player": "Camden Thompson",
+            "player": "Chris Fields Jr.",
             "value": "6"
           },
           "assists": {
@@ -411,8 +243,8 @@
             "value": "2"
           },
           "rating": {
-            "player": "Warren Marshall IV",
-            "value": "5 PTS"
+            "player": "Chris Fields Jr.",
+            "value": "6 PTS, 6 REB"
           }
         },
         "conf_id": "45",
@@ -430,10 +262,10 @@
       "start_utc": "2026-11-21T00:00Z",
       "short_name": "WIS VS MUR",
       "state": "in",
-      "status": "3:03 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "3:03",
+      "clock": "0:00",
       "venue": "Baha Mar Convention Center",
       "neutral_site": true,
       "broadcasts": [
@@ -443,7 +275,7 @@
         "team_id": "93",
         "abbr": "MUR",
         "name": "Murray State Racers",
-        "score": 27,
+        "score": 38,
         "winner": null,
         "record": "5-1",
         "home_record": "3-0",
@@ -451,11 +283,11 @@
         "leaders": {
           "points": {
             "player": "Roman Domon",
-            "value": "10"
+            "value": "17"
           },
           "rebounds": {
             "player": "Brigham Rogers",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Roman Domon",
@@ -463,7 +295,7 @@
           },
           "rating": {
             "player": "Roman Domon",
-            "value": "10 PTS"
+            "value": "17 PTS"
           }
         },
         "conf_id": "18",
@@ -476,18 +308,18 @@
         "team_id": "275",
         "abbr": "WIS",
         "name": "Wisconsin Badgers",
-        "score": 18,
+        "score": 22,
         "winner": null,
         "record": "4-1",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Jackson Ball",
-            "value": "5"
+            "player": "Nolan Winter",
+            "value": "6"
           },
           "rebounds": {
-            "player": "Owen Foxwell",
+            "player": "Nolan Winter",
             "value": "4"
           },
           "assists": {
@@ -496,7 +328,7 @@
           },
           "rating": {
             "player": "Nolan Winter",
-            "value": "2 PTS"
+            "value": "6 PTS"
           }
         },
         "conf_id": "7",
@@ -514,10 +346,10 @@
       "start_utc": "2026-11-21T00:00Z",
       "short_name": "WAG @ MD",
       "state": "in",
-      "status": "0:02 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "0:02",
+      "clock": "0:00",
       "venue": "XFINITY Center",
       "neutral_site": false,
       "broadcasts": [
@@ -598,10 +430,10 @@
       "start_utc": "2026-11-21T00:00Z",
       "short_name": "CMU @ PITT",
       "state": "in",
-      "status": "2:58 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "2:58",
+      "clock": "0:00",
       "venue": "Petersen Events Center",
       "neutral_site": false,
       "broadcasts": [
@@ -611,7 +443,7 @@
         "team_id": "221",
         "abbr": "PITT",
         "name": "Pittsburgh Panthers",
-        "score": 44,
+        "score": 54,
         "winner": null,
         "record": "5-0",
         "home_record": "3-0",
@@ -619,7 +451,7 @@
         "leaders": {
           "points": {
             "player": "Jonathan Powell",
-            "value": "13"
+            "value": "16"
           },
           "rebounds": {
             "player": "Baye Ndongo",
@@ -627,11 +459,11 @@
           },
           "assists": {
             "player": "Naithan George",
-            "value": "3"
+            "value": "5"
           },
           "rating": {
             "player": "Jonathan Powell",
-            "value": "13 PTS"
+            "value": "16 PTS"
           }
         },
         "conf_id": "2",
@@ -644,7 +476,7 @@
         "team_id": "2117",
         "abbr": "CMU",
         "name": "Central Michigan Chippewas",
-        "score": 32,
+        "score": 40,
         "winner": null,
         "record": "4-1",
         "home_record": "2-0",
@@ -652,7 +484,7 @@
         "leaders": {
           "points": {
             "player": "Jayden Hackett",
-            "value": "10"
+            "value": "13"
           },
           "rebounds": {
             "player": "Conrad Luczynski",
@@ -664,7 +496,7 @@
           },
           "rating": {
             "player": "Jayden Hackett",
-            "value": "10 PTS"
+            "value": "13 PTS"
           }
         },
         "conf_id": "14",
@@ -672,6 +504,258 @@
         "rank": null,
         "loc": "Central Michigan",
         "nick": "Chippewas"
+      },
+      "espn_line": null,
+      "date": "2026-11-20",
+      "p4": true
+    },
+    {
+      "game_id": "401925865",
+      "start_utc": "2026-11-21T00:30Z",
+      "short_name": "TLSA VS MSST",
+      "state": "in",
+      "status": "6:44 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "6:44",
+      "venue": "Mississippi Coliseum",
+      "neutral_site": true,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "344",
+        "abbr": "MSST",
+        "name": "Mississippi State Bulldogs",
+        "score": 20,
+        "winner": null,
+        "record": "4-1",
+        "home_record": "3-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Josh Hubbard",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "RJ Johnson",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Kimani Hamilton",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Josh Hubbard",
+            "value": "6 PTS, 3 STL"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Mississippi State",
+        "nick": "Bulldogs"
+      },
+      "away": {
+        "team_id": "202",
+        "abbr": "TLSA",
+        "name": "Tulsa Golden Hurricane",
+        "score": 19,
+        "winner": null,
+        "record": "4-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Jeremiah Johnson",
+            "value": "7"
+          },
+          "rebounds": {
+            "player": "Kaleb Banks",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Chris Loofe",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Jeremiah Johnson",
+            "value": "7 PTS"
+          }
+        },
+        "conf_id": "62",
+        "conf": null,
+        "rank": null,
+        "loc": "Tulsa",
+        "nick": "Golden Hurricane"
+      },
+      "espn_line": null,
+      "date": "2026-11-20",
+      "p4": true
+    },
+    {
+      "game_id": "401909545",
+      "start_utc": "2026-11-21T00:30Z",
+      "short_name": "IOWA @ XAV",
+      "state": "in",
+      "status": "5:57 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "5:57",
+      "venue": "Cintas Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "TNT"
+      ],
+      "home": {
+        "team_id": "2752",
+        "abbr": "XAV",
+        "name": "Xavier Musketeers",
+        "score": 24,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Mike Nwoko",
+            "value": "11"
+          },
+          "rebounds": {
+            "player": "Rolyns Aligbe",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Filip Borovicanin",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Mike Nwoko",
+            "value": "11 PTS"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Xavier",
+        "nick": "Musketeers"
+      },
+      "away": {
+        "team_id": "2294",
+        "abbr": "IOWA",
+        "name": "Iowa Hawkeyes",
+        "score": 23,
+        "winner": null,
+        "record": "2-2",
+        "home_record": "2-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Isaia Howard",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Cooper Koch",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Trevin Jirak",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Isaia Howard",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Iowa",
+        "nick": "Hawkeyes"
+      },
+      "espn_line": null,
+      "date": "2026-11-20",
+      "p4": true
+    },
+    {
+      "game_id": "401921723",
+      "start_utc": "2026-11-20T22:00Z",
+      "short_name": "MAN @ MIA",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Watsco Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACC Network"
+      ],
+      "home": {
+        "team_id": "2390",
+        "abbr": "MIA",
+        "name": "Miami Hurricanes",
+        "score": 106,
+        "winner": true,
+        "record": "5-1",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Shelton Henderson",
+            "value": "21"
+          },
+          "rebounds": {
+            "player": "Shelton Henderson",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Acaden Lewis",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Shelton Henderson",
+            "value": "21 PTS, 8 REB"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": 17,
+        "loc": "Miami",
+        "nick": "Hurricanes"
+      },
+      "away": {
+        "team_id": "2363",
+        "abbr": "MAN",
+        "name": "Manhattan Jaspers",
+        "score": 54,
+        "winner": false,
+        "record": "1-5",
+        "home_record": "0-2",
+        "away_record": "1-3",
+        "leaders": {
+          "points": {
+            "player": "Quron Elliott",
+            "value": "13"
+          },
+          "rebounds": {
+            "player": "Novak Manojlovic",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Quron Elliott",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Quron Elliott",
+            "value": "13 PTS"
+          }
+        },
+        "conf_id": "13",
+        "conf": null,
+        "rank": null,
+        "loc": "Manhattan",
+        "nick": "Jaspers"
       },
       "espn_line": null,
       "date": "2026-11-20",
@@ -930,164 +1014,84 @@
       "p4": true
     },
     {
-      "game_id": "401925865",
-      "start_utc": "2026-11-21T00:30Z",
-      "short_name": "TLSA VS MSST",
-      "state": "in",
-      "status": "13:31 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "13:31",
-      "venue": "Mississippi Coliseum",
+      "game_id": "401921419",
+      "start_utc": "2026-11-20T22:30Z",
+      "short_name": "DAY VS UTAH",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "TD Arena",
       "neutral_site": true,
       "broadcasts": [
-        "SECN+"
+        "ESPN2"
       ],
       "home": {
-        "team_id": "344",
-        "abbr": "MSST",
-        "name": "Mississippi State Bulldogs",
-        "score": 10,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "3-0",
-        "away_record": "1-0",
+        "team_id": "254",
+        "abbr": "UTAH",
+        "name": "Utah Utes",
+        "score": 46,
+        "winner": false,
+        "record": "3-2",
+        "home_record": "3-1",
+        "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Josh Hubbard",
-            "value": "4"
+            "player": "Trey Campbell",
+            "value": "16"
           },
           "rebounds": {
-            "player": "Kimani Hamilton",
+            "player": "TJ Burch",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Malek Gomma",
             "value": "2"
           },
           "rating": {
-            "player": "Josh Hubbard",
-            "value": "4 PTS"
+            "player": "Trey Campbell",
+            "value": "16 PTS"
           }
         },
-        "conf_id": "23",
-        "conf": "SEC",
+        "conf_id": "8",
+        "conf": "Big 12",
         "rank": null,
-        "loc": "Mississippi State",
-        "nick": "Bulldogs"
+        "loc": "Utah",
+        "nick": "Utes"
       },
       "away": {
-        "team_id": "202",
-        "abbr": "TLSA",
-        "name": "Tulsa Golden Hurricane",
-        "score": 10,
-        "winner": null,
-        "record": "4-0",
-        "home_record": "4-0",
+        "team_id": "2168",
+        "abbr": "DAY",
+        "name": "Dayton Flyers",
+        "score": 63,
+        "winner": true,
+        "record": "3-3",
+        "home_record": "2-3",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Kobi Williams",
-            "value": "4"
+            "player": "Aiden Derkack",
+            "value": "14"
           },
           "rebounds": {
-            "player": "Kaleb Banks",
-            "value": "2"
+            "player": "Aiden Derkack",
+            "value": "9"
           },
           "assists": {
-            "player": "Mike Williams III",
-            "value": "1"
+            "player": "Aiden Derkack",
+            "value": "2"
           },
           "rating": {
-            "player": "Kobi Williams",
-            "value": "4 PTS"
+            "player": "Aiden Derkack",
+            "value": "14 PTS, 9 REB"
           }
         },
-        "conf_id": "62",
+        "conf_id": "3",
         "conf": null,
         "rank": null,
-        "loc": "Tulsa",
-        "nick": "Golden Hurricane"
-      },
-      "espn_line": null,
-      "date": "2026-11-20",
-      "p4": true
-    },
-    {
-      "game_id": "401909545",
-      "start_utc": "2026-11-21T00:30Z",
-      "short_name": "IOWA @ XAV",
-      "state": "in",
-      "status": "12:37 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "12:37",
-      "venue": "Cintas Center",
-      "neutral_site": false,
-      "broadcasts": [
-        "TNT"
-      ],
-      "home": {
-        "team_id": "2752",
-        "abbr": "XAV",
-        "name": "Xavier Musketeers",
-        "score": 11,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Mike Nwoko",
-            "value": "11"
-          },
-          "rebounds": {
-            "player": "Tru Washington",
-            "value": "3"
-          },
-          "assists": {
-            "player": "Tru Washington",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Mike Nwoko",
-            "value": "11 PTS"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": null,
-        "loc": "Xavier",
-        "nick": "Musketeers"
-      },
-      "away": {
-        "team_id": "2294",
-        "abbr": "IOWA",
-        "name": "Iowa Hawkeyes",
-        "score": 12,
-        "winner": null,
-        "record": "2-2",
-        "home_record": "2-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Isaia Howard",
-            "value": "3"
-          },
-          "rebounds": {
-            "player": "Kael Combs",
-            "value": "2"
-          },
-          "assists": {
-            "player": "Kael Combs",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Kael Combs",
-            "value": "2 PTS"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Iowa",
-        "nick": "Hawkeyes"
+        "loc": "Dayton",
+        "nick": "Flyers"
       },
       "espn_line": null,
       "date": "2026-11-20",
@@ -1331,7 +1335,7 @@
         "provider": "Draft Kings",
         "details": "SMU -15.5",
         "spread": -15.5,
-        "over_under": 145.5
+        "over_under": 144.5
       },
       "date": "2026-11-20",
       "p4": true
@@ -1410,8 +1414,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "MIZ -34.5",
-        "spread": -34.5,
+        "details": "MIZ -35.5",
+        "spread": -35.5,
         "over_under": 154.5
       },
       "date": "2026-11-20",
@@ -1572,8 +1576,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "KSU -15.5",
-        "spread": -15.5,
+        "details": "KSU -16.5",
+        "spread": -16.5,
         "over_under": 154.5
       },
       "date": "2026-11-20",
@@ -1736,7 +1740,7 @@
         "provider": "Draft Kings",
         "details": "ILL -45.5",
         "spread": -45.5,
-        "over_under": 164.5
+        "over_under": 163.5
       },
       "date": "2026-11-20",
       "p4": true

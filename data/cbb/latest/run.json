@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-21T00:45:41+00:00",
+  "finished_at": "2026-11-21T01:00:40+00:00",
   "game_date": "2026-11-20",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,10 +17,10 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 2,
-    "player_rows": 66,
+    "new_games": 0,
+    "player_rows": 0,
     "unparsed": [],
-    "queued": 2,
+    "queued": 0,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -29,21 +29,43 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 11041
+      "ODDS_API_KEY_20K": 11039
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Eastern Illinois Panthers @ Illinois Fighting Illini",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Marshall Thundering Herd @ North Carolina Tar Heels",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "NC State Wolfpack @ Seton Hall Pirates",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 71,
-    "p4_events": 15,
+    "events": 69,
+    "p4_events": 8,
     "unmatched": [
       "Middle Tennessee Blue Raiders @ Indiana St Sycamores"
     ],
-    "due": 0,
+    "due": 3,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 2,
+      "pull_type": "pregame",
+      "rows": 16,
+      "credits_last": 2
     },
     "status": "ok"
   }
