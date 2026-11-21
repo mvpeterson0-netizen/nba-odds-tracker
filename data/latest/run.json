@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-21T00:00:39+00:00",
+  "finished_at": "2026-11-21T00:15:25+00:00",
   "game_date": "2026-11-20",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,29 +28,16 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 11047
+      "ODDS_API_KEY_20K": 11045
     },
-    "pulled": [
-      {
-        "matchup": "Washington Wizards @ Chicago Bulls",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 170,
-        "markets": 4
-      },
-      {
-        "matchup": "New Orleans Pelicans @ Oklahoma City Thunder",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 182,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 2,
-    "pregame_pulled": true,
-    "links_backfill": [],
+    "due": 0,
+    "pregame_pulled": false,
+    "links_backfill": [
+      "Milwaukee Bucks @ Philadelphia 76ers: 0 links"
+    ],
     "status": "ok"
   }
 }

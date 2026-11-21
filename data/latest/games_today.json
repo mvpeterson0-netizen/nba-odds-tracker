@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-21T00:00:21+00:00",
+  "fetched_at": "2026-11-21T00:15:18+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-20",
@@ -8,11 +8,11 @@
       "game_id": "401909305",
       "start_utc": "2026-11-21T00:00Z",
       "short_name": "CHA @ ATL",
-      "state": "pre",
-      "status": "11/20 - 7:00 PM EST",
+      "state": "in",
+      "status": "9:19 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:19",
       "venue": "State Farm Arena",
       "neutral_site": false,
       "broadcasts": null,
@@ -20,27 +20,27 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 0,
+        "score": 11,
         "winner": null,
         "record": "9-6",
         "home_record": "3-3",
         "away_record": "6-3",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Nickeil Alexander-Walker",
-            "value": "21.2"
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "Jalen Johnson",
-            "value": "9.2"
+          "rebounds": {
+            "player": "Nickeil Alexander-Walker",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Jalen Johnson",
-            "value": "7.6"
+          "assists": {
+            "player": "Dyson Daniels",
+            "value": "1"
           },
           "rating": {
-            "player": "Jalen Johnson",
-            "value": "19.2 PPG, 9.2 RPG, 7.6 APG, 0.8 SPG, 0.5 BPG"
+            "player": "Nickeil Alexander-Walker",
+            "value": "4 PTS"
           }
         }
       },
@@ -48,36 +48,31 @@
         "team_id": "30",
         "abbr": "CHA",
         "name": "Charlotte Hornets",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "4-10",
         "home_record": "3-4",
         "away_record": "1-6",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
+            "player": "Naz Reid",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Coby White",
+            "value": "1"
+          },
+          "assists": {
             "player": "Brandon Miller",
-            "value": "19.9"
-          },
-          "reboundsPerGame": {
-            "player": "Moussa Diabate",
-            "value": "10.2"
-          },
-          "assistsPerGame": {
-            "player": "Sion James",
-            "value": "3.1"
+            "value": "1"
           },
           "rating": {
             "player": "Naz Reid",
-            "value": "17.6 PPG, 8.4 RPG, 2.4 APG, 0.9 SPG, 0.6 BPG"
+            "value": "5 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ATL -7.5",
-        "spread": -7.5,
-        "over_under": 219.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909306",
@@ -230,7 +225,7 @@
         "provider": "DraftKings",
         "details": "CLE -6.5",
         "spread": -6.5,
-        "over_under": 235.5
+        "over_under": 234.5
       }
     },
     {
