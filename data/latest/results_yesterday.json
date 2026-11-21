@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-21T05:15:19+00:00",
+  "fetched_at": "2026-11-21T05:30:28+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-20",
@@ -517,10 +517,10 @@
       "start_utc": "2026-11-21T03:00Z",
       "short_name": "HOU @ DEN",
       "state": "in",
-      "status": "7:01 - 4th",
+      "status": "1:33 - 4th",
       "completed": false,
       "period": 4,
-      "clock": "7:01",
+      "clock": "1:33",
       "venue": "Ball Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -530,7 +530,7 @@
         "team_id": "7",
         "abbr": "DEN",
         "name": "Denver Nuggets",
-        "score": 108,
+        "score": 124,
         "winner": null,
         "record": "8-5",
         "home_record": "3-3",
@@ -538,7 +538,7 @@
         "leaders": {
           "points": {
             "player": "Nikola Jokic",
-            "value": "20"
+            "value": "24"
           },
           "rebounds": {
             "player": "Marvin Bagley III",
@@ -546,11 +546,11 @@
           },
           "assists": {
             "player": "Nikola Jokic",
-            "value": "7"
+            "value": "10"
           },
           "rating": {
             "player": "Nikola Jokic",
-            "value": "20 PTS, 7 AST"
+            "value": "24 PTS, 10 AST"
           }
         }
       },
@@ -558,7 +558,7 @@
         "team_id": "10",
         "abbr": "HOU",
         "name": "Houston Rockets",
-        "score": 109,
+        "score": 119,
         "winner": null,
         "record": "12-4",
         "home_record": "7-1",
@@ -566,7 +566,7 @@
         "leaders": {
           "points": {
             "player": "Alperen Sengun",
-            "value": "26"
+            "value": "28"
           },
           "rebounds": {
             "player": "Alperen Sengun",
@@ -574,11 +574,11 @@
           },
           "assists": {
             "player": "Alperen Sengun",
-            "value": "9"
+            "value": "10"
           },
           "rating": {
             "player": "Alperen Sengun",
-            "value": "26 PTS, 11 REB, 9 AST"
+            "value": "28 PTS, 11 REB, 10 AST"
           }
         }
       },
@@ -588,11 +588,11 @@
       "game_id": "401909313",
       "start_utc": "2026-11-21T03:00Z",
       "short_name": "SAC @ LAL",
-      "state": "in",
-      "status": "1:50 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "1:50",
+      "clock": "0.0",
       "venue": "crypto.com Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -603,10 +603,10 @@
         "team_id": "13",
         "abbr": "LAL",
         "name": "Los Angeles Lakers",
-        "score": 103,
-        "winner": null,
-        "record": "13-3",
-        "home_record": "6-2",
+        "score": 106,
+        "winner": true,
+        "record": "14-3",
+        "home_record": "7-2",
         "away_record": "7-1",
         "leaders": {
           "points": {
@@ -631,11 +631,11 @@
         "team_id": "23",
         "abbr": "SAC",
         "name": "Sacramento Kings",
-        "score": 103,
-        "winner": null,
-        "record": "1-13",
+        "score": 104,
+        "winner": false,
+        "record": "1-14",
         "home_record": "0-9",
-        "away_record": "1-4",
+        "away_record": "1-5",
         "leaders": {
           "points": {
             "player": "De'Andre Hunter",
@@ -651,7 +651,7 @@
           },
           "rating": {
             "player": "De'Andre Hunter",
-            "value": "30 PTS"
+            "value": "30 PTS, 6 REB"
           }
         }
       },
