@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-21T14:45:27+00:00",
+  "finished_at": "2026-11-21T15:00:37+00:00",
   "game_date": "2026-11-21",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,10 +28,12 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 10820
+      "ODDS_API_KEY_20K": null
     },
     "pulled": [],
-    "errors": [],
+    "errors": [
+      "ODDS_API_KEY_20K: events HTTP 502"
+    ],
     "markets_probe": "not_due",
     "due": 0,
     "pregame_pulled": false,
