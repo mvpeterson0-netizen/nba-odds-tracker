@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-21T16:01:01+00:00",
+  "finished_at": "2026-11-21T16:15:22+00:00",
   "game_date": "2026-11-21",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -14,7 +14,7 @@
     "games_today": "ok",
     "games_tomorrow": "ok",
     "boxscores": "ok",
-    "props": "failed"
+    "props": "ok"
   },
   "boxscores": {
     "new_games": 0,
@@ -29,29 +29,17 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 10805
+      "ODDS_API_KEY_20K": 10791
     },
     "pulled": [
       {
-        "matchup": "Detroit Mercy Titans @ Michigan St Spartans",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Queens University Royals @ LSU Tigers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
         "matchup": "Lafayette Leopards @ Syracuse Orange",
         "type": "morning",
-        "status": "failed",
+        "status": "empty",
         "rows": 0
       },
       {
-        "matchup": "Washington St Cougars @ Duke Blue Devils",
+        "matchup": "Western Carolina Catamounts @ Wake Forest Demon Deacons",
         "type": "morning",
         "status": "empty",
         "rows": 0
@@ -61,16 +49,16 @@
     "events": 51,
     "p4_events": 6,
     "unmatched": [],
-    "due": 4,
+    "due": 2,
     "pregame_pulled": false,
     "lines": {
-      "status": "failed",
+      "status": "ok",
       "morning_due": false,
       "pregame_due": 1,
       "pull_type": "pregame",
-      "rows": 0,
-      "credits_last": null
+      "rows": 8,
+      "credits_last": 2
     },
-    "status": "failed"
+    "status": "ok"
   }
 }
