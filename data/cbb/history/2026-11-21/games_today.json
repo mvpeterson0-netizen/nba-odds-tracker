@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-21T17:01:01+00:00",
+  "fetched_at": "2026-11-21T17:15:23+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-21",
@@ -9,11 +9,11 @@
       "game_id": "401925756",
       "start_utc": "2026-11-21T17:00Z",
       "short_name": "DETM @ MSU",
-      "state": "pre",
-      "status": "11/21 - 12:00 PM EST",
+      "state": "in",
+      "status": "14:13 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "14:13",
       "venue": "Breslin Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "127",
         "abbr": "MSU",
         "name": "Michigan State Spartans",
-        "score": 0,
+        "score": 15,
         "winner": null,
         "record": "4-1",
         "home_record": "3-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Jeremy Fears Jr.",
-            "value": "16.6"
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "Jordan Scott",
-            "value": "6.0"
+          "rebounds": {
+            "player": "Cam Ward",
+            "value": "4"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Jeremy Fears Jr.",
-            "value": "8.4"
+            "value": "3"
+          },
+          "rating": {
+            "player": "Jeremy Fears Jr.",
+            "value": "4 PTS"
           }
         },
         "conf_id": "7",
@@ -52,23 +56,27 @@
         "team_id": "2174",
         "abbr": "DETM",
         "name": "Detroit Mercy Titans",
-        "score": 0,
+        "score": 7,
         "winner": null,
         "record": "0-4",
         "home_record": "0-1",
         "away_record": "0-3",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tyler Spratt",
-            "value": "11.0"
-          },
-          "reboundsPerGame": {
-            "player": "London Maiden",
-            "value": "4.8"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Lance Stone",
-            "value": "2.5"
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "London Maiden",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Jordan Briggs",
+            "value": "1"
+          },
+          "rating": {
+            "player": "London Maiden",
+            "value": "2 PTS"
           }
         },
         "conf_id": "45",
@@ -77,12 +85,7 @@
         "loc": "Detroit Mercy",
         "nick": "Titans"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "MSU -40.5",
-        "spread": -40.5,
-        "over_under": 150.5
-      },
+      "espn_line": null,
       "date": "2026-11-21",
       "p4": true
     },
@@ -159,7 +162,7 @@
         "nick": "Royals"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "LSU -25.5",
         "spread": -25.5,
         "over_under": 173.5
@@ -240,7 +243,7 @@
         "nick": "Catamounts"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "WAKE -14.5",
         "spread": -14.5,
         "over_under": 147.5
@@ -321,7 +324,7 @@
         "nick": "Leopards"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SYR -24.5",
         "spread": -24.5,
         "over_under": 142.5
@@ -402,7 +405,7 @@
         "nick": "Wolverines"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MICH -4.5",
         "spread": 4.5,
         "over_under": 160.5
@@ -483,7 +486,7 @@
         "nick": "Cougars"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "DUKE -24.5",
         "spread": -24.5,
         "over_under": 149.5
