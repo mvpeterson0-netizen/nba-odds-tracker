@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-22T21:59:15+00:00",
+  "finished_at": "2026-11-22T22:00:24+00:00",
   "game_date": "2026-11-22",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,13 +28,21 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 9905
+      "ODDS_API_KEY_20K": 9899
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Oklahoma City Thunder @ Miami Heat",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 180,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "links_backfill": [],
     "status": "ok"
   }

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T21:59:15+00:00",
+  "fetched_at": "2026-11-22T22:00:24+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-22",
@@ -9,9 +9,9 @@
       "game_id": "401906868",
       "start_utc": "2026-11-22T20:00Z",
       "short_name": "USI @ TEX",
-      "state": "in",
-      "status": "End of 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
       "clock": "0:00",
       "venue": "Moody Center",
@@ -24,9 +24,9 @@
         "abbr": "TEX",
         "name": "Texas Longhorns",
         "score": 97,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "4-0",
+        "winner": true,
+        "record": "6-0",
+        "home_record": "5-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -57,10 +57,10 @@
         "abbr": "USI",
         "name": "Southern Indiana Screaming Eagles",
         "score": 61,
-        "winner": null,
-        "record": "2-4",
+        "winner": false,
+        "record": "2-5",
         "home_record": "2-1",
-        "away_record": "0-3",
+        "away_record": "0-4",
         "leaders": {
           "points": {
             "player": "Josiah Dunham",
@@ -498,7 +498,7 @@
         "nick": "Highlanders"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "BC -22.5",
         "spread": -22.5,
         "over_under": 137.5
@@ -579,7 +579,7 @@
         "nick": "Utes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MINN -9.5",
         "spread": -9.5,
         "over_under": 131.5
@@ -660,7 +660,7 @@
         "nick": "Blue Hens"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UCLA -28.5",
         "spread": -28.5,
         "over_under": 145.5
@@ -741,7 +741,7 @@
         "nick": "Ragin' Cajuns"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "USC -32.5",
         "spread": -32.5,
         "over_under": 145.5
