@@ -1,94 +1,10 @@
 {
-  "fetched_at": "2026-11-22T06:30:24+00:00",
+  "fetched_at": "2026-11-22T06:45:26+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-21",
   "division_i_games": 57,
   "rows": [
-    {
-      "game_id": "401909567",
-      "start_utc": "2026-11-22T04:00Z",
-      "short_name": "WSU VS DUKE",
-      "state": "in",
-      "status": "0:06 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "0:06",
-      "venue": "Acrisure Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "150",
-        "abbr": "DUKE",
-        "name": "Duke Blue Devils",
-        "score": 78,
-        "winner": null,
-        "record": "3-2",
-        "home_record": "3-1",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Patrick Ngongba II",
-            "value": "24"
-          },
-          "rebounds": {
-            "player": "Patrick Ngongba II",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Dame Sarr",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Patrick Ngongba II",
-            "value": "24 PTS, 9 REB, 3 BLK"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": 5,
-        "loc": "Duke",
-        "nick": "Blue Devils"
-      },
-      "away": {
-        "team_id": "265",
-        "abbr": "WSU",
-        "name": "Washington State Cougars",
-        "score": 74,
-        "winner": null,
-        "record": "2-3",
-        "home_record": "1-1",
-        "away_record": "0-2",
-        "leaders": {
-          "points": {
-            "player": "Jaylen Harrell",
-            "value": "15"
-          },
-          "rebounds": {
-            "player": "Ladji Dembele",
-            "value": "5"
-          },
-          "assists": {
-            "player": "Ronnie Harrison",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Jaylen Harrell",
-            "value": "15 PTS"
-          }
-        },
-        "conf_id": "21",
-        "conf": null,
-        "rank": null,
-        "loc": "Washington State",
-        "nick": "Cougars"
-      },
-      "espn_line": null,
-      "date": "2026-11-21",
-      "p4": true
-    },
     {
       "game_id": "401925756",
       "start_utc": "2026-11-21T17:00Z",
@@ -168,6 +84,90 @@
         "rank": null,
         "loc": "Detroit Mercy",
         "nick": "Titans"
+      },
+      "espn_line": null,
+      "date": "2026-11-21",
+      "p4": true
+    },
+    {
+      "game_id": "401909567",
+      "start_utc": "2026-11-22T04:00Z",
+      "short_name": "WSU VS DUKE",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Acrisure Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "150",
+        "abbr": "DUKE",
+        "name": "Duke Blue Devils",
+        "score": 78,
+        "winner": true,
+        "record": "4-2",
+        "home_record": "3-1",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Patrick Ngongba II",
+            "value": "24"
+          },
+          "rebounds": {
+            "player": "Patrick Ngongba II",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Dame Sarr",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Patrick Ngongba II",
+            "value": "24 PTS, 9 REB, 3 BLK"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": 5,
+        "loc": "Duke",
+        "nick": "Blue Devils"
+      },
+      "away": {
+        "team_id": "265",
+        "abbr": "WSU",
+        "name": "Washington State Cougars",
+        "score": 74,
+        "winner": false,
+        "record": "2-4",
+        "home_record": "1-1",
+        "away_record": "0-2",
+        "leaders": {
+          "points": {
+            "player": "Jaylen Harrell",
+            "value": "15"
+          },
+          "rebounds": {
+            "player": "Ladji Dembele",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Ronnie Harrison",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Jaylen Harrell",
+            "value": "15 PTS"
+          }
+        },
+        "conf_id": "21",
+        "conf": null,
+        "rank": null,
+        "loc": "Washington State",
+        "nick": "Cougars"
       },
       "espn_line": null,
       "date": "2026-11-21",
