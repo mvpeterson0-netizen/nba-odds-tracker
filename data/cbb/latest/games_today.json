@@ -1,10 +1,94 @@
 {
-  "fetched_at": "2026-11-22T00:15:20+00:00",
+  "fetched_at": "2026-11-22T00:30:24+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-21",
   "division_i_games": 57,
   "rows": [
+    {
+      "game_id": "401921776",
+      "start_utc": "2026-11-22T00:00Z",
+      "short_name": "MICH @ VILL",
+      "state": "in",
+      "status": "7:37 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "7:37",
+      "venue": "Xfinity Mobile Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "Fox"
+      ],
+      "home": {
+        "team_id": "222",
+        "abbr": "VILL",
+        "name": "Villanova Wildcats",
+        "score": 21,
+        "winner": null,
+        "record": "3-2",
+        "home_record": "3-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Luigi Suigo",
+            "value": "7"
+          },
+          "rebounds": {
+            "player": "Luigi Suigo",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Tyler Perkins",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Luigi Suigo",
+            "value": "7 PTS"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Villanova",
+        "nick": "Wildcats"
+      },
+      "away": {
+        "team_id": "130",
+        "abbr": "MICH",
+        "name": "Michigan Wolverines",
+        "score": 21,
+        "winner": null,
+        "record": "3-1",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Trey McKenney",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Roddy Gayle Jr.",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Elliot Cadeau",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Trey McKenney",
+            "value": "8 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 18,
+        "loc": "Michigan",
+        "nick": "Wolverines"
+      },
+      "espn_line": null,
+      "date": "2026-11-21",
+      "p4": true
+    },
     {
       "game_id": "401925756",
       "start_utc": "2026-11-21T17:00Z",
@@ -336,90 +420,6 @@
         "rank": null,
         "loc": "Lafayette",
         "nick": "Leopards"
-      },
-      "espn_line": null,
-      "date": "2026-11-21",
-      "p4": true
-    },
-    {
-      "game_id": "401921776",
-      "start_utc": "2026-11-22T00:00Z",
-      "short_name": "MICH @ VILL",
-      "state": "in",
-      "status": "12:46 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "12:46",
-      "venue": "Xfinity Mobile Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "Fox"
-      ],
-      "home": {
-        "team_id": "222",
-        "abbr": "VILL",
-        "name": "Villanova Wildcats",
-        "score": 12,
-        "winner": null,
-        "record": "3-2",
-        "home_record": "3-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Tyler Perkins",
-            "value": "4"
-          },
-          "rebounds": {
-            "player": "Tyler Perkins",
-            "value": "2"
-          },
-          "assists": {
-            "player": "Tyler Perkins",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Tyler Perkins",
-            "value": "4 PTS"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": null,
-        "loc": "Villanova",
-        "nick": "Wildcats"
-      },
-      "away": {
-        "team_id": "130",
-        "abbr": "MICH",
-        "name": "Michigan Wolverines",
-        "score": 14,
-        "winner": null,
-        "record": "3-1",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Moustapha Thiam",
-            "value": "3"
-          },
-          "rebounds": {
-            "player": "Moustapha Thiam",
-            "value": "3"
-          },
-          "assists": {
-            "player": "Elliot Cadeau",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Moustapha Thiam",
-            "value": "3 PTS"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 18,
-        "loc": "Michigan",
-        "nick": "Wolverines"
       },
       "espn_line": null,
       "date": "2026-11-21",
