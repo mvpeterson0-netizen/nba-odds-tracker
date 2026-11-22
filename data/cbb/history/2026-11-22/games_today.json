@@ -1,89 +1,85 @@
 {
-  "fetched_at": "2026-11-22T20:00:37+00:00",
+  "fetched_at": "2026-11-22T20:13:13+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-22",
   "division_i_games": 42,
   "rows": [
     {
-      "game_id": "401920736",
-      "start_utc": "2026-11-22T18:00Z",
-      "short_name": "DAY VS NU",
+      "game_id": "401906868",
+      "start_utc": "2026-11-22T20:00Z",
+      "short_name": "USI @ TEX",
       "state": "in",
-      "status": "1:14 - 2nd",
+      "status": "14:32 - 1st",
       "completed": false,
-      "period": 2,
-      "clock": "1:14",
-      "venue": "TD Arena",
-      "neutral_site": true,
+      "period": 1,
+      "clock": "14:32",
+      "venue": "Moody Center",
+      "neutral_site": false,
       "broadcasts": [
-        "ESPN2"
+        "SECN+"
       ],
       "home": {
-        "team_id": "77",
-        "abbr": "NU",
-        "name": "Northwestern Wildcats",
-        "score": 79,
+        "team_id": "251",
+        "abbr": "TEX",
+        "name": "Texas Longhorns",
+        "score": 12,
         "winner": null,
-        "record": "3-3",
-        "home_record": "3-2",
+        "record": "5-0",
+        "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Jack Karasinski",
-            "value": "26"
+            "player": "Elyjah Freeman",
+            "value": "6"
           },
           "rebounds": {
-            "player": "Symon Ghai",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Jake West",
-            "value": "8"
+            "player": "Matas Vokietaitis",
+            "value": "4"
           },
           "rating": {
-            "player": "Jack Karasinski",
-            "value": "26 PTS"
+            "player": "Elyjah Freeman",
+            "value": "6 PTS"
           }
         },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Northwestern",
-        "nick": "Wildcats"
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 6,
+        "loc": "Texas",
+        "nick": "Longhorns"
       },
       "away": {
-        "team_id": "2168",
-        "abbr": "DAY",
-        "name": "Dayton Flyers",
-        "score": 55,
+        "team_id": "88",
+        "abbr": "USI",
+        "name": "Southern Indiana Screaming Eagles",
+        "score": 5,
         "winner": null,
-        "record": "3-3",
-        "home_record": "2-3",
-        "away_record": "0-0",
+        "record": "2-4",
+        "home_record": "2-1",
+        "away_record": "0-3",
         "leaders": {
           "points": {
-            "player": "Amal L'Etang",
-            "value": "16"
-          },
-          "rebounds": {
-            "player": "Grant Randall",
-            "value": "5"
-          },
-          "assists": {
-            "player": "Tristian Ford",
+            "player": "Johann Pautsch",
             "value": "3"
           },
+          "rebounds": {
+            "player": "Afan Trnka",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Fredy-Salam Sylla",
+            "value": "1"
+          },
           "rating": {
-            "player": "Grant Randall",
-            "value": "13 PTS"
+            "player": "Johann Pautsch",
+            "value": "3 PTS"
           }
         },
-        "conf_id": "3",
+        "conf_id": "20",
         "conf": null,
         "rank": null,
-        "loc": "Dayton",
-        "nick": "Flyers"
+        "loc": "Southern Indiana",
+        "nick": "Screaming Eagles"
       },
       "espn_line": null,
       "date": "2026-11-22",
@@ -94,10 +90,10 @@
       "start_utc": "2026-11-22T19:00Z",
       "short_name": "UML @ CIN",
       "state": "in",
-      "status": "Halftime",
+      "status": "16:24 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "16:24",
       "venue": "Fifth Third Arena (OH)",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +103,7 @@
         "team_id": "2132",
         "abbr": "CIN",
         "name": "Cincinnati Bearcats",
-        "score": 35,
+        "score": 44,
         "winner": null,
         "record": "4-1",
         "home_record": "3-1",
@@ -115,10 +111,10 @@
         "leaders": {
           "points": {
             "player": "Tylen Riley",
-            "value": "10"
+            "value": "13"
           },
           "rebounds": {
-            "player": "Jayden Hastings",
+            "player": "Tyler Tejada",
             "value": "5"
           },
           "assists": {
@@ -126,8 +122,8 @@
             "value": "3"
           },
           "rating": {
-            "player": "Jayden Hastings",
-            "value": "6 PTS, 4 BLK"
+            "player": "Tylen Riley",
+            "value": "13 PTS"
           }
         },
         "conf_id": "8",
@@ -140,7 +136,7 @@
         "team_id": "2349",
         "abbr": "UML",
         "name": "UMass Lowell River Hawks",
-        "score": 30,
+        "score": 35,
         "winner": null,
         "record": "4-1",
         "home_record": "3-0",
@@ -258,83 +254,86 @@
       "p4": true
     },
     {
-      "game_id": "401906868",
-      "start_utc": "2026-11-22T20:00Z",
-      "short_name": "USI @ TEX",
-      "state": "pre",
-      "status": "11/22 - 3:00 PM EST",
-      "completed": false,
-      "period": 0,
+      "game_id": "401920736",
+      "start_utc": "2026-11-22T18:00Z",
+      "short_name": "DAY VS NU",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
       "clock": "0:00",
-      "venue": "Moody Center",
-      "neutral_site": false,
+      "venue": "TD Arena",
+      "neutral_site": true,
       "broadcasts": [
-        "SECN+"
+        "ESPN2"
       ],
       "home": {
-        "team_id": "251",
-        "abbr": "TEX",
-        "name": "Texas Longhorns",
-        "score": 0,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "4-0",
+        "team_id": "77",
+        "abbr": "NU",
+        "name": "Northwestern Wildcats",
+        "score": 79,
+        "winner": true,
+        "record": "4-3",
+        "home_record": "3-2",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Matas Vokietaitis",
-            "value": "20.8"
+          "points": {
+            "player": "Jack Karasinski",
+            "value": "26"
           },
-          "reboundsPerGame": {
-            "player": "Matas Vokietaitis",
-            "value": "8.6"
+          "rebounds": {
+            "player": "Symon Ghai",
+            "value": "9"
           },
-          "assistsPerGame": {
-            "player": "Austin Goosby",
-            "value": "4.2"
+          "assists": {
+            "player": "Jake West",
+            "value": "8"
+          },
+          "rating": {
+            "player": "Jack Karasinski",
+            "value": "26 PTS"
           }
         },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 6,
-        "loc": "Texas",
-        "nick": "Longhorns"
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Northwestern",
+        "nick": "Wildcats"
       },
       "away": {
-        "team_id": "88",
-        "abbr": "USI",
-        "name": "Southern Indiana Screaming Eagles",
-        "score": 0,
-        "winner": null,
-        "record": "2-4",
-        "home_record": "2-1",
-        "away_record": "0-3",
+        "team_id": "2168",
+        "abbr": "DAY",
+        "name": "Dayton Flyers",
+        "score": 55,
+        "winner": false,
+        "record": "3-4",
+        "home_record": "2-3",
+        "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Kaden Brown",
-            "value": "13.8"
+          "points": {
+            "player": "Amal L'Etang",
+            "value": "16"
           },
-          "reboundsPerGame": {
-            "player": "Yuto Yamanouchi-Williams",
-            "value": "6.2"
+          "rebounds": {
+            "player": "Grant Randall",
+            "value": "5"
           },
-          "assistsPerGame": {
-            "player": "Afan Trnka",
-            "value": "3.3"
+          "assists": {
+            "player": "Tristian Ford",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Grant Randall",
+            "value": "13 PTS"
           }
         },
-        "conf_id": "20",
+        "conf_id": "3",
         "conf": null,
         "rank": null,
-        "loc": "Southern Indiana",
-        "nick": "Screaming Eagles"
+        "loc": "Dayton",
+        "nick": "Flyers"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "TEX -38.5",
-        "spread": -38.5,
-        "over_under": 150.5
-      },
+      "espn_line": null,
       "date": "2026-11-22",
       "p4": true
     },
@@ -411,7 +410,7 @@
         "nick": "Hokies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "VT -1.5",
         "spread": 1.5,
         "over_under": 158.5
@@ -492,7 +491,7 @@
         "nick": "Highlanders"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "BC -23.5",
         "spread": -23.5,
         "over_under": 136.5
@@ -573,7 +572,7 @@
         "nick": "Utes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MINN -9.5",
         "spread": -9.5,
         "over_under": 131.5
@@ -654,7 +653,7 @@
         "nick": "Blue Hens"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UCLA -28.5",
         "spread": -28.5,
         "over_under": 145.5
@@ -735,7 +734,7 @@
         "nick": "Ragin' Cajuns"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "USC -32.5",
         "spread": -32.5,
         "over_under": 145.5
