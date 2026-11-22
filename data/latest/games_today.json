@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T20:34:47+00:00",
+  "fetched_at": "2026-11-22T20:45:17+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-22",
@@ -8,11 +8,11 @@
       "game_id": "401910029",
       "start_utc": "2026-11-22T20:30Z",
       "short_name": "DET @ ATL",
-      "state": "pre",
-      "status": "11/22 - 3:30 PM EST",
+      "state": "in",
+      "status": "8:29 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "8:29",
       "venue": "State Farm Arena",
       "neutral_site": false,
       "broadcasts": null,
@@ -20,27 +20,27 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "10-6",
         "home_record": "4-3",
         "away_record": "6-3",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Nickeil Alexander-Walker",
-            "value": "20.9"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Jalen Johnson",
-            "value": "9.0"
+            "value": "6"
           },
-          "assistsPerGame": {
-            "player": "Jalen Johnson",
-            "value": "7.5"
+          "rebounds": {
+            "player": "Dyson Daniels",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Dyson Daniels",
+            "value": "1"
           },
           "rating": {
             "player": "Jalen Johnson",
-            "value": "19.7 PPG, 9.0 RPG, 7.5 APG, 1.1 SPG, 0.5 BPG"
+            "value": "6 PTS"
           }
         }
       },
@@ -48,36 +48,31 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 0,
+        "score": 7,
         "winner": null,
         "record": "10-5",
         "home_record": "3-3",
         "away_record": "7-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Cade Cunningham",
-            "value": "25.6"
+          "points": {
+            "player": "John Collins",
+            "value": "5"
           },
-          "reboundsPerGame": {
-            "player": "Ausar Thompson",
-            "value": "8.4"
+          "rebounds": {
+            "player": "John Collins",
+            "value": "1"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Cade Cunningham",
-            "value": "7.9"
+            "value": "3"
           },
           "rating": {
-            "player": "Cade Cunningham",
-            "value": "25.6 PPG, 5.1 RPG, 7.9 APG, 1.4 SPG, 0.9 BPG"
+            "player": "John Collins",
+            "value": "5 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "DET -2.5",
-        "spread": 2.5,
-        "over_under": 224.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401910030",
@@ -384,8 +379,8 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "DAL -1.5",
-        "spread": 1.5,
+        "details": "DAL -2.5",
+        "spread": 2.5,
         "over_under": 225.5
       }
     },
