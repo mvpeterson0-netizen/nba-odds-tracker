@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T00:00:49+00:00",
+  "fetched_at": "2026-11-22T00:15:20+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-21",
@@ -345,11 +345,11 @@
       "game_id": "401921776",
       "start_utc": "2026-11-22T00:00Z",
       "short_name": "MICH @ VILL",
-      "state": "pre",
-      "status": "11/21 - 7:00 PM EST",
+      "state": "in",
+      "status": "12:46 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "12:46",
       "venue": "Xfinity Mobile Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -359,23 +359,27 @@
         "team_id": "222",
         "abbr": "VILL",
         "name": "Villanova Wildcats",
-        "score": 0,
+        "score": 12,
         "winner": null,
         "record": "3-2",
         "home_record": "3-0",
         "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Devin Royal",
-            "value": "14.8"
+          "points": {
+            "player": "Tyler Perkins",
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "Luigi Suigo",
-            "value": "9.2"
+          "rebounds": {
+            "player": "Tyler Perkins",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Elijah Crawford",
-            "value": "6.0"
+          "assists": {
+            "player": "Tyler Perkins",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Tyler Perkins",
+            "value": "4 PTS"
           }
         },
         "conf_id": "4",
@@ -388,23 +392,27 @@
         "team_id": "130",
         "abbr": "MICH",
         "name": "Michigan Wolverines",
-        "score": 0,
+        "score": 14,
         "winner": null,
         "record": "3-1",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Trey McKenney",
-            "value": "17.0"
+          "points": {
+            "player": "Moustapha Thiam",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "J.P. Estrella",
-            "value": "9.0"
+          "rebounds": {
+            "player": "Moustapha Thiam",
+            "value": "3"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Elliot Cadeau",
-            "value": "7.5"
+            "value": "3"
+          },
+          "rating": {
+            "player": "Moustapha Thiam",
+            "value": "3 PTS"
           }
         },
         "conf_id": "7",
@@ -413,12 +421,7 @@
         "loc": "Michigan",
         "nick": "Wolverines"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "MICH -3.5",
-        "spread": 3.5,
-        "over_under": 159.5
-      },
+      "espn_line": null,
       "date": "2026-11-21",
       "p4": true
     },
