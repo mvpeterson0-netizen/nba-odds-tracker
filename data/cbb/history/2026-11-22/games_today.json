@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T23:00:26+00:00",
+  "fetched_at": "2026-11-22T23:15:25+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-22",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-22T22:00Z",
       "short_name": "NJIT @ BC",
       "state": "in",
-      "status": "Halftime",
+      "status": "18:56 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "18:56",
       "venue": "Conte Forum",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "103",
         "abbr": "BC",
         "name": "Boston College Eagles",
-        "score": 41,
+        "score": 43,
         "winner": null,
         "record": "5-0",
         "home_record": "3-0",
@@ -31,19 +31,19 @@
         "leaders": {
           "points": {
             "player": "Colby Duggan",
-            "value": "13"
+            "value": "15"
           },
           "rebounds": {
             "player": "Brandon Benjamin",
             "value": "6"
           },
           "assists": {
-            "player": "Zak Smrekar",
-            "value": "3"
+            "player": "Armoni Zeigler",
+            "value": "4"
           },
           "rating": {
             "player": "Colby Duggan",
-            "value": "13 PTS"
+            "value": "15 PTS"
           }
         },
         "conf_id": "2",
@@ -56,7 +56,7 @@
         "team_id": "2885",
         "abbr": "NJIT",
         "name": "NJIT Highlanders",
-        "score": 31,
+        "score": 36,
         "winner": null,
         "record": "1-6",
         "home_record": "1-0",
@@ -84,6 +84,90 @@
         "rank": null,
         "loc": "NJIT",
         "nick": "Highlanders"
+      },
+      "espn_line": null,
+      "date": "2026-11-22",
+      "p4": true
+    },
+    {
+      "game_id": "401921420",
+      "start_utc": "2026-11-22T23:00Z",
+      "short_name": "UTAH VS MINN",
+      "state": "in",
+      "status": "12:26 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "12:26",
+      "venue": "TD Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "135",
+        "abbr": "MINN",
+        "name": "Minnesota Golden Gophers",
+        "score": 11,
+        "winner": null,
+        "record": "6-0",
+        "home_record": "4-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Jaylen Crocker-Johnson",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Isaac Asuma",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Isaac Asuma",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Jaylen Crocker-Johnson",
+            "value": "8 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Minnesota",
+        "nick": "Golden Gophers"
+      },
+      "away": {
+        "team_id": "254",
+        "abbr": "UTAH",
+        "name": "Utah Utes",
+        "score": 11,
+        "winner": null,
+        "record": "3-2",
+        "home_record": "3-1",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "TJ Burch",
+            "value": "7"
+          },
+          "rebounds": {
+            "player": "Jackson Holcombe",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Jackson Holcombe",
+            "value": "1"
+          },
+          "rating": {
+            "player": "TJ Burch",
+            "value": "7 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Utah",
+        "nick": "Utes"
       },
       "espn_line": null,
       "date": "2026-11-22",
@@ -506,87 +590,6 @@
         "nick": "Hokies"
       },
       "espn_line": null,
-      "date": "2026-11-22",
-      "p4": true
-    },
-    {
-      "game_id": "401921420",
-      "start_utc": "2026-11-22T23:00Z",
-      "short_name": "UTAH VS MINN",
-      "state": "pre",
-      "status": "11/22 - 6:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "TD Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "135",
-        "abbr": "MINN",
-        "name": "Minnesota Golden Gophers",
-        "score": 0,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "4-0",
-        "away_record": "1-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Isaac Asuma",
-            "value": "17.3"
-          },
-          "reboundsPerGame": {
-            "player": "Jaylen Crocker-Johnson",
-            "value": "6.5"
-          },
-          "assistsPerGame": {
-            "player": "Kyan Evans",
-            "value": "6.5"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Minnesota",
-        "nick": "Golden Gophers"
-      },
-      "away": {
-        "team_id": "254",
-        "abbr": "UTAH",
-        "name": "Utah Utes",
-        "score": 0,
-        "winner": null,
-        "record": "3-2",
-        "home_record": "3-1",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Trey Campbell",
-            "value": "14.6"
-          },
-          "reboundsPerGame": {
-            "player": "Jackson Holcombe",
-            "value": "5.8"
-          },
-          "assistsPerGame": {
-            "player": "Trey Campbell",
-            "value": "5.6"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Utah",
-        "nick": "Utes"
-      },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "MINN -9.5",
-        "spread": -9.5,
-        "over_under": 132.5
-      },
       "date": "2026-11-22",
       "p4": true
     },
