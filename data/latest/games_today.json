@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T21:00:19+00:00",
+  "fetched_at": "2026-11-22T21:15:17+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-22",
@@ -9,10 +9,10 @@
       "start_utc": "2026-11-22T20:30Z",
       "short_name": "DET @ ATL",
       "state": "in",
-      "status": "3:31 - 1st",
+      "status": "10:04 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "3:31",
+      "period": 2,
+      "clock": "10:04",
       "venue": "State Farm Arena",
       "neutral_site": false,
       "broadcasts": null,
@@ -20,7 +20,7 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 22,
+        "score": 35,
         "winner": null,
         "record": "10-6",
         "home_record": "4-3",
@@ -32,14 +32,14 @@
           },
           "rebounds": {
             "player": "Dyson Daniels",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
-            "player": "Kingston Flemings",
-            "value": "2"
+            "player": "Dyson Daniels",
+            "value": "3"
           },
           "rating": {
-            "player": "Jalen Johnson",
+            "player": "Corey Kispert",
             "value": "8 PTS"
           }
         }
@@ -48,15 +48,15 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 18,
+        "score": 31,
         "winner": null,
         "record": "10-5",
         "home_record": "3-3",
         "away_record": "7-2",
         "leaders": {
           "points": {
-            "player": "Ausar Thompson",
-            "value": "6"
+            "player": "Paul Reed",
+            "value": "8"
           },
           "rebounds": {
             "player": "John Collins",
@@ -64,11 +64,11 @@
           },
           "assists": {
             "player": "Cade Cunningham",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
-            "player": "John Collins",
-            "value": "5 PTS"
+            "player": "Paul Reed",
+            "value": "8 PTS"
           }
         }
       },
@@ -529,7 +529,12 @@
           }
         }
       },
-      "espn_line": null
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "BOS -7.5",
+        "spread": 7.5,
+        "over_under": 209.5
+      }
     }
   ]
 }

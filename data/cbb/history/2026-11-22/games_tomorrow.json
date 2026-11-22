@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T21:00:32+00:00",
+  "fetched_at": "2026-11-22T21:15:22+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-23",
@@ -77,7 +77,12 @@
         "loc": "Ole Miss",
         "nick": "Rebels"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "MISS -5.5",
+        "spread": 5.5,
+        "over_under": 150.5
+      },
       "date": "2026-11-23",
       "p4": true
     },
@@ -153,7 +158,12 @@
         "loc": "Washington",
         "nick": "Huskies"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "BYU -10.5",
+        "spread": -10.5,
+        "over_under": 166.5
+      },
       "date": "2026-11-23",
       "p4": true
     },
@@ -533,7 +543,12 @@
         "loc": "Colorado State",
         "nick": "Rams"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "ARIZ -17.5",
+        "spread": -17.5,
+        "over_under": 158.5
+      },
       "date": "2026-11-23",
       "p4": true
     }
