@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T00:30:17+00:00",
+  "fetched_at": "2026-11-22T00:45:14+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-21",
@@ -81,11 +81,11 @@
       "game_id": "401910024",
       "start_utc": "2026-11-22T00:30Z",
       "short_name": "POR @ NY",
-      "state": "pre",
-      "status": "11/21 - 7:30 PM EST",
+      "state": "in",
+      "status": "10:24 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:24",
       "venue": "Madison Square Garden",
       "neutral_site": false,
       "broadcasts": [
@@ -97,27 +97,27 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 0,
+        "score": 7,
         "winner": null,
         "record": "9-6",
         "home_record": "4-3",
         "away_record": "5-3",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Jalen Brunson",
-            "value": "26.6"
+            "value": "5"
           },
-          "reboundsPerGame": {
-            "player": "Andre Drummond",
-            "value": "7.3"
-          },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "Jalen Brunson",
-            "value": "5.9"
+            "value": "2"
+          },
+          "assists": {
+            "player": "Mikal Bridges",
+            "value": "1"
           },
           "rating": {
             "player": "Jalen Brunson",
-            "value": "26.6 PPG, 2.9 RPG, 5.9 APG, 0.8 SPG, 0.3 BPG"
+            "value": "5 PTS"
           }
         }
       },
@@ -125,36 +125,27 @@
         "team_id": "22",
         "abbr": "POR",
         "name": "Portland Trail Blazers",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "10-5",
         "home_record": "3-2",
         "away_record": "7-3",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Deni Avdija",
-            "value": "24.2"
+            "value": "2"
           },
-          "reboundsPerGame": {
+          "assists": {
             "player": "Donovan Clingan",
-            "value": "10.7"
-          },
-          "assistsPerGame": {
-            "player": "Deni Avdija",
-            "value": "6.1"
+            "value": "1"
           },
           "rating": {
             "player": "Deni Avdija",
-            "value": "24.2 PPG, 6.2 RPG, 6.1 APG, 1.1 SPG, 0.4 BPG"
+            "value": "2 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "POR -1.5",
-        "spread": 1.5,
-        "over_under": 213.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401910025",
@@ -368,8 +359,8 @@
         "away_record": "1-5",
         "leaders": {
           "pointsPerGame": {
-            "player": "Zion Williamson",
-            "value": "21.7"
+            "player": "Saddiq Bey",
+            "value": "16.8"
           },
           "reboundsPerGame": {
             "player": "Derik Queen",
@@ -380,16 +371,16 @@
             "value": "5.4"
           },
           "rating": {
-            "player": "Zion Williamson",
-            "value": "21.7 PPG, 5.4 RPG, 2.8 APG, 1.8 SPG, 0.6 BPG"
+            "player": "Jeremiah Fears",
+            "value": "15.9 PPG, 4.9 RPG, 5.4 APG, 0.9 SPG, 0.5 BPG"
           }
         }
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "SA -18.5",
-        "spread": -18.5,
-        "over_under": 229.5
+        "details": "SA -19.5",
+        "spread": -19.5,
+        "over_under": 227.5
       }
     },
     {
