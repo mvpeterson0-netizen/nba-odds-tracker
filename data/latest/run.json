@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-22T12:45:26+00:00",
+  "finished_at": "2026-11-22T13:00:32+00:00",
   "game_date": "2026-11-22",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "not_due",
+    "odds": "ok",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -28,12 +28,62 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 10521
+      "ODDS_API_KEY_20K": 10493
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Detroit Pistons @ Atlanta Hawks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 176,
+        "markets": 4
+      },
+      {
+        "matchup": "Oklahoma City Thunder @ Miami Heat",
+        "type": "morning",
+        "status": "ok",
+        "rows": 144,
+        "markets": 4
+      },
+      {
+        "matchup": "Denver Nuggets @ Chicago Bulls",
+        "type": "morning",
+        "status": "ok",
+        "rows": 150,
+        "markets": 4
+      },
+      {
+        "matchup": "Dallas Mavericks @ Utah Jazz",
+        "type": "morning",
+        "status": "ok",
+        "rows": 140,
+        "markets": 4
+      },
+      {
+        "matchup": "Orlando Magic @ Washington Wizards",
+        "type": "morning",
+        "status": "ok",
+        "rows": 162,
+        "markets": 4
+      },
+      {
+        "matchup": "Indiana Pacers @ New York Knicks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 148,
+        "markets": 4
+      },
+      {
+        "matchup": "Boston Celtics @ Golden State Warriors",
+        "type": "morning",
+        "status": "ok",
+        "rows": 176,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
+    "due": 7,
     "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"
