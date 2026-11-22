@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-22T19:45:34+00:00",
+  "finished_at": "2026-11-22T20:00:40+00:00",
   "game_date": "2026-11-22",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,14 +29,45 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 9991
+      "ODDS_API_KEY_20K": 9970
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Virginia Tech Hokies @ Oklahoma St Cowboys",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "NJIT Highlanders @ Boston College Eagles",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Utah Utes @ Minnesota Golden Gophers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Delaware Blue Hens @ UCLA Bruins",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Louisiana Ragin' Cajuns @ USC Trojans",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 36,
-    "p4_events": 6,
+    "events": 34,
+    "p4_events": 5,
     "unmatched": [],
-    "due": 0,
+    "due": 5,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",
