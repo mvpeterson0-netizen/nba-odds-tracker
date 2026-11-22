@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-22T13:45:23+00:00",
+  "finished_at": "2026-11-22T14:00:38+00:00",
   "game_date": "2026-11-22",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,19 +29,77 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 10490
+      "ODDS_API_KEY_20K": 10439
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Butler Bulldogs @ Nebraska Cornhuskers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Dayton Flyers @ Northwestern Wildcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "UMass Lowell River Hawks @ Cincinnati Bearcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Southern Indiana Screaming Eagles @ Texas Longhorns",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Virginia Tech Hokies @ Oklahoma St Cowboys",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "NJIT Highlanders @ Boston College Eagles",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Utah Utes @ Minnesota Golden Gophers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Delaware Blue Hens @ UCLA Bruins",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Louisiana Ragin' Cajuns @ USC Trojans",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 38,
     "p4_events": 9,
     "unmatched": [],
-    "due": 0,
+    "due": 9,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
-      "morning_due": false,
-      "pregame_due": 0
+      "status": "ok",
+      "morning_due": true,
+      "pregame_due": 0,
+      "pull_type": "morning",
+      "rows": 72,
+      "credits_last": 2
     },
     "status": "ok"
   }
