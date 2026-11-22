@@ -1,10 +1,178 @@
 {
-  "fetched_at": "2026-11-22T19:16:12+00:00",
+  "fetched_at": "2026-11-22T19:30:22+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-22",
   "division_i_games": 42,
   "rows": [
+    {
+      "game_id": "401920736",
+      "start_utc": "2026-11-22T18:00Z",
+      "short_name": "DAY VS NU",
+      "state": "in",
+      "status": "12:33 - 2nd",
+      "completed": false,
+      "period": 2,
+      "clock": "12:33",
+      "venue": "TD Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "77",
+        "abbr": "NU",
+        "name": "Northwestern Wildcats",
+        "score": 50,
+        "winner": null,
+        "record": "3-3",
+        "home_record": "3-2",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Jack Karasinski",
+            "value": "15"
+          },
+          "rebounds": {
+            "player": "Symon Ghai",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Jake West",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Jake West",
+            "value": "15 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Northwestern",
+        "nick": "Wildcats"
+      },
+      "away": {
+        "team_id": "2168",
+        "abbr": "DAY",
+        "name": "Dayton Flyers",
+        "score": 38,
+        "winner": null,
+        "record": "3-3",
+        "home_record": "2-3",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Tristian Ford",
+            "value": "9"
+          },
+          "rebounds": {
+            "player": "Grant Randall",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Zaide Lowery",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Zaide Lowery",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "3",
+        "conf": null,
+        "rank": null,
+        "loc": "Dayton",
+        "nick": "Flyers"
+      },
+      "espn_line": null,
+      "date": "2026-11-22",
+      "p4": true
+    },
+    {
+      "game_id": "401921748",
+      "start_utc": "2026-11-22T19:00Z",
+      "short_name": "UML @ CIN",
+      "state": "in",
+      "status": "7:36 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "7:36",
+      "venue": "Fifth Third Arena (OH)",
+      "neutral_site": false,
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "home": {
+        "team_id": "2132",
+        "abbr": "CIN",
+        "name": "Cincinnati Bearcats",
+        "score": 19,
+        "winner": null,
+        "record": "4-1",
+        "home_record": "3-1",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Jayden Hastings",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Tyler Tejada",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Tylen Riley",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Jayden Hastings",
+            "value": "4 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Cincinnati",
+        "nick": "Bearcats"
+      },
+      "away": {
+        "team_id": "2349",
+        "abbr": "UML",
+        "name": "UMass Lowell River Hawks",
+        "score": 18,
+        "winner": null,
+        "record": "4-1",
+        "home_record": "3-0",
+        "away_record": "1-1",
+        "leaders": {
+          "points": {
+            "player": "Jakai Newton",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Victor Okojie",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Jayden Harris",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Jakai Newton",
+            "value": "6 PTS"
+          }
+        },
+        "conf_id": "1",
+        "conf": null,
+        "rank": null,
+        "loc": "UMass Lowell",
+        "nick": "River Hawks"
+      },
+      "espn_line": null,
+      "date": "2026-11-22",
+      "p4": true
+    },
     {
       "game_id": "401902281",
       "start_utc": "2026-11-22T17:00Z",
@@ -84,174 +252,6 @@
         "rank": 24,
         "loc": "Nebraska",
         "nick": "Cornhuskers"
-      },
-      "espn_line": null,
-      "date": "2026-11-22",
-      "p4": true
-    },
-    {
-      "game_id": "401920736",
-      "start_utc": "2026-11-22T18:00Z",
-      "short_name": "DAY VS NU",
-      "state": "in",
-      "status": "17:46 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "17:46",
-      "venue": "TD Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "77",
-        "abbr": "NU",
-        "name": "Northwestern Wildcats",
-        "score": 42,
-        "winner": null,
-        "record": "3-3",
-        "home_record": "3-2",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Jack Karasinski",
-            "value": "13"
-          },
-          "rebounds": {
-            "player": "Symon Ghai",
-            "value": "3"
-          },
-          "assists": {
-            "player": "Jake West",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Jake West",
-            "value": "12 PTS"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Northwestern",
-        "nick": "Wildcats"
-      },
-      "away": {
-        "team_id": "2168",
-        "abbr": "DAY",
-        "name": "Dayton Flyers",
-        "score": 30,
-        "winner": null,
-        "record": "3-3",
-        "home_record": "2-3",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Tristian Ford",
-            "value": "9"
-          },
-          "rebounds": {
-            "player": "Zaide Lowery",
-            "value": "4"
-          },
-          "assists": {
-            "player": "Zaide Lowery",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Zaide Lowery",
-            "value": "5 PTS"
-          }
-        },
-        "conf_id": "3",
-        "conf": null,
-        "rank": null,
-        "loc": "Dayton",
-        "nick": "Flyers"
-      },
-      "espn_line": null,
-      "date": "2026-11-22",
-      "p4": true
-    },
-    {
-      "game_id": "401921748",
-      "start_utc": "2026-11-22T19:00Z",
-      "short_name": "UML @ CIN",
-      "state": "in",
-      "status": "12:05 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "12:05",
-      "venue": "Fifth Third Arena (OH)",
-      "neutral_site": false,
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "home": {
-        "team_id": "2132",
-        "abbr": "CIN",
-        "name": "Cincinnati Bearcats",
-        "score": 14,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "3-1",
-        "away_record": "1-0",
-        "leaders": {
-          "points": {
-            "player": "Jayden Hastings",
-            "value": "4"
-          },
-          "rebounds": {
-            "player": "Jayden Hastings",
-            "value": "2"
-          },
-          "assists": {
-            "player": "Tylen Riley",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Jayden Hastings",
-            "value": "4 PTS"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Cincinnati",
-        "nick": "Bearcats"
-      },
-      "away": {
-        "team_id": "2349",
-        "abbr": "UML",
-        "name": "UMass Lowell River Hawks",
-        "score": 12,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "3-0",
-        "away_record": "1-1",
-        "leaders": {
-          "points": {
-            "player": "Jakai Newton",
-            "value": "6"
-          },
-          "rebounds": {
-            "player": "Victor Okojie",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Isaiah Walter",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Jakai Newton",
-            "value": "6 PTS"
-          }
-        },
-        "conf_id": "1",
-        "conf": null,
-        "rank": null,
-        "loc": "UMass Lowell",
-        "nick": "River Hawks"
       },
       "espn_line": null,
       "date": "2026-11-22",
