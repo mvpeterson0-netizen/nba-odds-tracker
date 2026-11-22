@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T21:30:17+00:00",
+  "fetched_at": "2026-11-22T21:45:17+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-22",
@@ -9,10 +9,10 @@
       "start_utc": "2026-11-22T20:30Z",
       "short_name": "DET @ ATL",
       "state": "in",
-      "status": "3:55 - 2nd",
+      "status": "Halftime",
       "completed": false,
       "period": 2,
-      "clock": "3:55",
+      "clock": "0.1",
       "venue": "State Farm Arena",
       "neutral_site": false,
       "broadcasts": null,
@@ -20,7 +20,7 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 46,
+        "score": 51,
         "winner": null,
         "record": "10-6",
         "home_record": "4-3",
@@ -32,7 +32,7 @@
           },
           "rebounds": {
             "player": "Dyson Daniels",
-            "value": "8"
+            "value": "10"
           },
           "assists": {
             "player": "Dyson Daniels",
@@ -40,7 +40,7 @@
           },
           "rating": {
             "player": "Dyson Daniels",
-            "value": "8 REB"
+            "value": "10 REB, 3 STL"
           }
         }
       },
@@ -48,27 +48,27 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 45,
+        "score": 52,
         "winner": null,
         "record": "10-5",
         "home_record": "3-3",
         "away_record": "7-2",
         "leaders": {
           "points": {
-            "player": "Paul Reed",
-            "value": "10"
+            "player": "Isaiah Joe",
+            "value": "14"
           },
           "rebounds": {
             "player": "Ausar Thompson",
-            "value": "4"
+            "value": "7"
           },
           "assists": {
             "player": "Cade Cunningham",
-            "value": "7"
+            "value": "9"
           },
           "rating": {
             "player": "Ausar Thompson",
-            "value": "8 PTS"
+            "value": "8 PTS, 7 REB, 3 BLK"
           }
         }
       },
@@ -128,28 +128,28 @@
         "away_record": "4-5",
         "leaders": {
           "pointsPerGame": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "31.7"
+            "player": "Ajay Mitchell",
+            "value": "17.0"
           },
           "reboundsPerGame": {
             "player": "Isaiah Hartenstein",
             "value": "10.8"
           },
           "assistsPerGame": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "4.5"
+            "player": "Isaiah Hartenstein",
+            "value": "3.9"
           },
           "rating": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "31.7 PPG, 4.1 RPG, 4.5 APG, 0.9 SPG, 0.9 BPG"
+            "player": "Ajay Mitchell",
+            "value": "17.0 PPG, 3.6 RPG, 3.6 APG, 1.1 SPG, 0.4 BPG"
           }
         }
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "MIA -4.5",
-        "spread": -4.5,
-        "over_under": 231.5
+        "details": "MIA -6.5",
+        "spread": -6.5,
+        "over_under": 228.5
       }
     },
     {
@@ -533,7 +533,7 @@
         "provider": "DraftKings",
         "details": "BOS -7.5",
         "spread": 7.5,
-        "over_under": 209.5
+        "over_under": 210.5
       }
     }
   ]
