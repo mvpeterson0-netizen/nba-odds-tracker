@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T04:00:23+00:00",
+  "fetched_at": "2026-11-22T04:15:28+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-21",
@@ -429,11 +429,11 @@
       "game_id": "401909567",
       "start_utc": "2026-11-22T04:00Z",
       "short_name": "WSU VS DUKE",
-      "state": "pre",
-      "status": "11/21 - 11:00 PM EST",
+      "state": "in",
+      "status": "15:57 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:57",
       "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -443,23 +443,27 @@
         "team_id": "150",
         "abbr": "DUKE",
         "name": "Duke Blue Devils",
-        "score": 0,
+        "score": 10,
         "winner": null,
         "record": "3-2",
         "home_record": "3-1",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Patrick Ngongba II",
-            "value": "13.8"
+          "points": {
+            "player": "Joaquim Boumtje Boumtje",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Patrick Ngongba II",
-            "value": "7.2"
+          "rebounds": {
+            "player": "Caleb Foster",
+            "value": "3"
           },
-          "assistsPerGame": {
-            "player": "Cayden Boozer",
-            "value": "4.6"
+          "assists": {
+            "player": "Patrick Ngongba II",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Patrick Ngongba II",
+            "value": "2 PTS"
           }
         },
         "conf_id": "2",
@@ -472,23 +476,27 @@
         "team_id": "265",
         "abbr": "WSU",
         "name": "Washington State Cougars",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "2-3",
         "home_record": "1-1",
         "away_record": "0-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Lazerek Houston",
-            "value": "15.2"
+          "points": {
+            "player": "Jaylen Harrell",
+            "value": "5"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Ladji Dembele",
-            "value": "4.4"
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Lazerek Houston",
-            "value": "4.2"
+          "assists": {
+            "player": "Sebastian Akins",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Jaylen Harrell",
+            "value": "5 PTS"
           }
         },
         "conf_id": "21",
@@ -497,12 +505,7 @@
         "loc": "Washington State",
         "nick": "Cougars"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "DUKE -25.5",
-        "spread": -25.5,
-        "over_under": 149.5
-      },
+      "espn_line": null,
       "date": "2026-11-21",
       "p4": true
     }
