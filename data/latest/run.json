@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-21T23:45:24+00:00",
+  "finished_at": "2026-11-22T00:00:49+00:00",
   "game_date": "2026-11-21",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,13 +28,35 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 10633
+      "ODDS_API_KEY_20K": 10621
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Los Angeles Clippers @ Dallas Mavericks",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 160,
+        "markets": 4
+      },
+      {
+        "matchup": "Memphis Grizzlies @ Minnesota Timberwolves",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 180,
+        "markets": 4
+      },
+      {
+        "matchup": "New Orleans Pelicans @ San Antonio Spurs",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 176,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 3,
+    "pregame_pulled": true,
     "links_backfill": [],
     "status": "ok"
   }
