@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T20:45:17+00:00",
+  "fetched_at": "2026-11-22T21:00:19+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-22",
@@ -9,10 +9,10 @@
       "start_utc": "2026-11-22T20:30Z",
       "short_name": "DET @ ATL",
       "state": "in",
-      "status": "8:29 - 1st",
+      "status": "3:31 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "8:29",
+      "clock": "3:31",
       "venue": "State Farm Arena",
       "neutral_site": false,
       "broadcasts": null,
@@ -20,7 +20,7 @@
         "team_id": "1",
         "abbr": "ATL",
         "name": "Atlanta Hawks",
-        "score": 8,
+        "score": 22,
         "winner": null,
         "record": "10-6",
         "home_record": "4-3",
@@ -28,19 +28,19 @@
         "leaders": {
           "points": {
             "player": "Jalen Johnson",
-            "value": "6"
+            "value": "8"
           },
           "rebounds": {
             "player": "Dyson Daniels",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
-            "player": "Dyson Daniels",
-            "value": "1"
+            "player": "Kingston Flemings",
+            "value": "2"
           },
           "rating": {
             "player": "Jalen Johnson",
-            "value": "6 PTS"
+            "value": "8 PTS"
           }
         }
       },
@@ -48,23 +48,23 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 7,
+        "score": 18,
         "winner": null,
         "record": "10-5",
         "home_record": "3-3",
         "away_record": "7-2",
         "leaders": {
           "points": {
-            "player": "John Collins",
-            "value": "5"
+            "player": "Ausar Thompson",
+            "value": "6"
           },
           "rebounds": {
             "player": "John Collins",
-            "value": "1"
+            "value": "2"
           },
           "assists": {
             "player": "Cade Cunningham",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "John Collins",
@@ -529,12 +529,7 @@
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "BOS -8.5",
-        "spread": 8.5,
-        "over_under": 210.5
-      }
+      "espn_line": null
     }
   ]
 }
