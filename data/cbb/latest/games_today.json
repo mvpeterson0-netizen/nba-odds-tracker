@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T19:00:25+00:00",
+  "fetched_at": "2026-11-22T19:15:29+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-22",
@@ -9,11 +9,11 @@
       "game_id": "401902281",
       "start_utc": "2026-11-22T17:00Z",
       "short_name": "NEB VS BTLR",
-      "state": "in",
-      "status": "2:38 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "2:38",
+      "clock": "0:00",
       "venue": "Credit Union 1 Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,9 +23,9 @@
         "team_id": "2086",
         "abbr": "BTLR",
         "name": "Butler Bulldogs",
-        "score": 72,
-        "winner": null,
-        "record": "4-2",
+        "score": 74,
+        "winner": false,
+        "record": "4-3",
         "home_record": "4-1",
         "away_record": "0-1",
         "leaders": {
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Asim Djulovic",
-            "value": "28 PTS, 6 REB"
+            "value": "28 PTS, 7 REB"
           }
         },
         "conf_id": "4",
@@ -56,14 +56,14 @@
         "team_id": "158",
         "abbr": "NEB",
         "name": "Nebraska Cornhuskers",
-        "score": 71,
-        "winner": null,
-        "record": "5-0",
+        "score": 76,
+        "winner": true,
+        "record": "6-0",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Braden Frager",
+            "player": "Damon Wilkinson",
             "value": "17"
           },
           "rebounds": {
@@ -71,12 +71,12 @@
             "value": "7"
           },
           "assists": {
-            "player": "Trevan Leonhardt",
+            "player": "Jacob Lanier",
             "value": "4"
           },
           "rating": {
             "player": "Pryce Sandfort",
-            "value": "14 PTS, 3 STL"
+            "value": "14 PTS, 6 REB, 3 STL"
           }
         },
         "conf_id": "7",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-22T18:00Z",
       "short_name": "DAY VS NU",
       "state": "in",
-      "status": "Halftime",
+      "status": "18:05 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "18:05",
       "venue": "TD Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,23 +107,23 @@
         "team_id": "77",
         "abbr": "NU",
         "name": "Northwestern Wildcats",
-        "score": 38,
+        "score": 42,
         "winner": null,
         "record": "3-3",
         "home_record": "3-2",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Jake West",
-            "value": "12"
+            "player": "Jack Karasinski",
+            "value": "13"
           },
           "rebounds": {
-            "player": "Jack Karasinski",
-            "value": "2"
+            "player": "Symon Ghai",
+            "value": "3"
           },
           "assists": {
             "player": "Jake West",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Jake West",
@@ -140,7 +140,7 @@
         "team_id": "2168",
         "abbr": "DAY",
         "name": "Dayton Flyers",
-        "score": 28,
+        "score": 30,
         "winner": null,
         "record": "3-3",
         "home_record": "2-3",
@@ -156,7 +156,7 @@
           },
           "assists": {
             "player": "Zaide Lowery",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
             "player": "Zaide Lowery",
@@ -177,11 +177,11 @@
       "game_id": "401921748",
       "start_utc": "2026-11-22T19:00Z",
       "short_name": "UML @ CIN",
-      "state": "pre",
-      "status": "11/22 - 2:00 PM EST",
+      "state": "in",
+      "status": "12:05 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "12:05",
       "venue": "Fifth Third Arena (OH)",
       "neutral_site": false,
       "broadcasts": [
@@ -191,23 +191,27 @@
         "team_id": "2132",
         "abbr": "CIN",
         "name": "Cincinnati Bearcats",
-        "score": 0,
+        "score": 14,
         "winner": null,
         "record": "4-1",
         "home_record": "3-1",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tyler Tejada",
-            "value": "12.0"
+          "points": {
+            "player": "Jayden Hastings",
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "Myles Colvin",
-            "value": "5.0"
+          "rebounds": {
+            "player": "Jayden Hastings",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Elijah Perryman",
-            "value": "4.2"
+          "assists": {
+            "player": "Tylen Riley",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Jayden Hastings",
+            "value": "4 PTS"
           }
         },
         "conf_id": "8",
@@ -220,23 +224,27 @@
         "team_id": "2349",
         "abbr": "UML",
         "name": "UMass Lowell River Hawks",
-        "score": 0,
+        "score": 11,
         "winner": null,
         "record": "4-1",
         "home_record": "3-0",
         "away_record": "1-1",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
+            "player": "Jakai Newton",
+            "value": "6"
+          },
+          "rebounds": {
             "player": "Victor Okojie",
-            "value": "13.0"
+            "value": "1"
           },
-          "reboundsPerGame": {
-            "player": "Jayden Harris",
-            "value": "7.0"
+          "assists": {
+            "player": "Isaiah Walter",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Jasiah Cannady",
-            "value": "4.8"
+          "rating": {
+            "player": "Jakai Newton",
+            "value": "6 PTS"
           }
         },
         "conf_id": "1",
@@ -245,12 +253,7 @@
         "loc": "UMass Lowell",
         "nick": "River Hawks"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "CIN -30.5",
-        "spread": -30.5,
-        "over_under": 150.5
-      },
+      "espn_line": null,
       "date": "2026-11-22",
       "p4": true
     },
