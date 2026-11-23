@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-23T01:15:15+00:00",
+  "fetched_at": "2026-11-23T01:30:22+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-22",
@@ -78,11 +78,11 @@
       "game_id": "401910030",
       "start_utc": "2026-11-22T23:00Z",
       "short_name": "OKC @ MIA",
-      "state": "in",
-      "status": "3:46 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "3:46",
+      "clock": "0.0",
       "venue": "Kaseya Center",
       "neutral_site": false,
       "broadcasts": [
@@ -93,15 +93,15 @@
         "team_id": "14",
         "abbr": "MIA",
         "name": "Miami Heat",
-        "score": 119,
-        "winner": null,
-        "record": "9-6",
-        "home_record": "5-3",
+        "score": 123,
+        "winner": true,
+        "record": "10-6",
+        "home_record": "6-3",
         "away_record": "4-3",
         "leaders": {
           "points": {
             "player": "Bam Adebayo",
-            "value": "22"
+            "value": "24"
           },
           "rebounds": {
             "player": "Bam Adebayo",
@@ -113,7 +113,7 @@
           },
           "rating": {
             "player": "Bam Adebayo",
-            "value": "22 PTS, 15 REB, 12 AST"
+            "value": "24 PTS, 15 REB, 12 AST, 3 BLK"
           }
         }
       },
@@ -121,15 +121,15 @@
         "team_id": "25",
         "abbr": "OKC",
         "name": "Oklahoma City Thunder",
-        "score": 104,
-        "winner": null,
-        "record": "10-6",
+        "score": 113,
+        "winner": false,
+        "record": "10-7",
         "home_record": "6-1",
-        "away_record": "4-5",
+        "away_record": "4-6",
         "leaders": {
           "points": {
-            "player": "Jared McCain",
-            "value": "20"
+            "player": "Bennett Stirtz",
+            "value": "21"
           },
           "rebounds": {
             "player": "Isaiah Hartenstein",
@@ -137,11 +137,11 @@
           },
           "assists": {
             "player": "Bennett Stirtz",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Bennett Stirtz",
-            "value": "16 PTS"
+            "value": "21 PTS"
           }
         }
       },
@@ -152,10 +152,10 @@
       "start_utc": "2026-11-23T00:00Z",
       "short_name": "ORL @ WSH",
       "state": "in",
-      "status": "Halftime",
+      "status": "8:54 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "8:54",
       "venue": "Capital One Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -165,7 +165,7 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 63,
+        "score": 70,
         "winner": null,
         "record": "6-11",
         "home_record": "2-5",
@@ -173,19 +173,19 @@
         "leaders": {
           "points": {
             "player": "Anthony Davis",
-            "value": "11"
+            "value": "13"
           },
           "rebounds": {
             "player": "Anthony Davis",
-            "value": "6"
+            "value": "5"
           },
           "assists": {
             "player": "Trae Young",
             "value": "7"
           },
           "rating": {
-            "player": "Trae Young",
-            "value": "8 PTS, 7 AST"
+            "player": "Anthony Davis",
+            "value": "13 PTS"
           }
         }
       },
@@ -193,7 +193,7 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 51,
+        "score": 60,
         "winner": null,
         "record": "7-8",
         "home_record": "1-5",
@@ -205,14 +205,14 @@
           },
           "rebounds": {
             "player": "Anthony Black",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
-            "player": "Desmond Bane",
-            "value": "4"
+            "player": "Franz Wagner",
+            "value": "5"
           },
           "rating": {
-            "player": "Tristan da Silva",
+            "player": "Desmond Bane",
             "value": "13 PTS"
           }
         }
@@ -224,10 +224,10 @@
       "start_utc": "2026-11-23T00:00Z",
       "short_name": "DEN @ CHI",
       "state": "in",
-      "status": "Halftime",
+      "status": "6:26 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "6:26",
       "venue": "United Center",
       "neutral_site": false,
       "broadcasts": null,
@@ -235,27 +235,27 @@
         "team_id": "4",
         "abbr": "CHI",
         "name": "Chicago Bulls",
-        "score": 70,
+        "score": 82,
         "winner": null,
         "record": "4-11",
         "home_record": "1-5",
         "away_record": "3-6",
         "leaders": {
           "points": {
-            "player": "Jalen Smith",
-            "value": "15"
+            "player": "Buddy Hield",
+            "value": "21"
           },
           "rebounds": {
-            "player": "Buddy Hield",
-            "value": "4"
+            "player": "Josh Giddey",
+            "value": "7"
           },
           "assists": {
             "player": "Josh Giddey",
-            "value": "10"
+            "value": "13"
           },
           "rating": {
-            "player": "Jalen Smith",
-            "value": "15 PTS"
+            "player": "Buddy Hield",
+            "value": "21 PTS"
           }
         }
       },
@@ -263,7 +263,7 @@
         "team_id": "7",
         "abbr": "DEN",
         "name": "Denver Nuggets",
-        "score": 72,
+        "score": 89,
         "winner": null,
         "record": "9-5",
         "home_record": "4-3",
@@ -271,19 +271,19 @@
         "leaders": {
           "points": {
             "player": "Jamal Murray",
-            "value": "20"
+            "value": "24"
           },
           "rebounds": {
             "player": "Nikola Jokic",
-            "value": "8"
+            "value": "12"
           },
           "assists": {
             "player": "Jamal Murray",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
-            "player": "Jamal Murray",
-            "value": "20 PTS"
+            "player": "Nikola Jokic",
+            "value": "23 PTS, 12 REB"
           }
         }
       },
@@ -294,10 +294,10 @@
       "start_utc": "2026-11-23T00:00Z",
       "short_name": "DAL @ UTAH",
       "state": "in",
-      "status": "Halftime",
+      "status": "6:39 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "6:39",
       "venue": "Delta Center",
       "neutral_site": false,
       "broadcasts": [
@@ -310,19 +310,19 @@
         "team_id": "26",
         "abbr": "UTAH",
         "name": "Utah Jazz",
-        "score": 57,
+        "score": 62,
         "winner": null,
         "record": "3-14",
         "home_record": "1-8",
         "away_record": "2-6",
         "leaders": {
           "points": {
-            "player": "Svi Mykhailiuk",
-            "value": "12"
+            "player": "Keyonte George",
+            "value": "13"
           },
           "rebounds": {
             "player": "Mo Bamba",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Keyonte George",
@@ -330,7 +330,7 @@
           },
           "rating": {
             "player": "Keyonte George",
-            "value": "10 PTS, 7 AST"
+            "value": "13 PTS, 7 AST"
           }
         }
       },
@@ -338,27 +338,27 @@
         "team_id": "6",
         "abbr": "DAL",
         "name": "Dallas Mavericks",
-        "score": 64,
+        "score": 77,
         "winner": null,
         "record": "9-7",
         "home_record": "7-2",
         "away_record": "2-5",
         "leaders": {
           "points": {
-            "player": "Kyrie Irving",
-            "value": "16"
+            "player": "Cooper Flagg",
+            "value": "19"
           },
           "rebounds": {
             "player": "Caleb Martin",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Kyrie Irving",
-            "value": "5"
+            "value": "8"
           },
           "rating": {
             "player": "Kyrie Irving",
-            "value": "16 PTS"
+            "value": "16 PTS, 8 AST"
           }
         }
       },
@@ -369,10 +369,10 @@
       "start_utc": "2026-11-23T01:00Z",
       "short_name": "IND @ NY",
       "state": "in",
-      "status": "8:47 - 1st",
+      "status": "3:07 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "8:47",
+      "clock": "3:07",
       "venue": "Madison Square Garden",
       "neutral_site": false,
       "broadcasts": [
@@ -382,7 +382,7 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 5,
+        "score": 18,
         "winner": null,
         "record": "10-6",
         "home_record": "5-3",
@@ -390,19 +390,19 @@
         "leaders": {
           "points": {
             "player": "Karl-Anthony Towns",
-            "value": "3"
+            "value": "7"
           },
           "rebounds": {
-            "player": "Landry Shamet",
-            "value": "1"
+            "player": "Karl-Anthony Towns",
+            "value": "3"
           },
           "assists": {
-            "player": "Karl-Anthony Towns",
-            "value": "1"
+            "player": "Jalen Brunson",
+            "value": "2"
           },
           "rating": {
             "player": "Karl-Anthony Towns",
-            "value": "3 PTS"
+            "value": "7 PTS"
           }
         }
       },
@@ -410,27 +410,27 @@
         "team_id": "11",
         "abbr": "IND",
         "name": "Indiana Pacers",
-        "score": 4,
+        "score": 15,
         "winner": null,
         "record": "5-11",
         "home_record": "2-5",
         "away_record": "3-5",
         "leaders": {
           "points": {
-            "player": "Kelly Oubre Jr.",
-            "value": "2"
+            "player": "Ivica Zubac",
+            "value": "6"
           },
           "rebounds": {
-            "player": "Kelly Oubre Jr.",
-            "value": "1"
+            "player": "Pascal Siakam",
+            "value": "2"
           },
           "assists": {
             "player": "Andrew Nembhard",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
-            "player": "Kelly Oubre Jr.",
-            "value": "2 PTS"
+            "player": "Ivica Zubac",
+            "value": "6 PTS"
           }
         }
       },
@@ -508,7 +508,7 @@
         "provider": "DraftKings",
         "details": "BOS -8.5",
         "spread": 8.5,
-        "over_under": 212.5
+        "over_under": 211.5
       }
     }
   ]

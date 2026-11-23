@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-23T01:15:15+00:00",
+  "fetched_at": "2026-11-23T01:30:22+00:00",
   "source": "espn",
   "count": 10,
   "game_date": "2026-11-23",
@@ -76,8 +76,8 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "MEM -3.5",
-        "spread": 3.5,
+        "details": null,
+        "spread": null,
         "over_under": 218.5
       }
     },
@@ -208,9 +208,9 @@
         "name": "Oklahoma City Thunder",
         "score": 0,
         "winner": null,
-        "record": "10-6",
+        "record": "10-7",
         "home_record": "6-1",
-        "away_record": "4-5",
+        "away_record": "4-6",
         "leaders": {
           "pointsPerGame": {
             "player": "Ajay Mitchell",
@@ -303,7 +303,12 @@
           }
         }
       },
-      "espn_line": null
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "TOR -11.5",
+        "spread": -11.5,
+        "over_under": 225.5
+      }
     },
     {
       "game_id": "401910040",
@@ -668,7 +673,7 @@
             "value": "21.1"
           },
           "reboundsPerGame": {
-            "player": "Jaxson Hayes",
+            "player": "Mo Bamba",
             "value": "6.6"
           },
           "assistsPerGame": {
