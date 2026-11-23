@@ -1,10 +1,94 @@
 {
-  "fetched_at": "2026-11-23T22:00:33+00:00",
+  "fetched_at": "2026-11-23T22:15:37+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-23",
   "division_i_games": 46,
   "rows": [
+    {
+      "game_id": "401921708",
+      "start_utc": "2026-11-23T22:00Z",
+      "short_name": "WASH VS BYU",
+      "state": "in",
+      "status": "14:18 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "14:18",
+      "venue": "Lahaina Civic Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "252",
+        "abbr": "BYU",
+        "name": "BYU Cougars",
+        "score": 12,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Tyler Betsey",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Jaxon Kohler",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Collin Chandler",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Bruce Branch III",
+            "value": "2 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 19,
+        "loc": "BYU",
+        "nick": "Cougars"
+      },
+      "away": {
+        "team_id": "264",
+        "abbr": "WASH",
+        "name": "Washington Huskies",
+        "score": 12,
+        "winner": null,
+        "record": "4-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Steele Venters",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Steele Venters",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Ryan Beasley",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Steele Venters",
+            "value": "6 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Washington",
+        "nick": "Huskies"
+      },
+      "espn_line": null,
+      "date": "2026-11-23",
+      "p4": true
+    },
     {
       "game_id": "401918076",
       "start_utc": "2026-11-23T19:30Z",
@@ -90,87 +174,6 @@
       "p4": true
     },
     {
-      "game_id": "401921708",
-      "start_utc": "2026-11-23T22:00Z",
-      "short_name": "WASH VS BYU",
-      "state": "pre",
-      "status": "11/23 - 5:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Lahaina Civic Center",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "252",
-        "abbr": "BYU",
-        "name": "BYU Cougars",
-        "score": 0,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Robert Wright III",
-            "value": "24.2"
-          },
-          "reboundsPerGame": {
-            "player": "Jaxon Kohler",
-            "value": "6.6"
-          },
-          "assistsPerGame": {
-            "player": "Robert Wright III",
-            "value": "4.8"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 19,
-        "loc": "BYU",
-        "nick": "Cougars"
-      },
-      "away": {
-        "team_id": "264",
-        "abbr": "WASH",
-        "name": "Washington Huskies",
-        "score": 0,
-        "winner": null,
-        "record": "4-0",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Steele Venters",
-            "value": "16.8"
-          },
-          "reboundsPerGame": {
-            "player": "LeJuan Watts",
-            "value": "6.5"
-          },
-          "assistsPerGame": {
-            "player": "Ryan Beasley",
-            "value": "4.3"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Washington",
-        "nick": "Huskies"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "BYU -10.5",
-        "spread": -10.5,
-        "over_under": 163.5
-      },
-      "date": "2026-11-23",
-      "p4": true
-    },
-    {
       "game_id": "401913530",
       "start_utc": "2026-11-24T01:00Z",
       "short_name": "WIN @ ILL",
@@ -243,7 +246,7 @@
         "nick": "Eagles"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ILL -42.5",
         "spread": -42.5,
         "over_under": 181.5
@@ -324,7 +327,7 @@
         "nick": "Pioneers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "KU -31.5",
         "spread": -31.5,
         "over_under": 157.5
@@ -405,7 +408,7 @@
         "nick": "Hawks"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "UNC -18.5",
         "spread": -18.5,
         "over_under": 152.5
@@ -486,7 +489,7 @@
         "nick": "Hornets"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CAL -19.5",
         "spread": -19.5,
         "over_under": 143.5
@@ -567,7 +570,7 @@
         "nick": "Rams"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ARIZ -16.5",
         "spread": -16.5,
         "over_under": 158.5
