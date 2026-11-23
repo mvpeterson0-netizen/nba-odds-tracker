@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-23T00:15:35+00:00",
+  "fetched_at": "2026-11-23T00:30:25+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-22",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-23T00:00Z",
       "short_name": "DEL @ UCLA",
       "state": "in",
-      "status": "12:34 - 1st",
+      "status": "7:22 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "12:34",
+      "clock": "7:22",
       "venue": "Pauley Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "26",
         "abbr": "UCLA",
         "name": "UCLA Bruins",
-        "score": 15,
+        "score": 27,
         "winner": null,
         "record": "5-0",
         "home_record": "4-0",
@@ -35,11 +35,11 @@
           },
           "rebounds": {
             "player": "Eric Dailey Jr.",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
-            "player": "Eric Dailey Jr.",
-            "value": "2"
+            "player": "Trent Perry",
+            "value": "3"
           },
           "rating": {
             "player": "Nikola Kusturica",
@@ -56,7 +56,7 @@
         "team_id": "48",
         "abbr": "DEL",
         "name": "Delaware Blue Hens",
-        "score": 13,
+        "score": 19,
         "winner": null,
         "record": "4-2",
         "home_record": "3-1",
@@ -68,11 +68,11 @@
           },
           "rebounds": {
             "player": "Steven Solano",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "DeShawn Harris-Smith",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Steven Solano",
@@ -90,98 +90,14 @@
       "p4": true
     },
     {
-      "game_id": "401909556",
-      "start_utc": "2026-11-22T22:00Z",
-      "short_name": "NJIT @ BC",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Conte Forum",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACC Network"
-      ],
-      "home": {
-        "team_id": "103",
-        "abbr": "BC",
-        "name": "Boston College Eagles",
-        "score": 79,
-        "winner": true,
-        "record": "6-0",
-        "home_record": "4-0",
-        "away_record": "1-0",
-        "leaders": {
-          "points": {
-            "player": "Colby Duggan",
-            "value": "22"
-          },
-          "rebounds": {
-            "player": "Brandon Benjamin",
-            "value": "13"
-          },
-          "assists": {
-            "player": "Armoni Zeigler",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Colby Duggan",
-            "value": "22 PTS, 7 REB"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Boston College",
-        "nick": "Eagles"
-      },
-      "away": {
-        "team_id": "2885",
-        "abbr": "NJIT",
-        "name": "NJIT Highlanders",
-        "score": 59,
-        "winner": false,
-        "record": "1-7",
-        "home_record": "1-0",
-        "away_record": "0-7",
-        "leaders": {
-          "points": {
-            "player": "Mario Tatum Jr.",
-            "value": "18"
-          },
-          "rebounds": {
-            "player": "Victor Vanderstraeten",
-            "value": "7"
-          },
-          "assists": {
-            "player": "David Bolden",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Mario Tatum Jr.",
-            "value": "18 PTS"
-          }
-        },
-        "conf_id": "1",
-        "conf": null,
-        "rank": null,
-        "loc": "NJIT",
-        "nick": "Highlanders"
-      },
-      "espn_line": null,
-      "date": "2026-11-22",
-      "p4": true
-    },
-    {
       "game_id": "401921420",
       "start_utc": "2026-11-22T23:00Z",
       "short_name": "UTAH VS MINN",
       "state": "in",
-      "status": "12:14 - 2nd",
+      "status": "7:26 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "12:14",
+      "clock": "7:26",
       "venue": "TD Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -191,7 +107,7 @@
         "team_id": "135",
         "abbr": "MINN",
         "name": "Minnesota Golden Gophers",
-        "score": 48,
+        "score": 56,
         "winner": null,
         "record": "6-0",
         "home_record": "4-0",
@@ -202,16 +118,16 @@
             "value": "26"
           },
           "rebounds": {
-            "player": "Isaac Asuma",
-            "value": "6"
+            "player": "Jaylen Crocker-Johnson",
+            "value": "7"
           },
           "assists": {
             "player": "Kyan Evans",
-            "value": "6"
+            "value": "8"
           },
           "rating": {
             "player": "Jaylen Crocker-Johnson",
-            "value": "26 PTS"
+            "value": "26 PTS, 7 REB"
           }
         },
         "conf_id": "7",
@@ -224,7 +140,7 @@
         "team_id": "254",
         "abbr": "UTAH",
         "name": "Utah Utes",
-        "score": 40,
+        "score": 47,
         "winner": null,
         "record": "3-2",
         "home_record": "3-1",
@@ -678,6 +594,90 @@
       "p4": true
     },
     {
+      "game_id": "401909556",
+      "start_utc": "2026-11-22T22:00Z",
+      "short_name": "NJIT @ BC",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Conte Forum",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACC Network"
+      ],
+      "home": {
+        "team_id": "103",
+        "abbr": "BC",
+        "name": "Boston College Eagles",
+        "score": 79,
+        "winner": true,
+        "record": "6-0",
+        "home_record": "4-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Colby Duggan",
+            "value": "22"
+          },
+          "rebounds": {
+            "player": "Brandon Benjamin",
+            "value": "13"
+          },
+          "assists": {
+            "player": "Armoni Zeigler",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Colby Duggan",
+            "value": "22 PTS, 7 REB"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Boston College",
+        "nick": "Eagles"
+      },
+      "away": {
+        "team_id": "2885",
+        "abbr": "NJIT",
+        "name": "NJIT Highlanders",
+        "score": 59,
+        "winner": false,
+        "record": "1-7",
+        "home_record": "1-0",
+        "away_record": "0-7",
+        "leaders": {
+          "points": {
+            "player": "Mario Tatum Jr.",
+            "value": "18"
+          },
+          "rebounds": {
+            "player": "Victor Vanderstraeten",
+            "value": "7"
+          },
+          "assists": {
+            "player": "David Bolden",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Mario Tatum Jr.",
+            "value": "18 PTS"
+          }
+        },
+        "conf_id": "1",
+        "conf": null,
+        "rank": null,
+        "loc": "NJIT",
+        "nick": "Highlanders"
+      },
+      "espn_line": null,
+      "date": "2026-11-22",
+      "p4": true
+    },
+    {
       "game_id": "401926774",
       "start_utc": "2026-11-23T01:00Z",
       "short_name": "UL @ USC",
@@ -750,10 +750,10 @@
         "nick": "Ragin' Cajuns"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "USC -31.5",
         "spread": -31.5,
-        "over_under": 144.5
+        "over_under": 145.5
       },
       "date": "2026-11-22",
       "p4": true

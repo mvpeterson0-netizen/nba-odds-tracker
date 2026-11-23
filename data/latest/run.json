@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-23T00:15:34+00:00",
+  "finished_at": "2026-11-23T00:30:25+00:00",
   "game_date": "2026-11-22",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,16 +28,22 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 9854
+      "ODDS_API_KEY_20K": 9850
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Boston Celtics @ Golden State Warriors",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 206,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
-    "links_backfill": [
-      "Portland Trail Blazers @ Philadelphia 76ers: 90 links"
-    ],
+    "due": 1,
+    "pregame_pulled": true,
+    "links_backfill": [],
     "status": "ok"
   }
 }
