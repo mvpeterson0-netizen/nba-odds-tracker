@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-23T13:00:29+00:00",
+  "finished_at": "2026-11-23T13:15:26+00:00",
   "game_date": "2026-11-23",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "ok",
+    "odds": "not_due",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -28,83 +28,12 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 3935
+      "ODDS_API_KEY_20K": 3932
     },
-    "pulled": [
-      {
-        "matchup": "Memphis Grizzlies @ Charlotte Hornets",
-        "type": "morning",
-        "status": "ok",
-        "rows": 178,
-        "markets": 4
-      },
-      {
-        "matchup": "Portland Trail Blazers @ Philadelphia 76ers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 182,
-        "markets": 4
-      },
-      {
-        "matchup": "Brooklyn Nets @ Minnesota Timberwolves",
-        "type": "morning",
-        "status": "ok",
-        "rows": 182,
-        "markets": 4
-      },
-      {
-        "matchup": "Oklahoma City Thunder @ Indiana Pacers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 124,
-        "markets": 4
-      },
-      {
-        "matchup": "Milwaukee Bucks @ Toronto Raptors",
-        "type": "morning",
-        "status": "ok",
-        "rows": 164,
-        "markets": 4
-      },
-      {
-        "matchup": "Cleveland Cavaliers @ Chicago Bulls",
-        "type": "morning",
-        "status": "ok",
-        "rows": 146,
-        "markets": 4
-      },
-      {
-        "matchup": "Phoenix Suns @ New Orleans Pelicans",
-        "type": "morning",
-        "status": "ok",
-        "rows": 194,
-        "markets": 4
-      },
-      {
-        "matchup": "Los Angeles Clippers @ Houston Rockets",
-        "type": "morning",
-        "status": "ok",
-        "rows": 142,
-        "markets": 4
-      },
-      {
-        "matchup": "Utah Jazz @ Los Angeles Lakers",
-        "type": "morning",
-        "status": "ok",
-        "rows": 134,
-        "markets": 4
-      },
-      {
-        "matchup": "San Antonio Spurs @ Sacramento Kings",
-        "type": "morning",
-        "status": "ok",
-        "rows": 140,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 10,
+    "due": 0,
     "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"
