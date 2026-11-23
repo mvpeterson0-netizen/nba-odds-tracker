@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-23T22:45:06+00:00",
+  "finished_at": "2026-11-23T23:00:30+00:00",
   "game_date": "2026-11-23",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,14 +29,39 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 3826
+      "ODDS_API_KEY_20K": 3811
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Denver Pioneers @ Kansas Jayhawks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Winthrop Eagles @ Illinois Fighting Illini",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Monmouth Hawks @ North Carolina Tar Heels",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Alabama St Hornets @ California Golden Bears",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 68,
+    "events": 66,
     "p4_events": 21,
     "unmatched": [],
-    "due": 0,
+    "due": 4,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",
