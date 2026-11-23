@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-23T03:45:19+00:00",
+  "fetched_at": "2026-11-23T04:00:21+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-22",
@@ -372,7 +372,7 @@
       "status": "Final",
       "completed": true,
       "period": 4,
-      "clock": "0.0",
+      "clock": "12:00",
       "venue": "Madison Square Garden",
       "neutral_site": false,
       "broadcasts": [
@@ -440,11 +440,11 @@
       "game_id": "401910035",
       "start_utc": "2026-11-23T01:30Z",
       "short_name": "BOS @ GS",
-      "state": "in",
-      "status": "1:18 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "1:18",
+      "clock": "0.0",
       "venue": "Chase Center",
       "neutral_site": false,
       "broadcasts": null,
@@ -453,9 +453,9 @@
         "abbr": "GS",
         "name": "Golden State Warriors",
         "score": 88,
-        "winner": null,
-        "record": "8-8",
-        "home_record": "6-1",
+        "winner": true,
+        "record": "9-8",
+        "home_record": "7-1",
         "away_record": "2-7",
         "leaders": {
           "points": {
@@ -480,15 +480,15 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 86,
-        "winner": null,
-        "record": "11-5",
+        "score": 87,
+        "winner": false,
+        "record": "11-6",
         "home_record": "6-1",
-        "away_record": "5-4",
+        "away_record": "5-5",
         "leaders": {
           "points": {
             "player": "Jayson Tatum",
-            "value": "26"
+            "value": "27"
           },
           "rebounds": {
             "player": "Jayson Tatum",
@@ -500,7 +500,7 @@
           },
           "rating": {
             "player": "Jayson Tatum",
-            "value": "26 PTS, 10 REB, 6 AST"
+            "value": "27 PTS, 10 REB, 6 AST"
           }
         }
       },
