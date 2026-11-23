@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-23T00:00:19+00:00",
+  "fetched_at": "2026-11-23T00:15:27+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-22",
@@ -79,10 +79,10 @@
       "start_utc": "2026-11-22T23:00Z",
       "short_name": "OKC @ MIA",
       "state": "in",
-      "status": "1:37 - 2nd",
+      "status": "Halftime",
       "completed": false,
       "period": 2,
-      "clock": "1:37",
+      "clock": "0.1",
       "venue": "Kaseya Center",
       "neutral_site": false,
       "broadcasts": [
@@ -93,7 +93,7 @@
         "team_id": "14",
         "abbr": "MIA",
         "name": "Miami Heat",
-        "score": 62,
+        "score": 67,
         "winner": null,
         "record": "9-6",
         "home_record": "5-3",
@@ -101,19 +101,19 @@
         "leaders": {
           "points": {
             "player": "Bam Adebayo",
-            "value": "11"
+            "value": "14"
           },
           "rebounds": {
             "player": "Bam Adebayo",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Bam Adebayo",
-            "value": "6"
+            "value": "7"
           },
           "rating": {
             "player": "Bam Adebayo",
-            "value": "11 PTS, 6 REB, 6 AST"
+            "value": "14 PTS, 7 REB, 7 AST"
           }
         }
       },
@@ -121,7 +121,7 @@
         "team_id": "25",
         "abbr": "OKC",
         "name": "Oklahoma City Thunder",
-        "score": 47,
+        "score": 54,
         "winner": null,
         "record": "10-6",
         "home_record": "6-1",
@@ -132,7 +132,7 @@
             "value": "13"
           },
           "rebounds": {
-            "player": "Isaiah Hartenstein",
+            "player": "Kenrich Williams",
             "value": "4"
           },
           "assists": {
@@ -151,11 +151,11 @@
       "game_id": "401910031",
       "start_utc": "2026-11-23T00:00Z",
       "short_name": "ORL @ WSH",
-      "state": "pre",
-      "status": "11/22 - 7:00 PM EST",
+      "state": "in",
+      "status": "10:21 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:21",
       "venue": "Capital One Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -165,27 +165,27 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "6-11",
         "home_record": "2-5",
         "away_record": "4-6",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Anthony Davis",
-            "value": "25.3"
+            "value": "3"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Anthony Davis",
-            "value": "10.1"
+            "value": "2"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Trae Young",
-            "value": "8.6"
+            "value": "2"
           },
           "rating": {
             "player": "Anthony Davis",
-            "value": "25.3 PPG, 10.1 RPG, 2.1 APG, 1.1 SPG, 1.1 BPG"
+            "value": "3 PTS"
           }
         }
       },
@@ -198,41 +198,19 @@
         "record": "7-8",
         "home_record": "1-5",
         "away_record": "6-3",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Franz Wagner",
-            "value": "25.1"
-          },
-          "reboundsPerGame": {
-            "player": "Wendell Carter Jr.",
-            "value": "8.7"
-          },
-          "assistsPerGame": {
-            "player": "Franz Wagner",
-            "value": "8.4"
-          },
-          "rating": {
-            "player": "Franz Wagner",
-            "value": "25.1 PPG, 6.8 RPG, 8.4 APG, 1.2 SPG, 0.3 BPG"
-          }
-        }
+        "leaders": null
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ORL -4.5",
-        "spread": 4.5,
-        "over_under": 220.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401910032",
       "start_utc": "2026-11-23T00:00Z",
       "short_name": "DEN @ CHI",
-      "state": "pre",
-      "status": "11/22 - 7:00 PM EST",
+      "state": "in",
+      "status": "8:06 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "8:06",
       "venue": "United Center",
       "neutral_site": false,
       "broadcasts": null,
@@ -240,27 +218,27 @@
         "team_id": "4",
         "abbr": "CHI",
         "name": "Chicago Bulls",
-        "score": 0,
+        "score": 11,
         "winner": null,
         "record": "4-11",
         "home_record": "1-5",
         "away_record": "3-6",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Matas Buzelis",
-            "value": "14.7"
+          "points": {
+            "player": "Buddy Hield",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Jalen Smith",
-            "value": "7.9"
-          },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "Josh Giddey",
-            "value": "8.4"
+            "value": "1"
+          },
+          "assists": {
+            "player": "Josh Giddey",
+            "value": "1"
           },
           "rating": {
-            "player": "Jalen Smith",
-            "value": "13.4 PPG, 7.9 RPG, 2.2 APG, 0.7 SPG, 1.0 BPG"
+            "player": "Josh Giddey",
+            "value": "2 PTS"
           }
         }
       },
@@ -268,46 +246,41 @@
         "team_id": "7",
         "abbr": "DEN",
         "name": "Denver Nuggets",
-        "score": 0,
+        "score": 15,
         "winner": null,
         "record": "9-5",
         "home_record": "4-3",
         "away_record": "4-2",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jamal Murray",
-            "value": "24.9"
+          "points": {
+            "player": "Cameron Johnson",
+            "value": "6"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Nikola Jokic",
-            "value": "10.4"
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Nikola Jokic",
-            "value": "9.1"
+          "assists": {
+            "player": "Cameron Johnson",
+            "value": "1"
           },
           "rating": {
-            "player": "Nikola Jokic",
-            "value": "24.2 PPG, 10.4 RPG, 9.1 APG, 1.6 SPG, 1.0 BPG"
+            "player": "Cameron Johnson",
+            "value": "6 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "DEN -9.5",
-        "spread": 9.5,
-        "over_under": 237.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401910033",
       "start_utc": "2026-11-23T00:00Z",
       "short_name": "DAL @ UTAH",
-      "state": "pre",
-      "status": "11/22 - 7:00 PM EST",
+      "state": "in",
+      "status": "8:12 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "8:12",
       "venue": "Delta Center",
       "neutral_site": false,
       "broadcasts": [
@@ -320,27 +293,27 @@
         "team_id": "26",
         "abbr": "UTAH",
         "name": "Utah Jazz",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "3-14",
         "home_record": "1-8",
         "away_record": "2-6",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Keyonte George",
-            "value": "21.1"
+          "points": {
+            "player": "Ace Bailey",
+            "value": "5"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Jaxson Hayes",
-            "value": "6.6"
+            "value": "2"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Keyonte George",
-            "value": "7.1"
+            "value": "3"
           },
           "rating": {
             "player": "Keyonte George",
-            "value": "21.1 PPG, 3.9 RPG, 7.1 APG, 0.8 SPG, 0.2 BPG"
+            "value": "2 PTS"
           }
         }
       },
@@ -348,36 +321,31 @@
         "team_id": "6",
         "abbr": "DAL",
         "name": "Dallas Mavericks",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "9-7",
         "home_record": "7-2",
         "away_record": "2-5",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Cooper Flagg",
-            "value": "24.1"
+          "points": {
+            "player": "Daniel Gafford",
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "Cooper Flagg",
-            "value": "6.5"
+          "rebounds": {
+            "player": "Caleb Martin",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Cooper Flagg",
-            "value": "6.5"
+          "assists": {
+            "player": "Daniel Gafford",
+            "value": "1"
           },
           "rating": {
-            "player": "Cooper Flagg",
-            "value": "24.1 PPG, 6.5 RPG, 6.5 APG, 1.9 SPG, 0.7 BPG"
+            "player": "Daniel Gafford",
+            "value": "4 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "DAL -2.5",
-        "spread": 2.5,
-        "over_under": 225.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401910034",
@@ -450,10 +418,10 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "NY -7.5",
         "spread": -7.5,
-        "over_under": 213.5
+        "over_under": 212.5
       }
     },
     {
@@ -525,7 +493,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "BOS -7.5",
         "spread": 7.5,
         "over_under": 210.5
