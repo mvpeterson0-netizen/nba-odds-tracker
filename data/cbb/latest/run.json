@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-23T14:00:29+00:00",
+  "finished_at": "2026-11-23T14:15:23+00:00",
   "game_date": "2026-11-23",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,67 +29,21 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 3924
+      "ODDS_API_KEY_20K": 3889
     },
-    "pulled": [
-      {
-        "matchup": "Ole Miss Rebels @ Clemson Tigers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Washington Huskies @ BYU Cougars",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Denver Pioneers @ Kansas Jayhawks",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Winthrop Eagles @ Illinois Fighting Illini",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Monmouth Hawks @ North Carolina Tar Heels",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Alabama St Hornets @ California Golden Bears",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Colorado St Rams @ Arizona Wildcats",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "events": 40,
     "p4_events": 14,
     "unmatched": [
       "Long Beach St 49ers @ Florida Int'l Golden Panthers"
     ],
-    "due": 7,
+    "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
-      "morning_due": true,
-      "pregame_due": 0,
-      "pull_type": "morning",
-      "rows": 84,
-      "credits_last": 2
+      "status": "not_due",
+      "morning_due": false,
+      "pregame_due": 0
     },
     "status": "ok"
   }
