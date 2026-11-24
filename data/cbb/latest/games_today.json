@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-24T07:00:32+00:00",
+  "fetched_at": "2026-11-24T07:15:21+00:00",
   "source": "espn",
-  "count": 23,
+  "count": 24,
   "game_date": "2026-11-24",
   "division_i_games": 87,
   "rows": [
@@ -324,6 +324,87 @@
         "provider": "DraftKings",
         "details": "MIA -6.5",
         "spread": 6.5,
+        "over_under": 154.5
+      },
+      "date": "2026-11-24",
+      "p4": true
+    },
+    {
+      "game_id": "401921710",
+      "start_utc": "2026-11-24T22:00Z",
+      "short_name": "PROV VS ARIZ",
+      "state": "pre",
+      "status": "11/24 - 5:00 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Lahaina Civic Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "12",
+        "abbr": "ARIZ",
+        "name": "Arizona Wildcats",
+        "score": 0,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "3-0",
+        "away_record": "1-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Ivan Kharchenkov",
+            "value": "22.6"
+          },
+          "reboundsPerGame": {
+            "player": "Motiejus Krivas",
+            "value": "9.6"
+          },
+          "assistsPerGame": {
+            "player": "Ivan Kharchenkov",
+            "value": "4.8"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 8,
+        "loc": "Arizona",
+        "nick": "Wildcats"
+      },
+      "away": {
+        "team_id": "2507",
+        "abbr": "PROV",
+        "name": "Providence Friars",
+        "score": 0,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Malik Mack",
+            "value": "12.4"
+          },
+          "reboundsPerGame": {
+            "player": "Jacob Bannarbie",
+            "value": "6.6"
+          },
+          "assistsPerGame": {
+            "player": "Malik Mack",
+            "value": "3.8"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Providence",
+        "nick": "Friars"
+      },
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "ARIZ -7.5",
+        "spread": -7.5,
         "over_under": 154.5
       },
       "date": "2026-11-24",
@@ -729,7 +810,7 @@
         "provider": "DraftKings",
         "details": "FLA -35.5",
         "spread": -35.5,
-        "over_under": 157.5
+        "over_under": 156.5
       },
       "date": "2026-11-24",
       "p4": true
