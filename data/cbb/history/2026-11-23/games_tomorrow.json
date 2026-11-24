@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-24T01:30:28+00:00",
+  "fetched_at": "2026-11-24T01:45:22+00:00",
   "source": "espn",
   "count": 23,
   "game_date": "2026-11-24",
@@ -727,9 +727,9 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "FLA -38.5",
-        "spread": -38.5,
-        "over_under": 158.5
+        "details": "FLA -36.5",
+        "spread": -36.5,
+        "over_under": 157.5
       },
       "date": "2026-11-24",
       "p4": true
@@ -887,7 +887,12 @@
         "loc": "Jacksonville",
         "nick": "Dolphins"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "IU -27.5",
+        "spread": -27.5,
+        "over_under": 147.5
+      },
       "date": "2026-11-24",
       "p4": true
     },
@@ -1132,7 +1137,7 @@
     {
       "game_id": "401921711",
       "start_utc": "2026-11-25T01:00Z",
-      "short_name": "CLEM VS TBD",
+      "short_name": "CLEM VS WASH",
       "state": "pre",
       "status": "11/24 - 8:00 PM EST",
       "completed": false,
@@ -1144,20 +1149,33 @@
         "ESPNU"
       ],
       "home": {
-        "team_id": "-1",
-        "abbr": "TBD",
-        "name": "TBD",
+        "team_id": "264",
+        "abbr": "WASH",
+        "name": "Washington Huskies",
         "score": 0,
         "winner": null,
-        "record": null,
-        "home_record": null,
-        "away_record": null,
-        "leaders": null,
-        "conf_id": null,
-        "conf": null,
+        "record": "4-1",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Steele Venters",
+            "value": "16.8"
+          },
+          "reboundsPerGame": {
+            "player": "LeJuan Watts",
+            "value": "6.5"
+          },
+          "assistsPerGame": {
+            "player": "Ryan Beasley",
+            "value": "4.3"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
         "rank": null,
-        "loc": "TBD",
-        "nick": "TBD"
+        "loc": "Washington",
+        "nick": "Huskies"
       },
       "away": {
         "team_id": "228",
@@ -1266,9 +1284,9 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "AUB -20.5",
-        "spread": -20.5,
-        "over_under": 155.5
+        "details": "AUB -23.5",
+        "spread": -23.5,
+        "over_under": 157.5
       },
       "date": "2026-11-24",
       "p4": true
@@ -1509,9 +1527,9 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "FSU -25.5",
-        "spread": -25.5,
-        "over_under": 159.5
+        "details": "FSU -27.5",
+        "spread": -27.5,
+        "over_under": 157.5
       },
       "date": "2026-11-24",
       "p4": true
