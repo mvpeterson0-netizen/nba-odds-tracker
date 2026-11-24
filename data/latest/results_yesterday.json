@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-24T05:30:18+00:00",
+  "fetched_at": "2026-11-24T05:45:16+00:00",
   "source": "espn",
   "count": 10,
   "game_date": "2026-11-23",
@@ -591,11 +591,11 @@
       "game_id": "401910044",
       "start_utc": "2026-11-24T03:00Z",
       "short_name": "UTAH @ LAL",
-      "state": "in",
-      "status": "2:13 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "2:13",
+      "clock": "0.0",
       "venue": "crypto.com Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -609,10 +609,10 @@
         "team_id": "13",
         "abbr": "LAL",
         "name": "Los Angeles Lakers",
-        "score": 107,
-        "winner": null,
-        "record": "14-3",
-        "home_record": "7-2",
+        "score": 109,
+        "winner": true,
+        "record": "15-3",
+        "home_record": "8-2",
         "away_record": "7-1",
         "leaders": {
           "points": {
@@ -620,8 +620,8 @@
             "value": "28"
           },
           "rebounds": {
-            "player": "Jake LaRavia",
-            "value": "9"
+            "player": "Walker Kessler",
+            "value": "12"
           },
           "assists": {
             "player": "Luka Doncic",
@@ -637,11 +637,11 @@
         "team_id": "26",
         "abbr": "UTAH",
         "name": "Utah Jazz",
-        "score": 90,
-        "winner": null,
-        "record": "3-15",
+        "score": 94,
+        "winner": false,
+        "record": "3-16",
         "home_record": "1-9",
-        "away_record": "2-6",
+        "away_record": "2-7",
         "leaders": {
           "points": {
             "player": "Kyle Filipowski",
