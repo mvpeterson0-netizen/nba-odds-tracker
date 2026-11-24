@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-24T22:15:24+00:00",
+  "fetched_at": "2026-11-24T22:30:23+00:00",
   "source": "espn",
   "count": 24,
   "game_date": "2026-11-24",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-24T22:00Z",
       "short_name": "PROV VS ARIZ",
       "state": "in",
-      "status": "Delayed",
+      "status": "15:48 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:48",
       "venue": "Lahaina Civic Center",
       "neutral_site": true,
       "broadcasts": [
@@ -23,12 +23,29 @@
         "team_id": "12",
         "abbr": "ARIZ",
         "name": "Arizona Wildcats",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "5-1",
         "home_record": "3-0",
         "away_record": "1-0",
-        "leaders": null,
+        "leaders": {
+          "points": {
+            "player": "Ivan Kharchenkov",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Ivan Kharchenkov",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Motiejus Krivas",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Motiejus Krivas",
+            "value": "2 PTS"
+          }
+        },
         "conf_id": "8",
         "conf": "Big 12",
         "rank": 8,
@@ -39,12 +56,25 @@
         "team_id": "2507",
         "abbr": "PROV",
         "name": "Providence Friars",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "5-1",
         "home_record": "4-0",
         "away_record": "0-0",
-        "leaders": null,
+        "leaders": {
+          "points": {
+            "player": "Jacob Bannarbie",
+            "value": "2"
+          },
+          "rebounds": {
+            "player": "Malik Mack",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Jacob Bannarbie",
+            "value": "2 PTS"
+          }
+        },
         "conf_id": "4",
         "conf": null,
         "rank": null,
@@ -59,11 +89,11 @@
       "game_id": "401906853",
       "start_utc": "2026-11-24T20:00Z",
       "short_name": "TENN VS MD",
-      "state": "in",
-      "status": "0:55 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "0:55",
+      "clock": "0:00",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -73,9 +103,9 @@
         "team_id": "120",
         "abbr": "MD",
         "name": "Maryland Terrapins",
-        "score": 62,
-        "winner": null,
-        "record": "3-2",
+        "score": 64,
+        "winner": false,
+        "record": "3-3",
         "home_record": "3-1",
         "away_record": "0-1",
         "leaders": {
@@ -85,7 +115,7 @@
           },
           "rebounds": {
             "player": "Tomislav Buljan",
-            "value": "10"
+            "value": "11"
           },
           "assists": {
             "player": "Tomislav Buljan",
@@ -93,7 +123,7 @@
           },
           "rating": {
             "player": "Tomislav Buljan",
-            "value": "13 PTS, 10 REB"
+            "value": "13 PTS, 11 REB"
           }
         },
         "conf_id": "7",
@@ -106,9 +136,9 @@
         "team_id": "2633",
         "abbr": "TENN",
         "name": "Tennessee Volunteers",
-        "score": 68,
-        "winner": null,
-        "record": "5-0",
+        "score": 72,
+        "winner": true,
+        "record": "6-0",
         "home_record": "5-0",
         "away_record": "0-0",
         "leaders": {
@@ -118,7 +148,7 @@
           },
           "rebounds": {
             "player": "Juke Harris",
-            "value": "8"
+            "value": "9"
           },
           "assists": {
             "player": "DeWayne Brown II",
@@ -143,11 +173,11 @@
       "game_id": "401915941",
       "start_utc": "2026-11-24T20:00Z",
       "short_name": "MIA VS TCU",
-      "state": "in",
-      "status": "3:11 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "3:11",
+      "clock": "0:00",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -157,27 +187,27 @@
         "team_id": "2628",
         "abbr": "TCU",
         "name": "TCU Horned Frogs",
-        "score": 69,
-        "winner": null,
-        "record": "4-1",
+        "score": 84,
+        "winner": true,
+        "record": "5-1",
         "home_record": "4-1",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "Micah Robinson",
-            "value": "21"
+            "value": "27"
           },
           "rebounds": {
             "player": "Xavier Edmonds",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Brock Harding",
-            "value": "8"
+            "value": "9"
           },
           "rating": {
             "player": "Micah Robinson",
-            "value": "21 PTS"
+            "value": "27 PTS"
           }
         },
         "conf_id": "8",
@@ -190,9 +220,9 @@
         "team_id": "2390",
         "abbr": "MIA",
         "name": "Miami Hurricanes",
-        "score": 64,
-        "winner": null,
-        "record": "5-1",
+        "score": 71,
+        "winner": false,
+        "record": "5-2",
         "home_record": "5-0",
         "away_record": "0-0",
         "leaders": {
@@ -202,7 +232,7 @@
           },
           "rebounds": {
             "player": "Malik Reneau",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Acaden Lewis",
@@ -395,8 +425,8 @@
       "game_id": "401909775",
       "start_utc": "2026-11-24T22:30Z",
       "short_name": "SDSU VS ISU",
-      "state": "pre",
-      "status": "11/24 - 5:30 PM EST",
+      "state": "in",
+      "status": "Delayed",
       "completed": false,
       "period": 0,
       "clock": "0:00",
@@ -414,20 +444,7 @@
         "record": "3-1",
         "home_record": "3-0",
         "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Tre Singleton",
-            "value": "17.8"
-          },
-          "reboundsPerGame": {
-            "player": "Tre Singleton",
-            "value": "6.5"
-          },
-          "assistsPerGame": {
-            "player": "Tamin Lipsey",
-            "value": "3.0"
-          }
-        },
+        "leaders": null,
         "conf_id": "8",
         "conf": "Big 12",
         "rank": null,
@@ -443,32 +460,14 @@
         "record": "5-0",
         "home_record": "3-0",
         "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Latrell Davis",
-            "value": "20.0"
-          },
-          "reboundsPerGame": {
-            "player": "Tae Simmons",
-            "value": "6.0"
-          },
-          "assistsPerGame": {
-            "player": "Elzie Harrington",
-            "value": "4.8"
-          }
-        },
+        "leaders": null,
         "conf_id": "21",
         "conf": null,
         "rank": null,
         "loc": "San Diego State",
         "nick": "Aztecs"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ISU -9.5",
-        "spread": -9.5,
-        "over_under": 142.5
-      },
+      "espn_line": null,
       "date": "2026-11-24",
       "p4": true
     },
@@ -1842,8 +1841,8 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "STAN -4.5",
-        "spread": 4.5,
+        "details": "STAN -3.5",
+        "spread": 3.5,
         "over_under": 140.5
       },
       "date": "2026-11-24",
