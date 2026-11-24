@@ -1,103 +1,19 @@
 {
-  "fetched_at": "2026-11-24T19:45:32+00:00",
+  "fetched_at": "2026-11-24T20:00:24+00:00",
   "source": "espn",
   "count": 24,
   "game_date": "2026-11-24",
   "division_i_games": 87,
   "rows": [
     {
-      "game_id": "401906806",
-      "start_utc": "2026-11-24T18:30Z",
-      "short_name": "OU VS PITT",
-      "state": "in",
-      "status": "19:54 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "19:54",
-      "venue": "Suncoast Credit Union Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "FS2"
-      ],
-      "home": {
-        "team_id": "221",
-        "abbr": "PITT",
-        "name": "Pittsburgh Panthers",
-        "score": 36,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "4-0",
-        "away_record": "1-0",
-        "leaders": {
-          "points": {
-            "player": "Baye Ndongo",
-            "value": "10"
-          },
-          "rebounds": {
-            "player": "Baye Ndongo",
-            "value": "4"
-          },
-          "assists": {
-            "player": "A'lahn Sumler",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Baye Ndongo",
-            "value": "10 PTS"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Pittsburgh",
-        "nick": "Panthers"
-      },
-      "away": {
-        "team_id": "201",
-        "abbr": "OU",
-        "name": "Oklahoma Sooners",
-        "score": 24,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "4-1",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "B.J. Edwards",
-            "value": "8"
-          },
-          "rebounds": {
-            "player": "Gage Mayfield",
-            "value": "4"
-          },
-          "assists": {
-            "player": "Pop Isaacs",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Pop Isaacs",
-            "value": "6 PTS"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Oklahoma",
-        "nick": "Sooners"
-      },
-      "espn_line": null,
-      "date": "2026-11-24",
-      "p4": true
-    },
-    {
       "game_id": "401921709",
       "start_utc": "2026-11-24T19:30Z",
       "short_name": "MISS VS BYU",
       "state": "in",
-      "status": "15:03 - 1st",
+      "status": "9:15 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "15:03",
+      "clock": "9:15",
       "venue": "Lahaina Civic Center",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +23,7 @@
         "team_id": "252",
         "abbr": "BYU",
         "name": "BYU Cougars",
-        "score": 9,
+        "score": 24,
         "winner": null,
         "record": "6-0",
         "home_record": "4-0",
@@ -115,19 +31,19 @@
         "leaders": {
           "points": {
             "player": "Collin Chandler",
-            "value": "7"
+            "value": "14"
           },
           "rebounds": {
-            "player": "Collin Chandler",
-            "value": "1"
+            "player": "Jaxon Kohler",
+            "value": "5"
           },
           "assists": {
             "player": "Bruce Branch III",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
             "player": "Collin Chandler",
-            "value": "7 PTS"
+            "value": "14 PTS"
           }
         },
         "conf_id": "8",
@@ -140,23 +56,23 @@
         "team_id": "145",
         "abbr": "MISS",
         "name": "Ole Miss Rebels",
-        "score": 8,
+        "score": 14,
         "winner": null,
         "record": "5-0",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Santiago Trouet",
-            "value": "4"
+            "player": "Ben Henshall",
+            "value": "5"
           },
           "rebounds": {
             "player": "Santiago Trouet",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
             "player": "Adam Clark",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
             "player": "Santiago Trouet",
@@ -168,6 +84,90 @@
         "rank": null,
         "loc": "Ole Miss",
         "nick": "Rebels"
+      },
+      "espn_line": null,
+      "date": "2026-11-24",
+      "p4": true
+    },
+    {
+      "game_id": "401906806",
+      "start_utc": "2026-11-24T18:30Z",
+      "short_name": "OU VS PITT",
+      "state": "in",
+      "status": "15:53 - 2nd",
+      "completed": false,
+      "period": 2,
+      "clock": "15:53",
+      "venue": "Suncoast Credit Union Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "FS2"
+      ],
+      "home": {
+        "team_id": "221",
+        "abbr": "PITT",
+        "name": "Pittsburgh Panthers",
+        "score": 50,
+        "winner": null,
+        "record": "6-0",
+        "home_record": "4-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "A'lahn Sumler",
+            "value": "15"
+          },
+          "rebounds": {
+            "player": "Baye Ndongo",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Naithan George",
+            "value": "7"
+          },
+          "rating": {
+            "player": "A'lahn Sumler",
+            "value": "15 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Pittsburgh",
+        "nick": "Panthers"
+      },
+      "away": {
+        "team_id": "201",
+        "abbr": "OU",
+        "name": "Oklahoma Sooners",
+        "score": 33,
+        "winner": null,
+        "record": "4-1",
+        "home_record": "4-1",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "B.J. Edwards",
+            "value": "10"
+          },
+          "rebounds": {
+            "player": "B.J. Edwards",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Xzayvier Brown",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Xzayvier Brown",
+            "value": "10 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Oklahoma",
+        "nick": "Sooners"
       },
       "espn_line": null,
       "date": "2026-11-24",
@@ -246,7 +246,7 @@
         "nick": "Volunteers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TENN -2.5",
         "spread": 2.5,
         "over_under": 148.5
@@ -327,9 +327,9 @@
         "nick": "Hurricanes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
-        "details": "MIA -4.5",
-        "spread": 4.5,
+        "provider": "DraftKings",
+        "details": "MIA -5.5",
+        "spread": 5.5,
         "over_under": 153.5
       },
       "date": "2026-11-24",
@@ -408,7 +408,7 @@
         "nick": "Friars"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ARIZ -7.5",
         "spread": -7.5,
         "over_under": 157.5
@@ -489,7 +489,7 @@
         "nick": "Aztecs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ISU -9.5",
         "spread": -9.5,
         "over_under": 142.5
@@ -570,7 +570,7 @@
         "nick": "Bluejays"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MICH -5.5",
         "spread": -5.5,
         "over_under": 161.5
@@ -651,7 +651,7 @@
         "nick": "Pioneers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "RUTG -22.5",
         "spread": -22.5,
         "over_under": 159.5
@@ -732,7 +732,7 @@
         "nick": "Blue Demons"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "PUR -3.5",
         "spread": -3.5,
         "over_under": 132.5
@@ -813,7 +813,7 @@
         "nick": "Panthers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "FLA -34.5",
         "spread": -34.5,
         "over_under": 152.5
@@ -894,7 +894,7 @@
         "nick": "Commodores"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "VAN -1.5",
         "spread": 1.5,
         "over_under": 156.5
@@ -975,7 +975,7 @@
         "nick": "Dolphins"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "IU -27.5",
         "spread": -27.5,
         "over_under": 145.5
@@ -1056,7 +1056,7 @@
         "nick": "Retrievers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "IOWA -28.5",
         "spread": -28.5,
         "over_under": 144.5
@@ -1137,7 +1137,7 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "GT -10.5",
         "spread": -10.5,
         "over_under": 161.5
@@ -1218,7 +1218,7 @@
         "nick": "Red Raiders"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TTU -2.5",
         "spread": 2.5,
         "over_under": 153.5
@@ -1299,7 +1299,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CLEM -1.5",
         "spread": 1.5,
         "over_under": 150.5
@@ -1380,7 +1380,7 @@
         "nick": "Bisons"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "AUB -24.5",
         "spread": -24.5,
         "over_under": 157.5
@@ -1461,7 +1461,7 @@
         "nick": "Chippewas"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ND -20.5",
         "spread": -20.5,
         "over_under": 152.5
@@ -1542,7 +1542,7 @@
         "nick": "Purple Aces"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MIZ -30.5",
         "spread": -30.5,
         "over_under": 148.5
@@ -1623,7 +1623,7 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "FSU -29.5",
         "spread": -29.5,
         "over_under": 159.5
@@ -1704,7 +1704,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ALA -1.5",
         "spread": -1.5,
         "over_under": 174.5
@@ -1785,7 +1785,7 @@
         "nick": "Ducks"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SJU -10.5",
         "spread": -10.5,
         "over_under": 156.5
@@ -1866,7 +1866,7 @@
         "nick": "Cardinal"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "STAN -4.5",
         "spread": 4.5,
         "over_under": 140.5
@@ -1947,7 +1947,7 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "GONZ -15.5",
         "spread": 15.5,
         "over_under": 157.5
