@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-24T00:15:23+00:00",
+  "fetched_at": "2026-11-24T00:30:25+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-23",
@@ -9,11 +9,11 @@
       "game_id": "401921708",
       "start_utc": "2026-11-23T22:00Z",
       "short_name": "WASH VS BYU",
-      "state": "in",
-      "status": "0:47 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "0:47",
+      "clock": "0:00",
       "venue": "Lahaina Civic Center",
       "neutral_site": true,
       "broadcasts": [
@@ -23,18 +23,18 @@
         "team_id": "252",
         "abbr": "BYU",
         "name": "BYU Cougars",
-        "score": 74,
-        "winner": null,
-        "record": "5-0",
+        "score": 83,
+        "winner": true,
+        "record": "6-0",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "Collin Chandler",
-            "value": "18"
+            "value": "24"
           },
           "rebounds": {
-            "player": "Brooks Bahr",
+            "player": "Bruce Branch III",
             "value": "6"
           },
           "assists": {
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Collin Chandler",
-            "value": "18 PTS"
+            "value": "24 PTS"
           }
         },
         "conf_id": "8",
@@ -56,9 +56,9 @@
         "team_id": "264",
         "abbr": "WASH",
         "name": "Washington Huskies",
-        "score": 67,
-        "winner": null,
-        "record": "4-0",
+        "score": 77,
+        "winner": false,
+        "record": "4-1",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
@@ -75,8 +75,8 @@
             "value": "5"
           },
           "rating": {
-            "player": "LeJuan Watts",
-            "value": "21 PTS"
+            "player": "Ryan Beasley",
+            "value": "20 PTS, 3 STL"
           }
         },
         "conf_id": "7",
@@ -246,7 +246,7 @@
         "nick": "Eagles"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ILL -42.5",
         "spread": -42.5,
         "over_under": 181.5
@@ -327,7 +327,7 @@
         "nick": "Pioneers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "KU -30.5",
         "spread": -30.5,
         "over_under": 157.5
@@ -408,7 +408,7 @@
         "nick": "Hawks"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UNC -18.5",
         "spread": -18.5,
         "over_under": 153.5
@@ -489,7 +489,7 @@
         "nick": "Hornets"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CAL -18.5",
         "spread": -18.5,
         "over_under": 143.5
@@ -570,7 +570,7 @@
         "nick": "Rams"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ARIZ -16.5",
         "spread": -16.5,
         "over_under": 158.5

@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-24T00:15:23+00:00",
+  "finished_at": "2026-11-24T00:30:25+00:00",
   "game_date": "2026-11-23",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,16 +28,22 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 3776
+      "ODDS_API_KEY_20K": 3772
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Los Angeles Clippers @ Houston Rockets",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 142,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
-    "links_backfill": [
-      "Detroit Pistons @ Orlando Magic: 0 links"
-    ],
+    "due": 1,
+    "pregame_pulled": true,
+    "links_backfill": [],
     "status": "ok"
   }
 }
