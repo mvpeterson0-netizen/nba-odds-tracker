@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-24T22:30:23+00:00",
+  "fetched_at": "2026-11-24T22:45:25+00:00",
   "source": "espn",
   "count": 24,
   "game_date": "2026-11-24",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-24T22:00Z",
       "short_name": "PROV VS ARIZ",
       "state": "in",
-      "status": "15:48 - 1st",
+      "status": "9:43 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "15:48",
+      "clock": "9:43",
       "venue": "Lahaina Civic Center",
       "neutral_site": true,
       "broadcasts": [
@@ -23,27 +23,27 @@
         "team_id": "12",
         "abbr": "ARIZ",
         "name": "Arizona Wildcats",
-        "score": 9,
+        "score": 23,
         "winner": null,
         "record": "5-1",
         "home_record": "3-0",
         "away_record": "1-0",
         "leaders": {
           "points": {
-            "player": "Ivan Kharchenkov",
-            "value": "4"
+            "player": "Caleb Holt",
+            "value": "9"
           },
           "rebounds": {
-            "player": "Ivan Kharchenkov",
-            "value": "1"
+            "player": "Caleb Holt",
+            "value": "2"
           },
           "assists": {
             "player": "Motiejus Krivas",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
-            "player": "Motiejus Krivas",
-            "value": "2 PTS"
+            "player": "Caleb Holt",
+            "value": "9 PTS"
           }
         },
         "conf_id": "8",
@@ -56,22 +56,22 @@
         "team_id": "2507",
         "abbr": "PROV",
         "name": "Providence Friars",
-        "score": 2,
+        "score": 10,
         "winner": null,
         "record": "5-1",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Jacob Bannarbie",
+            "player": "Malik Mack",
             "value": "2"
           },
           "rebounds": {
             "player": "Malik Mack",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
-            "player": "Jacob Bannarbie",
+            "player": "Malik Mack",
             "value": "2 PTS"
           }
         },
@@ -80,6 +80,106 @@
         "rank": null,
         "loc": "Providence",
         "nick": "Friars"
+      },
+      "espn_line": null,
+      "date": "2026-11-24",
+      "p4": true
+    },
+    {
+      "game_id": "401909775",
+      "start_utc": "2026-11-24T22:30Z",
+      "short_name": "SDSU VS ISU",
+      "state": "in",
+      "status": "Delayed",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPNU"
+      ],
+      "home": {
+        "team_id": "66",
+        "abbr": "ISU",
+        "name": "Iowa State Cyclones",
+        "score": 0,
+        "winner": null,
+        "record": "3-1",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": null,
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Iowa State",
+        "nick": "Cyclones"
+      },
+      "away": {
+        "team_id": "21",
+        "abbr": "SDSU",
+        "name": "San Diego State Aztecs",
+        "score": 0,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": null,
+        "conf_id": "21",
+        "conf": null,
+        "rank": null,
+        "loc": "San Diego State",
+        "nick": "Aztecs"
+      },
+      "espn_line": null,
+      "date": "2026-11-24",
+      "p4": true
+    },
+    {
+      "game_id": "401909495",
+      "start_utc": "2026-11-24T22:30Z",
+      "short_name": "CREI VS MICH",
+      "state": "in",
+      "status": "Delayed",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "T-Mobile Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "130",
+        "abbr": "MICH",
+        "name": "Michigan Wolverines",
+        "score": 0,
+        "winner": null,
+        "record": "3-2",
+        "home_record": "3-0",
+        "away_record": "0-1",
+        "leaders": null,
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Michigan",
+        "nick": "Wolverines"
+      },
+      "away": {
+        "team_id": "156",
+        "abbr": "CREI",
+        "name": "Creighton Bluejays",
+        "score": 0,
+        "winner": null,
+        "record": "4-1",
+        "home_record": "3-0",
+        "away_record": "0-1",
+        "leaders": null,
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Creighton",
+        "nick": "Bluejays"
       },
       "espn_line": null,
       "date": "2026-11-24",
@@ -422,137 +522,6 @@
       "p4": true
     },
     {
-      "game_id": "401909775",
-      "start_utc": "2026-11-24T22:30Z",
-      "short_name": "SDSU VS ISU",
-      "state": "in",
-      "status": "Delayed",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Michelob ULTRA Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPNU"
-      ],
-      "home": {
-        "team_id": "66",
-        "abbr": "ISU",
-        "name": "Iowa State Cyclones",
-        "score": 0,
-        "winner": null,
-        "record": "3-1",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": null,
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Iowa State",
-        "nick": "Cyclones"
-      },
-      "away": {
-        "team_id": "21",
-        "abbr": "SDSU",
-        "name": "San Diego State Aztecs",
-        "score": 0,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": null,
-        "conf_id": "21",
-        "conf": null,
-        "rank": null,
-        "loc": "San Diego State",
-        "nick": "Aztecs"
-      },
-      "espn_line": null,
-      "date": "2026-11-24",
-      "p4": true
-    },
-    {
-      "game_id": "401909495",
-      "start_utc": "2026-11-24T22:30Z",
-      "short_name": "CREI VS MICH",
-      "state": "pre",
-      "status": "11/24 - 5:30 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "T-Mobile Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN"
-      ],
-      "home": {
-        "team_id": "130",
-        "abbr": "MICH",
-        "name": "Michigan Wolverines",
-        "score": 0,
-        "winner": null,
-        "record": "3-2",
-        "home_record": "3-0",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Trey McKenney",
-            "value": "18.0"
-          },
-          "reboundsPerGame": {
-            "player": "J.P. Estrella",
-            "value": "8.4"
-          },
-          "assistsPerGame": {
-            "player": "Elliot Cadeau",
-            "value": "7.0"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Michigan",
-        "nick": "Wolverines"
-      },
-      "away": {
-        "team_id": "156",
-        "abbr": "CREI",
-        "name": "Creighton Bluejays",
-        "score": 0,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "3-0",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Wes Enis",
-            "value": "15.4"
-          },
-          "reboundsPerGame": {
-            "player": "Oswin Erhunmwunse",
-            "value": "4.8"
-          },
-          "assistsPerGame": {
-            "player": "Katrelle Harmon",
-            "value": "4.6"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": null,
-        "loc": "Creighton",
-        "nick": "Bluejays"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "MICH -5.5",
-        "spread": -5.5,
-        "over_under": 162.5
-      },
-      "date": "2026-11-24",
-      "p4": true
-    },
-    {
       "game_id": "401924877",
       "start_utc": "2026-11-24T23:00Z",
       "short_name": "SHU @ RUTG",
@@ -625,7 +594,7 @@
         "nick": "Pioneers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "RUTG -22.5",
         "spread": -22.5,
         "over_under": 159.5
@@ -706,7 +675,7 @@
         "nick": "Blue Demons"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "PUR -3.5",
         "spread": -3.5,
         "over_under": 132.5
@@ -787,7 +756,7 @@
         "nick": "Panthers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "FLA -34.5",
         "spread": -34.5,
         "over_under": 153.5
@@ -868,9 +837,9 @@
         "nick": "Commodores"
       },
       "espn_line": {
-        "provider": "DraftKings",
-        "details": "VAN -1.5",
-        "spread": 1.5,
+        "provider": "Draft Kings",
+        "details": "VAN -2.5",
+        "spread": 2.5,
         "over_under": 156.5
       },
       "date": "2026-11-24",
@@ -949,10 +918,10 @@
         "nick": "Dolphins"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "IU -27.5",
         "spread": -27.5,
-        "over_under": 145.5
+        "over_under": 146.5
       },
       "date": "2026-11-24",
       "p4": true
@@ -1030,7 +999,7 @@
         "nick": "Retrievers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "IOWA -28.5",
         "spread": -28.5,
         "over_under": 144.5
@@ -1111,7 +1080,7 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GT -10.5",
         "spread": -10.5,
         "over_under": 161.5
@@ -1192,7 +1161,7 @@
         "nick": "Red Raiders"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TTU -2.5",
         "spread": 2.5,
         "over_under": 153.5
@@ -1273,7 +1242,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CLEM -1.5",
         "spread": 1.5,
         "over_under": 150.5
@@ -1354,7 +1323,7 @@
         "nick": "Bisons"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "AUB -24.5",
         "spread": -24.5,
         "over_under": 158.5
@@ -1435,7 +1404,7 @@
         "nick": "Chippewas"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ND -20.5",
         "spread": -20.5,
         "over_under": 152.5
@@ -1516,7 +1485,7 @@
         "nick": "Purple Aces"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MIZ -30.5",
         "spread": -30.5,
         "over_under": 148.5
@@ -1597,7 +1566,7 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "FSU -29.5",
         "spread": -29.5,
         "over_under": 159.5
@@ -1678,7 +1647,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ALA -1.5",
         "spread": -1.5,
         "over_under": 174.5
@@ -1759,7 +1728,7 @@
         "nick": "Ducks"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SJU -10.5",
         "spread": -10.5,
         "over_under": 156.5
@@ -1840,7 +1809,7 @@
         "nick": "Cardinal"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "STAN -3.5",
         "spread": 3.5,
         "over_under": 140.5
@@ -1921,7 +1890,7 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GONZ -15.5",
         "spread": 15.5,
         "over_under": 157.5
