@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-24T02:45:26+00:00",
+  "fetched_at": "2026-11-24T03:00:37+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-23",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-24T01:00Z",
       "short_name": "WIN @ ILL",
       "state": "in",
-      "status": "8:27 - 2nd",
+      "status": "2:28 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "8:27",
+      "clock": "2:28",
       "venue": "State Farm Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "356",
         "abbr": "ILL",
         "name": "Illinois Fighting Illini",
-        "score": 102,
+        "score": 126,
         "winner": null,
         "record": "5-1",
         "home_record": "4-0",
@@ -31,19 +31,19 @@
         "leaders": {
           "points": {
             "player": "Quentin Coleman",
-            "value": "33"
+            "value": "35"
           },
           "rebounds": {
             "player": "Tomislav Ivisic",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
-            "player": "Ethan Brown",
-            "value": "5"
+            "player": "Quentin Coleman",
+            "value": "6"
           },
           "rating": {
             "player": "Quentin Coleman",
-            "value": "33 PTS, 6 REB, 4 STL"
+            "value": "35 PTS, 7 REB, 6 AST, 4 STL"
           }
         },
         "conf_id": "7",
@@ -56,7 +56,7 @@
         "team_id": "2737",
         "abbr": "WIN",
         "name": "Winthrop Eagles",
-        "score": 68,
+        "score": 78,
         "winner": null,
         "record": "0-6",
         "home_record": "0-3",
@@ -64,19 +64,19 @@
         "leaders": {
           "points": {
             "player": "Keshawn Fisher",
-            "value": "18"
+            "value": "22"
           },
           "rebounds": {
-            "player": "Joel Cwik",
+            "player": "Kyle Morgan",
             "value": "4"
           },
           "assists": {
             "player": "Keshawn Fisher",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Keshawn Fisher",
-            "value": "18 PTS"
+            "value": "22 PTS"
           }
         },
         "conf_id": "6",
@@ -93,11 +93,11 @@
       "game_id": "401909788",
       "start_utc": "2026-11-24T01:00Z",
       "short_name": "DEN @ KU",
-      "state": "in",
-      "status": "3:34 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "3:34",
+      "clock": "0:00",
       "venue": "Allen Fieldhouse",
       "neutral_site": false,
       "broadcasts": [
@@ -107,10 +107,10 @@
         "team_id": "2305",
         "abbr": "KU",
         "name": "Kansas Jayhawks",
-        "score": 77,
-        "winner": null,
-        "record": "5-1",
-        "home_record": "2-0",
+        "score": 84,
+        "winner": true,
+        "record": "6-1",
+        "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -140,27 +140,27 @@
         "team_id": "2172",
         "abbr": "DEN",
         "name": "Denver Pioneers",
-        "score": 61,
-        "winner": null,
-        "record": "1-4",
+        "score": 67,
+        "winner": false,
+        "record": "1-5",
         "home_record": "1-1",
-        "away_record": "0-3",
+        "away_record": "0-4",
         "leaders": {
           "points": {
             "player": "Carson Johnson",
-            "value": "16"
+            "value": "19"
           },
           "rebounds": {
             "player": "Oskar Stumer",
             "value": "6"
           },
           "assists": {
-            "player": "Logan Threatt",
+            "player": "Carson Johnson",
             "value": "1"
           },
           "rating": {
-            "player": "Logan Threatt",
-            "value": "12 PTS"
+            "player": "Carson Johnson",
+            "value": "19 PTS"
           }
         },
         "conf_id": "29",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-24T01:00Z",
       "short_name": "MONM @ UNC",
       "state": "in",
-      "status": "7:11 - 2nd",
+      "status": "2:55 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "7:11",
+      "clock": "2:55",
       "venue": "Dean E. Smith Center",
       "neutral_site": false,
       "broadcasts": [
@@ -191,7 +191,7 @@
         "team_id": "153",
         "abbr": "UNC",
         "name": "North Carolina Tar Heels",
-        "score": 73,
+        "score": 79,
         "winner": null,
         "record": "4-1",
         "home_record": "4-1",
@@ -202,8 +202,8 @@
             "value": "20"
           },
           "rebounds": {
-            "player": "Jarin Stevenson",
-            "value": "8"
+            "player": "Alex Samodurov",
+            "value": "10"
           },
           "assists": {
             "player": "Terrence Brown",
@@ -224,7 +224,7 @@
         "team_id": "2405",
         "abbr": "MONM",
         "name": "Monmouth Hawks",
-        "score": 37,
+        "score": 43,
         "winner": null,
         "record": "1-4",
         "home_record": "0-0",
@@ -235,16 +235,16 @@
             "value": "10"
           },
           "rebounds": {
-            "player": "Stefanos Spartalis",
-            "value": "5"
+            "player": "Jack Collins",
+            "value": "6"
           },
           "assists": {
             "player": "Jack Collins",
             "value": "1"
           },
           "rating": {
-            "player": "Stefanos Spartalis",
-            "value": "10 PTS"
+            "player": "Jack Collins",
+            "value": "8 PTS, 6 REB"
           }
         },
         "conf_id": "10",
@@ -499,8 +499,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "CAL -18.5",
-        "spread": -18.5,
+        "details": "CAL -17.5",
+        "spread": -17.5,
         "over_under": 142.5
       },
       "date": "2026-11-23",
