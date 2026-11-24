@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-24T20:45:24+00:00",
+  "fetched_at": "2026-11-24T21:00:25+00:00",
   "source": "espn",
   "count": 13,
   "game_date": "2026-11-25",
@@ -229,7 +229,12 @@
         "loc": "Texas A&M",
         "nick": "Aggies"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "TA&M -5.5",
+        "spread": 5.5,
+        "over_under": 169.5
+      },
       "date": "2026-11-25",
       "p4": true
     },
@@ -533,7 +538,12 @@
         "loc": "Memphis",
         "nick": "Tigers"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "MEM -4.5",
+        "spread": 4.5,
+        "over_under": 165.5
+      },
       "date": "2026-11-25",
       "p4": true
     },
@@ -687,9 +697,9 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "CONN -1.5",
-        "spread": 1.5,
-        "over_under": 152.5
+        "details": "CONN -2.5",
+        "spread": 2.5,
+        "over_under": 151.5
       },
       "date": "2026-11-25",
       "p4": true
@@ -994,7 +1004,12 @@
         "loc": "Wake Forest",
         "nick": "Demon Deacons"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "MSST -4.5",
+        "spread": -4.5,
+        "over_under": 150.5
+      },
       "date": "2026-11-25",
       "p4": true
     }
