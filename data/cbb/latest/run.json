@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-24T00:45:30+00:00",
+  "finished_at": "2026-11-24T01:00:41+00:00",
   "game_date": "2026-11-23",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,14 +29,27 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 3765
+      "ODDS_API_KEY_20K": 3751
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Monmouth Hawks @ North Carolina Tar Heels",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Alabama St Hornets @ California Golden Bears",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 71,
-    "p4_events": 25,
+    "events": 73,
+    "p4_events": 23,
     "unmatched": [],
-    "due": 0,
+    "due": 2,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",
