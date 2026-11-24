@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-24T00:39:20+00:00",
+  "fetched_at": "2026-11-24T00:45:30+00:00",
   "source": "espn",
   "count": 23,
   "game_date": "2026-11-24",
@@ -89,7 +89,7 @@
     {
       "game_id": "401921709",
       "start_utc": "2026-11-24T19:30Z",
-      "short_name": "MISS VS TBD",
+      "short_name": "MISS VS BYU",
       "state": "pre",
       "status": "11/24 - 2:30 PM EST",
       "completed": false,
@@ -101,20 +101,33 @@
         "ESPN2"
       ],
       "home": {
-        "team_id": "-1",
-        "abbr": "TBD",
-        "name": "TBD",
+        "team_id": "252",
+        "abbr": "BYU",
+        "name": "BYU Cougars",
         "score": 0,
         "winner": null,
-        "record": null,
-        "home_record": null,
-        "away_record": null,
-        "leaders": null,
-        "conf_id": null,
-        "conf": null,
-        "rank": null,
-        "loc": "TBD",
-        "nick": "TBD"
+        "record": "6-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Robert Wright III",
+            "value": "24.2"
+          },
+          "reboundsPerGame": {
+            "player": "Jaxon Kohler",
+            "value": "6.6"
+          },
+          "assistsPerGame": {
+            "player": "Robert Wright III",
+            "value": "4.8"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 19,
+        "loc": "BYU",
+        "nick": "Cougars"
       },
       "away": {
         "team_id": "145",
@@ -145,7 +158,12 @@
         "loc": "Ole Miss",
         "nick": "Rebels"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "BYU -1.5",
+        "spread": -1.5,
+        "over_under": 160.5
+      },
       "date": "2026-11-24",
       "p4": true
     },
