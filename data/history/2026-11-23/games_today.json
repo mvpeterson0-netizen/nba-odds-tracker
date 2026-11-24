@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-24T00:00:22+00:00",
+  "fetched_at": "2026-11-24T00:15:18+00:00",
   "source": "espn",
   "count": 10,
   "game_date": "2026-11-23",
@@ -8,11 +8,11 @@
       "game_id": "401910036",
       "start_utc": "2026-11-24T00:00Z",
       "short_name": "MEM @ CHA",
-      "state": "pre",
-      "status": "11/23 - 7:00 PM EST",
+      "state": "in",
+      "status": "7:59 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "7:59",
       "venue": "Spectrum Center",
       "neutral_site": false,
       "broadcasts": [
@@ -22,27 +22,27 @@
         "team_id": "30",
         "abbr": "CHA",
         "name": "Charlotte Hornets",
-        "score": 0,
+        "score": 7,
         "winner": null,
         "record": "4-11",
         "home_record": "3-4",
         "away_record": "1-7",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Brandon Miller",
-            "value": "19.8"
+          "points": {
+            "player": "Coby White",
+            "value": "5"
           },
-          "reboundsPerGame": {
+          "rebounds": {
+            "player": "Coby White",
+            "value": "1"
+          },
+          "assists": {
             "player": "Moussa Diabate",
-            "value": "10.6"
-          },
-          "assistsPerGame": {
-            "player": "Sion James",
-            "value": "3.0"
+            "value": "2"
           },
           "rating": {
-            "player": "Naz Reid",
-            "value": "17.3 PPG, 8.5 RPG, 2.4 APG, 0.9 SPG, 0.5 BPG"
+            "player": "Coby White",
+            "value": "5 PTS"
           }
         }
       },
@@ -50,46 +50,41 @@
         "team_id": "29",
         "abbr": "MEM",
         "name": "Memphis Grizzlies",
-        "score": 0,
+        "score": 11,
         "winner": null,
         "record": "12-5",
         "home_record": "4-4",
         "away_record": "8-1",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
+            "player": "Jaylen Wells",
+            "value": "3"
+          },
+          "rebounds": {
             "player": "Ty Jerome",
-            "value": "24.8"
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Cedric Coward",
-            "value": "8.0"
-          },
-          "assistsPerGame": {
-            "player": "Cam Spencer",
-            "value": "5.8"
+          "assists": {
+            "player": "Ty Jerome",
+            "value": "1"
           },
           "rating": {
-            "player": "Ty Jerome",
-            "value": "24.8 PPG, 3.4 RPG, 5.3 APG, 0.8 SPG, 0.2 BPG"
+            "player": "Zach Edey",
+            "value": "2 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "MEM -2.5",
-        "spread": 2.5,
-        "over_under": 213.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401910037",
       "start_utc": "2026-11-24T00:00Z",
       "short_name": "POR @ PHI",
-      "state": "pre",
-      "status": "11/23 - 7:00 PM EST",
+      "state": "in",
+      "status": "10:08 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:08",
       "venue": "Xfinity Mobile Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -99,27 +94,27 @@
         "team_id": "20",
         "abbr": "PHI",
         "name": "Philadelphia 76ers",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "14-3",
         "home_record": "7-2",
         "away_record": "7-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tyrese Maxey",
-            "value": "25.9"
+          "points": {
+            "player": "Jaylen Brown",
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "LeBron James",
-            "value": "6.8"
+          "rebounds": {
+            "player": "VJ Edgecombe",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "LeBron James",
-            "value": "6.8"
+          "assists": {
+            "player": "Jabari Walker",
+            "value": "1"
           },
           "rating": {
-            "player": "Tyrese Maxey",
-            "value": "25.9 PPG, 3.3 RPG, 5.7 APG, 1.2 SPG, 0.6 BPG"
+            "player": "Jaylen Brown",
+            "value": "4 PTS"
           }
         }
       },
@@ -127,36 +122,31 @@
         "team_id": "22",
         "abbr": "POR",
         "name": "Portland Trail Blazers",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "10-6",
         "home_record": "3-2",
         "away_record": "7-4",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Deni Avdija",
-            "value": "23.9"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Donovan Clingan",
-            "value": "10.9"
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Deni Avdija",
-            "value": "6.0"
+          "rebounds": {
+            "player": "Sidy Cissoko",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Damian Lillard",
+            "value": "1"
           },
           "rating": {
-            "player": "Deni Avdija",
-            "value": "23.9 PPG, 6.4 RPG, 6.0 APG, 1.0 SPG, 0.5 BPG"
+            "player": "Donovan Clingan",
+            "value": "2 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "POR -1.5",
-        "spread": 1.5,
-        "over_under": 231.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401910038",
@@ -231,7 +221,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "OKC -4.5",
         "spread": 4.5,
         "over_under": 226.5
@@ -309,7 +299,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TOR -10.5",
         "spread": -10.5,
         "over_under": 222.5
@@ -387,7 +377,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MIN -10.5",
         "spread": -10.5,
         "over_under": 222.5
@@ -464,7 +454,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CLE -8.5",
         "spread": 8.5,
         "over_under": 240.5
@@ -544,7 +534,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "PHX -3.5",
         "spread": 3.5,
         "over_under": 232.5
@@ -621,7 +611,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "HOU -12.5",
         "spread": -12.5,
         "over_under": 223.5
@@ -702,7 +692,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "LAL -13.5",
         "spread": -13.5,
         "over_under": 225.5
@@ -779,7 +769,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SA -12.5",
         "spread": 12.5,
         "over_under": 224.5
