@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-24T18:30:24+00:00",
+  "fetched_at": "2026-11-24T18:45:23+00:00",
   "source": "espn",
   "count": 24,
   "game_date": "2026-11-24",
@@ -9,11 +9,11 @@
       "game_id": "401906806",
       "start_utc": "2026-11-24T18:30Z",
       "short_name": "OU VS PITT",
-      "state": "pre",
-      "status": "11/24 - 1:30 PM EST",
+      "state": "in",
+      "status": "14:32 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "14:32",
       "venue": "Suncoast Credit Union Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "221",
         "abbr": "PITT",
         "name": "Pittsburgh Panthers",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "6-0",
         "home_record": "4-0",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Baye Ndongo",
-            "value": "20.3"
+            "value": "2"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Baye Ndongo",
-            "value": "10.8"
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Naithan George",
-            "value": "7.7"
+          "assists": {
+            "player": "Baye Ndongo",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Akir Souare",
+            "value": "2 PTS"
           }
         },
         "conf_id": "2",
@@ -52,23 +56,27 @@
         "team_id": "201",
         "abbr": "OU",
         "name": "Oklahoma Sooners",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "4-1",
         "home_record": "4-1",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Xzayvier Brown",
-            "value": "15.2"
+          "points": {
+            "player": "B.J. Edwards",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Derrion Reid",
-            "value": "7.0"
+          "rebounds": {
+            "player": "B.J. Edwards",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Xzayvier Brown",
-            "value": "6.2"
+          "assists": {
+            "player": "Pop Isaacs",
+            "value": "1"
+          },
+          "rating": {
+            "player": "B.J. Edwards",
+            "value": "3 PTS"
           }
         },
         "conf_id": "23",
@@ -77,12 +85,7 @@
         "loc": "Oklahoma",
         "nick": "Sooners"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "PITT -1.5",
-        "spread": -1.5,
-        "over_under": 148.5
-      },
+      "espn_line": null,
       "date": "2026-11-24",
       "p4": true
     },
@@ -808,8 +811,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "FLA -34.5",
-        "spread": -34.5,
+        "details": "FLA -33.5",
+        "spread": -33.5,
         "over_under": 152.5
       },
       "date": "2026-11-24",
@@ -970,8 +973,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "IU -28.5",
-        "spread": -28.5,
+        "details": "IU -27.5",
+        "spread": -27.5,
         "over_under": 146.5
       },
       "date": "2026-11-24",
