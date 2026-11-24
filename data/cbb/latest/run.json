@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-24T22:00:35+00:00",
+  "finished_at": "2026-11-24T22:10:25+00:00",
   "game_date": "2026-11-24",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,10 +17,10 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 1,
-    "player_rows": 30,
+    "new_games": 0,
+    "player_rows": 0,
     "unparsed": [],
-    "queued": 1,
+    "queued": 0,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -29,113 +29,26 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 3551
+      "ODDS_API_KEY_20K": 3547
     },
     "pulled": [
       {
-        "matchup": "San Diego St Aztecs @ Iowa State Cyclones",
-        "type": "morning",
-        "status": "ok",
-        "rows": 4
-      },
-      {
-        "matchup": "DePaul Blue Demons @ Purdue Boilermakers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Milwaukee Panthers @ Florida Gators",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Samford Bulldogs @ Georgia Tech Yellow Jackets",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Jacksonville Dolphins @ Indiana Hoosiers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "UMBC Retrievers @ Iowa Hawkeyes",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Lipscomb Bisons @ Auburn Tigers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Central Michigan Chippewas @ Notre Dame Fighting Irish",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Clemson Tigers @ Washington Huskies",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Evansville Purple Aces @ Missouri Tigers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "UNC Asheville Bulldogs @ Florida St Seminoles",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Baylor Bears @ Alabama Crimson Tide",
-        "type": "morning",
-        "status": "ok",
-        "rows": 14
-      },
-      {
-        "matchup": "Oregon Ducks @ St. John's Red Storm",
-        "type": "morning",
-        "status": "ok",
-        "rows": 10
-      },
-      {
-        "matchup": "Colorado Buffaloes @ Stanford Cardinal",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Gonzaga Bulldogs @ Kansas St Wildcats",
+        "matchup": "Sacred Heart Pioneers @ Rutgers Scarlet Knights",
         "type": "morning",
         "status": "empty",
         "rows": 0
       }
     ],
     "errors": [],
-    "events": 100,
+    "events": 98,
     "p4_events": 29,
     "unmatched": [],
-    "due": 15,
+    "due": 1,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "not_due",
       "morning_due": false,
-      "pregame_due": 2,
-      "pull_type": "pregame",
-      "rows": 16,
-      "credits_last": 2
+      "pregame_due": 0
     },
     "status": "ok"
   }
