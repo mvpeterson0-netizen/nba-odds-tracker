@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-24T06:15:24+00:00",
+  "fetched_at": "2026-11-24T06:30:33+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-23",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-24T04:55Z",
       "short_name": "CSU VS ARIZ",
       "state": "in",
-      "status": "13:48 - 2nd",
+      "status": "7:58 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "13:48",
+      "clock": "7:58",
       "venue": "Lahaina Civic Center",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "12",
         "abbr": "ARIZ",
         "name": "Arizona Wildcats",
-        "score": 59,
+        "score": 72,
         "winner": null,
         "record": "4-1",
         "home_record": "3-0",
@@ -35,15 +35,15 @@
           },
           "rebounds": {
             "player": "Caleb Holt",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Ivan Kharchenkov",
             "value": "6"
           },
           "rating": {
-            "player": "Caleb Holt",
-            "value": "18 PTS, 7 REB"
+            "player": "Ivan Kharchenkov",
+            "value": "18 PTS, 6 AST, 4 STL"
           }
         },
         "conf_id": "8",
@@ -56,7 +56,7 @@
         "team_id": "36",
         "abbr": "CSU",
         "name": "Colorado State Rams",
-        "score": 45,
+        "score": 65,
         "winner": null,
         "record": "4-1",
         "home_record": "4-1",
@@ -68,15 +68,15 @@
           },
           "rebounds": {
             "player": "Carey Booth",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Jase Butler",
-            "value": "4"
+            "value": "6"
           },
           "rating": {
-            "player": "Kyle Jorgensen",
-            "value": "14 PTS"
+            "player": "Jase Butler",
+            "value": "12 PTS, 6 AST"
           }
         },
         "conf_id": "21",
@@ -448,7 +448,24 @@
         "record": "5-1",
         "home_record": "5-1",
         "away_record": "0-0",
-        "leaders": null,
+        "leaders": {
+          "points": {
+            "player": "Terrence Brown",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Alex Samodurov",
+            "value": "11"
+          },
+          "assists": {
+            "player": "Terrence Brown",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Terrence Brown",
+            "value": "20 PTS"
+          }
+        },
         "conf_id": "2",
         "conf": "ACC",
         "rank": null,
@@ -464,7 +481,24 @@
         "record": "1-5",
         "home_record": "0-0",
         "away_record": "1-4",
-        "leaders": null,
+        "leaders": {
+          "points": {
+            "player": "Stefanos Spartalis",
+            "value": "10"
+          },
+          "rebounds": {
+            "player": "Jack Collins",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Jack Collins",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Jack Collins",
+            "value": "8 PTS, 7 REB"
+          }
+        },
         "conf_id": "10",
         "conf": null,
         "rank": null,
