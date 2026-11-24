@@ -349,7 +349,7 @@ function viewPlayer(aid, sub) {
       <div><span>LINE</span>${cur ? `<b title="${esc(lineTip(cur))}">${n1(cur.line)}</b><small>${lineOdds(cur)} ${bookShort(cur.book)}</small>` : `<span class="na">none</span>`}</div>
       <div><span>AVG</span><b>${n1(f.avg)}</b><small>${f.n} game${f.n === 1 ? "" : "s"}</small></div>
       <div><span>L5</span><b>${n1(f.l5)}</b></div>
-      <div><span>HIT</span>${hitHtml(f)}<small>over line</small></div>
+      <div><span>HIT</span>${hitHtml(f)}<small>${cur ? `over ${n1(cur.line)}` : "over line"}</small></div>
       <div><span>TREND</span>${trendHtml(f, true)}</div>
     </div>
     ${betBox(aid, mk)}
@@ -379,13 +379,14 @@ function viewPlayer(aid, sub) {
       <td class="num">${l ? `<span title="${esc(lineTip(l))}">${n1(l.line)}</span>` : ""}</td><td>${l ? resHtml(l) : ""}</td></tr>`;
   }
   if (!logs.length && !pendRows.length) h += `<tr><td colspan="${cols.length + 5}" class="muted">No games played yet this season.</td></tr>`;
+  const noLine = MODE === "cbb" ? `<span class="na" title="The books didn't post a points line for this game">no line</span>` : "";
   for (const r of logs) {
     const l = (myLines[r.g] || {})[mk];
     h += `<tr><td>${fmtDate(r.d)}</td><td>${oppTxt(r)}${r.st ? "" : ` <span class="muted small">bench</span>`}</td>
       ${r.p ? `<td class="num">${n1(r.min)}</td>${cols.map(([k]) => `<td class="num ${k === m.stat ? "sel" : ""}">${n1(r[k])}</td>`).join("")}` : `<td colspan="${cols.length + 1}" class="na">DNP${r.why ? " — " + esc(r.why) : ""}</td>`}
-      <td class="num">${l ? `<span title="${esc(lineTip(l))}">${n1(l.line)}</span>` : ""}</td><td>${l ? resHtml(l) : ""}</td></tr>`;
+      <td class="num">${l ? `<span title="${esc(lineTip(l))}">${n1(l.line)}</span>` : noLine}</td><td>${l ? resHtml(l) : ""}</td></tr>`;
   }
-  h += `</tbody></table></div></div>`;
+  h += `</tbody></table></div>${MODE === "cbb" && logs.some((r) => !(myLines[r.g] || {})[mk]) ? `<p class="muted small" style="margin:8px 12px">No line = the books didn't post a points prop for that game, so it isn't graded.</p>` : ""}</div>`;
   // line record
   const graded = Object.values(myLines).map((ms) => ms[mk]).filter((l) => l && ["over", "under", "push"].includes(l.res));
   if (graded.length) {
