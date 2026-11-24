@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-24T02:00:33+00:00",
+  "fetched_at": "2026-11-24T02:15:38+00:00",
   "source": "espn",
   "count": 7,
   "game_date": "2026-11-23",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-24T01:00Z",
       "short_name": "WIN @ ILL",
       "state": "in",
-      "status": "Halftime",
+      "status": "18:00 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "18:00",
       "venue": "State Farm Center",
       "neutral_site": false,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "356",
         "abbr": "ILL",
         "name": "Illinois Fighting Illini",
-        "score": 62,
+        "score": 67,
         "winner": null,
         "record": "5-1",
         "home_record": "4-0",
@@ -31,19 +31,19 @@
         "leaders": {
           "points": {
             "player": "Quentin Coleman",
-            "value": "14"
+            "value": "19"
           },
           "rebounds": {
             "player": "Tomislav Ivisic",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Ethan Brown",
             "value": "5"
           },
           "rating": {
-            "player": "Ethan Brown",
-            "value": "11 PTS"
+            "player": "Quentin Coleman",
+            "value": "19 PTS, 3 STL"
           }
         },
         "conf_id": "7",
@@ -56,7 +56,7 @@
         "team_id": "2737",
         "abbr": "WIN",
         "name": "Winthrop Eagles",
-        "score": 53,
+        "score": 58,
         "winner": null,
         "record": "0-6",
         "home_record": "0-3",
@@ -67,8 +67,8 @@
             "value": "16"
           },
           "rebounds": {
-            "player": "Eesher Singh Sarai",
-            "value": "3"
+            "player": "Joel Cwik",
+            "value": "4"
           },
           "assists": {
             "player": "Keshawn Fisher",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-24T01:00Z",
       "short_name": "DEN @ KU",
       "state": "in",
-      "status": "Halftime",
+      "status": "13:51 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "13:51",
       "venue": "Allen Fieldhouse",
       "neutral_site": false,
       "broadcasts": [
@@ -107,27 +107,27 @@
         "team_id": "2305",
         "abbr": "KU",
         "name": "Kansas Jayhawks",
-        "score": 42,
+        "score": 55,
         "winner": null,
         "record": "5-1",
         "home_record": "2-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Tre White",
-            "value": "7"
+            "player": "Trey Kaufman-Renn",
+            "value": "11"
           },
           "rebounds": {
             "player": "Keanu Dawes",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
-            "player": "Tyran Stokes",
-            "value": "3"
+            "player": "Taylen Kinney",
+            "value": "4"
           },
           "rating": {
-            "player": "Keanu Dawes",
-            "value": "6 PTS"
+            "player": "Trey Kaufman-Renn",
+            "value": "11 PTS"
           }
         },
         "conf_id": "8",
@@ -140,7 +140,7 @@
         "team_id": "2172",
         "abbr": "DEN",
         "name": "Denver Pioneers",
-        "score": 28,
+        "score": 36,
         "winner": null,
         "record": "1-4",
         "home_record": "1-1",
@@ -148,11 +148,11 @@
         "leaders": {
           "points": {
             "player": "Kam Martin",
-            "value": "8"
+            "value": "12"
           },
           "rebounds": {
             "player": "Oskar Stumer",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
             "player": "Oskar Stumer",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "Kam Martin",
-            "value": "8 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "29",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-24T01:00Z",
       "short_name": "MONM @ UNC",
       "state": "in",
-      "status": "Halftime",
+      "status": "19:12 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "19:12",
       "venue": "Dean E. Smith Center",
       "neutral_site": false,
       "broadcasts": [
@@ -224,7 +224,7 @@
         "team_id": "2405",
         "abbr": "MONM",
         "name": "Monmouth Hawks",
-        "score": 15,
+        "score": 17,
         "winner": null,
         "record": "1-4",
         "home_record": "0-0",
@@ -239,7 +239,7 @@
             "value": "4"
           },
           "assists": {
-            "player": "Madison Durr",
+            "player": "Ashton Walker",
             "value": "1"
           },
           "rating": {
@@ -498,7 +498,7 @@
         "nick": "Hornets"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CAL -18.5",
         "spread": -18.5,
         "over_under": 143.5
@@ -579,7 +579,7 @@
         "nick": "Rams"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ARIZ -16.5",
         "spread": -16.5,
         "over_under": 158.5
