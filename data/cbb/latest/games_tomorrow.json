@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T07:45:22+00:00",
+  "fetched_at": "2026-11-25T08:00:37+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
@@ -168,7 +168,9 @@
       "clock": "0:00",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
-      "broadcasts": null,
+      "broadcasts": [
+        "ESPN"
+      ],
       "home": {
         "team_id": "120",
         "abbr": "MD",
@@ -228,7 +230,7 @@
         "nick": "Aztecs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MD -1.5",
         "spread": -1.5,
         "over_under": 153.5
@@ -535,7 +537,7 @@
         "nick": "Volunteers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TENN -1.5",
         "spread": 1.5,
         "over_under": 139.5
@@ -554,7 +556,9 @@
       "clock": "0:00",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
-      "broadcasts": null,
+      "broadcasts": [
+        "ESPN2"
+      ],
       "home": {
         "team_id": "130",
         "abbr": "MICH",
@@ -614,7 +618,7 @@
         "nick": "Hurricanes"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MIA -2.5",
         "spread": 2.5,
         "over_under": 163.5
@@ -921,7 +925,7 @@
         "nick": "Horned Frogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TCU -1.5",
         "spread": 1.5,
         "over_under": 156.5
@@ -1152,7 +1156,7 @@
         "nick": "Red Storm"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SJU -4.5",
         "spread": 4.5,
         "over_under": 157.5
@@ -1163,7 +1167,7 @@
     {
       "game_id": "401920539",
       "start_utc": "2026-11-27T02:00Z",
-      "short_name": "TBD VS ALA",
+      "short_name": "KSU VS ALA",
       "state": "pre",
       "status": "11/26 - 9:00 PM EST",
       "completed": false,
@@ -1202,22 +1206,40 @@
         "nick": "Crimson Tide"
       },
       "away": {
-        "team_id": "-2",
-        "abbr": "TBD",
-        "name": "TBD",
+        "team_id": "2306",
+        "abbr": "KSU",
+        "name": "Kansas State Wildcats",
         "score": 0,
         "winner": null,
-        "record": null,
-        "home_record": null,
-        "away_record": null,
-        "leaders": null,
-        "conf_id": null,
-        "conf": null,
+        "record": "3-3",
+        "home_record": "3-2",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Brandon Rechsteiner",
+            "value": "19.2"
+          },
+          "reboundsPerGame": {
+            "player": "Brock Vice",
+            "value": "5.4"
+          },
+          "assistsPerGame": {
+            "player": "Brandon Rechsteiner",
+            "value": "4.0"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
         "rank": null,
-        "loc": "TBD",
-        "nick": "TBD"
+        "loc": "Kansas State",
+        "nick": "Wildcats"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "Draft Kings",
+        "details": "ALA -13.5",
+        "spread": -13.5,
+        "over_under": 172.5
+      },
       "date": "2026-11-26",
       "p4": true
     },
@@ -1232,7 +1254,9 @@
       "clock": "0:00",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
-      "broadcasts": null,
+      "broadcasts": [
+        "ESPN2"
+      ],
       "home": {
         "team_id": "2483",
         "abbr": "ORE",
@@ -1292,7 +1316,7 @@
         "nick": "Red Raiders"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TTU -8.5",
         "spread": 8.5,
         "over_under": 153.5
@@ -1303,7 +1327,7 @@
     {
       "game_id": "401920540",
       "start_utc": "2026-11-27T04:30Z",
-      "short_name": "TBD VS BAY",
+      "short_name": "GONZ VS BAY",
       "state": "pre",
       "status": "11/26 - 11:30 PM EST",
       "completed": false,
@@ -1311,7 +1335,9 @@
       "clock": "0:00",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
-      "broadcasts": null,
+      "broadcasts": [
+        "ESPN"
+      ],
       "home": {
         "team_id": "239",
         "abbr": "BAY",
@@ -1342,22 +1368,40 @@
         "nick": "Bears"
       },
       "away": {
-        "team_id": "-2",
-        "abbr": "TBD",
-        "name": "TBD",
+        "team_id": "2250",
+        "abbr": "GONZ",
+        "name": "Gonzaga Bulldogs",
         "score": 0,
         "winner": null,
-        "record": null,
-        "home_record": null,
-        "away_record": null,
-        "leaders": null,
-        "conf_id": null,
+        "record": "4-1",
+        "home_record": "2-1",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Davis Fogle",
+            "value": "18.8"
+          },
+          "reboundsPerGame": {
+            "player": "Braden Huff",
+            "value": "6.8"
+          },
+          "assistsPerGame": {
+            "player": "Xaivian Lee",
+            "value": "5.2"
+          }
+        },
+        "conf_id": "21",
         "conf": null,
-        "rank": null,
-        "loc": "TBD",
-        "nick": "TBD"
+        "rank": 22,
+        "loc": "Gonzaga",
+        "nick": "Bulldogs"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "Draft Kings",
+        "details": "GONZ -4.5",
+        "spread": 4.5,
+        "over_under": 160.5
+      },
       "date": "2026-11-26",
       "p4": true
     }
