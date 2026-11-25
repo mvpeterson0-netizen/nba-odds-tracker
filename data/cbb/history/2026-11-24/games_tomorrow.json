@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-25T03:15:39+00:00",
+  "fetched_at": "2026-11-25T03:30:32+00:00",
   "source": "espn",
-  "count": 15,
+  "count": 17,
   "game_date": "2026-11-25",
   "division_i_games": 69,
   "rows": [
@@ -160,8 +160,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "LSU -4.5",
-        "spread": -4.5,
+        "details": "LSU -3.5",
+        "spread": -3.5,
         "over_under": 146.5
       },
       "date": "2026-11-25",
@@ -403,8 +403,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "OKST -35.5",
-        "spread": -35.5,
+        "details": "OKST -34.5",
+        "spread": -34.5,
         "over_under": 161.5
       },
       "date": "2026-11-25",
@@ -1048,7 +1048,7 @@
         "provider": "Draft Kings",
         "details": "NCSU -28.5",
         "spread": -28.5,
-        "over_under": 149.5
+        "over_under": 150.5
       },
       "date": "2026-11-25",
       "p4": true
@@ -1212,6 +1212,132 @@
         "spread": -4.5,
         "over_under": 149.5
       },
+      "date": "2026-11-25",
+      "p4": true
+    },
+    {
+      "game_id": "401921713",
+      "start_utc": "2026-11-26T03:00Z",
+      "short_name": "WASH VS TBD",
+      "state": "pre",
+      "status": "11/25 - 10:00 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Lahaina Civic Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "-1",
+        "abbr": "TBD",
+        "name": "TBD",
+        "score": 0,
+        "winner": null,
+        "record": null,
+        "home_record": null,
+        "away_record": null,
+        "leaders": null,
+        "conf_id": null,
+        "conf": null,
+        "rank": null,
+        "loc": "TBD",
+        "nick": "TBD"
+      },
+      "away": {
+        "team_id": "264",
+        "abbr": "WASH",
+        "name": "Washington Huskies",
+        "score": 0,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "LeJuan Watts",
+            "value": "15.6"
+          },
+          "reboundsPerGame": {
+            "player": "Lathan Sommerville",
+            "value": "6.4"
+          },
+          "assistsPerGame": {
+            "player": "Ryan Beasley",
+            "value": "4.5"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Washington",
+        "nick": "Huskies"
+      },
+      "espn_line": null,
+      "date": "2026-11-25",
+      "p4": true
+    },
+    {
+      "game_id": "401921714",
+      "start_utc": "2026-11-26T05:30Z",
+      "short_name": "CLEM VS TBD",
+      "state": "pre",
+      "status": "11/26 - 12:30 AM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Lahaina Civic Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "-1",
+        "abbr": "TBD",
+        "name": "TBD",
+        "score": 0,
+        "winner": null,
+        "record": null,
+        "home_record": null,
+        "away_record": null,
+        "leaders": null,
+        "conf_id": null,
+        "conf": null,
+        "rank": null,
+        "loc": "TBD",
+        "nick": "TBD"
+      },
+      "away": {
+        "team_id": "228",
+        "abbr": "CLEM",
+        "name": "Clemson Tigers",
+        "score": 0,
+        "winner": null,
+        "record": "4-3",
+        "home_record": "4-1",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Ace Buckner",
+            "value": "16.5"
+          },
+          "reboundsPerGame": {
+            "player": "Dylan Faulkner",
+            "value": "6.5"
+          },
+          "assistsPerGame": {
+            "player": "Ace Buckner",
+            "value": "4.7"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Clemson",
+        "nick": "Tigers"
+      },
+      "espn_line": null,
       "date": "2026-11-25",
       "p4": true
     }
