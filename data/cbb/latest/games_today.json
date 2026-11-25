@@ -1,19 +1,69 @@
 {
-  "fetched_at": "2026-11-25T22:15:32+00:00",
+  "fetched_at": "2026-11-25T22:30:25+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
   "division_i_games": 69,
   "rows": [
     {
+      "game_id": "401921670",
+      "start_utc": "2026-11-25T22:17Z",
+      "short_name": "SC VS USC",
+      "state": "in",
+      "status": "12:44 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "12:44",
+      "venue": "Acrisure Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "CBSSN"
+      ],
+      "home": {
+        "team_id": "30",
+        "abbr": "USC",
+        "name": "USC Trojans",
+        "score": 11,
+        "winner": null,
+        "record": "6-0",
+        "home_record": "4-0",
+        "away_record": "1-0",
+        "leaders": null,
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 18,
+        "loc": "USC",
+        "nick": "Trojans"
+      },
+      "away": {
+        "team_id": "2579",
+        "abbr": "SC",
+        "name": "South Carolina Gamecocks",
+        "score": 16,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": null,
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "South Carolina",
+        "nick": "Gamecocks"
+      },
+      "espn_line": null,
+      "date": "2026-11-25",
+      "p4": true
+    },
+    {
       "game_id": "401926065",
       "start_utc": "2026-11-25T22:00Z",
       "short_name": "SOU @ NEB",
       "state": "in",
-      "status": "12:37 - 1st",
+      "status": "6:22 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "12:37",
+      "clock": "6:22",
       "venue": "Pinnacle Bank Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,18 +73,18 @@
         "team_id": "158",
         "abbr": "NEB",
         "name": "Nebraska Cornhuskers",
-        "score": 15,
+        "score": 36,
         "winner": null,
         "record": "6-0",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Braden Frager",
-            "value": "6"
+            "player": "Damon Wilkinson",
+            "value": "11"
           },
           "rebounds": {
-            "player": "Boden Kapke",
+            "player": "Damon Wilkinson",
             "value": "3"
           },
           "assists": {
@@ -42,8 +92,8 @@
             "value": "3"
           },
           "rating": {
-            "player": "Braden Frager",
-            "value": "6 PTS"
+            "player": "Damon Wilkinson",
+            "value": "11 PTS"
           }
         },
         "conf_id": "7",
@@ -56,7 +106,7 @@
         "team_id": "2582",
         "abbr": "SOU",
         "name": "Southern Jaguars",
-        "score": 13,
+        "score": 14,
         "winner": null,
         "record": "1-5",
         "home_record": "1-0",
@@ -68,15 +118,15 @@
           },
           "rebounds": {
             "player": "Sean Van Dorn Jr.",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
             "player": "Cam Amboree",
             "value": "1"
           },
           "rating": {
-            "player": "Justin Page",
-            "value": "5 PTS"
+            "player": "Sean Van Dorn Jr.",
+            "value": "4 PTS"
           }
         },
         "conf_id": "26",
@@ -94,10 +144,10 @@
       "start_utc": "2026-11-25T21:13Z",
       "short_name": "TA&M VS XAV",
       "state": "in",
-      "status": "Halftime",
+      "status": "16:17 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "16:17",
       "venue": "Imperial Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +157,7 @@
         "team_id": "2752",
         "abbr": "XAV",
         "name": "Xavier Musketeers",
-        "score": 45,
+        "score": 60,
         "winner": null,
         "record": "5-1",
         "home_record": "4-1",
@@ -115,19 +165,19 @@
         "leaders": {
           "points": {
             "player": "Mike Nwoko",
-            "value": "12"
+            "value": "18"
           },
           "rebounds": {
             "player": "Nikos Chitikoudis",
             "value": "6"
           },
           "assists": {
-            "player": "Kalek House",
-            "value": "3"
+            "player": "Filip Borovicanin",
+            "value": "4"
           },
           "rating": {
             "player": "Mike Nwoko",
-            "value": "12 PTS"
+            "value": "18 PTS"
           }
         },
         "conf_id": "4",
@@ -140,7 +190,7 @@
         "team_id": "245",
         "abbr": "TA&M",
         "name": "Texas A&M Aggies",
-        "score": 41,
+        "score": 45,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
@@ -510,87 +560,6 @@
       "p4": true
     },
     {
-      "game_id": "401921670",
-      "start_utc": "2026-11-25T22:17Z",
-      "short_name": "SC VS USC",
-      "state": "pre",
-      "status": "11/25 - 5:17 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Acrisure Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "CBSSN"
-      ],
-      "home": {
-        "team_id": "30",
-        "abbr": "USC",
-        "name": "USC Trojans",
-        "score": 0,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "4-0",
-        "away_record": "1-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Alijah Arenas",
-            "value": "21.3"
-          },
-          "reboundsPerGame": {
-            "player": "Adonis Ratliff",
-            "value": "6.8"
-          },
-          "assistsPerGame": {
-            "player": "Rodney Rice",
-            "value": "5.8"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 18,
-        "loc": "USC",
-        "nick": "Trojans"
-      },
-      "away": {
-        "team_id": "2579",
-        "abbr": "SC",
-        "name": "South Carolina Gamecocks",
-        "score": 0,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Juan Fernandez",
-            "value": "15.2"
-          },
-          "reboundsPerGame": {
-            "player": "Juan Fernandez",
-            "value": "5.2"
-          },
-          "assistsPerGame": {
-            "player": "Kory Mincy",
-            "value": "2.8"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "South Carolina",
-        "nick": "Gamecocks"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "USC -9.5",
-        "spread": -9.5,
-        "over_under": 144.5
-      },
-      "date": "2026-11-25",
-      "p4": true
-    },
-    {
       "game_id": "401921716",
       "start_utc": "2026-11-25T22:30Z",
       "short_name": "BYU VS PROV",
@@ -747,7 +716,7 @@
         "provider": "DraftKings",
         "details": "SYR -24.5",
         "spread": -24.5,
-        "over_under": 146.5
+        "over_under": 145.5
       },
       "date": "2026-11-25",
       "p4": true
