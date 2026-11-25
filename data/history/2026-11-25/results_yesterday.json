@@ -1,0 +1,224 @@
+{
+  "fetched_at": "2026-11-25T05:00:22+00:00",
+  "source": "espn",
+  "count": 3,
+  "game_date": "2026-11-24",
+  "rows": [
+    {
+      "game_id": "401909314",
+      "start_utc": "2026-11-25T00:00Z",
+      "short_name": "DET @ ORL",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 4,
+      "clock": "12:00",
+      "venue": "Kia Center",
+      "neutral_site": false,
+      "broadcasts": null,
+      "home": {
+        "team_id": "19",
+        "abbr": "ORL",
+        "name": "Orlando Magic",
+        "score": 86,
+        "winner": false,
+        "record": "7-10",
+        "home_record": "1-6",
+        "away_record": "6-4",
+        "leaders": {
+          "points": {
+            "player": "Desmond Bane",
+            "value": "21"
+          },
+          "rebounds": {
+            "player": "Wendell Carter Jr.",
+            "value": "13"
+          },
+          "assists": {
+            "player": "Franz Wagner",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Franz Wagner",
+            "value": "20 PTS, 9 REB, 6 AST"
+          }
+        }
+      },
+      "away": {
+        "team_id": "8",
+        "abbr": "DET",
+        "name": "Detroit Pistons",
+        "score": 104,
+        "winner": true,
+        "record": "11-6",
+        "home_record": "3-3",
+        "away_record": "8-3",
+        "leaders": {
+          "points": {
+            "player": "Isaiah Joe",
+            "value": "21"
+          },
+          "rebounds": {
+            "player": "Ausar Thompson",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Daniss Jenkins",
+            "value": "10"
+          },
+          "rating": {
+            "player": "Ausar Thompson",
+            "value": "6 PTS, 10 REB, 7 AST, 4 BLK"
+          }
+        }
+      },
+      "espn_line": null
+    },
+    {
+      "game_id": "401909315",
+      "start_utc": "2026-11-25T01:00Z",
+      "short_name": "BOS @ WSH",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 4,
+      "clock": "12:00",
+      "venue": "Capital One Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "NBC"
+      ],
+      "home": {
+        "team_id": "27",
+        "abbr": "WSH",
+        "name": "Washington Wizards",
+        "score": 116,
+        "winner": false,
+        "record": "7-12",
+        "home_record": "3-6",
+        "away_record": "4-6",
+        "leaders": {
+          "points": {
+            "player": "Anthony Davis",
+            "value": "33"
+          },
+          "rebounds": {
+            "player": "Anthony Davis",
+            "value": "13"
+          },
+          "assists": {
+            "player": "Trae Young",
+            "value": "12"
+          },
+          "rating": {
+            "player": "Anthony Davis",
+            "value": "33 PTS, 13 REB"
+          }
+        }
+      },
+      "away": {
+        "team_id": "2",
+        "abbr": "BOS",
+        "name": "Boston Celtics",
+        "score": 131,
+        "winner": true,
+        "record": "12-6",
+        "home_record": "6-1",
+        "away_record": "6-5",
+        "leaders": {
+          "points": {
+            "player": "Jayson Tatum",
+            "value": "41"
+          },
+          "rebounds": {
+            "player": "Derrick White",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Paul George",
+            "value": "9"
+          },
+          "rating": {
+            "player": "Jayson Tatum",
+            "value": "41 PTS, 6 REB, 8 AST"
+          }
+        }
+      },
+      "espn_line": null
+    },
+    {
+      "game_id": "401909316",
+      "start_utc": "2026-11-25T03:00Z",
+      "short_name": "DAL @ DEN",
+      "state": "in",
+      "status": "10:10 - 4th",
+      "completed": false,
+      "period": 4,
+      "clock": "10:10",
+      "venue": "Ball Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "NBC",
+        "KFAA-TV",
+        "MavsTV"
+      ],
+      "home": {
+        "team_id": "7",
+        "abbr": "DEN",
+        "name": "Denver Nuggets",
+        "score": 79,
+        "winner": null,
+        "record": "10-5",
+        "home_record": "4-3",
+        "away_record": "5-2",
+        "leaders": {
+          "points": {
+            "player": "Nikola Jokic",
+            "value": "15"
+          },
+          "rebounds": {
+            "player": "Nikola Jokic",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Nikola Jokic",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Nikola Jokic",
+            "value": "15 PTS, 10 REB"
+          }
+        }
+      },
+      "away": {
+        "team_id": "6",
+        "abbr": "DAL",
+        "name": "Dallas Mavericks",
+        "score": 90,
+        "winner": null,
+        "record": "10-7",
+        "home_record": "7-2",
+        "away_record": "3-5",
+        "leaders": {
+          "points": {
+            "player": "Cooper Flagg",
+            "value": "14"
+          },
+          "rebounds": {
+            "player": "Morez Johnson Jr.",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Cooper Flagg",
+            "value": "11"
+          },
+          "rating": {
+            "player": "Cooper Flagg",
+            "value": "14 PTS, 11 AST"
+          }
+        }
+      },
+      "espn_line": null
+    }
+  ]
+}

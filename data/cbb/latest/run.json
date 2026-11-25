@@ -1,6 +1,6 @@
 {
-  "finished_at": "2026-11-25T04:45:24+00:00",
-  "game_date": "2026-11-24",
+  "finished_at": "2026-11-25T05:00:33+00:00",
+  "game_date": "2026-11-25",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
     "ACC",
@@ -22,7 +22,7 @@
     "unparsed": [],
     "queued": 0,
     "errors": [],
-    "rosters_fetched": 0
+    "rosters_fetched": 33
   },
   "props": {
     "keys": 3,
@@ -31,12 +31,25 @@
       "ODDS_API_KEY_2": 0,
       "ODDS_API_KEY_20K": 3394
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Colorado Buffaloes @ Stanford Cardinal",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Gonzaga Bulldogs @ Kansas St Wildcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 64,
-    "p4_events": 17,
+    "p4_events": 21,
     "unmatched": [],
-    "due": 0,
+    "due": 2,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",
