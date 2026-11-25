@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-25T22:56:09+00:00",
+  "finished_at": "2026-11-25T23:00:27+00:00",
   "game_date": "2026-11-25",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,13 +28,21 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 3087
+      "ODDS_API_KEY_20K": 3081
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Chicago Bulls @ Charlotte Hornets",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 182,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "links_backfill": [],
     "status": "ok"
   }
