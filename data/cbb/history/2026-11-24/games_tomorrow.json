@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T00:30:24+00:00",
+  "fetched_at": "2026-11-25T00:45:28+00:00",
   "source": "espn",
   "count": 15,
   "game_date": "2026-11-25",
@@ -461,8 +461,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "USC -10.5",
-        "spread": -10.5,
+        "details": "USC -11.5",
+        "spread": -11.5,
         "over_under": 148.5
       },
       "date": "2026-11-25",
@@ -628,7 +628,7 @@
     {
       "game_id": "401921716",
       "start_utc": "2026-11-25T22:30Z",
-      "short_name": "BYU VS TBD",
+      "short_name": "BYU VS PROV",
       "state": "pre",
       "status": "11/25 - 5:30 PM EST",
       "completed": false,
@@ -640,20 +640,33 @@
         "ESPN2"
       ],
       "home": {
-        "team_id": "-1",
-        "abbr": "TBD",
-        "name": "TBD",
+        "team_id": "2507",
+        "abbr": "PROV",
+        "name": "Providence Friars",
         "score": 0,
         "winner": null,
-        "record": null,
-        "home_record": null,
-        "away_record": null,
-        "leaders": null,
-        "conf_id": null,
+        "record": "5-2",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Malik Mack",
+            "value": "13.5"
+          },
+          "reboundsPerGame": {
+            "player": "Jacob Bannarbie",
+            "value": "5.8"
+          },
+          "assistsPerGame": {
+            "player": "Malik Mack",
+            "value": "3.8"
+          }
+        },
+        "conf_id": "4",
         "conf": null,
         "rank": null,
-        "loc": "TBD",
-        "nick": "TBD"
+        "loc": "Providence",
+        "nick": "Friars"
       },
       "away": {
         "team_id": "252",
@@ -840,7 +853,7 @@
         "provider": "Draft Kings",
         "details": "CONN -2.5",
         "spread": 2.5,
-        "over_under": 151.5
+        "over_under": 150.5
       },
       "date": "2026-11-25",
       "p4": true
@@ -1078,7 +1091,7 @@
         "provider": "Draft Kings",
         "details": "WIS -21.5",
         "spread": -21.5,
-        "over_under": 158.5
+        "over_under": 157.5
       },
       "date": "2026-11-25",
       "p4": true
