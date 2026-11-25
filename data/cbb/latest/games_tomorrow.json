@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T06:45:23+00:00",
+  "fetched_at": "2026-11-25T07:00:24+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
@@ -534,7 +534,12 @@
         "loc": "Tennessee",
         "nick": "Volunteers"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "TENN -1.5",
+        "spread": 1.5,
+        "over_under": 139.5
+      },
       "date": "2026-11-26",
       "p4": true
     },
@@ -1077,6 +1082,80 @@
       "p4": true
     },
     {
+      "game_id": "401920530",
+      "start_utc": "2026-11-27T02:00Z",
+      "short_name": "LOU VS SJU",
+      "state": "pre",
+      "status": "11/26 - 9:00 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": null,
+      "home": {
+        "team_id": "2599",
+        "abbr": "SJU",
+        "name": "St. John's Red Storm",
+        "score": 0,
+        "winner": null,
+        "record": "6-0",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Keyshawn Hall",
+            "value": "18.8"
+          },
+          "reboundsPerGame": {
+            "player": "Tounde Yessoufou",
+            "value": "7.4"
+          },
+          "assistsPerGame": {
+            "player": "Quinn Ellis",
+            "value": "8.6"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": 13,
+        "loc": "St. John's",
+        "nick": "Red Storm"
+      },
+      "away": {
+        "team_id": "97",
+        "abbr": "LOU",
+        "name": "Louisville Cardinals",
+        "score": 0,
+        "winner": null,
+        "record": "4-1",
+        "home_record": "3-0",
+        "away_record": "0-1",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Flory Bidunga",
+            "value": "14.5"
+          },
+          "reboundsPerGame": {
+            "player": "Flory Bidunga",
+            "value": "9.2"
+          },
+          "assistsPerGame": {
+            "player": "Alvaro Folgueiras",
+            "value": "3.5"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": 25,
+        "loc": "Louisville",
+        "nick": "Cardinals"
+      },
+      "espn_line": null,
+      "date": "2026-11-26",
+      "p4": true
+    },
+    {
       "game_id": "401920539",
       "start_utc": "2026-11-27T02:00Z",
       "short_name": "TBD VS ALA",
@@ -1138,70 +1217,9 @@
       "p4": true
     },
     {
-      "game_id": "401920530",
-      "start_utc": "2026-11-27T02:00Z",
-      "short_name": "TBD VS LOU",
-      "state": "pre",
-      "status": "11/26 - 9:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Michelob ULTRA Arena",
-      "neutral_site": true,
-      "broadcasts": null,
-      "home": {
-        "team_id": "97",
-        "abbr": "LOU",
-        "name": "Louisville Cardinals",
-        "score": 0,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "3-0",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Flory Bidunga",
-            "value": "14.5"
-          },
-          "reboundsPerGame": {
-            "player": "Flory Bidunga",
-            "value": "9.2"
-          },
-          "assistsPerGame": {
-            "player": "Alvaro Folgueiras",
-            "value": "3.5"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": 25,
-        "loc": "Louisville",
-        "nick": "Cardinals"
-      },
-      "away": {
-        "team_id": "-2",
-        "abbr": "TBD",
-        "name": "TBD",
-        "score": 0,
-        "winner": null,
-        "record": null,
-        "home_record": null,
-        "away_record": null,
-        "leaders": null,
-        "conf_id": null,
-        "conf": null,
-        "rank": null,
-        "loc": "TBD",
-        "nick": "TBD"
-      },
-      "espn_line": null,
-      "date": "2026-11-26",
-      "p4": true
-    },
-    {
       "game_id": "401920531",
       "start_utc": "2026-11-27T04:30Z",
-      "short_name": "TTU VS TBD",
+      "short_name": "TTU VS ORE",
       "state": "pre",
       "status": "11/26 - 11:30 PM EST",
       "completed": false,
@@ -1211,20 +1229,33 @@
       "neutral_site": true,
       "broadcasts": null,
       "home": {
-        "team_id": "-1",
-        "abbr": "TBD",
-        "name": "TBD",
+        "team_id": "2483",
+        "abbr": "ORE",
+        "name": "Oregon Ducks",
         "score": 0,
         "winner": null,
-        "record": null,
-        "home_record": null,
-        "away_record": null,
-        "leaders": null,
-        "conf_id": null,
-        "conf": null,
+        "record": "3-2",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Fred Payne",
+            "value": "12.5"
+          },
+          "reboundsPerGame": {
+            "player": "Malique Ewin",
+            "value": "11.8"
+          },
+          "assistsPerGame": {
+            "player": "Malique Ewin",
+            "value": "4.8"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
         "rank": null,
-        "loc": "TBD",
-        "nick": "TBD"
+        "loc": "Oregon",
+        "nick": "Ducks"
       },
       "away": {
         "team_id": "2641",
