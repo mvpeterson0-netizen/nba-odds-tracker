@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T16:30:26+00:00",
+  "fetched_at": "2026-11-25T16:45:24+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
@@ -230,7 +230,7 @@
         "nick": "Aztecs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MD -1.5",
         "spread": -1.5,
         "over_under": 153.5
@@ -539,7 +539,7 @@
         "nick": "Volunteers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ISU -1.5",
         "spread": -1.5,
         "over_under": 139.5
@@ -620,7 +620,7 @@
         "nick": "Hurricanes"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MIA -2.5",
         "spread": 2.5,
         "over_under": 163.5
@@ -929,7 +929,7 @@
         "nick": "Horned Frogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TCU -1.5",
         "spread": 1.5,
         "over_under": 156.5
@@ -1092,7 +1092,7 @@
     {
       "game_id": "401920530",
       "start_utc": "2026-11-27T02:00Z",
-      "short_name": "SJU VS LOU",
+      "short_name": "LOU VS SJU",
       "state": "pre",
       "status": "11/26 - 9:00 PM EST",
       "completed": false,
@@ -1104,35 +1104,6 @@
         "ESPN2"
       ],
       "home": {
-        "team_id": "97",
-        "abbr": "LOU",
-        "name": "Louisville Cardinals",
-        "score": 0,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "3-0",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Seth Trimble",
-            "value": "16.0"
-          },
-          "reboundsPerGame": {
-            "player": "Flory Bidunga",
-            "value": "9.2"
-          },
-          "assistsPerGame": {
-            "player": "Alvaro Folgueiras",
-            "value": "3.6"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": 25,
-        "loc": "Louisville",
-        "nick": "Cardinals"
-      },
-      "away": {
         "team_id": "2599",
         "abbr": "SJU",
         "name": "St. John's Red Storm",
@@ -1161,10 +1132,39 @@
         "loc": "St. John's",
         "nick": "Red Storm"
       },
+      "away": {
+        "team_id": "97",
+        "abbr": "LOU",
+        "name": "Louisville Cardinals",
+        "score": 0,
+        "winner": null,
+        "record": "4-1",
+        "home_record": "3-0",
+        "away_record": "0-1",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Seth Trimble",
+            "value": "16.0"
+          },
+          "reboundsPerGame": {
+            "player": "Flory Bidunga",
+            "value": "9.2"
+          },
+          "assistsPerGame": {
+            "player": "Alvaro Folgueiras",
+            "value": "3.6"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": 25,
+        "loc": "Louisville",
+        "nick": "Cardinals"
+      },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SJU -4.5",
-        "spread": 4.5,
+        "spread": -4.5,
         "over_under": 157.5
       },
       "date": "2026-11-26",
@@ -1173,7 +1173,7 @@
     {
       "game_id": "401920539",
       "start_utc": "2026-11-27T02:00Z",
-      "short_name": "KSU VS ALA",
+      "short_name": "ALA VS KSU",
       "state": "pre",
       "status": "11/26 - 9:00 PM EST",
       "completed": false,
@@ -1185,35 +1185,6 @@
         "ESPNU"
       ],
       "home": {
-        "team_id": "333",
-        "abbr": "ALA",
-        "name": "Alabama Crimson Tide",
-        "score": 0,
-        "winner": null,
-        "record": "5-1",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Amari Allen",
-            "value": "16.5"
-          },
-          "reboundsPerGame": {
-            "player": "Amari Allen",
-            "value": "5.7"
-          },
-          "assistsPerGame": {
-            "player": "Amari Allen",
-            "value": "5.7"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 15,
-        "loc": "Alabama",
-        "nick": "Crimson Tide"
-      },
-      "away": {
         "team_id": "2306",
         "abbr": "KSU",
         "name": "Kansas State Wildcats",
@@ -1242,10 +1213,39 @@
         "loc": "Kansas State",
         "nick": "Wildcats"
       },
+      "away": {
+        "team_id": "333",
+        "abbr": "ALA",
+        "name": "Alabama Crimson Tide",
+        "score": 0,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Amari Allen",
+            "value": "16.5"
+          },
+          "reboundsPerGame": {
+            "player": "Amari Allen",
+            "value": "5.7"
+          },
+          "assistsPerGame": {
+            "player": "Amari Allen",
+            "value": "5.7"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 15,
+        "loc": "Alabama",
+        "nick": "Crimson Tide"
+      },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ALA -13.5",
-        "spread": -13.5,
+        "spread": 13.5,
         "over_under": 172.5
       },
       "date": "2026-11-26",
@@ -1324,7 +1324,7 @@
         "nick": "Red Raiders"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TTU -8.5",
         "spread": 8.5,
         "over_under": 153.5
@@ -1335,7 +1335,7 @@
     {
       "game_id": "401920540",
       "start_utc": "2026-11-27T04:30Z",
-      "short_name": "GONZ VS BAY",
+      "short_name": "BAY VS GONZ",
       "state": "pre",
       "status": "11/26 - 11:30 PM EST",
       "completed": false,
@@ -1347,35 +1347,6 @@
         "ESPN"
       ],
       "home": {
-        "team_id": "239",
-        "abbr": "BAY",
-        "name": "Baylor Bears",
-        "score": 0,
-        "winner": null,
-        "record": "5-1",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Kayden Mingo",
-            "value": "15.7"
-          },
-          "reboundsPerGame": {
-            "player": "Dylan Mingo",
-            "value": "5.5"
-          },
-          "assistsPerGame": {
-            "player": "Isaac Williams IV",
-            "value": "4.3"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Baylor",
-        "nick": "Bears"
-      },
-      "away": {
         "team_id": "2250",
         "abbr": "GONZ",
         "name": "Gonzaga Bulldogs",
@@ -1404,10 +1375,39 @@
         "loc": "Gonzaga",
         "nick": "Bulldogs"
       },
+      "away": {
+        "team_id": "239",
+        "abbr": "BAY",
+        "name": "Baylor Bears",
+        "score": 0,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Kayden Mingo",
+            "value": "15.7"
+          },
+          "reboundsPerGame": {
+            "player": "Dylan Mingo",
+            "value": "5.5"
+          },
+          "assistsPerGame": {
+            "player": "Isaac Williams IV",
+            "value": "4.3"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Baylor",
+        "nick": "Bears"
+      },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GONZ -4.5",
-        "spread": 4.5,
+        "spread": -4.5,
         "over_under": 160.5
       },
       "date": "2026-11-26",
