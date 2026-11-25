@@ -1,19 +1,103 @@
 {
-  "fetched_at": "2026-11-25T04:15:29+00:00",
+  "fetched_at": "2026-11-25T04:30:40+00:00",
   "source": "espn",
   "count": 24,
   "game_date": "2026-11-24",
   "division_i_games": 87,
   "rows": [
     {
+      "game_id": "401915943",
+      "start_utc": "2026-11-25T04:18Z",
+      "short_name": "ORE VS SJU",
+      "state": "in",
+      "status": "15:05 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "15:05",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "2599",
+        "abbr": "SJU",
+        "name": "St. John's Red Storm",
+        "score": 10,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Ruben Prey",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Tounde Yessoufou",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Ian Jackson",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Ian Jackson",
+            "value": "2 PTS"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": 13,
+        "loc": "St. John's",
+        "nick": "Red Storm"
+      },
+      "away": {
+        "team_id": "2483",
+        "abbr": "ORE",
+        "name": "Oregon Ducks",
+        "score": 6,
+        "winner": null,
+        "record": "3-1",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Fred Payne",
+            "value": "2"
+          },
+          "rebounds": {
+            "player": "Fred Payne",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Wei Lin",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Fred Payne",
+            "value": "2 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Oregon",
+        "nick": "Ducks"
+      },
+      "espn_line": null,
+      "date": "2026-11-24",
+      "p4": true
+    },
+    {
       "game_id": "401906762",
       "start_utc": "2026-11-25T03:05Z",
       "short_name": "BAY VS ALA",
       "state": "in",
-      "status": "18:20 - 2nd",
+      "status": "12:29 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "18:20",
+      "clock": "12:29",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +107,7 @@
         "team_id": "333",
         "abbr": "ALA",
         "name": "Alabama Crimson Tide",
-        "score": 26,
+        "score": 40,
         "winner": null,
         "record": "5-0",
         "home_record": "5-0",
@@ -31,19 +115,19 @@
         "leaders": {
           "points": {
             "player": "Amari Allen",
-            "value": "7"
+            "value": "10"
           },
           "rebounds": {
             "player": "Amari Allen",
             "value": "5"
           },
           "assists": {
-            "player": "Aden Holloway",
-            "value": "2"
+            "player": "Amari Allen",
+            "value": "3"
           },
           "rating": {
             "player": "Amari Allen",
-            "value": "7 PTS"
+            "value": "10 PTS"
           }
         },
         "conf_id": "23",
@@ -56,7 +140,7 @@
         "team_id": "239",
         "abbr": "BAY",
         "name": "Baylor Bears",
-        "score": 35,
+        "score": 47,
         "winner": null,
         "record": "4-1",
         "home_record": "4-0",
@@ -64,19 +148,19 @@
         "leaders": {
           "points": {
             "player": "Kayden Mingo",
-            "value": "9"
+            "value": "12"
           },
           "rebounds": {
             "player": "Dylan Mingo",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
             "player": "Kayden Mingo",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Kayden Mingo",
-            "value": "9 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "8",
@@ -1770,87 +1854,6 @@
       "p4": true
     },
     {
-      "game_id": "401915943",
-      "start_utc": "2026-11-25T04:18Z",
-      "short_name": "ORE VS SJU",
-      "state": "pre",
-      "status": "11/24 - 11:18 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Michelob ULTRA Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN"
-      ],
-      "home": {
-        "team_id": "2599",
-        "abbr": "SJU",
-        "name": "St. John's Red Storm",
-        "score": 0,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Keyshawn Hall",
-            "value": "18.8"
-          },
-          "reboundsPerGame": {
-            "player": "Tounde Yessoufou",
-            "value": "7.4"
-          },
-          "assistsPerGame": {
-            "player": "Quinn Ellis",
-            "value": "8.6"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": 13,
-        "loc": "St. John's",
-        "nick": "Red Storm"
-      },
-      "away": {
-        "team_id": "2483",
-        "abbr": "ORE",
-        "name": "Oregon Ducks",
-        "score": 0,
-        "winner": null,
-        "record": "3-1",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Fred Payne",
-            "value": "12.5"
-          },
-          "reboundsPerGame": {
-            "player": "Malique Ewin",
-            "value": "11.8"
-          },
-          "assistsPerGame": {
-            "player": "Malique Ewin",
-            "value": "4.8"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Oregon",
-        "nick": "Ducks"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "SJU -10.5",
-        "spread": -10.5,
-        "over_under": 157.5
-      },
-      "date": "2026-11-24",
-      "p4": true
-    },
-    {
       "game_id": "401909763",
       "start_utc": "2026-11-25T04:59Z",
       "short_name": "COLO VS STAN",
@@ -1923,7 +1926,7 @@
         "nick": "Buffaloes"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "STAN -4.5",
         "spread": -4.5,
         "over_under": 140.5
@@ -2004,7 +2007,7 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GONZ -15.5",
         "spread": 15.5,
         "over_under": 157.5
