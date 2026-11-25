@@ -1,89 +1,89 @@
 {
-  "fetched_at": "2026-11-25T22:13:33+00:00",
+  "fetched_at": "2026-11-25T22:15:32+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
   "division_i_games": 69,
   "rows": [
     {
-      "game_id": "401919042",
-      "start_utc": "2026-11-25T20:00Z",
-      "short_name": "JKST @ OKST",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Gallagher-Iba Arena",
+      "game_id": "401926065",
+      "start_utc": "2026-11-25T22:00Z",
+      "short_name": "SOU @ NEB",
+      "state": "in",
+      "status": "12:37 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "12:37",
+      "venue": "Pinnacle Bank Arena",
       "neutral_site": false,
       "broadcasts": [
-        "ESPN+"
+        "BTN"
       ],
       "home": {
-        "team_id": "197",
-        "abbr": "OKST",
-        "name": "Oklahoma State Cowboys",
-        "score": 93,
-        "winner": true,
-        "record": "5-2",
-        "home_record": "4-0",
-        "away_record": "0-1",
+        "team_id": "158",
+        "abbr": "NEB",
+        "name": "Nebraska Cornhuskers",
+        "score": 15,
+        "winner": null,
+        "record": "6-0",
+        "home_record": "3-0",
+        "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Jacob Walker",
-            "value": "18"
-          },
-          "rebounds": {
-            "player": "Latrell Allmond",
+            "player": "Braden Frager",
             "value": "6"
           },
-          "assists": {
-            "player": "Jacob Walker",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Jacob Walker",
-            "value": "18 PTS, 3 STL"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Oklahoma State",
-        "nick": "Cowboys"
-      },
-      "away": {
-        "team_id": "2296",
-        "abbr": "JKST",
-        "name": "Jackson State Tigers",
-        "score": 58,
-        "winner": false,
-        "record": "2-5",
-        "home_record": "0-0",
-        "away_record": "2-5",
-        "leaders": {
-          "points": {
-            "player": "Dorian McMillian",
-            "value": "16"
-          },
           "rebounds": {
-            "player": "DJ Davis",
-            "value": "5"
+            "player": "Boden Kapke",
+            "value": "3"
           },
           "assists": {
-            "player": "Mike Williams",
+            "player": "Cale Jacobsen",
             "value": "3"
           },
           "rating": {
-            "player": "Mike Williams",
-            "value": "15 PTS"
+            "player": "Braden Frager",
+            "value": "6 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 21,
+        "loc": "Nebraska",
+        "nick": "Cornhuskers"
+      },
+      "away": {
+        "team_id": "2582",
+        "abbr": "SOU",
+        "name": "Southern Jaguars",
+        "score": 13,
+        "winner": null,
+        "record": "1-5",
+        "home_record": "1-0",
+        "away_record": "0-5",
+        "leaders": {
+          "points": {
+            "player": "Justin Page",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Sean Van Dorn Jr.",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Cam Amboree",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Justin Page",
+            "value": "5 PTS"
           }
         },
         "conf_id": "26",
         "conf": null,
         "rank": null,
-        "loc": "Jackson State",
-        "nick": "Tigers"
+        "loc": "Southern",
+        "nick": "Jaguars"
       },
       "espn_line": null,
       "date": "2026-11-25",
@@ -426,167 +426,86 @@
       "p4": true
     },
     {
-      "game_id": "401926065",
-      "start_utc": "2026-11-25T22:00Z",
-      "short_name": "SOU @ NEB",
-      "state": "in",
-      "status": "14:03 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "14:03",
-      "venue": "Pinnacle Bank Arena",
+      "game_id": "401919042",
+      "start_utc": "2026-11-25T20:00Z",
+      "short_name": "JKST @ OKST",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Gallagher-Iba Arena",
       "neutral_site": false,
       "broadcasts": [
-        "BTN"
+        "ESPN+"
       ],
       "home": {
-        "team_id": "158",
-        "abbr": "NEB",
-        "name": "Nebraska Cornhuskers",
-        "score": 13,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "3-0",
-        "away_record": "0-0",
+        "team_id": "197",
+        "abbr": "OKST",
+        "name": "Oklahoma State Cowboys",
+        "score": 93,
+        "winner": true,
+        "record": "5-2",
+        "home_record": "4-0",
+        "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "Braden Frager",
+            "player": "Jacob Walker",
+            "value": "18"
+          },
+          "rebounds": {
+            "player": "Latrell Allmond",
             "value": "6"
           },
-          "rebounds": {
-            "player": "Boden Kapke",
-            "value": "3"
-          },
           "assists": {
-            "player": "Cale Jacobsen",
-            "value": "3"
+            "player": "Jacob Walker",
+            "value": "4"
           },
           "rating": {
-            "player": "Braden Frager",
-            "value": "6 PTS"
+            "player": "Jacob Walker",
+            "value": "18 PTS, 3 STL"
           }
         },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 21,
-        "loc": "Nebraska",
-        "nick": "Cornhuskers"
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Oklahoma State",
+        "nick": "Cowboys"
       },
       "away": {
-        "team_id": "2582",
-        "abbr": "SOU",
-        "name": "Southern Jaguars",
-        "score": 9,
-        "winner": null,
-        "record": "1-5",
-        "home_record": "1-0",
-        "away_record": "0-5",
+        "team_id": "2296",
+        "abbr": "JKST",
+        "name": "Jackson State Tigers",
+        "score": 58,
+        "winner": false,
+        "record": "2-5",
+        "home_record": "0-0",
+        "away_record": "2-5",
         "leaders": {
           "points": {
-            "player": "Justin Page",
-            "value": "3"
+            "player": "Dorian McMillian",
+            "value": "16"
           },
           "rebounds": {
-            "player": "Sean Van Dorn Jr.",
-            "value": "2"
+            "player": "DJ Davis",
+            "value": "5"
           },
           "assists": {
-            "player": "Cam Amboree",
-            "value": "1"
+            "player": "Mike Williams",
+            "value": "3"
           },
           "rating": {
-            "player": "Julian Greer",
-            "value": "3 PTS"
+            "player": "Mike Williams",
+            "value": "15 PTS"
           }
         },
         "conf_id": "26",
         "conf": null,
         "rank": null,
-        "loc": "Southern",
-        "nick": "Jaguars"
-      },
-      "espn_line": null,
-      "date": "2026-11-25",
-      "p4": true
-    },
-    {
-      "game_id": "401917182",
-      "start_utc": "2026-11-25T23:35Z",
-      "short_name": "MEM VS PSU",
-      "state": "pre",
-      "status": "11/25 - 6:35 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Imperial Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "213",
-        "abbr": "PSU",
-        "name": "Penn State Nittany Lions",
-        "score": 0,
-        "winner": null,
-        "record": "5-1",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Ivan Juric",
-            "value": "16.7"
-          },
-          "reboundsPerGame": {
-            "player": "Ivan Juric",
-            "value": "13.2"
-          },
-          "assistsPerGame": {
-            "player": "Dasonte Bowen",
-            "value": "4.0"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Penn State",
-        "nick": "Nittany Lions"
-      },
-      "away": {
-        "team_id": "235",
-        "abbr": "MEM",
-        "name": "Memphis Tigers",
-        "score": 0,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "3-0",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Jayden Reid",
-            "value": "21.2"
-          },
-          "reboundsPerGame": {
-            "player": "Corneilous Williams",
-            "value": "5.6"
-          },
-          "assistsPerGame": {
-            "player": "Jayden Reid",
-            "value": "5.0"
-          }
-        },
-        "conf_id": "62",
-        "conf": null,
-        "rank": 24,
-        "loc": "Memphis",
+        "loc": "Jackson State",
         "nick": "Tigers"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "MEM -3.5",
-        "spread": 3.5,
-        "over_under": 162.5
-      },
+      "espn_line": null,
       "date": "2026-11-25",
       "p4": true
     },
@@ -829,6 +748,87 @@
         "details": "SYR -24.5",
         "spread": -24.5,
         "over_under": 146.5
+      },
+      "date": "2026-11-25",
+      "p4": true
+    },
+    {
+      "game_id": "401917182",
+      "start_utc": "2026-11-25T23:35Z",
+      "short_name": "MEM VS PSU",
+      "state": "pre",
+      "status": "11/25 - 6:35 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Imperial Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "213",
+        "abbr": "PSU",
+        "name": "Penn State Nittany Lions",
+        "score": 0,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Ivan Juric",
+            "value": "16.7"
+          },
+          "reboundsPerGame": {
+            "player": "Ivan Juric",
+            "value": "13.2"
+          },
+          "assistsPerGame": {
+            "player": "Dasonte Bowen",
+            "value": "4.0"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Penn State",
+        "nick": "Nittany Lions"
+      },
+      "away": {
+        "team_id": "235",
+        "abbr": "MEM",
+        "name": "Memphis Tigers",
+        "score": 0,
+        "winner": null,
+        "record": "4-1",
+        "home_record": "3-0",
+        "away_record": "0-1",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Jayden Reid",
+            "value": "21.2"
+          },
+          "reboundsPerGame": {
+            "player": "Corneilous Williams",
+            "value": "5.6"
+          },
+          "assistsPerGame": {
+            "player": "Jayden Reid",
+            "value": "5.0"
+          }
+        },
+        "conf_id": "62",
+        "conf": null,
+        "rank": 24,
+        "loc": "Memphis",
+        "nick": "Tigers"
+      },
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "MEM -3.5",
+        "spread": 3.5,
+        "over_under": 162.5
       },
       "date": "2026-11-25",
       "p4": true
