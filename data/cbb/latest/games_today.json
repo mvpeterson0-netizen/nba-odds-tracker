@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T22:00:29+00:00",
+  "fetched_at": "2026-11-25T22:13:33+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
@@ -9,11 +9,11 @@
       "game_id": "401919042",
       "start_utc": "2026-11-25T20:00Z",
       "short_name": "JKST @ OKST",
-      "state": "in",
-      "status": "2:31 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "2:31",
+      "clock": "0:00",
       "venue": "Gallagher-Iba Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,10 +23,10 @@
         "team_id": "197",
         "abbr": "OKST",
         "name": "Oklahoma State Cowboys",
-        "score": 88,
-        "winner": null,
-        "record": "4-2",
-        "home_record": "3-0",
+        "score": 93,
+        "winner": true,
+        "record": "5-2",
+        "home_record": "4-0",
         "away_record": "0-1",
         "leaders": {
           "points": {
@@ -35,7 +35,7 @@
           },
           "rebounds": {
             "player": "Latrell Allmond",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Jacob Walker",
@@ -56,19 +56,19 @@
         "team_id": "2296",
         "abbr": "JKST",
         "name": "Jackson State Tigers",
-        "score": 53,
-        "winner": null,
-        "record": "2-4",
+        "score": 58,
+        "winner": false,
+        "record": "2-5",
         "home_record": "0-0",
-        "away_record": "2-4",
+        "away_record": "2-5",
         "leaders": {
           "points": {
             "player": "Dorian McMillian",
             "value": "16"
           },
           "rebounds": {
-            "player": "Mike Williams",
-            "value": "4"
+            "player": "DJ Davis",
+            "value": "5"
           },
           "assists": {
             "player": "Mike Williams",
@@ -76,7 +76,7 @@
           },
           "rating": {
             "player": "Mike Williams",
-            "value": "13 PTS"
+            "value": "15 PTS"
           }
         },
         "conf_id": "26",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-25T21:13Z",
       "short_name": "TA&M VS XAV",
       "state": "in",
-      "status": "2:25 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "2:25",
+      "clock": "0:00",
       "venue": "Imperial Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -119,7 +119,7 @@
           },
           "rebounds": {
             "player": "Nikos Chitikoudis",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Kalek House",
@@ -140,7 +140,7 @@
         "team_id": "245",
         "abbr": "TA&M",
         "name": "Texas A&M Aggies",
-        "score": 36,
+        "score": 41,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
@@ -148,11 +148,11 @@
         "leaders": {
           "points": {
             "player": "PJ Haggerty",
-            "value": "9"
+            "value": "11"
           },
           "rebounds": {
             "player": "Mackenzie Mgbako",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "Jalen Reece",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "PJ Haggerty",
-            "value": "9 PTS"
+            "value": "11 PTS"
           }
         },
         "conf_id": "23",
@@ -429,11 +429,11 @@
       "game_id": "401926065",
       "start_utc": "2026-11-25T22:00Z",
       "short_name": "SOU @ NEB",
-      "state": "pre",
-      "status": "11/25 - 5:00 PM EST",
+      "state": "in",
+      "status": "14:03 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "14:03",
       "venue": "Pinnacle Bank Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -443,23 +443,27 @@
         "team_id": "158",
         "abbr": "NEB",
         "name": "Nebraska Cornhuskers",
-        "score": 0,
+        "score": 13,
         "winner": null,
         "record": "6-0",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Pryce Sandfort",
-            "value": "20.0"
+          "points": {
+            "player": "Braden Frager",
+            "value": "6"
           },
-          "reboundsPerGame": {
-            "player": "Pryce Sandfort",
-            "value": "5.2"
+          "rebounds": {
+            "player": "Boden Kapke",
+            "value": "3"
           },
-          "assistsPerGame": {
-            "player": "Taj DeGourville",
-            "value": "3.3"
+          "assists": {
+            "player": "Cale Jacobsen",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Braden Frager",
+            "value": "6 PTS"
           }
         },
         "conf_id": "7",
@@ -472,23 +476,27 @@
         "team_id": "2582",
         "abbr": "SOU",
         "name": "Southern Jaguars",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "1-5",
         "home_record": "1-0",
         "away_record": "0-5",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Daniel Dormu",
-            "value": "9.7"
+          "points": {
+            "player": "Justin Page",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "R'Chaun King",
-            "value": "3.8"
+          "rebounds": {
+            "player": "Sean Van Dorn Jr.",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Daniel Dormu",
-            "value": "3.8"
+          "assists": {
+            "player": "Cam Amboree",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Julian Greer",
+            "value": "3 PTS"
           }
         },
         "conf_id": "26",
@@ -497,21 +505,16 @@
         "loc": "Southern",
         "nick": "Jaguars"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "NEB -34.5",
-        "spread": -34.5,
-        "over_under": 149.5
-      },
+      "espn_line": null,
       "date": "2026-11-25",
       "p4": true
     },
     {
       "game_id": "401917182",
-      "start_utc": "2026-11-25T22:00Z",
+      "start_utc": "2026-11-25T23:35Z",
       "short_name": "MEM VS PSU",
       "state": "pre",
-      "status": "11/25 - 5:00 PM EST",
+      "status": "11/25 - 6:35 PM EST",
       "completed": false,
       "period": 0,
       "clock": "0:00",
@@ -663,7 +666,7 @@
         "provider": "DraftKings",
         "details": "USC -9.5",
         "spread": -9.5,
-        "over_under": 145.5
+        "over_under": 144.5
       },
       "date": "2026-11-25",
       "p4": true
