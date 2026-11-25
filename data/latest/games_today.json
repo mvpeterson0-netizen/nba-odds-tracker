@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T02:30:19+00:00",
+  "fetched_at": "2026-11-25T02:37:24+00:00",
   "source": "espn",
   "count": 3,
   "game_date": "2026-11-24",
@@ -12,7 +12,7 @@
       "status": "Final",
       "completed": true,
       "period": 4,
-      "clock": "0.0",
+      "clock": "12:00",
       "venue": "Kia Center",
       "neutral_site": false,
       "broadcasts": null,
@@ -79,10 +79,10 @@
       "start_utc": "2026-11-25T01:00Z",
       "short_name": "BOS @ WSH",
       "state": "in",
-      "status": "10:18 - 3rd",
+      "status": "7:51 - 3rd",
       "completed": false,
       "period": 3,
-      "clock": "10:18",
+      "clock": "7:51",
       "venue": "Capital One Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -92,7 +92,7 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 57,
+        "score": 65,
         "winner": null,
         "record": "7-11",
         "home_record": "3-5",
@@ -104,15 +104,15 @@
           },
           "rebounds": {
             "player": "Anthony Davis",
-            "value": "7"
+            "value": "10"
           },
           "assists": {
             "player": "Trae Young",
-            "value": "6"
+            "value": "8"
           },
           "rating": {
-            "player": "Kyshawn George",
-            "value": "20 PTS"
+            "player": "Anthony Davis",
+            "value": "18 PTS, 10 REB"
           }
         }
       },
@@ -120,7 +120,7 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 86,
+        "score": 88,
         "winner": null,
         "record": "11-6",
         "home_record": "6-1",
@@ -135,12 +135,12 @@
             "value": "5"
           },
           "assists": {
-            "player": "Paul George",
+            "player": "Jayson Tatum",
             "value": "7"
           },
           "rating": {
             "player": "Jayson Tatum",
-            "value": "29 PTS, 6 AST"
+            "value": "29 PTS, 7 AST"
           }
         }
       },
@@ -219,7 +219,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "DEN -7.5",
         "spread": -7.5,
         "over_under": 234.5
