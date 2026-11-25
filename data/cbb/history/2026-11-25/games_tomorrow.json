@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-25T05:30:31+00:00",
+  "fetched_at": "2026-11-25T05:45:21+00:00",
   "source": "espn",
-  "count": 16,
+  "count": 18,
   "game_date": "2026-11-26",
   "division_i_games": 21,
   "rows": [
@@ -1077,6 +1077,67 @@
       "p4": true
     },
     {
+      "game_id": "401920539",
+      "start_utc": "2026-11-27T02:00Z",
+      "short_name": "TBD VS ALA",
+      "state": "pre",
+      "status": "11/26 - 9:00 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "T-Mobile Arena",
+      "neutral_site": true,
+      "broadcasts": null,
+      "home": {
+        "team_id": "333",
+        "abbr": "ALA",
+        "name": "Alabama Crimson Tide",
+        "score": 0,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Amari Allen",
+            "value": "16.2"
+          },
+          "reboundsPerGame": {
+            "player": "Brandon Garrison",
+            "value": "5.2"
+          },
+          "assistsPerGame": {
+            "player": "Amari Allen",
+            "value": "6.0"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 15,
+        "loc": "Alabama",
+        "nick": "Crimson Tide"
+      },
+      "away": {
+        "team_id": "-2",
+        "abbr": "TBD",
+        "name": "TBD",
+        "score": 0,
+        "winner": null,
+        "record": null,
+        "home_record": null,
+        "away_record": null,
+        "leaders": null,
+        "conf_id": null,
+        "conf": null,
+        "rank": null,
+        "loc": "TBD",
+        "nick": "TBD"
+      },
+      "espn_line": null,
+      "date": "2026-11-26",
+      "p4": true
+    },
+    {
       "game_id": "401920530",
       "start_utc": "2026-11-27T02:00Z",
       "short_name": "TBD VS LOU",
@@ -1193,6 +1254,67 @@
         "rank": 5,
         "loc": "Texas Tech",
         "nick": "Red Raiders"
+      },
+      "espn_line": null,
+      "date": "2026-11-26",
+      "p4": true
+    },
+    {
+      "game_id": "401920540",
+      "start_utc": "2026-11-27T04:30Z",
+      "short_name": "BAY VS TBD",
+      "state": "pre",
+      "status": "11/26 - 11:30 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "T-Mobile Arena",
+      "neutral_site": true,
+      "broadcasts": null,
+      "home": {
+        "team_id": "-1",
+        "abbr": "TBD",
+        "name": "TBD",
+        "score": 0,
+        "winner": null,
+        "record": null,
+        "home_record": null,
+        "away_record": null,
+        "leaders": null,
+        "conf_id": null,
+        "conf": null,
+        "rank": null,
+        "loc": "TBD",
+        "nick": "TBD"
+      },
+      "away": {
+        "team_id": "239",
+        "abbr": "BAY",
+        "name": "Baylor Bears",
+        "score": 0,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Brett Decker Jr.",
+            "value": "17.4"
+          },
+          "reboundsPerGame": {
+            "player": "Dylan Mingo",
+            "value": "5.0"
+          },
+          "assistsPerGame": {
+            "player": "Isaac Williams IV",
+            "value": "5.0"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Baylor",
+        "nick": "Bears"
       },
       "espn_line": null,
       "date": "2026-11-26",
