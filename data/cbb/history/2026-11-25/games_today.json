@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T19:15:27+00:00",
+  "fetched_at": "2026-11-25T19:30:27+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-25T19:00Z",
       "short_name": "LSU VS ASU",
       "state": "in",
-      "status": "15:22 - 1st",
+      "status": "8:32 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "15:22",
+      "clock": "8:32",
       "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "9",
         "abbr": "ASU",
         "name": "Arizona State Sun Devils",
-        "score": 12,
+        "score": 24,
         "winner": null,
         "record": "5-0",
         "home_record": "5-0",
@@ -115,11 +115,11 @@
         "leaders": {
           "points": {
             "player": "Joel Foxwell",
-            "value": "8"
+            "value": "14"
           },
           "rebounds": {
-            "player": "Joel Foxwell",
-            "value": "1"
+            "player": "Dillan Shaw",
+            "value": "4"
           },
           "assists": {
             "player": "Paulius Murauskas",
@@ -127,7 +127,7 @@
           },
           "rating": {
             "player": "Joel Foxwell",
-            "value": "8 PTS"
+            "value": "14 PTS"
           }
         },
         "conf_id": "8",
@@ -140,27 +140,27 @@
         "team_id": "99",
         "abbr": "LSU",
         "name": "LSU Tigers",
-        "score": 9,
+        "score": 20,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
         "away_record": "1-0",
         "leaders": {
           "points": {
-            "player": "Skyy Clark",
-            "value": "3"
+            "player": "Michael Ruzic",
+            "value": "5"
           },
           "rebounds": {
-            "player": "Donovan Dent",
+            "player": "Michael Ruzic",
             "value": "1"
           },
           "assists": {
             "player": "Donovan Dent",
-            "value": "2"
+            "value": "4"
           },
           "rating": {
-            "player": "Donovan Dent",
-            "value": "2 PTS"
+            "player": "Michael Ruzic",
+            "value": "5 PTS"
           }
         },
         "conf_id": "23",
@@ -246,7 +246,7 @@
         "nick": "Rebels"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ARIZ -5.5",
         "spread": -5.5,
         "over_under": 153.5
@@ -258,8 +258,8 @@
       "game_id": "401920809",
       "start_utc": "2026-11-25T19:30Z",
       "short_name": "TA&M VS XAV",
-      "state": "pre",
-      "status": "11/25 - 2:30 PM EST",
+      "state": "in",
+      "status": "Delayed",
       "completed": false,
       "period": 0,
       "clock": "0:00",
@@ -277,20 +277,7 @@
         "record": "5-1",
         "home_record": "4-1",
         "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Mike Nwoko",
-            "value": "13.3"
-          },
-          "reboundsPerGame": {
-            "player": "Mike Nwoko",
-            "value": "6.3"
-          },
-          "assistsPerGame": {
-            "player": "Filip Borovicanin",
-            "value": "4.8"
-          }
-        },
+        "leaders": null,
         "conf_id": "4",
         "conf": null,
         "rank": null,
@@ -306,32 +293,14 @@
         "record": "6-0",
         "home_record": "5-0",
         "away_record": "1-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "PJ Haggerty",
-            "value": "20.7"
-          },
-          "reboundsPerGame": {
-            "player": "Jalen Shelley",
-            "value": "7.7"
-          },
-          "assistsPerGame": {
-            "player": "Jalen Shelley",
-            "value": "3.0"
-          }
-        },
+        "leaders": null,
         "conf_id": "23",
         "conf": "SEC",
         "rank": null,
         "loc": "Texas A&M",
         "nick": "Aggies"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "TA&M -3.5",
-        "spread": 3.5,
-        "over_under": 170.5
-      },
+      "espn_line": null,
       "date": "2026-11-25",
       "p4": true
     },
@@ -408,7 +377,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "OKST -35.5",
         "spread": -35.5,
         "over_under": 160.5
@@ -489,7 +458,7 @@
         "nick": "Gamecocks"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "USC -10.5",
         "spread": -10.5,
         "over_under": 144.5
@@ -570,7 +539,7 @@
         "nick": "Jaguars"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "NEB -34.5",
         "spread": -34.5,
         "over_under": 149.5
@@ -651,7 +620,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MEM -4.5",
         "spread": 4.5,
         "over_under": 162.5
@@ -732,7 +701,7 @@
         "nick": "Cougars"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "BYU -1.5",
         "spread": 1.5,
         "over_under": 154.5
@@ -813,7 +782,7 @@
         "nick": "Great Danes"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SYR -26.5",
         "spread": -26.5,
         "over_under": 146.5
@@ -894,7 +863,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CONN -1.5",
         "spread": 1.5,
         "over_under": 145.5
@@ -975,7 +944,7 @@
         "nick": "Mustangs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "USU -3.5",
         "spread": -3.5,
         "over_under": 162.5
@@ -1056,7 +1025,7 @@
         "nick": "Spartans"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "NCSU -27.5",
         "spread": -27.5,
         "over_under": 150.5
@@ -1137,7 +1106,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "WIS -19.5",
         "spread": -19.5,
         "over_under": 154.5
@@ -1218,7 +1187,7 @@
         "nick": "Demon Deacons"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MSST -3.5",
         "spread": -3.5,
         "over_under": 148.5
@@ -1299,7 +1268,7 @@
         "nick": "Lopes"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GCU -9.5",
         "spread": 9.5,
         "over_under": 154.5
@@ -1380,7 +1349,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "VCU -3.5",
         "spread": -3.5,
         "over_under": 144.5
@@ -1461,7 +1430,7 @@
         "nick": "Cardinal"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SLU -4.5",
         "spread": -4.5,
         "over_under": 152.5
@@ -1542,7 +1511,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CLEM -3.5",
         "spread": 3.5,
         "over_under": 148.5
