@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T19:30:27+00:00",
+  "fetched_at": "2026-11-25T19:45:24+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
@@ -17,7 +17,7 @@
       "venue": "Imperial Arena",
       "neutral_site": true,
       "broadcasts": [
-        "ESPN"
+        "ESPN2"
       ],
       "home": {
         "team_id": "269",
@@ -90,14 +90,94 @@
       "p4": true
     },
     {
+      "game_id": "401921715",
+      "start_utc": "2026-11-25T19:30Z",
+      "short_name": "MISS VS ARIZ",
+      "state": "in",
+      "status": "15:12 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "15:12",
+      "venue": "Lahaina Civic Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "12",
+        "abbr": "ARIZ",
+        "name": "Arizona Wildcats",
+        "score": 7,
+        "winner": null,
+        "record": "6-1",
+        "home_record": "3-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Ivan Kharchenkov",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Caleb Holt",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Ivan Kharchenkov",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Ivan Kharchenkov",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 8,
+        "loc": "Arizona",
+        "nick": "Wildcats"
+      },
+      "away": {
+        "team_id": "145",
+        "abbr": "MISS",
+        "name": "Ole Miss Rebels",
+        "score": 3,
+        "winner": null,
+        "record": "6-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Ilias Kamardine",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Ilias Kamardine",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Ilias Kamardine",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Ole Miss",
+        "nick": "Rebels"
+      },
+      "espn_line": null,
+      "date": "2026-11-25",
+      "p4": true
+    },
+    {
       "game_id": "401921669",
       "start_utc": "2026-11-25T19:00Z",
       "short_name": "LSU VS ASU",
       "state": "in",
-      "status": "8:32 - 1st",
+      "status": "2:00 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "8:32",
+      "clock": "2:00",
       "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +187,7 @@
         "team_id": "9",
         "abbr": "ASU",
         "name": "Arizona State Sun Devils",
-        "score": 24,
+        "score": 35,
         "winner": null,
         "record": "5-0",
         "home_record": "5-0",
@@ -119,7 +199,7 @@
           },
           "rebounds": {
             "player": "Dillan Shaw",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
             "player": "Paulius Murauskas",
@@ -140,27 +220,27 @@
         "team_id": "99",
         "abbr": "LSU",
         "name": "LSU Tigers",
-        "score": 20,
+        "score": 35,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
         "away_record": "1-0",
         "leaders": {
           "points": {
-            "player": "Michael Ruzic",
-            "value": "5"
+            "player": "Brice Dessert",
+            "value": "8"
           },
           "rebounds": {
-            "player": "Michael Ruzic",
-            "value": "1"
+            "player": "Brice Dessert",
+            "value": "3"
           },
           "assists": {
             "player": "Donovan Dent",
-            "value": "4"
+            "value": "6"
           },
           "rating": {
-            "player": "Michael Ruzic",
-            "value": "5 PTS"
+            "player": "Brice Dessert",
+            "value": "8 PTS"
           }
         },
         "conf_id": "23",
@@ -170,87 +250,6 @@
         "nick": "Tigers"
       },
       "espn_line": null,
-      "date": "2026-11-25",
-      "p4": true
-    },
-    {
-      "game_id": "401921715",
-      "start_utc": "2026-11-25T19:30Z",
-      "short_name": "MISS VS ARIZ",
-      "state": "pre",
-      "status": "11/25 - 2:30 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Lahaina Civic Center",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN"
-      ],
-      "home": {
-        "team_id": "12",
-        "abbr": "ARIZ",
-        "name": "Arizona Wildcats",
-        "score": 0,
-        "winner": null,
-        "record": "6-1",
-        "home_record": "3-0",
-        "away_record": "1-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Ivan Kharchenkov",
-            "value": "21.7"
-          },
-          "reboundsPerGame": {
-            "player": "Motiejus Krivas",
-            "value": "8.9"
-          },
-          "assistsPerGame": {
-            "player": "Ivan Kharchenkov",
-            "value": "5.4"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 8,
-        "loc": "Arizona",
-        "nick": "Wildcats"
-      },
-      "away": {
-        "team_id": "145",
-        "abbr": "MISS",
-        "name": "Ole Miss Rebels",
-        "score": 0,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Adam Clark",
-            "value": "15.8"
-          },
-          "reboundsPerGame": {
-            "player": "Santiago Trouet",
-            "value": "6.7"
-          },
-          "assistsPerGame": {
-            "player": "Adam Clark",
-            "value": "4.7"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Ole Miss",
-        "nick": "Rebels"
-      },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "ARIZ -5.5",
-        "spread": -5.5,
-        "over_under": 153.5
-      },
       "date": "2026-11-25",
       "p4": true
     },
@@ -377,7 +376,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "OKST -35.5",
         "spread": -35.5,
         "over_under": 160.5
@@ -458,7 +457,7 @@
         "nick": "Gamecocks"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "USC -10.5",
         "spread": -10.5,
         "over_under": 144.5
@@ -539,7 +538,7 @@
         "nick": "Jaguars"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NEB -34.5",
         "spread": -34.5,
         "over_under": 149.5
@@ -620,7 +619,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MEM -4.5",
         "spread": 4.5,
         "over_under": 162.5
@@ -701,7 +700,7 @@
         "nick": "Cougars"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "BYU -1.5",
         "spread": 1.5,
         "over_under": 154.5
@@ -782,9 +781,9 @@
         "nick": "Great Danes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
-        "details": "SYR -26.5",
-        "spread": -26.5,
+        "provider": "DraftKings",
+        "details": "SYR -25.5",
+        "spread": -25.5,
         "over_under": 146.5
       },
       "date": "2026-11-25",
@@ -863,7 +862,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CONN -1.5",
         "spread": 1.5,
         "over_under": 145.5
@@ -944,7 +943,7 @@
         "nick": "Mustangs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "USU -3.5",
         "spread": -3.5,
         "over_under": 162.5
@@ -1025,7 +1024,7 @@
         "nick": "Spartans"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NCSU -27.5",
         "spread": -27.5,
         "over_under": 150.5
@@ -1106,7 +1105,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "WIS -19.5",
         "spread": -19.5,
         "over_under": 154.5
@@ -1187,7 +1186,7 @@
         "nick": "Demon Deacons"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MSST -3.5",
         "spread": -3.5,
         "over_under": 148.5
@@ -1268,7 +1267,7 @@
         "nick": "Lopes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "GCU -9.5",
         "spread": 9.5,
         "over_under": 154.5
@@ -1349,7 +1348,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "VCU -3.5",
         "spread": -3.5,
         "over_under": 144.5
@@ -1430,7 +1429,7 @@
         "nick": "Cardinal"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SLU -4.5",
         "spread": -4.5,
         "over_under": 152.5
@@ -1511,7 +1510,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CLEM -3.5",
         "spread": 3.5,
         "over_under": 148.5
