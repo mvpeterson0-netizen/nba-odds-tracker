@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T01:00:22+00:00",
+  "fetched_at": "2026-11-25T01:15:29+00:00",
   "source": "espn",
   "count": 3,
   "game_date": "2026-11-24",
@@ -9,10 +9,10 @@
       "start_utc": "2026-11-25T00:00Z",
       "short_name": "DET @ ORL",
       "state": "in",
-      "status": "3:16 - 2nd",
+      "status": "Halftime",
       "completed": false,
       "period": 2,
-      "clock": "3:16",
+      "clock": "0.0",
       "venue": "Kia Center",
       "neutral_site": false,
       "broadcasts": null,
@@ -20,7 +20,7 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 32,
+        "score": 36,
         "winner": null,
         "record": "7-9",
         "home_record": "1-5",
@@ -32,7 +32,7 @@
           },
           "rebounds": {
             "player": "Wendell Carter Jr.",
-            "value": "9"
+            "value": "11"
           },
           "assists": {
             "player": "Franz Wagner",
@@ -40,7 +40,7 @@
           },
           "rating": {
             "player": "Wendell Carter Jr.",
-            "value": "9 REB"
+            "value": "11 REB"
           }
         }
       },
@@ -48,7 +48,7 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 38,
+        "score": 48,
         "winner": null,
         "record": "10-6",
         "home_record": "3-3",
@@ -56,19 +56,19 @@
         "leaders": {
           "points": {
             "player": "Daniss Jenkins",
-            "value": "10"
+            "value": "15"
           },
           "rebounds": {
             "player": "Isaiah Joe",
             "value": "4"
           },
           "assists": {
-            "player": "Kevin Huerter",
-            "value": "4"
+            "player": "Ausar Thompson",
+            "value": "5"
           },
           "rating": {
             "player": "Daniss Jenkins",
-            "value": "10 PTS"
+            "value": "15 PTS"
           }
         }
       },
@@ -78,11 +78,11 @@
       "game_id": "401909315",
       "start_utc": "2026-11-25T01:00Z",
       "short_name": "BOS @ WSH",
-      "state": "pre",
-      "status": "11/24 - 8:00 PM EST",
+      "state": "in",
+      "status": "10:42 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:42",
       "venue": "Capital One Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -92,27 +92,19 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "7-11",
         "home_record": "3-5",
         "away_record": "4-6",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Anthony Davis",
-            "value": "25.1"
-          },
-          "reboundsPerGame": {
-            "player": "Anthony Davis",
-            "value": "9.9"
-          },
-          "assistsPerGame": {
-            "player": "Trae Young",
-            "value": "8.8"
+          "points": {
+            "player": "AJ Dybantsa",
+            "value": "2"
           },
           "rating": {
-            "player": "Anthony Davis",
-            "value": "25.1 PPG, 9.9 RPG, 2.1 APG, 1.2 SPG, 1.1 BPG"
+            "player": "AJ Dybantsa",
+            "value": "2 PTS"
           }
         }
       },
@@ -120,36 +112,27 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "11-6",
         "home_record": "6-1",
         "away_record": "5-5",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jayson Tatum",
-            "value": "26.4"
+          "points": {
+            "player": "Paul George",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Neemias Queta",
-            "value": "7.1"
-          },
-          "assistsPerGame": {
+          "assists": {
             "player": "Jayson Tatum",
-            "value": "6.7"
+            "value": "1"
           },
           "rating": {
-            "player": "Jayson Tatum",
-            "value": "26.4 PPG, 6.9 RPG, 6.7 APG, 0.7 SPG, 0.7 BPG"
+            "player": "Paul George",
+            "value": "3 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "BOS -10.5",
-        "spread": 10.5,
-        "over_under": 218.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909316",
@@ -224,7 +207,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "DEN -8.5",
         "spread": -8.5,
         "over_under": 234.5
