@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T21:30:35+00:00",
+  "fetched_at": "2026-11-25T21:45:22+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-25T19:30Z",
       "short_name": "MISS VS ARIZ",
       "state": "in",
-      "status": "5:50 - 2nd",
+      "status": "2:18 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "5:50",
+      "clock": "2:18",
       "venue": "Lahaina Civic Center",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "12",
         "abbr": "ARIZ",
         "name": "Arizona Wildcats",
-        "score": 69,
+        "score": 77,
         "winner": null,
         "record": "6-1",
         "home_record": "3-0",
@@ -31,11 +31,11 @@
         "leaders": {
           "points": {
             "player": "Motiejus Krivas",
-            "value": "27"
+            "value": "29"
           },
           "rebounds": {
             "player": "Motiejus Krivas",
-            "value": "14"
+            "value": "16"
           },
           "assists": {
             "player": "Ivan Kharchenkov",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Motiejus Krivas",
-            "value": "27 PTS, 14 REB"
+            "value": "29 PTS, 16 REB"
           }
         },
         "conf_id": "8",
@@ -56,7 +56,7 @@
         "team_id": "145",
         "abbr": "MISS",
         "name": "Ole Miss Rebels",
-        "score": 60,
+        "score": 67,
         "winner": null,
         "record": "6-0",
         "home_record": "4-0",
@@ -67,16 +67,16 @@
             "value": "15"
           },
           "rebounds": {
-            "player": "Ilias Kamardine",
-            "value": "4"
+            "player": "Corey Stephenson",
+            "value": "5"
           },
           "assists": {
             "player": "Ben Henshall",
             "value": "3"
           },
           "rating": {
-            "player": "Adam Clark",
-            "value": "15 PTS"
+            "player": "Ilias Kamardine",
+            "value": "12 PTS, 5 STL"
           }
         },
         "conf_id": "23",
@@ -90,13 +90,13 @@
       "p4": true
     },
     {
-      "game_id": "401921669",
-      "start_utc": "2026-11-25T19:00Z",
-      "short_name": "LSU VS ASU",
+      "game_id": "401921670",
+      "start_utc": "2026-11-25T21:45Z",
+      "short_name": "SC VS USC",
       "state": "in",
-      "status": "End of OT",
+      "status": "Delayed",
       "completed": false,
-      "period": 3,
+      "period": 0,
       "clock": "0:00",
       "venue": "Acrisure Arena",
       "neutral_site": true,
@@ -104,70 +104,36 @@
         "CBSSN"
       ],
       "home": {
-        "team_id": "9",
-        "abbr": "ASU",
-        "name": "Arizona State Sun Devils",
-        "score": 86,
+        "team_id": "30",
+        "abbr": "USC",
+        "name": "USC Trojans",
+        "score": 0,
+        "winner": null,
+        "record": "6-0",
+        "home_record": "4-0",
+        "away_record": "1-0",
+        "leaders": null,
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 18,
+        "loc": "USC",
+        "nick": "Trojans"
+      },
+      "away": {
+        "team_id": "2579",
+        "abbr": "SC",
+        "name": "South Carolina Gamecocks",
+        "score": 0,
         "winner": null,
         "record": "5-0",
         "home_record": "5-0",
         "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Paulius Murauskas",
-            "value": "25"
-          },
-          "rebounds": {
-            "player": "Dillan Shaw",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Joel Foxwell",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Joel Foxwell",
-            "value": "23 PTS, 7 REB, 6 AST"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Arizona State",
-        "nick": "Sun Devils"
-      },
-      "away": {
-        "team_id": "99",
-        "abbr": "LSU",
-        "name": "LSU Tigers",
-        "score": 86,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "5-0",
-        "away_record": "1-0",
-        "leaders": {
-          "points": {
-            "player": "Donovan Dent",
-            "value": "17"
-          },
-          "rebounds": {
-            "player": "Michael Ruzic",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Donovan Dent",
-            "value": "10"
-          },
-          "rating": {
-            "player": "Donovan Dent",
-            "value": "17 PTS, 10 AST"
-          }
-        },
+        "leaders": null,
         "conf_id": "23",
         "conf": "SEC",
-        "rank": 20,
-        "loc": "LSU",
-        "nick": "Tigers"
+        "rank": null,
+        "loc": "South Carolina",
+        "nick": "Gamecocks"
       },
       "espn_line": null,
       "date": "2026-11-25",
@@ -178,10 +144,10 @@
       "start_utc": "2026-11-25T20:00Z",
       "short_name": "JKST @ OKST",
       "state": "in",
-      "status": "13:14 - 2nd",
+      "status": "7:29 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "13:14",
+      "clock": "7:29",
       "venue": "Gallagher-Iba Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -191,15 +157,15 @@
         "team_id": "197",
         "abbr": "OKST",
         "name": "Oklahoma State Cowboys",
-        "score": 59,
+        "score": 75,
         "winner": null,
         "record": "4-2",
         "home_record": "3-0",
         "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "Jacob Walker",
-            "value": "14"
+            "player": "Jordan Burks",
+            "value": "17"
           },
           "rebounds": {
             "player": "Latrell Allmond",
@@ -211,7 +177,7 @@
           },
           "rating": {
             "player": "Jacob Walker",
-            "value": "14 PTS, 3 STL"
+            "value": "16 PTS, 3 STL"
           }
         },
         "conf_id": "8",
@@ -224,7 +190,7 @@
         "team_id": "2296",
         "abbr": "JKST",
         "name": "Jackson State Tigers",
-        "score": 39,
+        "score": 46,
         "winner": null,
         "record": "2-4",
         "home_record": "0-0",
@@ -262,10 +228,10 @@
       "start_utc": "2026-11-25T21:13Z",
       "short_name": "TA&M VS XAV",
       "state": "in",
-      "status": "13:29 - 1st",
+      "status": "7:48 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "13:29",
+      "clock": "7:48",
       "venue": "Imperial Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -275,27 +241,27 @@
         "team_id": "2752",
         "abbr": "XAV",
         "name": "Xavier Musketeers",
-        "score": 12,
+        "score": 34,
         "winner": null,
         "record": "5-1",
         "home_record": "4-1",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Mike Nwoko",
-            "value": "4"
+            "player": "Gabriel Pozzato",
+            "value": "9"
           },
           "rebounds": {
-            "player": "Filip Borovicanin",
-            "value": "2"
+            "player": "Rolyns Aligbe",
+            "value": "4"
           },
           "assists": {
-            "player": "Mike Nwoko",
-            "value": "1"
+            "player": "Kalek House",
+            "value": "2"
           },
           "rating": {
-            "player": "Mike Nwoko",
-            "value": "4 PTS"
+            "player": "Gabriel Pozzato",
+            "value": "9 PTS"
           }
         },
         "conf_id": "4",
@@ -308,7 +274,7 @@
         "team_id": "245",
         "abbr": "TA&M",
         "name": "Texas A&M Aggies",
-        "score": 8,
+        "score": 22,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
@@ -316,19 +282,19 @@
         "leaders": {
           "points": {
             "player": "Mackenzie Mgbako",
-            "value": "5"
+            "value": "7"
           },
           "rebounds": {
             "player": "Mackenzie Mgbako",
-            "value": "1"
+            "value": "2"
           },
           "assists": {
-            "player": "Zach Clemence",
+            "player": "PJ Haggerty",
             "value": "1"
           },
           "rating": {
             "player": "Mackenzie Mgbako",
-            "value": "5 PTS"
+            "value": "7 PTS"
           }
         },
         "conf_id": "23",
@@ -426,13 +392,13 @@
       "p4": true
     },
     {
-      "game_id": "401921670",
-      "start_utc": "2026-11-25T21:45Z",
-      "short_name": "SC VS USC",
-      "state": "pre",
-      "status": "11/25 - 4:45 PM EST",
-      "completed": false,
-      "period": 0,
+      "game_id": "401921669",
+      "start_utc": "2026-11-25T19:00Z",
+      "short_name": "LSU VS ASU",
+      "state": "post",
+      "status": "Final/2OT",
+      "completed": true,
+      "period": 4,
       "clock": "0:00",
       "venue": "Acrisure Arena",
       "neutral_site": true,
@@ -440,69 +406,72 @@
         "CBSSN"
       ],
       "home": {
-        "team_id": "30",
-        "abbr": "USC",
-        "name": "USC Trojans",
-        "score": 0,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "4-0",
-        "away_record": "1-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Alijah Arenas",
-            "value": "21.3"
-          },
-          "reboundsPerGame": {
-            "player": "Adonis Ratliff",
-            "value": "6.8"
-          },
-          "assistsPerGame": {
-            "player": "Rodney Rice",
-            "value": "5.8"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 18,
-        "loc": "USC",
-        "nick": "Trojans"
-      },
-      "away": {
-        "team_id": "2579",
-        "abbr": "SC",
-        "name": "South Carolina Gamecocks",
-        "score": 0,
-        "winner": null,
-        "record": "5-0",
+        "team_id": "9",
+        "abbr": "ASU",
+        "name": "Arizona State Sun Devils",
+        "score": 92,
+        "winner": false,
+        "record": "5-1",
         "home_record": "5-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Juan Fernandez",
-            "value": "15.2"
+          "points": {
+            "player": "Paulius Murauskas",
+            "value": "27"
           },
-          "reboundsPerGame": {
-            "player": "Juan Fernandez",
-            "value": "5.2"
+          "rebounds": {
+            "player": "Dillan Shaw",
+            "value": "14"
           },
-          "assistsPerGame": {
-            "player": "Kory Mincy",
-            "value": "2.8"
+          "assists": {
+            "player": "Joel Foxwell",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Joel Foxwell",
+            "value": "25 PTS, 7 REB, 7 AST"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Arizona State",
+        "nick": "Sun Devils"
+      },
+      "away": {
+        "team_id": "99",
+        "abbr": "LSU",
+        "name": "LSU Tigers",
+        "score": 94,
+        "winner": true,
+        "record": "7-0",
+        "home_record": "5-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Donovan Dent",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Michael Ruzic",
+            "value": "11"
+          },
+          "assists": {
+            "player": "Donovan Dent",
+            "value": "12"
+          },
+          "rating": {
+            "player": "Donovan Dent",
+            "value": "20 PTS, 7 REB, 12 AST"
           }
         },
         "conf_id": "23",
         "conf": "SEC",
-        "rank": null,
-        "loc": "South Carolina",
-        "nick": "Gamecocks"
+        "rank": 20,
+        "loc": "LSU",
+        "nick": "Tigers"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "USC -9.5",
-        "spread": -9.5,
-        "over_under": 145.5
-      },
+      "espn_line": null,
       "date": "2026-11-25",
       "p4": true
     },
@@ -579,7 +548,7 @@
         "nick": "Jaguars"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NEB -34.5",
         "spread": -34.5,
         "over_under": 149.5
@@ -660,7 +629,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MEM -4.5",
         "spread": 4.5,
         "over_under": 162.5
@@ -741,7 +710,7 @@
         "nick": "Cougars"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "BYU -2.5",
         "spread": 2.5,
         "over_under": 154.5
@@ -822,7 +791,7 @@
         "nick": "Great Danes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SYR -24.5",
         "spread": -24.5,
         "over_under": 146.5
@@ -903,7 +872,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CONN -1.5",
         "spread": 1.5,
         "over_under": 145.5
@@ -984,7 +953,7 @@
         "nick": "Mustangs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "USU -3.5",
         "spread": -3.5,
         "over_under": 162.5
@@ -1065,7 +1034,7 @@
         "nick": "Spartans"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NCSU -28.5",
         "spread": -28.5,
         "over_under": 150.5
@@ -1146,7 +1115,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "WIS -19.5",
         "spread": -19.5,
         "over_under": 154.5
@@ -1227,7 +1196,7 @@
         "nick": "Demon Deacons"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MSST -3.5",
         "spread": -3.5,
         "over_under": 148.5
@@ -1308,7 +1277,7 @@
         "nick": "Lopes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "GCU -9.5",
         "spread": 9.5,
         "over_under": 154.5
@@ -1389,7 +1358,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "VCU -3.5",
         "spread": -3.5,
         "over_under": 144.5
@@ -1470,7 +1439,7 @@
         "nick": "Cardinal"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SLU -4.5",
         "spread": -4.5,
         "over_under": 152.5
@@ -1551,7 +1520,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CLEM -3.5",
         "spread": 3.5,
         "over_under": 148.5
