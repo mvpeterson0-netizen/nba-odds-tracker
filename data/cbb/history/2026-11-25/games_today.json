@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T19:00:44+00:00",
+  "fetched_at": "2026-11-25T19:15:27+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
@@ -93,11 +93,11 @@
       "game_id": "401921669",
       "start_utc": "2026-11-25T19:00Z",
       "short_name": "LSU VS ASU",
-      "state": "pre",
-      "status": "11/25 - 2:00 PM EST",
+      "state": "in",
+      "status": "15:22 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:22",
       "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,23 +107,27 @@
         "team_id": "9",
         "abbr": "ASU",
         "name": "Arizona State Sun Devils",
-        "score": 0,
+        "score": 12,
         "winner": null,
         "record": "5-0",
         "home_record": "5-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Paulius Murauskas",
-            "value": "26.0"
-          },
-          "reboundsPerGame": {
-            "player": "Paulius Murauskas",
-            "value": "9.2"
-          },
-          "assistsPerGame": {
+          "points": {
             "player": "Joel Foxwell",
-            "value": "6.8"
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Joel Foxwell",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Paulius Murauskas",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Joel Foxwell",
+            "value": "8 PTS"
           }
         },
         "conf_id": "8",
@@ -136,23 +140,27 @@
         "team_id": "99",
         "abbr": "LSU",
         "name": "LSU Tigers",
-        "score": 0,
+        "score": 9,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Donovan Dent",
-            "value": "15.3"
+          "points": {
+            "player": "Skyy Clark",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Michael Ruzic",
-            "value": "8.2"
-          },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "Donovan Dent",
-            "value": "9.2"
+            "value": "1"
+          },
+          "assists": {
+            "player": "Donovan Dent",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Donovan Dent",
+            "value": "2 PTS"
           }
         },
         "conf_id": "23",
@@ -161,12 +169,7 @@
         "loc": "LSU",
         "nick": "Tigers"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "LSU -3.5",
-        "spread": 3.5,
-        "over_under": 145.5
-      },
+      "espn_line": null,
       "date": "2026-11-25",
       "p4": true
     },
@@ -973,8 +976,8 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "USU -4.5",
-        "spread": -4.5,
+        "details": "USU -3.5",
+        "spread": -3.5,
         "over_under": 162.5
       },
       "date": "2026-11-25",
@@ -1459,8 +1462,8 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "SLU -3.5",
-        "spread": -3.5,
+        "details": "SLU -4.5",
+        "spread": -4.5,
         "over_under": 152.5
       },
       "date": "2026-11-25",
