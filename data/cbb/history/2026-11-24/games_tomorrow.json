@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T01:30:25+00:00",
+  "fetched_at": "2026-11-25T01:45:22+00:00",
   "source": "espn",
   "count": 15,
   "game_date": "2026-11-25",
@@ -170,7 +170,7 @@
     {
       "game_id": "401921715",
       "start_utc": "2026-11-25T19:30Z",
-      "short_name": "MISS VS TBD",
+      "short_name": "MISS VS ARIZ",
       "state": "pre",
       "status": "11/25 - 2:30 PM EST",
       "completed": false,
@@ -182,20 +182,33 @@
         "ESPN"
       ],
       "home": {
-        "team_id": "-1",
-        "abbr": "TBD",
-        "name": "TBD",
+        "team_id": "12",
+        "abbr": "ARIZ",
+        "name": "Arizona Wildcats",
         "score": 0,
         "winner": null,
-        "record": null,
-        "home_record": null,
-        "away_record": null,
-        "leaders": null,
-        "conf_id": null,
-        "conf": null,
-        "rank": null,
-        "loc": "TBD",
-        "nick": "TBD"
+        "record": "6-1",
+        "home_record": "3-0",
+        "away_record": "1-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Ivan Kharchenkov",
+            "value": "22.8"
+          },
+          "reboundsPerGame": {
+            "player": "Motiejus Krivas",
+            "value": "9.2"
+          },
+          "assistsPerGame": {
+            "player": "Ivan Kharchenkov",
+            "value": "5.0"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 8,
+        "loc": "Arizona",
+        "nick": "Wildcats"
       },
       "away": {
         "team_id": "145",
