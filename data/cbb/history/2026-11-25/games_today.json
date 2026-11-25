@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T22:30:25+00:00",
+  "fetched_at": "2026-11-25T22:45:23+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-25T22:17Z",
       "short_name": "SC VS USC",
       "state": "in",
-      "status": "12:44 - 1st",
+      "status": "7:10 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "12:44",
+      "clock": "7:10",
       "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,12 +23,29 @@
         "team_id": "30",
         "abbr": "USC",
         "name": "USC Trojans",
-        "score": 11,
+        "score": 24,
         "winner": null,
         "record": "6-0",
         "home_record": "4-0",
         "away_record": "1-0",
-        "leaders": null,
+        "leaders": {
+          "points": {
+            "player": "KJ Lewis",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "KJ Lewis",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Jacob Cofie",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Jacob Cofie",
+            "value": "2 PTS"
+          }
+        },
         "conf_id": "7",
         "conf": "Big Ten",
         "rank": 18,
@@ -39,12 +56,29 @@
         "team_id": "2579",
         "abbr": "SC",
         "name": "South Carolina Gamecocks",
-        "score": 16,
+        "score": 25,
         "winner": null,
         "record": "5-0",
         "home_record": "5-0",
         "away_record": "0-0",
-        "leaders": null,
+        "leaders": {
+          "points": {
+            "player": "Aleksas Bieliauskas",
+            "value": "12"
+          },
+          "rebounds": {
+            "player": "Aleksas Bieliauskas",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Kory Mincy",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Aleksas Bieliauskas",
+            "value": "12 PTS"
+          }
+        },
         "conf_id": "23",
         "conf": "SEC",
         "rank": null,
@@ -60,10 +94,10 @@
       "start_utc": "2026-11-25T22:00Z",
       "short_name": "SOU @ NEB",
       "state": "in",
-      "status": "6:22 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "6:22",
+      "clock": "0:00",
       "venue": "Pinnacle Bank Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -73,7 +107,7 @@
         "team_id": "158",
         "abbr": "NEB",
         "name": "Nebraska Cornhuskers",
-        "score": 36,
+        "score": 56,
         "winner": null,
         "record": "6-0",
         "home_record": "3-0",
@@ -81,19 +115,19 @@
         "leaders": {
           "points": {
             "player": "Damon Wilkinson",
-            "value": "11"
+            "value": "13"
           },
           "rebounds": {
             "player": "Damon Wilkinson",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "Cale Jacobsen",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Damon Wilkinson",
-            "value": "11 PTS"
+            "value": "13 PTS"
           }
         },
         "conf_id": "7",
@@ -106,27 +140,27 @@
         "team_id": "2582",
         "abbr": "SOU",
         "name": "Southern Jaguars",
-        "score": 14,
+        "score": 28,
         "winner": null,
         "record": "1-5",
         "home_record": "1-0",
         "away_record": "0-5",
         "leaders": {
           "points": {
-            "player": "Justin Page",
-            "value": "5"
+            "player": "Sean Van Dorn Jr.",
+            "value": "9"
           },
           "rebounds": {
             "player": "Sean Van Dorn Jr.",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "Cam Amboree",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
             "player": "Sean Van Dorn Jr.",
-            "value": "4 PTS"
+            "value": "9 PTS"
           }
         },
         "conf_id": "26",
@@ -144,10 +178,10 @@
       "start_utc": "2026-11-25T21:13Z",
       "short_name": "TA&M VS XAV",
       "state": "in",
-      "status": "16:17 - 2nd",
+      "status": "11:25 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "16:17",
+      "clock": "11:25",
       "venue": "Imperial Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -157,7 +191,7 @@
         "team_id": "2752",
         "abbr": "XAV",
         "name": "Xavier Musketeers",
-        "score": 60,
+        "score": 66,
         "winner": null,
         "record": "5-1",
         "home_record": "4-1",
@@ -169,15 +203,15 @@
           },
           "rebounds": {
             "player": "Nikos Chitikoudis",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Filip Borovicanin",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Mike Nwoko",
-            "value": "18 PTS"
+            "value": "18 PTS, 6 REB"
           }
         },
         "conf_id": "4",
@@ -190,7 +224,7 @@
         "team_id": "245",
         "abbr": "TA&M",
         "name": "Texas A&M Aggies",
-        "score": 45,
+        "score": 56,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
@@ -198,19 +232,19 @@
         "leaders": {
           "points": {
             "player": "PJ Haggerty",
-            "value": "11"
+            "value": "14"
           },
           "rebounds": {
             "player": "Mackenzie Mgbako",
             "value": "4"
           },
           "assists": {
-            "player": "Jalen Reece",
-            "value": "2"
+            "player": "Rylan Griffen",
+            "value": "3"
           },
           "rating": {
             "player": "PJ Haggerty",
-            "value": "11 PTS"
+            "value": "14 PTS"
           }
         },
         "conf_id": "23",
@@ -563,11 +597,11 @@
       "game_id": "401921716",
       "start_utc": "2026-11-25T22:30Z",
       "short_name": "BYU VS PROV",
-      "state": "pre",
-      "status": "11/25 - 5:30 PM EST",
+      "state": "in",
+      "status": "15:35 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:35",
       "venue": "Lahaina Civic Center",
       "neutral_site": true,
       "broadcasts": [
@@ -577,23 +611,27 @@
         "team_id": "2507",
         "abbr": "PROV",
         "name": "Providence Friars",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "5-2",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Ryan Mela",
-            "value": "14.8"
+          "points": {
+            "player": "Arrinten Page",
+            "value": "5"
           },
-          "reboundsPerGame": {
-            "player": "Jacob Bannarbie",
-            "value": "5.3"
+          "rebounds": {
+            "player": "Miles Byrd",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Malik Mack",
-            "value": "4.1"
+          "assists": {
+            "player": "Arrinten Page",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Arrinten Page",
+            "value": "5 PTS"
           }
         },
         "conf_id": "4",
@@ -606,23 +644,27 @@
         "team_id": "252",
         "abbr": "BYU",
         "name": "BYU Cougars",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "6-1",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Collin Chandler",
-            "value": "19.1"
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Jaxon Kohler",
-            "value": "6.9"
+          "rebounds": {
+            "player": "Collin Chandler",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Brooks Bahr",
-            "value": "2.9"
+          "assists": {
+            "player": "Collin Chandler",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Collin Chandler",
+            "value": "3 PTS"
           }
         },
         "conf_id": "8",
@@ -631,12 +673,7 @@
         "loc": "BYU",
         "nick": "Cougars"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "BYU -2.5",
-        "spread": 2.5,
-        "over_under": 154.5
-      },
+      "espn_line": null,
       "date": "2026-11-25",
       "p4": true
     },
@@ -713,7 +750,7 @@
         "nick": "Great Danes"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SYR -24.5",
         "spread": -24.5,
         "over_under": 145.5
@@ -794,7 +831,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MEM -3.5",
         "spread": 3.5,
         "over_under": 162.5
@@ -875,7 +912,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CONN -1.5",
         "spread": 1.5,
         "over_under": 145.5
@@ -956,7 +993,7 @@
         "nick": "Mustangs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "USU -3.5",
         "spread": -3.5,
         "over_under": 162.5
@@ -1037,7 +1074,7 @@
         "nick": "Spartans"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "NCSU -28.5",
         "spread": -28.5,
         "over_under": 150.5
@@ -1118,7 +1155,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "WIS -19.5",
         "spread": -19.5,
         "over_under": 154.5
@@ -1199,7 +1236,7 @@
         "nick": "Demon Deacons"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MSST -3.5",
         "spread": -3.5,
         "over_under": 148.5
@@ -1280,10 +1317,10 @@
         "nick": "Lopes"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GCU -9.5",
         "spread": 9.5,
-        "over_under": 154.5
+        "over_under": 153.5
       },
       "date": "2026-11-25",
       "p4": true
@@ -1361,7 +1398,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "VCU -3.5",
         "spread": -3.5,
         "over_under": 144.5
@@ -1442,7 +1479,7 @@
         "nick": "Cardinal"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SLU -4.5",
         "spread": -4.5,
         "over_under": 152.5
@@ -1523,7 +1560,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CLEM -3.5",
         "spread": 3.5,
         "over_under": 148.5
