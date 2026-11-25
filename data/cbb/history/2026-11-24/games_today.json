@@ -1,103 +1,19 @@
 {
-  "fetched_at": "2026-11-25T01:45:22+00:00",
+  "fetched_at": "2026-11-25T02:00:26+00:00",
   "source": "espn",
   "count": 24,
   "game_date": "2026-11-24",
   "division_i_games": 87,
   "rows": [
     {
-      "game_id": "401906774",
-      "start_utc": "2026-11-25T00:00Z",
-      "short_name": "MILW @ FLA",
-      "state": "in",
-      "status": "0:39 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "0:39",
-      "venue": "Tower Hill Arena",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "57",
-        "abbr": "FLA",
-        "name": "Florida Gators",
-        "score": 76,
-        "winner": null,
-        "record": "6-1",
-        "home_record": "2-0",
-        "away_record": "1-0",
-        "leaders": {
-          "points": {
-            "player": "Rueben Chinyelu",
-            "value": "25"
-          },
-          "rebounds": {
-            "player": "Rueben Chinyelu",
-            "value": "15"
-          },
-          "assists": {
-            "player": "Alex Condon",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Rueben Chinyelu",
-            "value": "25 PTS, 15 REB"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 3,
-        "loc": "Florida",
-        "nick": "Gators"
-      },
-      "away": {
-        "team_id": "270",
-        "abbr": "MILW",
-        "name": "Milwaukee Panthers",
-        "score": 67,
-        "winner": null,
-        "record": "2-4",
-        "home_record": "1-1",
-        "away_record": "1-3",
-        "leaders": {
-          "points": {
-            "player": "Chandler Jackson",
-            "value": "20"
-          },
-          "rebounds": {
-            "player": "Tre Norman",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Danilo Jovanovich",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Chandler Jackson",
-            "value": "20 PTS"
-          }
-        },
-        "conf_id": "45",
-        "conf": null,
-        "rank": null,
-        "loc": "Milwaukee",
-        "nick": "Panthers"
-      },
-      "espn_line": null,
-      "date": "2026-11-24",
-      "p4": true
-    },
-    {
       "game_id": "401915942",
       "start_utc": "2026-11-25T01:37Z",
       "short_name": "TTU VS LOU",
       "state": "in",
-      "status": "17:01 - 1st",
+      "status": "11:03 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "17:01",
+      "clock": "11:03",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +23,7 @@
         "team_id": "97",
         "abbr": "LOU",
         "name": "Louisville Cardinals",
-        "score": 5,
+        "score": 10,
         "winner": null,
         "record": "3-1",
         "home_record": "3-0",
@@ -115,15 +31,19 @@
         "leaders": {
           "points": {
             "player": "Karter Knox",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Alvaro Folgueiras",
             "value": "3"
           },
           "assists": {
             "player": "Flory Bidunga",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
             "player": "Karter Knox",
-            "value": "3 PTS"
+            "value": "6 PTS"
           }
         },
         "conf_id": "2",
@@ -136,27 +56,27 @@
         "team_id": "2641",
         "abbr": "TTU",
         "name": "Texas Tech Red Raiders",
-        "score": 8,
+        "score": 15,
         "winner": null,
         "record": "5-0",
         "home_record": "5-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Dra Gibbs-Lawhorn",
-            "value": "5"
+            "player": "Darrion Williams",
+            "value": "6"
           },
           "rebounds": {
             "player": "Darrion Williams",
-            "value": "1"
+            "value": "2"
           },
           "assists": {
-            "player": "Dra Gibbs-Lawhorn",
+            "player": "Darrion Williams",
             "value": "1"
           },
           "rating": {
-            "player": "Dra Gibbs-Lawhorn",
-            "value": "5 PTS"
+            "player": "Darrion Williams",
+            "value": "6 PTS"
           }
         },
         "conf_id": "8",
@@ -174,10 +94,10 @@
       "start_utc": "2026-11-25T00:00Z",
       "short_name": "VAN @ OSU",
       "state": "in",
-      "status": "6:03 - 2nd",
+      "status": "2:00 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "6:03",
+      "clock": "2:00",
       "venue": "Schottenstein Center",
       "neutral_site": false,
       "broadcasts": [
@@ -187,7 +107,7 @@
         "team_id": "194",
         "abbr": "OSU",
         "name": "Ohio State Buckeyes",
-        "score": 54,
+        "score": 63,
         "winner": null,
         "record": "4-2",
         "home_record": "4-0",
@@ -198,7 +118,7 @@
             "value": "22"
           },
           "rebounds": {
-            "player": "Andrija Jelavic",
+            "player": "John Mobley Jr.",
             "value": "5"
           },
           "assists": {
@@ -220,7 +140,7 @@
         "team_id": "238",
         "abbr": "VAN",
         "name": "Vanderbilt Commodores",
-        "score": 48,
+        "score": 64,
         "winner": null,
         "record": "6-0",
         "home_record": "6-0",
@@ -228,7 +148,7 @@
         "leaders": {
           "points": {
             "player": "Tyler Tanner",
-            "value": "14"
+            "value": "16"
           },
           "rebounds": {
             "player": "Tyler Tanner",
@@ -236,11 +156,11 @@
           },
           "assists": {
             "player": "Tyler Tanner",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Tyler Tanner",
-            "value": "14 PTS, 6 REB, 3 STL"
+            "value": "16 PTS, 6 REB, 4 STL"
           }
         },
         "conf_id": "23",
@@ -257,11 +177,11 @@
       "game_id": "401916291",
       "start_utc": "2026-11-25T00:00Z",
       "short_name": "JAX @ IU",
-      "state": "in",
-      "status": "3:46 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "3:46",
+      "clock": "0:00",
       "venue": "Simon Skjodt Assembly Hall",
       "neutral_site": false,
       "broadcasts": [
@@ -271,10 +191,10 @@
         "team_id": "84",
         "abbr": "IU",
         "name": "Indiana Hoosiers",
-        "score": 78,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "3-0",
+        "score": 82,
+        "winner": true,
+        "record": "7-0",
+        "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
@@ -283,15 +203,15 @@
           },
           "rebounds": {
             "player": "Samet Yigitoglu",
-            "value": "12"
+            "value": "15"
           },
           "assists": {
             "player": "Markus Burton",
             "value": "6"
           },
           "rating": {
-            "player": "Markus Burton",
-            "value": "14 PTS, 6 AST"
+            "player": "Samet Yigitoglu",
+            "value": "13 PTS, 15 REB"
           }
         },
         "conf_id": "7",
@@ -304,11 +224,11 @@
         "team_id": "294",
         "abbr": "JAX",
         "name": "Jacksonville Dolphins",
-        "score": 56,
-        "winner": null,
-        "record": "2-4",
+        "score": 64,
+        "winner": false,
+        "record": "2-5",
         "home_record": "2-2",
-        "away_record": "0-2",
+        "away_record": "0-3",
         "leaders": {
           "points": {
             "player": "Jamie Phillips Jr.",
@@ -320,7 +240,7 @@
           },
           "assists": {
             "player": "Evan Sterck",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Jamie Phillips Jr.",
@@ -342,10 +262,10 @@
       "start_utc": "2026-11-25T00:00Z",
       "short_name": "SAM @ GT",
       "state": "in",
-      "status": "5:10 - 2nd",
+      "status": "1:04 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "5:10",
+      "clock": "1:04",
       "venue": "McCamish Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -355,7 +275,7 @@
         "team_id": "59",
         "abbr": "GT",
         "name": "Georgia Tech Yellow Jackets",
-        "score": 66,
+        "score": 72,
         "winner": null,
         "record": "5-1",
         "home_record": "5-1",
@@ -375,7 +295,7 @@
           },
           "rating": {
             "player": "Colby Garland",
-            "value": "18 PTS, 6 AST"
+            "value": "18 PTS, 6 REB, 6 AST"
           }
         },
         "conf_id": "2",
@@ -388,7 +308,7 @@
         "team_id": "2535",
         "abbr": "SAM",
         "name": "Samford Bulldogs",
-        "score": 76,
+        "score": 88,
         "winner": null,
         "record": "3-2",
         "home_record": "2-1",
@@ -399,16 +319,16 @@
             "value": "24"
           },
           "rebounds": {
-            "player": "Will Shaver",
+            "player": "Cooper Noard",
             "value": "8"
           },
           "assists": {
             "player": "Cade Norris",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
-            "player": "Cooper Noard",
-            "value": "24 PTS, 7 REB"
+            "player": "Cade Norris",
+            "value": "20 PTS, 6 REB, 6 AST"
           }
         },
         "conf_id": "24",
@@ -426,10 +346,10 @@
       "start_utc": "2026-11-25T01:00Z",
       "short_name": "CLEM VS WASH",
       "state": "in",
-      "status": "4:00 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "4:00",
+      "clock": "0:00",
       "venue": "Lahaina Civic Center",
       "neutral_site": true,
       "broadcasts": [
@@ -439,7 +359,7 @@
         "team_id": "264",
         "abbr": "WASH",
         "name": "Washington Huskies",
-        "score": 29,
+        "score": 33,
         "winner": null,
         "record": "4-1",
         "home_record": "4-0",
@@ -447,11 +367,11 @@
         "leaders": {
           "points": {
             "player": "Lathan Sommerville",
-            "value": "7"
+            "value": "8"
           },
           "rebounds": {
             "player": "Lathan Sommerville",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
             "player": "Tayshawn Comer",
@@ -459,7 +379,7 @@
           },
           "rating": {
             "player": "Lathan Sommerville",
-            "value": "7 PTS"
+            "value": "8 PTS"
           }
         },
         "conf_id": "7",
@@ -472,7 +392,7 @@
         "team_id": "228",
         "abbr": "CLEM",
         "name": "Clemson Tigers",
-        "score": 18,
+        "score": 23,
         "winner": null,
         "record": "4-2",
         "home_record": "4-1",
@@ -480,19 +400,19 @@
         "leaders": {
           "points": {
             "player": "Liutauras Lelevicius",
-            "value": "5"
+            "value": "7"
           },
           "rebounds": {
-            "player": "Ace Buckner",
-            "value": "4"
+            "player": "Liutauras Lelevicius",
+            "value": "5"
           },
           "assists": {
             "player": "Dylan Faulkner",
             "value": "1"
           },
           "rating": {
-            "player": "Dylan Faulkner",
-            "value": "5 PTS"
+            "player": "Liutauras Lelevicius",
+            "value": "7 PTS"
           }
         },
         "conf_id": "2",
@@ -510,10 +430,10 @@
       "start_utc": "2026-11-25T01:00Z",
       "short_name": "LIP @ AUB",
       "state": "in",
-      "status": "Halftime",
+      "status": "18:12 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "18:12",
       "venue": "Neville Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -523,7 +443,7 @@
         "team_id": "2",
         "abbr": "AUB",
         "name": "Auburn Tigers",
-        "score": 47,
+        "score": 56,
         "winner": null,
         "record": "3-3",
         "home_record": "2-1",
@@ -531,7 +451,7 @@
         "leaders": {
           "points": {
             "player": "Tahaad Pettiford",
-            "value": "10"
+            "value": "12"
           },
           "rebounds": {
             "player": "Narcisse Ngoy",
@@ -539,11 +459,11 @@
           },
           "assists": {
             "player": "Tahaad Pettiford",
-            "value": "3"
+            "value": "5"
           },
           "rating": {
             "player": "Tahaad Pettiford",
-            "value": "10 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "23",
@@ -556,7 +476,7 @@
         "team_id": "288",
         "abbr": "LIP",
         "name": "Lipscomb Bisons",
-        "score": 37,
+        "score": 40,
         "winner": null,
         "record": "4-4",
         "home_record": "3-0",
@@ -564,7 +484,7 @@
         "leaders": {
           "points": {
             "player": "Takai Simpkins",
-            "value": "8"
+            "value": "11"
           },
           "rebounds": {
             "player": "Truman Byrne",
@@ -575,8 +495,8 @@
             "value": "3"
           },
           "rating": {
-            "player": "Or Ashkenazi",
-            "value": "6 PTS"
+            "player": "Takai Simpkins",
+            "value": "11 PTS"
           }
         },
         "conf_id": "46",
@@ -594,10 +514,10 @@
       "start_utc": "2026-11-25T01:00Z",
       "short_name": "CMU @ ND",
       "state": "in",
-      "status": "Halftime",
+      "status": "18:43 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "18:43",
       "venue": "Purcell Pavilion",
       "neutral_site": false,
       "broadcasts": [
@@ -640,7 +560,7 @@
         "team_id": "2117",
         "abbr": "CMU",
         "name": "Central Michigan Chippewas",
-        "score": 38,
+        "score": 41,
         "winner": null,
         "record": "4-2",
         "home_record": "2-0",
@@ -656,7 +576,7 @@
           },
           "assists": {
             "player": "Phat Phat Brooks",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Phat Phat Brooks",
@@ -668,6 +588,90 @@
         "rank": null,
         "loc": "Central Michigan",
         "nick": "Chippewas"
+      },
+      "espn_line": null,
+      "date": "2026-11-24",
+      "p4": true
+    },
+    {
+      "game_id": "401906774",
+      "start_utc": "2026-11-25T00:00Z",
+      "short_name": "MILW @ FLA",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Tower Hill Arena",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "57",
+        "abbr": "FLA",
+        "name": "Florida Gators",
+        "score": 76,
+        "winner": true,
+        "record": "7-1",
+        "home_record": "3-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Rueben Chinyelu",
+            "value": "25"
+          },
+          "rebounds": {
+            "player": "Rueben Chinyelu",
+            "value": "16"
+          },
+          "assists": {
+            "player": "Alex Condon",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Rueben Chinyelu",
+            "value": "25 PTS, 16 REB"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 3,
+        "loc": "Florida",
+        "nick": "Gators"
+      },
+      "away": {
+        "team_id": "270",
+        "abbr": "MILW",
+        "name": "Milwaukee Panthers",
+        "score": 67,
+        "winner": false,
+        "record": "2-5",
+        "home_record": "1-1",
+        "away_record": "1-4",
+        "leaders": {
+          "points": {
+            "player": "Chandler Jackson",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Tre Norman",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Danilo Jovanovich",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Chandler Jackson",
+            "value": "20 PTS"
+          }
+        },
+        "conf_id": "45",
+        "conf": null,
+        "rank": null,
+        "loc": "Milwaukee",
+        "nick": "Panthers"
       },
       "espn_line": null,
       "date": "2026-11-24",
@@ -1586,7 +1590,7 @@
         "nick": "Purple Aces"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MIZ -30.5",
         "spread": -30.5,
         "over_under": 148.5
@@ -1667,7 +1671,7 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "FSU -30.5",
         "spread": -30.5,
         "over_under": 159.5
@@ -1748,7 +1752,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ALA -1.5",
         "spread": -1.5,
         "over_under": 174.5
@@ -1829,7 +1833,7 @@
         "nick": "Ducks"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SJU -10.5",
         "spread": -10.5,
         "over_under": 156.5
@@ -1910,7 +1914,7 @@
         "nick": "Buffaloes"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "STAN -3.5",
         "spread": -3.5,
         "over_under": 140.5
@@ -1991,7 +1995,7 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GONZ -15.5",
         "spread": 15.5,
         "over_under": 157.5
