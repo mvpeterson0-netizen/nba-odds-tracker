@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T22:45:23+00:00",
+  "fetched_at": "2026-11-25T22:56:09+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-25T22:17Z",
       "short_name": "SC VS USC",
       "state": "in",
-      "status": "7:10 - 1st",
+      "status": "3:51 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "7:10",
+      "clock": "3:51",
       "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,27 +23,27 @@
         "team_id": "30",
         "abbr": "USC",
         "name": "USC Trojans",
-        "score": 24,
+        "score": 32,
         "winner": null,
         "record": "6-0",
         "home_record": "4-0",
         "away_record": "1-0",
         "leaders": {
           "points": {
-            "player": "KJ Lewis",
-            "value": "5"
+            "player": "Alijah Arenas",
+            "value": "9"
           },
           "rebounds": {
-            "player": "KJ Lewis",
-            "value": "4"
+            "player": "Jacob Cofie",
+            "value": "5"
           },
           "assists": {
             "player": "Jacob Cofie",
             "value": "3"
           },
           "rating": {
-            "player": "Jacob Cofie",
-            "value": "2 PTS"
+            "player": "Alijah Arenas",
+            "value": "9 PTS"
           }
         },
         "conf_id": "7",
@@ -56,7 +56,7 @@
         "team_id": "2579",
         "abbr": "SC",
         "name": "South Carolina Gamecocks",
-        "score": 25,
+        "score": 31,
         "winner": null,
         "record": "5-0",
         "home_record": "5-0",
@@ -68,11 +68,11 @@
           },
           "rebounds": {
             "player": "Aleksas Bieliauskas",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "Kory Mincy",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Aleksas Bieliauskas",
@@ -84,6 +84,90 @@
         "rank": null,
         "loc": "South Carolina",
         "nick": "Gamecocks"
+      },
+      "espn_line": null,
+      "date": "2026-11-25",
+      "p4": true
+    },
+    {
+      "game_id": "401921716",
+      "start_utc": "2026-11-25T22:30Z",
+      "short_name": "BYU VS PROV",
+      "state": "in",
+      "status": "11:07 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "11:07",
+      "venue": "Lahaina Civic Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "2507",
+        "abbr": "PROV",
+        "name": "Providence Friars",
+        "score": 22,
+        "winner": null,
+        "record": "5-2",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Elijah Saunders",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Elijah Saunders",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Arrinten Page",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Arrinten Page",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Providence",
+        "nick": "Friars"
+      },
+      "away": {
+        "team_id": "252",
+        "abbr": "BYU",
+        "name": "BYU Cougars",
+        "score": 16,
+        "winner": null,
+        "record": "6-1",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Jaxon Kohler",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Jaxon Kohler",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Collin Chandler",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Collin Chandler",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 19,
+        "loc": "BYU",
+        "nick": "Cougars"
       },
       "espn_line": null,
       "date": "2026-11-25",
@@ -178,10 +262,10 @@
       "start_utc": "2026-11-25T21:13Z",
       "short_name": "TA&M VS XAV",
       "state": "in",
-      "status": "11:25 - 2nd",
+      "status": "7:59 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "11:25",
+      "clock": "7:59",
       "venue": "Imperial Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -191,7 +275,7 @@
         "team_id": "2752",
         "abbr": "XAV",
         "name": "Xavier Musketeers",
-        "score": 66,
+        "score": 73,
         "winner": null,
         "record": "5-1",
         "home_record": "4-1",
@@ -224,7 +308,7 @@
         "team_id": "245",
         "abbr": "TA&M",
         "name": "Texas A&M Aggies",
-        "score": 56,
+        "score": 63,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
@@ -594,90 +678,6 @@
       "p4": true
     },
     {
-      "game_id": "401921716",
-      "start_utc": "2026-11-25T22:30Z",
-      "short_name": "BYU VS PROV",
-      "state": "in",
-      "status": "15:35 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "15:35",
-      "venue": "Lahaina Civic Center",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "2507",
-        "abbr": "PROV",
-        "name": "Providence Friars",
-        "score": 8,
-        "winner": null,
-        "record": "5-2",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Arrinten Page",
-            "value": "5"
-          },
-          "rebounds": {
-            "player": "Miles Byrd",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Arrinten Page",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Arrinten Page",
-            "value": "5 PTS"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": null,
-        "loc": "Providence",
-        "nick": "Friars"
-      },
-      "away": {
-        "team_id": "252",
-        "abbr": "BYU",
-        "name": "BYU Cougars",
-        "score": 8,
-        "winner": null,
-        "record": "6-1",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Collin Chandler",
-            "value": "3"
-          },
-          "rebounds": {
-            "player": "Collin Chandler",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Collin Chandler",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Collin Chandler",
-            "value": "3 PTS"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 19,
-        "loc": "BYU",
-        "nick": "Cougars"
-      },
-      "espn_line": null,
-      "date": "2026-11-25",
-      "p4": true
-    },
-    {
       "game_id": "401909720",
       "start_utc": "2026-11-25T23:00Z",
       "short_name": "UALB @ SYR",
@@ -750,7 +750,7 @@
         "nick": "Great Danes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SYR -24.5",
         "spread": -24.5,
         "over_under": 145.5
@@ -831,7 +831,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MEM -3.5",
         "spread": 3.5,
         "over_under": 162.5
@@ -912,7 +912,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CONN -1.5",
         "spread": 1.5,
         "over_under": 145.5
@@ -993,7 +993,7 @@
         "nick": "Mustangs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "USU -3.5",
         "spread": -3.5,
         "over_under": 162.5
@@ -1074,7 +1074,7 @@
         "nick": "Spartans"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NCSU -28.5",
         "spread": -28.5,
         "over_under": 150.5
@@ -1155,7 +1155,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "WIS -19.5",
         "spread": -19.5,
         "over_under": 154.5
@@ -1236,10 +1236,10 @@
         "nick": "Demon Deacons"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MSST -3.5",
         "spread": -3.5,
-        "over_under": 148.5
+        "over_under": 149.5
       },
       "date": "2026-11-25",
       "p4": true
@@ -1317,7 +1317,7 @@
         "nick": "Lopes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "GCU -9.5",
         "spread": 9.5,
         "over_under": 153.5
@@ -1398,7 +1398,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "VCU -3.5",
         "spread": -3.5,
         "over_under": 144.5
@@ -1479,7 +1479,7 @@
         "nick": "Cardinal"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SLU -4.5",
         "spread": -4.5,
         "over_under": 152.5
@@ -1560,7 +1560,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CLEM -3.5",
         "spread": 3.5,
         "over_under": 148.5
