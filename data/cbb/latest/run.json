@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-24T23:45:27+00:00",
+  "finished_at": "2026-11-25T00:00:41+00:00",
   "game_date": "2026-11-24",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,19 +29,59 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 3516
+      "ODDS_API_KEY_20K": 3514
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Lipscomb Bisons @ Auburn Tigers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Central Michigan Chippewas @ Notre Dame Fighting Irish",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Evansville Purple Aces @ Missouri Tigers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "UNC Asheville Bulldogs @ Florida St Seminoles",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Colorado Buffaloes @ Stanford Cardinal",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Gonzaga Bulldogs @ Kansas St Wildcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
-    "events": 93,
-    "p4_events": 24,
+    "events": 92,
+    "p4_events": 19,
     "unmatched": [],
-    "due": 0,
+    "due": 6,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 4,
+      "pull_type": "pregame",
+      "rows": 32,
+      "credits_last": 2
     },
     "status": "ok"
   }
