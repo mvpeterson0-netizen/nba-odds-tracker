@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T00:00:19+00:00",
+  "fetched_at": "2026-11-25T00:15:18+00:00",
   "source": "espn",
   "count": 3,
   "game_date": "2026-11-24",
@@ -8,11 +8,11 @@
       "game_id": "401909314",
       "start_utc": "2026-11-25T00:00Z",
       "short_name": "DET @ ORL",
-      "state": "pre",
-      "status": "11/24 - 7:00 PM EST",
+      "state": "in",
+      "status": "9:01 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:01",
       "venue": "Kia Center",
       "neutral_site": false,
       "broadcasts": null,
@@ -26,21 +26,13 @@
         "home_record": "1-5",
         "away_record": "6-4",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Franz Wagner",
-            "value": "24.5"
-          },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Wendell Carter Jr.",
-            "value": "8.6"
-          },
-          "assistsPerGame": {
-            "player": "Franz Wagner",
-            "value": "8.2"
+            "value": "2"
           },
           "rating": {
-            "player": "Franz Wagner",
-            "value": "24.5 PPG, 6.9 RPG, 8.2 APG, 1.2 SPG, 0.3 BPG"
+            "player": "Wendell Carter Jr.",
+            "value": "2 REB"
           }
         }
       },
@@ -48,36 +40,31 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "10-6",
         "home_record": "3-3",
         "away_record": "7-3",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Daniss Jenkins",
-            "value": "14.1"
+          "points": {
+            "player": "Isaiah Joe",
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Ausar Thompson",
-            "value": "8.6"
+          "rebounds": {
+            "player": "Isaiah Joe",
+            "value": "2"
           },
-          "assistsPerGame": {
-            "player": "Ausar Thompson",
-            "value": "5.3"
+          "assists": {
+            "player": "Kevin Huerter",
+            "value": "2"
           },
           "rating": {
-            "player": "Ausar Thompson",
-            "value": "11.1 PPG, 8.6 RPG, 5.3 APG, 1.7 SPG, 0.8 BPG"
+            "player": "Kevin Huerter",
+            "value": "2 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ORL -3.5",
-        "spread": -3.5,
-        "over_under": 210.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909315",
@@ -150,7 +137,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "BOS -10.5",
         "spread": 10.5,
         "over_under": 218.5
@@ -229,7 +216,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "DEN -8.5",
         "spread": -8.5,
         "over_under": 234.5
