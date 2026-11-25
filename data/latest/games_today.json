@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T01:15:29+00:00",
+  "fetched_at": "2026-11-25T01:30:19+00:00",
   "source": "espn",
   "count": 3,
   "game_date": "2026-11-24",
@@ -9,10 +9,10 @@
       "start_utc": "2026-11-25T00:00Z",
       "short_name": "DET @ ORL",
       "state": "in",
-      "status": "Halftime",
+      "status": "8:25 - 3rd",
       "completed": false,
-      "period": 2,
-      "clock": "0.0",
+      "period": 3,
+      "clock": "8:25",
       "venue": "Kia Center",
       "neutral_site": false,
       "broadcasts": null,
@@ -20,7 +20,7 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 36,
+        "score": 42,
         "winner": null,
         "record": "7-9",
         "home_record": "1-5",
@@ -32,7 +32,7 @@
           },
           "rebounds": {
             "player": "Wendell Carter Jr.",
-            "value": "11"
+            "value": "12"
           },
           "assists": {
             "player": "Franz Wagner",
@@ -40,7 +40,7 @@
           },
           "rating": {
             "player": "Wendell Carter Jr.",
-            "value": "11 REB"
+            "value": "12 REB, 3 STL"
           }
         }
       },
@@ -48,7 +48,7 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 48,
+        "score": 55,
         "winner": null,
         "record": "10-6",
         "home_record": "3-3",
@@ -59,8 +59,8 @@
             "value": "15"
           },
           "rebounds": {
-            "player": "Isaiah Joe",
-            "value": "4"
+            "player": "Ausar Thompson",
+            "value": "6"
           },
           "assists": {
             "player": "Ausar Thompson",
@@ -79,10 +79,10 @@
       "start_utc": "2026-11-25T01:00Z",
       "short_name": "BOS @ WSH",
       "state": "in",
-      "status": "10:42 - 1st",
+      "status": "5:20 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "10:42",
+      "clock": "5:20",
       "venue": "Capital One Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -92,7 +92,7 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 2,
+        "score": 11,
         "winner": null,
         "record": "7-11",
         "home_record": "3-5",
@@ -100,11 +100,19 @@
         "leaders": {
           "points": {
             "player": "AJ Dybantsa",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "AJ Dybantsa",
             "value": "2"
+          },
+          "assists": {
+            "player": "AJ Dybantsa",
+            "value": "1"
           },
           "rating": {
             "player": "AJ Dybantsa",
-            "value": "2 PTS"
+            "value": "4 PTS"
           }
         }
       },
@@ -112,23 +120,27 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 5,
+        "score": 21,
         "winner": null,
         "record": "11-6",
         "home_record": "6-1",
         "away_record": "5-5",
         "leaders": {
           "points": {
-            "player": "Paul George",
-            "value": "3"
+            "player": "Neemias Queta",
+            "value": "13"
+          },
+          "rebounds": {
+            "player": "Neemias Queta",
+            "value": "2"
           },
           "assists": {
             "player": "Jayson Tatum",
-            "value": "1"
+            "value": "4"
           },
           "rating": {
-            "player": "Paul George",
-            "value": "3 PTS"
+            "player": "Neemias Queta",
+            "value": "13 PTS"
           }
         }
       },
@@ -207,7 +219,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "DEN -8.5",
         "spread": -8.5,
         "over_under": 234.5
