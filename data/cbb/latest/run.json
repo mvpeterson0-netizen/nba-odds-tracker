@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-25T21:00:49+00:00",
+  "finished_at": "2026-11-25T21:15:24+00:00",
   "game_date": "2026-11-25",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,36 +17,31 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 1,
-    "player_rows": 34,
+    "new_games": 0,
+    "player_rows": 0,
     "unparsed": [],
-    "queued": 1,
+    "queued": 0,
     "errors": [],
     "rosters_fetched": 0
   },
   "props": {
     "keys": 3,
     "credits": {
-      "ODDS_API_KEY": null,
+      "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
       "ODDS_API_KEY_20K": 3111
     },
     "pulled": [],
-    "errors": [
-      "ODDS_API_KEY: events HTTP 502"
-    ],
-    "events": 69,
-    "p4_events": 33,
+    "errors": [],
+    "events": 66,
+    "p4_events": 32,
     "unmatched": [],
     "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "not_due",
       "morning_due": false,
-      "pregame_due": 1,
-      "pull_type": "pregame",
-      "rows": 8,
-      "credits_last": 2
+      "pregame_due": 0
     },
     "status": "ok"
   }
