@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-25T00:15:23+00:00",
+  "finished_at": "2026-11-25T00:30:24+00:00",
   "game_date": "2026-11-24",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -30,19 +30,11 @@
       "ODDS_API_KEY_2": 0,
       "ODDS_API_KEY_20K": 3510
     },
-    "pulled": [
-      {
-        "matchup": "Boston Celtics @ Washington Wizards",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 174,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"
   }

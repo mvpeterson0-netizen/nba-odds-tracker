@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T00:15:18+00:00",
+  "fetched_at": "2026-11-25T00:30:18+00:00",
   "source": "espn",
   "count": 3,
   "game_date": "2026-11-24",
@@ -9,10 +9,10 @@
       "start_utc": "2026-11-25T00:00Z",
       "short_name": "DET @ ORL",
       "state": "in",
-      "status": "9:01 - 1st",
+      "status": "3:29 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "9:01",
+      "clock": "3:29",
       "venue": "Kia Center",
       "neutral_site": false,
       "broadcasts": null,
@@ -20,19 +20,27 @@
         "team_id": "19",
         "abbr": "ORL",
         "name": "Orlando Magic",
-        "score": 0,
+        "score": 15,
         "winner": null,
         "record": "7-9",
         "home_record": "1-5",
         "away_record": "6-4",
         "leaders": {
+          "points": {
+            "player": "Tristan da Silva",
+            "value": "6"
+          },
           "rebounds": {
             "player": "Wendell Carter Jr.",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Jalen Suggs",
             "value": "2"
           },
           "rating": {
-            "player": "Wendell Carter Jr.",
-            "value": "2 REB"
+            "player": "Tristan da Silva",
+            "value": "6 PTS"
           }
         }
       },
@@ -40,27 +48,27 @@
         "team_id": "8",
         "abbr": "DET",
         "name": "Detroit Pistons",
-        "score": 6,
+        "score": 16,
         "winner": null,
         "record": "10-6",
         "home_record": "3-3",
         "away_record": "7-3",
         "leaders": {
           "points": {
-            "player": "Isaiah Joe",
-            "value": "2"
+            "player": "Kevin Huerter",
+            "value": "4"
           },
           "rebounds": {
-            "player": "Isaiah Joe",
-            "value": "2"
+            "player": "Kevin Huerter",
+            "value": "3"
           },
           "assists": {
             "player": "Kevin Huerter",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Kevin Huerter",
-            "value": "2 PTS"
+            "value": "4 PTS"
           }
         }
       },
