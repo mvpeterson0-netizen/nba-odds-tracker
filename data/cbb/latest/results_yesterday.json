@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T05:15:38+00:00",
+  "fetched_at": "2026-11-25T05:30:30+00:00",
   "source": "espn",
   "count": 24,
   "game_date": "2026-11-24",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-25T04:18Z",
       "short_name": "ORE VS SJU",
       "state": "in",
-      "status": "1:25 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "1:25",
+      "clock": "0:00",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2599",
         "abbr": "SJU",
         "name": "St. John's Red Storm",
-        "score": 41,
+        "score": 45,
         "winner": null,
         "record": "5-0",
         "home_record": "5-0",
@@ -31,7 +31,7 @@
         "leaders": {
           "points": {
             "player": "Ian Jackson",
-            "value": "10"
+            "value": "12"
           },
           "rebounds": {
             "player": "Tounde Yessoufou",
@@ -39,11 +39,11 @@
           },
           "assists": {
             "player": "Quinn Ellis",
-            "value": "3"
+            "value": "5"
           },
           "rating": {
             "player": "Ian Jackson",
-            "value": "10 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "4",
@@ -67,7 +67,7 @@
             "value": "6"
           },
           "rebounds": {
-            "player": "Tajh Ariza",
+            "player": "Fred Payne",
             "value": "3"
           },
           "assists": {
@@ -84,90 +84,6 @@
         "rank": null,
         "loc": "Oregon",
         "nick": "Ducks"
-      },
-      "espn_line": null,
-      "date": "2026-11-24",
-      "p4": true
-    },
-    {
-      "game_id": "401906762",
-      "start_utc": "2026-11-25T03:05Z",
-      "short_name": "BAY VS ALA",
-      "state": "in",
-      "status": "0:18 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "0:18",
-      "venue": "T-Mobile Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "333",
-        "abbr": "ALA",
-        "name": "Alabama Crimson Tide",
-        "score": 61,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Amari Allen",
-            "value": "18"
-          },
-          "rebounds": {
-            "player": "Amari Allen",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Amari Allen",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Amari Allen",
-            "value": "18 PTS, 9 REB"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 15,
-        "loc": "Alabama",
-        "nick": "Crimson Tide"
-      },
-      "away": {
-        "team_id": "239",
-        "abbr": "BAY",
-        "name": "Baylor Bears",
-        "score": 64,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Kayden Mingo",
-            "value": "19"
-          },
-          "rebounds": {
-            "player": "Dylan Mingo",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Kayden Mingo",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Kayden Mingo",
-            "value": "19 PTS"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Baylor",
-        "nick": "Bears"
       },
       "espn_line": null,
       "date": "2026-11-24",
@@ -588,6 +504,90 @@
         "rank": 14,
         "loc": "Vanderbilt",
         "nick": "Commodores"
+      },
+      "espn_line": null,
+      "date": "2026-11-24",
+      "p4": true
+    },
+    {
+      "game_id": "401906762",
+      "start_utc": "2026-11-25T03:05Z",
+      "short_name": "BAY VS ALA",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "T-Mobile Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "333",
+        "abbr": "ALA",
+        "name": "Alabama Crimson Tide",
+        "score": 63,
+        "winner": false,
+        "record": "5-1",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Amari Allen",
+            "value": "18"
+          },
+          "rebounds": {
+            "player": "Amari Allen",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Amari Allen",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Amari Allen",
+            "value": "18 PTS, 9 REB"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 15,
+        "loc": "Alabama",
+        "nick": "Crimson Tide"
+      },
+      "away": {
+        "team_id": "239",
+        "abbr": "BAY",
+        "name": "Baylor Bears",
+        "score": 68,
+        "winner": true,
+        "record": "5-1",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Kayden Mingo",
+            "value": "19"
+          },
+          "rebounds": {
+            "player": "Dylan Mingo",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Kayden Mingo",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Kayden Mingo",
+            "value": "19 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Baylor",
+        "nick": "Bears"
       },
       "espn_line": null,
       "date": "2026-11-24",
@@ -1854,87 +1854,6 @@
       "p4": true
     },
     {
-      "game_id": "401909763",
-      "start_utc": "2026-11-25T04:59Z",
-      "short_name": "COLO VS STAN",
-      "state": "pre",
-      "status": "11/24 - 11:59 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Acrisure Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "CBSSN"
-      ],
-      "home": {
-        "team_id": "24",
-        "abbr": "STAN",
-        "name": "Stanford Cardinal",
-        "score": 0,
-        "winner": null,
-        "record": "5-1",
-        "home_record": "5-0",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Nick Townsend",
-            "value": "15.8"
-          },
-          "reboundsPerGame": {
-            "player": "Nick Townsend",
-            "value": "7.5"
-          },
-          "assistsPerGame": {
-            "player": "Nick Townsend",
-            "value": "3.8"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Stanford",
-        "nick": "Cardinal"
-      },
-      "away": {
-        "team_id": "38",
-        "abbr": "COLO",
-        "name": "Colorado Buffaloes",
-        "score": 0,
-        "winner": null,
-        "record": "2-3",
-        "home_record": "2-1",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Barrington Hargress",
-            "value": "16.2"
-          },
-          "reboundsPerGame": {
-            "player": "Justin Neely",
-            "value": "6.0"
-          },
-          "assistsPerGame": {
-            "player": "Barrington Hargress",
-            "value": "4.4"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Colorado",
-        "nick": "Buffaloes"
-      },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "STAN -4.5",
-        "spread": -4.5,
-        "over_under": 140.5
-      },
-      "date": "2026-11-24",
-      "p4": true
-    },
-    {
       "game_id": "401909800",
       "start_utc": "2026-11-25T05:30Z",
       "short_name": "GONZ VS KSU",
@@ -2007,10 +1926,91 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
-        "details": "GONZ -15.5",
-        "spread": 15.5,
+        "provider": "DraftKings",
+        "details": "GONZ -14.5",
+        "spread": 14.5,
         "over_under": 157.5
+      },
+      "date": "2026-11-24",
+      "p4": true
+    },
+    {
+      "game_id": "401909763",
+      "start_utc": "2026-11-25T06:00Z",
+      "short_name": "COLO VS STAN",
+      "state": "pre",
+      "status": "11/25 - 1:00 AM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Acrisure Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "CBSSN"
+      ],
+      "home": {
+        "team_id": "24",
+        "abbr": "STAN",
+        "name": "Stanford Cardinal",
+        "score": 0,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "5-0",
+        "away_record": "0-1",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Nick Townsend",
+            "value": "15.8"
+          },
+          "reboundsPerGame": {
+            "player": "Nick Townsend",
+            "value": "7.5"
+          },
+          "assistsPerGame": {
+            "player": "Nick Townsend",
+            "value": "3.8"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Stanford",
+        "nick": "Cardinal"
+      },
+      "away": {
+        "team_id": "38",
+        "abbr": "COLO",
+        "name": "Colorado Buffaloes",
+        "score": 0,
+        "winner": null,
+        "record": "2-3",
+        "home_record": "2-1",
+        "away_record": "0-1",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Barrington Hargress",
+            "value": "16.2"
+          },
+          "reboundsPerGame": {
+            "player": "Justin Neely",
+            "value": "6.0"
+          },
+          "assistsPerGame": {
+            "player": "Barrington Hargress",
+            "value": "4.4"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Colorado",
+        "nick": "Buffaloes"
+      },
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "STAN -4.5",
+        "spread": -4.5,
+        "over_under": 140.5
       },
       "date": "2026-11-24",
       "p4": true
