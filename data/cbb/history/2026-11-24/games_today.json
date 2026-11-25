@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T03:00:30+00:00",
+  "fetched_at": "2026-11-25T03:15:39+00:00",
   "source": "espn",
   "count": 24,
   "game_date": "2026-11-24",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-25T01:37Z",
       "short_name": "TTU VS LOU",
       "state": "in",
-      "status": "14:09 - 2nd",
+      "status": "10:38 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "14:09",
+      "clock": "10:38",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "97",
         "abbr": "LOU",
         "name": "Louisville Cardinals",
-        "score": 37,
+        "score": 47,
         "winner": null,
         "record": "3-1",
         "home_record": "3-0",
@@ -31,7 +31,7 @@
         "leaders": {
           "points": {
             "player": "Karter Knox",
-            "value": "16"
+            "value": "18"
           },
           "rebounds": {
             "player": "Flory Bidunga",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Karter Knox",
-            "value": "16 PTS"
+            "value": "18 PTS"
           }
         },
         "conf_id": "2",
@@ -56,7 +56,7 @@
         "team_id": "2641",
         "abbr": "TTU",
         "name": "Texas Tech Red Raiders",
-        "score": 33,
+        "score": 40,
         "winner": null,
         "record": "5-0",
         "home_record": "5-0",
@@ -64,7 +64,7 @@
         "leaders": {
           "points": {
             "player": "Darrion Williams",
-            "value": "12"
+            "value": "15"
           },
           "rebounds": {
             "player": "Darrion Williams",
@@ -76,7 +76,7 @@
           },
           "rating": {
             "player": "Darrion Williams",
-            "value": "12 PTS"
+            "value": "15 PTS"
           }
         },
         "conf_id": "8",
@@ -93,11 +93,11 @@
       "game_id": "401921711",
       "start_utc": "2026-11-25T01:00Z",
       "short_name": "CLEM VS WASH",
-      "state": "in",
-      "status": "0:38 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "0:38",
+      "clock": "0:00",
       "venue": "Lahaina Civic Center",
       "neutral_site": true,
       "broadcasts": [
@@ -107,9 +107,9 @@
         "team_id": "264",
         "abbr": "WASH",
         "name": "Washington Huskies",
-        "score": 62,
-        "winner": null,
-        "record": "4-1",
+        "score": 64,
+        "winner": true,
+        "record": "5-1",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
@@ -140,15 +140,15 @@
         "team_id": "228",
         "abbr": "CLEM",
         "name": "Clemson Tigers",
-        "score": 60,
-        "winner": null,
-        "record": "4-2",
+        "score": 63,
+        "winner": false,
+        "record": "4-3",
         "home_record": "4-1",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "Ace Buckner",
-            "value": "17"
+            "value": "20"
           },
           "rebounds": {
             "player": "Dylan Faulkner",
@@ -174,98 +174,14 @@
       "p4": true
     },
     {
-      "game_id": "401911026",
-      "start_utc": "2026-11-25T01:00Z",
-      "short_name": "CMU @ ND",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Purcell Pavilion",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACCNX"
-      ],
-      "home": {
-        "team_id": "87",
-        "abbr": "ND",
-        "name": "Notre Dame Fighting Irish",
-        "score": 88,
-        "winner": true,
-        "record": "7-1",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Braeden Shrewsberry",
-            "value": "29"
-          },
-          "rebounds": {
-            "player": "Brady Koehler",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Braeden Shrewsberry",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Braeden Shrewsberry",
-            "value": "29 PTS"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Notre Dame",
-        "nick": "Fighting Irish"
-      },
-      "away": {
-        "team_id": "2117",
-        "abbr": "CMU",
-        "name": "Central Michigan Chippewas",
-        "score": 70,
-        "winner": false,
-        "record": "4-3",
-        "home_record": "2-0",
-        "away_record": "2-3",
-        "leaders": {
-          "points": {
-            "player": "Phat Phat Brooks",
-            "value": "20"
-          },
-          "rebounds": {
-            "player": "Keenan Garner",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Phat Phat Brooks",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Phat Phat Brooks",
-            "value": "20 PTS, 6 AST"
-          }
-        },
-        "conf_id": "14",
-        "conf": null,
-        "rank": null,
-        "loc": "Central Michigan",
-        "nick": "Chippewas"
-      },
-      "espn_line": null,
-      "date": "2026-11-24",
-      "p4": true
-    },
-    {
       "game_id": "401921817",
       "start_utc": "2026-11-25T02:00Z",
       "short_name": "EVAN @ MIZ",
       "state": "in",
-      "status": "0:00 - 1st",
+      "status": "16:53 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "16:53",
       "venue": "Mizzou Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -275,27 +191,27 @@
         "team_id": "142",
         "abbr": "MIZ",
         "name": "Missouri Tigers",
-        "score": 37,
+        "score": 48,
         "winner": null,
         "record": "5-1",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Bryson Tiller",
-            "value": "12"
+            "player": "Jason Crowe Jr.",
+            "value": "15"
           },
           "rebounds": {
             "player": "Toni Bryant",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
             "player": "Trent Pierce",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
-            "player": "Bryson Tiller",
-            "value": "12 PTS"
+            "player": "Jason Crowe Jr.",
+            "value": "15 PTS"
           }
         },
         "conf_id": "23",
@@ -308,27 +224,27 @@
         "team_id": "339",
         "abbr": "EVAN",
         "name": "Evansville Purple Aces",
-        "score": 29,
+        "score": 34,
         "winner": null,
         "record": "3-3",
         "home_record": "3-1",
         "away_record": "0-2",
         "leaders": {
           "points": {
-            "player": "Caden Symons",
-            "value": "10"
+            "player": "Max Langenfeld",
+            "value": "12"
           },
           "rebounds": {
             "player": "Caden Symons",
             "value": "4"
           },
           "assists": {
-            "player": "Caden Symons",
+            "player": "Max Langenfeld",
             "value": "2"
           },
           "rating": {
             "player": "Max Langenfeld",
-            "value": "9 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "18",
@@ -346,10 +262,10 @@
       "start_utc": "2026-11-25T02:00Z",
       "short_name": "UNCA @ FSU",
       "state": "in",
-      "status": "Halftime",
+      "status": "19:47 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "19:47",
       "venue": "Donald L. Tucker Center",
       "neutral_site": false,
       "broadcasts": [
@@ -371,7 +287,7 @@
           },
           "rebounds": {
             "player": "Marcis Ponder",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Shon Abaev",
@@ -1686,14 +1602,98 @@
       "p4": true
     },
     {
+      "game_id": "401911026",
+      "start_utc": "2026-11-25T01:00Z",
+      "short_name": "CMU @ ND",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Purcell Pavilion",
+      "neutral_site": false,
+      "broadcasts": [
+        "ACCNX"
+      ],
+      "home": {
+        "team_id": "87",
+        "abbr": "ND",
+        "name": "Notre Dame Fighting Irish",
+        "score": 88,
+        "winner": true,
+        "record": "7-1",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Braeden Shrewsberry",
+            "value": "29"
+          },
+          "rebounds": {
+            "player": "Brady Koehler",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Braeden Shrewsberry",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Braeden Shrewsberry",
+            "value": "29 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Notre Dame",
+        "nick": "Fighting Irish"
+      },
+      "away": {
+        "team_id": "2117",
+        "abbr": "CMU",
+        "name": "Central Michigan Chippewas",
+        "score": 70,
+        "winner": false,
+        "record": "4-3",
+        "home_record": "2-0",
+        "away_record": "2-3",
+        "leaders": {
+          "points": {
+            "player": "Phat Phat Brooks",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Keenan Garner",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Phat Phat Brooks",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Phat Phat Brooks",
+            "value": "20 PTS, 6 AST"
+          }
+        },
+        "conf_id": "14",
+        "conf": null,
+        "rank": null,
+        "loc": "Central Michigan",
+        "nick": "Chippewas"
+      },
+      "espn_line": null,
+      "date": "2026-11-24",
+      "p4": true
+    },
+    {
       "game_id": "401906762",
       "start_utc": "2026-11-25T03:05Z",
       "short_name": "BAY VS ALA",
-      "state": "pre",
-      "status": "11/24 - 10:05 PM EST",
+      "state": "in",
+      "status": "15:49 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:49",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -1703,23 +1703,27 @@
         "team_id": "333",
         "abbr": "ALA",
         "name": "Alabama Crimson Tide",
-        "score": 0,
+        "score": 4,
         "winner": null,
         "record": "5-0",
         "home_record": "5-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Amari Allen",
-            "value": "16.2"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Brandon Garrison",
-            "value": "5.2"
+            "value": "2"
           },
-          "assistsPerGame": {
+          "rebounds": {
+            "player": "Brandon Garrison",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Aden Holloway",
+            "value": "1"
+          },
+          "rating": {
             "player": "Amari Allen",
-            "value": "6.0"
+            "value": "2 PTS"
           }
         },
         "conf_id": "23",
@@ -1732,23 +1736,23 @@
         "team_id": "239",
         "abbr": "BAY",
         "name": "Baylor Bears",
-        "score": 0,
+        "score": 7,
         "winner": null,
         "record": "4-1",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Brett Decker Jr.",
-            "value": "17.4"
-          },
-          "reboundsPerGame": {
+          "points": {
             "player": "Dylan Mingo",
-            "value": "5.0"
+            "value": "5"
           },
-          "assistsPerGame": {
-            "player": "Isaac Williams IV",
-            "value": "5.0"
+          "rebounds": {
+            "player": "Elijah Williams",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Elijah Williams",
+            "value": "2 PTS"
           }
         },
         "conf_id": "8",
@@ -1757,12 +1761,7 @@
         "loc": "Baylor",
         "nick": "Bears"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ALA -1.5",
-        "spread": -1.5,
-        "over_under": 174.5
-      },
+      "espn_line": null,
       "date": "2026-11-24",
       "p4": true
     },
@@ -1839,10 +1838,10 @@
         "nick": "Ducks"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SJU -10.5",
         "spread": -10.5,
-        "over_under": 157.5
+        "over_under": 156.5
       },
       "date": "2026-11-24",
       "p4": true
@@ -1920,7 +1919,7 @@
         "nick": "Buffaloes"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "STAN -4.5",
         "spread": -4.5,
         "over_under": 140.5
@@ -2001,7 +2000,7 @@
         "nick": "Bulldogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GONZ -15.5",
         "spread": 15.5,
         "over_under": 157.5

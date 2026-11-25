@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T03:00:23+00:00",
+  "fetched_at": "2026-11-25T03:15:29+00:00",
   "source": "espn",
   "count": 3,
   "game_date": "2026-11-24",
@@ -79,10 +79,10 @@
       "start_utc": "2026-11-25T01:00Z",
       "short_name": "BOS @ WSH",
       "state": "in",
-      "status": "End of 3rd",
+      "status": "7:01 - 4th",
       "completed": false,
-      "period": 3,
-      "clock": "0.1",
+      "period": 4,
+      "clock": "7:01",
       "venue": "Capital One Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -92,7 +92,7 @@
         "team_id": "27",
         "abbr": "WSH",
         "name": "Washington Wizards",
-        "score": 89,
+        "score": 99,
         "winner": null,
         "record": "7-11",
         "home_record": "3-5",
@@ -100,7 +100,7 @@
         "leaders": {
           "points": {
             "player": "Anthony Davis",
-            "value": "27"
+            "value": "29"
           },
           "rebounds": {
             "player": "Anthony Davis",
@@ -112,7 +112,7 @@
           },
           "rating": {
             "player": "Anthony Davis",
-            "value": "27 PTS, 12 REB"
+            "value": "29 PTS, 12 REB"
           }
         }
       },
@@ -120,7 +120,7 @@
         "team_id": "2",
         "abbr": "BOS",
         "name": "Boston Celtics",
-        "score": 104,
+        "score": 113,
         "winner": null,
         "record": "11-6",
         "home_record": "6-1",
@@ -128,19 +128,19 @@
         "leaders": {
           "points": {
             "player": "Jayson Tatum",
-            "value": "31"
+            "value": "37"
           },
           "rebounds": {
             "player": "Derrick White",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Paul George",
-            "value": "7"
+            "value": "8"
           },
           "rating": {
             "player": "Jayson Tatum",
-            "value": "31 PTS, 6 AST"
+            "value": "37 PTS, 6 AST"
           }
         }
       },
@@ -150,11 +150,11 @@
       "game_id": "401909316",
       "start_utc": "2026-11-25T03:00Z",
       "short_name": "DAL @ DEN",
-      "state": "pre",
-      "status": "11/24 - 10:00 PM EST",
+      "state": "in",
+      "status": "10:42 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:42",
       "venue": "Ball Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -166,27 +166,27 @@
         "team_id": "7",
         "abbr": "DEN",
         "name": "Denver Nuggets",
-        "score": 0,
+        "score": 3,
         "winner": null,
         "record": "10-5",
         "home_record": "4-3",
         "away_record": "5-2",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
+            "player": "Cameron Johnson",
+            "value": "3"
+          },
+          "rebounds": {
             "player": "Jamal Murray",
-            "value": "26.2"
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Nikola Jokic",
-            "value": "10.9"
-          },
-          "assistsPerGame": {
-            "player": "Nikola Jokic",
-            "value": "9.2"
+          "assists": {
+            "player": "Christian Braun",
+            "value": "1"
           },
           "rating": {
-            "player": "Nikola Jokic",
-            "value": "25.1 PPG, 10.9 RPG, 9.2 APG, 1.5 SPG, 1.0 BPG"
+            "player": "Cameron Johnson",
+            "value": "3 PTS"
           }
         }
       },
@@ -199,31 +199,9 @@
         "record": "10-7",
         "home_record": "7-2",
         "away_record": "3-5",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Cooper Flagg",
-            "value": "24.3"
-          },
-          "reboundsPerGame": {
-            "player": "P.J. Washington",
-            "value": "6.7"
-          },
-          "assistsPerGame": {
-            "player": "Cooper Flagg",
-            "value": "6.4"
-          },
-          "rating": {
-            "player": "Cooper Flagg",
-            "value": "24.3 PPG, 6.3 RPG, 6.4 APG, 1.9 SPG, 0.7 BPG"
-          }
-        }
+        "leaders": null
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "DEN -7.5",
-        "spread": -7.5,
-        "over_under": 234.5
-      }
+      "espn_line": null
     }
   ]
 }
