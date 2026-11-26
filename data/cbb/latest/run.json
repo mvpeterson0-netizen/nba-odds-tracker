@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-26T21:00:39+00:00",
+  "finished_at": "2026-11-26T21:13:28+00:00",
   "game_date": "2026-11-26",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,10 +17,10 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 0,
-    "player_rows": 0,
+    "new_games": 1,
+    "player_rows": 31,
     "unparsed": [],
-    "queued": 0,
+    "queued": 1,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -31,63 +31,17 @@
       "ODDS_API_KEY_2": 0,
       "ODDS_API_KEY_20K": 2555
     },
-    "pulled": [
-      {
-        "matchup": "Utah State Aggies @ USC Trojans",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Saint Mary's Gaels @ UCLA Bruins",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "TCU Horned Frogs @ Creighton Bluejays",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "DePaul Blue Demons @ Pittsburgh Panthers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "SMU Mustangs @ LSU Tigers",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Kansas St Wildcats @ Alabama Crimson Tide",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Texas Tech Red Raiders @ Oregon Ducks",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "events": 42,
     "p4_events": 24,
     "unmatched": [],
-    "due": 7,
+    "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "not_due",
       "morning_due": false,
-      "pregame_due": 1,
-      "pull_type": "pregame",
-      "rows": 8,
-      "credits_last": 2
+      "pregame_due": 0
     },
     "status": "ok"
   }
