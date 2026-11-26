@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T05:30:22+00:00",
+  "fetched_at": "2026-11-26T05:45:20+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
@@ -9,11 +9,11 @@
       "game_id": "401921671",
       "start_utc": "2026-11-26T03:30Z",
       "short_name": "GCU VS COLO",
-      "state": "in",
-      "status": "0:23 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "0:23",
+      "clock": "0:00",
       "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,9 +23,9 @@
         "team_id": "38",
         "abbr": "COLO",
         "name": "Colorado Buffaloes",
-        "score": 71,
-        "winner": null,
-        "record": "3-3",
+        "score": 73,
+        "winner": false,
+        "record": "3-4",
         "home_record": "2-1",
         "away_record": "0-1",
         "leaders": {
@@ -56,15 +56,15 @@
         "team_id": "2253",
         "abbr": "GCU",
         "name": "Grand Canyon Lopes",
-        "score": 74,
-        "winner": null,
-        "record": "5-0",
+        "score": 79,
+        "winner": true,
+        "record": "6-0",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
             "player": "Makaih Williams",
-            "value": "18"
+            "value": "20"
           },
           "rebounds": {
             "player": "Blake Barkley",
@@ -76,7 +76,7 @@
           },
           "rating": {
             "player": "Makaih Williams",
-            "value": "18 PTS"
+            "value": "20 PTS"
           }
         },
         "conf_id": "44",
@@ -1487,11 +1487,11 @@
       "game_id": "401921714",
       "start_utc": "2026-11-26T05:30Z",
       "short_name": "CLEM VS CSU",
-      "state": "pre",
-      "status": "11/26 - 12:30 AM EST",
+      "state": "in",
+      "status": "15:25 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:25",
       "venue": "Lahaina Civic Center",
       "neutral_site": true,
       "broadcasts": [
@@ -1501,23 +1501,27 @@
         "team_id": "36",
         "abbr": "CSU",
         "name": "Colorado State Rams",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "4-3",
         "home_record": "4-1",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Carey Booth",
-            "value": "14.4"
+            "value": "5"
           },
-          "reboundsPerGame": {
-            "player": "Carey Booth",
-            "value": "7.4"
+          "rebounds": {
+            "player": "Kyle Jorgensen",
+            "value": "1"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Jase Butler",
-            "value": "6.6"
+            "value": "1"
+          },
+          "rating": {
+            "player": "Carey Booth",
+            "value": "5 PTS"
           }
         },
         "conf_id": "21",
@@ -1530,23 +1534,27 @@
         "team_id": "228",
         "abbr": "CLEM",
         "name": "Clemson Tigers",
-        "score": 0,
+        "score": 4,
         "winner": null,
         "record": "4-3",
         "home_record": "4-1",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Ace Buckner",
-            "value": "17.0"
+          "points": {
+            "player": "David Fuchs",
+            "value": "2"
           },
-          "reboundsPerGame": {
+          "rebounds": {
+            "player": "David Fuchs",
+            "value": "4"
+          },
+          "assists": {
             "player": "Dylan Faulkner",
-            "value": "7.1"
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Ace Buckner",
-            "value": "4.7"
+          "rating": {
+            "player": "David Fuchs",
+            "value": "2 PTS"
           }
         },
         "conf_id": "2",
@@ -1555,12 +1563,7 @@
         "loc": "Clemson",
         "nick": "Tigers"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "CLEM -3.5",
-        "spread": 3.5,
-        "over_under": 147.5
-      },
+      "espn_line": null,
       "date": "2026-11-25",
       "p4": true
     }

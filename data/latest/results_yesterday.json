@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T05:30:17+00:00",
+  "fetched_at": "2026-11-26T05:45:16+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-25",
@@ -583,11 +583,11 @@
       "game_id": "401909325",
       "start_utc": "2026-11-26T03:00Z",
       "short_name": "SA @ POR",
-      "state": "in",
-      "status": "2:34 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "2:34",
+      "clock": "0.0",
       "venue": "Moda Center",
       "neutral_site": false,
       "broadcasts": [
@@ -599,19 +599,19 @@
         "team_id": "22",
         "abbr": "POR",
         "name": "Portland Trail Blazers",
-        "score": 109,
-        "winner": null,
-        "record": "11-6",
-        "home_record": "3-2",
+        "score": 116,
+        "winner": true,
+        "record": "12-6",
+        "home_record": "4-2",
         "away_record": "8-4",
         "leaders": {
           "points": {
-            "player": "Damian Lillard",
-            "value": "29"
+            "player": "Deni Avdija",
+            "value": "33"
           },
           "rebounds": {
             "player": "Deni Avdija",
-            "value": "9"
+            "value": "12"
           },
           "assists": {
             "player": "Deni Avdija",
@@ -619,7 +619,7 @@
           },
           "rating": {
             "player": "Deni Avdija",
-            "value": "27 PTS, 9 REB, 7 AST"
+            "value": "33 PTS, 12 REB, 7 AST"
           }
         }
       },
@@ -627,27 +627,27 @@
         "team_id": "24",
         "abbr": "SA",
         "name": "San Antonio Spurs",
-        "score": 107,
-        "winner": null,
-        "record": "15-3",
+        "score": 111,
+        "winner": false,
+        "record": "15-4",
         "home_record": "7-3",
-        "away_record": "8-0",
+        "away_record": "8-1",
         "leaders": {
           "points": {
             "player": "Victor Wembanyama",
-            "value": "42"
+            "value": "44"
           },
           "rebounds": {
             "player": "Victor Wembanyama",
-            "value": "15"
+            "value": "17"
           },
           "assists": {
             "player": "Stephon Castle",
-            "value": "8"
+            "value": "9"
           },
           "rating": {
             "player": "Victor Wembanyama",
-            "value": "42 PTS, 15 REB"
+            "value": "44 PTS, 17 REB"
           }
         }
       },
