@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T18:45:28+00:00",
+  "fetched_at": "2026-11-26T19:00:32+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-26T17:00Z",
       "short_name": "OU VS PUR",
       "state": "in",
-      "status": "6:28 - 2nd",
+      "status": "0:25 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "6:28",
+      "clock": "0:25",
       "venue": "Suncoast Credit Union Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2509",
         "abbr": "PUR",
         "name": "Purdue Boilermakers",
-        "score": 51,
+        "score": 60,
         "winner": null,
         "record": "4-3",
         "home_record": "4-1",
@@ -35,7 +35,7 @@
           },
           "rebounds": {
             "player": "Caden Pierce",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Antione West Jr",
@@ -56,7 +56,7 @@
         "team_id": "201",
         "abbr": "OU",
         "name": "Oklahoma Sooners",
-        "score": 55,
+        "score": 66,
         "winner": null,
         "record": "4-2",
         "home_record": "4-1",
@@ -64,19 +64,19 @@
         "leaders": {
           "points": {
             "player": "Pop Isaacs",
-            "value": "15"
+            "value": "17"
           },
           "rebounds": {
             "player": "B.J. Edwards",
-            "value": "7"
+            "value": "9"
           },
           "assists": {
             "player": "Pop Isaacs",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Pop Isaacs",
-            "value": "15 PTS"
+            "value": "17 PTS"
           }
         },
         "conf_id": "23",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-26T18:00Z",
       "short_name": "MD VS SDSU",
       "state": "in",
-      "status": "6:03 - 1st",
+      "status": "1:49 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "6:03",
+      "clock": "1:49",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "21",
         "abbr": "SDSU",
         "name": "San Diego State Aztecs",
-        "score": 21,
+        "score": 32,
         "winner": null,
         "record": "5-1",
         "home_record": "3-0",
@@ -115,7 +115,7 @@
         "leaders": {
           "points": {
             "player": "Latrell Davis",
-            "value": "7"
+            "value": "11"
           },
           "rebounds": {
             "player": "Elzie Harrington",
@@ -123,11 +123,11 @@
           },
           "assists": {
             "player": "Bear Cherry",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
-            "player": "Bear Cherry",
-            "value": "4 BLK"
+            "player": "Latrell Davis",
+            "value": "11 PTS"
           }
         },
         "conf_id": "21",
@@ -140,7 +140,7 @@
         "team_id": "120",
         "abbr": "MD",
         "name": "Maryland Terrapins",
-        "score": 14,
+        "score": 29,
         "winner": null,
         "record": "3-3",
         "home_record": "3-1",
@@ -148,19 +148,19 @@
         "leaders": {
           "points": {
             "player": "DJ Wagner",
-            "value": "5"
+            "value": "8"
           },
           "rebounds": {
             "player": "DJ Wagner",
             "value": "3"
           },
           "assists": {
-            "player": "DJ Wagner",
-            "value": "2"
+            "player": "Baba Oladotun",
+            "value": "3"
           },
           "rating": {
             "player": "DJ Wagner",
-            "value": "5 PTS"
+            "value": "8 PTS"
           }
         },
         "conf_id": "7",
@@ -168,6 +168,82 @@
         "rank": null,
         "loc": "Maryland",
         "nick": "Terrapins"
+      },
+      "espn_line": null,
+      "date": "2026-11-26",
+      "p4": true
+    },
+    {
+      "game_id": "401929282",
+      "start_utc": "2026-11-26T18:30Z",
+      "short_name": "BC VS UCF",
+      "state": "in",
+      "status": "15:27 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "15:27",
+      "venue": "State Farm Field House",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "2116",
+        "abbr": "UCF",
+        "name": "UCF Knights",
+        "score": 2,
+        "winner": null,
+        "record": "4-2",
+        "home_record": "4-1",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Arturo Dean",
+            "value": "2"
+          },
+          "rebounds": {
+            "player": "Mister Dean",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Arturo Dean",
+            "value": "2 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "UCF",
+        "nick": "Knights"
+      },
+      "away": {
+        "team_id": "103",
+        "abbr": "BC",
+        "name": "Boston College Eagles",
+        "score": 1,
+        "winner": null,
+        "record": "6-0",
+        "home_record": "4-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Luke Hunger",
+            "value": "1"
+          },
+          "rebounds": {
+            "player": "Armoni Zeigler",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Money Williams",
+            "value": "1 REB"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Boston College",
+        "nick": "Eagles"
       },
       "espn_line": null,
       "date": "2026-11-26",
@@ -258,90 +334,9 @@
       "p4": true
     },
     {
-      "game_id": "401929282",
-      "start_utc": "2026-11-26T18:30Z",
-      "short_name": "BC VS UCF",
-      "state": "pre",
-      "status": "11/26 - 1:30 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "State Farm Field House",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "2116",
-        "abbr": "UCF",
-        "name": "UCF Knights",
-        "score": 0,
-        "winner": null,
-        "record": "4-2",
-        "home_record": "4-1",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Dior Johnson",
-            "value": "29.0"
-          },
-          "reboundsPerGame": {
-            "player": "John Bol",
-            "value": "5.0"
-          },
-          "assistsPerGame": {
-            "player": "Dior Johnson",
-            "value": "3.5"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "UCF",
-        "nick": "Knights"
-      },
-      "away": {
-        "team_id": "103",
-        "abbr": "BC",
-        "name": "Boston College Eagles",
-        "score": 0,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "4-0",
-        "away_record": "1-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Zak Smrekar",
-            "value": "14.0"
-          },
-          "reboundsPerGame": {
-            "player": "Brandon Benjamin",
-            "value": "9.8"
-          },
-          "assistsPerGame": {
-            "player": "Armoni Zeigler",
-            "value": "4.5"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Boston College",
-        "nick": "Eagles"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "UCF -1.5",
-        "spread": -1.5,
-        "over_under": 147.5
-      },
-      "date": "2026-11-26",
-      "p4": true
-    },
-    {
       "game_id": "401921674",
       "start_utc": "2026-11-26T19:00Z",
-      "short_name": "SC VS ASU",
+      "short_name": "ASU VS SC",
       "state": "pre",
       "status": "11/26 - 2:00 PM EST",
       "completed": false,
@@ -353,35 +348,6 @@
         "CBSSN"
       ],
       "home": {
-        "team_id": "9",
-        "abbr": "ASU",
-        "name": "Arizona State Sun Devils",
-        "score": 0,
-        "winner": null,
-        "record": "5-1",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Paulius Murauskas",
-            "value": "26.2"
-          },
-          "reboundsPerGame": {
-            "player": "Dillan Shaw",
-            "value": "9.8"
-          },
-          "assistsPerGame": {
-            "player": "Joel Foxwell",
-            "value": "6.8"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Arizona State",
-        "nick": "Sun Devils"
-      },
-      "away": {
         "team_id": "2579",
         "abbr": "SC",
         "name": "South Carolina Gamecocks",
@@ -409,6 +375,35 @@
         "rank": null,
         "loc": "South Carolina",
         "nick": "Gamecocks"
+      },
+      "away": {
+        "team_id": "9",
+        "abbr": "ASU",
+        "name": "Arizona State Sun Devils",
+        "score": 0,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Paulius Murauskas",
+            "value": "26.2"
+          },
+          "reboundsPerGame": {
+            "player": "Dillan Shaw",
+            "value": "9.8"
+          },
+          "assistsPerGame": {
+            "player": "Joel Foxwell",
+            "value": "6.8"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Arizona State",
+        "nick": "Sun Devils"
       },
       "espn_line": {
         "provider": "DraftKings",
