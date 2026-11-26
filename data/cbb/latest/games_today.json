@@ -1,19 +1,103 @@
 {
-  "fetched_at": "2026-11-26T22:30:25+00:00",
+  "fetched_at": "2026-11-26T22:45:24+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
   "division_i_games": 21,
   "rows": [
     {
+      "game_id": "401917547",
+      "start_utc": "2026-11-26T22:00Z",
+      "short_name": "UCLA VS SMC",
+      "state": "in",
+      "status": "12:58 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "12:58",
+      "venue": "Jenny Craig Pavilion",
+      "neutral_site": true,
+      "broadcasts": [
+        "FS1"
+      ],
+      "home": {
+        "team_id": "2608",
+        "abbr": "SMC",
+        "name": "Saint Mary's Gaels",
+        "score": 19,
+        "winner": null,
+        "record": "6-1",
+        "home_record": "6-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Jeremy Dent-Smith",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Vangelis Zougris",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Vangelis Zougris",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Mantas Juzenas",
+            "value": "8 PTS"
+          }
+        },
+        "conf_id": "29",
+        "conf": null,
+        "rank": null,
+        "loc": "Saint Mary's",
+        "nick": "Gaels"
+      },
+      "away": {
+        "team_id": "26",
+        "abbr": "UCLA",
+        "name": "UCLA Bruins",
+        "score": 15,
+        "winner": null,
+        "record": "6-0",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Xavier Booker",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Trent Perry",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Nikola Kusturica",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Eric Dailey Jr.",
+            "value": "4 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 6,
+        "loc": "UCLA",
+        "nick": "Bruins"
+      },
+      "espn_line": null,
+      "date": "2026-11-26",
+      "p4": true
+    },
+    {
       "game_id": "401920529",
       "start_utc": "2026-11-26T20:30Z",
       "short_name": "TENN VS ISU",
       "state": "in",
-      "status": "9:40 - 2nd",
+      "status": "5:22 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:40",
+      "clock": "5:22",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +107,7 @@
         "team_id": "66",
         "abbr": "ISU",
         "name": "Iowa State Cyclones",
-        "score": 41,
+        "score": 51,
         "winner": null,
         "record": "4-1",
         "home_record": "3-0",
@@ -31,19 +115,19 @@
         "leaders": {
           "points": {
             "player": "Ryan Prather Jr.",
-            "value": "12"
+            "value": "14"
           },
           "rebounds": {
             "player": "Tre Singleton",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Tamin Lipsey",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Ryan Prather Jr.",
-            "value": "12 PTS"
+            "value": "14 PTS, 7 REB"
           }
         },
         "conf_id": "8",
@@ -56,19 +140,19 @@
         "team_id": "2633",
         "abbr": "TENN",
         "name": "Tennessee Volunteers",
-        "score": 51,
+        "score": 58,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Terrence Hill Jr.",
-            "value": "11"
+            "player": "Dai Dai Ames",
+            "value": "12"
           },
           "rebounds": {
             "player": "DeWayne Brown II",
-            "value": "9"
+            "value": "10"
           },
           "assists": {
             "player": "Dai Dai Ames",
@@ -76,7 +160,7 @@
           },
           "rating": {
             "player": "Dai Dai Ames",
-            "value": "10 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "23",
@@ -94,10 +178,10 @@
       "start_utc": "2026-11-26T21:30Z",
       "short_name": "ARK VS MSU",
       "state": "in",
-      "status": "1:20 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "1:20",
+      "clock": "0:00",
       "venue": "Little Caesars Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -140,7 +224,7 @@
         "team_id": "8",
         "abbr": "ARK",
         "name": "Arkansas Razorbacks",
-        "score": 27,
+        "score": 31,
         "winner": null,
         "record": "4-2",
         "home_record": "4-0",
@@ -148,7 +232,7 @@
         "leaders": {
           "points": {
             "player": "Billy Richmond III",
-            "value": "7"
+            "value": "9"
           },
           "rebounds": {
             "player": "Billy Richmond III",
@@ -160,7 +244,7 @@
           },
           "rating": {
             "player": "Billy Richmond III",
-            "value": "7 PTS, 7 REB"
+            "value": "9 PTS, 7 REB"
           }
         },
         "conf_id": "23",
@@ -177,11 +261,11 @@
       "game_id": "401920537",
       "start_utc": "2026-11-26T20:30Z",
       "short_name": "MIA VS MICH",
-      "state": "in",
-      "status": "4:00 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "4:00",
+      "clock": "0:00",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -191,19 +275,19 @@
         "team_id": "130",
         "abbr": "MICH",
         "name": "Michigan Wolverines",
-        "score": 63,
-        "winner": null,
-        "record": "3-3",
+        "score": 70,
+        "winner": false,
+        "record": "3-4",
         "home_record": "3-0",
         "away_record": "0-1",
         "leaders": {
           "points": {
             "player": "J.P. Estrella",
-            "value": "19"
+            "value": "21"
           },
           "rebounds": {
             "player": "J.P. Estrella",
-            "value": "3"
+            "value": "5"
           },
           "assists": {
             "player": "Elliot Cadeau",
@@ -211,7 +295,7 @@
           },
           "rating": {
             "player": "J.P. Estrella",
-            "value": "19 PTS"
+            "value": "21 PTS"
           }
         },
         "conf_id": "7",
@@ -224,9 +308,9 @@
         "team_id": "2390",
         "abbr": "MIA",
         "name": "Miami Hurricanes",
-        "score": 92,
-        "winner": null,
-        "record": "5-2",
+        "score": 97,
+        "winner": true,
+        "record": "6-2",
         "home_record": "5-0",
         "away_record": "0-0",
         "leaders": {
@@ -262,10 +346,10 @@
       "start_utc": "2026-11-26T21:30Z",
       "short_name": "USC VS USU",
       "state": "in",
-      "status": "4:31 - 1st",
+      "status": "0:34 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "4:31",
+      "clock": "0:34",
       "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -275,7 +359,7 @@
         "team_id": "328",
         "abbr": "USU",
         "name": "Utah State Aggies",
-        "score": 30,
+        "score": 39,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
@@ -283,7 +367,7 @@
         "leaders": {
           "points": {
             "player": "Mason Falslev",
-            "value": "8"
+            "value": "14"
           },
           "rebounds": {
             "player": "Connor Turnbull",
@@ -294,8 +378,8 @@
             "value": "2"
           },
           "rating": {
-            "player": "Connor Turnbull",
-            "value": "6 PTS, 7 REB"
+            "player": "Mason Falslev",
+            "value": "14 PTS"
           }
         },
         "conf_id": "21",
@@ -308,7 +392,7 @@
         "team_id": "30",
         "abbr": "USC",
         "name": "USC Trojans",
-        "score": 22,
+        "score": 34,
         "winner": null,
         "record": "7-0",
         "home_record": "4-0",
@@ -316,19 +400,19 @@
         "leaders": {
           "points": {
             "player": "Alijah Arenas",
-            "value": "9"
+            "value": "13"
           },
           "rebounds": {
             "player": "Alijah Arenas",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
-            "player": "Rodney Rice",
+            "player": "Alijah Arenas",
             "value": "2"
           },
           "rating": {
             "player": "Alijah Arenas",
-            "value": "9 PTS"
+            "value": "13 PTS"
           }
         },
         "conf_id": "7",
@@ -842,87 +926,6 @@
         "nick": "Sun Devils"
       },
       "espn_line": null,
-      "date": "2026-11-26",
-      "p4": true
-    },
-    {
-      "game_id": "401917547",
-      "start_utc": "2026-11-26T22:00Z",
-      "short_name": "UCLA VS SMC",
-      "state": "pre",
-      "status": "11/26 - 5:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Jenny Craig Pavilion",
-      "neutral_site": true,
-      "broadcasts": [
-        "FS1"
-      ],
-      "home": {
-        "team_id": "2608",
-        "abbr": "SMC",
-        "name": "Saint Mary's Gaels",
-        "score": 0,
-        "winner": null,
-        "record": "6-1",
-        "home_record": "6-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Mantas Juzenas",
-            "value": "20.6"
-          },
-          "reboundsPerGame": {
-            "player": "Mantas Juzenas",
-            "value": "9.4"
-          },
-          "assistsPerGame": {
-            "player": "Joshua Dent",
-            "value": "5.1"
-          }
-        },
-        "conf_id": "29",
-        "conf": null,
-        "rank": null,
-        "loc": "Saint Mary's",
-        "nick": "Gaels"
-      },
-      "away": {
-        "team_id": "26",
-        "abbr": "UCLA",
-        "name": "UCLA Bruins",
-        "score": 0,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Trent Perry",
-            "value": "15.5"
-          },
-          "reboundsPerGame": {
-            "player": "Eric Dailey Jr.",
-            "value": "6.7"
-          },
-          "assistsPerGame": {
-            "player": "Trent Perry",
-            "value": "5.7"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 6,
-        "loc": "UCLA",
-        "nick": "Bruins"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "UCLA -7.5",
-        "spread": 7.5,
-        "over_under": 152.5
-      },
       "date": "2026-11-26",
       "p4": true
     },
