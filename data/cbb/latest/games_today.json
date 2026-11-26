@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T20:30:25+00:00",
+  "fetched_at": "2026-11-26T20:45:24+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-26T19:30Z",
       "short_name": "GTWN VS TEX",
       "state": "in",
-      "status": "Halftime",
+      "status": "19:18 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "19:18",
       "venue": "Jenny Craig Pavilion",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "251",
         "abbr": "TEX",
         "name": "Texas Longhorns",
-        "score": 41,
+        "score": 42,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
@@ -56,7 +56,7 @@
         "team_id": "46",
         "abbr": "GTWN",
         "name": "Georgetown Hoyas",
-        "score": 30,
+        "score": 32,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
@@ -68,7 +68,7 @@
           },
           "rebounds": {
             "player": "Jaland Lowe",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
             "player": "Jaland Lowe",
@@ -90,84 +90,84 @@
       "p4": true
     },
     {
-      "game_id": "401920528",
-      "start_utc": "2026-11-26T18:00Z",
-      "short_name": "MD VS SDSU",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Michelob ULTRA Arena",
+      "game_id": "401920537",
+      "start_utc": "2026-11-26T20:30Z",
+      "short_name": "MIA VS MICH",
+      "state": "in",
+      "status": "16:00 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "16:00",
+      "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
-        "ESPN"
+        "ESPN2"
       ],
       "home": {
-        "team_id": "21",
-        "abbr": "SDSU",
-        "name": "San Diego State Aztecs",
-        "score": 75,
-        "winner": true,
-        "record": "6-1",
+        "team_id": "130",
+        "abbr": "MICH",
+        "name": "Michigan Wolverines",
+        "score": 12,
+        "winner": null,
+        "record": "3-3",
         "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Latrell Davis",
-            "value": "16"
-          },
-          "rebounds": {
-            "player": "Latrell Davis",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Elzie Harrington",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Bear Cherry",
-            "value": "10 PTS, 6 REB, 3 STL, 9 BLK"
-          }
-        },
-        "conf_id": "21",
-        "conf": null,
-        "rank": null,
-        "loc": "San Diego State",
-        "nick": "Aztecs"
-      },
-      "away": {
-        "team_id": "120",
-        "abbr": "MD",
-        "name": "Maryland Terrapins",
-        "score": 71,
-        "winner": false,
-        "record": "3-4",
-        "home_record": "3-1",
         "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "Mike McNair Jr.",
-            "value": "22"
+            "player": "Elliot Cadeau",
+            "value": "5"
           },
           "rebounds": {
-            "player": "DJ Wagner",
-            "value": "7"
+            "player": "Moustapha Thiam",
+            "value": "1"
           },
           "assists": {
-            "player": "DJ Wagner",
+            "player": "Elliot Cadeau",
             "value": "3"
           },
           "rating": {
-            "player": "Mike McNair Jr.",
-            "value": "22 PTS"
+            "player": "Elliot Cadeau",
+            "value": "5 PTS"
           }
         },
         "conf_id": "7",
         "conf": "Big Ten",
         "rank": null,
-        "loc": "Maryland",
-        "nick": "Terrapins"
+        "loc": "Michigan",
+        "nick": "Wolverines"
+      },
+      "away": {
+        "team_id": "2390",
+        "abbr": "MIA",
+        "name": "Miami Hurricanes",
+        "score": 9,
+        "winner": null,
+        "record": "5-2",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Malik Reneau",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Somto Cyril",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Shelton Henderson",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Malik Reneau",
+            "value": "4 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": 17,
+        "loc": "Miami",
+        "nick": "Hurricanes"
       },
       "espn_line": null,
       "date": "2026-11-26",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-26T18:30Z",
       "short_name": "BC VS UCF",
       "state": "in",
-      "status": "9:54 - 2nd",
+      "status": "5:09 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:54",
+      "clock": "5:09",
       "venue": "State Farm Field House",
       "neutral_site": true,
       "broadcasts": [
@@ -191,27 +191,27 @@
         "team_id": "2116",
         "abbr": "UCF",
         "name": "UCF Knights",
-        "score": 36,
+        "score": 52,
         "winner": null,
         "record": "4-2",
         "home_record": "4-1",
         "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "Riley Kugel",
-            "value": "9"
+            "player": "Dior Johnson",
+            "value": "16"
           },
           "rebounds": {
-            "player": "John Bol",
-            "value": "4"
+            "player": "Dior Johnson",
+            "value": "5"
           },
           "assists": {
             "player": "Arturo Dean",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
-            "player": "Riley Kugel",
-            "value": "9 PTS"
+            "player": "Dior Johnson",
+            "value": "16 PTS"
           }
         },
         "conf_id": "8",
@@ -224,7 +224,7 @@
         "team_id": "103",
         "abbr": "BC",
         "name": "Boston College Eagles",
-        "score": 45,
+        "score": 58,
         "winner": null,
         "record": "6-0",
         "home_record": "4-0",
@@ -232,7 +232,7 @@
         "leaders": {
           "points": {
             "player": "Money Williams",
-            "value": "14"
+            "value": "21"
           },
           "rebounds": {
             "player": "Armoni Zeigler",
@@ -244,7 +244,7 @@
           },
           "rating": {
             "player": "Money Williams",
-            "value": "14 PTS"
+            "value": "21 PTS"
           }
         },
         "conf_id": "2",
@@ -262,10 +262,10 @@
       "start_utc": "2026-11-26T19:00Z",
       "short_name": "ASU VS SC",
       "state": "in",
-      "status": "13:49 - 2nd",
+      "status": "9:03 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "13:49",
+      "clock": "9:03",
       "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -275,7 +275,7 @@
         "team_id": "2579",
         "abbr": "SC",
         "name": "South Carolina Gamecocks",
-        "score": 50,
+        "score": 56,
         "winner": null,
         "record": "5-1",
         "home_record": "5-0",
@@ -287,7 +287,7 @@
           },
           "rebounds": {
             "player": "Aleksas Bieliauskas",
-            "value": "9"
+            "value": "10"
           },
           "assists": {
             "player": "Kory Mincy",
@@ -295,7 +295,7 @@
           },
           "rating": {
             "player": "Aleksas Bieliauskas",
-            "value": "25 PTS, 9 REB"
+            "value": "25 PTS, 10 REB"
           }
         },
         "conf_id": "23",
@@ -308,7 +308,7 @@
         "team_id": "9",
         "abbr": "ASU",
         "name": "Arizona State Sun Devils",
-        "score": 39,
+        "score": 47,
         "winner": null,
         "record": "5-1",
         "home_record": "5-0",
@@ -316,11 +316,11 @@
         "leaders": {
           "points": {
             "player": "Paulius Murauskas",
-            "value": "15"
+            "value": "17"
           },
           "rebounds": {
             "player": "Dillan Shaw",
-            "value": "6"
+            "value": "8"
           },
           "assists": {
             "player": "Joel Foxwell",
@@ -328,7 +328,7 @@
           },
           "rating": {
             "player": "Paulius Murauskas",
-            "value": "15 PTS"
+            "value": "17 PTS, 7 REB"
           }
         },
         "conf_id": "8",
@@ -510,6 +510,90 @@
       "p4": true
     },
     {
+      "game_id": "401920528",
+      "start_utc": "2026-11-26T18:00Z",
+      "short_name": "MD VS SDSU",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "21",
+        "abbr": "SDSU",
+        "name": "San Diego State Aztecs",
+        "score": 75,
+        "winner": true,
+        "record": "6-1",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Latrell Davis",
+            "value": "16"
+          },
+          "rebounds": {
+            "player": "Latrell Davis",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Elzie Harrington",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Bear Cherry",
+            "value": "10 PTS, 6 REB, 3 STL, 9 BLK"
+          }
+        },
+        "conf_id": "21",
+        "conf": null,
+        "rank": null,
+        "loc": "San Diego State",
+        "nick": "Aztecs"
+      },
+      "away": {
+        "team_id": "120",
+        "abbr": "MD",
+        "name": "Maryland Terrapins",
+        "score": 71,
+        "winner": false,
+        "record": "3-4",
+        "home_record": "3-1",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Mike McNair Jr.",
+            "value": "22"
+          },
+          "rebounds": {
+            "player": "DJ Wagner",
+            "value": "7"
+          },
+          "assists": {
+            "player": "DJ Wagner",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Mike McNair Jr.",
+            "value": "22 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Maryland",
+        "nick": "Terrapins"
+      },
+      "espn_line": null,
+      "date": "2026-11-26",
+      "p4": true
+    },
+    {
       "game_id": "401920529",
       "start_utc": "2026-11-26T20:30Z",
       "short_name": "TENN VS ISU",
@@ -582,91 +666,10 @@
         "nick": "Volunteers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ISU -5.5",
         "spread": -5.5,
         "over_under": 138.5
-      },
-      "date": "2026-11-26",
-      "p4": true
-    },
-    {
-      "game_id": "401920537",
-      "start_utc": "2026-11-26T20:30Z",
-      "short_name": "MIA VS MICH",
-      "state": "pre",
-      "status": "11/26 - 3:30 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "T-Mobile Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "130",
-        "abbr": "MICH",
-        "name": "Michigan Wolverines",
-        "score": 0,
-        "winner": null,
-        "record": "3-3",
-        "home_record": "3-0",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Trey McKenney",
-            "value": "16.7"
-          },
-          "reboundsPerGame": {
-            "player": "J.P. Estrella",
-            "value": "8.5"
-          },
-          "assistsPerGame": {
-            "player": "Elliot Cadeau",
-            "value": "6.2"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Michigan",
-        "nick": "Wolverines"
-      },
-      "away": {
-        "team_id": "2390",
-        "abbr": "MIA",
-        "name": "Miami Hurricanes",
-        "score": 0,
-        "winner": null,
-        "record": "5-2",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Shelton Henderson",
-            "value": "14.3"
-          },
-          "reboundsPerGame": {
-            "player": "Shelton Henderson",
-            "value": "7.1"
-          },
-          "assistsPerGame": {
-            "player": "Acaden Lewis",
-            "value": "5.4"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": 17,
-        "loc": "Miami",
-        "nick": "Hurricanes"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "MIA -1.5",
-        "spread": 1.5,
-        "over_under": 161.5
       },
       "date": "2026-11-26",
       "p4": true
@@ -744,7 +747,7 @@
         "nick": "Razorbacks"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MSU -5.5",
         "spread": -5.5,
         "over_under": 148.5
@@ -825,7 +828,7 @@
         "nick": "Aggies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "USC -1.5",
         "spread": -1.5,
         "over_under": 156.5
@@ -906,7 +909,7 @@
         "nick": "Gaels"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "UCLA -7.5",
         "spread": -7.5,
         "over_under": 152.5
@@ -987,7 +990,7 @@
         "nick": "Horned Frogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CREI -1.5",
         "spread": -1.5,
         "over_under": 153.5
@@ -1068,7 +1071,7 @@
         "nick": "Mustangs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "LSU -7.5",
         "spread": -7.5,
         "over_under": 155.5
@@ -1149,7 +1152,7 @@
         "nick": "Blue Demons"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "DEP -1.5",
         "spread": 1.5,
         "over_under": 137.5
@@ -1230,7 +1233,7 @@
         "nick": "Cardinals"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SJU -1.5",
         "spread": -1.5,
         "over_under": 160.5
@@ -1311,7 +1314,7 @@
         "nick": "Crimson Tide"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ALA -13.5",
         "spread": 13.5,
         "over_under": 169.5
@@ -1392,7 +1395,7 @@
         "nick": "Red Raiders"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TTU -10.5",
         "spread": 10.5,
         "over_under": 148.5
@@ -1473,7 +1476,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GONZ -3.5",
         "spread": -3.5,
         "over_under": 153.5
