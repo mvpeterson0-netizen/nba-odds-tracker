@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T21:13:28+00:00",
+  "fetched_at": "2026-11-26T21:15:29+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-26T20:30Z",
       "short_name": "TENN VS ISU",
       "state": "in",
-      "status": "13:19 - 1st",
+      "status": "12:07 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "13:19",
+      "clock": "12:07",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,22 +107,26 @@
         "team_id": "66",
         "abbr": "ISU",
         "name": "Iowa State Cyclones",
-        "score": 2,
+        "score": 6,
         "winner": null,
         "record": "4-1",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Taj Manning",
+            "player": "Blake Buchanan",
             "value": "2"
           },
-          "assists": {
+          "rebounds": {
             "player": "Tamin Lipsey",
             "value": "1"
           },
+          "assists": {
+            "player": "Tamin Lipsey",
+            "value": "2"
+          },
           "rating": {
-            "player": "Taj Manning",
+            "player": "Blake Buchanan",
             "value": "2 PTS"
           }
         },
@@ -136,7 +140,7 @@
         "team_id": "2633",
         "abbr": "TENN",
         "name": "Tennessee Volunteers",
-        "score": 8,
+        "score": 10,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
@@ -174,20 +178,20 @@
       "start_utc": "2026-11-26T20:30Z",
       "short_name": "MIA VS MICH",
       "state": "in",
-      "status": "6:13 - 1st",
+      "status": "4:50 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "6:13",
+      "clock": "4:50",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
-        "ESPNEWS"
+        "ESPN2"
       ],
       "home": {
         "team_id": "130",
         "abbr": "MICH",
         "name": "Michigan Wolverines",
-        "score": 29,
+        "score": 35,
         "winner": null,
         "record": "3-3",
         "home_record": "3-0",
@@ -195,11 +199,11 @@
         "leaders": {
           "points": {
             "player": "J.P. Estrella",
-            "value": "11"
+            "value": "13"
           },
           "rebounds": {
-            "player": "J.P. Estrella",
-            "value": "1"
+            "player": "Roddy Gayle Jr.",
+            "value": "2"
           },
           "assists": {
             "player": "Elliot Cadeau",
@@ -220,7 +224,7 @@
         "team_id": "2390",
         "abbr": "MIA",
         "name": "Miami Hurricanes",
-        "score": 34,
+        "score": 38,
         "winner": null,
         "record": "5-2",
         "home_record": "5-0",
@@ -228,7 +232,7 @@
         "leaders": {
           "points": {
             "player": "Shelton Henderson",
-            "value": "11"
+            "value": "15"
           },
           "rebounds": {
             "player": "Shelton Henderson",
@@ -240,7 +244,7 @@
           },
           "rating": {
             "player": "Shelton Henderson",
-            "value": "11 PTS"
+            "value": "15 PTS"
           }
         },
         "conf_id": "2",
@@ -342,10 +346,10 @@
       "start_utc": "2026-11-26T19:00Z",
       "short_name": "ASU VS SC",
       "state": "in",
-      "status": "1:09 - 2nd",
+      "status": "0:48 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "1:09",
+      "clock": "0:48",
       "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -355,7 +359,7 @@
         "team_id": "2579",
         "abbr": "SC",
         "name": "South Carolina Gamecocks",
-        "score": 72,
+        "score": 74,
         "winner": null,
         "record": "5-1",
         "home_record": "5-0",
@@ -388,7 +392,7 @@
         "team_id": "9",
         "abbr": "ASU",
         "name": "Arizona State Sun Devils",
-        "score": 63,
+        "score": 65,
         "winner": null,
         "record": "5-1",
         "home_record": "5-0",
@@ -396,7 +400,7 @@
         "leaders": {
           "points": {
             "player": "Paulius Murauskas",
-            "value": "23"
+            "value": "25"
           },
           "rebounds": {
             "player": "Dillan Shaw",
@@ -404,11 +408,11 @@
           },
           "assists": {
             "player": "Joel Foxwell",
-            "value": "6"
+            "value": "7"
           },
           "rating": {
             "player": "Paulius Murauskas",
-            "value": "23 PTS, 7 REB"
+            "value": "25 PTS, 7 REB"
           }
         },
         "conf_id": "8",
@@ -746,7 +750,7 @@
         "nick": "Razorbacks"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MSU -5.5",
         "spread": -5.5,
         "over_under": 148.5
@@ -757,7 +761,7 @@
     {
       "game_id": "401921673",
       "start_utc": "2026-11-26T21:30Z",
-      "short_name": "USU VS USC",
+      "short_name": "USC VS USU",
       "state": "pre",
       "status": "11/26 - 4:30 PM EST",
       "completed": false,
@@ -769,35 +773,6 @@
         "CBSSN"
       ],
       "home": {
-        "team_id": "30",
-        "abbr": "USC",
-        "name": "USC Trojans",
-        "score": 0,
-        "winner": null,
-        "record": "7-0",
-        "home_record": "4-0",
-        "away_record": "1-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Alijah Arenas",
-            "value": "21.9"
-          },
-          "reboundsPerGame": {
-            "player": "Adonis Ratliff",
-            "value": "6.0"
-          },
-          "assistsPerGame": {
-            "player": "Rodney Rice",
-            "value": "5.3"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 18,
-        "loc": "USC",
-        "nick": "Trojans"
-      },
-      "away": {
         "team_id": "328",
         "abbr": "USU",
         "name": "Utah State Aggies",
@@ -826,8 +801,37 @@
         "loc": "Utah State",
         "nick": "Aggies"
       },
+      "away": {
+        "team_id": "30",
+        "abbr": "USC",
+        "name": "USC Trojans",
+        "score": 0,
+        "winner": null,
+        "record": "7-0",
+        "home_record": "4-0",
+        "away_record": "1-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Alijah Arenas",
+            "value": "21.9"
+          },
+          "reboundsPerGame": {
+            "player": "Adonis Ratliff",
+            "value": "6.0"
+          },
+          "assistsPerGame": {
+            "player": "Rodney Rice",
+            "value": "5.3"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 18,
+        "loc": "USC",
+        "nick": "Trojans"
+      },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "USC -1.5",
         "spread": -1.5,
         "over_under": 156.5
@@ -908,7 +912,7 @@
         "nick": "Gaels"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UCLA -7.5",
         "spread": -7.5,
         "over_under": 152.5
@@ -989,7 +993,7 @@
         "nick": "Horned Frogs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CREI -1.5",
         "spread": -1.5,
         "over_under": 152.5
@@ -1070,7 +1074,7 @@
         "nick": "Mustangs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "LSU -7.5",
         "spread": -7.5,
         "over_under": 155.5
@@ -1151,7 +1155,7 @@
         "nick": "Blue Demons"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "PITT -1.5",
         "spread": -1.5,
         "over_under": 137.5
@@ -1232,7 +1236,7 @@
         "nick": "Cardinals"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SJU -1.5",
         "spread": -1.5,
         "over_under": 160.5
@@ -1313,7 +1317,7 @@
         "nick": "Crimson Tide"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ALA -13.5",
         "spread": 13.5,
         "over_under": 169.5
@@ -1394,7 +1398,7 @@
         "nick": "Red Raiders"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TTU -10.5",
         "spread": 10.5,
         "over_under": 148.5
@@ -1475,7 +1479,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "GONZ -3.5",
         "spread": -3.5,
         "over_under": 153.5
