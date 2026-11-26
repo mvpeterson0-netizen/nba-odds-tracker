@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T01:00:28+00:00",
+  "fetched_at": "2026-11-26T01:15:22+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-26T00:00Z",
       "short_name": "DUKE VS CONN",
       "state": "in",
-      "status": "2:22 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "2:22",
+      "clock": "0:00",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "41",
         "abbr": "CONN",
         "name": "UConn Huskies",
-        "score": 29,
+        "score": 32,
         "winner": null,
         "record": "4-1",
         "home_record": "3-0",
@@ -39,7 +39,7 @@
           },
           "assists": {
             "player": "Silas Demary Jr.",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Silas Demary Jr.",
@@ -56,7 +56,7 @@
         "team_id": "150",
         "abbr": "DUKE",
         "name": "Duke Blue Devils",
-        "score": 31,
+        "score": 38,
         "winner": null,
         "record": "4-2",
         "home_record": "3-1",
@@ -68,15 +68,15 @@
           },
           "rebounds": {
             "player": "Patrick Ngongba II",
-            "value": "8"
+            "value": "9"
           },
           "assists": {
-            "player": "Caleb Foster",
+            "player": "Cayden Boozer",
             "value": "2"
           },
           "rating": {
             "player": "Patrick Ngongba II",
-            "value": "11 PTS, 8 REB"
+            "value": "11 PTS, 9 REB"
           }
         },
         "conf_id": "2",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-26T00:00Z",
       "short_name": "MEM VS PSU",
       "state": "in",
-      "status": "Halftime",
+      "status": "18:43 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "18:43",
       "venue": "Imperial Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "213",
         "abbr": "PSU",
         "name": "Penn State Nittany Lions",
-        "score": 37,
+        "score": 39,
         "winner": null,
         "record": "5-1",
         "home_record": "5-0",
@@ -140,7 +140,7 @@
         "team_id": "235",
         "abbr": "MEM",
         "name": "Memphis Tigers",
-        "score": 49,
+        "score": 53,
         "winner": null,
         "record": "4-1",
         "home_record": "3-0",
@@ -156,11 +156,11 @@
           },
           "assists": {
             "player": "Jayden Reid",
-            "value": "6"
+            "value": "8"
           },
           "rating": {
             "player": "Jayden Reid",
-            "value": "20 PTS, 6 AST"
+            "value": "20 PTS, 8 AST"
           }
         },
         "conf_id": "62",
@@ -174,98 +174,14 @@
       "p4": true
     },
     {
-      "game_id": "401909720",
-      "start_utc": "2026-11-25T23:00Z",
-      "short_name": "UALB @ SYR",
-      "state": "in",
-      "status": "End of 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "JMA Wireless Dome",
-      "neutral_site": false,
-      "broadcasts": [
-        "ACCNX"
-      ],
-      "home": {
-        "team_id": "183",
-        "abbr": "SYR",
-        "name": "Syracuse Orange",
-        "score": 74,
-        "winner": null,
-        "record": "4-2",
-        "home_record": "4-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Abdramane Siby",
-            "value": "17"
-          },
-          "rebounds": {
-            "player": "Sadiq White Jr.",
-            "value": "11"
-          },
-          "assists": {
-            "player": "Ryan Moesch",
-            "value": "8"
-          },
-          "rating": {
-            "player": "Ryan Moesch",
-            "value": "13 PTS, 9 REB, 8 AST, 4 STL"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Syracuse",
-        "nick": "Orange"
-      },
-      "away": {
-        "team_id": "399",
-        "abbr": "UALB",
-        "name": "UAlbany Great Danes",
-        "score": 53,
-        "winner": null,
-        "record": "4-4",
-        "home_record": "1-2",
-        "away_record": "2-1",
-        "leaders": {
-          "points": {
-            "player": "Ollie Engen",
-            "value": "23"
-          },
-          "rebounds": {
-            "player": "Abdoulaye Fall",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Ollie Engen",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Ollie Engen",
-            "value": "23 PTS"
-          }
-        },
-        "conf_id": "1",
-        "conf": null,
-        "rank": null,
-        "loc": "UAlbany",
-        "nick": "Great Danes"
-      },
-      "espn_line": null,
-      "date": "2026-11-25",
-      "p4": true
-    },
-    {
       "game_id": "401918960",
       "start_utc": "2026-11-26T00:00Z",
       "short_name": "NORF @ NCSU",
       "state": "in",
-      "status": "Halftime",
+      "status": "15:47 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "15:47",
       "venue": "Lenovo Center",
       "neutral_site": false,
       "broadcasts": [
@@ -275,7 +191,7 @@
         "team_id": "152",
         "abbr": "NCSU",
         "name": "NC State Wolfpack",
-        "score": 38,
+        "score": 46,
         "winner": null,
         "record": "5-1",
         "home_record": "4-0",
@@ -283,11 +199,11 @@
         "leaders": {
           "points": {
             "player": "Paul McNeil Jr.",
-            "value": "12"
+            "value": "16"
           },
           "rebounds": {
-            "player": "Ven-Allen Lubin",
-            "value": "4"
+            "player": "Zymicah Wilkins",
+            "value": "5"
           },
           "assists": {
             "player": "Paul McNeil Jr.",
@@ -295,7 +211,7 @@
           },
           "rating": {
             "player": "Paul McNeil Jr.",
-            "value": "12 PTS"
+            "value": "16 PTS, 3 STL"
           }
         },
         "conf_id": "2",
@@ -308,27 +224,27 @@
         "team_id": "2450",
         "abbr": "NORF",
         "name": "Norfolk State Spartans",
-        "score": 29,
+        "score": 32,
         "winner": null,
         "record": "2-5",
         "home_record": "2-2",
         "away_record": "0-3",
         "leaders": {
           "points": {
-            "player": "Jordan Skyers",
-            "value": "9"
+            "player": "Chris Walker",
+            "value": "10"
           },
           "rebounds": {
-            "player": "Jordan Skyers",
-            "value": "4"
+            "player": "Chris Walker",
+            "value": "5"
           },
           "assists": {
             "player": "Jordan Skyers",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
             "player": "Chris Walker",
-            "value": "7 PTS"
+            "value": "10 PTS"
           }
         },
         "conf_id": "16",
@@ -346,10 +262,10 @@
       "start_utc": "2026-11-26T00:00Z",
       "short_name": "NE @ WIS",
       "state": "in",
-      "status": "19:04 - 2nd",
+      "status": "10:04 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "19:04",
+      "clock": "10:04",
       "venue": "Kohl Center",
       "neutral_site": false,
       "broadcasts": [
@@ -359,27 +275,27 @@
         "team_id": "275",
         "abbr": "WIS",
         "name": "Wisconsin Badgers",
-        "score": 43,
+        "score": 63,
         "winner": null,
         "record": "4-2",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Braeden Carrington",
-            "value": "9"
+            "player": "Austin Rapp",
+            "value": "14"
           },
           "rebounds": {
             "player": "Braeden Carrington",
-            "value": "4"
+            "value": "7"
           },
           "assists": {
-            "player": "Will Garlock",
-            "value": "3"
+            "player": "Owen Foxwell",
+            "value": "4"
           },
           "rating": {
-            "player": "Will Garlock",
-            "value": "5 PTS"
+            "player": "Austin Rapp",
+            "value": "14 PTS"
           }
         },
         "conf_id": "7",
@@ -392,7 +308,7 @@
         "team_id": "111",
         "abbr": "NE",
         "name": "Northeastern Huskies",
-        "score": 22,
+        "score": 39,
         "winner": null,
         "record": "2-4",
         "home_record": "2-0",
@@ -400,19 +316,19 @@
         "leaders": {
           "points": {
             "player": "Rashad King",
-            "value": "8"
+            "value": "19"
           },
           "rebounds": {
             "player": "Dorian Grosber",
-            "value": "5"
+            "value": "8"
           },
           "assists": {
             "player": "Mike Loughnane",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
             "player": "Rashad King",
-            "value": "8 PTS"
+            "value": "19 PTS"
           }
         },
         "conf_id": "10",
@@ -420,6 +336,90 @@
         "rank": null,
         "loc": "Northeastern",
         "nick": "Huskies"
+      },
+      "espn_line": null,
+      "date": "2026-11-25",
+      "p4": true
+    },
+    {
+      "game_id": "401918971",
+      "start_utc": "2026-11-26T00:50Z",
+      "short_name": "SMU VS USU",
+      "state": "in",
+      "status": "7:08 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "7:08",
+      "venue": "Acrisure Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "CBSSN"
+      ],
+      "home": {
+        "team_id": "328",
+        "abbr": "USU",
+        "name": "Utah State Aggies",
+        "score": 27,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Solomon Callaghan",
+            "value": "11"
+          },
+          "rebounds": {
+            "player": "Solomon Callaghan",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Solomon Callaghan",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Solomon Callaghan",
+            "value": "11 PTS"
+          }
+        },
+        "conf_id": "21",
+        "conf": null,
+        "rank": null,
+        "loc": "Utah State",
+        "nick": "Aggies"
+      },
+      "away": {
+        "team_id": "2567",
+        "abbr": "SMU",
+        "name": "SMU Mustangs",
+        "score": 19,
+        "winner": null,
+        "record": "6-0",
+        "home_record": "6-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Johan Munch",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Johan Munch",
+            "value": "5"
+          },
+          "assists": {
+            "player": "Johan Munch",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Johan Munch",
+            "value": "4 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "SMU",
+        "nick": "Mustangs"
       },
       "espn_line": null,
       "date": "2026-11-25",
@@ -1098,84 +1098,84 @@
       "p4": true
     },
     {
-      "game_id": "401918971",
-      "start_utc": "2026-11-26T00:50Z",
-      "short_name": "SMU VS USU",
-      "state": "in",
-      "status": "14:03 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "14:03",
-      "venue": "Acrisure Arena",
-      "neutral_site": true,
+      "game_id": "401909720",
+      "start_utc": "2026-11-25T23:00Z",
+      "short_name": "UALB @ SYR",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "JMA Wireless Dome",
+      "neutral_site": false,
       "broadcasts": [
-        "CBSSN"
+        "ACCNX"
       ],
       "home": {
-        "team_id": "328",
-        "abbr": "USU",
-        "name": "Utah State Aggies",
-        "score": 19,
-        "winner": null,
-        "record": "5-0",
+        "team_id": "183",
+        "abbr": "SYR",
+        "name": "Syracuse Orange",
+        "score": 74,
+        "winner": true,
+        "record": "5-2",
         "home_record": "5-0",
-        "away_record": "0-0",
+        "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "Solomon Callaghan",
+            "player": "Abdramane Siby",
+            "value": "17"
+          },
+          "rebounds": {
+            "player": "Sadiq White Jr.",
             "value": "11"
           },
-          "rebounds": {
-            "player": "Solomon Callaghan",
-            "value": "1"
-          },
           "assists": {
-            "player": "Karson Templin",
-            "value": "1"
+            "player": "Ryan Moesch",
+            "value": "8"
           },
           "rating": {
-            "player": "Solomon Callaghan",
-            "value": "11 PTS"
-          }
-        },
-        "conf_id": "21",
-        "conf": null,
-        "rank": null,
-        "loc": "Utah State",
-        "nick": "Aggies"
-      },
-      "away": {
-        "team_id": "2567",
-        "abbr": "SMU",
-        "name": "SMU Mustangs",
-        "score": 7,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "6-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Jaden Toombs",
-            "value": "3"
-          },
-          "rebounds": {
-            "player": "Jakub Szumert",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Jaylin Stewart",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Jakub Szumert",
-            "value": "2 PTS"
+            "player": "Ryan Moesch",
+            "value": "13 PTS, 9 REB, 8 AST, 4 STL"
           }
         },
         "conf_id": "2",
         "conf": "ACC",
         "rank": null,
-        "loc": "SMU",
-        "nick": "Mustangs"
+        "loc": "Syracuse",
+        "nick": "Orange"
+      },
+      "away": {
+        "team_id": "399",
+        "abbr": "UALB",
+        "name": "UAlbany Great Danes",
+        "score": 53,
+        "winner": false,
+        "record": "4-5",
+        "home_record": "1-2",
+        "away_record": "2-2",
+        "leaders": {
+          "points": {
+            "player": "Ollie Engen",
+            "value": "23"
+          },
+          "rebounds": {
+            "player": "Abdoulaye Fall",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Ollie Engen",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Ollie Engen",
+            "value": "23 PTS"
+          }
+        },
+        "conf_id": "1",
+        "conf": null,
+        "rank": null,
+        "loc": "UAlbany",
+        "nick": "Great Danes"
       },
       "espn_line": null,
       "date": "2026-11-25",
@@ -1254,7 +1254,7 @@
         "nick": "Demon Deacons"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MSST -3.5",
         "spread": -3.5,
         "over_under": null
@@ -1335,7 +1335,7 @@
         "nick": "Lopes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "GCU -9.5",
         "spread": 9.5,
         "over_under": 152.5
@@ -1416,10 +1416,10 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
-        "details": "VCU -3.5",
-        "spread": -3.5,
-        "over_under": 145.5
+        "provider": "DraftKings",
+        "details": "VCU -4.5",
+        "spread": -4.5,
+        "over_under": 143.5
       },
       "date": "2026-11-25",
       "p4": true
@@ -1497,7 +1497,7 @@
         "nick": "Cardinal"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SLU -3.5",
         "spread": -3.5,
         "over_under": 152.5
@@ -1578,7 +1578,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CLEM -3.5",
         "spread": 3.5,
         "over_under": 148.5
