@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T08:00:30+00:00",
+  "fetched_at": "2026-11-26T08:15:20+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
@@ -9,11 +9,11 @@
       "game_id": "401921672",
       "start_utc": "2026-11-26T06:08Z",
       "short_name": "STAN VS SLU",
-      "state": "in",
-      "status": "0:55 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "0:55",
+      "clock": "0:00",
       "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -24,8 +24,8 @@
         "abbr": "SLU",
         "name": "Saint Louis Billikens",
         "score": 66,
-        "winner": null,
-        "record": "3-3",
+        "winner": true,
+        "record": "4-3",
         "home_record": "2-1",
         "away_record": "0-1",
         "leaders": {
@@ -57,8 +57,8 @@
         "abbr": "STAN",
         "name": "Stanford Cardinal",
         "score": 64,
-        "winner": null,
-        "record": "5-2",
+        "winner": false,
+        "record": "5-3",
         "home_record": "5-0",
         "away_record": "0-1",
         "leaders": {
@@ -68,7 +68,7 @@
           },
           "rebounds": {
             "player": "Aziz Olajuwon",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Nick Townsend",
