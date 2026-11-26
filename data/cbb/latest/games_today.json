@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T16:00:30+00:00",
+  "fetched_at": "2026-11-26T16:15:23+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
@@ -9,11 +9,11 @@
       "game_id": "401929281",
       "start_utc": "2026-11-26T16:00Z",
       "short_name": "UGA VS CIN",
-      "state": "pre",
-      "status": "11/26 - 11:00 AM EST",
+      "state": "in",
+      "status": "13:33 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "13:33",
       "venue": "State Farm Field House",
       "neutral_site": true,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "2132",
         "abbr": "CIN",
         "name": "Cincinnati Bearcats",
-        "score": 0,
+        "score": 11,
         "winner": null,
         "record": "5-1",
         "home_record": "4-1",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tylen Riley",
-            "value": "14.0"
+          "points": {
+            "player": "Myles Colvin",
+            "value": "6"
           },
-          "reboundsPerGame": {
-            "player": "Tyler Tejada",
-            "value": "5.0"
+          "rebounds": {
+            "player": "MJ Collins Jr.",
+            "value": "2"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Elijah Perryman",
-            "value": "4.2"
+            "value": "3"
+          },
+          "rating": {
+            "player": "Myles Colvin",
+            "value": "6 PTS"
           }
         },
         "conf_id": "8",
@@ -52,23 +56,27 @@
         "team_id": "61",
         "abbr": "UGA",
         "name": "Georgia Bulldogs",
-        "score": 0,
+        "score": 11,
         "winner": null,
         "record": "6-0",
         "home_record": "4-0",
         "away_record": "2-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Blue Cain",
-            "value": "15.7"
+          "points": {
+            "player": "Kanon Catchings",
+            "value": "5"
           },
-          "reboundsPerGame": {
-            "player": "James Scott",
-            "value": "7.0"
+          "rebounds": {
+            "player": "Kanon Catchings",
+            "value": "3"
           },
-          "assistsPerGame": {
-            "player": "Marcus Millender",
-            "value": "3.2"
+          "assists": {
+            "player": "Kareem Stagg",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Kanon Catchings",
+            "value": "5 PTS"
           }
         },
         "conf_id": "23",
@@ -77,12 +85,7 @@
         "loc": "Georgia",
         "nick": "Bulldogs"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "CIN -2.5",
-        "spread": -2.5,
-        "over_under": 156.5
-      },
+      "espn_line": null,
       "date": "2026-11-26",
       "p4": true
     },
@@ -810,7 +813,7 @@
         "provider": "Draft Kings",
         "details": "USC -2.5",
         "spread": -2.5,
-        "over_under": 159.5
+        "over_under": 158.5
       },
       "date": "2026-11-26",
       "p4": true
@@ -1053,7 +1056,7 @@
         "provider": "Draft Kings",
         "details": "LSU -7.5",
         "spread": -7.5,
-        "over_under": 156.5
+        "over_under": 155.5
       },
       "date": "2026-11-26",
       "p4": true
@@ -1213,8 +1216,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "SJU -2.5",
-        "spread": -2.5,
+        "details": "SJU -1.5",
+        "spread": -1.5,
         "over_under": 161.5
       },
       "date": "2026-11-26",
@@ -1294,9 +1297,9 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "ALA -14.5",
-        "spread": 14.5,
-        "over_under": 170.5
+        "details": "ALA -13.5",
+        "spread": 13.5,
+        "over_under": 169.5
       },
       "date": "2026-11-26",
       "p4": true
