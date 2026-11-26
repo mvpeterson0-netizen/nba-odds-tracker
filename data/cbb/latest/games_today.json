@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T02:30:25+00:00",
+  "fetched_at": "2026-11-26T02:45:31+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-26T00:50Z",
       "short_name": "SMU VS USU",
       "state": "in",
-      "status": "4:33 - 2nd",
+      "status": "0:45 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "4:33",
+      "clock": "0:45",
       "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "328",
         "abbr": "USU",
         "name": "Utah State Aggies",
-        "score": 82,
+        "score": 92,
         "winner": null,
         "record": "5-0",
         "home_record": "5-0",
@@ -34,7 +34,7 @@
             "value": "21"
           },
           "rebounds": {
-            "player": "Mason Falslev",
+            "player": "Karson Templin",
             "value": "6"
           },
           "assists": {
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Karson Templin",
-            "value": "21 PTS"
+            "value": "21 PTS, 6 REB"
           }
         },
         "conf_id": "21",
@@ -56,15 +56,15 @@
         "team_id": "2567",
         "abbr": "SMU",
         "name": "SMU Mustangs",
-        "score": 47,
+        "score": 59,
         "winner": null,
         "record": "6-0",
         "home_record": "6-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Jaden Toombs",
-            "value": "9"
+            "player": "Cameron Lomax",
+            "value": "13"
           },
           "rebounds": {
             "player": "Johan Munch",
@@ -76,7 +76,7 @@
           },
           "rating": {
             "player": "Johan Munch",
-            "value": "6 PTS, 7 REB"
+            "value": "8 PTS, 7 REB"
           }
         },
         "conf_id": "2",
@@ -84,6 +84,90 @@
         "rank": null,
         "loc": "SMU",
         "nick": "Mustangs"
+      },
+      "espn_line": null,
+      "date": "2026-11-25",
+      "p4": true
+    },
+    {
+      "game_id": "401929287",
+      "start_utc": "2026-11-26T02:29Z",
+      "short_name": "WAKE VS MSST",
+      "state": "in",
+      "status": "13:00 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "13:00",
+      "venue": "Imperial Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPNU"
+      ],
+      "home": {
+        "team_id": "344",
+        "abbr": "MSST",
+        "name": "Mississippi State Bulldogs",
+        "score": 13,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "3-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Kimani Hamilton",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Tristan Reed",
+            "value": "2"
+          },
+          "assists": {
+            "player": "RJ Johnson",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Kimani Hamilton",
+            "value": "3 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Mississippi State",
+        "nick": "Bulldogs"
+      },
+      "away": {
+        "team_id": "154",
+        "abbr": "WAKE",
+        "name": "Wake Forest Demon Deacons",
+        "score": 13,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "5-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Justin Ray",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Justin Ray",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Kevair Kennedy",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Justin Ray",
+            "value": "8 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Wake Forest",
+        "nick": "Demon Deacons"
       },
       "espn_line": null,
       "date": "2026-11-25",
@@ -1182,92 +1266,11 @@
       "p4": true
     },
     {
-      "game_id": "401929287",
-      "start_utc": "2026-11-26T02:29Z",
-      "short_name": "WAKE VS MSST",
-      "state": "pre",
-      "status": "11/25 - 9:29 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Imperial Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPNU"
-      ],
-      "home": {
-        "team_id": "344",
-        "abbr": "MSST",
-        "name": "Mississippi State Bulldogs",
-        "score": 0,
-        "winner": null,
-        "record": "5-1",
-        "home_record": "3-0",
-        "away_record": "1-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Josh Hubbard",
-            "value": "16.3"
-          },
-          "reboundsPerGame": {
-            "player": "Tristan Reed",
-            "value": "6.2"
-          },
-          "assistsPerGame": {
-            "player": "Josh Hubbard",
-            "value": "3.8"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Mississippi State",
-        "nick": "Bulldogs"
-      },
-      "away": {
-        "team_id": "154",
-        "abbr": "WAKE",
-        "name": "Wake Forest Demon Deacons",
-        "score": 0,
-        "winner": null,
-        "record": "5-1",
-        "home_record": "5-0",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Kevair Kennedy",
-            "value": "17.2"
-          },
-          "reboundsPerGame": {
-            "player": "Gavin Placide",
-            "value": "7.8"
-          },
-          "assistsPerGame": {
-            "player": "Kevair Kennedy",
-            "value": "3.7"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Wake Forest",
-        "nick": "Demon Deacons"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "MSST -3.5",
-        "spread": -3.5,
-        "over_under": 149.5
-      },
-      "date": "2026-11-25",
-      "p4": true
-    },
-    {
       "game_id": "401921671",
-      "start_utc": "2026-11-26T02:30Z",
+      "start_utc": "2026-11-26T03:15Z",
       "short_name": "GCU VS COLO",
       "state": "pre",
-      "status": "11/25 - 9:30 PM EST",
+      "status": "11/25 - 10:15 PM EST",
       "completed": false,
       "period": 0,
       "clock": "0:00",
@@ -1335,7 +1338,7 @@
         "nick": "Lopes"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GCU -9.5",
         "spread": 9.5,
         "over_under": 152.5
@@ -1416,7 +1419,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "VCU -4.5",
         "spread": -4.5,
         "over_under": 143.5
@@ -1497,7 +1500,7 @@
         "nick": "Cardinal"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SLU -3.5",
         "spread": -3.5,
         "over_under": 152.5
@@ -1578,7 +1581,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CLEM -3.5",
         "spread": 3.5,
         "over_under": 147.5
