@@ -1,103 +1,19 @@
 {
-  "fetched_at": "2026-11-26T02:45:31+00:00",
+  "fetched_at": "2026-11-26T03:00:26+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
   "division_i_games": 69,
   "rows": [
     {
-      "game_id": "401918971",
-      "start_utc": "2026-11-26T00:50Z",
-      "short_name": "SMU VS USU",
-      "state": "in",
-      "status": "0:45 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "0:45",
-      "venue": "Acrisure Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "CBSSN"
-      ],
-      "home": {
-        "team_id": "328",
-        "abbr": "USU",
-        "name": "Utah State Aggies",
-        "score": 92,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Karson Templin",
-            "value": "21"
-          },
-          "rebounds": {
-            "player": "Karson Templin",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Dallin Hall",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Karson Templin",
-            "value": "21 PTS, 6 REB"
-          }
-        },
-        "conf_id": "21",
-        "conf": null,
-        "rank": null,
-        "loc": "Utah State",
-        "nick": "Aggies"
-      },
-      "away": {
-        "team_id": "2567",
-        "abbr": "SMU",
-        "name": "SMU Mustangs",
-        "score": 59,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "6-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Cameron Lomax",
-            "value": "13"
-          },
-          "rebounds": {
-            "player": "Johan Munch",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Johan Munch",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Johan Munch",
-            "value": "8 PTS, 7 REB"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "SMU",
-        "nick": "Mustangs"
-      },
-      "espn_line": null,
-      "date": "2026-11-25",
-      "p4": true
-    },
-    {
       "game_id": "401929287",
       "start_utc": "2026-11-26T02:29Z",
       "short_name": "WAKE VS MSST",
       "state": "in",
-      "status": "13:00 - 1st",
+      "status": "6:33 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "13:00",
+      "clock": "6:33",
       "venue": "Imperial Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,26 +23,26 @@
         "team_id": "344",
         "abbr": "MSST",
         "name": "Mississippi State Bulldogs",
-        "score": 13,
+        "score": 18,
         "winner": null,
         "record": "5-1",
         "home_record": "3-0",
         "away_record": "1-0",
         "leaders": {
           "points": {
-            "player": "Kimani Hamilton",
-            "value": "3"
+            "player": "Thomas Bassong",
+            "value": "5"
           },
           "rebounds": {
             "player": "Tristan Reed",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
-            "player": "RJ Johnson",
+            "player": "Josh Hubbard",
             "value": "2"
           },
           "rating": {
-            "player": "Kimani Hamilton",
+            "player": "Tajuan Simpkins",
             "value": "3 PTS"
           }
         },
@@ -140,7 +56,7 @@
         "team_id": "154",
         "abbr": "WAKE",
         "name": "Wake Forest Demon Deacons",
-        "score": 13,
+        "score": 26,
         "winner": null,
         "record": "5-1",
         "home_record": "5-0",
@@ -148,19 +64,19 @@
         "leaders": {
           "points": {
             "player": "Justin Ray",
-            "value": "8"
+            "value": "10"
           },
           "rebounds": {
-            "player": "Justin Ray",
-            "value": "1"
+            "player": "Kevair Kennedy",
+            "value": "3"
           },
           "assists": {
             "player": "Kevair Kennedy",
             "value": "3"
           },
           "rating": {
-            "player": "Justin Ray",
-            "value": "8 PTS"
+            "player": "Kevair Kennedy",
+            "value": "7 PTS"
           }
         },
         "conf_id": "2",
@@ -1266,13 +1182,13 @@
       "p4": true
     },
     {
-      "game_id": "401921671",
-      "start_utc": "2026-11-26T03:15Z",
-      "short_name": "GCU VS COLO",
-      "state": "pre",
-      "status": "11/25 - 10:15 PM EST",
-      "completed": false,
-      "period": 0,
+      "game_id": "401918971",
+      "start_utc": "2026-11-26T00:50Z",
+      "short_name": "SMU VS USU",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
       "clock": "0:00",
       "venue": "Acrisure Arena",
       "neutral_site": true,
@@ -1280,69 +1196,72 @@
         "CBSSN"
       ],
       "home": {
-        "team_id": "38",
-        "abbr": "COLO",
-        "name": "Colorado Buffaloes",
-        "score": 0,
-        "winner": null,
-        "record": "3-3",
-        "home_record": "2-1",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Barrington Hargress",
-            "value": "16.7"
-          },
-          "reboundsPerGame": {
-            "player": "Justin Neely",
-            "value": "6.2"
-          },
-          "assistsPerGame": {
-            "player": "Barrington Hargress",
-            "value": "4.5"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Colorado",
-        "nick": "Buffaloes"
-      },
-      "away": {
-        "team_id": "2253",
-        "abbr": "GCU",
-        "name": "Grand Canyon Lopes",
-        "score": 0,
-        "winner": null,
-        "record": "5-0",
-        "home_record": "4-0",
+        "team_id": "328",
+        "abbr": "USU",
+        "name": "Utah State Aggies",
+        "score": 93,
+        "winner": true,
+        "record": "6-0",
+        "home_record": "5-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jaden Henley",
-            "value": "19.4"
+          "points": {
+            "player": "Karson Templin",
+            "value": "21"
           },
-          "reboundsPerGame": {
-            "player": "Tyler Behrend",
-            "value": "5.6"
+          "rebounds": {
+            "player": "Karson Templin",
+            "value": "6"
           },
-          "assistsPerGame": {
-            "player": "Dylan Darling",
-            "value": "4.8"
+          "assists": {
+            "player": "Dallin Hall",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Karson Templin",
+            "value": "21 PTS, 6 REB"
           }
         },
-        "conf_id": "44",
+        "conf_id": "21",
         "conf": null,
         "rank": null,
-        "loc": "Grand Canyon",
-        "nick": "Lopes"
+        "loc": "Utah State",
+        "nick": "Aggies"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "GCU -9.5",
-        "spread": 9.5,
-        "over_under": 152.5
+      "away": {
+        "team_id": "2567",
+        "abbr": "SMU",
+        "name": "SMU Mustangs",
+        "score": 59,
+        "winner": false,
+        "record": "6-1",
+        "home_record": "6-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Cameron Lomax",
+            "value": "13"
+          },
+          "rebounds": {
+            "player": "Johan Munch",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Johan Munch",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Johan Munch",
+            "value": "8 PTS, 7 REB"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "SMU",
+        "nick": "Mustangs"
       },
+      "espn_line": null,
       "date": "2026-11-25",
       "p4": true
     },
@@ -1419,10 +1338,91 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "VCU -4.5",
         "spread": -4.5,
         "over_under": 143.5
+      },
+      "date": "2026-11-25",
+      "p4": true
+    },
+    {
+      "game_id": "401921671",
+      "start_utc": "2026-11-26T03:30Z",
+      "short_name": "GCU VS COLO",
+      "state": "pre",
+      "status": "11/25 - 10:30 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Acrisure Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "CBSSN"
+      ],
+      "home": {
+        "team_id": "38",
+        "abbr": "COLO",
+        "name": "Colorado Buffaloes",
+        "score": 0,
+        "winner": null,
+        "record": "3-3",
+        "home_record": "2-1",
+        "away_record": "0-1",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Barrington Hargress",
+            "value": "16.7"
+          },
+          "reboundsPerGame": {
+            "player": "Justin Neely",
+            "value": "6.2"
+          },
+          "assistsPerGame": {
+            "player": "Barrington Hargress",
+            "value": "4.5"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Colorado",
+        "nick": "Buffaloes"
+      },
+      "away": {
+        "team_id": "2253",
+        "abbr": "GCU",
+        "name": "Grand Canyon Lopes",
+        "score": 0,
+        "winner": null,
+        "record": "5-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Jaden Henley",
+            "value": "19.4"
+          },
+          "reboundsPerGame": {
+            "player": "Tyler Behrend",
+            "value": "5.6"
+          },
+          "assistsPerGame": {
+            "player": "Dylan Darling",
+            "value": "4.8"
+          }
+        },
+        "conf_id": "44",
+        "conf": null,
+        "rank": null,
+        "loc": "Grand Canyon",
+        "nick": "Lopes"
+      },
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "GCU -9.5",
+        "spread": 9.5,
+        "over_under": 152.5
       },
       "date": "2026-11-25",
       "p4": true
@@ -1500,7 +1500,7 @@
         "nick": "Cardinal"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SLU -3.5",
         "spread": -3.5,
         "over_under": 152.5
@@ -1581,7 +1581,7 @@
         "nick": "Tigers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CLEM -3.5",
         "spread": 3.5,
         "over_under": 147.5

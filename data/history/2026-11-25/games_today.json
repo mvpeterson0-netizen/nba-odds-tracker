@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T02:45:18+00:00",
+  "fetched_at": "2026-11-26T03:00:19+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-25",
@@ -150,11 +150,11 @@
       "game_id": "401909319",
       "start_utc": "2026-11-26T00:30Z",
       "short_name": "CLE @ NY",
-      "state": "in",
-      "status": "5:12 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "5:12",
+      "clock": "0.0",
       "venue": "Madison Square Garden",
       "neutral_site": false,
       "broadcasts": [
@@ -164,27 +164,27 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 105,
-        "winner": null,
-        "record": "11-6",
-        "home_record": "6-3",
+        "score": 121,
+        "winner": true,
+        "record": "12-6",
+        "home_record": "7-3",
         "away_record": "5-3",
         "leaders": {
           "points": {
-            "player": "Mikal Bridges",
-            "value": "19"
+            "player": "Jose Alvarado",
+            "value": "21"
           },
           "rebounds": {
             "player": "Karl-Anthony Towns",
-            "value": "7"
+            "value": "10"
           },
           "assists": {
             "player": "Josh Hart",
-            "value": "10"
+            "value": "12"
           },
           "rating": {
             "player": "Josh Hart",
-            "value": "13 PTS, 6 REB, 10 AST, 3 STL"
+            "value": "15 PTS, 7 REB, 12 AST, 3 STL"
           }
         }
       },
@@ -192,15 +192,15 @@
         "team_id": "5",
         "abbr": "CLE",
         "name": "Cleveland Cavaliers",
-        "score": 94,
-        "winner": null,
-        "record": "9-9",
+        "score": 102,
+        "winner": false,
+        "record": "9-10",
         "home_record": "7-3",
-        "away_record": "2-6",
+        "away_record": "2-7",
         "leaders": {
           "points": {
             "player": "Donovan Mitchell",
-            "value": "25"
+            "value": "30"
           },
           "rebounds": {
             "player": "Thomas Bryant",
@@ -212,7 +212,7 @@
           },
           "rating": {
             "player": "Donovan Mitchell",
-            "value": "25 PTS, 4 STL"
+            "value": "30 PTS, 4 STL"
           }
         }
       },
@@ -223,10 +223,10 @@
       "start_utc": "2026-11-26T00:30Z",
       "short_name": "MIN @ OKC",
       "state": "in",
-      "status": "5:13 - 4th",
+      "status": "1:51 - 4th",
       "completed": false,
       "period": 4,
-      "clock": "5:13",
+      "clock": "1:51",
       "venue": "Paycom Center",
       "neutral_site": false,
       "broadcasts": [
@@ -236,7 +236,7 @@
         "team_id": "25",
         "abbr": "OKC",
         "name": "Oklahoma City Thunder",
-        "score": 97,
+        "score": 104,
         "winner": null,
         "record": "10-8",
         "home_record": "6-1",
@@ -244,19 +244,19 @@
         "leaders": {
           "points": {
             "player": "Shai Gilgeous-Alexander",
-            "value": "30"
+            "value": "32"
           },
           "rebounds": {
             "player": "Isaiah Hartenstein",
-            "value": "12"
+            "value": "13"
           },
           "assists": {
             "player": "Isaiah Hartenstein",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
             "player": "Shai Gilgeous-Alexander",
-            "value": "30 PTS"
+            "value": "32 PTS"
           }
         }
       },
@@ -264,7 +264,7 @@
         "team_id": "16",
         "abbr": "MIN",
         "name": "Minnesota Timberwolves",
-        "score": 99,
+        "score": 107,
         "winner": null,
         "record": "13-5",
         "home_record": "9-3",
@@ -272,7 +272,7 @@
         "leaders": {
           "points": {
             "player": "Jaden McDaniels",
-            "value": "26"
+            "value": "30"
           },
           "rebounds": {
             "player": "Jaden McDaniels",
@@ -280,11 +280,11 @@
           },
           "assists": {
             "player": "LaMelo Ball",
-            "value": "7"
+            "value": "8"
           },
           "rating": {
             "player": "Jaden McDaniels",
-            "value": "26 PTS, 10 REB"
+            "value": "30 PTS, 10 REB"
           }
         }
       },
@@ -295,10 +295,10 @@
       "start_utc": "2026-11-26T01:00Z",
       "short_name": "LAC @ MEM",
       "state": "in",
-      "status": "1:14 - 3rd",
+      "status": "6:46 - 4th",
       "completed": false,
-      "period": 3,
-      "clock": "1:14",
+      "period": 4,
+      "clock": "6:46",
       "venue": "FedExForum",
       "neutral_site": false,
       "broadcasts": [
@@ -308,27 +308,27 @@
         "team_id": "29",
         "abbr": "MEM",
         "name": "Memphis Grizzlies",
-        "score": 79,
+        "score": 97,
         "winner": null,
         "record": "13-5",
         "home_record": "4-4",
         "away_record": "9-1",
         "leaders": {
           "points": {
-            "player": "Jaylen Wells",
+            "player": "Ty Jerome",
             "value": "17"
           },
           "rebounds": {
             "player": "Cedric Coward",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Ty Jerome",
-            "value": "6"
+            "value": "7"
           },
           "rating": {
-            "player": "Jaylen Wells",
-            "value": "17 PTS"
+            "player": "Ty Jerome",
+            "value": "17 PTS, 7 AST, 4 STL"
           }
         }
       },
@@ -336,7 +336,7 @@
         "team_id": "12",
         "abbr": "LAC",
         "name": "LA Clippers",
-        "score": 67,
+        "score": 81,
         "winner": null,
         "record": "4-12",
         "home_record": "4-4",
@@ -344,15 +344,15 @@
         "leaders": {
           "points": {
             "player": "Brandon Ingram",
-            "value": "16"
+            "value": "18"
           },
           "rebounds": {
             "player": "Rui Hachimura",
             "value": "12"
           },
           "assists": {
-            "player": "Brandon Ingram",
-            "value": "4"
+            "player": "Rui Hachimura",
+            "value": "5"
           },
           "rating": {
             "player": "Rui Hachimura",
@@ -367,10 +367,10 @@
       "start_utc": "2026-11-26T01:00Z",
       "short_name": "BKN @ MIL",
       "state": "in",
-      "status": "1:23 - 3rd",
+      "status": "8:45 - 4th",
       "completed": false,
-      "period": 3,
-      "clock": "1:23",
+      "period": 4,
+      "clock": "8:45",
       "venue": "Fiserv Forum",
       "neutral_site": false,
       "broadcasts": [
@@ -382,7 +382,7 @@
         "team_id": "15",
         "abbr": "MIL",
         "name": "Milwaukee Bucks",
-        "score": 69,
+        "score": 74,
         "winner": null,
         "record": "2-16",
         "home_record": "1-8",
@@ -394,7 +394,7 @@
           },
           "rebounds": {
             "player": "Kel'el Ware",
-            "value": "8"
+            "value": "11"
           },
           "assists": {
             "player": "Tyler Herro",
@@ -410,7 +410,7 @@
         "team_id": "17",
         "abbr": "BKN",
         "name": "Brooklyn Nets",
-        "score": 74,
+        "score": 84,
         "winner": null,
         "record": "3-13",
         "home_record": "1-6",
@@ -418,7 +418,7 @@
         "leaders": {
           "points": {
             "player": "Julius Randle",
-            "value": "22"
+            "value": "23"
           },
           "rebounds": {
             "player": "Day'Ron Sharpe",
@@ -430,7 +430,7 @@
           },
           "rating": {
             "player": "Julius Randle",
-            "value": "22 PTS, 6 REB"
+            "value": "23 PTS, 7 REB"
           }
         }
       },
@@ -441,10 +441,10 @@
       "start_utc": "2026-11-26T01:30Z",
       "short_name": "PHX @ HOU",
       "state": "in",
-      "status": "2:20 - 2nd",
+      "status": "Halftime",
       "completed": false,
       "period": 2,
-      "clock": "2:20",
+      "clock": "0.0",
       "venue": "Toyota Center (Houston)",
       "neutral_site": false,
       "broadcasts": [
@@ -455,27 +455,27 @@
         "team_id": "10",
         "abbr": "HOU",
         "name": "Houston Rockets",
-        "score": 57,
+        "score": 66,
         "winner": null,
         "record": "13-5",
         "home_record": "8-1",
         "away_record": "5-4",
         "leaders": {
           "points": {
-            "player": "Alperen Sengun",
-            "value": "11"
+            "player": "Kevin Durant",
+            "value": "14"
           },
           "rebounds": {
             "player": "Alperen Sengun",
-            "value": "5"
+            "value": "7"
           },
           "assists": {
             "player": "Alperen Sengun",
-            "value": "4"
+            "value": "6"
           },
           "rating": {
             "player": "Alperen Sengun",
-            "value": "11 PTS"
+            "value": "13 PTS, 7 REB, 6 AST"
           }
         }
       },
@@ -483,7 +483,7 @@
         "team_id": "21",
         "abbr": "PHX",
         "name": "Phoenix Suns",
-        "score": 52,
+        "score": 56,
         "winner": null,
         "record": "9-7",
         "home_record": "5-4",
@@ -491,7 +491,7 @@
         "leaders": {
           "points": {
             "player": "Devin Booker",
-            "value": "13"
+            "value": "15"
           },
           "rebounds": {
             "player": "Miles Bridges",
@@ -503,7 +503,7 @@
           },
           "rating": {
             "player": "Devin Booker",
-            "value": "13 PTS"
+            "value": "15 PTS"
           }
         }
       },
@@ -578,7 +578,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "GS -8.5",
         "spread": -8.5,
         "over_under": 216.5
@@ -657,10 +657,10 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SA -3.5",
         "spread": 3.5,
-        "over_under": 225.5
+        "over_under": 224.5
       }
     }
   ]
