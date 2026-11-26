@@ -1,94 +1,10 @@
 {
-  "fetched_at": "2026-11-26T08:15:20+00:00",
+  "fetched_at": "2026-11-26T08:30:25+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
   "division_i_games": 69,
   "rows": [
-    {
-      "game_id": "401921672",
-      "start_utc": "2026-11-26T06:08Z",
-      "short_name": "STAN VS SLU",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Acrisure Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "CBSSN"
-      ],
-      "home": {
-        "team_id": "139",
-        "abbr": "SLU",
-        "name": "Saint Louis Billikens",
-        "score": 66,
-        "winner": true,
-        "record": "4-3",
-        "home_record": "2-1",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Amari McCottry",
-            "value": "19"
-          },
-          "rebounds": {
-            "player": "Amari McCottry",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Trey Green",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Amari McCottry",
-            "value": "19 PTS, 8 REB"
-          }
-        },
-        "conf_id": "3",
-        "conf": null,
-        "rank": null,
-        "loc": "Saint Louis",
-        "nick": "Billikens"
-      },
-      "away": {
-        "team_id": "24",
-        "abbr": "STAN",
-        "name": "Stanford Cardinal",
-        "score": 64,
-        "winner": false,
-        "record": "5-3",
-        "home_record": "5-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Julius Price",
-            "value": "31"
-          },
-          "rebounds": {
-            "player": "Aziz Olajuwon",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Nick Townsend",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Julius Price",
-            "value": "31 PTS"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Stanford",
-        "nick": "Cardinal"
-      },
-      "espn_line": null,
-      "date": "2026-11-25",
-      "p4": true
-    },
     {
       "game_id": "401920428",
       "start_utc": "2026-11-25T17:00Z",
@@ -1596,6 +1512,90 @@
         "rank": null,
         "loc": "Clemson",
         "nick": "Tigers"
+      },
+      "espn_line": null,
+      "date": "2026-11-25",
+      "p4": true
+    },
+    {
+      "game_id": "401921672",
+      "start_utc": "2026-11-26T06:08Z",
+      "short_name": "STAN VS SLU",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Acrisure Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "CBSSN"
+      ],
+      "home": {
+        "team_id": "139",
+        "abbr": "SLU",
+        "name": "Saint Louis Billikens",
+        "score": 66,
+        "winner": true,
+        "record": "4-3",
+        "home_record": "2-1",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Amari McCottry",
+            "value": "19"
+          },
+          "rebounds": {
+            "player": "Amari McCottry",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Trey Green",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Amari McCottry",
+            "value": "19 PTS, 8 REB"
+          }
+        },
+        "conf_id": "3",
+        "conf": null,
+        "rank": null,
+        "loc": "Saint Louis",
+        "nick": "Billikens"
+      },
+      "away": {
+        "team_id": "24",
+        "abbr": "STAN",
+        "name": "Stanford Cardinal",
+        "score": 64,
+        "winner": false,
+        "record": "5-3",
+        "home_record": "5-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Julius Price",
+            "value": "31"
+          },
+          "rebounds": {
+            "player": "Aziz Olajuwon",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Nick Townsend",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Julius Price",
+            "value": "31 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Stanford",
+        "nick": "Cardinal"
       },
       "espn_line": null,
       "date": "2026-11-25",
