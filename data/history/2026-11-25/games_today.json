@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T00:30:21+00:00",
+  "fetched_at": "2026-11-26T00:45:16+00:00",
   "source": "espn",
   "count": 9,
   "game_date": "2026-11-25",
@@ -8,11 +8,11 @@
       "game_id": "401909317",
       "start_utc": "2026-11-25T22:00Z",
       "short_name": "MIA @ PHI",
-      "state": "in",
-      "status": "29.1 - 4th",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 4,
-      "clock": "29.1",
+      "clock": "0.0",
       "venue": "Xfinity Mobile Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -23,9 +23,9 @@
         "abbr": "PHI",
         "name": "Philadelphia 76ers",
         "score": 111,
-        "winner": null,
-        "record": "14-4",
-        "home_record": "7-3",
+        "winner": true,
+        "record": "15-4",
+        "home_record": "8-3",
         "away_record": "7-1",
         "leaders": {
           "points": {
@@ -50,11 +50,11 @@
         "team_id": "14",
         "abbr": "MIA",
         "name": "Miami Heat",
-        "score": 102,
-        "winner": null,
-        "record": "10-6",
+        "score": 104,
+        "winner": false,
+        "record": "10-7",
         "home_record": "6-3",
-        "away_record": "4-3",
+        "away_record": "4-4",
         "leaders": {
           "points": {
             "player": "Giannis Antetokounmpo",
@@ -62,7 +62,7 @@
           },
           "rebounds": {
             "player": "Giannis Antetokounmpo",
-            "value": "13"
+            "value": "14"
           },
           "assists": {
             "player": "Davion Mitchell",
@@ -70,7 +70,7 @@
           },
           "rating": {
             "player": "Giannis Antetokounmpo",
-            "value": "32 PTS, 13 REB"
+            "value": "32 PTS, 14 REB"
           }
         }
       },
@@ -81,10 +81,10 @@
       "start_utc": "2026-11-26T00:00Z",
       "short_name": "CHI @ CHA",
       "state": "in",
-      "status": "1:28 - 1st",
+      "status": "7:10 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "1:28",
+      "period": 2,
+      "clock": "7:10",
       "venue": "Spectrum Center",
       "neutral_site": false,
       "broadcasts": null,
@@ -92,23 +92,23 @@
         "team_id": "30",
         "abbr": "CHA",
         "name": "Charlotte Hornets",
-        "score": 22,
+        "score": 30,
         "winner": null,
         "record": "4-12",
         "home_record": "3-5",
         "away_record": "1-7",
         "leaders": {
           "points": {
-            "player": "Christian Anderson",
-            "value": "7"
+            "player": "Brandon Miller",
+            "value": "9"
           },
           "rebounds": {
             "player": "Naz Reid",
             "value": "4"
           },
           "assists": {
-            "player": "Christian Anderson",
-            "value": "2"
+            "player": "Coby White",
+            "value": "3"
           },
           "rating": {
             "player": "Christian Anderson",
@@ -120,7 +120,7 @@
         "team_id": "4",
         "abbr": "CHI",
         "name": "Chicago Bulls",
-        "score": 17,
+        "score": 38,
         "winner": null,
         "record": "5-12",
         "home_record": "2-6",
@@ -128,19 +128,19 @@
         "leaders": {
           "points": {
             "player": "Matas Buzelis",
-            "value": "4"
+            "value": "9"
           },
           "rebounds": {
             "player": "Josh Giddey",
-            "value": "4"
+            "value": "6"
           },
           "assists": {
             "player": "Buddy Hield",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
-            "player": "Josh Giddey",
-            "value": "2 PTS"
+            "player": "Nic Claxton",
+            "value": "6 PTS, 3 BLK"
           }
         }
       },
@@ -150,11 +150,11 @@
       "game_id": "401909319",
       "start_utc": "2026-11-26T00:30Z",
       "short_name": "CLE @ NY",
-      "state": "pre",
-      "status": "11/25 - 7:30 PM EST",
+      "state": "in",
+      "status": "9:34 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "9:34",
       "venue": "Madison Square Garden",
       "neutral_site": false,
       "broadcasts": [
@@ -164,27 +164,27 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "11-6",
         "home_record": "6-3",
         "away_record": "5-3",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jalen Brunson",
-            "value": "26.5"
+          "points": {
+            "player": "Landry Shamet",
+            "value": "3"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Karl-Anthony Towns",
-            "value": "13.9"
+            "value": "1"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "Jalen Brunson",
-            "value": "5.9"
+            "value": "1"
           },
           "rating": {
-            "player": "Karl-Anthony Towns",
-            "value": "21.8 PPG, 13.9 RPG, 4.0 APG, 1.0 SPG, 0.7 BPG"
+            "player": "Landry Shamet",
+            "value": "3 PTS"
           }
         }
       },
@@ -192,46 +192,37 @@
         "team_id": "5",
         "abbr": "CLE",
         "name": "Cleveland Cavaliers",
-        "score": 0,
+        "score": 5,
         "winner": null,
         "record": "9-9",
         "home_record": "7-3",
         "away_record": "2-6",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Donovan Mitchell",
-            "value": "24.7"
+          "points": {
+            "player": "Peyton Watson",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Jarrett Allen",
-            "value": "8.4"
-          },
-          "assistsPerGame": {
+          "assists": {
             "player": "James Harden",
-            "value": "6.2"
+            "value": "2"
           },
           "rating": {
-            "player": "Donovan Mitchell",
-            "value": "24.7 PPG, 4.6 RPG, 5.2 APG, 1.2 SPG, 0.5 BPG"
+            "player": "Peyton Watson",
+            "value": "3 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "NY -4.5",
-        "spread": -4.5,
-        "over_under": 221.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909320",
       "start_utc": "2026-11-26T00:30Z",
       "short_name": "MIN @ OKC",
-      "state": "pre",
-      "status": "11/25 - 7:30 PM EST",
+      "state": "in",
+      "status": "10:08 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:08",
       "venue": "Paycom Center",
       "neutral_site": false,
       "broadcasts": [
@@ -241,27 +232,23 @@
         "team_id": "25",
         "abbr": "OKC",
         "name": "Oklahoma City Thunder",
-        "score": 0,
+        "score": 2,
         "winner": null,
         "record": "10-8",
         "home_record": "6-1",
         "away_record": "4-7",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "32.1"
+          "points": {
+            "player": "Ajay Mitchell",
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Isaiah Hartenstein",
-            "value": "10.6"
-          },
-          "assistsPerGame": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "4.6"
+          "rebounds": {
+            "player": "Micah Peavy",
+            "value": "2"
           },
           "rating": {
-            "player": "Shai Gilgeous-Alexander",
-            "value": "32.1 PPG, 4.1 RPG, 4.6 APG, 0.8 SPG, 0.9 BPG"
+            "player": "Ajay Mitchell",
+            "value": "2 PTS"
           }
         }
       },
@@ -269,36 +256,31 @@
         "team_id": "16",
         "abbr": "MIN",
         "name": "Minnesota Timberwolves",
-        "score": 0,
+        "score": 4,
         "winner": null,
         "record": "13-5",
         "home_record": "9-3",
         "away_record": "4-2",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Jaden McDaniels",
-            "value": "18.4"
+            "value": "2"
           },
-          "reboundsPerGame": {
-            "player": "Rudy Gobert",
-            "value": "10.6"
+          "rebounds": {
+            "player": "Jaden McDaniels",
+            "value": "1"
           },
-          "assistsPerGame": {
+          "assists": {
             "player": "LaMelo Ball",
-            "value": "5.6"
+            "value": "1"
           },
           "rating": {
             "player": "Jaden McDaniels",
-            "value": "18.4 PPG, 6.2 RPG, 3.7 APG, 1.2 SPG, 0.9 BPG"
+            "value": "2 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "OKC -2.5",
-        "spread": -2.5,
-        "over_under": 223.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909321",
@@ -371,7 +353,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MEM -7.5",
         "spread": -7.5,
         "over_under": 227.5
@@ -450,7 +432,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MIL -1.5",
         "spread": -1.5,
         "over_under": 234.5
@@ -528,7 +510,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "HOU -9.5",
         "spread": -9.5,
         "over_under": 222.5
@@ -603,7 +585,7 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GS -7.5",
         "spread": -7.5,
         "over_under": 215.5
@@ -682,10 +664,10 @@
         }
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SA -3.5",
         "spread": 3.5,
-        "over_under": 226.5
+        "over_under": 227.5
       }
     }
   ]
