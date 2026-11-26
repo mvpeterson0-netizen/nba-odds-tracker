@@ -1,94 +1,10 @@
 {
-  "fetched_at": "2026-11-26T05:45:20+00:00",
+  "fetched_at": "2026-11-26T06:00:31+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
   "division_i_games": 69,
   "rows": [
-    {
-      "game_id": "401921671",
-      "start_utc": "2026-11-26T03:30Z",
-      "short_name": "GCU VS COLO",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Acrisure Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "CBSSN"
-      ],
-      "home": {
-        "team_id": "38",
-        "abbr": "COLO",
-        "name": "Colorado Buffaloes",
-        "score": 73,
-        "winner": false,
-        "record": "3-4",
-        "home_record": "2-1",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Barrington Hargress",
-            "value": "25"
-          },
-          "rebounds": {
-            "player": "Justin Neely",
-            "value": "13"
-          },
-          "assists": {
-            "player": "Josiah Sanders",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Barrington Hargress",
-            "value": "25 PTS"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Colorado",
-        "nick": "Buffaloes"
-      },
-      "away": {
-        "team_id": "2253",
-        "abbr": "GCU",
-        "name": "Grand Canyon Lopes",
-        "score": 79,
-        "winner": true,
-        "record": "6-0",
-        "home_record": "4-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Makaih Williams",
-            "value": "20"
-          },
-          "rebounds": {
-            "player": "Blake Barkley",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Tre Holloman",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Makaih Williams",
-            "value": "20 PTS"
-          }
-        },
-        "conf_id": "44",
-        "conf": null,
-        "rank": null,
-        "loc": "Grand Canyon",
-        "nick": "Lopes"
-      },
-      "espn_line": null,
-      "date": "2026-11-25",
-      "p4": true
-    },
     {
       "game_id": "401921672",
       "start_utc": "2026-11-26T04:59Z",
@@ -134,6 +50,90 @@
         "rank": null,
         "loc": "Stanford",
         "nick": "Cardinal"
+      },
+      "espn_line": null,
+      "date": "2026-11-25",
+      "p4": true
+    },
+    {
+      "game_id": "401921714",
+      "start_utc": "2026-11-26T05:30Z",
+      "short_name": "CLEM VS CSU",
+      "state": "in",
+      "status": "9:10 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "9:10",
+      "venue": "Lahaina Civic Center",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "36",
+        "abbr": "CSU",
+        "name": "Colorado State Rams",
+        "score": 26,
+        "winner": null,
+        "record": "4-3",
+        "home_record": "4-1",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Pops Dunson",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Jojo McIver",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Jojo McIver",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Pops Dunson",
+            "value": "8 PTS"
+          }
+        },
+        "conf_id": "21",
+        "conf": null,
+        "rank": null,
+        "loc": "Colorado State",
+        "nick": "Rams"
+      },
+      "away": {
+        "team_id": "228",
+        "abbr": "CLEM",
+        "name": "Clemson Tigers",
+        "score": 16,
+        "winner": null,
+        "record": "4-3",
+        "home_record": "4-1",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "David Fuchs",
+            "value": "7"
+          },
+          "rebounds": {
+            "player": "David Fuchs",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Chase Thompson",
+            "value": "2"
+          },
+          "rating": {
+            "player": "David Fuchs",
+            "value": "7 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Clemson",
+        "nick": "Tigers"
       },
       "espn_line": null,
       "date": "2026-11-25",
@@ -1484,84 +1484,84 @@
       "p4": true
     },
     {
-      "game_id": "401921714",
-      "start_utc": "2026-11-26T05:30Z",
-      "short_name": "CLEM VS CSU",
-      "state": "in",
-      "status": "15:25 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "15:25",
-      "venue": "Lahaina Civic Center",
+      "game_id": "401921671",
+      "start_utc": "2026-11-26T03:30Z",
+      "short_name": "GCU VS COLO",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
-        "ESPN2"
+        "CBSSN"
       ],
       "home": {
-        "team_id": "36",
-        "abbr": "CSU",
-        "name": "Colorado State Rams",
-        "score": 5,
-        "winner": null,
-        "record": "4-3",
-        "home_record": "4-1",
-        "away_record": "0-0",
+        "team_id": "38",
+        "abbr": "COLO",
+        "name": "Colorado Buffaloes",
+        "score": 73,
+        "winner": false,
+        "record": "3-4",
+        "home_record": "2-1",
+        "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "Carey Booth",
-            "value": "5"
+            "player": "Barrington Hargress",
+            "value": "25"
           },
           "rebounds": {
-            "player": "Kyle Jorgensen",
-            "value": "1"
+            "player": "Justin Neely",
+            "value": "13"
           },
           "assists": {
-            "player": "Jase Butler",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Carey Booth",
-            "value": "5 PTS"
-          }
-        },
-        "conf_id": "21",
-        "conf": null,
-        "rank": null,
-        "loc": "Colorado State",
-        "nick": "Rams"
-      },
-      "away": {
-        "team_id": "228",
-        "abbr": "CLEM",
-        "name": "Clemson Tigers",
-        "score": 4,
-        "winner": null,
-        "record": "4-3",
-        "home_record": "4-1",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "David Fuchs",
+            "player": "Josiah Sanders",
             "value": "2"
           },
-          "rebounds": {
-            "player": "David Fuchs",
-            "value": "4"
-          },
-          "assists": {
-            "player": "Dylan Faulkner",
-            "value": "1"
-          },
           "rating": {
-            "player": "David Fuchs",
-            "value": "2 PTS"
+            "player": "Barrington Hargress",
+            "value": "25 PTS"
           }
         },
-        "conf_id": "2",
-        "conf": "ACC",
+        "conf_id": "8",
+        "conf": "Big 12",
         "rank": null,
-        "loc": "Clemson",
-        "nick": "Tigers"
+        "loc": "Colorado",
+        "nick": "Buffaloes"
+      },
+      "away": {
+        "team_id": "2253",
+        "abbr": "GCU",
+        "name": "Grand Canyon Lopes",
+        "score": 79,
+        "winner": true,
+        "record": "6-0",
+        "home_record": "4-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Makaih Williams",
+            "value": "20"
+          },
+          "rebounds": {
+            "player": "Blake Barkley",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Tre Holloman",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Makaih Williams",
+            "value": "20 PTS"
+          }
+        },
+        "conf_id": "44",
+        "conf": null,
+        "rank": null,
+        "loc": "Grand Canyon",
+        "nick": "Lopes"
       },
       "espn_line": null,
       "date": "2026-11-25",
