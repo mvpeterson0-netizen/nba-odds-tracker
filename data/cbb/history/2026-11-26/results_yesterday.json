@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T05:00:28+00:00",
+  "fetched_at": "2026-11-26T05:15:36+00:00",
   "source": "espn",
   "count": 19,
   "game_date": "2026-11-25",
@@ -9,11 +9,11 @@
       "game_id": "401921713",
       "start_utc": "2026-11-26T03:00Z",
       "short_name": "WASH VS VCU",
-      "state": "in",
-      "status": "0:24 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "0:24",
+      "clock": "0:00",
       "venue": "Lahaina Civic Center",
       "neutral_site": true,
       "broadcasts": [
@@ -23,9 +23,9 @@
         "team_id": "2670",
         "abbr": "VCU",
         "name": "VCU Rams",
-        "score": 77,
-        "winner": null,
-        "record": "4-2",
+        "score": 80,
+        "winner": true,
+        "record": "5-2",
         "home_record": "2-0",
         "away_record": "1-1",
         "leaders": {
@@ -56,9 +56,9 @@
         "team_id": "264",
         "abbr": "WASH",
         "name": "Washington Huskies",
-        "score": 77,
-        "winner": null,
-        "record": "5-1",
+        "score": 78,
+        "winner": false,
+        "record": "5-2",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-26T03:30Z",
       "short_name": "GCU VS COLO",
       "state": "in",
-      "status": "10:34 - 2nd",
+      "status": "5:16 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "10:34",
+      "clock": "5:16",
       "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "38",
         "abbr": "COLO",
         "name": "Colorado Buffaloes",
-        "score": 50,
+        "score": 64,
         "winner": null,
         "record": "3-3",
         "home_record": "2-1",
@@ -115,19 +115,19 @@
         "leaders": {
           "points": {
             "player": "Barrington Hargress",
-            "value": "13"
+            "value": "21"
           },
           "rebounds": {
             "player": "Justin Neely",
-            "value": "9"
+            "value": "13"
           },
           "assists": {
             "player": "Josiah Sanders",
-            "value": "1"
+            "value": "2"
           },
           "rating": {
-            "player": "Justin Neely",
-            "value": "11 PTS, 9 REB"
+            "player": "Barrington Hargress",
+            "value": "21 PTS"
           }
         },
         "conf_id": "8",
@@ -140,7 +140,7 @@
         "team_id": "2253",
         "abbr": "GCU",
         "name": "Grand Canyon Lopes",
-        "score": 55,
+        "score": 62,
         "winner": null,
         "record": "5-0",
         "home_record": "4-0",
@@ -148,7 +148,7 @@
         "leaders": {
           "points": {
             "player": "Makaih Williams",
-            "value": "12"
+            "value": "18"
           },
           "rebounds": {
             "player": "Efe Demirel",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "Makaih Williams",
-            "value": "12 PTS"
+            "value": "18 PTS"
           }
         },
         "conf_id": "44",
@@ -1437,8 +1437,8 @@
       "game_id": "401921672",
       "start_utc": "2026-11-26T04:59Z",
       "short_name": "STAN VS SLU",
-      "state": "pre",
-      "status": "11/25 - 11:59 PM EST",
+      "state": "in",
+      "status": "Delayed",
       "completed": false,
       "period": 0,
       "clock": "0:00",
@@ -1456,20 +1456,7 @@
         "record": "3-3",
         "home_record": "2-1",
         "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Amari McCottry",
-            "value": "15.0"
-          },
-          "reboundsPerGame": {
-            "player": "Kellen Thames",
-            "value": "6.5"
-          },
-          "assistsPerGame": {
-            "player": "Quentin Jones",
-            "value": "5.3"
-          }
-        },
+        "leaders": null,
         "conf_id": "3",
         "conf": null,
         "rank": null,
@@ -1485,32 +1472,14 @@
         "record": "5-2",
         "home_record": "5-0",
         "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Nick Townsend",
-            "value": "14.7"
-          },
-          "reboundsPerGame": {
-            "player": "Nick Townsend",
-            "value": "7.0"
-          },
-          "assistsPerGame": {
-            "player": "Nick Townsend",
-            "value": "4.3"
-          }
-        },
+        "leaders": null,
         "conf_id": "2",
         "conf": "ACC",
         "rank": null,
         "loc": "Stanford",
         "nick": "Cardinal"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "SLU -3.5",
-        "spread": -3.5,
-        "over_under": 150.5
-      },
+      "espn_line": null,
       "date": "2026-11-25",
       "p4": true
     },
@@ -1588,8 +1557,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "CLEM -3.5",
-        "spread": 3.5,
+        "details": "CLEM -4.5",
+        "spread": 4.5,
         "over_under": 147.5
       },
       "date": "2026-11-25",

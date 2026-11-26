@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T05:00:28+00:00",
+  "fetched_at": "2026-11-26T05:15:36+00:00",
   "source": "espn",
   "count": 16,
   "game_date": "2026-11-27",
@@ -994,7 +994,7 @@
     {
       "game_id": "401929289",
       "start_utc": "2026-11-28T00:30Z",
-      "short_name": "MSST VS PSU",
+      "short_name": "PSU VS MSST",
       "state": "pre",
       "status": "11/27 - 7:30 PM EST",
       "completed": false,
@@ -1004,35 +1004,6 @@
       "neutral_site": true,
       "broadcasts": null,
       "home": {
-        "team_id": "213",
-        "abbr": "PSU",
-        "name": "Penn State Nittany Lions",
-        "score": 0,
-        "winner": null,
-        "record": "5-2",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Ivan Juric",
-            "value": "16.7"
-          },
-          "reboundsPerGame": {
-            "player": "Ivan Juric",
-            "value": "13.2"
-          },
-          "assistsPerGame": {
-            "player": "Dasonte Bowen",
-            "value": "4.0"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Penn State",
-        "nick": "Nittany Lions"
-      },
-      "away": {
         "team_id": "344",
         "abbr": "MSST",
         "name": "Mississippi State Bulldogs",
@@ -1060,6 +1031,35 @@
         "rank": null,
         "loc": "Mississippi State",
         "nick": "Bulldogs"
+      },
+      "away": {
+        "team_id": "213",
+        "abbr": "PSU",
+        "name": "Penn State Nittany Lions",
+        "score": 0,
+        "winner": null,
+        "record": "5-2",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Ivan Juric",
+            "value": "16.7"
+          },
+          "reboundsPerGame": {
+            "player": "Ivan Juric",
+            "value": "13.2"
+          },
+          "assistsPerGame": {
+            "player": "Dasonte Bowen",
+            "value": "4.0"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Penn State",
+        "nick": "Nittany Lions"
       },
       "espn_line": null,
       "date": "2026-11-27",
