@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T17:45:27+00:00",
+  "fetched_at": "2026-11-26T18:00:33+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-26T16:00Z",
       "short_name": "UGA VS CIN",
       "state": "in",
-      "status": "8:44 - 2nd",
+      "status": "4:57 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "8:44",
+      "clock": "4:57",
       "venue": "State Farm Field House",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2132",
         "abbr": "CIN",
         "name": "Cincinnati Bearcats",
-        "score": 64,
+        "score": 72,
         "winner": null,
         "record": "5-1",
         "home_record": "4-1",
@@ -34,8 +34,8 @@
             "value": "23"
           },
           "rebounds": {
-            "player": "Jayden Hastings",
-            "value": "5"
+            "player": "Tyler Tejada",
+            "value": "6"
           },
           "assists": {
             "player": "Elijah Perryman",
@@ -56,7 +56,7 @@
         "team_id": "61",
         "abbr": "UGA",
         "name": "Georgia Bulldogs",
-        "score": 59,
+        "score": 72,
         "winner": null,
         "record": "6-0",
         "home_record": "4-0",
@@ -67,8 +67,8 @@
             "value": "16"
           },
           "rebounds": {
-            "player": "Blue Cain",
-            "value": "7"
+            "player": "James Scott",
+            "value": "8"
           },
           "assists": {
             "player": "Blue Cain",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-26T17:00Z",
       "short_name": "OU VS PUR",
       "state": "in",
-      "status": "2:58 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "2:58",
+      "clock": "0:00",
       "venue": "Suncoast Credit Union Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "2509",
         "abbr": "PUR",
         "name": "Purdue Boilermakers",
-        "score": 34,
+        "score": 36,
         "winner": null,
         "record": "4-3",
         "home_record": "4-1",
@@ -115,11 +115,11 @@
         "leaders": {
           "points": {
             "player": "Antione West Jr",
-            "value": "10"
+            "value": "12"
           },
           "rebounds": {
             "player": "Antione West Jr",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "Antione West Jr",
@@ -127,7 +127,7 @@
           },
           "rating": {
             "player": "Antione West Jr",
-            "value": "10 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "7",
@@ -140,7 +140,7 @@
         "team_id": "201",
         "abbr": "OU",
         "name": "Oklahoma Sooners",
-        "score": 26,
+        "score": 31,
         "winner": null,
         "record": "4-2",
         "home_record": "4-1",
@@ -148,7 +148,7 @@
         "leaders": {
           "points": {
             "player": "Pop Isaacs",
-            "value": "8"
+            "value": "13"
           },
           "rebounds": {
             "player": "B.J. Edwards",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "Pop Isaacs",
-            "value": "8 PTS"
+            "value": "13 PTS"
           }
         },
         "conf_id": "23",
@@ -176,7 +176,7 @@
     {
       "game_id": "401920528",
       "start_utc": "2026-11-26T18:00Z",
-      "short_name": "SDSU VS MD",
+      "short_name": "MD VS SDSU",
       "state": "pre",
       "status": "11/26 - 1:00 PM EST",
       "completed": false,
@@ -188,35 +188,6 @@
         "ESPN"
       ],
       "home": {
-        "team_id": "120",
-        "abbr": "MD",
-        "name": "Maryland Terrapins",
-        "score": 0,
-        "winner": null,
-        "record": "3-3",
-        "home_record": "3-1",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Pharrel Payne",
-            "value": "17.2"
-          },
-          "reboundsPerGame": {
-            "player": "Tomislav Buljan",
-            "value": "8.0"
-          },
-          "assistsPerGame": {
-            "player": "DJ Wagner",
-            "value": "3.0"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Maryland",
-        "nick": "Terrapins"
-      },
-      "away": {
         "team_id": "21",
         "abbr": "SDSU",
         "name": "San Diego State Aztecs",
@@ -245,10 +216,39 @@
         "loc": "San Diego State",
         "nick": "Aztecs"
       },
+      "away": {
+        "team_id": "120",
+        "abbr": "MD",
+        "name": "Maryland Terrapins",
+        "score": 0,
+        "winner": null,
+        "record": "3-3",
+        "home_record": "3-1",
+        "away_record": "0-1",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Pharrel Payne",
+            "value": "17.2"
+          },
+          "reboundsPerGame": {
+            "player": "Tomislav Buljan",
+            "value": "8.0"
+          },
+          "assistsPerGame": {
+            "player": "DJ Wagner",
+            "value": "3.0"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Maryland",
+        "nick": "Terrapins"
+      },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MD -5.5",
-        "spread": -5.5,
+        "spread": 5.5,
         "over_under": 153.5
       },
       "date": "2026-11-26",
@@ -327,7 +327,7 @@
         "nick": "Eagles"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UCF -2.5",
         "spread": -2.5,
         "over_under": 147.5
@@ -408,7 +408,7 @@
         "nick": "Gamecocks"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ASU -4.5",
         "spread": -4.5,
         "over_under": 138.5
@@ -489,7 +489,7 @@
         "nick": "Hoyas"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TEX -8.5",
         "spread": -8.5,
         "over_under": 153.5
@@ -570,7 +570,7 @@
         "nick": "Volunteers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ISU -4.5",
         "spread": -4.5,
         "over_under": 139.5
@@ -651,7 +651,7 @@
         "nick": "Hurricanes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MIA -1.5",
         "spread": 1.5,
         "over_under": 159.5
@@ -732,7 +732,7 @@
         "nick": "Razorbacks"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MSU -5.5",
         "spread": -5.5,
         "over_under": 148.5
@@ -813,7 +813,7 @@
         "nick": "Aggies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "USC -1.5",
         "spread": -1.5,
         "over_under": 157.5
@@ -894,7 +894,7 @@
         "nick": "Gaels"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UCLA -7.5",
         "spread": -7.5,
         "over_under": 152.5
@@ -975,7 +975,7 @@
         "nick": "Horned Frogs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CREI -1.5",
         "spread": -1.5,
         "over_under": 153.5
@@ -1056,7 +1056,7 @@
         "nick": "Mustangs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "LSU -6.5",
         "spread": -6.5,
         "over_under": 155.5
@@ -1137,7 +1137,7 @@
         "nick": "Blue Demons"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "DEP -1.5",
         "spread": 1.5,
         "over_under": 136.5
@@ -1218,7 +1218,7 @@
         "nick": "Cardinals"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SJU -1.5",
         "spread": -1.5,
         "over_under": 160.5
@@ -1299,7 +1299,7 @@
         "nick": "Crimson Tide"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ALA -13.5",
         "spread": 13.5,
         "over_under": 169.5
@@ -1380,7 +1380,7 @@
         "nick": "Red Raiders"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TTU -10.5",
         "spread": 10.5,
         "over_under": 148.5
@@ -1461,7 +1461,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "GONZ -3.5",
         "spread": -3.5,
         "over_under": 153.5
