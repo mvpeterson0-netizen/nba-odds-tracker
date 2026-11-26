@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-26T21:30:29+00:00",
+  "fetched_at": "2026-11-26T21:45:28+00:00",
   "source": "espn",
-  "count": 16,
+  "count": 17,
   "game_date": "2026-11-27",
   "division_i_games": 55,
   "rows": [
@@ -236,6 +236,67 @@
         "rank": null,
         "loc": "Southern",
         "nick": "Jaguars"
+      },
+      "espn_line": null,
+      "date": "2026-11-27",
+      "p4": true
+    },
+    {
+      "game_id": "401920532",
+      "start_utc": "2026-11-27T20:30Z",
+      "short_name": "TBD VS MD",
+      "state": "pre",
+      "status": "11/27 - 3:30 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": null,
+      "home": {
+        "team_id": "120",
+        "abbr": "MD",
+        "name": "Maryland Terrapins",
+        "score": 0,
+        "winner": null,
+        "record": "3-4",
+        "home_record": "3-1",
+        "away_record": "0-1",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Pharrel Payne",
+            "value": "17.2"
+          },
+          "reboundsPerGame": {
+            "player": "Tomislav Buljan",
+            "value": "8.0"
+          },
+          "assistsPerGame": {
+            "player": "DJ Wagner",
+            "value": "3.0"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Maryland",
+        "nick": "Terrapins"
+      },
+      "away": {
+        "team_id": "-2",
+        "abbr": "TBD",
+        "name": "TBD",
+        "score": 0,
+        "winner": null,
+        "record": null,
+        "home_record": null,
+        "away_record": null,
+        "leaders": null,
+        "conf_id": null,
+        "conf": null,
+        "rank": null,
+        "loc": "TBD",
+        "nick": "TBD"
       },
       "espn_line": null,
       "date": "2026-11-27",
@@ -850,7 +911,12 @@
         "loc": "UCF",
         "nick": "Knights"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "UGA -5.5",
+        "spread": -5.5,
+        "over_under": 162.5
+      },
       "date": "2026-11-27",
       "p4": true
     },
