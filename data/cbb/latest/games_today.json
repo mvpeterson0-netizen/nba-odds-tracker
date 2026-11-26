@@ -1,103 +1,19 @@
 {
-  "fetched_at": "2026-11-26T19:00:32+00:00",
+  "fetched_at": "2026-11-26T19:15:32+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
   "division_i_games": 21,
   "rows": [
     {
-      "game_id": "401906807",
-      "start_utc": "2026-11-26T17:00Z",
-      "short_name": "OU VS PUR",
-      "state": "in",
-      "status": "0:25 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "0:25",
-      "venue": "Suncoast Credit Union Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "Fox"
-      ],
-      "home": {
-        "team_id": "2509",
-        "abbr": "PUR",
-        "name": "Purdue Boilermakers",
-        "score": 60,
-        "winner": null,
-        "record": "4-3",
-        "home_record": "4-1",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Antione West Jr",
-            "value": "14"
-          },
-          "rebounds": {
-            "player": "Caden Pierce",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Antione West Jr",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Antione West Jr",
-            "value": "14 PTS"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Purdue",
-        "nick": "Boilermakers"
-      },
-      "away": {
-        "team_id": "201",
-        "abbr": "OU",
-        "name": "Oklahoma Sooners",
-        "score": 66,
-        "winner": null,
-        "record": "4-2",
-        "home_record": "4-1",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Pop Isaacs",
-            "value": "17"
-          },
-          "rebounds": {
-            "player": "B.J. Edwards",
-            "value": "9"
-          },
-          "assists": {
-            "player": "Pop Isaacs",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Pop Isaacs",
-            "value": "17 PTS"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Oklahoma",
-        "nick": "Sooners"
-      },
-      "espn_line": null,
-      "date": "2026-11-26",
-      "p4": true
-    },
-    {
       "game_id": "401920528",
       "start_utc": "2026-11-26T18:00Z",
       "short_name": "MD VS SDSU",
       "state": "in",
-      "status": "1:49 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "1:49",
+      "clock": "0:00",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +23,7 @@
         "team_id": "21",
         "abbr": "SDSU",
         "name": "San Diego State Aztecs",
-        "score": 32,
+        "score": 34,
         "winner": null,
         "record": "5-1",
         "home_record": "3-0",
@@ -126,8 +42,8 @@
             "value": "2"
           },
           "rating": {
-            "player": "Latrell Davis",
-            "value": "11 PTS"
+            "player": "Bear Cherry",
+            "value": "5 BLK"
           }
         },
         "conf_id": "21",
@@ -140,7 +56,7 @@
         "team_id": "120",
         "abbr": "MD",
         "name": "Maryland Terrapins",
-        "score": 29,
+        "score": 31,
         "winner": null,
         "record": "3-3",
         "home_record": "3-1",
@@ -148,11 +64,11 @@
         "leaders": {
           "points": {
             "player": "DJ Wagner",
-            "value": "8"
+            "value": "10"
           },
           "rebounds": {
             "player": "DJ Wagner",
-            "value": "3"
+            "value": "4"
           },
           "assists": {
             "player": "Baba Oladotun",
@@ -160,7 +76,7 @@
           },
           "rating": {
             "player": "DJ Wagner",
-            "value": "8 PTS"
+            "value": "10 PTS"
           }
         },
         "conf_id": "7",
@@ -178,10 +94,10 @@
       "start_utc": "2026-11-26T18:30Z",
       "short_name": "BC VS UCF",
       "state": "in",
-      "status": "15:27 - 1st",
+      "status": "8:11 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "15:27",
+      "clock": "8:11",
       "venue": "State Farm Field House",
       "neutral_site": true,
       "broadcasts": [
@@ -191,7 +107,7 @@
         "team_id": "2116",
         "abbr": "UCF",
         "name": "UCF Knights",
-        "score": 2,
+        "score": 11,
         "winner": null,
         "record": "4-2",
         "home_record": "4-1",
@@ -199,15 +115,19 @@
         "leaders": {
           "points": {
             "player": "Arturo Dean",
-            "value": "2"
+            "value": "4"
           },
           "rebounds": {
-            "player": "Mister Dean",
+            "player": "John Bol",
             "value": "3"
+          },
+          "assists": {
+            "player": "Arturo Dean",
+            "value": "1"
           },
           "rating": {
             "player": "Arturo Dean",
-            "value": "2 PTS"
+            "value": "4 PTS"
           }
         },
         "conf_id": "8",
@@ -220,23 +140,27 @@
         "team_id": "103",
         "abbr": "BC",
         "name": "Boston College Eagles",
-        "score": 1,
+        "score": 17,
         "winner": null,
         "record": "6-0",
         "home_record": "4-0",
         "away_record": "1-0",
         "leaders": {
           "points": {
-            "player": "Luke Hunger",
-            "value": "1"
+            "player": "Money Williams",
+            "value": "7"
           },
           "rebounds": {
             "player": "Armoni Zeigler",
-            "value": "3"
+            "value": "4"
+          },
+          "assists": {
+            "player": "Armoni Zeigler",
+            "value": "1"
           },
           "rating": {
             "player": "Money Williams",
-            "value": "1 REB"
+            "value": "7 PTS"
           }
         },
         "conf_id": "2",
@@ -244,6 +168,90 @@
         "rank": null,
         "loc": "Boston College",
         "nick": "Eagles"
+      },
+      "espn_line": null,
+      "date": "2026-11-26",
+      "p4": true
+    },
+    {
+      "game_id": "401921674",
+      "start_utc": "2026-11-26T19:00Z",
+      "short_name": "ASU VS SC",
+      "state": "in",
+      "status": "14:41 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "14:41",
+      "venue": "Acrisure Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "CBSSN"
+      ],
+      "home": {
+        "team_id": "2579",
+        "abbr": "SC",
+        "name": "South Carolina Gamecocks",
+        "score": 12,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Kory Mincy",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Aleksas Bieliauskas",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Kory Mincy",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Kory Mincy",
+            "value": "4 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "South Carolina",
+        "nick": "Gamecocks"
+      },
+      "away": {
+        "team_id": "9",
+        "abbr": "ASU",
+        "name": "Arizona State Sun Devils",
+        "score": 11,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Ben Defty",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Ben Defty",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Joel Foxwell",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Ben Defty",
+            "value": "4 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Arizona State",
+        "nick": "Sun Devils"
       },
       "espn_line": null,
       "date": "2026-11-26",
@@ -334,83 +342,86 @@
       "p4": true
     },
     {
-      "game_id": "401921674",
-      "start_utc": "2026-11-26T19:00Z",
-      "short_name": "ASU VS SC",
-      "state": "pre",
-      "status": "11/26 - 2:00 PM EST",
-      "completed": false,
-      "period": 0,
+      "game_id": "401906807",
+      "start_utc": "2026-11-26T17:00Z",
+      "short_name": "OU VS PUR",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
       "clock": "0:00",
-      "venue": "Acrisure Arena",
+      "venue": "Suncoast Credit Union Arena",
       "neutral_site": true,
       "broadcasts": [
-        "CBSSN"
+        "Fox"
       ],
       "home": {
-        "team_id": "2579",
-        "abbr": "SC",
-        "name": "South Carolina Gamecocks",
-        "score": 0,
-        "winner": null,
-        "record": "5-1",
-        "home_record": "5-0",
+        "team_id": "2509",
+        "abbr": "PUR",
+        "name": "Purdue Boilermakers",
+        "score": 63,
+        "winner": false,
+        "record": "4-4",
+        "home_record": "4-1",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Juan Fernandez",
-            "value": "14.2"
+          "points": {
+            "player": "Antione West Jr",
+            "value": "17"
           },
-          "reboundsPerGame": {
-            "player": "Juan Fernandez",
-            "value": "5.8"
+          "rebounds": {
+            "player": "Caden Pierce",
+            "value": "7"
           },
-          "assistsPerGame": {
-            "player": "Marcus Johnson",
-            "value": "3.2"
+          "assists": {
+            "player": "Antione West Jr",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Antione West Jr",
+            "value": "17 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Purdue",
+        "nick": "Boilermakers"
+      },
+      "away": {
+        "team_id": "201",
+        "abbr": "OU",
+        "name": "Oklahoma Sooners",
+        "score": 70,
+        "winner": true,
+        "record": "5-2",
+        "home_record": "4-1",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Pop Isaacs",
+            "value": "17"
+          },
+          "rebounds": {
+            "player": "B.J. Edwards",
+            "value": "9"
+          },
+          "assists": {
+            "player": "Pop Isaacs",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Pop Isaacs",
+            "value": "17 PTS"
           }
         },
         "conf_id": "23",
         "conf": "SEC",
         "rank": null,
-        "loc": "South Carolina",
-        "nick": "Gamecocks"
+        "loc": "Oklahoma",
+        "nick": "Sooners"
       },
-      "away": {
-        "team_id": "9",
-        "abbr": "ASU",
-        "name": "Arizona State Sun Devils",
-        "score": 0,
-        "winner": null,
-        "record": "5-1",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Paulius Murauskas",
-            "value": "26.2"
-          },
-          "reboundsPerGame": {
-            "player": "Dillan Shaw",
-            "value": "9.8"
-          },
-          "assistsPerGame": {
-            "player": "Joel Foxwell",
-            "value": "6.8"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Arizona State",
-        "nick": "Sun Devils"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "ASU -4.5",
-        "spread": -4.5,
-        "over_under": 139.5
-      },
+      "espn_line": null,
       "date": "2026-11-26",
       "p4": true
     },
@@ -487,7 +498,7 @@
         "nick": "Hoyas"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TEX -8.5",
         "spread": -8.5,
         "over_under": 153.5
@@ -568,7 +579,7 @@
         "nick": "Volunteers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ISU -4.5",
         "spread": -4.5,
         "over_under": 139.5
@@ -649,7 +660,7 @@
         "nick": "Hurricanes"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MIA -1.5",
         "spread": 1.5,
         "over_under": 159.5
@@ -730,7 +741,7 @@
         "nick": "Razorbacks"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MSU -5.5",
         "spread": -5.5,
         "over_under": 148.5
@@ -811,10 +822,10 @@
         "nick": "Aggies"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "USC -1.5",
         "spread": -1.5,
-        "over_under": 157.5
+        "over_under": 156.5
       },
       "date": "2026-11-26",
       "p4": true
@@ -892,7 +903,7 @@
         "nick": "Gaels"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "UCLA -7.5",
         "spread": -7.5,
         "over_under": 152.5
@@ -973,7 +984,7 @@
         "nick": "Horned Frogs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "CREI -1.5",
         "spread": -1.5,
         "over_under": 153.5
@@ -1054,7 +1065,7 @@
         "nick": "Mustangs"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "LSU -6.5",
         "spread": -6.5,
         "over_under": 155.5
@@ -1135,7 +1146,7 @@
         "nick": "Blue Demons"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "PITT -1.5",
         "spread": -1.5,
         "over_under": 137.5
@@ -1216,7 +1227,7 @@
         "nick": "Cardinals"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SJU -1.5",
         "spread": -1.5,
         "over_under": 160.5
@@ -1297,7 +1308,7 @@
         "nick": "Crimson Tide"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ALA -13.5",
         "spread": 13.5,
         "over_under": 169.5
@@ -1378,7 +1389,7 @@
         "nick": "Red Raiders"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TTU -10.5",
         "spread": 10.5,
         "over_under": 148.5
@@ -1459,7 +1470,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GONZ -3.5",
         "spread": -3.5,
         "over_under": 153.5
