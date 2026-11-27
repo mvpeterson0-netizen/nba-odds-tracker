@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T00:15:27+00:00",
+  "fetched_at": "2026-11-27T00:30:26+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-26T22:00Z",
       "short_name": "UCLA VS SMC",
       "state": "in",
-      "status": "7:23 - 2nd",
+      "status": "1:59 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "7:23",
+      "clock": "1:59",
       "venue": "Jenny Craig Pavilion",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2608",
         "abbr": "SMC",
         "name": "Saint Mary's Gaels",
-        "score": 68,
+        "score": 78,
         "winner": null,
         "record": "6-1",
         "home_record": "6-0",
@@ -34,12 +34,12 @@
             "value": "19"
           },
           "rebounds": {
-            "player": "Jeremy Dent-Smith",
-            "value": "5"
+            "player": "Vangelis Zougris",
+            "value": "7"
           },
           "assists": {
             "player": "Joshua Dent",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
             "player": "Joshua Dent",
@@ -56,7 +56,7 @@
         "team_id": "26",
         "abbr": "UCLA",
         "name": "UCLA Bruins",
-        "score": 55,
+        "score": 66,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
@@ -75,8 +75,8 @@
             "value": "4"
           },
           "rating": {
-            "player": "Jaylen Petty",
-            "value": "15 PTS"
+            "player": "Xavier Booker",
+            "value": "14 PTS, 8 REB"
           }
         },
         "conf_id": "7",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-26T23:00Z",
       "short_name": "TCU VS CREI",
       "state": "in",
-      "status": "Halftime",
+      "status": "15:57 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "15:57",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "156",
         "abbr": "CREI",
         "name": "Creighton Bluejays",
-        "score": 44,
+        "score": 52,
         "winner": null,
         "record": "5-1",
         "home_record": "3-0",
@@ -115,11 +115,11 @@
         "leaders": {
           "points": {
             "player": "BJ Davis",
-            "value": "10"
+            "value": "12"
           },
           "rebounds": {
             "player": "Jackson McAndrew",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
             "player": "Katrelle Harmon",
@@ -127,7 +127,7 @@
           },
           "rating": {
             "player": "BJ Davis",
-            "value": "10 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "4",
@@ -140,27 +140,27 @@
         "team_id": "2628",
         "abbr": "TCU",
         "name": "TCU Horned Frogs",
-        "score": 35,
+        "score": 49,
         "winner": null,
         "record": "5-1",
         "home_record": "4-1",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "DJ Thomas",
+            "player": "Brock Harding",
             "value": "11"
           },
           "rebounds": {
             "player": "Brock Harding",
-            "value": "4"
+            "value": "6"
           },
           "assists": {
             "player": "Micah Robinson",
-            "value": "4"
+            "value": "5"
           },
           "rating": {
-            "player": "DJ Thomas",
-            "value": "11 PTS"
+            "player": "Brock Harding",
+            "value": "11 PTS, 6 REB, 3 STL"
           }
         },
         "conf_id": "8",
@@ -168,6 +168,90 @@
         "rank": null,
         "loc": "TCU",
         "nick": "Horned Frogs"
+      },
+      "espn_line": null,
+      "date": "2026-11-26",
+      "p4": true
+    },
+    {
+      "game_id": "401909506",
+      "start_utc": "2026-11-27T00:00Z",
+      "short_name": "DEP VS PITT",
+      "state": "in",
+      "status": "13:41 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "13:41",
+      "venue": "Suncoast Credit Union Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "FS1"
+      ],
+      "home": {
+        "team_id": "221",
+        "abbr": "PITT",
+        "name": "Pittsburgh Panthers",
+        "score": 14,
+        "winner": null,
+        "record": "7-0",
+        "home_record": "4-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Naithan George",
+            "value": "10"
+          },
+          "rebounds": {
+            "player": "Baye Ndongo",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Jonathan Powell",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Naithan George",
+            "value": "10 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Pittsburgh",
+        "nick": "Panthers"
+      },
+      "away": {
+        "team_id": "305",
+        "abbr": "DEP",
+        "name": "DePaul Blue Demons",
+        "score": 12,
+        "winner": null,
+        "record": "6-0",
+        "home_record": "4-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Noah Meeusen",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Fabian Flores",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Layden Blocker",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Noah Meeusen",
+            "value": "6 PTS"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "DePaul",
+        "nick": "Blue Demons"
       },
       "espn_line": null,
       "date": "2026-11-26",
@@ -1085,93 +1169,7 @@
         "loc": "LSU",
         "nick": "Tigers"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "LSU -6.5",
-        "spread": -6.5,
-        "over_under": 155.5
-      },
-      "date": "2026-11-26",
-      "p4": true
-    },
-    {
-      "game_id": "401909506",
-      "start_utc": "2026-11-27T00:00Z",
-      "short_name": "DEP VS PITT",
-      "state": "pre",
-      "status": "11/26 - 7:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Suncoast Credit Union Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "FS1"
-      ],
-      "home": {
-        "team_id": "221",
-        "abbr": "PITT",
-        "name": "Pittsburgh Panthers",
-        "score": 0,
-        "winner": null,
-        "record": "7-0",
-        "home_record": "4-0",
-        "away_record": "1-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Baye Ndongo",
-            "value": "19.7"
-          },
-          "reboundsPerGame": {
-            "player": "Baye Ndongo",
-            "value": "10.7"
-          },
-          "assistsPerGame": {
-            "player": "Naithan George",
-            "value": "7.9"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Pittsburgh",
-        "nick": "Panthers"
-      },
-      "away": {
-        "team_id": "305",
-        "abbr": "DEP",
-        "name": "DePaul Blue Demons",
-        "score": 0,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "4-0",
-        "away_record": "1-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Koree Cotton",
-            "value": "13.0"
-          },
-          "reboundsPerGame": {
-            "player": "Fabian Flores",
-            "value": "6.5"
-          },
-          "assistsPerGame": {
-            "player": "Noah Meeusen",
-            "value": "5.4"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": null,
-        "loc": "DePaul",
-        "nick": "Blue Demons"
-      },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "DEP -1.5",
-        "spread": 1.5,
-        "over_under": 137.5
-      },
+      "espn_line": null,
       "date": "2026-11-26",
       "p4": true
     },
@@ -1248,7 +1246,7 @@
         "nick": "Cardinals"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SJU -1.5",
         "spread": -1.5,
         "over_under": 160.5
@@ -1329,7 +1327,7 @@
         "nick": "Crimson Tide"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ALA -13.5",
         "spread": 13.5,
         "over_under": 169.5
@@ -1410,7 +1408,7 @@
         "nick": "Red Raiders"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TTU -10.5",
         "spread": 10.5,
         "over_under": 148.5
@@ -1491,7 +1489,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "GONZ -3.5",
         "spread": -3.5,
         "over_under": 153.5
