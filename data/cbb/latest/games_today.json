@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T17:00:28+00:00",
+  "fetched_at": "2026-11-27T17:15:27+00:00",
   "source": "espn",
   "count": 25,
   "game_date": "2026-11-27",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-27T16:00Z",
       "short_name": "UVA VS XAV",
       "state": "in",
-      "status": "Halftime",
+      "status": "17:51 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "17:51",
       "venue": "Imperial Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,26 +23,26 @@
         "team_id": "2752",
         "abbr": "XAV",
         "name": "Xavier Musketeers",
-        "score": 27,
+        "score": 36,
         "winner": null,
         "record": "6-1",
         "home_record": "4-1",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Nikos Chitikoudis",
-            "value": "6"
+            "player": "Mike Nwoko",
+            "value": "7"
           },
           "rebounds": {
             "player": "Filip Borovicanin",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
-            "player": "Nikos Chitikoudis",
-            "value": "1"
+            "player": "Filip Borovicanin",
+            "value": "2"
           },
           "rating": {
-            "player": "Nikos Chitikoudis",
+            "player": "Filip Borovicanin",
             "value": "6 PTS"
           }
         },
@@ -56,15 +56,15 @@
         "team_id": "258",
         "abbr": "UVA",
         "name": "Virginia Cavaliers",
-        "score": 42,
+        "score": 48,
         "winner": null,
         "record": "8-0",
         "home_record": "5-0",
         "away_record": "1-0",
         "leaders": {
           "points": {
-            "player": "Sam Lewis",
-            "value": "11"
+            "player": "Thijs De Ridder",
+            "value": "14"
           },
           "rebounds": {
             "player": "Sam Lewis",
@@ -72,7 +72,7 @@
           },
           "assists": {
             "player": "Chance Mallory",
-            "value": "5"
+            "value": "6"
           },
           "rating": {
             "player": "Sam Lewis",
@@ -162,7 +162,7 @@
         "nick": "Cyclones"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SJU -1.5",
         "spread": -1.5,
         "over_under": 151.5
@@ -243,7 +243,7 @@
         "nick": "Demon Deacons"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MEM -1.5",
         "spread": -1.5,
         "over_under": 153.5
@@ -324,7 +324,7 @@
         "nick": "Jaguars"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "VAN -37.5",
         "spread": -37.5,
         "over_under": 152.5
@@ -405,7 +405,7 @@
         "nick": "Hoyas"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UCLA -7.5",
         "spread": -7.5,
         "over_under": 149.5
@@ -486,7 +486,7 @@
         "nick": "Horned Frogs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "BAY -4.5",
         "spread": -4.5,
         "over_under": 149.5
@@ -497,7 +497,7 @@
     {
       "game_id": "401920532",
       "start_utc": "2026-11-27T20:30Z",
-      "short_name": "ORE VS MD",
+      "short_name": "MD VS ORE",
       "state": "pre",
       "status": "11/27 - 3:30 PM EST",
       "completed": false,
@@ -509,35 +509,6 @@
         "ESPNU"
       ],
       "home": {
-        "team_id": "120",
-        "abbr": "MD",
-        "name": "Maryland Terrapins",
-        "score": 0,
-        "winner": null,
-        "record": "3-4",
-        "home_record": "3-1",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Pharrel Payne",
-            "value": "15.9"
-          },
-          "reboundsPerGame": {
-            "player": "Tomislav Buljan",
-            "value": "7.3"
-          },
-          "assistsPerGame": {
-            "player": "DJ Wagner",
-            "value": "3.0"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Maryland",
-        "nick": "Terrapins"
-      },
-      "away": {
         "team_id": "2483",
         "abbr": "ORE",
         "name": "Oregon Ducks",
@@ -566,11 +537,40 @@
         "loc": "Oregon",
         "nick": "Ducks"
       },
+      "away": {
+        "team_id": "120",
+        "abbr": "MD",
+        "name": "Maryland Terrapins",
+        "score": 0,
+        "winner": null,
+        "record": "3-4",
+        "home_record": "3-1",
+        "away_record": "0-1",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Pharrel Payne",
+            "value": "15.9"
+          },
+          "reboundsPerGame": {
+            "player": "Tomislav Buljan",
+            "value": "7.3"
+          },
+          "assistsPerGame": {
+            "player": "DJ Wagner",
+            "value": "3.0"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": null,
+        "loc": "Maryland",
+        "nick": "Terrapins"
+      },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MD -3.5",
-        "spread": -3.5,
-        "over_under": 149.5
+        "spread": 3.5,
+        "over_under": 148.5
       },
       "date": "2026-11-27",
       "p4": true
@@ -648,7 +648,7 @@
         "nick": "Golden Lions"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MIZ -48.5",
         "spread": -48.5,
         "over_under": 155.5
@@ -729,7 +729,7 @@
         "nick": "Bearcats"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CIN -8.5",
         "spread": 8.5,
         "over_under": 140.5
@@ -810,7 +810,7 @@
         "nick": "Longhorns"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TEX -7.5",
         "spread": 7.5,
         "over_under": 160.5
@@ -891,7 +891,7 @@
         "nick": "Wildcats"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "KU -10.5",
         "spread": -10.5,
         "over_under": 158.5
@@ -972,7 +972,7 @@
         "nick": "Golden Eagles"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MARQ -1.5",
         "spread": 1.5,
         "over_under": 160.5
@@ -1053,7 +1053,7 @@
         "nick": "Monarchs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "VT -17.5",
         "spread": -17.5,
         "over_under": 141.5
@@ -1134,7 +1134,7 @@
         "nick": "Wolverines"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MICH -9.5",
         "spread": 9.5,
         "over_under": 164.5
@@ -1215,10 +1215,10 @@
         "nick": "Hilltoppers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ILL -26.5",
         "spread": -26.5,
-        "over_under": 175.5
+        "over_under": 176.5
       },
       "date": "2026-11-27",
       "p4": true
@@ -1296,7 +1296,7 @@
         "nick": "Falcons"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "IU -22.5",
         "spread": -22.5,
         "over_under": 151.5
@@ -1377,7 +1377,7 @@
         "nick": "Knights"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UGA -5.5",
         "spread": -5.5,
         "over_under": 161.5
@@ -1458,7 +1458,7 @@
         "nick": "Mountaineers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "WVU -3.5",
         "spread": 3.5,
         "over_under": 149.5
@@ -1539,7 +1539,7 @@
         "nick": "Golden Grizzlies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "HOU -36.5",
         "spread": -36.5,
         "over_under": 143.5
@@ -1620,7 +1620,7 @@
         "nick": "Nittany Lions"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MSST -6.5",
         "spread": -6.5,
         "over_under": 156.5
@@ -1701,7 +1701,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NU -12.5",
         "spread": -12.5,
         "over_under": 147.5
@@ -1782,7 +1782,7 @@
         "nick": "Hurricanes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MIA -2.5",
         "spread": 2.5,
         "over_under": 170.5
@@ -1863,7 +1863,7 @@
         "nick": "Volunteers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "LOU -3.5",
         "spread": -3.5,
         "over_under": 148.5
@@ -1944,7 +1944,7 @@
         "nick": "Shockers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UK -4.5",
         "spread": -4.5,
         "over_under": 157.5
@@ -2025,7 +2025,7 @@
         "nick": "Aztecs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TTU -8.5",
         "spread": -8.5,
         "over_under": 143.5
