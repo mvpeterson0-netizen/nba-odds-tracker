@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T21:15:32+00:00",
+  "fetched_at": "2026-11-27T21:30:36+00:00",
   "source": "espn",
   "count": 25,
   "game_date": "2026-11-27",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-27T19:30Z",
       "short_name": "GTWN VS UCLA",
       "state": "in",
-      "status": "9:11 - 2nd",
+      "status": "6:02 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:11",
+      "clock": "6:02",
       "venue": "Jenny Craig Pavilion",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "26",
         "abbr": "UCLA",
         "name": "UCLA Bruins",
-        "score": 56,
+        "score": 63,
         "winner": null,
         "record": "6-1",
         "home_record": "5-0",
@@ -31,7 +31,7 @@
         "leaders": {
           "points": {
             "player": "Azavier Robinson",
-            "value": "15"
+            "value": "21"
           },
           "rebounds": {
             "player": "Eric Dailey Jr.",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Azavier Robinson",
-            "value": "15 PTS"
+            "value": "21 PTS"
           }
         },
         "conf_id": "7",
@@ -56,7 +56,7 @@
         "team_id": "46",
         "abbr": "GTWN",
         "name": "Georgetown Hoyas",
-        "score": 47,
+        "score": 55,
         "winner": null,
         "record": "6-1",
         "home_record": "5-0",
@@ -68,11 +68,11 @@
           },
           "rebounds": {
             "player": "Josiah Parker",
-            "value": "4"
+            "value": "5"
           },
           "assists": {
-            "player": "Elmarko Jackson",
-            "value": "3"
+            "player": "Jaland Lowe",
+            "value": "5"
           },
           "rating": {
             "player": "Elmarko Jackson",
@@ -90,182 +90,14 @@
       "p4": true
     },
     {
-      "game_id": "401921827",
-      "start_utc": "2026-11-27T19:00Z",
-      "short_name": "SOU @ VAN",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Memorial Gymnasium (TN)",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "238",
-        "abbr": "VAN",
-        "name": "Vanderbilt Commodores",
-        "score": 111,
-        "winner": true,
-        "record": "8-0",
-        "home_record": "7-0",
-        "away_record": "1-0",
-        "leaders": {
-          "points": {
-            "player": "Ace Glass",
-            "value": "18"
-          },
-          "rebounds": {
-            "player": "Jayden Leverett",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Ant Brown Jr.",
-            "value": "10"
-          },
-          "rating": {
-            "player": "Ace Glass",
-            "value": "18 PTS, 6 REB"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 14,
-        "loc": "Vanderbilt",
-        "nick": "Commodores"
-      },
-      "away": {
-        "team_id": "2582",
-        "abbr": "SOU",
-        "name": "Southern Jaguars",
-        "score": 56,
-        "winner": false,
-        "record": "1-7",
-        "home_record": "1-0",
-        "away_record": "0-7",
-        "leaders": {
-          "points": {
-            "player": "Sean Van Dorn Jr.",
-            "value": "11"
-          },
-          "rebounds": {
-            "player": "Cam Amboree",
-            "value": "4"
-          },
-          "assists": {
-            "player": "Armonii Benjamin",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Julian Greer",
-            "value": "10 PTS"
-          }
-        },
-        "conf_id": "26",
-        "conf": null,
-        "rank": null,
-        "loc": "Southern",
-        "nick": "Jaguars"
-      },
-      "espn_line": null,
-      "date": "2026-11-27",
-      "p4": true
-    },
-    {
-      "game_id": "401929288",
-      "start_utc": "2026-11-27T18:30Z",
-      "short_name": "MEM VS WAKE",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Imperial Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ACC Network"
-      ],
-      "home": {
-        "team_id": "154",
-        "abbr": "WAKE",
-        "name": "Wake Forest Demon Deacons",
-        "score": 85,
-        "winner": false,
-        "record": "6-2",
-        "home_record": "5-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Kevair Kennedy",
-            "value": "29"
-          },
-          "rebounds": {
-            "player": "Gavin Placide",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Kevair Kennedy",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Kevair Kennedy",
-            "value": "29 PTS, 6 AST"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Wake Forest",
-        "nick": "Demon Deacons"
-      },
-      "away": {
-        "team_id": "235",
-        "abbr": "MEM",
-        "name": "Memphis Tigers",
-        "score": 88,
-        "winner": true,
-        "record": "6-1",
-        "home_record": "3-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Jayden Reid",
-            "value": "24"
-          },
-          "rebounds": {
-            "player": "Tylik Weeks",
-            "value": "6"
-          },
-          "assists": {
-            "player": "Jayden Reid",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Jayden Reid",
-            "value": "24 PTS, 6 AST"
-          }
-        },
-        "conf_id": "62",
-        "conf": null,
-        "rank": 24,
-        "loc": "Memphis",
-        "nick": "Tigers"
-      },
-      "espn_line": null,
-      "date": "2026-11-27",
-      "p4": true
-    },
-    {
       "game_id": "401920542",
       "start_utc": "2026-11-27T20:00Z",
       "short_name": "TCU VS BAY",
       "state": "in",
-      "status": "Halftime",
+      "status": "14:48 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "14:48",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -275,7 +107,7 @@
         "team_id": "239",
         "abbr": "BAY",
         "name": "Baylor Bears",
-        "score": 41,
+        "score": 45,
         "winner": null,
         "record": "5-2",
         "home_record": "4-0",
@@ -283,7 +115,7 @@
         "leaders": {
           "points": {
             "player": "Kayden Mingo",
-            "value": "18"
+            "value": "22"
           },
           "rebounds": {
             "player": "Caden Powell",
@@ -295,7 +127,7 @@
           },
           "rating": {
             "player": "Kayden Mingo",
-            "value": "18 PTS"
+            "value": "22 PTS"
           }
         },
         "conf_id": "8",
@@ -308,7 +140,7 @@
         "team_id": "2628",
         "abbr": "TCU",
         "name": "TCU Horned Frogs",
-        "score": 36,
+        "score": 50,
         "winner": null,
         "record": "5-2",
         "home_record": "4-1",
@@ -319,16 +151,16 @@
             "value": "13"
           },
           "rebounds": {
-            "player": "Tanner Toolson",
-            "value": "2"
+            "player": "Xavier Edmonds",
+            "value": "5"
           },
           "assists": {
-            "player": "Trent Lincoln",
-            "value": "2"
+            "player": "Brock Harding",
+            "value": "4"
           },
           "rating": {
-            "player": "Gavin Sykes",
-            "value": "13 PTS"
+            "player": "Micah Robinson",
+            "value": "11 PTS"
           }
         },
         "conf_id": "8",
@@ -346,10 +178,10 @@
       "start_utc": "2026-11-27T20:30Z",
       "short_name": "MD VS ORE",
       "state": "in",
-      "status": "9:41 - 1st",
+      "status": "4:39 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "9:41",
+      "clock": "4:39",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -359,7 +191,7 @@
         "team_id": "2483",
         "abbr": "ORE",
         "name": "Oregon Ducks",
-        "score": 19,
+        "score": 28,
         "winner": null,
         "record": "3-3",
         "home_record": "3-0",
@@ -367,11 +199,11 @@
         "leaders": {
           "points": {
             "player": "Andrew Meadow",
-            "value": "10"
+            "value": "12"
           },
           "rebounds": {
             "player": "Pharaoh Compton",
-            "value": "2"
+            "value": "3"
           },
           "assists": {
             "player": "Andrew Meadow",
@@ -379,7 +211,7 @@
           },
           "rating": {
             "player": "Andrew Meadow",
-            "value": "10 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "7",
@@ -392,7 +224,7 @@
         "team_id": "120",
         "abbr": "MD",
         "name": "Maryland Terrapins",
-        "score": 13,
+        "score": 25,
         "winner": null,
         "record": "3-4",
         "home_record": "3-1",
@@ -403,12 +235,12 @@
             "value": "9"
           },
           "rebounds": {
-            "player": "Tomislav Buljan",
+            "player": "Kaden House",
             "value": "3"
           },
           "assists": {
             "player": "DJ Wagner",
-            "value": "2"
+            "value": "3"
           },
           "rating": {
             "player": "Mike McNair Jr.",
@@ -430,10 +262,10 @@
       "start_utc": "2026-11-27T21:00Z",
       "short_name": "UAPB @ MIZ",
       "state": "in",
-      "status": "14:58 - 1st",
+      "status": "8:24 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "14:58",
+      "clock": "8:24",
       "venue": "Mizzou Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -443,7 +275,7 @@
         "team_id": "142",
         "abbr": "MIZ",
         "name": "Missouri Tigers",
-        "score": 16,
+        "score": 32,
         "winner": null,
         "record": "6-1",
         "home_record": "5-0",
@@ -451,19 +283,19 @@
         "leaders": {
           "points": {
             "player": "Bryson Tiller",
-            "value": "5"
+            "value": "10"
           },
           "rebounds": {
             "player": "Toni Bryant",
             "value": "2"
           },
           "assists": {
-            "player": "Bryson Tiller",
-            "value": "1"
+            "player": "Kennard Davis Jr.",
+            "value": "2"
           },
           "rating": {
             "player": "Bryson Tiller",
-            "value": "5 PTS"
+            "value": "10 PTS, 3 BLK"
           }
         },
         "conf_id": "23",
@@ -476,27 +308,27 @@
         "team_id": "2029",
         "abbr": "UAPB",
         "name": "Arkansas-Pine Bluff Golden Lions",
-        "score": 2,
+        "score": 18,
         "winner": null,
         "record": "0-7",
         "home_record": "0-0",
         "away_record": "0-7",
         "leaders": {
           "points": {
-            "player": "Creed Williamson",
-            "value": "2"
+            "player": "Jai'chaunn Hayes",
+            "value": "6"
           },
           "rebounds": {
             "player": "Jahmari Hamilton-Brown",
-            "value": "1"
+            "value": "3"
           },
           "assists": {
-            "player": "Kalli Johnson",
-            "value": "1"
+            "player": "Jalen Tatum",
+            "value": "2"
           },
           "rating": {
-            "player": "Jahmari Hamilton-Brown",
-            "value": "1 REB"
+            "player": "Jai'chaunn Hayes",
+            "value": "6 PTS"
           }
         },
         "conf_id": "26",
@@ -678,6 +510,174 @@
       "p4": true
     },
     {
+      "game_id": "401921827",
+      "start_utc": "2026-11-27T19:00Z",
+      "short_name": "SOU @ VAN",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Memorial Gymnasium (TN)",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "238",
+        "abbr": "VAN",
+        "name": "Vanderbilt Commodores",
+        "score": 111,
+        "winner": true,
+        "record": "8-0",
+        "home_record": "7-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Ace Glass",
+            "value": "18"
+          },
+          "rebounds": {
+            "player": "Jayden Leverett",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Ant Brown Jr.",
+            "value": "10"
+          },
+          "rating": {
+            "player": "Ace Glass",
+            "value": "18 PTS, 6 REB"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 14,
+        "loc": "Vanderbilt",
+        "nick": "Commodores"
+      },
+      "away": {
+        "team_id": "2582",
+        "abbr": "SOU",
+        "name": "Southern Jaguars",
+        "score": 56,
+        "winner": false,
+        "record": "1-7",
+        "home_record": "1-0",
+        "away_record": "0-7",
+        "leaders": {
+          "points": {
+            "player": "Sean Van Dorn Jr.",
+            "value": "11"
+          },
+          "rebounds": {
+            "player": "Cam Amboree",
+            "value": "4"
+          },
+          "assists": {
+            "player": "Armonii Benjamin",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Julian Greer",
+            "value": "10 PTS"
+          }
+        },
+        "conf_id": "26",
+        "conf": null,
+        "rank": null,
+        "loc": "Southern",
+        "nick": "Jaguars"
+      },
+      "espn_line": null,
+      "date": "2026-11-27",
+      "p4": true
+    },
+    {
+      "game_id": "401929288",
+      "start_utc": "2026-11-27T18:30Z",
+      "short_name": "MEM VS WAKE",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Imperial Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ACC Network"
+      ],
+      "home": {
+        "team_id": "154",
+        "abbr": "WAKE",
+        "name": "Wake Forest Demon Deacons",
+        "score": 85,
+        "winner": false,
+        "record": "6-2",
+        "home_record": "5-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Kevair Kennedy",
+            "value": "29"
+          },
+          "rebounds": {
+            "player": "Gavin Placide",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Kevair Kennedy",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Kevair Kennedy",
+            "value": "29 PTS, 6 AST"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Wake Forest",
+        "nick": "Demon Deacons"
+      },
+      "away": {
+        "team_id": "235",
+        "abbr": "MEM",
+        "name": "Memphis Tigers",
+        "score": 88,
+        "winner": true,
+        "record": "6-1",
+        "home_record": "3-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Jayden Reid",
+            "value": "24"
+          },
+          "rebounds": {
+            "player": "Tylik Weeks",
+            "value": "6"
+          },
+          "assists": {
+            "player": "Jayden Reid",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Jayden Reid",
+            "value": "24 PTS, 6 AST"
+          }
+        },
+        "conf_id": "62",
+        "conf": null,
+        "rank": 24,
+        "loc": "Memphis",
+        "nick": "Tigers"
+      },
+      "espn_line": null,
+      "date": "2026-11-27",
+      "p4": true
+    },
+    {
       "game_id": "401929283",
       "start_utc": "2026-11-27T21:30Z",
       "short_name": "CIN VS BC",
@@ -753,7 +753,7 @@
         "provider": "Draft Kings",
         "details": "CIN -8.5",
         "spread": 8.5,
-        "over_under": 140.5
+        "over_under": 139.5
       },
       "date": "2026-11-27",
       "p4": true
@@ -1968,7 +1968,7 @@
         "provider": "Draft Kings",
         "details": "UK -4.5",
         "spread": -4.5,
-        "over_under": 158.5
+        "over_under": 157.5
       },
       "date": "2026-11-27",
       "p4": true
