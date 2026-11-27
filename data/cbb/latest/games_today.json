@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T21:45:22+00:00",
+  "fetched_at": "2026-11-27T21:51:16+00:00",
   "source": "espn",
   "count": 25,
   "game_date": "2026-11-27",
@@ -9,11 +9,11 @@
       "game_id": "401921717",
       "start_utc": "2026-11-27T19:30Z",
       "short_name": "GTWN VS UCLA",
-      "state": "in",
-      "status": "1:17 - 2nd",
-      "completed": false,
+      "state": "post",
+      "status": "Final",
+      "completed": true,
       "period": 2,
-      "clock": "1:17",
+      "clock": "0:00",
       "venue": "Jenny Craig Pavilion",
       "neutral_site": true,
       "broadcasts": [
@@ -23,9 +23,9 @@
         "team_id": "26",
         "abbr": "UCLA",
         "name": "UCLA Bruins",
-        "score": 74,
-        "winner": null,
-        "record": "6-1",
+        "score": 75,
+        "winner": true,
+        "record": "7-1",
         "home_record": "5-0",
         "away_record": "0-0",
         "leaders": {
@@ -56,9 +56,9 @@
         "team_id": "46",
         "abbr": "GTWN",
         "name": "Georgetown Hoyas",
-        "score": 60,
-        "winner": null,
-        "record": "6-1",
+        "score": 63,
+        "winner": false,
+        "record": "6-2",
         "home_record": "5-0",
         "away_record": "1-0",
         "leaders": {
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-27T20:00Z",
       "short_name": "TCU VS BAY",
       "state": "in",
-      "status": "9:59 - 2nd",
+      "status": "7:54 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "9:59",
+      "clock": "7:54",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "239",
         "abbr": "BAY",
         "name": "Baylor Bears",
-        "score": 54,
+        "score": 56,
         "winner": null,
         "record": "5-2",
         "home_record": "4-0",
@@ -140,7 +140,7 @@
         "team_id": "2628",
         "abbr": "TCU",
         "name": "TCU Horned Frogs",
-        "score": 65,
+        "score": 69,
         "winner": null,
         "record": "5-2",
         "home_record": "4-1",
@@ -178,10 +178,10 @@
       "start_utc": "2026-11-27T20:30Z",
       "short_name": "MD VS ORE",
       "state": "in",
-      "status": "0:29 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "0:29",
+      "clock": "0:00",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -262,10 +262,10 @@
       "start_utc": "2026-11-27T21:00Z",
       "short_name": "UAPB @ MIZ",
       "state": "in",
-      "status": "2:38 - 1st",
+      "status": "0:00 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "2:38",
+      "clock": "0:00",
       "venue": "Mizzou Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -275,7 +275,7 @@
         "team_id": "142",
         "abbr": "MIZ",
         "name": "Missouri Tigers",
-        "score": 43,
+        "score": 51,
         "winner": null,
         "record": "6-1",
         "home_record": "5-0",
@@ -283,10 +283,10 @@
         "leaders": {
           "points": {
             "player": "Bryson Tiller",
-            "value": "10"
+            "value": "14"
           },
           "rebounds": {
-            "player": "Toni Bryant",
+            "player": "Bryson Tiller",
             "value": "4"
           },
           "assists": {
@@ -295,7 +295,7 @@
           },
           "rating": {
             "player": "Bryson Tiller",
-            "value": "10 PTS, 3 BLK"
+            "value": "14 PTS, 3 BLK"
           }
         },
         "conf_id": "23",
@@ -308,15 +308,15 @@
         "team_id": "2029",
         "abbr": "UAPB",
         "name": "Arkansas-Pine Bluff Golden Lions",
-        "score": 23,
+        "score": 28,
         "winner": null,
         "record": "0-7",
         "home_record": "0-0",
         "away_record": "0-7",
         "leaders": {
           "points": {
-            "player": "Jai'chaunn Hayes",
-            "value": "9"
+            "player": "Creed Williamson",
+            "value": "11"
           },
           "rebounds": {
             "player": "Jalen Tatum",
@@ -327,8 +327,8 @@
             "value": "3"
           },
           "rating": {
-            "player": "Jai'chaunn Hayes",
-            "value": "9 PTS"
+            "player": "Creed Williamson",
+            "value": "11 PTS"
           }
         },
         "conf_id": "26",
@@ -346,10 +346,10 @@
       "start_utc": "2026-11-27T21:30Z",
       "short_name": "CIN VS BC",
       "state": "in",
-      "status": "12:39 - 1st",
+      "status": "11:36 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "12:39",
+      "clock": "11:36",
       "venue": "State Farm Field House",
       "neutral_site": true,
       "broadcasts": [
@@ -359,7 +359,7 @@
         "team_id": "103",
         "abbr": "BC",
         "name": "Boston College Eagles",
-        "score": 12,
+        "score": 14,
         "winner": null,
         "record": "7-0",
         "home_record": "4-0",
@@ -367,7 +367,7 @@
         "leaders": {
           "points": {
             "player": "Money Williams",
-            "value": "9"
+            "value": "11"
           },
           "rebounds": {
             "player": "Money Williams",
@@ -379,7 +379,7 @@
           },
           "rating": {
             "player": "Money Williams",
-            "value": "9 PTS"
+            "value": "11 PTS"
           }
         },
         "conf_id": "2",
@@ -392,7 +392,7 @@
         "team_id": "2132",
         "abbr": "CIN",
         "name": "Cincinnati Bearcats",
-        "score": 6,
+        "score": 8,
         "winner": null,
         "record": "6-1",
         "home_record": "4-1",
@@ -834,7 +834,7 @@
         "nick": "Longhorns"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TEX -7.5",
         "spread": 7.5,
         "over_under": 160.5
@@ -915,7 +915,7 @@
         "nick": "Wildcats"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "KU -10.5",
         "spread": -10.5,
         "over_under": 159.5
@@ -996,9 +996,9 @@
         "nick": "Golden Eagles"
       },
       "espn_line": {
-        "provider": "Draft Kings",
-        "details": "MARQ -2.5",
-        "spread": 2.5,
+        "provider": "DraftKings",
+        "details": "MARQ -1.5",
+        "spread": 1.5,
         "over_under": 159.5
       },
       "date": "2026-11-27",
@@ -1077,7 +1077,7 @@
         "nick": "Monarchs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "VT -17.5",
         "spread": -17.5,
         "over_under": 141.5
@@ -1158,7 +1158,7 @@
         "nick": "Wolverines"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MICH -10.5",
         "spread": 10.5,
         "over_under": 165.5
@@ -1239,7 +1239,7 @@
         "nick": "Hilltoppers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ILL -27.5",
         "spread": -27.5,
         "over_under": 175.5
@@ -1320,7 +1320,7 @@
         "nick": "Falcons"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "IU -21.5",
         "spread": -21.5,
         "over_under": 151.5
@@ -1401,7 +1401,7 @@
         "nick": "Knights"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UGA -5.5",
         "spread": -5.5,
         "over_under": 161.5
@@ -1482,7 +1482,7 @@
         "nick": "Mountaineers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "WVU -2.5",
         "spread": 2.5,
         "over_under": 148.5
@@ -1563,7 +1563,7 @@
         "nick": "Golden Grizzlies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "HOU -36.5",
         "spread": -36.5,
         "over_under": 143.5
@@ -1644,7 +1644,7 @@
         "nick": "Nittany Lions"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MSST -6.5",
         "spread": -6.5,
         "over_under": 156.5
@@ -1725,7 +1725,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NU -12.5",
         "spread": -12.5,
         "over_under": 147.5
@@ -1806,7 +1806,7 @@
         "nick": "Hurricanes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MIA -1.5",
         "spread": 1.5,
         "over_under": 170.5
@@ -1887,7 +1887,7 @@
         "nick": "Volunteers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "LOU -3.5",
         "spread": -3.5,
         "over_under": 148.5
@@ -1968,7 +1968,7 @@
         "nick": "Shockers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UK -4.5",
         "spread": -4.5,
         "over_under": 157.5
@@ -2049,7 +2049,7 @@
         "nick": "Aztecs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TTU -8.5",
         "spread": -8.5,
         "over_under": 142.5
