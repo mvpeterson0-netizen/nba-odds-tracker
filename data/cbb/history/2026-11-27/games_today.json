@@ -1,129 +1,49 @@
 {
-  "fetched_at": "2026-11-27T18:00:31+00:00",
+  "fetched_at": "2026-11-27T18:15:22+00:00",
   "source": "espn",
   "count": 25,
   "game_date": "2026-11-27",
   "division_i_games": 55,
   "rows": [
     {
-      "game_id": "401920429",
-      "start_utc": "2026-11-27T16:00Z",
-      "short_name": "UVA VS XAV",
-      "state": "in",
-      "status": "3:56 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "3:56",
-      "venue": "Imperial Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "2752",
-        "abbr": "XAV",
-        "name": "Xavier Musketeers",
-        "score": 61,
-        "winner": null,
-        "record": "6-1",
-        "home_record": "4-1",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Mike Nwoko",
-            "value": "13"
-          },
-          "rebounds": {
-            "player": "Filip Borovicanin",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Filip Borovicanin",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Mike Nwoko",
-            "value": "13 PTS"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": null,
-        "loc": "Xavier",
-        "nick": "Musketeers"
-      },
-      "away": {
-        "team_id": "258",
-        "abbr": "UVA",
-        "name": "Virginia Cavaliers",
-        "score": 76,
-        "winner": null,
-        "record": "8-0",
-        "home_record": "5-0",
-        "away_record": "1-0",
-        "leaders": {
-          "points": {
-            "player": "Elijah Gertrude",
-            "value": "17"
-          },
-          "rebounds": {
-            "player": "Thijs De Ridder",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Chance Mallory",
-            "value": "9"
-          },
-          "rating": {
-            "player": "Sam Lewis",
-            "value": "16 PTS, 6 REB"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": 2,
-        "loc": "Virginia",
-        "nick": "Cavaliers"
-      },
-      "espn_line": null,
-      "date": "2026-11-27",
-      "p4": true
-    },
-    {
       "game_id": "401920533",
       "start_utc": "2026-11-27T18:00Z",
       "short_name": "ISU VS SJU",
-      "state": "pre",
-      "status": "11/27 - 1:00 PM EST",
+      "state": "in",
+      "status": "15:50 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "15:50",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
-        "ESPN2"
+        "ESPNEWS"
       ],
       "home": {
         "team_id": "2599",
         "abbr": "SJU",
         "name": "St. John's Red Storm",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "6-1",
         "home_record": "5-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Keyshawn Hall",
-            "value": "18.3"
+          "points": {
+            "player": "Ian Jackson",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Tounde Yessoufou",
-            "value": "6.3"
+          "rebounds": {
+            "player": "Ian Jackson",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Quinn Ellis",
-            "value": "8.1"
+          "assists": {
+            "player": "Ian Jackson",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Ian Jackson",
+            "value": "3 PTS"
           }
         },
         "conf_id": "4",
@@ -136,23 +56,27 @@
         "team_id": "66",
         "abbr": "ISU",
         "name": "Iowa State Cyclones",
-        "score": 0,
+        "score": 7,
         "winner": null,
         "record": "4-2",
         "home_record": "3-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Tre Singleton",
-            "value": "16.8"
+          "points": {
+            "player": "Dominykas Pleta",
+            "value": "4"
           },
-          "reboundsPerGame": {
+          "rebounds": {
             "player": "Tre Singleton",
-            "value": "6.5"
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Tamin Lipsey",
-            "value": "3.8"
+          "assists": {
+            "player": "Dominykas Pleta",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Dominykas Pleta",
+            "value": "4 PTS"
           }
         },
         "conf_id": "8",
@@ -161,12 +85,91 @@
         "loc": "Iowa State",
         "nick": "Cyclones"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "SJU -1.5",
-        "spread": -1.5,
-        "over_under": 151.5
+      "espn_line": null,
+      "date": "2026-11-27",
+      "p4": true
+    },
+    {
+      "game_id": "401920429",
+      "start_utc": "2026-11-27T16:00Z",
+      "short_name": "UVA VS XAV",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Imperial Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "2752",
+        "abbr": "XAV",
+        "name": "Xavier Musketeers",
+        "score": 71,
+        "winner": false,
+        "record": "6-2",
+        "home_record": "4-1",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Mike Nwoko",
+            "value": "15"
+          },
+          "rebounds": {
+            "player": "Filip Borovicanin",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Filip Borovicanin",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Mike Nwoko",
+            "value": "15 PTS"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Xavier",
+        "nick": "Musketeers"
       },
+      "away": {
+        "team_id": "258",
+        "abbr": "UVA",
+        "name": "Virginia Cavaliers",
+        "score": 83,
+        "winner": true,
+        "record": "9-0",
+        "home_record": "5-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Sam Lewis",
+            "value": "21"
+          },
+          "rebounds": {
+            "player": "Thijs De Ridder",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Chance Mallory",
+            "value": "9"
+          },
+          "rating": {
+            "player": "Sam Lewis",
+            "value": "21 PTS, 8 REB"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": 2,
+        "loc": "Virginia",
+        "nick": "Cavaliers"
+      },
+      "espn_line": null,
       "date": "2026-11-27",
       "p4": true
     },
@@ -651,7 +654,7 @@
         "provider": "DraftKings",
         "details": "MIZ -48.5",
         "spread": -48.5,
-        "over_under": 155.5
+        "over_under": 154.5
       },
       "date": "2026-11-27",
       "p4": true
@@ -1297,8 +1300,8 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "IU -22.5",
-        "spread": -22.5,
+        "details": "IU -21.5",
+        "spread": -21.5,
         "over_under": 151.5
       },
       "date": "2026-11-27",
@@ -2028,7 +2031,7 @@
         "provider": "DraftKings",
         "details": "TTU -8.5",
         "spread": -8.5,
-        "over_under": 143.5
+        "over_under": 142.5
       },
       "date": "2026-11-27",
       "p4": true
