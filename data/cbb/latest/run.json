@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-27T19:45:24+00:00",
+  "finished_at": "2026-11-27T20:00:38+00:00",
   "game_date": "2026-11-27",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -29,21 +29,139 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 2187
+      "ODDS_API_KEY_20K": 2100
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Maryland Terrapins @ Oregon Ducks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Arkansas-Pine Bluff Golden Lions @ Missouri Tigers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Cincinnati Bearcats @ Boston College Eagles",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Villanova Wildcats @ Kansas Jayhawks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 12
+      },
+      {
+        "matchup": "Texas A&M Aggies @ Marquette Golden Eagles",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Old Dominion Monarchs @ Virginia Tech Hokies",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Texas Longhorns @ Saint Mary's Gaels",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Michigan Wolverines @ Kansas St Wildcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Bowling Green Falcons @ Indiana Hoosiers",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Western Kentucky Hilltoppers @ Illinois Fighting Illini",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "UCF Knights @ Georgia Bulldogs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "West Virginia Mountaineers @ North Carolina Tar Heels",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Oakland Golden Grizzlies @ Houston Cougars",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Penn State Nittany Lions @ Mississippi St Bulldogs",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Northeastern Huskies @ Northwestern Wildcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Miami Hurricanes @ Alabama Crimson Tide",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Wichita St Shockers @ Kentucky Wildcats",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "Tennessee Volunteers @ Louisville Cardinals",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      },
+      {
+        "matchup": "San Diego St Aztecs @ Texas Tech Red Raiders",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 83,
-    "p4_events": 22,
+    "p4_events": 21,
     "unmatched": [
       "SE Missouri St Redhawks @ UMKC Kangaroos"
     ],
-    "due": 0,
+    "due": 19,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 1,
+      "pull_type": "pregame",
+      "rows": 8,
+      "credits_last": 2
     },
     "status": "ok"
   }
