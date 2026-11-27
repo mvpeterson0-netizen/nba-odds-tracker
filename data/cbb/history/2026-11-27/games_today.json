@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T18:45:32+00:00",
+  "fetched_at": "2026-11-27T19:00:26+00:00",
   "source": "espn",
   "count": 25,
   "game_date": "2026-11-27",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-27T18:00Z",
       "short_name": "ISU VS SJU",
       "state": "in",
-      "status": "4:23 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "4:23",
+      "clock": "0:00",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2599",
         "abbr": "SJU",
         "name": "St. John's Red Storm",
-        "score": 28,
+        "score": 38,
         "winner": null,
         "record": "6-1",
         "home_record": "5-0",
@@ -34,7 +34,7 @@
             "value": "11"
           },
           "rebounds": {
-            "player": "Tounde Yessoufou",
+            "player": "Ian Jackson",
             "value": "3"
           },
           "assists": {
@@ -56,7 +56,7 @@
         "team_id": "66",
         "abbr": "ISU",
         "name": "Iowa State Cyclones",
-        "score": 32,
+        "score": 40,
         "winner": null,
         "record": "4-2",
         "home_record": "3-0",
@@ -64,11 +64,11 @@
         "leaders": {
           "points": {
             "player": "Dominykas Pleta",
-            "value": "8"
+            "value": "12"
           },
           "rebounds": {
             "player": "Dominykas Pleta",
-            "value": "2"
+            "value": "4"
           },
           "assists": {
             "player": "Tamin Lipsey",
@@ -76,7 +76,7 @@
           },
           "rating": {
             "player": "Dominykas Pleta",
-            "value": "8 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "8",
@@ -84,6 +84,90 @@
         "rank": null,
         "loc": "Iowa State",
         "nick": "Cyclones"
+      },
+      "espn_line": null,
+      "date": "2026-11-27",
+      "p4": true
+    },
+    {
+      "game_id": "401929288",
+      "start_utc": "2026-11-27T18:30Z",
+      "short_name": "MEM VS WAKE",
+      "state": "in",
+      "status": "14:06 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "14:06",
+      "venue": "Imperial Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ACC Network"
+      ],
+      "home": {
+        "team_id": "154",
+        "abbr": "WAKE",
+        "name": "Wake Forest Demon Deacons",
+        "score": 13,
+        "winner": null,
+        "record": "6-1",
+        "home_record": "5-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Jamari McDowell",
+            "value": "6"
+          },
+          "rebounds": {
+            "player": "Gavin Placide",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Kevair Kennedy",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Jamari McDowell",
+            "value": "6 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "Wake Forest",
+        "nick": "Demon Deacons"
+      },
+      "away": {
+        "team_id": "235",
+        "abbr": "MEM",
+        "name": "Memphis Tigers",
+        "score": 8,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "3-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Tylik Weeks",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Tylik Weeks",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Nemanja Popovic",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Tylik Weeks",
+            "value": "4 PTS"
+          }
+        },
+        "conf_id": "62",
+        "conf": null,
+        "rank": 24,
+        "loc": "Memphis",
+        "nick": "Tigers"
       },
       "espn_line": null,
       "date": "2026-11-27",
@@ -174,61 +258,6 @@
       "p4": true
     },
     {
-      "game_id": "401929288",
-      "start_utc": "2026-11-27T18:30Z",
-      "short_name": "MEM VS WAKE",
-      "state": "in",
-      "status": "19:26 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "19:26",
-      "venue": "Imperial Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ACC Network"
-      ],
-      "home": {
-        "team_id": "154",
-        "abbr": "WAKE",
-        "name": "Wake Forest Demon Deacons",
-        "score": 0,
-        "winner": null,
-        "record": "6-1",
-        "home_record": "5-0",
-        "away_record": "0-1",
-        "leaders": null,
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "Wake Forest",
-        "nick": "Demon Deacons"
-      },
-      "away": {
-        "team_id": "235",
-        "abbr": "MEM",
-        "name": "Memphis Tigers",
-        "score": 0,
-        "winner": null,
-        "record": "5-1",
-        "home_record": "3-0",
-        "away_record": "0-1",
-        "leaders": {
-          "rating": {
-            "player": "Rihards Vavers",
-            "value": "1 STL"
-          }
-        },
-        "conf_id": "62",
-        "conf": null,
-        "rank": 24,
-        "loc": "Memphis",
-        "nick": "Tigers"
-      },
-      "espn_line": null,
-      "date": "2026-11-27",
-      "p4": true
-    },
-    {
       "game_id": "401921827",
       "start_utc": "2026-11-27T19:00Z",
       "short_name": "SOU @ VAN",
@@ -301,9 +330,9 @@
         "nick": "Jaguars"
       },
       "espn_line": {
-        "provider": "Draft Kings",
-        "details": "VAN -37.5",
-        "spread": -37.5,
+        "provider": "DraftKings",
+        "details": "VAN -38.5",
+        "spread": -38.5,
         "over_under": 152.5
       },
       "date": "2026-11-27",
@@ -382,7 +411,7 @@
         "nick": "Hoyas"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UCLA -7.5",
         "spread": -7.5,
         "over_under": 149.5
@@ -463,7 +492,7 @@
         "nick": "Horned Frogs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "BAY -4.5",
         "spread": -4.5,
         "over_under": 148.5
@@ -544,7 +573,7 @@
         "nick": "Terrapins"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MD -3.5",
         "spread": 3.5,
         "over_under": 148.5
@@ -625,7 +654,7 @@
         "nick": "Golden Lions"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MIZ -48.5",
         "spread": -48.5,
         "over_under": 154.5
@@ -706,7 +735,7 @@
         "nick": "Bearcats"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "CIN -8.5",
         "spread": 8.5,
         "over_under": 140.5
@@ -787,7 +816,7 @@
         "nick": "Longhorns"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TEX -7.5",
         "spread": 7.5,
         "over_under": 160.5
@@ -868,7 +897,7 @@
         "nick": "Wildcats"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "KU -10.5",
         "spread": -10.5,
         "over_under": 158.5
@@ -949,7 +978,7 @@
         "nick": "Golden Eagles"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MARQ -1.5",
         "spread": 1.5,
         "over_under": 160.5
@@ -1030,7 +1059,7 @@
         "nick": "Monarchs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "VT -17.5",
         "spread": -17.5,
         "over_under": 141.5
@@ -1111,7 +1140,7 @@
         "nick": "Wolverines"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MICH -9.5",
         "spread": 9.5,
         "over_under": 164.5
@@ -1192,10 +1221,10 @@
         "nick": "Hilltoppers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "ILL -26.5",
         "spread": -26.5,
-        "over_under": 176.5
+        "over_under": 175.5
       },
       "date": "2026-11-27",
       "p4": true
@@ -1273,7 +1302,7 @@
         "nick": "Falcons"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "IU -21.5",
         "spread": -21.5,
         "over_under": 151.5
@@ -1354,7 +1383,7 @@
         "nick": "Knights"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UGA -5.5",
         "spread": -5.5,
         "over_under": 161.5
@@ -1435,7 +1464,7 @@
         "nick": "Mountaineers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "WVU -3.5",
         "spread": 3.5,
         "over_under": 149.5
@@ -1516,7 +1545,7 @@
         "nick": "Golden Grizzlies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "HOU -36.5",
         "spread": -36.5,
         "over_under": 143.5
@@ -1597,7 +1626,7 @@
         "nick": "Nittany Lions"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MSST -6.5",
         "spread": -6.5,
         "over_under": 156.5
@@ -1678,7 +1707,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NU -12.5",
         "spread": -12.5,
         "over_under": 147.5
@@ -1759,7 +1788,7 @@
         "nick": "Hurricanes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MIA -2.5",
         "spread": 2.5,
         "over_under": 170.5
@@ -1840,7 +1869,7 @@
         "nick": "Volunteers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "LOU -3.5",
         "spread": -3.5,
         "over_under": 148.5
@@ -1921,7 +1950,7 @@
         "nick": "Shockers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UK -4.5",
         "spread": -4.5,
         "over_under": 157.5
@@ -2002,7 +2031,7 @@
         "nick": "Aztecs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TTU -8.5",
         "spread": -8.5,
         "over_under": 142.5
