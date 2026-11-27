@@ -1,19 +1,187 @@
 {
-  "fetched_at": "2026-11-27T02:00:30+00:00",
+  "fetched_at": "2026-11-27T02:15:33+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
   "division_i_games": 21,
   "rows": [
     {
+      "game_id": "401920530",
+      "start_utc": "2026-11-27T02:00Z",
+      "short_name": "LOU VS SJU",
+      "state": "in",
+      "status": "15:10 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "15:10",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "2599",
+        "abbr": "SJU",
+        "name": "St. John's Red Storm",
+        "score": 8,
+        "winner": null,
+        "record": "6-0",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Ruben Prey",
+            "value": "4"
+          },
+          "rebounds": {
+            "player": "Ruben Prey",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Quinn Ellis",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Ruben Prey",
+            "value": "4 PTS"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": 13,
+        "loc": "St. John's",
+        "nick": "Red Storm"
+      },
+      "away": {
+        "team_id": "97",
+        "abbr": "LOU",
+        "name": "Louisville Cardinals",
+        "score": 14,
+        "winner": null,
+        "record": "4-1",
+        "home_record": "3-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Adrian Wooley",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Flory Bidunga",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Flory Bidunga",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Adrian Wooley",
+            "value": "8 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": 25,
+        "loc": "Louisville",
+        "nick": "Cardinals"
+      },
+      "espn_line": null,
+      "date": "2026-11-26",
+      "p4": true
+    },
+    {
+      "game_id": "401920539",
+      "start_utc": "2026-11-27T02:00Z",
+      "short_name": "ALA VS KSU",
+      "state": "in",
+      "status": "14:22 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "14:22",
+      "venue": "T-Mobile Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPNU"
+      ],
+      "home": {
+        "team_id": "2306",
+        "abbr": "KSU",
+        "name": "Kansas State Wildcats",
+        "score": 8,
+        "winner": null,
+        "record": "3-3",
+        "home_record": "3-2",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Brock Vice",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Brandon Rechsteiner",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Brandon Rechsteiner",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Brock Vice",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": null,
+        "loc": "Kansas State",
+        "nick": "Wildcats"
+      },
+      "away": {
+        "team_id": "333",
+        "abbr": "ALA",
+        "name": "Alabama Crimson Tide",
+        "score": 10,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Brandon Garrison",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Brandon Garrison",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Amari Allen",
+            "value": "3"
+          },
+          "rating": {
+            "player": "Brandon Garrison",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 15,
+        "loc": "Alabama",
+        "nick": "Crimson Tide"
+      },
+      "espn_line": null,
+      "date": "2026-11-26",
+      "p4": true
+    },
+    {
       "game_id": "401918972",
       "start_utc": "2026-11-27T00:00Z",
       "short_name": "LSU VS SMU",
       "state": "in",
-      "status": "12:07 - 2nd",
+      "status": "7:44 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "12:07",
+      "clock": "7:44",
       "venue": "Acrisure Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +191,7 @@
         "team_id": "2567",
         "abbr": "SMU",
         "name": "SMU Mustangs",
-        "score": 54,
+        "score": 59,
         "winner": null,
         "record": "6-1",
         "home_record": "6-0",
@@ -39,7 +207,7 @@
           },
           "assists": {
             "player": "Rowan Brumbaugh",
-            "value": "6"
+            "value": "7"
           },
           "rating": {
             "player": "Oziyah Sellers",
@@ -56,7 +224,7 @@
         "team_id": "99",
         "abbr": "LSU",
         "name": "LSU Tigers",
-        "score": 57,
+        "score": 62,
         "winner": null,
         "record": "7-0",
         "home_record": "5-0",
@@ -64,11 +232,11 @@
         "leaders": {
           "points": {
             "player": "Mo Dioubate",
-            "value": "17"
+            "value": "19"
           },
           "rebounds": {
-            "player": "Mo Dioubate",
-            "value": "5"
+            "player": "Michael Ruzic",
+            "value": "6"
           },
           "assists": {
             "player": "Donovan Dent",
@@ -76,7 +244,7 @@
           },
           "rating": {
             "player": "Mo Dioubate",
-            "value": "17 PTS"
+            "value": "19 PTS"
           }
         },
         "conf_id": "23",
@@ -94,10 +262,10 @@
       "start_utc": "2026-11-27T00:00Z",
       "short_name": "DEP VS PITT",
       "state": "in",
-      "status": "7:55 - 2nd",
+      "status": "3:58 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "7:55",
+      "clock": "3:58",
       "venue": "Suncoast Credit Union Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +275,7 @@
         "team_id": "221",
         "abbr": "PITT",
         "name": "Pittsburgh Panthers",
-        "score": 52,
+        "score": 61,
         "winner": null,
         "record": "7-0",
         "home_record": "4-0",
@@ -115,7 +283,7 @@
         "leaders": {
           "points": {
             "player": "Baye Ndongo",
-            "value": "13"
+            "value": "15"
           },
           "rebounds": {
             "player": "Baye Ndongo",
@@ -123,11 +291,11 @@
           },
           "assists": {
             "player": "Naithan George",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
             "player": "Baye Ndongo",
-            "value": "13 PTS, 12 REB"
+            "value": "15 PTS, 12 REB"
           }
         },
         "conf_id": "2",
@@ -140,7 +308,7 @@
         "team_id": "305",
         "abbr": "DEP",
         "name": "DePaul Blue Demons",
-        "score": 51,
+        "score": 56,
         "winner": null,
         "record": "6-0",
         "home_record": "4-0",
@@ -148,11 +316,11 @@
         "leaders": {
           "points": {
             "player": "Magoon Gwath",
-            "value": "14"
+            "value": "17"
           },
           "rebounds": {
             "player": "Magoon Gwath",
-            "value": "4"
+            "value": "8"
           },
           "assists": {
             "player": "Noah Meeusen",
@@ -160,7 +328,7 @@
           },
           "rating": {
             "player": "Magoon Gwath",
-            "value": "14 PTS"
+            "value": "17 PTS, 8 REB"
           }
         },
         "conf_id": "4",
@@ -1182,168 +1350,6 @@
       "p4": true
     },
     {
-      "game_id": "401920530",
-      "start_utc": "2026-11-27T02:00Z",
-      "short_name": "LOU VS SJU",
-      "state": "pre",
-      "status": "11/26 - 9:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Michelob ULTRA Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "2599",
-        "abbr": "SJU",
-        "name": "St. John's Red Storm",
-        "score": 0,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Keyshawn Hall",
-            "value": "18.5"
-          },
-          "reboundsPerGame": {
-            "player": "Tounde Yessoufou",
-            "value": "7.2"
-          },
-          "assistsPerGame": {
-            "player": "Quinn Ellis",
-            "value": "8.5"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": 13,
-        "loc": "St. John's",
-        "nick": "Red Storm"
-      },
-      "away": {
-        "team_id": "97",
-        "abbr": "LOU",
-        "name": "Louisville Cardinals",
-        "score": 0,
-        "winner": null,
-        "record": "4-1",
-        "home_record": "3-0",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Seth Trimble",
-            "value": "16.0"
-          },
-          "reboundsPerGame": {
-            "player": "Flory Bidunga",
-            "value": "9.2"
-          },
-          "assistsPerGame": {
-            "player": "Alvaro Folgueiras",
-            "value": "3.6"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": 25,
-        "loc": "Louisville",
-        "nick": "Cardinals"
-      },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "SJU -1.5",
-        "spread": -1.5,
-        "over_under": 159.5
-      },
-      "date": "2026-11-26",
-      "p4": true
-    },
-    {
-      "game_id": "401920539",
-      "start_utc": "2026-11-27T02:00Z",
-      "short_name": "ALA VS KSU",
-      "state": "pre",
-      "status": "11/26 - 9:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "T-Mobile Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPNU"
-      ],
-      "home": {
-        "team_id": "2306",
-        "abbr": "KSU",
-        "name": "Kansas State Wildcats",
-        "score": 0,
-        "winner": null,
-        "record": "3-3",
-        "home_record": "3-2",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Brandon Rechsteiner",
-            "value": "17.3"
-          },
-          "reboundsPerGame": {
-            "player": "Brock Vice",
-            "value": "5.2"
-          },
-          "assistsPerGame": {
-            "player": "Brandon Rechsteiner",
-            "value": "3.8"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": null,
-        "loc": "Kansas State",
-        "nick": "Wildcats"
-      },
-      "away": {
-        "team_id": "333",
-        "abbr": "ALA",
-        "name": "Alabama Crimson Tide",
-        "score": 0,
-        "winner": null,
-        "record": "5-1",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Amari Allen",
-            "value": "16.5"
-          },
-          "reboundsPerGame": {
-            "player": "Amari Allen",
-            "value": "5.7"
-          },
-          "assistsPerGame": {
-            "player": "Amari Allen",
-            "value": "5.7"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 15,
-        "loc": "Alabama",
-        "nick": "Crimson Tide"
-      },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "ALA -13.5",
-        "spread": 13.5,
-        "over_under": 170.5
-      },
-      "date": "2026-11-26",
-      "p4": true
-    },
-    {
       "game_id": "401920531",
       "start_utc": "2026-11-27T04:30Z",
       "short_name": "TTU VS ORE",
@@ -1498,8 +1504,8 @@
       },
       "espn_line": {
         "provider": "Draft Kings",
-        "details": "GONZ -2.5",
-        "spread": -2.5,
+        "details": "GONZ -3.5",
+        "spread": -3.5,
         "over_under": 153.5
       },
       "date": "2026-11-26",
