@@ -119,17 +119,23 @@ function propsLog(px = D.props) {
   return h + `</div>`;
 }
 
+// ---------- Arbitrage (arb.js) ----------
+function viewArb() {
+  if (!D.props) return `<p class="pad">Arbitrage needs the prop data, which isn't loaded yet. Try refreshing.</p>`;
+  return window.DIME_ARB ? window.DIME_ARB.view() : `<p class="pad">Arbitrage didn't load. Try refreshing.</p>`;
+}
+
 // ---------- router ----------
-// NBA:  #/board  #/results  #/defense  #/log  #/guide  #/player/<id>[/<market>]
+// NBA:  #/board  #/results  #/defense  #/arb  #/log  #/guide  #/player/<id>[/<market>]
 // CBB:  #/cbb/board  #/cbb/results  #/cbb/log  #/cbb/guide  #/cbb/player/<id>
 const TABS = {
-  nba: [["board", "Board"], ["results", "Results"], ["defense", "Defense"], ["log", "Log & sources"], ["guide", "Guide"]],
+  nba: [["board", "Board"], ["results", "Results"], ["defense", "Defense"], ["arb", "Arbitrage"], ["log", "Log & sources"], ["guide", "Guide"]],
   cbb: [["board", "Board"], ["results", "Results"], ["log", "Log"], ["guide", "Guide"]],
 };
 const SUB = { nba: "NBA props · 2026–27", cbb: "Power 4 points · 2026–27" };
 const FOOT = {
   nba: `Games, results and player news: ESPN public data feeds (unofficial; can change without notice).
-    Lines: <a href="https://the-odds-api.com">The Odds API</a> (props: DraftKings, FanDuel), captured about 3 hours before tip — not closing lines.
+    Lines: <a href="https://the-odds-api.com">The Odds API</a> (props: DraftKings, FanDuel; more books on the Arbitrage tab), captured at 7 AM and about 1 hour before tip — not closing lines.
     Research tool only; not betting advice.`,
   cbb: `Power 4 men's college basketball. Games, rankings and box scores: ESPN public data feeds (unofficial; can change without notice).
     Player points: <a href="https://the-odds-api.com">The Odds API</a> (DraftKings, FanDuel), pulled once at 8 AM Central. Spread and total: 8 AM Central and about 1 hour before tip.
@@ -169,7 +175,7 @@ function render() {
     cbbLoading = cbbLoading || loadFiles(CBB_FILES).then(() => { cbbLoading = null; renderStatus(); render(); });
     return;
   }
-  const views = mode === "nba" ? { log: viewLog } : {};
+  const views = mode === "nba" ? { log: viewLog, arb: viewArb } : {};
   const home = R("board");
   let propsView = false;
   try {
@@ -179,6 +185,7 @@ function render() {
     if (mode === "nba" && tab === "results" && html != null) html += thesisRegistryHtml();
     app.innerHTML = html ?? `<p class="pad">Page not found. <a href="${home}">Back to the board</a>.</p>`;
   } catch (e) { console.error(e); app.innerHTML = `<p class="pad">This view hit an error: ${esc(e.message)}. The data may have changed shape — check the <a href="${R("log")}">Log</a>.</p>`; }
+  if (mode === "nba" && tab === "arb" && window.DIME_ARB) { try { window.DIME_ARB.bind(); } catch (e) { console.error(e); } }
   if (propsView) { try { (mode === "cbb" ? window.DIME_CBB : window.STIX_PROPS).bind(tab, arg); } catch (e) { console.error(e); } }
 }
 // ---------- loading + status ----------

@@ -188,3 +188,86 @@ def test_link_backfill_runs_once_and_only_saves_links(tmp_path, monkeypatch):
     assert not (tmp_path / "prop_captures.csv").exists() or "Jokic" not in (tmp_path / "prop_captures.csv").read_text()
     props.run(tmp_path, [("ODDS_API_KEY", "k")], now)
     assert len(calls) == 2                                       # tried once, never again
+
+
+# ---------- other books (Arbitrage tab) ----------
+def _book(key, point, over, under, player="Nikola Jokic", market="player_points"):
+    return {"key": key, "markets": [{"key": market, "last_update": "x", "outcomes": [
+        {"name": "Over", "description": player, "price": over, "point": point},
+        {"name": "Under", "description": player, "price": under, "point": point}]}]}
+
+
+def test_request_asks_for_every_book_in_one_group(tmp_path, monkeypatch):
+    seen = []
+    def fake(url, params, timeout=25.0):
+        if url.endswith("/events"):
+            return 200, EVENTS, {"x-requests-remaining": "400"}
+        if url.endswith("/odds"):
+            seen.append(params)
+        return 200, EVENT_ODDS, {"x-requests-remaining": "396", "x-requests-last": "4"}
+    monkeypatch.setattr(props, "_get", fake)
+    props.run(tmp_path, [("ODDS_API_KEY", "k")], NOW)
+    asked = seen[0]["bookmakers"].split(",")
+    assert asked[:2] == ["draftkings", "fanduel"] and "betmgm" in asked and "novig" in asked
+    assert len(asked) <= 10   # 11+ bookmakers count as a second region (double cost)
+
+
+def test_other_books_never_enter_captures(tmp_path, monkeypatch):
+    body = {**EVENT_ODDS, "bookmakers": [_book("draftkings", 27.5, -115, -105), _book("betmgm", 26.5, -110, -110),
+                                         _book("somenewbook", 25.5, -110, -110)]}
+    def fake(url, params, timeout=25.0):
+        if url.endswith("/events"):
+            return 200, EVENTS, {"x-requests-remaining": "400"}
+        return 200, body, {"x-requests-remaining": "396", "x-requests-last": "4"}
+    monkeypatch.setattr(props, "_get", fake)
+    props.run(tmp_path, [("ODDS_API_KEY", "k")], NOW)
+    caps = (tmp_path / "prop_captures.csv").read_text()
+    assert "draftkings" in caps and "betmgm" not in caps and "somenewbook" not in caps
+    other = "".join(f.read_text() for f in (tmp_path / "other_books").glob("*.csv"))   # month = the real capture time
+    assert "betmgm" in other and "draftkings" not in other and "somenewbook" not in other
+    assert "other books: betmgm 2" in (tmp_path / "pull_log.csv").read_text()
+
+
+def test_other_books_failure_never_costs_the_main_lines(tmp_path, monkeypatch):
+    body = {**EVENT_ODDS, "bookmakers": [_book("draftkings", 27.5, -115, -105), _book("betmgm", 26.5, -110, -110)]}
+    def fake(url, params, timeout=25.0):
+        if url.endswith("/events"):
+            return 200, EVENTS, {"x-requests-remaining": "400"}
+        return 200, body, {"x-requests-remaining": "396", "x-requests-last": "4"}
+    def boom(*a, **k):
+        raise OSError("disk full")
+    monkeypatch.setattr(props, "_get", fake)
+    monkeypatch.setattr(props, "save_other_books", boom)
+    s = props.run(tmp_path, [("ODDS_API_KEY", "k")], NOW)
+    assert s["status"] == "ok" and "Nikola Jokic" in (tmp_path / "prop_captures.csv").read_text()
+    assert any("other books" in e for e in s["errors"])
+
+
+def test_only_other_books_posted_is_still_empty(tmp_path, monkeypatch):
+    # DraftKings/FanDuel haven't posted yet: same as before (retried next run), nothing saved for the others.
+    body = {**EVENT_ODDS, "bookmakers": [_book("betmgm", 26.5, -110, -110)]}
+    def fake(url, params, timeout=25.0):
+        if url.endswith("/events"):
+            return 200, EVENTS, {"x-requests-remaining": "400"}
+        return 200, body, {"x-requests-remaining": "396", "x-requests-last": "4"}
+    monkeypatch.setattr(props, "_get", fake)
+    s = props.run(tmp_path, [("ODDS_API_KEY", "k")], NOW)
+    assert s["pulled"][0]["status"] == "empty"
+    assert not (tmp_path / "prop_captures.csv").exists() and not (tmp_path / "other_books").exists()
+
+
+def test_novig_ladder_narrowed():
+    def row(book, point, side, price):
+        return {"book": book, "market": "player_points", "player": "A", "point": point, "side": side, "price": price,
+                "captured_at": "2026-11-27T20:00:00Z"}
+    main = [row("draftkings", 25.5, "Over", -110), row("draftkings", 25.5, "Under", -110),
+            row("fanduel", 26.5, "Over", -120), row("fanduel", 26.5, "Under", 100)]
+    ladder = [row("novig", p, s, -112) for p in (22.5, 24.5, 25.5, 26.5, 28.5) for s in ("Over", "Under")]
+    kept = props.narrow_novig(main, ladder + [row("betmgm", 25.5, "Over", -110)])
+    assert sorted({r["point"] for r in kept if r["book"] == "novig"}) == [25.5, 26.5]   # rungs DK/FD also post
+    assert any(r["book"] == "betmgm" for r in kept)                                      # other books untouched
+    # no shared rung: keep only the tightest one with both sides
+    tight = [row("novig", 20.5, "Over", -150), row("novig", 20.5, "Under", 110),
+             row("novig", 21.5, "Over", -105), row("novig", 21.5, "Under", -105), row("novig", 23.5, "Over", -110)]
+    kept = props.narrow_novig([], tight)
+    assert sorted({r["point"] for r in kept}) == [21.5] and len(kept) == 2

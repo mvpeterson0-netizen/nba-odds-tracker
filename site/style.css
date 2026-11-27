@@ -283,3 +283,17 @@ ul.nolines .gline { margin-left: 4px; }
 .betbtn { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 4px 12px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); font-weight: 600; white-space: nowrap; }
 .betbtn:hover { text-decoration: none; background: var(--hover); }
 .betnote { flex-basis: 100%; }
+
+/* Arbitrage tab (same building blocks as the Stix NFL tracker) */
+.gsec { font-size: 18px; margin: 18px 0 10px; }
+.arb h3.small { margin: 16px 0 6px; font-size: 14px; }
+.rlist { padding: 0 12px; } .rlrow { padding: 9px 0; border-bottom: 1px solid var(--line); } .rlrow:last-child { border-bottom: 0; }
+.rlhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; } .rlstat { font-weight: 600; }
+.arb-books { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+.arb-legs { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 4px 0; }
+.legtag { display: inline-block; min-width: 4.4em; padding: 0 6px; border-radius: 6px; font-size: 11px; letter-spacing: .05em; text-align: center; color: #fff; }
+.legtag.over { background: var(--over); color: #fff; }
+.legtag.under { background: var(--under); color: #fff; }
+.arb-ev { margin-left: auto; font-weight: 700; } .arb-ev.pos { color: var(--over); } .arb-ev.neg { color: var(--muted); }
+.arb-stale { color: var(--push); font-weight: 600; }
+.filters label.chk { flex-direction: row; align-items: center; gap: 6px; }
