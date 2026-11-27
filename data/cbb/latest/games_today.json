@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T19:00:26+00:00",
+  "fetched_at": "2026-11-27T19:15:21+00:00",
   "source": "espn",
   "count": 25,
   "game_date": "2026-11-27",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-27T18:00Z",
       "short_name": "ISU VS SJU",
       "state": "in",
-      "status": "Halftime",
+      "status": "19:33 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "19:33",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2599",
         "abbr": "SJU",
         "name": "St. John's Red Storm",
-        "score": 38,
+        "score": 39,
         "winner": null,
         "record": "6-1",
         "home_record": "5-0",
@@ -90,14 +90,98 @@
       "p4": true
     },
     {
+      "game_id": "401921827",
+      "start_utc": "2026-11-27T19:00Z",
+      "short_name": "SOU @ VAN",
+      "state": "in",
+      "status": "13:57 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "13:57",
+      "venue": "Memorial Gymnasium (TN)",
+      "neutral_site": false,
+      "broadcasts": [
+        "SECN+"
+      ],
+      "home": {
+        "team_id": "238",
+        "abbr": "VAN",
+        "name": "Vanderbilt Commodores",
+        "score": 18,
+        "winner": null,
+        "record": "7-0",
+        "home_record": "6-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Chandler Bing",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Berke Buyuktuncel",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Chandler Bing",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Chandler Bing",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 14,
+        "loc": "Vanderbilt",
+        "nick": "Commodores"
+      },
+      "away": {
+        "team_id": "2582",
+        "abbr": "SOU",
+        "name": "Southern Jaguars",
+        "score": 5,
+        "winner": null,
+        "record": "1-6",
+        "home_record": "1-0",
+        "away_record": "0-6",
+        "leaders": {
+          "points": {
+            "player": "Noah Boyde",
+            "value": "2"
+          },
+          "rebounds": {
+            "player": "Noah Boyde",
+            "value": "1"
+          },
+          "assists": {
+            "player": "Noah Boyde",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Noah Boyde",
+            "value": "2 PTS"
+          }
+        },
+        "conf_id": "26",
+        "conf": null,
+        "rank": null,
+        "loc": "Southern",
+        "nick": "Jaguars"
+      },
+      "espn_line": null,
+      "date": "2026-11-27",
+      "p4": true
+    },
+    {
       "game_id": "401929288",
       "start_utc": "2026-11-27T18:30Z",
       "short_name": "MEM VS WAKE",
       "state": "in",
-      "status": "14:06 - 1st",
+      "status": "8:55 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "14:06",
+      "clock": "8:55",
       "venue": "Imperial Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +191,7 @@
         "team_id": "154",
         "abbr": "WAKE",
         "name": "Wake Forest Demon Deacons",
-        "score": 13,
+        "score": 17,
         "winner": null,
         "record": "6-1",
         "home_record": "5-0",
@@ -140,27 +224,27 @@
         "team_id": "235",
         "abbr": "MEM",
         "name": "Memphis Tigers",
-        "score": 8,
+        "score": 22,
         "winner": null,
         "record": "5-1",
         "home_record": "3-0",
         "away_record": "0-1",
         "leaders": {
           "points": {
-            "player": "Tylik Weeks",
-            "value": "4"
+            "player": "Nemanja Popovic",
+            "value": "7"
           },
           "rebounds": {
-            "player": "Tylik Weeks",
-            "value": "1"
+            "player": "Nemanja Popovic",
+            "value": "2"
           },
           "assists": {
-            "player": "Nemanja Popovic",
-            "value": "1"
+            "player": "Julius Thedford",
+            "value": "2"
           },
           "rating": {
-            "player": "Tylik Weeks",
-            "value": "4 PTS"
+            "player": "Nemanja Popovic",
+            "value": "7 PTS"
           }
         },
         "conf_id": "62",
@@ -254,87 +338,6 @@
         "nick": "Cavaliers"
       },
       "espn_line": null,
-      "date": "2026-11-27",
-      "p4": true
-    },
-    {
-      "game_id": "401921827",
-      "start_utc": "2026-11-27T19:00Z",
-      "short_name": "SOU @ VAN",
-      "state": "pre",
-      "status": "11/27 - 2:00 PM EST",
-      "completed": false,
-      "period": 0,
-      "clock": "0:00",
-      "venue": "Memorial Gymnasium (TN)",
-      "neutral_site": false,
-      "broadcasts": [
-        "SECN+"
-      ],
-      "home": {
-        "team_id": "238",
-        "abbr": "VAN",
-        "name": "Vanderbilt Commodores",
-        "score": 0,
-        "winner": null,
-        "record": "7-0",
-        "home_record": "6-0",
-        "away_record": "1-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Tyler Tanner",
-            "value": "18.9"
-          },
-          "reboundsPerGame": {
-            "player": "Berke Buyuktuncel",
-            "value": "6.6"
-          },
-          "assistsPerGame": {
-            "player": "Tyler Tanner",
-            "value": "3.6"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 14,
-        "loc": "Vanderbilt",
-        "nick": "Commodores"
-      },
-      "away": {
-        "team_id": "2582",
-        "abbr": "SOU",
-        "name": "Southern Jaguars",
-        "score": 0,
-        "winner": null,
-        "record": "1-6",
-        "home_record": "1-0",
-        "away_record": "0-6",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Daniel Dormu",
-            "value": "8.3"
-          },
-          "reboundsPerGame": {
-            "player": "R'Chaun King",
-            "value": "3.4"
-          },
-          "assistsPerGame": {
-            "player": "Daniel Dormu",
-            "value": "3.7"
-          }
-        },
-        "conf_id": "26",
-        "conf": null,
-        "rank": null,
-        "loc": "Southern",
-        "nick": "Jaguars"
-      },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "VAN -38.5",
-        "spread": -38.5,
-        "over_under": 152.5
-      },
       "date": "2026-11-27",
       "p4": true
     },
@@ -1143,7 +1146,7 @@
         "provider": "DraftKings",
         "details": "MICH -9.5",
         "spread": 9.5,
-        "over_under": 164.5
+        "over_under": 165.5
       },
       "date": "2026-11-27",
       "p4": true
