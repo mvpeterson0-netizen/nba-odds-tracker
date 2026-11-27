@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T05:30:29+00:00",
+  "fetched_at": "2026-11-27T05:45:23+00:00",
   "source": "espn",
   "count": 24,
   "game_date": "2026-11-27",
@@ -89,7 +89,7 @@
     {
       "game_id": "401920533",
       "start_utc": "2026-11-27T18:00Z",
-      "short_name": "ISU VS SJU",
+      "short_name": "SJU VS ISU",
       "state": "pre",
       "status": "11/27 - 1:00 PM EST",
       "completed": false,
@@ -101,35 +101,6 @@
         "ESPN2"
       ],
       "home": {
-        "team_id": "2599",
-        "abbr": "SJU",
-        "name": "St. John's Red Storm",
-        "score": 0,
-        "winner": null,
-        "record": "6-1",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Keyshawn Hall",
-            "value": "18.5"
-          },
-          "reboundsPerGame": {
-            "player": "Tounde Yessoufou",
-            "value": "7.2"
-          },
-          "assistsPerGame": {
-            "player": "Quinn Ellis",
-            "value": "8.5"
-          }
-        },
-        "conf_id": "4",
-        "conf": null,
-        "rank": 13,
-        "loc": "St. John's",
-        "nick": "Red Storm"
-      },
-      "away": {
         "team_id": "66",
         "abbr": "ISU",
         "name": "Iowa State Cyclones",
@@ -158,11 +129,40 @@
         "loc": "Iowa State",
         "nick": "Cyclones"
       },
+      "away": {
+        "team_id": "2599",
+        "abbr": "SJU",
+        "name": "St. John's Red Storm",
+        "score": 0,
+        "winner": null,
+        "record": "6-1",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Keyshawn Hall",
+            "value": "18.5"
+          },
+          "reboundsPerGame": {
+            "player": "Tounde Yessoufou",
+            "value": "7.2"
+          },
+          "assistsPerGame": {
+            "player": "Quinn Ellis",
+            "value": "8.5"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": 13,
+        "loc": "St. John's",
+        "nick": "Red Storm"
+      },
       "espn_line": {
         "provider": "DraftKings",
         "details": "SJU -3.5",
-        "spread": -3.5,
-        "over_under": 150.5
+        "spread": 3.5,
+        "over_under": 149.5
       },
       "date": "2026-11-27",
       "p4": true
