@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T03:15:24+00:00",
+  "fetched_at": "2026-11-27T03:30:31+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-27T02:00Z",
       "short_name": "LOU VS SJU",
       "state": "in",
-      "status": "Halftime",
+      "status": "14:30 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "14:30",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2599",
         "abbr": "SJU",
         "name": "St. John's Red Storm",
-        "score": 39,
+        "score": 44,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
@@ -56,7 +56,7 @@
         "team_id": "97",
         "abbr": "LOU",
         "name": "Louisville Cardinals",
-        "score": 57,
+        "score": 68,
         "winner": null,
         "record": "4-1",
         "home_record": "3-0",
@@ -67,16 +67,16 @@
             "value": "16"
           },
           "rebounds": {
-            "player": "Alvaro Folgueiras",
-            "value": "6"
+            "player": "Flory Bidunga",
+            "value": "8"
           },
           "assists": {
             "player": "Seth Trimble",
             "value": "3"
           },
           "rating": {
-            "player": "Seth Trimble",
-            "value": "16 PTS"
+            "player": "Flory Bidunga",
+            "value": "12 PTS, 8 REB"
           }
         },
         "conf_id": "2",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-27T02:00Z",
       "short_name": "ALA VS KSU",
       "state": "in",
-      "status": "Halftime",
+      "status": "14:31 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "14:31",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -107,7 +107,7 @@
         "team_id": "2306",
         "abbr": "KSU",
         "name": "Kansas State Wildcats",
-        "score": 35,
+        "score": 50,
         "winner": null,
         "record": "3-3",
         "home_record": "3-2",
@@ -115,19 +115,19 @@
         "leaders": {
           "points": {
             "player": "Brock Vice",
-            "value": "16"
+            "value": "25"
           },
           "rebounds": {
             "player": "Brock Vice",
             "value": "4"
           },
           "assists": {
-            "player": "Timo Malovec",
-            "value": "3"
+            "player": "Brandon Rechsteiner",
+            "value": "4"
           },
           "rating": {
             "player": "Brock Vice",
-            "value": "16 PTS"
+            "value": "25 PTS"
           }
         },
         "conf_id": "8",
@@ -140,7 +140,7 @@
         "team_id": "333",
         "abbr": "ALA",
         "name": "Alabama Crimson Tide",
-        "score": 51,
+        "score": 64,
         "winner": null,
         "record": "5-1",
         "home_record": "5-0",
@@ -152,7 +152,7 @@
           },
           "rebounds": {
             "player": "Amari Allen",
-            "value": "5"
+            "value": "6"
           },
           "assists": {
             "player": "Amari Allen",
@@ -160,7 +160,7 @@
           },
           "rating": {
             "player": "Amari Allen",
-            "value": "6 PTS, 6 AST"
+            "value": "8 PTS, 6 REB, 6 AST"
           }
         },
         "conf_id": "23",
@@ -1425,7 +1425,7 @@
         "provider": "Draft Kings",
         "details": "TTU -10.5",
         "spread": 10.5,
-        "over_under": 148.5
+        "over_under": 149.5
       },
       "date": "2026-11-26",
       "p4": true
