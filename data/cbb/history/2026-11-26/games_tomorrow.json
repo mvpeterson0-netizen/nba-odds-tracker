@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-27T01:30:25+00:00",
+  "fetched_at": "2026-11-27T01:45:25+00:00",
   "source": "espn",
-  "count": 18,
+  "count": 19,
   "game_date": "2026-11-27",
   "division_i_games": 55,
   "rows": [
@@ -242,6 +242,80 @@
       "p4": true
     },
     {
+      "game_id": "401921717",
+      "start_utc": "2026-11-27T19:30Z",
+      "short_name": "GTWN VS UCLA",
+      "state": "pre",
+      "status": "11/27 - 2:30 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Jenny Craig Pavilion",
+      "neutral_site": true,
+      "broadcasts": null,
+      "home": {
+        "team_id": "26",
+        "abbr": "UCLA",
+        "name": "UCLA Bruins",
+        "score": 0,
+        "winner": null,
+        "record": "6-1",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Trent Perry",
+            "value": "15.5"
+          },
+          "reboundsPerGame": {
+            "player": "Eric Dailey Jr.",
+            "value": "6.7"
+          },
+          "assistsPerGame": {
+            "player": "Trent Perry",
+            "value": "5.7"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 6,
+        "loc": "UCLA",
+        "nick": "Bruins"
+      },
+      "away": {
+        "team_id": "46",
+        "abbr": "GTWN",
+        "name": "Georgetown Hoyas",
+        "score": 0,
+        "winner": null,
+        "record": "6-1",
+        "home_record": "5-0",
+        "away_record": "1-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Vince Iwuchukwu",
+            "value": "20.8"
+          },
+          "reboundsPerGame": {
+            "player": "Vince Iwuchukwu",
+            "value": "9.2"
+          },
+          "assistsPerGame": {
+            "player": "Jaland Lowe",
+            "value": "7.3"
+          }
+        },
+        "conf_id": "4",
+        "conf": null,
+        "rank": null,
+        "loc": "Georgetown",
+        "nick": "Hoyas"
+      },
+      "espn_line": null,
+      "date": "2026-11-27",
+      "p4": true
+    },
+    {
       "game_id": "401920532",
       "start_utc": "2026-11-27T20:30Z",
       "short_name": "TBD VS MD",
@@ -462,7 +536,7 @@
     {
       "game_id": "401921718",
       "start_utc": "2026-11-27T22:00Z",
-      "short_name": "TBD VS TEX",
+      "short_name": "TEX VS SMC",
       "state": "pre",
       "status": "11/27 - 5:00 PM EST",
       "completed": false,
@@ -472,6 +546,35 @@
       "neutral_site": true,
       "broadcasts": null,
       "home": {
+        "team_id": "2608",
+        "abbr": "SMC",
+        "name": "Saint Mary's Gaels",
+        "score": 0,
+        "winner": null,
+        "record": "7-1",
+        "home_record": "6-0",
+        "away_record": "0-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Mantas Juzenas",
+            "value": "20.6"
+          },
+          "reboundsPerGame": {
+            "player": "Mantas Juzenas",
+            "value": "9.4"
+          },
+          "assistsPerGame": {
+            "player": "Joshua Dent",
+            "value": "5.1"
+          }
+        },
+        "conf_id": "29",
+        "conf": null,
+        "rank": null,
+        "loc": "Saint Mary's",
+        "nick": "Gaels"
+      },
+      "away": {
         "team_id": "251",
         "abbr": "TEX",
         "name": "Texas Longhorns",
@@ -499,22 +602,6 @@
         "rank": 7,
         "loc": "Texas",
         "nick": "Longhorns"
-      },
-      "away": {
-        "team_id": "-2",
-        "abbr": "TBD",
-        "name": "TBD",
-        "score": 0,
-        "winner": null,
-        "record": null,
-        "home_record": null,
-        "away_record": null,
-        "leaders": null,
-        "conf_id": null,
-        "conf": null,
-        "rank": null,
-        "loc": "TBD",
-        "nick": "TBD"
       },
       "espn_line": null,
       "date": "2026-11-27",
@@ -758,7 +845,7 @@
         "provider": "DraftKings",
         "details": "VT -18.5",
         "spread": -18.5,
-        "over_under": 145.5
+        "over_under": 144.5
       },
       "date": "2026-11-27",
       "p4": true
@@ -1163,7 +1250,7 @@
         "provider": "DraftKings",
         "details": "HOU -38.5",
         "spread": -38.5,
-        "over_under": 149.5
+        "over_under": 147.5
       },
       "date": "2026-11-27",
       "p4": true
