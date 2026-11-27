@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T16:00:25+00:00",
+  "fetched_at": "2026-11-27T16:15:21+00:00",
   "source": "espn",
   "count": 25,
   "game_date": "2026-11-27",
@@ -9,11 +9,11 @@
       "game_id": "401920429",
       "start_utc": "2026-11-27T16:00Z",
       "short_name": "UVA VS XAV",
-      "state": "pre",
-      "status": "11/27 - 11:00 AM EST",
+      "state": "in",
+      "status": "13:31 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0:00",
+      "period": 1,
+      "clock": "13:31",
       "venue": "Imperial Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -23,23 +23,27 @@
         "team_id": "2752",
         "abbr": "XAV",
         "name": "Xavier Musketeers",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "6-1",
         "home_record": "4-1",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Mike Nwoko",
-            "value": "14.3"
+          "points": {
+            "player": "Nikos Chitikoudis",
+            "value": "4"
           },
-          "reboundsPerGame": {
-            "player": "Mike Nwoko",
-            "value": "6.9"
+          "rebounds": {
+            "player": "Jovan Milicevic",
+            "value": "1"
           },
-          "assistsPerGame": {
-            "player": "Filip Borovicanin",
-            "value": "4.9"
+          "assists": {
+            "player": "Tru Washington",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Nikos Chitikoudis",
+            "value": "4 PTS"
           }
         },
         "conf_id": "4",
@@ -52,23 +56,27 @@
         "team_id": "258",
         "abbr": "UVA",
         "name": "Virginia Cavaliers",
-        "score": 0,
+        "score": 8,
         "winner": null,
         "record": "8-0",
         "home_record": "5-0",
         "away_record": "1-0",
         "leaders": {
-          "pointsPerGame": {
+          "points": {
             "player": "Thijs De Ridder",
-            "value": "17.4"
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Thijs De Ridder",
-            "value": "7.4"
-          },
-          "assistsPerGame": {
+          "rebounds": {
             "player": "Chance Mallory",
-            "value": "4.9"
+            "value": "2"
+          },
+          "assists": {
+            "player": "Sam Lewis",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Sam Lewis",
+            "value": "2 PTS"
           }
         },
         "conf_id": "2",
@@ -77,12 +85,7 @@
         "loc": "Virginia",
         "nick": "Cavaliers"
       },
-      "espn_line": {
-        "provider": "DraftKings",
-        "details": "UVA -6.5",
-        "spread": 6.5,
-        "over_under": 154.5
-      },
+      "espn_line": null,
       "date": "2026-11-27",
       "p4": true
     },
@@ -565,8 +568,8 @@
       },
       "espn_line": {
         "provider": "DraftKings",
-        "details": "MD -2.5",
-        "spread": -2.5,
+        "details": "MD -3.5",
+        "spread": -3.5,
         "over_under": 149.5
       },
       "date": "2026-11-27",
@@ -648,7 +651,7 @@
         "provider": "DraftKings",
         "details": "MIZ -48.5",
         "spread": -48.5,
-        "over_under": 156.5
+        "over_under": 155.5
       },
       "date": "2026-11-27",
       "p4": true
@@ -1377,7 +1380,7 @@
         "provider": "DraftKings",
         "details": "UGA -5.5",
         "spread": -5.5,
-        "over_under": 162.5
+        "over_under": 161.5
       },
       "date": "2026-11-27",
       "p4": true
@@ -1539,7 +1542,7 @@
         "provider": "DraftKings",
         "details": "HOU -36.5",
         "spread": -36.5,
-        "over_under": 144.5
+        "over_under": 143.5
       },
       "date": "2026-11-27",
       "p4": true
