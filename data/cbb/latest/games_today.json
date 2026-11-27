@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T03:00:29+00:00",
+  "fetched_at": "2026-11-27T03:15:24+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
@@ -94,10 +94,10 @@
       "start_utc": "2026-11-27T02:00Z",
       "short_name": "ALA VS KSU",
       "state": "in",
-      "status": "0:01 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "0:01",
+      "clock": "0:00",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -168,90 +168,6 @@
         "rank": 15,
         "loc": "Alabama",
         "nick": "Crimson Tide"
-      },
-      "espn_line": null,
-      "date": "2026-11-26",
-      "p4": true
-    },
-    {
-      "game_id": "401918972",
-      "start_utc": "2026-11-27T00:00Z",
-      "short_name": "LSU VS SMU",
-      "state": "in",
-      "status": "0:45 - OT",
-      "completed": false,
-      "period": 3,
-      "clock": "0:45",
-      "venue": "Acrisure Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "CBSSN"
-      ],
-      "home": {
-        "team_id": "2567",
-        "abbr": "SMU",
-        "name": "SMU Mustangs",
-        "score": 83,
-        "winner": null,
-        "record": "6-1",
-        "home_record": "6-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Oziyah Sellers",
-            "value": "25"
-          },
-          "rebounds": {
-            "player": "Jaden Toombs",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Rowan Brumbaugh",
-            "value": "12"
-          },
-          "rating": {
-            "player": "Oziyah Sellers",
-            "value": "25 PTS"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": null,
-        "loc": "SMU",
-        "nick": "Mustangs"
-      },
-      "away": {
-        "team_id": "99",
-        "abbr": "LSU",
-        "name": "LSU Tigers",
-        "score": 89,
-        "winner": null,
-        "record": "7-0",
-        "home_record": "5-0",
-        "away_record": "1-0",
-        "leaders": {
-          "points": {
-            "player": "Mo Dioubate",
-            "value": "26"
-          },
-          "rebounds": {
-            "player": "Mo Dioubate",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Donovan Dent",
-            "value": "9"
-          },
-          "rating": {
-            "player": "Mo Dioubate",
-            "value": "26 PTS, 8 REB"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 20,
-        "loc": "LSU",
-        "nick": "Tigers"
       },
       "espn_line": null,
       "date": "2026-11-26",
@@ -756,6 +672,90 @@
         "rank": 18,
         "loc": "USC",
         "nick": "Trojans"
+      },
+      "espn_line": null,
+      "date": "2026-11-26",
+      "p4": true
+    },
+    {
+      "game_id": "401918972",
+      "start_utc": "2026-11-27T00:00Z",
+      "short_name": "LSU VS SMU",
+      "state": "post",
+      "status": "Final/OT",
+      "completed": true,
+      "period": 3,
+      "clock": "0:00",
+      "venue": "Acrisure Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "CBSSN"
+      ],
+      "home": {
+        "team_id": "2567",
+        "abbr": "SMU",
+        "name": "SMU Mustangs",
+        "score": 86,
+        "winner": false,
+        "record": "6-2",
+        "home_record": "6-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Oziyah Sellers",
+            "value": "25"
+          },
+          "rebounds": {
+            "player": "Jaden Toombs",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Rowan Brumbaugh",
+            "value": "12"
+          },
+          "rating": {
+            "player": "Oziyah Sellers",
+            "value": "25 PTS"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": null,
+        "loc": "SMU",
+        "nick": "Mustangs"
+      },
+      "away": {
+        "team_id": "99",
+        "abbr": "LSU",
+        "name": "LSU Tigers",
+        "score": 95,
+        "winner": true,
+        "record": "8-0",
+        "home_record": "5-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Mo Dioubate",
+            "value": "28"
+          },
+          "rebounds": {
+            "player": "Mo Dioubate",
+            "value": "10"
+          },
+          "assists": {
+            "player": "Donovan Dent",
+            "value": "9"
+          },
+          "rating": {
+            "player": "Mo Dioubate",
+            "value": "28 PTS, 10 REB"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 20,
+        "loc": "LSU",
+        "nick": "Tigers"
       },
       "espn_line": null,
       "date": "2026-11-26",
@@ -1422,7 +1422,7 @@
         "nick": "Red Raiders"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TTU -10.5",
         "spread": 10.5,
         "over_under": 148.5
@@ -1503,7 +1503,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GONZ -3.5",
         "spread": -3.5,
         "over_under": 153.5
