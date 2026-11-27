@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T18:15:22+00:00",
+  "fetched_at": "2026-11-27T18:30:26+00:00",
   "source": "espn",
   "count": 25,
   "game_date": "2026-11-27",
@@ -10,20 +10,20 @@
       "start_utc": "2026-11-27T18:00Z",
       "short_name": "ISU VS SJU",
       "state": "in",
-      "status": "15:50 - 1st",
+      "status": "9:56 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "15:50",
+      "clock": "9:56",
       "venue": "Michelob ULTRA Arena",
       "neutral_site": true,
       "broadcasts": [
-        "ESPNEWS"
+        "ESPN2"
       ],
       "home": {
         "team_id": "2599",
         "abbr": "SJU",
         "name": "St. John's Red Storm",
-        "score": 8,
+        "score": 18,
         "winner": null,
         "record": "6-1",
         "home_record": "5-0",
@@ -31,11 +31,11 @@
         "leaders": {
           "points": {
             "player": "Ian Jackson",
-            "value": "3"
+            "value": "11"
           },
           "rebounds": {
-            "player": "Ian Jackson",
-            "value": "1"
+            "player": "Tounde Yessoufou",
+            "value": "3"
           },
           "assists": {
             "player": "Ian Jackson",
@@ -43,7 +43,7 @@
           },
           "rating": {
             "player": "Ian Jackson",
-            "value": "3 PTS"
+            "value": "11 PTS"
           }
         },
         "conf_id": "4",
@@ -56,7 +56,7 @@
         "team_id": "66",
         "abbr": "ISU",
         "name": "Iowa State Cyclones",
-        "score": 7,
+        "score": 19,
         "winner": null,
         "record": "4-2",
         "home_record": "3-0",
@@ -64,19 +64,19 @@
         "leaders": {
           "points": {
             "player": "Dominykas Pleta",
-            "value": "4"
+            "value": "8"
           },
           "rebounds": {
             "player": "Tre Singleton",
             "value": "1"
           },
           "assists": {
-            "player": "Dominykas Pleta",
-            "value": "1"
+            "player": "Tamin Lipsey",
+            "value": "3"
           },
           "rating": {
             "player": "Dominykas Pleta",
-            "value": "4 PTS"
+            "value": "8 PTS"
           }
         },
         "conf_id": "8",
@@ -176,7 +176,7 @@
     {
       "game_id": "401929288",
       "start_utc": "2026-11-27T18:30Z",
-      "short_name": "WAKE VS MEM",
+      "short_name": "MEM VS WAKE",
       "state": "pre",
       "status": "11/27 - 1:30 PM EST",
       "completed": false,
@@ -188,35 +188,6 @@
         "ACC Network"
       ],
       "home": {
-        "team_id": "235",
-        "abbr": "MEM",
-        "name": "Memphis Tigers",
-        "score": 0,
-        "winner": null,
-        "record": "5-1",
-        "home_record": "3-0",
-        "away_record": "0-1",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Jayden Reid",
-            "value": "23.0"
-          },
-          "reboundsPerGame": {
-            "player": "Julius Thedford",
-            "value": "5.2"
-          },
-          "assistsPerGame": {
-            "player": "Jayden Reid",
-            "value": "5.7"
-          }
-        },
-        "conf_id": "62",
-        "conf": null,
-        "rank": 24,
-        "loc": "Memphis",
-        "nick": "Tigers"
-      },
-      "away": {
         "team_id": "154",
         "abbr": "WAKE",
         "name": "Wake Forest Demon Deacons",
@@ -245,11 +216,40 @@
         "loc": "Wake Forest",
         "nick": "Demon Deacons"
       },
+      "away": {
+        "team_id": "235",
+        "abbr": "MEM",
+        "name": "Memphis Tigers",
+        "score": 0,
+        "winner": null,
+        "record": "5-1",
+        "home_record": "3-0",
+        "away_record": "0-1",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Jayden Reid",
+            "value": "23.0"
+          },
+          "reboundsPerGame": {
+            "player": "Julius Thedford",
+            "value": "5.2"
+          },
+          "assistsPerGame": {
+            "player": "Jayden Reid",
+            "value": "5.7"
+          }
+        },
+        "conf_id": "62",
+        "conf": null,
+        "rank": 24,
+        "loc": "Memphis",
+        "nick": "Tigers"
+      },
       "espn_line": {
         "provider": "DraftKings",
         "details": "MEM -1.5",
         "spread": -1.5,
-        "over_under": 153.5
+        "over_under": 152.5
       },
       "date": "2026-11-27",
       "p4": true
@@ -492,7 +492,7 @@
         "provider": "DraftKings",
         "details": "BAY -4.5",
         "spread": -4.5,
-        "over_under": 149.5
+        "over_under": 148.5
       },
       "date": "2026-11-27",
       "p4": true
