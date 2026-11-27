@@ -1,19 +1,103 @@
 {
-  "fetched_at": "2026-11-27T23:00:27+00:00",
+  "fetched_at": "2026-11-27T23:15:24+00:00",
   "source": "espn",
   "count": 25,
   "game_date": "2026-11-27",
   "division_i_games": 55,
   "rows": [
     {
+      "game_id": "401913531",
+      "start_utc": "2026-11-27T23:00Z",
+      "short_name": "WKU @ ILL",
+      "state": "in",
+      "status": "13:22 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "13:22",
+      "venue": "State Farm Center",
+      "neutral_site": false,
+      "broadcasts": [
+        "FS1"
+      ],
+      "home": {
+        "team_id": "356",
+        "abbr": "ILL",
+        "name": "Illinois Fighting Illini",
+        "score": 14,
+        "winner": null,
+        "record": "6-1",
+        "home_record": "5-0",
+        "away_record": "1-1",
+        "leaders": {
+          "points": {
+            "player": "Ethan Brown",
+            "value": "5"
+          },
+          "rebounds": {
+            "player": "Ethan Brown",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Ethan Brown",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Ethan Brown",
+            "value": "5 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 4,
+        "loc": "Illinois",
+        "nick": "Fighting Illini"
+      },
+      "away": {
+        "team_id": "98",
+        "abbr": "WKU",
+        "name": "Western Kentucky Hilltoppers",
+        "score": 8,
+        "winner": null,
+        "record": "5-2",
+        "home_record": "3-0",
+        "away_record": "0-2",
+        "leaders": {
+          "points": {
+            "player": "Sharron Young",
+            "value": "3"
+          },
+          "rebounds": {
+            "player": "Teagan Moore",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Emondrek Erkins-Ford",
+            "value": "1"
+          },
+          "rating": {
+            "player": "Teagan Moore",
+            "value": "2 PTS"
+          }
+        },
+        "conf_id": "11",
+        "conf": null,
+        "rank": null,
+        "loc": "Western Kentucky",
+        "nick": "Hilltoppers"
+      },
+      "espn_line": null,
+      "date": "2026-11-27",
+      "p4": true
+    },
+    {
       "game_id": "401921718",
       "start_utc": "2026-11-27T22:00Z",
       "short_name": "TEX VS SMC",
       "state": "in",
-      "status": "3:51 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "3:51",
+      "clock": "0:00",
       "venue": "Jenny Craig Pavilion",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +107,7 @@
         "team_id": "2608",
         "abbr": "SMC",
         "name": "Saint Mary's Gaels",
-        "score": 33,
+        "score": 35,
         "winner": null,
         "record": "7-1",
         "home_record": "6-0",
@@ -31,19 +115,19 @@
         "leaders": {
           "points": {
             "player": "Vangelis Zougris",
-            "value": "11"
+            "value": "15"
           },
           "rebounds": {
-            "player": "Vangelis Zougris",
-            "value": "3"
+            "player": "Darius Bivins",
+            "value": "4"
           },
           "assists": {
-            "player": "Jeremy Dent-Smith",
-            "value": "3"
+            "player": "Joshua Dent",
+            "value": "4"
           },
           "rating": {
             "player": "Vangelis Zougris",
-            "value": "11 PTS"
+            "value": "15 PTS"
           }
         },
         "conf_id": "29",
@@ -56,7 +140,7 @@
         "team_id": "251",
         "abbr": "TEX",
         "name": "Texas Longhorns",
-        "score": 23,
+        "score": 27,
         "winner": null,
         "record": "7-0",
         "home_record": "5-0",
@@ -64,11 +148,11 @@
         "leaders": {
           "points": {
             "player": "Matas Vokietaitis",
-            "value": "10"
+            "value": "14"
           },
           "rebounds": {
             "player": "Matas Vokietaitis",
-            "value": "3"
+            "value": "6"
           },
           "assists": {
             "player": "Isaiah Johnson",
@@ -76,7 +160,7 @@
           },
           "rating": {
             "player": "Matas Vokietaitis",
-            "value": "10 PTS"
+            "value": "14 PTS, 6 REB"
           }
         },
         "conf_id": "23",
@@ -94,10 +178,10 @@
       "start_utc": "2026-11-27T22:00Z",
       "short_name": "VILL @ KU",
       "state": "in",
-      "status": "0:20 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "0:20",
+      "clock": "0:00",
       "venue": "Allen Fieldhouse",
       "neutral_site": false,
       "broadcasts": [
@@ -152,7 +236,7 @@
           },
           "rebounds": {
             "player": "Tyler Perkins",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Tyler Perkins",
@@ -160,7 +244,7 @@
           },
           "rating": {
             "player": "Tyler Perkins",
-            "value": "8 PTS, 6 REB"
+            "value": "8 PTS, 7 REB"
           }
         },
         "conf_id": "4",
@@ -174,168 +258,84 @@
       "p4": true
     },
     {
-      "game_id": "401920532",
-      "start_utc": "2026-11-27T20:30Z",
-      "short_name": "MD VS ORE",
-      "state": "post",
-      "status": "Final",
-      "completed": true,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Michelob ULTRA Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPNU"
-      ],
-      "home": {
-        "team_id": "2483",
-        "abbr": "ORE",
-        "name": "Oregon Ducks",
-        "score": 88,
-        "winner": true,
-        "record": "4-3",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Andrew Meadow",
-            "value": "28"
-          },
-          "rebounds": {
-            "player": "Pharaoh Compton",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Fred Payne",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Andrew Meadow",
-            "value": "28 PTS"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Oregon",
-        "nick": "Ducks"
-      },
-      "away": {
-        "team_id": "120",
-        "abbr": "MD",
-        "name": "Maryland Terrapins",
-        "score": 73,
-        "winner": false,
-        "record": "3-5",
-        "home_record": "3-1",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Pharrel Payne",
-            "value": "15"
-          },
-          "rebounds": {
-            "player": "Pharrel Payne",
-            "value": "9"
-          },
-          "assists": {
-            "player": "DJ Wagner",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Pharrel Payne",
-            "value": "15 PTS, 9 REB"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": null,
-        "loc": "Maryland",
-        "nick": "Terrapins"
-      },
-      "espn_line": null,
-      "date": "2026-11-27",
-      "p4": true
-    },
-    {
-      "game_id": "401921818",
-      "start_utc": "2026-11-27T21:00Z",
-      "short_name": "UAPB @ MIZ",
+      "game_id": "401911030",
+      "start_utc": "2026-11-27T23:00Z",
+      "short_name": "BGSU @ IU",
       "state": "in",
-      "status": "0:00 - 2nd",
+      "status": "12:26 - 1st",
       "completed": false,
-      "period": 2,
-      "clock": "0:00",
-      "venue": "Mizzou Arena",
+      "period": 1,
+      "clock": "12:26",
+      "venue": "Simon Skjodt Assembly Hall",
       "neutral_site": false,
       "broadcasts": [
-        "SECN+"
+        "BTN"
       ],
       "home": {
-        "team_id": "142",
-        "abbr": "MIZ",
-        "name": "Missouri Tigers",
-        "score": 97,
+        "team_id": "84",
+        "abbr": "IU",
+        "name": "Indiana Hoosiers",
+        "score": 21,
         "winner": null,
-        "record": "6-1",
-        "home_record": "5-0",
+        "record": "7-0",
+        "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Bryson Tiller",
-            "value": "22"
+            "player": "Aiden Sherrell",
+            "value": "10"
           },
           "rebounds": {
-            "player": "Toni Bryant",
-            "value": "8"
+            "player": "Samet Yigitoglu",
+            "value": "2"
           },
           "assists": {
-            "player": "Kennard Davis Jr.",
-            "value": "6"
+            "player": "Samet Yigitoglu",
+            "value": "2"
           },
           "rating": {
-            "player": "Bryson Tiller",
-            "value": "22 PTS, 6 REB, 4 BLK"
+            "player": "Aiden Sherrell",
+            "value": "10 PTS"
           }
         },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": null,
-        "loc": "Missouri",
-        "nick": "Tigers"
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 23,
+        "loc": "Indiana",
+        "nick": "Hoosiers"
       },
       "away": {
-        "team_id": "2029",
-        "abbr": "UAPB",
-        "name": "Arkansas-Pine Bluff Golden Lions",
-        "score": 61,
+        "team_id": "189",
+        "abbr": "BGSU",
+        "name": "Bowling Green Falcons",
+        "score": 10,
         "winner": null,
-        "record": "0-7",
-        "home_record": "0-0",
-        "away_record": "0-7",
+        "record": "4-2",
+        "home_record": "3-1",
+        "away_record": "1-1",
         "leaders": {
           "points": {
-            "player": "Jai'chaunn Hayes",
-            "value": "20"
+            "player": "Zach Howell",
+            "value": "5"
           },
           "rebounds": {
-            "player": "Jalen Tatum",
-            "value": "6"
+            "player": "Zach Howell",
+            "value": "1"
           },
           "assists": {
-            "player": "Jalen Tatum",
-            "value": "4"
+            "player": "Preston Squire",
+            "value": "1"
           },
           "rating": {
-            "player": "Jai'chaunn Hayes",
-            "value": "20 PTS"
+            "player": "Zach Howell",
+            "value": "5 PTS"
           }
         },
-        "conf_id": "26",
+        "conf_id": "14",
         "conf": null,
         "rank": null,
-        "loc": "Arkansas-Pine Bluff",
-        "nick": "Golden Lions"
+        "loc": "Bowling Green",
+        "nick": "Falcons"
       },
       "espn_line": null,
       "date": "2026-11-27",
@@ -346,10 +346,10 @@
       "start_utc": "2026-11-27T21:30Z",
       "short_name": "CIN VS BC",
       "state": "in",
-      "status": "10:25 - 2nd",
+      "status": "4:45 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "10:25",
+      "clock": "4:45",
       "venue": "State Farm Field House",
       "neutral_site": true,
       "broadcasts": [
@@ -359,7 +359,7 @@
         "team_id": "103",
         "abbr": "BC",
         "name": "Boston College Eagles",
-        "score": 38,
+        "score": 50,
         "winner": null,
         "record": "7-0",
         "home_record": "4-0",
@@ -367,11 +367,11 @@
         "leaders": {
           "points": {
             "player": "Money Williams",
-            "value": "16"
+            "value": "21"
           },
           "rebounds": {
-            "player": "Armoni Zeigler",
-            "value": "4"
+            "player": "Luke Hunger",
+            "value": "5"
           },
           "assists": {
             "player": "Money Williams",
@@ -379,7 +379,7 @@
           },
           "rating": {
             "player": "Money Williams",
-            "value": "16 PTS"
+            "value": "21 PTS"
           }
         },
         "conf_id": "2",
@@ -392,7 +392,7 @@
         "team_id": "2132",
         "abbr": "CIN",
         "name": "Cincinnati Bearcats",
-        "score": 48,
+        "score": 56,
         "winner": null,
         "record": "6-1",
         "home_record": "4-1",
@@ -400,7 +400,7 @@
         "leaders": {
           "points": {
             "player": "Tyler Tejada",
-            "value": "10"
+            "value": "14"
           },
           "rebounds": {
             "player": "Elijah Perryman",
@@ -408,11 +408,11 @@
           },
           "assists": {
             "player": "Elijah Perryman",
-            "value": "3"
+            "value": "4"
           },
           "rating": {
-            "player": "Elijah Perryman",
-            "value": "6 PTS"
+            "player": "Tyler Tejada",
+            "value": "14 PTS"
           }
         },
         "conf_id": "8",
@@ -430,10 +430,10 @@
       "start_utc": "2026-11-27T22:00Z",
       "short_name": "MARQ VS TA&M",
       "state": "in",
-      "status": "Halftime",
+      "status": "15:30 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "15:30",
       "venue": "Imperial Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -443,7 +443,7 @@
         "team_id": "245",
         "abbr": "TA&M",
         "name": "Texas A&M Aggies",
-        "score": 37,
+        "score": 44,
         "winner": null,
         "record": "6-1",
         "home_record": "5-0",
@@ -451,11 +451,11 @@
         "leaders": {
           "points": {
             "player": "Mackenzie Mgbako",
-            "value": "15"
+            "value": "17"
           },
           "rebounds": {
-            "player": "PJ Haggerty",
-            "value": "2"
+            "player": "Mackenzie Mgbako",
+            "value": "3"
           },
           "assists": {
             "player": "Jordan Pope",
@@ -463,7 +463,7 @@
           },
           "rating": {
             "player": "Mackenzie Mgbako",
-            "value": "15 PTS"
+            "value": "17 PTS"
           }
         },
         "conf_id": "23",
@@ -476,7 +476,7 @@
         "team_id": "269",
         "abbr": "MARQ",
         "name": "Marquette Golden Eagles",
-        "score": 40,
+        "score": 49,
         "winner": null,
         "record": "4-3",
         "home_record": "4-0",
@@ -484,7 +484,7 @@
         "leaders": {
           "points": {
             "player": "Nigel James Jr.",
-            "value": "16"
+            "value": "17"
           },
           "rebounds": {
             "player": "Sananda Fru",
@@ -496,7 +496,7 @@
           },
           "rating": {
             "player": "Nigel James Jr.",
-            "value": "16 PTS, 7 AST"
+            "value": "17 PTS, 7 AST"
           }
         },
         "conf_id": "4",
@@ -514,10 +514,10 @@
       "start_utc": "2026-11-27T22:00Z",
       "short_name": "ODU @ VT",
       "state": "in",
-      "status": "Halftime",
+      "status": "15:41 - 2nd",
       "completed": false,
-      "period": 1,
-      "clock": "0:00",
+      "period": 2,
+      "clock": "15:41",
       "venue": "Cassell Coliseum",
       "neutral_site": false,
       "broadcasts": [
@@ -527,19 +527,19 @@
         "team_id": "259",
         "abbr": "VT",
         "name": "Virginia Tech Hokies",
-        "score": 34,
+        "score": 43,
         "winner": null,
         "record": "6-1",
         "home_record": "4-0",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Tyler Johnson",
-            "value": "7"
+            "player": "Ben Hammond",
+            "value": "10"
           },
           "rebounds": {
             "player": "Miles Heide",
-            "value": "6"
+            "value": "7"
           },
           "assists": {
             "player": "Jaylen Curry",
@@ -547,7 +547,7 @@
           },
           "rating": {
             "player": "Miles Heide",
-            "value": "6 PTS, 6 REB"
+            "value": "6 PTS, 7 REB"
           }
         },
         "conf_id": "2",
@@ -560,7 +560,7 @@
         "team_id": "295",
         "abbr": "ODU",
         "name": "Old Dominion Monarchs",
-        "score": 27,
+        "score": 34,
         "winner": null,
         "record": "6-1",
         "home_record": "4-0",
@@ -568,11 +568,11 @@
         "leaders": {
           "points": {
             "player": "Bubu Benjamin",
-            "value": "10"
+            "value": "12"
           },
           "rebounds": {
             "player": "Kylan Howze",
-            "value": "3"
+            "value": "5"
           },
           "assists": {
             "player": "Adante' Holiman",
@@ -580,7 +580,7 @@
           },
           "rating": {
             "player": "Bubu Benjamin",
-            "value": "10 PTS"
+            "value": "12 PTS"
           }
         },
         "conf_id": "27",
@@ -598,10 +598,10 @@
       "start_utc": "2026-11-27T22:41Z",
       "short_name": "MICH VS KSU",
       "state": "in",
-      "status": "11:29 - 1st",
+      "status": "5:50 - 1st",
       "completed": false,
       "period": 1,
-      "clock": "11:29",
+      "clock": "5:50",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -611,27 +611,27 @@
         "team_id": "2306",
         "abbr": "KSU",
         "name": "Kansas State Wildcats",
-        "score": 7,
+        "score": 23,
         "winner": null,
         "record": "3-4",
         "home_record": "3-2",
         "away_record": "0-0",
         "leaders": {
           "points": {
-            "player": "Dez Lindsay",
-            "value": "3"
+            "player": "Jaden Schutt",
+            "value": "12"
           },
           "rebounds": {
             "player": "Brandon Rechsteiner",
             "value": "3"
           },
           "assists": {
-            "player": "Brock Vice",
-            "value": "1"
+            "player": "Isaiah Abraham",
+            "value": "2"
           },
           "rating": {
-            "player": "Dez Lindsay",
-            "value": "3 PTS"
+            "player": "Jaden Schutt",
+            "value": "12 PTS"
           }
         },
         "conf_id": "8",
@@ -644,7 +644,7 @@
         "team_id": "130",
         "abbr": "MICH",
         "name": "Michigan Wolverines",
-        "score": 20,
+        "score": 32,
         "winner": null,
         "record": "3-4",
         "home_record": "3-0",
@@ -655,12 +655,12 @@
             "value": "13"
           },
           "rebounds": {
-            "player": "J.P. Estrella",
-            "value": "2"
+            "player": "Moustapha Thiam",
+            "value": "3"
           },
           "assists": {
-            "player": "Jalen Reed",
-            "value": "2"
+            "player": "Elliot Cadeau",
+            "value": "4"
           },
           "rating": {
             "player": "Elliot Cadeau",
@@ -1182,164 +1182,170 @@
       "p4": true
     },
     {
-      "game_id": "401913531",
-      "start_utc": "2026-11-27T23:00Z",
-      "short_name": "WKU @ ILL",
-      "state": "pre",
-      "status": "11/27 - 6:00 PM EST",
-      "completed": false,
-      "period": 0,
+      "game_id": "401920532",
+      "start_utc": "2026-11-27T20:30Z",
+      "short_name": "MD VS ORE",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
       "clock": "0:00",
-      "venue": "State Farm Center",
-      "neutral_site": false,
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
       "broadcasts": [
-        "FS1"
+        "ESPNU"
       ],
       "home": {
-        "team_id": "356",
-        "abbr": "ILL",
-        "name": "Illinois Fighting Illini",
-        "score": 0,
-        "winner": null,
-        "record": "6-1",
-        "home_record": "5-0",
-        "away_record": "1-1",
+        "team_id": "2483",
+        "abbr": "ORE",
+        "name": "Oregon Ducks",
+        "score": 88,
+        "winner": true,
+        "record": "4-3",
+        "home_record": "3-0",
+        "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Andrej Stojakovic",
-            "value": "24.3"
+          "points": {
+            "player": "Andrew Meadow",
+            "value": "28"
           },
-          "reboundsPerGame": {
-            "player": "Quentin Coleman",
-            "value": "6.8"
+          "rebounds": {
+            "player": "Pharaoh Compton",
+            "value": "7"
           },
-          "assistsPerGame": {
-            "player": "Quentin Coleman",
-            "value": "4.7"
+          "assists": {
+            "player": "Fred Payne",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Andrew Meadow",
+            "value": "28 PTS"
           }
         },
         "conf_id": "7",
         "conf": "Big Ten",
-        "rank": 4,
-        "loc": "Illinois",
-        "nick": "Fighting Illini"
+        "rank": null,
+        "loc": "Oregon",
+        "nick": "Ducks"
       },
       "away": {
-        "team_id": "98",
-        "abbr": "WKU",
-        "name": "Western Kentucky Hilltoppers",
-        "score": 0,
-        "winner": null,
-        "record": "5-2",
-        "home_record": "3-0",
-        "away_record": "0-2",
+        "team_id": "120",
+        "abbr": "MD",
+        "name": "Maryland Terrapins",
+        "score": 73,
+        "winner": false,
+        "record": "3-5",
+        "home_record": "3-1",
+        "away_record": "0-1",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Teagan Moore",
-            "value": "19.6"
+          "points": {
+            "player": "Pharrel Payne",
+            "value": "15"
           },
-          "reboundsPerGame": {
-            "player": "Armelo Boone",
-            "value": "6.0"
+          "rebounds": {
+            "player": "Pharrel Payne",
+            "value": "9"
           },
-          "assistsPerGame": {
-            "player": "Sharron Young",
-            "value": "5.1"
+          "assists": {
+            "player": "DJ Wagner",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Pharrel Payne",
+            "value": "15 PTS, 9 REB"
           }
         },
-        "conf_id": "11",
-        "conf": null,
+        "conf_id": "7",
+        "conf": "Big Ten",
         "rank": null,
-        "loc": "Western Kentucky",
-        "nick": "Hilltoppers"
+        "loc": "Maryland",
+        "nick": "Terrapins"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "ILL -27.5",
-        "spread": -27.5,
-        "over_under": 175.5
-      },
+      "espn_line": null,
       "date": "2026-11-27",
       "p4": true
     },
     {
-      "game_id": "401911030",
-      "start_utc": "2026-11-27T23:00Z",
-      "short_name": "BGSU @ IU",
-      "state": "pre",
-      "status": "11/27 - 6:00 PM EST",
-      "completed": false,
-      "period": 0,
+      "game_id": "401921818",
+      "start_utc": "2026-11-27T21:00Z",
+      "short_name": "UAPB @ MIZ",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
       "clock": "0:00",
-      "venue": "Simon Skjodt Assembly Hall",
+      "venue": "Mizzou Arena",
       "neutral_site": false,
       "broadcasts": [
-        "BTN"
+        "SECN+"
       ],
       "home": {
-        "team_id": "84",
-        "abbr": "IU",
-        "name": "Indiana Hoosiers",
-        "score": 0,
-        "winner": null,
-        "record": "7-0",
-        "home_record": "4-0",
+        "team_id": "142",
+        "abbr": "MIZ",
+        "name": "Missouri Tigers",
+        "score": 97,
+        "winner": true,
+        "record": "7-1",
+        "home_record": "6-0",
         "away_record": "0-0",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Darren Harris",
-            "value": "14.3"
+          "points": {
+            "player": "Bryson Tiller",
+            "value": "21"
           },
-          "reboundsPerGame": {
-            "player": "Samet Yigitoglu",
-            "value": "7.7"
+          "rebounds": {
+            "player": "Toni Bryant",
+            "value": "8"
           },
-          "assistsPerGame": {
-            "player": "Markus Burton",
-            "value": "5.1"
+          "assists": {
+            "player": "Kennard Davis Jr.",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Toni Bryant",
+            "value": "14 PTS, 8 REB, 7 BLK"
           }
         },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 23,
-        "loc": "Indiana",
-        "nick": "Hoosiers"
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": null,
+        "loc": "Missouri",
+        "nick": "Tigers"
       },
       "away": {
-        "team_id": "189",
-        "abbr": "BGSU",
-        "name": "Bowling Green Falcons",
-        "score": 0,
-        "winner": null,
-        "record": "4-2",
-        "home_record": "3-1",
-        "away_record": "1-1",
+        "team_id": "2029",
+        "abbr": "UAPB",
+        "name": "Arkansas-Pine Bluff Golden Lions",
+        "score": 61,
+        "winner": false,
+        "record": "0-8",
+        "home_record": "0-0",
+        "away_record": "0-8",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Makhi Leach",
-            "value": "15.2"
+          "points": {
+            "player": "Jai'chaunn Hayes",
+            "value": "20"
           },
-          "reboundsPerGame": {
-            "player": "Tristan Beckford",
-            "value": "7.7"
+          "rebounds": {
+            "player": "Jalen Tatum",
+            "value": "6"
           },
-          "assistsPerGame": {
-            "player": "Makhi Leach",
-            "value": "4.0"
+          "assists": {
+            "player": "Jalen Tatum",
+            "value": "4"
+          },
+          "rating": {
+            "player": "Jai'chaunn Hayes",
+            "value": "20 PTS"
           }
         },
-        "conf_id": "14",
+        "conf_id": "26",
         "conf": null,
         "rank": null,
-        "loc": "Bowling Green",
-        "nick": "Falcons"
+        "loc": "Arkansas-Pine Bluff",
+        "nick": "Golden Lions"
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "IU -22.5",
-        "spread": -22.5,
-        "over_under": 151.5
-      },
+      "espn_line": null,
       "date": "2026-11-27",
       "p4": true
     },
@@ -1416,7 +1422,7 @@
         "nick": "Knights"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UGA -5.5",
         "spread": -5.5,
         "over_under": 161.5
@@ -1497,7 +1503,7 @@
         "nick": "Mountaineers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "WVU -3.5",
         "spread": 3.5,
         "over_under": 148.5
@@ -1578,7 +1584,7 @@
         "nick": "Golden Grizzlies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "HOU -36.5",
         "spread": -36.5,
         "over_under": 143.5
@@ -1659,7 +1665,7 @@
         "nick": "Nittany Lions"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MSST -6.5",
         "spread": -6.5,
         "over_under": 156.5
@@ -1740,7 +1746,7 @@
         "nick": "Huskies"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "NU -12.5",
         "spread": -12.5,
         "over_under": 147.5
@@ -1821,7 +1827,7 @@
         "nick": "Hurricanes"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MIA -1.5",
         "spread": 1.5,
         "over_under": 170.5
@@ -1902,7 +1908,7 @@
         "nick": "Volunteers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "LOU -3.5",
         "spread": -3.5,
         "over_under": 148.5
@@ -1983,7 +1989,7 @@
         "nick": "Shockers"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "UK -4.5",
         "spread": -4.5,
         "over_under": 157.5
@@ -2064,7 +2070,7 @@
         "nick": "Aztecs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TTU -8.5",
         "spread": -8.5,
         "over_under": 142.5
