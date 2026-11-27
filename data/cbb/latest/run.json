@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-27T23:15:25+00:00",
+  "finished_at": "2026-11-27T23:30:25+00:00",
   "game_date": "2026-11-27",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,10 +17,10 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 1,
-    "player_rows": 32,
+    "new_games": 0,
+    "player_rows": 0,
     "unparsed": [],
-    "queued": 1,
+    "queued": 0,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -29,21 +29,24 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 2082
+      "ODDS_API_KEY_20K": 2068
     },
     "pulled": [],
     "errors": [],
-    "events": 66,
-    "p4_events": 11,
+    "events": 67,
+    "p4_events": 12,
     "unmatched": [
       "SE Missouri St Redhawks @ UMKC Kangaroos"
     ],
     "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "not_due",
+      "status": "ok",
       "morning_due": false,
-      "pregame_due": 0
+      "pregame_due": 2,
+      "pull_type": "pregame",
+      "rows": 16,
+      "credits_last": 2
     },
     "status": "ok"
   }

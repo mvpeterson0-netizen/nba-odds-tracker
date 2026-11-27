@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-27T23:15:24+00:00",
+  "finished_at": "2026-11-27T23:30:24+00:00",
   "game_date": "2026-11-27",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,13 +28,35 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 2082
+      "ODDS_API_KEY_20K": 2070
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Brooklyn Nets @ Toronto Raptors",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 178,
+        "markets": 4
+      },
+      {
+        "matchup": "Milwaukee Bucks @ Detroit Pistons",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 188,
+        "markets": 4
+      },
+      {
+        "matchup": "Philadelphia 76ers @ Indiana Pacers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 154,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 3,
+    "pregame_pulled": true,
     "links_backfill": [],
     "status": "ok"
   }
