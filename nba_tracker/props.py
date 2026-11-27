@@ -12,8 +12,11 @@ Each run:
   2. Pulls DraftKings + FanDuel props for every game that is due (one call per game;
      core markets only: points, rebounds, assists, threes — 4 credits; an empty answer is free.
      Combo lines (PRA, P+R, P+A, R+A) are built from these in build.py, not pulled).
-  3. Appends every price to data/prop_captures.csv and every attempt to data/pull_log.csv.
-     Both files are append-only: captured lines are irreplaceable.
+     The same request also asks for EXTRA_BOOKS (display only, for the Arbitrage tab): The Odds API counts
+     every group of 10 bookmakers as one region, so up to 10 books cost the same as DraftKings + FanDuel.
+  3. Appends every DraftKings/FanDuel price to data/prop_captures.csv and every attempt to data/pull_log.csv.
+     Both files are append-only: captured lines are irreplaceable. The other books' prices go to
+     data/other_books/<YYYY-MM>.csv (also append-only) and never touch captures, grading or the pull rules.
 
 Nothing is pulled at or after tip-off.
 """
@@ -23,6 +26,7 @@ from __future__ import annotations
 import csv
 import json
 import logging
+from collections import defaultdict
 from datetime import datetime, time, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -41,7 +45,16 @@ CORE = ["player_points", "player_rebounds", "player_assists", "player_threes"]
 EXTRA = ["player_points_rebounds_assists", "player_points_rebounds", "player_points_assists",
          "player_rebounds_assists", "player_steals", "player_blocks"]
 GAMES_PER_DAY_EST = 7.5   # rough NBA average (1,230 games over ~165 days); used only for the guard
-BOOKS = ["draftkings", "fanduel"]
+BOOKS = ["draftkings", "fanduel"]        # captured, graded and used by every rule
+# Other books (Arbitrage tab, display only). Same list as the NFL tracker's NFL pull, minus Fliff (hidden there) and
+# Caesars (returned no player props in the NFL books probe). 9 books in total: more than 10 would count as a second
+# region and double the cost of every pull. Which of these actually post NBA player props is not yet known; the
+# pull log's note lists the books that came back each time.
+EXTRA_BOOKS = ["betmgm", "fanatics", "betrivers", "espnbet", "hardrockbet", "ballybet", "novig"]
+ALL_BOOKS = BOOKS + EXTRA_BOOKS
+assert len(ALL_BOOKS) <= 10, "more than 10 bookmakers would count as two regions (double cost)"
+NOVIG = "novig"                          # exchange: posts a ladder of lines per player, cut down by narrow_novig()
+OTHER_FIELDS = ["captured_at", "event_id", "minutes_before", "pull_type", "book", "market", "player", "side", "point", "price"]
 CENTRAL = ZoneInfo("America/Chicago")
 NBA_MORNING_AT = time(7, 0)                     # NBA morning pull: 7:00 AM Central on game day
 MORNING_AT = time(8, 0)                         # college (cbb_tracker) morning pull: 8:00 AM Central
@@ -213,6 +226,58 @@ def parse_event_props(body: dict, captured_at: str, minutes_before: int, pull_ty
                     "pull_type": pull_type,
                 })
     return rows
+
+
+def _implied(american) -> float | None:
+    try:
+        a = float(american)
+    except (TypeError, ValueError):
+        return None
+    return 100 / (a + 100) if a > 0 else -a / (-a + 100)
+
+
+def narrow_novig(main_rows: list[dict], other_rows: list[dict]) -> list[dict]:
+    """Novig (an exchange) posts a ladder of lines per player. Keep only the rungs at a line DraftKings or FanDuel also
+    posted for that player and market; if none match, keep the single rung with both sides and the tightest price.
+    Other books pass through unchanged."""
+    ref: dict[tuple, set] = defaultdict(set)
+    for r in main_rows:
+        ref[(r["market"], r["player"])].add(r["point"])
+    ladder: dict[tuple, dict] = defaultdict(lambda: defaultdict(dict))   # (market, player) -> point -> side -> row
+    keep = []
+    for r in other_rows:
+        if r["book"] == NOVIG:
+            ladder[(r["market"], r["player"])][r["point"]][r["side"]] = r
+        else:
+            keep.append(r)
+    for key, pts in ladder.items():
+        want = [p for p in pts if p in ref[key]]
+        if not want:
+            both = [p for p, s in pts.items() if "Over" in s and "Under" in s]
+            if both:
+                def vig(p):
+                    a, b = _implied(pts[p]["Over"]["price"]), _implied(pts[p]["Under"]["price"])
+                    return (a + b) if a is not None and b is not None else 9.0
+                want = [min(both, key=vig)]
+        for p in want:
+            keep.extend(pts[p].values())
+    return keep
+
+
+def split_books(rows: list[dict]) -> tuple[list[dict], list[dict]]:
+    """(DraftKings/FanDuel rows, other books' rows with Novig narrowed). Rows from any other bookmaker the API
+    might return are kept out of the captures file."""
+    main = [r for r in rows if r["book"] in BOOKS]
+    other = [r for r in rows if r["book"] in EXTRA_BOOKS]
+    return main, narrow_novig(main, other)
+
+
+def save_other_books(data_dir: Path, rows: list[dict]) -> None:
+    """Append the other books' prices to data/other_books/<YYYY-MM>.csv (lean columns; append-only)."""
+    if not rows:
+        return
+    month = (rows[0]["captured_at"] or "")[:7] or utcnow().strftime("%Y-%m")
+    _append_csv(data_dir / "other_books" / f"{month}.csv", OTHER_FIELDS, rows)
 
 
 def parse_event_links(body: dict, captured_at: str, pull_type: str = "pregame") -> list[dict]:
@@ -401,7 +466,7 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
             continue
         cost = len(markets)
         tried: set[str] = set()
-        status, note, rows, last, rem_after, used = "failed", "", [], None, None, ""
+        status, note, rows, last, rem_after, used, other_note = "failed", "", [], None, None, "", ""
         while True:
             lab = choose_key(remaining, cost, tried)
             if lab is None:
@@ -411,7 +476,7 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
             tried.add(lab)
             key = dict(keys)[lab]
             captured = iso(utcnow())
-            params = {"apiKey": key, "bookmakers": ",".join(BOOKS), "markets": ",".join(markets),
+            params = {"apiKey": key, "bookmakers": ",".join(ALL_BOOKS), "markets": ",".join(markets),
                       "oddsFormat": "american", "dateFormat": "iso"}
             if LINKS_ENABLED:
                 params["includeLinks"] = "true"
@@ -425,14 +490,25 @@ def run(data_dir: Path, keys: list[tuple[str, str]], now: datetime | None = None
                 remaining[lab] = rem_after
             used = lab
             if code == 200:
-                rows = parse_event_props(body, captured, mins, ptype)
+                rows, other = split_books(parse_event_props(body, captured, mins, ptype))
+                if rows and other:
+                    try:   # other books are extra: a problem here must never cost the DraftKings/FanDuel lines
+                        save_other_books(data_dir, [{**r, "captured_at": captured} for r in other])
+                        cnt: dict[str, int] = defaultdict(int)
+                        for r in other:
+                            cnt[r["book"]] += 1
+                        other_note = "other books: " + ", ".join(f"{b} {n}" for b, n in sorted(cnt.items()))
+                    except Exception as e:
+                        summary["errors"].append(f"other books: {type(e).__name__}")
+                elif rows:
+                    other_note = "other books: none returned"
                 if LINKS_ENABLED and rows:
                     try:   # links are optional: any problem here is ignored
                         save_links(data_dir, ev["id"], parse_event_links(body, captured, ptype), now)
                     except Exception as e:
                         summary["errors"].append(f"links: {type(e).__name__}")
                 status = "ok" if rows else "empty"
-                note = "" if rows else "no props posted yet"
+                note = other_note if rows else "no props posted yet"
                 break
             note = f"HTTP {code or h.get('error')}"
             if code in (401, 429):           # key rejected or out of credits: try the next key

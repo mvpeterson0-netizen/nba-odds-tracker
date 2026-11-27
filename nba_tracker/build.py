@@ -155,6 +155,88 @@ def bet_links(rows: list[dict], resolve, now: datetime) -> dict:
     return out
 
 
+def _american_implied(a):
+    return None if a is None else 100 / (a + 100) if a > 0 else -a / (-a + 100)
+
+
+def book_lines(data_dir: Path, caps: list[dict], resolve, games: dict, now: datetime) -> dict:
+    """Every book's line for games that haven't tipped, from each game's latest pull that included other books
+    (data/other_books/<YYYY-MM>.csv); the DraftKings/FanDuel rows of that same pull come from prop_captures.csv
+    (same event and capture time). One line per player, market and book: the point with both sides priced and
+    closest to even money; Novig (an exchange that posts several rungs) is shown at the DraftKings line, else the
+    FanDuel line, else its tightest rung. Real book lines only (estimated combos are never included), and only
+    players with at least two books. Display only: never graded.
+    {gid: {"cap": iso, "pt": pull type, "p": {aid: {market: [[book, line, over price, under price], ...]}}}}"""
+    other = []
+    for f in sorted((data_dir / "other_books").glob("*.csv"))[-2:]:      # this month and last
+        other += _read(f)
+    if not other:
+        return {}
+    latest: dict[str, tuple] = {}
+    for r in other:
+        k = r.get("captured_at") or ""
+        if k > latest.get(r["event_id"], ("",))[0]:
+            latest[r["event_id"]] = (k, r.get("pull_type") or "pregame")
+    rows = [r for r in other if latest[r["event_id"]][0] == r.get("captured_at")]
+    rows += [c for c in caps if c["event_id"] in latest and c.get("captured_at") == latest[c["event_id"]][0]]
+    pts: dict[tuple, dict] = defaultdict(lambda: defaultdict(dict))   # (gid, aid, mk, book) -> point -> side -> price
+    gev: dict[str, tuple] = {}                                         # gid -> (captured_at, pull type)
+    for r in rows:
+        side = (r.get("side") or "").lower()
+        point, price = _f(r.get("point")), _f(r.get("price"))
+        if side not in ("over", "under") or point is None or r.get("market") not in STAT:
+            continue
+        hit = resolve(r["event_id"], "", r.get("player"))
+        if not hit:
+            continue
+        gid, aid = hit
+        try:
+            if datetime.fromisoformat(str(games.get(gid, {}).get("start")).replace("Z", "+00:00")) <= now:
+                continue
+        except (ValueError, TypeError):
+            continue
+        pts[(gid, aid, r["market"], r["book"])][point][side] = price
+        gev[gid] = latest[r["event_id"]]
+
+    def balance(item):
+        o, u = _american_implied(item[1].get("over")), _american_implied(item[1].get("under"))
+        return abs(o / (o + u) - 0.5) if o is not None and u is not None else 1.0
+
+    def overround(item):
+        o, u = _american_implied(item[1].get("over")), _american_implied(item[1].get("under"))
+        return o + u if o is not None and u is not None else 9.0
+
+    picked: dict[tuple, tuple] = {}                                    # key -> (point, sides)
+    for key, by_pt in pts.items():
+        if key[3] == "novig":
+            continue
+        both = {p: s for p, s in by_pt.items() if "over" in s and "under" in s}
+        picked[key] = sorted((both or by_pt).items(), key=balance)[0]
+    for key, by_pt in pts.items():
+        if key[3] != "novig":
+            continue
+        both = {p: s for p, s in by_pt.items() if "over" in s and "under" in s}
+        if not both:
+            continue
+        choice = None
+        for ref in ("draftkings", "fanduel"):
+            r = picked.get(key[:3] + (ref,))
+            if r is not None and r[0] in both:
+                choice = (r[0], both[r[0]])
+                break
+        picked[key] = choice or sorted(both.items(), key=overround)[0]
+    out: dict = {}
+    for (gid, aid, mk, book), (point, sides) in picked.items():
+        out.setdefault(gid, {"cap": gev[gid][0], "pt": gev[gid][1], "p": {}})["p"].setdefault(aid, {}).setdefault(mk, []).append(
+            [book, point, sides.get("over"), sides.get("under")])
+    for g in out.values():                                             # a pair needs at least two books
+        for aid in list(g["p"]):
+            g["p"][aid] = {mk: sorted(v) for mk, v in g["p"][aid].items() if len(v) >= 2}
+            if not g["p"][aid]:
+                del g["p"][aid]
+    return {gid: g for gid, g in out.items() if g["p"]}
+
+
 def build(data_dir: Path, now: datetime | None = None) -> dict:
     now = now or datetime.now(timezone.utc)
     caps = _read(data_dir / "prop_captures.csv")
@@ -338,6 +420,12 @@ def build(data_dir: Path, now: datetime | None = None) -> dict:
     except Exception:
         links = {}
 
+    # ---- other books' lines for the Arbitrage tab (optional: a problem here must never stop the build)
+    try:
+        books = book_lines(data_dir, caps, resolve, games, now)
+    except Exception:
+        books = {}
+
     pull_log = _read(data_dir / "pull_log.csv")
     return {
         "generated_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -347,6 +435,7 @@ def build(data_dir: Path, now: datetime | None = None) -> dict:
         "logs": logs,
         "lines": lines,
         "links": links,
+        "books": books,
         "pulls": pull_log[-60:],
         "unmatched": {"games": sorted(unmatched_games), "players": sorted(unmatched_players)},
     }

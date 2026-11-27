@@ -44,3 +44,5 @@ main { padding: 10px 12px 32px; }
 /* Bet on FanDuel: label on top, Over / Under side by side */
 .betlbl { flex-basis: 100%; }
 .betbtn { flex: 1; justify-content: center; }
+
+.filters label.chk { grid-column: 1 / -1; }

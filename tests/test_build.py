@@ -115,3 +115,53 @@ def test_fanduel_links_before_tip_only(tmp_path):
     assert fd["o"]["price"] == -112 and fd["u"]["price"] == -108 and "selectionId=Over" in fd["o"]["url"]
     after = datetime(2026, 10, 23, 2, 0, tzinfo=timezone.utc)
     assert build.build(tmp_path, after)["links"] == {}          # game has tipped: no links
+
+
+# ---------- other books (Arbitrage tab) ----------
+OTHER_FIELDS = ["captured_at", "event_id", "minutes_before", "pull_type", "book", "market", "player", "side", "point", "price"]
+
+
+def oth(book, side, point, price, at="2026-10-22T22:50:00Z", player="Nikola Jokić", market="player_points", pt="pregame"):
+    return {"captured_at": at, "event_id": "e1", "minutes_before": 170, "pull_type": pt, "book": book, "market": market,
+            "player": player, "side": side, "point": point, "price": price}
+
+
+def test_books_block_latest_pull_novig_rung_and_filters(tmp_path):
+    from datetime import datetime, timezone
+    setup(tmp_path, [cap("draftkings", "Over", 27.5, -115), cap("draftkings", "Under", 27.5, -105),
+                     cap("fanduel", "Over", 28.5, -110), cap("fanduel", "Under", 28.5, -110),
+                     # an older pull of the same game must not leak into the block
+                     {**cap("draftkings", "Over", 25.5, -110), "captured_at": "2026-10-22T12:00:00Z"}],
+          [box("31")])
+    (tmp_path / "other_books").mkdir()
+    rows = [oth("betmgm", "Over", 27.5, -110), oth("betmgm", "Under", 27.5, -110),
+            oth("betmgm", "Over", 30.5, 150),                                    # one-sided alt: ignored while a two-sided point exists
+            oth("betmgm", "Under", 26.5, -110, at="2026-10-22T12:00:00Z"),       # older pull
+            oth("novig", "Over", 26.5, -105), oth("novig", "Under", 26.5, -105),
+            oth("novig", "Over", 27.5, -112), oth("novig", "Under", 27.5, -108),  # the DraftKings rung: the one shown
+            oth("novig", "Over", 29.5, 120), oth("novig", "Under", 29.5, -140),
+            oth("betmgm", "Over", 20.5, -110, market="player_points_rebounds_assists"),   # not a real core line: dropped
+            oth("betmgm", "Over", 5.5, -110, player="Somebody Unknown")]                  # unmatched player: dropped
+    w(tmp_path / "other_books" / "2026-10.csv", rows)
+    before = datetime(2026, 10, 22, 23, 0, tzinfo=timezone.utc)
+    b = build.build(tmp_path, before)["books"]
+    g = b["g1"]
+    assert g["cap"] == "2026-10-22T22:50:00Z" and g["pt"] == "pregame"
+    by_book = {r[0]: r for r in g["p"]["3112335"]["player_points"]}
+    assert set(by_book) == {"draftkings", "fanduel", "betmgm", "novig"}
+    assert by_book["betmgm"][1:] == [27.5, -110, -110]
+    assert by_book["novig"][1:] == [27.5, -112, -108]          # at the DraftKings line
+    assert by_book["fanduel"][1] == 28.5
+    assert "player_points_rebounds_assists" not in g["p"]["3112335"]
+    # after tip-off nothing is shown
+    after = datetime(2026, 10, 23, 2, 0, tzinfo=timezone.utc)
+    assert build.build(tmp_path, after)["books"] == {}
+
+
+def test_books_block_needs_two_books(tmp_path):
+    from datetime import datetime, timezone
+    setup(tmp_path, [cap("draftkings", "Over", 27.5, -115), cap("draftkings", "Under", 27.5, -105)], [box("31")])
+    (tmp_path / "other_books").mkdir()
+    w(tmp_path / "other_books" / "2026-10.csv", [oth("betmgm", "Over", 1.5, -110, player="Somebody Unknown")])
+    assert build.build(tmp_path, datetime(2026, 10, 22, 23, 0, tzinfo=timezone.utc))["books"] == {}
+    assert build.build(tmp_path, datetime(2026, 10, 22, 23, 0, tzinfo=timezone.utc))["lines"]   # the rest is unaffected
