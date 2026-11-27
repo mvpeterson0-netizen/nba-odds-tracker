@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-27T03:45:26+00:00",
+  "finished_at": "2026-11-27T04:00:28+00:00",
   "game_date": "2026-11-26",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -31,12 +31,19 @@
       "ODDS_API_KEY_2": 0,
       "ODDS_API_KEY_20K": 2379
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Texas Tech Red Raiders @ Oregon Ducks",
+        "type": "morning",
+        "status": "empty",
+        "rows": 0
+      }
+    ],
     "errors": [],
     "events": 46,
     "p4_events": 20,
     "unmatched": [],
-    "due": 0,
+    "due": 1,
     "pregame_pulled": false,
     "lines": {
       "status": "not_due",
