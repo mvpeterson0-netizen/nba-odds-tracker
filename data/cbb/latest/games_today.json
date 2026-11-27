@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T00:00:32+00:00",
+  "fetched_at": "2026-11-27T00:15:27+00:00",
   "source": "espn",
   "count": 18,
   "game_date": "2026-11-26",
@@ -10,10 +10,10 @@
       "start_utc": "2026-11-26T22:00Z",
       "short_name": "UCLA VS SMC",
       "state": "in",
-      "status": "11:22 - 2nd",
+      "status": "7:23 - 2nd",
       "completed": false,
       "period": 2,
-      "clock": "11:22",
+      "clock": "7:23",
       "venue": "Jenny Craig Pavilion",
       "neutral_site": true,
       "broadcasts": [
@@ -23,7 +23,7 @@
         "team_id": "2608",
         "abbr": "SMC",
         "name": "Saint Mary's Gaels",
-        "score": 59,
+        "score": 68,
         "winner": null,
         "record": "6-1",
         "home_record": "6-0",
@@ -34,16 +34,16 @@
             "value": "19"
           },
           "rebounds": {
-            "player": "Mantas Juzenas",
+            "player": "Jeremy Dent-Smith",
             "value": "5"
           },
           "assists": {
-            "player": "Mantas Juzenas",
+            "player": "Joshua Dent",
             "value": "4"
           },
           "rating": {
-            "player": "Jeremy Dent-Smith",
-            "value": "19 PTS"
+            "player": "Joshua Dent",
+            "value": "18 PTS"
           }
         },
         "conf_id": "29",
@@ -56,7 +56,7 @@
         "team_id": "26",
         "abbr": "UCLA",
         "name": "UCLA Bruins",
-        "score": 50,
+        "score": 55,
         "winner": null,
         "record": "6-0",
         "home_record": "5-0",
@@ -90,98 +90,14 @@
       "p4": true
     },
     {
-      "game_id": "401921673",
-      "start_utc": "2026-11-26T21:30Z",
-      "short_name": "USC VS USU",
-      "state": "in",
-      "status": "0:03 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "0:03",
-      "venue": "Acrisure Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "CBSSN"
-      ],
-      "home": {
-        "team_id": "328",
-        "abbr": "USU",
-        "name": "Utah State Aggies",
-        "score": 76,
-        "winner": null,
-        "record": "6-0",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Mason Falslev",
-            "value": "27"
-          },
-          "rebounds": {
-            "player": "Kingston Tosi",
-            "value": "8"
-          },
-          "assists": {
-            "player": "Dallin Hall",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Mason Falslev",
-            "value": "27 PTS"
-          }
-        },
-        "conf_id": "21",
-        "conf": null,
-        "rank": null,
-        "loc": "Utah State",
-        "nick": "Aggies"
-      },
-      "away": {
-        "team_id": "30",
-        "abbr": "USC",
-        "name": "USC Trojans",
-        "score": 74,
-        "winner": null,
-        "record": "7-0",
-        "home_record": "4-0",
-        "away_record": "1-0",
-        "leaders": {
-          "points": {
-            "player": "Alijah Arenas",
-            "value": "33"
-          },
-          "rebounds": {
-            "player": "Jadis Jones",
-            "value": "11"
-          },
-          "assists": {
-            "player": "Rodney Rice",
-            "value": "5"
-          },
-          "rating": {
-            "player": "Alijah Arenas",
-            "value": "33 PTS"
-          }
-        },
-        "conf_id": "7",
-        "conf": "Big Ten",
-        "rank": 18,
-        "loc": "USC",
-        "nick": "Trojans"
-      },
-      "espn_line": null,
-      "date": "2026-11-26",
-      "p4": true
-    },
-    {
       "game_id": "401920538",
       "start_utc": "2026-11-26T23:00Z",
       "short_name": "TCU VS CREI",
       "state": "in",
-      "status": "1:34 - 1st",
+      "status": "Halftime",
       "completed": false,
       "period": 1,
-      "clock": "1:34",
+      "clock": "0:00",
       "venue": "T-Mobile Arena",
       "neutral_site": true,
       "broadcasts": [
@@ -191,7 +107,7 @@
         "team_id": "156",
         "abbr": "CREI",
         "name": "Creighton Bluejays",
-        "score": 39,
+        "score": 44,
         "winner": null,
         "record": "5-1",
         "home_record": "3-0",
@@ -199,7 +115,7 @@
         "leaders": {
           "points": {
             "player": "BJ Davis",
-            "value": "8"
+            "value": "10"
           },
           "rebounds": {
             "player": "Jackson McAndrew",
@@ -211,7 +127,7 @@
           },
           "rating": {
             "player": "BJ Davis",
-            "value": "8 PTS"
+            "value": "10 PTS"
           }
         },
         "conf_id": "4",
@@ -588,6 +504,90 @@
         "rank": 17,
         "loc": "Miami",
         "nick": "Hurricanes"
+      },
+      "espn_line": null,
+      "date": "2026-11-26",
+      "p4": true
+    },
+    {
+      "game_id": "401921673",
+      "start_utc": "2026-11-26T21:30Z",
+      "short_name": "USC VS USU",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Acrisure Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "CBSSN"
+      ],
+      "home": {
+        "team_id": "328",
+        "abbr": "USU",
+        "name": "Utah State Aggies",
+        "score": 78,
+        "winner": true,
+        "record": "7-0",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Mason Falslev",
+            "value": "27"
+          },
+          "rebounds": {
+            "player": "Kingston Tosi",
+            "value": "8"
+          },
+          "assists": {
+            "player": "Dallin Hall",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Mason Falslev",
+            "value": "27 PTS"
+          }
+        },
+        "conf_id": "21",
+        "conf": null,
+        "rank": null,
+        "loc": "Utah State",
+        "nick": "Aggies"
+      },
+      "away": {
+        "team_id": "30",
+        "abbr": "USC",
+        "name": "USC Trojans",
+        "score": 74,
+        "winner": false,
+        "record": "7-1",
+        "home_record": "4-0",
+        "away_record": "1-0",
+        "leaders": {
+          "points": {
+            "player": "Alijah Arenas",
+            "value": "33"
+          },
+          "rebounds": {
+            "player": "Jadis Jones",
+            "value": "11"
+          },
+          "assists": {
+            "player": "Rodney Rice",
+            "value": "5"
+          },
+          "rating": {
+            "player": "Alijah Arenas",
+            "value": "33 PTS"
+          }
+        },
+        "conf_id": "7",
+        "conf": "Big Ten",
+        "rank": 18,
+        "loc": "USC",
+        "nick": "Trojans"
       },
       "espn_line": null,
       "date": "2026-11-26",
@@ -1016,7 +1016,7 @@
     {
       "game_id": "401918972",
       "start_utc": "2026-11-27T00:00Z",
-      "short_name": "SMU VS LSU",
+      "short_name": "LSU VS SMU",
       "state": "pre",
       "status": "11/26 - 7:00 PM EST",
       "completed": false,
@@ -1028,35 +1028,6 @@
         "CBSSN"
       ],
       "home": {
-        "team_id": "99",
-        "abbr": "LSU",
-        "name": "LSU Tigers",
-        "score": 0,
-        "winner": null,
-        "record": "7-0",
-        "home_record": "5-0",
-        "away_record": "1-0",
-        "leaders": {
-          "pointsPerGame": {
-            "player": "Donovan Dent",
-            "value": "16.0"
-          },
-          "reboundsPerGame": {
-            "player": "Michael Ruzic",
-            "value": "8.6"
-          },
-          "assistsPerGame": {
-            "player": "Donovan Dent",
-            "value": "9.6"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 20,
-        "loc": "LSU",
-        "nick": "Tigers"
-      },
-      "away": {
         "team_id": "2567",
         "abbr": "SMU",
         "name": "SMU Mustangs",
@@ -1085,8 +1056,37 @@
         "loc": "SMU",
         "nick": "Mustangs"
       },
+      "away": {
+        "team_id": "99",
+        "abbr": "LSU",
+        "name": "LSU Tigers",
+        "score": 0,
+        "winner": null,
+        "record": "7-0",
+        "home_record": "5-0",
+        "away_record": "1-0",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Donovan Dent",
+            "value": "16.0"
+          },
+          "reboundsPerGame": {
+            "player": "Michael Ruzic",
+            "value": "8.6"
+          },
+          "assistsPerGame": {
+            "player": "Donovan Dent",
+            "value": "9.6"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 20,
+        "loc": "LSU",
+        "nick": "Tigers"
+      },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "LSU -6.5",
         "spread": -6.5,
         "over_under": 155.5
@@ -1167,7 +1167,7 @@
         "nick": "Blue Demons"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "DEP -1.5",
         "spread": 1.5,
         "over_under": 137.5
@@ -1248,10 +1248,10 @@
         "nick": "Cardinals"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "SJU -1.5",
         "spread": -1.5,
-        "over_under": 161.5
+        "over_under": 160.5
       },
       "date": "2026-11-26",
       "p4": true
@@ -1329,7 +1329,7 @@
         "nick": "Crimson Tide"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ALA -13.5",
         "spread": 13.5,
         "over_under": 169.5
@@ -1410,7 +1410,7 @@
         "nick": "Red Raiders"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "TTU -10.5",
         "spread": 10.5,
         "over_under": 148.5
@@ -1491,7 +1491,7 @@
         "nick": "Bears"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GONZ -3.5",
         "spread": -3.5,
         "over_under": 153.5
