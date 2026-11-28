@@ -20,3 +20,14 @@ def test_grade():
     assert signals._grade(1.5, -110) == ("W", round(100 / 110, 4))
     assert signals._grade(-0.5, -110) == ("L", -1.0)
     assert signals._grade(0, -110) == ("P", 0.0)
+
+
+def test_team_plays_carry_slip_links(tmp_path):
+    import shutil
+    shutil.copytree(DATA, tmp_path / "d", ignore=shutil.ignore_patterns("history", "cbb", "odds_log"))
+    shutil.copytree(DATA / "odds_log", tmp_path / "d" / "odds_log")
+    base = signals.build(tmp_path / "d")
+    plays = [p for s in base["signals"] if s["kind"] == "team" for p in s["plays"]]
+    if not plays:
+        return   # no upcoming team plays in this snapshot
+    assert all(p.get("links") is None for p in plays)   # no game_links.csv yet

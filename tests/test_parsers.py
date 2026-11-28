@@ -149,3 +149,15 @@ def test_backup_key_names(monkeypatch):
         monkeypatch.delenv(v, raising=False)
     monkeypatch.setenv("ODDS_API_KEY_3", "k3")
     assert odds.api_key() == "k3"
+
+
+def test_parse_links_keeps_only_upcoming_spread_total_fd_dk():
+    ev = lambda id_, start, book, mk: {"id": id_, "commence_time": start, "home_team": "H", "away_team": "A", "bookmakers": [
+        {"key": book, "markets": [{"key": mk, "outcomes": [
+            {"name": "Under", "price": -110, "point": 220.5, "link": "https://sportsbook.fanduel.com/addToBetslip?marketId=1&selectionId=2"},
+            {"name": "Over", "price": -110, "point": 220.5}]}]}]}
+    raw = [ev("a", "2026-11-29T01:00:00Z", "fanduel", "totals"), ev("b", "2026-11-29T01:00:00Z", "betmgm", "totals"),
+           ev("c", "2026-11-29T01:00:00Z", "fanduel", "h2h"), ev("d", "2026-11-28T01:00:00Z", "fanduel", "totals")]
+    rows = odds.parse_links(raw, "2026-11-28T13:00:00Z")
+    assert [(r["event_id"], r["book"], r["market"], r["outcome"]) for r in rows] == [("a", "fanduel", "totals", "Under")]
+    assert odds.write_links("/nonexistent/should-not-be-written.csv", []) == 0

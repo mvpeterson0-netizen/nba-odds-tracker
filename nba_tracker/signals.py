@@ -241,6 +241,23 @@ def build(data_dir: Path, now: datetime | None = None) -> dict:
                 return {"point": v[0], "price": v[1], "book": book, "at": v[2]}
         return None
 
+    # slip links for upcoming spread/total plays (data/game_links.csv, latest game-lines pull, FanDuel + DraftKings)
+    glinks = defaultdict(dict)   # (gid, market, outcome key) -> book -> {point, price, url, cap}
+    gl_gid = {}
+    for r in _read(data_dir / "game_links.csv"):
+        ev = r["event_id"]
+        if ev not in gl_gid:
+            gl_gid[ev] = game_for(r["home_team"], r["commence_utc"])
+        if not gl_gid[ev] or _dt(r["commence_utc"]) <= now:
+            continue
+        o = r["outcome"].lower() if r["market"] == "totals" else norm_team(r["outcome"])
+        glinks[(gl_gid[ev], r["market"], o)][r["book"]] = {
+            "point": _f(r["point"]), "price": _f(r["price"]), "url": r["outcome_link"], "cap": r["fetched_at"]}
+
+    def links_for(gid, market, outcome):
+        key = outcome.lower() if market == "totals" else norm_team(outcome)
+        return glinks.get((gid, market, key)) or None
+
     # props: pregame latest per (event, market, player, book) for grading; latest of any pull for upcoming plays
     pre, cur = {}, {}
     for r in _read(data_dir / "prop_captures.csv"):
@@ -331,7 +348,8 @@ def build(data_dir: Path, now: datetime | None = None) -> dict:
             else:
                 out[sig]["plays"].append({**base, "pick": f"{team} {ln['point']:+g}" if ln else f"{team} spread",
                                           "line": ln and ln["point"], "price": ln and ln["price"], "book": ln and ln["book"],
-                                          "state": g.get("state")})
+                                          "state": g.get("state"),
+                                          "links": links_for(gid, "spreads", g["home_name"] if side == "home" else g["away_name"])})
 
         def under_bet(sig, why):
             ln = gline(gid, "totals", "under")
@@ -346,7 +364,7 @@ def build(data_dir: Path, now: datetime | None = None) -> dict:
             else:
                 out[sig]["plays"].append({**base, "pick": f"Under {ln['point']:g}" if ln else "Under",
                                           "line": ln and ln["point"], "price": ln and ln["price"], "book": ln and ln["book"],
-                                          "state": g.get("state")})
+                                          "state": g.get("state"), "links": links_for(gid, "totals", "Under")})
 
         if oth != ota:
             tired, fresh, p = (H, A, ph) if oth else (A, H, pa)

@@ -128,7 +128,10 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
             log.error("props failed: %s", e)
         # Game lines (moneyline/spread/total): only in the scheduled slots, to save credits.
         last = _last_lines_pull(out)
-        if not lines_due(now, last):
+        # One-time catch-up: the first run after this shipped pulls the lines again only to save slip links
+        # (3 credits). That pull is not logged, so odds.json and odds_log are untouched.
+        links_only = (not lines_due(now, last)) and last is not None and not (out / "game_links.csv").exists()
+        if not lines_due(now, last) and not links_only:
             status["odds"] = "not_due"
             log.info("odds              not due (last pull %s)", last)
         else:
@@ -136,7 +139,11 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
                 raw = quota = None
                 for label, key in keys:
                     try:
-                        raw, quota = odds.fetch_odds(key)
+                        try:
+                            raw, quota = odds.fetch_odds(key, links=True)
+                        except Exception as e:  # links are a bonus: retry the same key without them
+                            log.warning("odds with links on %s failed (%s); retrying without", label, e)
+                            raw, quota = odds.fetch_odds(key)
                         quota["key"] = label
                         break
                     except Exception as e:  # bad/empty key: try the next one
@@ -145,9 +152,15 @@ def run(out: Path, day: date, skip_odds: bool = False) -> int:
                     raise RuntimeError("every key failed")
                 fetched = now.strftime("%Y-%m-%dT%H:%M:%SZ")
                 rows = odds.parse_odds(raw, fetched)
-                write(out, day, "odds", envelope("the-odds-api", rows, quota=quota))
-                # Every pull is also appended to a permanent log (one CSV per month).
-                odds.append_log(out / "odds_log" / f"{fetched[:7]}.csv", rows, fetched)
+                if not links_only:
+                    write(out, day, "odds", envelope("the-odds-api", rows, quota=quota))
+                    # Every pull is also appended to a permanent log (one CSV per month).
+                    odds.append_log(out / "odds_log" / f"{fetched[:7]}.csv", rows, fetched)
+                try:
+                    nl = odds.write_links(out / "game_links.csv", odds.parse_links(raw, fetched))
+                    log.info("game links        %d spread/total slip links", nl)
+                except Exception as e:  # never fails the run
+                    log.warning("game links failed: %s", e)
                 log.info("odds              %d rows (quota remaining: %s)", len(rows), quota.get("requests_remaining"))
                 status["odds"] = "ok"
             except Exception as e:

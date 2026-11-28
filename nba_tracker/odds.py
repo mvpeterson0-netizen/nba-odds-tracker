@@ -31,15 +31,18 @@ def api_key() -> str | None:
     return None
 
 
-def fetch_odds(key: str, *, regions: str = "us", markets: str = DEFAULT_MARKETS) -> tuple[Any, dict]:
-    """Return (events, quota_info). Each call costs quota (markets x regions)."""
-    data, headers = get_json(ODDS_URL, {
+def fetch_odds(key: str, *, regions: str = "us", markets: str = DEFAULT_MARKETS, links: bool = False) -> tuple[Any, dict]:
+    """Return (events, quota_info). Each call costs quota (markets x regions); includeLinks adds no cost."""
+    params = {
         "apiKey": key,
         "regions": regions,
         "markets": markets,
         "oddsFormat": "american",
         "dateFormat": "iso",
-    })
+    }
+    if links:
+        params["includeLinks"] = "true"
+    data, headers = get_json(ODDS_URL, params)
     quota = {
         "requests_remaining": headers.get("x-requests-remaining"),
         "requests_used": headers.get("x-requests-used"),
@@ -75,6 +78,52 @@ def parse_odds(raw: Any, fetched_at: str | None = None) -> list[dict]:
                         "in_play": in_play,
                     })
     return rows
+
+
+LINK_BOOKS = ("fanduel", "draftkings")
+LINK_MARKETS = ("spreads", "totals")
+GAME_LINK_FIELDS = ["event_id", "commence_utc", "home_team", "away_team", "fetched_at", "book", "market",
+                    "outcome", "point", "price", "outcome_link"]
+
+
+def parse_links(raw: Any, fetched_at: str) -> list[dict]:
+    """Spread/total bet-slip links (FanDuel, DraftKings) for games that haven't tipped. Kept apart from parse_odds
+    so the odds rows and the permanent odds_log stay exactly as before."""
+    rows = []
+    for ev in raw or []:
+        start = ev.get("commence_time")
+        if not start or start <= fetched_at:
+            continue
+        for book in ev.get("bookmakers") or []:
+            if book.get("key") not in LINK_BOOKS:
+                continue
+            for market in book.get("markets") or []:
+                if market.get("key") not in LINK_MARKETS:
+                    continue
+                for out in market.get("outcomes") or []:
+                    if not out.get("link"):
+                        continue
+                    rows.append({"event_id": ev.get("id"), "commence_utc": start, "home_team": ev.get("home_team"),
+                                 "away_team": ev.get("away_team"), "fetched_at": fetched_at, "book": book.get("key"),
+                                 "market": market.get("key"), "outcome": out.get("name"), "point": out.get("point"),
+                                 "price": out.get("price"), "outcome_link": out["link"]})
+    return rows
+
+
+def write_links(path, rows: list[dict]) -> int:
+    """Only the latest pull is kept (links are only useful until tip); an empty answer leaves the old file alone."""
+    import csv
+    from pathlib import Path
+
+    if not rows:
+        return 0
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=GAME_LINK_FIELDS, extrasaction="ignore")
+        w.writeheader()
+        w.writerows(rows)
+    return len(rows)
 
 
 LOG_FIELDS = ["fetched_at", "event_id", "commence_utc", "in_play", "home_team", "away_team",
