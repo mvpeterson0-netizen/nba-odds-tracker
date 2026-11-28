@@ -1,10 +1,94 @@
 {
-  "fetched_at": "2026-11-28T05:00:34+00:00",
+  "fetched_at": "2026-11-28T05:15:26+00:00",
   "source": "espn",
   "count": 25,
   "game_date": "2026-11-27",
   "division_i_games": 55,
   "rows": [
+    {
+      "game_id": "401920535",
+      "start_utc": "2026-11-28T04:30Z",
+      "short_name": "SDSU VS TTU",
+      "state": "in",
+      "status": "9:08 - 1st",
+      "completed": false,
+      "period": 1,
+      "clock": "9:08",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN2"
+      ],
+      "home": {
+        "team_id": "2641",
+        "abbr": "TTU",
+        "name": "Texas Tech Red Raiders",
+        "score": 23,
+        "winner": null,
+        "record": "6-1",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Darrion Williams",
+            "value": "9"
+          },
+          "rebounds": {
+            "player": "Cruz Davis",
+            "value": "3"
+          },
+          "assists": {
+            "player": "Cruz Davis",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Darrion Williams",
+            "value": "9 PTS"
+          }
+        },
+        "conf_id": "8",
+        "conf": "Big 12",
+        "rank": 5,
+        "loc": "Texas Tech",
+        "nick": "Red Raiders"
+      },
+      "away": {
+        "team_id": "21",
+        "abbr": "SDSU",
+        "name": "San Diego State Aztecs",
+        "score": 15,
+        "winner": null,
+        "record": "6-1",
+        "home_record": "3-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Bear Cherry",
+            "value": "8"
+          },
+          "rebounds": {
+            "player": "Tae Simmons",
+            "value": "2"
+          },
+          "assists": {
+            "player": "Chance Gladden",
+            "value": "2"
+          },
+          "rating": {
+            "player": "Bear Cherry",
+            "value": "8 PTS"
+          }
+        },
+        "conf_id": "21",
+        "conf": null,
+        "rank": null,
+        "loc": "San Diego State",
+        "nick": "Aztecs"
+      },
+      "espn_line": null,
+      "date": "2026-11-27",
+      "p4": true
+    },
     {
       "game_id": "401925703",
       "start_utc": "2026-11-28T00:30Z",
@@ -1948,90 +2032,6 @@
         "rank": null,
         "loc": "Wichita State",
         "nick": "Shockers"
-      },
-      "espn_line": null,
-      "date": "2026-11-27",
-      "p4": true
-    },
-    {
-      "game_id": "401920535",
-      "start_utc": "2026-11-28T04:30Z",
-      "short_name": "SDSU VS TTU",
-      "state": "in",
-      "status": "15:41 - 1st",
-      "completed": false,
-      "period": 1,
-      "clock": "15:41",
-      "venue": "Michelob ULTRA Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN2"
-      ],
-      "home": {
-        "team_id": "2641",
-        "abbr": "TTU",
-        "name": "Texas Tech Red Raiders",
-        "score": 12,
-        "winner": null,
-        "record": "6-1",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Cruz Davis",
-            "value": "6"
-          },
-          "rebounds": {
-            "player": "Cruz Davis",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Cruz Davis",
-            "value": "1"
-          },
-          "rating": {
-            "player": "Cruz Davis",
-            "value": "6 PTS"
-          }
-        },
-        "conf_id": "8",
-        "conf": "Big 12",
-        "rank": 5,
-        "loc": "Texas Tech",
-        "nick": "Red Raiders"
-      },
-      "away": {
-        "team_id": "21",
-        "abbr": "SDSU",
-        "name": "San Diego State Aztecs",
-        "score": 9,
-        "winner": null,
-        "record": "6-1",
-        "home_record": "3-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Bear Cherry",
-            "value": "6"
-          },
-          "rebounds": {
-            "player": "Elzie Harrington",
-            "value": "1"
-          },
-          "assists": {
-            "player": "Chance Gladden",
-            "value": "2"
-          },
-          "rating": {
-            "player": "Bear Cherry",
-            "value": "6 PTS"
-          }
-        },
-        "conf_id": "21",
-        "conf": null,
-        "rank": null,
-        "loc": "San Diego State",
-        "nick": "Aztecs"
       },
       "espn_line": null,
       "date": "2026-11-27",
