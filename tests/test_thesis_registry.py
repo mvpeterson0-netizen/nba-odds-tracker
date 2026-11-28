@@ -13,7 +13,7 @@ def test_thesis_registry_schema_and_ids():
     entries = data["entries"]
     ids = [e["id"] for e in entries]
     assert len(ids) == len(set(ids))
-    assert all(re.fullmatch(r"NBA-TH-\\d{3}", i) for i in ids)
+    assert all(re.fullmatch(r"NBA-TH-\d{3}", i) for i in ids)
     required = {"id", "title", "question", "created", "origin", "status", "scope", "data_needs", "notes"}
     for e in entries:
         assert required.issubset(e)

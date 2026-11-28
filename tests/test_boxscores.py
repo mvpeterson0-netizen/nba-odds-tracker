@@ -18,6 +18,7 @@ def test_parse_summary():
     rows = boxscores.parse_summary(SUMMARY, GAME)
     c, b = rows
     assert (c["pts"], c["reb"], c["ast"], c["fg3m"], c["fg3a"], c["min"]) == (32, 5, 7, 4, 10, 36)
+    assert (c["fgm"], c["fga"], c["fta"]) == (12, 24, 4)
     assert c["team"] == "GS" and c["opp"] == "BOS" and c["home_away"] == "home" and c["played"] and c["starter"]
     assert b["played"] is False and b["dnp_reason"] == "COACH'S DECISION"
 

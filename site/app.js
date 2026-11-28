@@ -1,7 +1,7 @@
 "use strict";
 // Dime front end (NBA props). Reads the JSON the GitHub Action writes to data/. No external libraries.
 
-const FILES = ["run", "props", "updates", "research_theses"];
+const FILES = ["run", "props", "updates", "research_theses", "signals"];
 const CBB_FILES = ["cbb", "cbb_run"];   // college basketball (cbb.js); loaded the first time the CBB toggle is used
 let MODE = "nba";                       // "nba" | "cbb": the section being shown (props.js and cbb.js read it)
 const D = {};               // file name -> parsed JSON (or null if missing; undefined = not loaded yet)
@@ -120,10 +120,10 @@ function propsLog(px = D.props) {
 }
 
 // ---------- router ----------
-// NBA:  #/board  #/results  #/defense  #/log  #/guide  #/player/<id>[/<market>]
+// NBA:  #/board  #/results  #/signals  #/defense  #/log  #/guide  #/player/<id>[/<market>]
 // CBB:  #/cbb/board  #/cbb/results  #/cbb/log  #/cbb/guide  #/cbb/player/<id>
 const TABS = {
-  nba: [["board", "Board"], ["results", "Results"], ["defense", "Defense"], ["log", "Log & sources"], ["guide", "Guide"]],
+  nba: [["board", "Board"], ["results", "Results"], ["signals", "Signals"], ["defense", "Defense"], ["log", "Log & sources"], ["guide", "Guide"]],
   cbb: [["board", "Board"], ["results", "Results"], ["log", "Log"], ["guide", "Guide"]],
 };
 const SUB = { nba: "NBA props · 2026–27", cbb: "Power 4 points · 2026–27" };
@@ -169,7 +169,7 @@ function render() {
     cbbLoading = cbbLoading || loadFiles(CBB_FILES).then(() => { cbbLoading = null; renderStatus(); render(); });
     return;
   }
-  const views = mode === "nba" ? { log: viewLog } : {};
+  const views = mode === "nba" ? { log: viewLog, signals: () => (window.DIME_SIGNALS ? window.DIME_SIGNALS.view(arg) : `<p class="pad">Signals didn't load. Try refreshing.</p>`) } : {};
   const home = R("board");
   let propsView = false;
   try {

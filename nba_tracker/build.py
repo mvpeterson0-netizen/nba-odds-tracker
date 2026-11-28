@@ -363,6 +363,11 @@ def main(argv: list[str] | None = None) -> int:
     (out_dir / "props.json").write_text(json.dumps(d, separators=(",", ":")), encoding="utf-8")
     print(f"props.json: {len(d['players'])} players, {sum(len(v) for v in d['lines'].values())} player-games with lines, "
           f"unmatched games {len(d['unmatched']['games'])}, players {len(d['unmatched']['players'])}")
+    try:                           # Signals page (frozen NBA-TH-010..015); a failure here must not block props.json
+        from . import signals
+        signals.main([str(data_dir), str(out_dir)])
+    except Exception as e:         # noqa: BLE001
+        print(f"signals.json failed: {type(e).__name__}: {e}")
     return 0
 
 

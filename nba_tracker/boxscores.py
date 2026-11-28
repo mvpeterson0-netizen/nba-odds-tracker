@@ -23,7 +23,8 @@ SEASON_START = date(2026, 10, 20)   # first regular-season date to backfill from
 MAX_PER_RUN = 40                    # summaries fetched per run (first run backfills, later runs top up)
 
 FIELDS = ["game_id", "game_date", "start_utc", "team_id", "team", "opp", "home_away", "athlete_id", "player",
-          "position", "starter", "played", "dnp_reason", "min", "pts", "reb", "ast", "fg3m", "fg3a", "stl", "blk", "tov"]
+          "position", "starter", "played", "dnp_reason", "min", "pts", "reb", "ast", "fg3m", "fg3a", "stl", "blk", "tov",
+          "fgm", "fga", "fta"]   # fgm/fga/fta added 2026-11-28 for the Signals page (NBA-TH-015); older rows backfilled once
 
 
 def _num(v: Any) -> float | None:
@@ -66,6 +67,8 @@ def parse_summary(summary: dict, game: dict) -> list[dict]:
                 return None
             i_min, i_pts, i_reb, i_ast = col("MIN", "minutes"), col("PTS", "points"), col("REB", "rebounds"), col("AST", "assists")
             i_3 = col("3PT", "threePointFieldGoalsMade-threePointFieldGoalsAttempted")
+            i_fg = col("FG", "fieldGoalsMade-fieldGoalsAttempted")
+            i_ft = col("FT", "freeThrowsMade-freeThrowsAttempted")
             i_stl, i_blk, i_to = col("STL", "steals"), col("BLK", "blocks"), col("TO", "turnovers")
             for a in st.get("athletes") or []:
                 ath = a.get("athlete") or {}
@@ -73,6 +76,8 @@ def parse_summary(summary: dict, game: dict) -> list[dict]:
                 get = lambda i: stats[i] if i is not None and i < len(stats) else None
                 dnp = bool(a.get("didNotPlay")) or not stats
                 m3, a3 = _made_att(get(i_3))
+                fgm, fga = _made_att(get(i_fg))
+                _ftm, fta = _made_att(get(i_ft))
                 mins = _num(get(i_min))
                 rows.append({
                     "game_id": game["game_id"], "game_date": game.get("game_date"), "start_utc": game.get("start_utc"),
@@ -86,6 +91,7 @@ def parse_summary(summary: dict, game: dict) -> list[dict]:
                     "min": mins, "pts": _num(get(i_pts)), "reb": _num(get(i_reb)), "ast": _num(get(i_ast)),
                     "fg3m": m3, "fg3a": a3,
                     "stl": _num(get(i_stl)), "blk": _num(get(i_blk)), "tov": _num(get(i_to)),
+                    "fgm": fgm, "fga": fga, "fta": fta,
                 })
     return rows
 
@@ -130,6 +136,8 @@ def _update_games_index(data_dir: Path, games: list[dict]) -> None:
             "home_name": g["home"].get("name"), "away_name": g["away"].get("name"),
             "home_id": g["home"].get("team_id"), "away_id": g["away"].get("team_id"),
             "hs": g["home"].get("score"), "as": g["away"].get("score"), "final": True,
+            # periods (5+ = overtime) and broadcast names (national TV) feed the Signals page (added 2026-11-28)
+            "periods": g.get("period"), "tv": g.get("broadcasts"),
         }
     path.write_text(json.dumps(dict(sorted(idx.items())), indent=0))
 
