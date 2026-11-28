@@ -1,103 +1,19 @@
 {
-  "fetched_at": "2026-11-28T04:21:13+00:00",
+  "fetched_at": "2026-11-28T04:30:25+00:00",
   "source": "espn",
   "count": 25,
   "game_date": "2026-11-27",
   "division_i_games": 55,
   "rows": [
     {
-      "game_id": "401920534",
-      "start_utc": "2026-11-28T02:00Z",
-      "short_name": "TENN VS LOU",
-      "state": "in",
-      "status": "0:30 - 2nd",
-      "completed": false,
-      "period": 2,
-      "clock": "0:30",
-      "venue": "Michelob ULTRA Arena",
-      "neutral_site": true,
-      "broadcasts": [
-        "ESPN"
-      ],
-      "home": {
-        "team_id": "97",
-        "abbr": "LOU",
-        "name": "Louisville Cardinals",
-        "score": 84,
-        "winner": null,
-        "record": "5-1",
-        "home_record": "3-0",
-        "away_record": "0-1",
-        "leaders": {
-          "points": {
-            "player": "Seth Trimble",
-            "value": "17"
-          },
-          "rebounds": {
-            "player": "Flory Bidunga",
-            "value": "7"
-          },
-          "assists": {
-            "player": "Seth Trimble",
-            "value": "7"
-          },
-          "rating": {
-            "player": "Seth Trimble",
-            "value": "17 PTS, 7 AST"
-          }
-        },
-        "conf_id": "2",
-        "conf": "ACC",
-        "rank": 25,
-        "loc": "Louisville",
-        "nick": "Cardinals"
-      },
-      "away": {
-        "team_id": "2633",
-        "abbr": "TENN",
-        "name": "Tennessee Volunteers",
-        "score": 64,
-        "winner": null,
-        "record": "7-0",
-        "home_record": "5-0",
-        "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Juke Harris",
-            "value": "13"
-          },
-          "rebounds": {
-            "player": "DeWayne Brown II",
-            "value": "13"
-          },
-          "assists": {
-            "player": "Terrence Hill Jr.",
-            "value": "6"
-          },
-          "rating": {
-            "player": "Terrence Hill Jr.",
-            "value": "13 PTS, 6 AST"
-          }
-        },
-        "conf_id": "23",
-        "conf": "SEC",
-        "rank": 9,
-        "loc": "Tennessee",
-        "nick": "Volunteers"
-      },
-      "espn_line": null,
-      "date": "2026-11-27",
-      "p4": true
-    },
-    {
       "game_id": "401919033",
       "start_utc": "2026-11-28T02:00Z",
       "short_name": "WICH @ UK",
       "state": "in",
-      "status": "0:03 - 2nd",
+      "status": "0:35 - OT",
       "completed": false,
-      "period": 2,
-      "clock": "0:03",
+      "period": 3,
+      "clock": "0:35",
       "venue": "Rupp Arena",
       "neutral_site": false,
       "broadcasts": [
@@ -107,7 +23,7 @@
         "team_id": "96",
         "abbr": "UK",
         "name": "Kentucky Wildcats",
-        "score": 65,
+        "score": 71,
         "winner": null,
         "record": "4-2",
         "home_record": "4-0",
@@ -115,11 +31,11 @@
         "leaders": {
           "points": {
             "player": "Kam Williams",
-            "value": "14"
+            "value": "16"
           },
           "rebounds": {
             "player": "Kam Williams",
-            "value": "7"
+            "value": "8"
           },
           "assists": {
             "player": "Alex Wilkins",
@@ -127,7 +43,7 @@
           },
           "rating": {
             "player": "Kam Williams",
-            "value": "14 PTS, 7 REB"
+            "value": "16 PTS, 8 REB, 3 STL"
           }
         },
         "conf_id": "23",
@@ -140,7 +56,7 @@
         "team_id": "2724",
         "abbr": "WICH",
         "name": "Wichita State Shockers",
-        "score": 65,
+        "score": 73,
         "winner": null,
         "record": "6-1",
         "home_record": "5-0",
@@ -152,15 +68,15 @@
           },
           "rebounds": {
             "player": "William Berg",
-            "value": "17"
+            "value": "20"
           },
           "assists": {
-            "player": "Jahari Long",
+            "player": "Jordan Frison",
             "value": "4"
           },
           "rating": {
             "player": "William Berg",
-            "value": "12 PTS, 17 REB"
+            "value": "16 PTS, 20 REB"
           }
         },
         "conf_id": "62",
@@ -588,6 +504,90 @@
         "rank": 7,
         "loc": "Texas",
         "nick": "Longhorns"
+      },
+      "espn_line": null,
+      "date": "2026-11-27",
+      "p4": true
+    },
+    {
+      "game_id": "401920534",
+      "start_utc": "2026-11-28T02:00Z",
+      "short_name": "TENN VS LOU",
+      "state": "post",
+      "status": "Final",
+      "completed": true,
+      "period": 2,
+      "clock": "0:00",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "97",
+        "abbr": "LOU",
+        "name": "Louisville Cardinals",
+        "score": 84,
+        "winner": true,
+        "record": "6-1",
+        "home_record": "3-0",
+        "away_record": "0-1",
+        "leaders": {
+          "points": {
+            "player": "Seth Trimble",
+            "value": "17"
+          },
+          "rebounds": {
+            "player": "Flory Bidunga",
+            "value": "7"
+          },
+          "assists": {
+            "player": "Seth Trimble",
+            "value": "7"
+          },
+          "rating": {
+            "player": "Seth Trimble",
+            "value": "17 PTS, 7 AST"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": 25,
+        "loc": "Louisville",
+        "nick": "Cardinals"
+      },
+      "away": {
+        "team_id": "2633",
+        "abbr": "TENN",
+        "name": "Tennessee Volunteers",
+        "score": 64,
+        "winner": false,
+        "record": "7-1",
+        "home_record": "5-0",
+        "away_record": "0-0",
+        "leaders": {
+          "points": {
+            "player": "Juke Harris",
+            "value": "13"
+          },
+          "rebounds": {
+            "player": "DeWayne Brown II",
+            "value": "13"
+          },
+          "assists": {
+            "player": "Terrence Hill Jr.",
+            "value": "6"
+          },
+          "rating": {
+            "player": "Terrence Hill Jr.",
+            "value": "13 PTS, 6 AST"
+          }
+        },
+        "conf_id": "23",
+        "conf": "SEC",
+        "rank": 9,
+        "loc": "Tennessee",
+        "nick": "Volunteers"
       },
       "espn_line": null,
       "date": "2026-11-27",
@@ -1876,24 +1876,7 @@
         "record": "5-3",
         "home_record": "3-0",
         "away_record": "1-0",
-        "leaders": {
-          "points": {
-            "player": "Josh Hubbard",
-            "value": "12"
-          },
-          "rebounds": {
-            "player": "Kimani Hamilton",
-            "value": "10"
-          },
-          "assists": {
-            "player": "Kimani Hamilton",
-            "value": "3"
-          },
-          "rating": {
-            "player": "Tristan Reed",
-            "value": "9 REB"
-          }
-        },
+        "leaders": null,
         "conf_id": "23",
         "conf": "SEC",
         "rank": null,
@@ -1909,24 +1892,7 @@
         "record": "6-2",
         "home_record": "5-0",
         "away_record": "0-0",
-        "leaders": {
-          "points": {
-            "player": "Dasonte Bowen",
-            "value": "18"
-          },
-          "rebounds": {
-            "player": "Ivan Juric",
-            "value": "17"
-          },
-          "assists": {
-            "player": "Ivan Juric",
-            "value": "4"
-          },
-          "rating": {
-            "player": "Ivan Juric",
-            "value": "15 PTS, 17 REB"
-          }
-        },
+        "leaders": null,
         "conf_id": "7",
         "conf": "Big Ten",
         "rank": null,
@@ -2094,9 +2060,9 @@
         "nick": "Aztecs"
       },
       "espn_line": {
-        "provider": "Draft Kings",
-        "details": "TTU -8.5",
-        "spread": -8.5,
+        "provider": "DraftKings",
+        "details": "TTU -9.5",
+        "spread": -9.5,
         "over_under": 142.5
       },
       "date": "2026-11-27",
