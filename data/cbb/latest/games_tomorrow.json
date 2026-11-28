@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-28T04:30:25+00:00",
+  "fetched_at": "2026-11-28T04:45:27+00:00",
   "source": "espn",
-  "count": 5,
+  "count": 6,
   "game_date": "2026-11-28",
   "division_i_games": 76,
   "rows": [
@@ -78,7 +78,7 @@
         "nick": "Phoenix"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "NCSU -20.5",
         "spread": -20.5,
         "over_under": 149.5
@@ -159,7 +159,7 @@
         "nick": "Braves"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "GT -28.5",
         "spread": -28.5,
         "over_under": 162.5
@@ -240,7 +240,7 @@
         "nick": "Panthers"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "IOWA -33.5",
         "spread": -33.5,
         "over_under": 136.5
@@ -321,7 +321,7 @@
         "nick": "Skyhawks"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "ND -30.5",
         "spread": -30.5,
         "over_under": 149.5
@@ -402,11 +402,74 @@
         "nick": "Golden Bears"
       },
       "espn_line": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "details": "MINN -7.5",
         "spread": -7.5,
-        "over_under": 142.5
+        "over_under": 143.5
       },
+      "date": "2026-11-28",
+      "p4": true
+    },
+    {
+      "game_id": "401920536",
+      "start_utc": "2026-11-29T03:30Z",
+      "short_name": "TBD VS LOU",
+      "state": "pre",
+      "status": "11/28 - 10:30 PM EST",
+      "completed": false,
+      "period": 0,
+      "clock": "0:00",
+      "venue": "Michelob ULTRA Arena",
+      "neutral_site": true,
+      "broadcasts": [
+        "ESPN"
+      ],
+      "home": {
+        "team_id": "97",
+        "abbr": "LOU",
+        "name": "Louisville Cardinals",
+        "score": 0,
+        "winner": null,
+        "record": "6-1",
+        "home_record": "3-0",
+        "away_record": "0-1",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Seth Trimble",
+            "value": "19.4"
+          },
+          "reboundsPerGame": {
+            "player": "Flory Bidunga",
+            "value": "9.2"
+          },
+          "assistsPerGame": {
+            "player": "Alvaro Folgueiras",
+            "value": "3.3"
+          }
+        },
+        "conf_id": "2",
+        "conf": "ACC",
+        "rank": 25,
+        "loc": "Louisville",
+        "nick": "Cardinals"
+      },
+      "away": {
+        "team_id": "-2",
+        "abbr": "TBD",
+        "name": "TBD",
+        "score": 0,
+        "winner": null,
+        "record": null,
+        "home_record": null,
+        "away_record": null,
+        "leaders": null,
+        "conf_id": null,
+        "conf": null,
+        "rank": null,
+        "loc": "TBD",
+        "nick": "TBD"
+      },
+      "espn_line": null,
       "date": "2026-11-28",
       "p4": true
     }
