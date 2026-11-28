@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-28T01:15:26+00:00",
+  "finished_at": "2026-11-28T01:30:24+00:00",
   "game_date": "2026-11-27",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,17 +28,43 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 2038
+      "ODDS_API_KEY_20K": 2022
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Denver Nuggets @ Utah Jazz",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 174,
+        "markets": 4
+      },
+      {
+        "matchup": "Golden State Warriors @ Portland Trail Blazers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 170,
+        "markets": 4
+      },
+      {
+        "matchup": "New Orleans Pelicans @ Los Angeles Clippers",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 206,
+        "markets": 4
+      },
+      {
+        "matchup": "Los Angeles Lakers @ San Antonio Spurs",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 184,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
-    "links_backfill": [
-      "Indiana Pacers @ Chicago Bulls: 52 links",
-      "Oklahoma City Thunder @ Milwaukee Bucks: 54 links"
-    ],
+    "due": 4,
+    "pregame_pulled": true,
+    "links_backfill": [],
     "status": "ok"
   }
 }
