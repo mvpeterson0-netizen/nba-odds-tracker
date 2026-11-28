@@ -115,3 +115,15 @@ def test_fanduel_links_before_tip_only(tmp_path):
     assert fd["o"]["price"] == -112 and fd["u"]["price"] == -108 and "selectionId=Over" in fd["o"]["url"]
     after = datetime(2026, 10, 23, 2, 0, tzinfo=timezone.utc)
     assert build.build(tmp_path, after)["links"] == {}          # game has tipped: no links
+
+
+def test_draftkings_links_kept_with_dk_url_only(tmp_path):
+    from datetime import datetime, timezone
+    setup(tmp_path, [cap("draftkings", "Over", 27.5, -115)], [box("31")])
+    dk = "https://sportsbook.draftkings.com/?outcomes=0QA1%23{}_13L1Q1-1Q20"
+    w(tmp_path / "prop_links.csv", [link_row("Over", 28.5, -110, url=dk.format(1), book="draftkings"),
+                                    link_row("Under", 28.5, -110, url=dk.format(2), book="draftkings"),
+                                    link_row("Over", 27.5, -110, book="draftkings")])   # FanDuel-style URL on DK: dropped
+    links = build.build(tmp_path, datetime(2026, 10, 22, 23, 0, tzinfo=timezone.utc))["links"]["3112335"]["player_points"]
+    assert set(links) == {"draftkings"} and links["draftkings"]["point"] == 28.5
+    assert links["draftkings"]["u"]["url"].endswith("2_13L1Q1-1Q20")

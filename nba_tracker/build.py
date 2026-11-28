@@ -111,17 +111,21 @@ def _json(path: Path, default):
 
 
 FD_SLIP = re.compile(r"^https://sportsbook\.fanduel\.com/addToBetslip\?")
+# DraftKings slip link: one exact line per outcome id; several ids can share one link (?outcomes=<id>+<id>), as in Stix.
+DK_SLIP = re.compile(r"^https://sportsbook\.draftkings\.com/\?outcomes=[^&#]+$")
+SLIP_RE = {"fanduel": FD_SLIP, "draftkings": DK_SLIP}
 
 
 def bet_links(rows: list[dict], resolve, now: datetime) -> dict:
-    """FanDuel bet-slip links for games that haven't tipped: {aid: {market: {"fanduel": {point, cap, gid, o, u}}}}.
+    """Bet-slip links for games that haven't tipped: {aid: {market: {"fanduel" | "draftkings": {point, cap, gid, o, u}}}}.
     resolve(event_id, home, away, commence, player) -> (gid, aid) or None. Latest pull per game (data/prop_links.csv);
-    one point per player/market (the one with both sides and prices closest to even money). Only FanDuel slip links
-    are kept. The link names the market and side, not a number, so the button shows the line FanDuel had in that pull."""
-    grouped: dict[tuple, dict] = defaultdict(lambda: defaultdict(dict))   # (gid, aid, mk) -> point -> side -> row
+    one point per player/market/book (the one with both sides and prices closest to even money). FanDuel's link names the
+    market and side, not a number; DraftKings' names one exact line, so it only works while DK still posts that line."""
+    grouped: dict[tuple, dict] = defaultdict(lambda: defaultdict(dict))   # (gid, aid, mk, book) -> point -> side -> row
     for r in rows:
         side = (r.get("side") or "").lower()
-        if r.get("book") != "fanduel" or side not in ("over", "under") or not FD_SLIP.match(r.get("outcome_link") or ""):
+        rx = SLIP_RE.get(r.get("book"))
+        if not rx or side not in ("over", "under") or not rx.match(r.get("outcome_link") or ""):
             continue
         try:
             if datetime.fromisoformat(r["commence_utc"].replace("Z", "+00:00")) <= now:
@@ -132,9 +136,9 @@ def bet_links(rows: list[dict], resolve, now: datetime) -> dict:
         if not hit:
             continue
         gid, aid = hit
-        grouped[(gid, aid, r["market"])][r.get("point", "")][side] = r
+        grouped[(gid, aid, r["market"], r["book"])][r.get("point", "")][side] = r
     out: dict = {}
-    for (gid, aid, mk), points in grouped.items():
+    for (gid, aid, mk, book), points in grouped.items():
         both = {pt: v for pt, v in points.items() if "over" in v and "under" in v}
 
         def balance(item):
@@ -151,7 +155,7 @@ def bet_links(rows: list[dict], resolve, now: datetime) -> dict:
         for side, key in (("over", "o"), ("under", "u")):
             if side in sides:
                 entry[key] = {"url": sides[side]["outcome_link"], "price": _f(sides[side].get("price"))}
-        out.setdefault(aid, {}).setdefault(mk, {})["fanduel"] = entry
+        out.setdefault(aid, {}).setdefault(mk, {})[book] = entry
     return out
 
 

@@ -52,10 +52,11 @@ GUARD_RESERVE = 20                             # extra cushion kept for core mar
 
 CAPTURE_FIELDS = ["captured_at", "event_id", "commence_utc", "minutes_before", "home_team", "away_team",
                   "book", "market", "player", "side", "point", "price", "market_updated", "pull_type"]
-# Bet-slip links (FanDuel only, as in the NFL tracker): The Odds API returns a per-outcome link with includeLinks.
+# Bet-slip links: The Odds API returns a per-outcome link with includeLinks, in the same response as the lines.
+# FanDuel since Nov 2026; DraftKings added 2026-11-28 for the Signals page slip (as in the Stix NFL tracker).
 # Only the latest pull of each game is kept, and only until tip. Never changes captures, grading or credit use.
 LINKS_ENABLED = True
-LINK_BOOKS = ["fanduel"]
+LINK_BOOKS = ["fanduel", "draftkings"]
 LINKS_BACKFILL = True   # one-time catch-up pull for games with no links yet (see backfill_links)
 LINK_FIELDS = ["event_id", "commence_utc", "pull_type", "captured_at", "book", "market", "player", "side",
                "point", "price", "outcome_link"]
@@ -216,7 +217,7 @@ def parse_event_props(body: dict, captured_at: str, minutes_before: int, pull_ty
 
 
 def parse_event_links(body: dict, captured_at: str, pull_type: str = "pregame") -> list[dict]:
-    """One row per FanDuel outcome that came back with a bet-slip link."""
+    """One row per FanDuel / DraftKings outcome that came back with a bet-slip link."""
     rows = []
     for bk in (body or {}).get("bookmakers") or []:
         if bk.get("key") not in LINK_BOOKS:

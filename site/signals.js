@@ -5,7 +5,7 @@
 // record, today's plays and week-by-week bets. Data: data/signals.json, written by nba_tracker/signals.py.
 // Display only: no rule, list or graded result is changed here.
 (function () {
-  const S = { sel: null, scope: "season", wopen: false };
+  const S = { sel: null, scope: "season", wopen: false, pick: {} };
   const SCOPES = [["season", "This season"], ["fwd", "Since freeze"], ["last7", "Last 7 days"]];
   const KIND = { team: ["TEAM", "Team signals · game lines", "Whole-game bets: the spread or the game total. DraftKings line and price from the 7 AM CT pull."],
                  player: ["PLAYER", "Player signals · props", "Player prop bets: points, rebounds, assists, threes. DraftKings line and price from the ~1 h pre-game pull."] };
@@ -57,6 +57,99 @@
       <path d="${cp.map(([i, q], k) => `${k ? "L" : "M"}${X(i).toFixed(1)},${Y(q.cum).toFixed(1)}`).join(" ")}" fill="none" style="stroke:var(${col})" stroke-width="1.6" stroke-linejoin="round"/>
       ${pts.filter((q) => q.n).map((q) => `<circle cx="${X(pts.indexOf(q)).toFixed(1)}" cy="${Y(q.roi).toFixed(1)}" r="2.3" style="fill:var(${q.roi >= 0 ? "--over" : "--under"})"><title>Week ${q.w}: ${fmt(q.roi)} ROI (${q.n} bets) · running ${fmt(q.cum)}</title></circle>`).join("")}</svg>`;
   }
+
+  // ---------- bet slip (Michael 2026-11-28): checkboxes, Select all / Clear, "Add to FanDuel slip", and a DraftKings
+  // popup when DK has a better number, ported from the Stix NFL Signals page. Player signals only: the links come from
+  // the props pull (data/prop_links.csv); game lines have no slip links yet. Opening a slip never changes the record.
+  const FD_SLIP = /^https:\/\/sportsbook\.fanduel\.com\/addToBetslip\?/;
+  const DK_SLIP = /^https:\/\/sportsbook\.draftkings\.com\/\?outcomes=([^&#]+)$/;
+  const FD_SLIP_MAX = 25;  // most bets in one FanDuel link (same as Stix)
+  const MKID = { pts: "player_points", reb: "player_rebounds", ast: "player_assists", fg3m: "player_threes" };
+  const LINKS = () => (typeof D !== "undefined" && D.props && D.props.links) || {};
+  const playKey = (p) => `${p.gid}|${p.aid}|${p.mk}`;
+  const pickOf = (id) => S.pick[id] || (S.pick[id] = new Set());
+  const openPlay = (p) => p.start && new Date(p.start).getTime() > Date.now() && p.state !== "in";
+  const linkOf = (p, book) => { const e = ((LINKS()[p.aid] || {})[MKID[p.mk]] || {})[book]; return e && e.gid === p.gid ? e : null; };
+  const fdSlipUrl = (legs) => "https://sportsbook.fanduel.com/addToBetslip?" + legs.map((l, j) => `marketId[${j}]=${l.m}&selectionId[${j}]=${l.sel}`).join("&");
+  const dkSlipUrl = (legs) => "https://sportsbook.draftkings.com/?outcomes=" + legs.map((l) => l.dk.oc).join("+");
+  function dkOf(p, fd) {
+    const dk = linkOf(p, "draftkings"); if (!dk || !dk.u || dk.u.price == null || dk.point == null) return null;
+    const m = DK_SLIP.exec(dk.u.url || ""); if (!m) return null;
+    const out = { line: dk.point, odds: dk.u.price, cap: dk.cap, oc: m[1], why: null };
+    if (fd && fd.u && fd.u.price != null && fd.point != null) {
+      if (dk.point > fd.point) out.why = "line"; else if (dk.point === fd.point && dk.u.price > fd.u.price) out.why = "odds";
+    }
+    return out;
+  }
+  function slipOf(t) {
+    const chosen = pickOf(t.id), legs = [], dkOnly = [], missing = [];
+    for (const p of t.plays) {
+      if (!chosen.has(playKey(p)) || !openPlay(p)) continue;
+      const fd = linkOf(p, "fanduel"), u = fd && fd.u && FD_SLIP.test(fd.u.url || "") ? fd.u : null;
+      let m = null, sel = null;
+      if (u) { try { const x = new URL(u.url); m = x.searchParams.get("marketId"); sel = x.searchParams.get("selectionId"); } catch { m = sel = null; } }
+      const dk = dkOf(p, fd), name = p.player, label = MKL[p.mk];
+      if (m && sel && /^[\d.]+$/.test(m) && /^\d+$/.test(sel)) legs.push({ name, label, m, sel, line: fd.point, odds: u.price, cap: fd.cap, dk: dk && dk.why ? dk : null });
+      else if (dk) dkOnly.push({ name, label, dk });
+      else missing.push(`${name} (${label})`);
+    }
+    const chunks = [];
+    for (let i = 0; i < legs.length; i += FD_SLIP_MAX) { const part = legs.slice(i, i + FD_SLIP_MAX); chunks.push({ legs: part, from: i + 1, to: i + part.length, url: fdSlipUrl(part) }); }
+    return { legs, dkOnly, missing, chunks };
+  }
+  function slipBox(t) {
+    if (t.kind !== "player") return "";
+    const open = t.plays.filter(openPlay); if (!open.length) return "";
+    const f = slipOf(t); S.chunks = f.chunks; S.dkOnly = f.dkOnly;
+    const n = [...pickOf(t.id)].filter((k) => open.some((p) => playKey(p) === k)).length;
+    const picker = `<span class="small rl-pick"><button type="button" class="linkbtn" data-sgall="1">Select all</button> · <button type="button" class="linkbtn" data-sgall="0">Clear</button> <span class="muted">${n} selected</span></span>`;
+    const dkBtn = f.dkOnly.length ? `<a class="betbtn" href="${E(dkSlipUrl(f.dkOnly))}" target="_blank" rel="noopener">Add ${f.dkOnly.length} not on FanDuel to DraftKings slip ↗</a>` : "";
+    if (!n) return `<div class="betbox rl-fd sg-slip">${picker}<span class="betbtn rl-off" aria-disabled="true" style="opacity:.5">Check plays to add them to the FanDuel slip</span></div>`;
+    if (!f.legs.length) return `<div class="betbox rl-fd sg-slip">${picker}${dkBtn || `<span class="betbtn rl-off" aria-disabled="true" style="opacity:.5">None of the checked plays are on FanDuel</span>`}${f.missing.length ? `<span class="muted small rl-fdnote">No slip link for: ${E(f.missing.join(", "))}</span>` : ""}</div>`;
+    const many = f.chunks.length > 1;
+    const btns = f.chunks.map((c, k) => `<a class="betbtn${many ? " rl-slip" : ""}" href="${E(c.url)}" target="_blank" rel="noopener" data-sgfd="${k}" title="Opens FanDuel with ${c.legs.length} bets on the slip">${many ? `Slip ${k + 1} · bets ${c.from}–${c.to} ↗` : `Add ${f.legs.length} checked Under${f.legs.length > 1 ? "s" : ""} to FanDuel slip ↗`}</a>`).join("");
+    const caps = f.legs.map((l) => l.cap).filter(Boolean).sort();
+    return `<div class="betbox rl-fd sg-slip">${picker}${many ? `<span class="muted small rl-fdnote">FanDuel takes up to ${FD_SLIP_MAX} bets per link, so these are split into ${f.chunks.length} slips. Open each one.</span><div class="rl-slips">${btns}</div>` : btns}${dkBtn}
+      <span class="muted small rl-fdnote">Lines as of ${E(caps.length ? fmtTime(caps[caps.length - 1]) : "the last pull")}. The slip shows each book's current line. Opening a slip doesn't change the record.</span>
+      ${f.missing.length ? `<span class="muted small rl-fdnote">No slip link for: ${E(f.missing.join(", "))}</span>` : ""}</div>`;
+  }
+  // Popup when a tapped FanDuel slip includes bets with a better DraftKings number (same choices as Stix).
+  function dkPopup(chunk) {
+    document.querySelector(".rl-dkpop")?.remove();
+    const flagged = chunk.legs.filter((l) => l.dk), keep = chunk.legs.filter((l) => !l.dk);
+    const caps = flagged.map((l) => l.dk.cap).filter(Boolean).sort(), asOf = caps.length ? fmtTime(caps[0]) : "";
+    const rows = flagged.map((l) => `<li><b>${E(l.name)}</b> ${E(l.label)} Under<br><span class="muted small">FD ${l.line} ${am(l.odds)} · DK ${l.dk.line} ${am(l.dk.odds)} (better ${l.dk.why})</span></li>`).join("");
+    const fdUrl = keep.length ? fdSlipUrl(keep) : "", dkUrl = dkSlipUrl(flagged);
+    const dkBtn = (label) => `<a class="betbtn" data-dkpick="dk" href="${E(dkUrl)}" target="_blank" rel="noopener">${label} ↗<span class="muted small rl-dkasof">DK lines as of ${E(asOf)}. If DK moved a line since, that bet won't load.</span></a>`;
+    const close = `<button type="button" class="betbtn" data-dkpick="cancel">Close</button>`;
+    const el = document.createElement("div"); el.className = "rl-dkpop"; el.setAttribute("role", "dialog"); el.setAttribute("aria-modal", "true");
+    const step1 = () => {
+      const both = keep.length ? `<a class="betbtn rl-both" data-dkpick="both" href="${E(fdUrl)}" target="_blank" rel="noopener">Do both: ${keep.length} to FD, then ${flagged.length} to DK ↗</a>` : "";
+      const only = keep.length ? `<a class="betbtn" data-dkpick="best" href="${E(fdUrl)}" target="_blank" rel="noopener">Only take best FD lines to FD (${keep.length}) ↗</a>`
+        : `<span class="betbtn rl-off" aria-disabled="true" style="opacity:.5">No bets have the best line on FD</span>`;
+      el.innerHTML = `<div class="rl-dkcard"><b>${flagged.length} of ${chunk.legs.length} bets ${flagged.length === 1 ? "has" : "have"} a better line on DraftKings</b><ul>${rows}</ul>
+        <div class="rl-dkbtns">${both}${only}${dkBtn(`Take better DK lines to DK (${flagged.length})`)}<a class="betbtn" data-dkpick="all" href="${E(chunk.url)}" target="_blank" rel="noopener">Take all ${chunk.legs.length} to FD ↗</a>${close}</div></div>`;
+    };
+    const step2 = () => {
+      el.innerHTML = `<div class="rl-dkcard"><b>Step 2 of 2</b><p class="small">Sent ${keep.length} bet${keep.length === 1 ? "" : "s"} to FanDuel. Now the ${flagged.length} better on DraftKings:</p>
+        <div class="rl-dkbtns">${dkBtn(`Next: open DraftKings (${flagged.length})`)}${close}</div></div>`;
+    };
+    el.addEventListener("click", (ev) => {
+      const b = ev.target.closest && ev.target.closest("[data-dkpick]");
+      if (!b) { if (ev.target === el) el.remove(); return; }
+      if (b.dataset.dkpick === "cancel") { el.remove(); return; }
+      if (b.dataset.dkpick === "both") { setTimeout(step2, 0); return; }
+      if (!b.querySelector(".rl-done")) b.insertAdjacentHTML("beforeend", ` <span class="rl-done">✓ opened</span>`);
+    });
+    step1();
+    document.body.appendChild(el);
+  }
+  function refreshSlip() {
+    const box = document.querySelector(".sg-slip"), t = S.sel && sig(S.sel);
+    if (box && t) box.outerHTML = slipBox(t);
+    const t2 = S.sel && sig(S.sel); if (!t2) return;
+    document.querySelectorAll("[data-sgck]").forEach((el) => { el.checked = pickOf(t2.id).has(el.dataset.sgck); });
+  }
   const kindTag = (t) => `<span class="sg-kind ${t.kind}">${KIND[t.kind][0]}</span><span class="sg-mkt">${E(t.market)}</span>`;
   const todayPlays = (t) => t.plays.filter((p) => p.date === SD().today);
   function tileHtml(t) {
@@ -70,8 +163,9 @@
       ${spark(bets)}</button></div>`;
   }
   function playRow(p, t) {
+    const ck = t.kind === "player" && openPlay(p) ? `<input type="checkbox" class="rl-ck" data-sgck="${E(playKey(p))}" aria-label="Add ${E(p.player)} to the slip" ${pickOf(t.id).has(playKey(p)) ? "checked" : ""}>` : "";
     const who = t.kind === "player"
-      ? `<a class="pname" href="#/player/${E(p.aid)}">${E(p.player)}</a> <span class="muted small">${E(p.team)}</span>`
+      ? `${ck}<a class="pname" href="#/player/${E(p.aid)}">${E(p.player)}</a> <span class="muted small">${E(p.team)}</span>`
       : `<b>${E(p.matchup)}</b>`;
     const live = p.state === "in" ? `<span class="chip live">Live</span>` : `<span class="muted small">${tipTime(p.start)}</span>`;
     const price = p.line != null ? ` <span class="muted small">${am(p.price)} ${p.book === "fanduel" ? "FD" : "DK"}${p.pull ? ` · ${E(p.pull)} line` : ""}</span>` : ` <span class="muted small">line after the 7 AM pull</span>`;
@@ -99,13 +193,13 @@
     }).join("");
     const plays = (lbl, ps) => (ps.length ? `<h3 class="sg-sec">${lbl} (${ps.length})</h3><div class="panel rlist">${ps.map((p) => playRow(p, t)).join("")}</div>` : "");
     return `<div class="sg-detail"><div class="panel sg-rec"><div class="body">
-      <div class="sg-rec-h"><span class="sg-rec-t">${kindTag(t)}<b>${E(t.title)}</b><span class="rinfo" role="button" tabindex="0" data-dinfo="${t.id}" aria-label="About ${E(t.title)}">i</span></span> <button type="button" class="linkbtn" data-sgclear>Clear</button></div>
+      <div class="sg-rec-h"><span class="sg-rec-t">${kindTag(t)}<b>${E(t.title)}</b><span class="rinfo" role="button" tabindex="0" data-dinfo="${t.id}" aria-label="About ${E(t.title)}">i</span></span> <button type="button" class="linkbtn" data-sgclear>Close</button></div>
       <p class="muted small sg-rec-s">${E(t.rule)}</p>
       <div class="la-sum"><div><span class="muted small">${S.scope === "fwd" ? "Since freeze" : S.scope === "last7" ? "Last 7 days" : "Season"}</span><b>${s.n ? recTxt(s) : "—"}</b></div>
         <div><span class="muted small">Hit rate</span><b>${s.hit == null ? "—" : s.hit.toFixed(1) + "%"}</b></div>
         <div><span class="muted small">Units</span><b class="${cls}">${s.n ? unitsTxt(s.U) : "—"}</b></div>
         <div><span class="muted small">ROI</span><b class="${cls}">${roiTxt(s)}</b></div></div>
-      ${plays("Today", tp)}${plays("Tomorrow", tm)}${!tp.length && !tm.length ? `<p class="muted small">No plays today or tomorrow yet.${t.kind === "player" ? " Prop lines arrive with the 7 AM pull." : ""}</p>` : ""}
+      ${slipBox(t)}${plays("Today", tp)}${plays("Tomorrow", tm)}${!tp.length && !tm.length ? `<p class="muted small">No plays today or tomorrow yet.${t.kind === "player" ? " Prop lines arrive with the 7 AM pull." : ""}</p>` : ""}
       ${bets.length ? `<details class="sg-weeks" data-wopen ${S.wopen ? "open" : ""}><summary>Week by week (${new Set(bets.map((b) => b.wk)).size} weeks, ${bets.length} bets)</summary>${weeks}</details>` : `<p class="muted small">No graded bets in this window.</p>`}
     </div></div></div>`;
   }
@@ -167,6 +261,23 @@
     const tile = e.target.closest("[data-sig]");
     if (tile) { S.sel = S.sel === tile.dataset.sig ? null : tile.dataset.sig; redraw(); const el = document.querySelector(".sg-detail"); if (el && S.sel) el.scrollIntoView({ behavior: "smooth", block: "nearest" }); }
   }, true);
+  document.addEventListener("click", (e) => {
+    if (!document.querySelector(".sg-page")) return;
+    const a = e.target.closest && e.target.closest("[data-sgall]");
+    if (a && S.sel) {
+      const t = sig(S.sel), s = pickOf(t.id); s.clear();
+      if (a.dataset.sgall === "1") t.plays.filter(openPlay).forEach((p) => s.add(playKey(p)));
+      refreshSlip(); return;
+    }
+    const b = e.target.closest && e.target.closest("[data-sgfd]");
+    if (b) { const chunk = (S.chunks || [])[+b.dataset.sgfd || 0]; if (chunk && chunk.legs.some((l) => l.dk)) { e.preventDefault(); dkPopup(chunk); } }
+  });
+  document.addEventListener("change", (e) => {
+    const k = e.target && e.target.matches && e.target.matches("[data-sgck]") ? e.target : null;
+    if (!k || !S.sel) return;
+    const s = pickOf(S.sel); if (k.checked) s.add(k.dataset.sgck); else s.delete(k.dataset.sgck);
+    refreshSlip();
+  });
   document.addEventListener("toggle", (e) => { if (e.target.matches && e.target.matches("[data-wopen]")) S.wopen = e.target.open; }, true);
   document.addEventListener("keydown", (e) => { if ((e.key === "Enter" || e.key === " ") && e.target.closest && e.target.closest("[data-dinfo]")) { e.preventDefault(); openInfo(e.target.closest("[data-dinfo]").dataset.dinfo); } if (e.key === "Escape") closeInfo(); });
   window.DIME_SIGNALS = { view, bind, tally };
