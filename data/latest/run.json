@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-28T00:15:31+00:00",
+  "finished_at": "2026-11-28T00:30:34+00:00",
   "game_date": "2026-11-27",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,13 +28,21 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 2058
+      "ODDS_API_KEY_20K": 2054
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Memphis Grizzlies @ Minnesota Timberwolves",
+        "type": "pregame",
+        "status": "ok",
+        "rows": 172,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
-    "pregame_pulled": false,
+    "due": 1,
+    "pregame_pulled": true,
     "links_backfill": [],
     "status": "ok"
   }
