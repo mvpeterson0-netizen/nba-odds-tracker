@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-28T00:00:31+00:00",
+  "finished_at": "2026-11-28T00:15:31+00:00",
   "game_date": "2026-11-27",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "power4": [
@@ -17,10 +17,10 @@
     "props": "ok"
   },
   "boxscores": {
-    "new_games": 1,
-    "player_rows": 32,
+    "new_games": 2,
+    "player_rows": 64,
     "unparsed": [],
-    "queued": 1,
+    "queued": 2,
     "errors": [],
     "rosters_fetched": 0
   },
@@ -31,53 +31,19 @@
       "ODDS_API_KEY_2": 0,
       "ODDS_API_KEY_20K": 2058
     },
-    "pulled": [
-      {
-        "matchup": "Oakland Golden Grizzlies @ Houston Cougars",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Penn State Nittany Lions @ Mississippi St Bulldogs",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Northeastern Huskies @ Northwestern Wildcats",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "Wichita St Shockers @ Kentucky Wildcats",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      },
-      {
-        "matchup": "San Diego St Aztecs @ Texas Tech Red Raiders",
-        "type": "morning",
-        "status": "empty",
-        "rows": 0
-      }
-    ],
+    "pulled": [],
     "errors": [],
-    "events": 89,
+    "events": 87,
     "p4_events": 12,
     "unmatched": [
       "SE Missouri St Redhawks @ UMKC Kangaroos"
     ],
-    "due": 5,
+    "due": 0,
     "pregame_pulled": false,
     "lines": {
-      "status": "ok",
+      "status": "not_due",
       "morning_due": false,
-      "pregame_due": 1,
-      "pull_type": "pregame",
-      "rows": 8,
-      "credits_last": 2
+      "pregame_due": 0
     },
     "status": "ok"
   }

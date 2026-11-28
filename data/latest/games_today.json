@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-28T00:00:24+00:00",
+  "fetched_at": "2026-11-28T00:15:26+00:00",
   "source": "espn",
   "count": 11,
   "game_date": "2026-11-27",
@@ -8,11 +8,11 @@
       "game_id": "401909326",
       "start_utc": "2026-11-28T00:00Z",
       "short_name": "MIA @ NY",
-      "state": "pre",
-      "status": "11/27 - 7:00 PM EST",
+      "state": "in",
+      "status": "10:27 - 1st",
       "completed": false,
-      "period": 0,
-      "clock": "0.0",
+      "period": 1,
+      "clock": "10:27",
       "venue": "Madison Square Garden",
       "neutral_site": false,
       "broadcasts": [
@@ -22,27 +22,23 @@
         "team_id": "18",
         "abbr": "NY",
         "name": "New York Knicks",
-        "score": 0,
+        "score": 3,
         "winner": null,
         "record": "12-6",
         "home_record": "7-3",
         "away_record": "5-3",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Jalen Brunson",
-            "value": "26.1"
+          "points": {
+            "player": "Landry Shamet",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Karl-Anthony Towns",
-            "value": "13.6"
-          },
-          "assistsPerGame": {
-            "player": "Jalen Brunson",
-            "value": "5.9"
+          "assists": {
+            "player": "Josh Hart",
+            "value": "1"
           },
           "rating": {
-            "player": "Karl-Anthony Towns",
-            "value": "21.2 PPG, 13.6 RPG, 4.2 APG, 1.0 SPG, 0.8 BPG"
+            "player": "Landry Shamet",
+            "value": "3 PTS"
           }
         }
       },
@@ -50,36 +46,27 @@
         "team_id": "14",
         "abbr": "MIA",
         "name": "Miami Heat",
-        "score": 0,
+        "score": 6,
         "winner": null,
         "record": "10-7",
         "home_record": "6-3",
         "away_record": "4-4",
         "leaders": {
-          "pointsPerGame": {
-            "player": "Giannis Antetokounmpo",
-            "value": "28.4"
+          "points": {
+            "player": "Klay Thompson",
+            "value": "3"
           },
-          "reboundsPerGame": {
-            "player": "Giannis Antetokounmpo",
-            "value": "12.7"
-          },
-          "assistsPerGame": {
+          "assists": {
             "player": "Davion Mitchell",
-            "value": "8.7"
+            "value": "1"
           },
           "rating": {
-            "player": "Giannis Antetokounmpo",
-            "value": "28.4 PPG, 12.7 RPG, 5.4 APG, 0.9 SPG, 1.2 BPG"
+            "player": "Klay Thompson",
+            "value": "3 PTS"
           }
         }
       },
-      "espn_line": {
-        "provider": "Draft Kings",
-        "details": "NY -2.5",
-        "spread": -2.5,
-        "over_under": 221.5
-      }
+      "espn_line": null
     },
     {
       "game_id": "401909327",
@@ -153,10 +140,10 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "DET -9.5",
         "spread": -9.5,
-        "over_under": 219.5
+        "over_under": 218.5
       }
     },
     {
@@ -228,9 +215,9 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
-        "details": "PHI -3.5",
-        "spread": 3.5,
+        "provider": "DraftKings",
+        "details": "PHI -4.5",
+        "spread": 4.5,
         "over_under": 228.5
       }
     },
@@ -305,7 +292,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "TOR -9.5",
         "spread": -9.5,
         "over_under": 218.5
@@ -380,7 +367,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "BOS -9.5",
         "spread": -9.5,
         "over_under": 224.5
@@ -458,7 +445,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "MIN -2.5",
         "spread": -2.5,
         "over_under": 220.5
@@ -538,7 +525,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "PHX -3.5",
         "spread": -3.5,
         "over_under": 225.5
@@ -615,7 +602,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "SA -6.5",
         "spread": -6.5,
         "over_under": 225.5
@@ -693,7 +680,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "DEN -9.5",
         "spread": 9.5,
         "over_under": 232.5
@@ -772,7 +759,7 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
+        "provider": "DraftKings",
         "details": "LAC -2.5",
         "spread": -2.5,
         "over_under": 229.5
@@ -850,9 +837,9 @@
         }
       },
       "espn_line": {
-        "provider": "Draft Kings",
-        "details": "POR -7.5",
-        "spread": -7.5,
+        "provider": "DraftKings",
+        "details": "POR -8.5",
+        "spread": -8.5,
         "over_under": 216.5
       }
     }

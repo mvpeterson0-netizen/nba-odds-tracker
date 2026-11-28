@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-28T00:00:29+00:00",
+  "finished_at": "2026-11-28T00:15:31+00:00",
   "game_date": "2026-11-27",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -28,21 +28,13 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 2060
+      "ODDS_API_KEY_20K": 2058
     },
-    "pulled": [
-      {
-        "matchup": "Atlanta Hawks @ Boston Celtics",
-        "type": "pregame",
-        "status": "ok",
-        "rows": 192,
-        "markets": 4
-      }
-    ],
+    "pulled": [],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 1,
-    "pregame_pulled": true,
+    "due": 0,
+    "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"
   }
