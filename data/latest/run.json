@@ -1,5 +1,5 @@
 {
-  "finished_at": "2026-11-28T12:45:25+00:00",
+  "finished_at": "2026-11-28T13:00:25+00:00",
   "game_date": "2026-11-28",
   "repo": "mvpeterson0-netizen/nba-odds-tracker",
   "sources": {
@@ -12,7 +12,7 @@
     "espn_news": "ok",
     "updates": "ok",
     "props": "ok",
-    "odds": "not_due",
+    "odds": "ok",
     "defense_ranks": "ok"
   },
   "boxscores": {
@@ -28,12 +28,48 @@
     "credits": {
       "ODDS_API_KEY": 0,
       "ODDS_API_KEY_2": 0,
-      "ODDS_API_KEY_20K": 1943
+      "ODDS_API_KEY_20K": 1923
     },
-    "pulled": [],
+    "pulled": [
+      {
+        "matchup": "Orlando Magic @ Washington Wizards",
+        "type": "morning",
+        "status": "ok",
+        "rows": 170,
+        "markets": 4
+      },
+      {
+        "matchup": "Brooklyn Nets @ Charlotte Hornets",
+        "type": "morning",
+        "status": "ok",
+        "rows": 140,
+        "markets": 4
+      },
+      {
+        "matchup": "Indiana Pacers @ Chicago Bulls",
+        "type": "morning",
+        "status": "ok",
+        "rows": 160,
+        "markets": 4
+      },
+      {
+        "matchup": "Oklahoma City Thunder @ Milwaukee Bucks",
+        "type": "morning",
+        "status": "ok",
+        "rows": 186,
+        "markets": 4
+      },
+      {
+        "matchup": "Philadelphia 76ers @ Houston Rockets",
+        "type": "morning",
+        "status": "ok",
+        "rows": 180,
+        "markets": 4
+      }
+    ],
     "errors": [],
     "markets_probe": "not_due",
-    "due": 0,
+    "due": 5,
     "pregame_pulled": false,
     "links_backfill": [],
     "status": "ok"
