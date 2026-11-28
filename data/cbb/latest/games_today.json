@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-28T06:45:29+00:00",
+  "fetched_at": "2026-11-28T07:00:26+00:00",
   "source": "espn",
   "count": 6,
   "game_date": "2026-11-28",
@@ -413,7 +413,7 @@
     {
       "game_id": "401920536",
       "start_utc": "2026-11-29T03:30Z",
-      "short_name": "TBD VS LOU",
+      "short_name": "CREI VS LOU",
       "state": "pre",
       "status": "11/28 - 10:30 PM EST",
       "completed": false,
@@ -454,22 +454,40 @@
         "nick": "Cardinals"
       },
       "away": {
-        "team_id": "-2",
-        "abbr": "TBD",
-        "name": "TBD",
+        "team_id": "156",
+        "abbr": "CREI",
+        "name": "Creighton Bluejays",
         "score": 0,
         "winner": null,
-        "record": null,
-        "home_record": null,
-        "away_record": null,
-        "leaders": null,
-        "conf_id": null,
+        "record": "7-1",
+        "home_record": "3-0",
+        "away_record": "0-1",
+        "leaders": {
+          "pointsPerGame": {
+            "player": "Wes Enis",
+            "value": "18.1"
+          },
+          "reboundsPerGame": {
+            "player": "Jasen Green",
+            "value": "4.3"
+          },
+          "assistsPerGame": {
+            "player": "Katrelle Harmon",
+            "value": "5.0"
+          }
+        },
+        "conf_id": "4",
         "conf": null,
         "rank": null,
-        "loc": "TBD",
-        "nick": "TBD"
+        "loc": "Creighton",
+        "nick": "Bluejays"
       },
-      "espn_line": null,
+      "espn_line": {
+        "provider": "DraftKings",
+        "details": "LOU -3.5",
+        "spread": -3.5,
+        "over_under": 157.5
+      },
       "date": "2026-11-28",
       "p4": true
     }
